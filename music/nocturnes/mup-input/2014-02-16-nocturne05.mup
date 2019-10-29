@@ -1,0 +1,155 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 5"
+	title "" "John A. Krallmann"
+	title " " "(Feb 16, 2014)"
+
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=5&
+	time=2/4
+	beamstyle=4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.7
+	timeunit=8
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	vscheme=2f
+music
+
+midi all: 0 "tempo=64";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=98,74";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=74";
+
+1: {gn+;f+;e+;}3;{dn+;e+;f+;}3;
+2: c;gn;e+;g;
+bar
+
+1: {gn+;f+;e+;}3;{dn+;e+;f+;}3;
+2: a-;e;c+;e;
+bar
+
+1: {a+;gn+;f+;}3;{c+;dn+;e+;}3;
+2: f-;c;a;c;
+bar
+
+1: {dn+;e+;d+;}3;{a+;gn+;d+;}3;
+2: gn-;dn;bn;d;
+bar
+
+1: {en+;f+;e+;}3;{a+;gn+;e+;}3;
+2: c;gn;en+;g;
+bar
+
+1: {gn+;f+;g+;}3;{c+;dn+;e+;}3;
+2: a-;e;c+;e;
+bar
+
+1: {dn+;e+;d+;}3;{dn++;c++;bn+;}3;
+2: gn-;dn;bn;d;
+bar
+
+1: {c++;b+;c++;}3;{a+;gn+;e+;}3;
+2: a-;e;c+;e;
+bar
+
+1: {f+;e+;f+;}3;{d+;c+;a;}3;
+2: d;a;f+;a;
+bar
+
+1: {b;a;b;}3;{g;f;d;}3;
+2: g-;d;b;d;
+bar
+
+//
+1: {e;c+;b;}3;{b&&;a;e;}3;
+2: a-;e;c+;e;
+bar
+
+1: {an;b;c+;}3;{a;b;c+;}3;
+2: f-;c;an;c;
+bar
+
+1: {e+;d+;c+;}3;{f;gn;a;}3;
+2: d-;a-;f;a-;
+bar
+
+1: {c+;b;c+;}3;{d;e;b;}3;
+2: e-;b-;gn;b-;
+bar
+
+1: {d+;c+;d+;}3;{c+;g;a;}3;
+2: a-;e;c+;e;
+bar
+
+1: {e+;d+;e+;}3;{d+;f;f&;}3;
+2: d-;a-;f;a-;
+bar
+
+1: {e;d+;c+;}3;{ an;g+;f+;}3;
+2: c-;gn-;f-;an;
+bar
+
+1: {d+;c++;b+;}3;{b&&+;a+;f+;}3;
+2: b-;f;d+;a+;
+bar
+
+1: {f+;e+;f+;}3;{e+;d+;e+;}3;
+1 2: 4s;an;
+2: g-;d;4ge+;
+bar
+
+//
+ 
+1: 4af+ tie;{8;e+;d+;}3;
+2: {16d-;a-;f;a;d+;e+;}6;4f+;
+octave above 1: 1 "8va" til 2m+3;
+bar
+
+1: 4anf+ tie;{16;e+;d+;c+;bn;c+;}6;
+2: {16c-;an-;f;an;e+;f+;}6;4c++;
+bar
+
+1: 4dbf tie;32;e+;d+;c+;an;b;en;f;
+2: {16b--;f-;d;an;b;d+;}6;4f+;
+bar
+
+1: 8.bd+a+;16b+;8g+;f+;
+2: g--;d;e;b;
+bar
+
+1: 8.e+;16f+;8e+;16f+;g+;
+1 2: 4dab;ca;
+2: a--;e-;ga;a-;
+bar
+
+1: 4.fbd+f+;8d+;
+2: 8b--;f-;4d+;
+bar
+
+1: 4.egbe+;8b;
+2: 16e-;b-;e;f;8g;b;
+bar
+
+1: 4.eganc+;8a;
+2: 16f-;c;e;f;4an;
+bar
+
+1: 2b-dfb tie;
+2: 16b--;f-;d;c;8b-;f-;
+bar
+
+1: 2b-dfb;
+2: 2b--;
+endbar

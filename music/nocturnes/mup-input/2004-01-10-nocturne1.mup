@@ -1,0 +1,219 @@
+header
+	title (18) "Nocturne No. 1"
+	title (10) " "
+	title "" "John A. Krallmann (January 10-11, 2004)"
+
+header2
+	title (12) "Nocturne No. 1 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=5&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	vscheme=2o
+	packfact=1.3
+	staffsep=16
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=100";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=90,76";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=76";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=80";
+
+1: 2.b;4;
+1 2: r;g;a;r;
+2: r;b;c+;r;
+2 2: 1e;
+bar
+
+1: 2.b;4e+;
+1 2: r;g;f;r;
+2: r;b;a;r;
+2 2: 1e;
+bar
+
+1: 2.e+;8d+;c+;
+1 2: r;a;c&+;r;
+2: r;g;a;r;
+2 2: 1bn-;
+bar
+
+1: 2.b;8g;a;
+1 2: r;e;dn;r;
+2: r;g;f;r;
+2 2: 1b-;
+bar
+
+define TT
+1: b;e+;;;
+1 2: 8a;g;4f;d;e;
+2 2: e-;b-;f;g;
+bar
+
+1: 8d+;c+;4b;;;
+1 2: f;d;c;d;
+2: b-;2f;4;
+bar
+@
+
+TT
+TT
+
+define TTT
+1: 8a;gn;4f;;;
+1 2: c;a-;gn-;a-;
+2 2: f-;2c;4;
+bar
+
+1: 8e;d;4b;;;
+1 2: s;c;d;;
+2 2: b-;2f;4;
+bar
+@
+
+TTT
+TTT
+
+1: 8e+;d+;4c+;b;a;
+1 2: g;e;d;c;
+2 2: e-;b-;g;a;
+bar
+
+1: 2.b;4d+;
+1 2: r;df;egn;r;
+2: r;f;gn;r;
+2 2: 1b-;
+bar
+
+1: 2.b;4a;
+1 2: r;df;2ce;
+2: r;f;2g;
+2 2: 1b-;
+bar
+
+1: 1f;
+1 2: r;ce;2b-d;
+2: r;f;2;
+2 2: 1b-;
+repeatstart
+
+score
+	packfact=1.8
+	scoresep=10,28
+music
+
+newscore
+
+1: 2.f;4;
+1 2: r;c;2d;
+2: r;e;2f;
+2 2: 1b-;
+bar
+
+1: 2.f;8en;f;
+1 2: r;c;e;r;
+2: r;f;;r;
+2 2: 1an-;
+bar
+
+1: d+;c+;b;;
+1 2: f;e;d;;
+2: r;2.f;
+2 2: 2.b-;4a-;
+bar
+
+1: d+;c+;b;;
+1 2: f;e;d;;
+2: r;d;2b;
+2 2: 2.g-;4f-;
+bar
+
+1: e+;d+;c+;b;
+1 2: g;f;e;d;
+2: r;b-;2g;
+2 2: 1e-;
+bar
+
+1: g+;;f+;e+;
+1 2: b;b&&;a;g;
+2: r;e;2c+;
+2 2: 1a-;
+bar
+
+1: a+;;2f+;
+1 2: e+;d+;c+;d+;
+2: r;d;2a;
+2 2: 1f-;
+bar
+
+1: g+;f+;e+;d+;
+1 2: b;a;g;f;
+2 2: e-;b-;b;d+;
+bar ending "1."
+
+1: f+;e+;a;c+;
+1 2: 2g;c;
+2: r;e;2a;
+2 2: 1a-;
+bar
+
+1: 1d+;
+1 2: r;f;g;a;
+2: r;a-;b-;c;
+2 2: 1d-;
+bar
+
+1: 1d+;
+1 2: 1f;
+2: 1d;
+2 2: 1d-;
+repeatend ending "2."
+
+1: f+;e+;a;8e+;f+;
+1 2: 2g;c;
+2 2: a-;e;2a;
+bar
+
+1: 1d+;
+1 2: r;f;g;a;
+2: r;a-;b-;c;
+2 2: 1d-;
+bar
+
+staff 2 clef=treble
+music
+
+1: 1d++;
+1 2: 1f+;
+2: 1a;
+2 2: 1d;
+bar
+
+staff 1 clef=bass
+staff 2 clef=bass
+music
+
+1: 1d+;
+1 2: 1f;
+2: 1a-;
+2 2: 1d-;
+bar 
+
+1: 1d+;
+1 2: 1f;
+2: 1a-;
+2 2: 1d-;
+endbar 

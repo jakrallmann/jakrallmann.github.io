@@ -1,0 +1,208 @@
+header
+	title (18) "Song Without Words (No. 19)"
+	title "" "John A. Krallmann (4/3/09)"
+
+header2
+	title (12) "Song Without Words (No. 19) - \%"
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+define G [grace;slash 1]8 @
+define MG [grace]8 @
+
+midi all: 1 "tempo=84";
+midi 1 1-2: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=100";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=80";
+
+define THEME
+ifdef SECOND
+ 1: G e;8b;c+;4b;ae+;
+else
+ 1: G e;8b;c+;4b;a;
+endif
+2: e-;gbe+;fad+;
+bar
+
+1: Ge;2b;8c+;d+;
+2: e-;fad+;gbe+;
+bar
+
+1: Gg;8e+;d+;e+;c+;b;a;
+2: c-;gc+e+;fac+;
+bar
+
+1: Gf;8a+;b+;a+;f+;g+;e+;
+2: d-;ad+f+;be+g+;
+bar
+
+1: ifdef SECOND MG g;MG a; else G a; endif 4.f+;8e+;d+;e+;
+2: d-;ad+f+;be+g+;
+bar
+
+1: ifdef SECOND MG g; MG a; else G a; endif 8c+;f+;g+;f+;4g+~;
+2: f-;ad+f+;be+g+;
+bar
+
+1: 8g+;f+;b+;a+;g+;f+;
+2: f-;be+g+;ad+f+;
+bar
+
+1: G g;8g+;e+;f+;dn+;4g;
+2: c-;gc+e+;;
+bar
+
+1: G a;8f+;e+;f+;c+; ifdef SECOND b;a; else 4b; endif
+2: d-;ad+f+;;
+bar
+
+1: 8f+;a;c+;b;c+;dn+;
+2: dn-;abdn+;abd+f+;
+bar
+
+1: 8e+;d+;c+;b;a;b;
+2: e-;gc+e+;bd+e+;
+midi all: 3.5 "tempo=40"; 4 "tempo=84";
+mussym above all: 3.8 "rr";
+dblbar
+
+score key=1#
+ifdef SECOND transpose=up minor 2 endif
+music
+
+1: 8b;g;a;f;e;b;
+2: e-;egb;dgb;
+bar
+
+1: 8e+;b;c+;a;b;g;
+2: c-;gc+e+;ac+e+;
+bar
+
+1: 8a;e;f;a;b;c+;
+2: d-;fc+d+;dfc+;
+bar
+
+1: 8a+;g+;a+;b+;4;
+2: g-;<<staff clef=treble>>cea;dgb;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8e+;d+;e+;c+;b;c+;
+octave above 1: 1 "8va" til 3m+2;
+2: c;gc+e+; <<staff clef=treble>>cea;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8d+;c+;d+;b;a;g;
+2: g-;<<staff clef=treble>> b-dg;dgb;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8a;b;c+;d+;e+;f+;
+2: d-;fc+d+;<<staff clef=treble>> cda;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2.g+;
+2: g-;<<staff clef=treble>> 2dgb;
+mussym above all: 3.5 "rr";
+midi all: 3 "tempo=60";
+dblbar
+
+staff 2 clef=bass
+music
+
+midi all: 1 "tempo=84";
+1: G e;8b;c+;4b; ifdef SECOND 8e+;d+; else d+; endif
+2: e-;gbe+;fad+;
+bar
+
+1: G c+;2b;4e+;
+2: e-;2gbe+;
+bar
+
+1: G e+;8d+;c+;b;a;g;a;
+2: a-;ac+e+;;
+bar
+
+1: ifdef SECOND MG d+;MG c+; endif 2b;4;
+2: e-;2gbe+;
+bar
+
+1: 8a+;g+;f+;e+;c+;a;
+2: c-;gc+e+;;
+bar
+
+1: 4.c+;8b; ifdef SECOND a;g; else 4g; endif
+2: e-;gbe+;;
+bar
+@
+
+THEME
+
+1: 8f;g;a;b;c+;d#+;
+2: b-;fc+d#+;fbd+;
+bar
+
+1: r;8g+b+;f+a+;4e+g+ tie;
+1 2: 2.ee+ tie;
+octave above 1: 2 "8va" til 1m+2;
+2: 2.e- tie;
+bar
+
+1: 2.e+g+;
+1 2: 2.ee+;
+2: 2.e-;
+mussym above all: 3.8 "rr";
+dblbar
+
+newscore
+
+score
+	key=4&
+	transpose=up augmented 1
+
+music
+
+define SECOND @
+THEME
+
+1: 8f;g;a;b;g+;f+;
+2: b-;fc+d#+;fbd+;
+bar
+
+1: f+;8g+b+;f+a+;4e+g+ tie;
+1 2: 2.e;
+octave above 1: 2 "8va" til 1m+2;
+2: 2e-; <<staff clef=treble>> 4e+~;
+octave below 2: 1 "8va" til 2;
+bar
+
+1: 2.e+g+;
+2: 2.e+;
+endbar

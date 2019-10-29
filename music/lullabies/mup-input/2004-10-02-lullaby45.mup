@@ -1,0 +1,366 @@
+header
+	title (18) "Lullaby No. 45"
+	title (10) " "
+	title "" "John A. Krallmann (10/2-3/04)"
+
+header2
+	title (12) "Lullaby No. 45 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=2/4
+	beamstyle=2
+	key=1&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	packfact=1.1
+	release=0
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=78";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 64";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=64";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=64";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=64";
+
+1: 2g~;
+1 2: 2d~;
+2: 2cgb tie;
+bar
+
+1: 8g;f;e;f;
+1 2: 2d~;
+2: 2cgb tie;
+bar
+
+1: 8g;f;e;d;
+1 2: 2d;
+2: 2cgb;
+bar
+
+1: 2d~;
+1 2: 2a-;
+2: 2b-f tie;
+bar
+
+1: d;8e;d;
+1 2: 2g-;
+2: 2b-f;
+bar
+
+1: 2c~;
+1 2: 2g-;
+2: 2a-~e;
+bar
+
+score time=6/8 ; beamstyle=4.,4.
+music
+
+1: 4.c;8c;b-;a-;
+1 2: 2.f-;
+2: 2.a-d;
+bar
+
+1: a-;b-;;4.~;
+1 2: 2.f-;
+2: 2.g-d;
+bar
+
+1: 4.b-;8;a-;a&-;
+1 2: 2.e-;
+2: 2.c-g-;
+bar
+
+1: 4.c;f~;
+1 2: b-;;;4.a-;
+2: 4.d;c;
+2 2: 2.f-~;
+bar
+
+1: 4.f;g;
+1 2: 4.b-;c;
+2: 4.d;e;
+2 2: 2.f-;
+bar
+
+1: a;g;a;4.f;
+1 2: 4.d&;c;
+2: 4.b;8g;f;g;
+2 2: 4.e;a-;
+bar
+
+1: 4.d;c;
+1 2: c;b-;a-;4.s;
+2: 4.f;8g;f;c;
+2 2: 4.b-;a-;
+bar
+
+1: c;d;c;;d;f;
+1 2: 2.b-;
+2: 2.g-f;
+bar
+
+1: 4.g;a;
+1 2: b-;c;d;4.c;
+2: d;e;f;g;f;c;
+2 2: 4.f-;;
+bar
+
+1: 4.c+;8ec+;4db;
+1 2: e;g;f;4.s;
+2: 4.f;;
+2 2: 4.s;4b-;8a-;
+bar
+
+1: d;f;g;4.b-g;
+1 2: 4.b-;8d;d&;c;
+2: 4.g-f;e-c;
+bar
+ 
+1: 4.a;8aa-;4gg-;
+1 2: g;f;e;4.df;
+2: e;d;c;4b--b-;8f-;
+2 2: 4.f-;s;
+bar
+
+1: c;d;e&;4.f-b-f;
+1 2: 4.g-b-;s;
+2: 4.e&-b-;8c;b-;;
+2 2: 4.s;d-;
+bar
+
+1: b-;c;e&;d;c;f;
+mussym above 1: 6 "ferm";
+midi all: 6 "tempo=30"; 7 "tempo=78";
+1 2: 4.g-;8;4a-;
+2: 4.e&-b-;f-e&;
+bar 
+
+staff 1 clef=bass
+music
+
+1: 4.e&c+;db;
+2: 4g-;8g&-;4.b--f-;
+2 2: 4.b--;s;
+dblbar
+
+staff 1
+	clef=treble
+score
+	time=3/4
+	beamstyle=4,4,4
+music
+
+1: 2.d;
+1 2: r;g-b-;;
+2: r;g-d;;
+bar
+
+1: 2.d;
+1 2: r;8f-~a-;f-b-;4f-a-;
+2: r;f-c;;
+bar
+
+1: d;c;b-;
+1 2: r;g-;;
+2: r;e&-c;;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.c+;8b;a;b;
+1 2: r;e&g&;;
+2: r;e&-c;;
+bar
+
+1: 8a;b~;2;
+1 2: df;;;
+2: d-b-;;;
+bar
+
+1: f+;e&+;d+;
+1 2: gb;;;
+2: e&-b-;;;
+bar
+
+1: d+;4.c+;8g+;
+1 2: gb;;;
+2: e&-c;;;
+bar
+
+staff 1 clef=treble
+music
+
+1: g-b-dg;a-ea;8c+;b;
+1 2: 2s;4b-g;
+2: e(n)-c;;;
+bar
+
+1:2b;8a;g;
+1 2: df;;d&;
+2: f-d;;f-e;
+bar
+
+1: 2.a;
+1 2: cf;;;
+2: f-f;f-g;f-a;
+bar
+
+1: 8c#+;d+~;2;
+1 2: f;;;
+2: b-f;b-g;b-a;
+bar
+
+1: 8g;f~;2;
+1 2: c;bn-;c;
+2: a-f;;;
+bar
+
+1: 8f;d;4.e;8d;
+1 2: b(&)-;;;
+2: g-f;g-g;;
+bar
+
+1: 8c#+;d+;4.e+;8f+;
+1 2: eg;;;
+2: a-b;a-a;g-g;
+bar
+
+1: 8a+;g+;4.f+;8e+;
+1 2: ad+;gb;;
+2: b-fd+;fgd+;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8fd+;ec+;2.a-a;
+1 2: s;8e;d~;2;
+2: cgb;f;e;d;
+2 2: s;2.d-a-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8d;e;4.f;8g;
+2: b;g;f;
+2 2: 2.g-d;
+bar
+
+1: 8d;e~;4;8d;e;
+2: b;a;g;
+2 2: 2.a-en;
+dblbar
+
+score key=2#
+music
+
+1: 8e;f~;2;
+2: f;bn;b&;
+2 2:2.d-a-;
+bar
+
+1: 8f;e;4d;e;
+2: b(n);2b&;
+2 2: 2.g-d;
+bar
+
+1: 8e;d~;2;
+2: d-a-f;<<staff clef=treble>>f+a+;d+f+;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8b-;d;e;f;e;d;
+2: g-;2dg;
+bar
+
+1: 8f;d~;2;
+1 2: 2.a-;
+2: d-;e;d;
+bar
+
+1: 8b&-;d;e;f;g;b&;
+2: g-;db&;dg;
+bar
+
+1: 2.a;
+1 2: 8e;f;2d;
+2: d-a-;e;f;
+bar
+
+1: 8ba+;bg+;af+;ge+;fd+;de+;
+2: g-;dbn;db&;
+bar
+
+1: 8e+;d+~;2;
+1 2: f;e;a;
+2: d-;a-;f;
+bar
+
+1: 8b;d+;f+;g+;a+;b+;
+2: g-;d;g;
+bar
+
+1: 8a+;f+;4.d++;8c++;
+2: d-;a-;f;
+bar
+
+1: 8b+;a+;b+;a+;b+;d+;
+2: g-;d;eb;
+bar
+
+1: 8a+;cn+;d+;c+;g#;a;
+2: f-;da;dcn+;
+bar
+
+1: 8cn+;b&;a;g;d;e;
+2: g-;eb&;;
+bar
+
+1: 8f;a-;d+;c+;b;a;
+2: d-;a-;f;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8a;f;g;b;g+;f+;e+;b;
+2: e-;b-;d+;g+;
+bar
+
+1: 8d+;c+;b;a;e&;en;a;g;
+1 2: e;c;8cn;c#;b-c;e;
+2: a-;g;a-;g;
+bar
+
+1: 8a&-fn;an-f# tie;4;8f;fn;4e;
+1 2: 2b-;a&-b-;
+2: d-;a-;e-;b-;
+bar
+
+1: 8e;d;4ca;8f;e;b-;a-e;
+1 2: g-b-;s;c;s;
+mussym above all: 4 "ferm"; 4.5 "ferm";
+2: a-;e;a-g;g;
+2 2: 2.s;8d;c;
+bar
+
+1: 2g-a-c;f-a-d;
+2: 2d-a-;;
+endbar 

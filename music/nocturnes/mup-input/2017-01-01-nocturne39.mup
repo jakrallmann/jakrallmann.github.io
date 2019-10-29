@@ -1,0 +1,185 @@
+header
+	title (18) "Nocturne"
+	title "No. 39"
+	title "" "John A. Krallmann"
+	title " " "(January 1-2, 2017)"
+
+header2
+	title "Nocturne No. 39 - \%"
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	key=1#
+	measnum=y
+	scale=0.9
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1-2: 0 "onvelocity=88";
+midi 2: 0 "onvelocity=76";
+
+define P
+ifdef MIDI pedal below 1,2: 1; endif
+@
+
+rom above 1: 1 "( \(smup4n) = 100 )";
+
+define T
+ifdef ONE 1: r;b;4.e+;8f+; endif
+ifdef TWO 1: 8e+;b+;4~;4.;8e+; endif
+ifdef THREE 1: 2e+;8f+;g+;f+;e+; endif
+ifdef FOUR 1: 4.e+; 8f+;4.g+;8a+; endif
+ifdef FIVE 1: 2b;e+; endif
+ifdef SIX 1: 4.b+;8a+;4.b+;8a+; endif
+2: e;b;g+;b;
+P
+bar
+
+ifdef ONE 1: 2.g+;8a+;b+; endif
+ifdef TWO 1: 8f+;b+;4~;4.;8e+; endif
+ifdef THREE 1: 2f+;8g+;a+;g+;f+; endif
+ifdef FOUR 1: 2b+;; endif
+ifdef FIVE 1: 2e+;g+; endif
+ifdef SIX 1: 4.b+;8a+;4.b+;8a+; endif
+2: d;b;g+;b;
+P
+bar
+
+ifdef ONE 1: 2.b+;4e+; endif
+ifdef TWO 1: 8e+;b+;4~;4.;8e+; endif
+ifdef THREE 1: 2e+;8f+;g+;f+;e+; endif
+ifdef FOUR 1: 4.a+;8b+;4.a+;8e+; endif
+ifdef FIVE 1: 2.g+;4f+; endif
+ifdef SIX 1: 4.b+;8e+;4.;8; endif
+2: c;g;e+;g+;
+P
+bar
+
+ifdef ONE 1: 2.c++;8a+;g+; endif
+ifdef TWO 1: 4.c++;8b+;a+;g+;f+;e+; endif
+ifdef THREE 1: 2f+;8g+;a+;g+;e+; endif
+ifdef FOUR 1: 4.e+;8d+;4c+;8d+;e+; endif
+ifdef FIVE 1: 2e+;a; endif
+ifdef SIX 1: 4.e+;8d+;4.c+;8b; endif
+2: a-;e;c+;g+;
+P
+bar
+
+ifdef ONE 1: 1f+; endif
+ifdef TWO 1: 4.f+;8c+;4b;a; endif
+ifdef THREE 1: 4.f+;8c+;b;a;g;f; endif
+ifdef FOUR 1: 4.f+;8b;4g;f; endif
+ifdef FIVE 1: 2f;a; endif
+ifdef SIX 1: 4.b;8a;4.g;8f; endif
+2: b-;f;c#+;d#+;
+P
+bar
+
+ifdef ONE 1: 1g#+; endif
+ifdef TWO 1: 4.g#+;8f+;4.g+;8e+; endif
+ifdef THREE 1: 4.g#;8f+;4e+;d+; endif
+ifdef FOUR 1: 4.g#;8a;4.b;8d+; endif
+ifdef FIVE 1: 2a;b; endif
+ifdef SIX 1: 4.g#;8a;2b; endif
+2: e;b;g#+;e+;
+P
+bar
+
+ifdef ONE 1: 1g+; endif
+ifdef TWO 1: 4.g+;8f+;4.g+;8e+; endif
+ifdef THREE 1: 4.e+;8d+;4c+;8g;a; endif
+ifdef FOUR 1: 4.d+;8e+;4c+;g+; endif
+ifdef FIVE 1: 2b;g; endif
+ifdef SIX 1: 4.b;8a;4b;e+; endif
+2: c;g;e+;c+;
+P
+bar
+
+ifdef ONE 1: g#;b;4.f+;8e+;
+octave above 1: 1 "8va" til 1m+4.1; endif
+ifdef TWO 1: g#+;b+;4.;8d+; endif
+ifdef THREE 1: 4.b;8a;2b; endif
+ifdef FOUR 1: 4.g#+;8a+;4b+;8d++;c++; endif
+ifdef FIVE 1: 2b;e+; endif
+ifdef SIX 1: 4.f+;8g#+;4;8a+;b+; endif
+2: e;b;g#+;d+;
+P
+bar
+
+ifdef ONE 1: d+;2c+~;8;a+; endif
+ifdef TWO 1: d+;2c+;8e;f; endif
+ifdef THREE 1: 4.c+;8b;a;g;f;e; endif
+ifdef FOUR 1: 4.b+;8a+;4e+;8f+;g+; endif
+ifdef FIVE 1: 2e+;a; endif
+ifdef SIX 1: 4.b+;8a+;2c++; endif
+2: a-;e;b;a;
+P
+bar
+
+ifdef ONE 1: 2.g+;8a+;g+; endif
+ifdef TWO 1: 2.g;8a;g; endif
+ifdef THREE 1: 4.b;8c+;b;g;e;g; endif
+ifdef FOUR 1: 4.f+;8e+;4g;8a;b; endif
+ifdef FIVE 1: 2g;e+; endif
+ifdef SIX 1: 4.b+;8a+;4g+;8a+;b+; endif
+2: b-;g;e+;c+;
+P
+bar
+
+ifdef ONE 1: 2.f+;8c+;b; endif
+ifdef TWO 1: 2.f;8g;f; endif
+ifdef THREE 1: 4.f;8g;a;g;f;g; endif
+ifdef FOUR 1: 4.c+;8a;4f;8g;f; endif
+ifdef FIVE 1: 2f;4f+;b; endif
+ifdef SIX 1: 4.a+;8g+;4.f+;8e+; endif
+2: b-;f;d#+;a;
+P
+bar
+
+ifdef ONE 1: 1e+~; endif
+ifdef TWO 1: 1e~; endif
+ifdef THREE 1: 1e~; endif
+ifdef FOUR 1: 2.e;8a-;b-; endif
+ifdef FIVE 1: 1e+~; endif
+ifdef SIX 1: 1e+~; endif
+2: e-;b-;g;f;
+P
+bar
+
+ifdef ONE 1: 2.e+;4b; endif
+ifdef TWO 1: e;8;f;g;a;b;f+; endif
+ifdef THREE 1: e;b;;; endif
+ifdef FOUR 1: 1e; endif
+ifdef FIVE 1: e+;;8;f+;g+;a+; endif
+ifdef SIX 1: 1e+; endif
+2: 1e;
+P
+ifdef SIX endbar else bar endif
+@
+
+define ONE @
+T
+undef ONE
+define TWO @
+T
+undef TWO
+define THREE @
+T
+undef THREE
+define FOUR @
+T
+undef FOUR
+define FIVE @
+T
+undef FIVE
+define SIX @
+T

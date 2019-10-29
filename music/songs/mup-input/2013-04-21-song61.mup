@@ -1,0 +1,121 @@
+header
+	title (16) "Song Without Words (No. 61)"
+	title (14) " "
+	title "" "John A. Krallmann (April 21, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 61) - \%"
+
+score
+	staffs=2
+	key=2&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.9
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+1: 2.s;8a;g+;
+2: 2.s;4r;
+bar
+
+1: f+~;{8;en+;d+;}3;{c#+;d+;e+~;}3;{4;8a;}3;
+2: d-;ad+f+;en-;ac#+g+;
+bar
+
+1: b~;{8;a;g;}3;{f;g;a~;}3;;;
+2: a--;ac#+g+;d-;ad+f+;
+bar
+
+1: d+~;{8;c+;b;}3;{a;g;f~;}3;;d;
+2: g-;gben+;d-;fad+;
+bar
+
+1: b-~;{8;a-;c#;}3;4d~;8;;
+2: a--;c#en;d-;dfa;
+bar
+
+1: e~;{8;d;c;}3;{bn-;c;d~;}3;;;
+2: c-;cg;g--;bn-dg;
+bar
+
+1: f;{8;en;d;}3;{e;f;g~;}3;{4;8e;}3;
+2: g--;dgbn;c-;enb&c+;
+bar
+
+1: a~;{8;g;f;}3;{c#+;d+;a;}3;g;f;
+2: f-;eac+;b--;fbd+;
+bar
+
+1: d;c;{8g;a;g;}3;f;d;
+2: c-;engb;f--;dbc+;
+bar
+
+1: 2f;{8f;g;f;}3;8a&-;b-;
+2: f--;cfa;d&-;d&f;
+bar
+
+1: 8d&;4.c;{8b-;a&-;b-;}3;f;g;
+2: f-;cfa&;b--;d&gb;
+bar
+
+1: 2g;{8a;b;a;}3;g;a;
+2: c-;cenb;f-;e&fc+;
+bar
+
+1: 8c+;4.b;8d+;c+;4b;
+2: b--;fbd+;a&--;fbd+;
+bar
+
+1: 8f+;e+;d+;c+;d&enb;c+;b;c+;
+2: g--;gbe+;g&--;g&be+;
+bar
+
+1: d+;f+;2g+;
+2: f--;fbd+;e--;gbe+;
+bar
+
+1: 2c+;c#+;
+2: f--;ac+f+;f-;fae+;
+bar
+
+1: 2d+;{8;e+;d+;}3;c+;d+;
+2: b--;fbd+;a&--;fbd+;
+bar
+
+1: 8f+;4.e+;8f+;4.e+;
+2: g--;gbe+;g&--;g&be+;
+bar
+
+1: d+;{8a;b;d+;}3;4;c+;
+2: f--;fbd+;f-;fae+;
+bar
+
+1: f+;8g+;a+;;g+;c+;b;
+2: d-;ac+f+;e-;gbe+;
+bar
+
+1: a;8b;c+;2d+;
+2: f-;efc+;d-;f#ad+;
+bar
+
+1: e+;8f+;e+;bd+;ac+;4gb;
+2: c-;gc+e+;g-;gbd+;
+bar
+
+1: ec+;8b;c+;2g;
+2: c-;gc+e+;g--;dgb;
+endbar

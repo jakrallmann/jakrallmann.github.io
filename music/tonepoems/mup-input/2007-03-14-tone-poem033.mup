@@ -1,0 +1,168 @@
+header
+	title (18) "Tone Poem (No. 33)"
+	title "" "John A. Krallmann (3/14/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=2/4
+	beamstyle=4,4
+	key=1#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.88
+	vscheme=2f
+	release=0
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=60";
+midi 1 1: 0 "channel=11"; 0 "program=48"; 0 "onvelocity=90, 80";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=80";
+midi 2 1-2: 0 "channel=13"; 0 "program=42"; 0 "onvelocity=68";
+
+1: s;16d+;c+;b;g;
+2: s;r;
+bar
+
+1: 4.d;8g;
+2: g-;dab;
+bar
+
+1: 8a;g;a;b;
+2: eac+;fad+;
+bar
+
+1: 2d+~;
+1 2: 8a;b;a;g;
+2: g-;dgb;
+bar
+
+1: 8d+;e+;a+;f+;
+1 2: 2e;
+2: egc+;fad+;
+bar
+
+1: 4d+;8g+;f+;
+1 2: 8a;b;g;b;
+2: g-;dgb;
+bar
+
+1: 4.e+;8g+;
+1 2: 8b;c+;a;g;
+2: c-;gc+e+;
+bar
+
+1: 8f+;e+;d+;c+;
+1 2: 8d+;f;e;f;
+2: d-;fad+;
+bar
+
+1: 8b;c+;4d+;
+1 2: 8a;e;;f;
+2: g-;dac+;
+bar
+
+1: 8g+;f+;e+;f+;
+1 2: 8b;a;g;f;
+2: e-;dbe+;
+bar
+
+1: 8g+;f+;e+;16f+;g+;
+1 2: 8b;a;4g;
+2: c-;gc+e+;
+bar
+
+1: 8f+;d+;;16e+;f+;
+1 2: 8a;f;4;
+2: b--;b-fa;
+bar
+
+1: 8e+;c+;;16d+;e+;
+1 2: 8f;e;4;
+2: c-;a-eg;
+bar
+
+1: 8d#+;b;;16;c#+;
+1 2: 8f;d#;4;
+2: b--;b-f;
+bar
+
+1: 8d#+;b;;16;c#+;
+1 2: 8f;d#;4;
+2: b--;b-f;
+bar
+
+1: 8d(n)+;b;;16;c#+;
+1 2: 8f;d(n);4;
+2: b--;b-fb;
+bar
+
+1: 8d+;b;;16;c#+;
+1 2: 8f;d;4;
+2: a--;a-fb;
+bar
+
+1: 8d+;b;;16;c#+;
+1 2: 8e;d;4;
+2: g--;dgb;
+bar
+
+1: b;a#;
+1 2: 8c#;d;4e;
+2: f--;f-c#f;
+bar
+
+1: d#d#+ tie;16;e+;f+;g+;
+1 2: 16c+;b;a;g;4f;
+2: b--;b-fb;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 16f+;e+;f+;b;;a;8b~;4;
+1 2: 8g;f;2ce;
+2: e-;2a-eg;
+bar
+
+score time=2/4
+music
+
+1: 16b;a;8b~;4;
+1 2: 2ce;
+2: 2fn-ca;
+bar
+
+1: 16c+;b;8c+~;4;
+1 2: 2ce;
+2: 2d-a-f;
+bar
+
+1: 4.d+;8d#+;
+1 2: 16a;a&;8g~;;fn;
+2: 2g-db;
+bar
+
+1: 2e+;
+1 2: 16b;a;8e~;4;
+2: 2c-g-e;
+bar
+
+1: 4.g+;8a+;
+1 2: 16c+;b;8g~;4;
+2: b;c+;
+2 2: 2a-e;
+bar
+
+1: 16b+;d+;8g+~;4;
+1 2: 8a;b~;4;
+2: 2g-db;
+endbar

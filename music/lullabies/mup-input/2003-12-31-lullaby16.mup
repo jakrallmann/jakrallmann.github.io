@@ -1,0 +1,144 @@
+
+header
+	title (18) "Lullaby No. 16"
+	title (10) " "
+	title "" "John A. Krallmann (December 31, 2003)"
+
+header2
+	title (12) "Lullaby - \%"
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	measnum=y
+	staffscale=0.9
+	scoresep=10,24
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=78,64";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 
+midi 2 1: 0 "channel=13"; 0 "program=50"; 
+midi 2 2: 0 "channel=14"; 0 "program=50";
+
+1: 2..e+;8b;
+1 2: 8r;g;a;b;c+;f;4e;
+2: r;b;a;g;
+2 2: 1c;
+bar
+
+1: 8b;a~;2.;
+1 2: c;8d;e;f;e;d;c;
+2 2: f-;c;a;c;
+bar
+
+1: 8a;g~;2;8d;d#;
+1 2: c;b-;a-;b-;
+2 2: g-;d;2f;
+bar
+
+1: 4.f;8g;4e;d;
+1 2: a-;a&-;2g-;
+2 2: 2.c;4b-;
+bar
+
+1: 8d;c;b-;c;4a-;a;
+2: 2e~;8;d;c;d;
+2 2: a-;g-;2f-;
+bar
+
+1: 4.g;8f;4f;e;
+1 2: 8c;b-;a-;b-;4d;c;
+2: 2f;4a&;g;
+2 2: 2g-;c;
+bar
+
+1: 4.c;8;4.a-;8e;
+1 2: 2a-;4g-;f-;
+2: 2e;c;
+2 2: a-;g-;2f-;
+bar
+
+1: e;d;;e;
+1 2: a-;b-;f-;g-;
+2: 2f;g-;
+2 2: 2g-;c-;
+bar
+
+1: 4.a;8;4d;8e;f;
+1 2: 8e;d;c;d;c;b-;a-;b-;
+2 2: f-;c;g-;f;
+bar
+
+1: 4.g;8e;;f;4f;
+1 2: 8d;c;b-;c;4;8a-;b-;
+2 2: e;a-;d;g-;
+bar
+
+1: g;c;8;d;4e;
+1 2: 8d;4.c;2a-;
+2: r;4.e;8d;4c;
+2 2: e-;8a-;g-;2f-;
+bar
+
+1: e;d;2c;
+1 2: 2b-;e-;
+2: 2f;g-;
+2 2: 2g-;c-;
+bar
+
+/////
+
+1: 4.a-;8;8d;c#;d;a;
+1 2: 2s;8b-;a#-;4b-;
+2: 8e;d;c;d;2f;
+2 2: 2f-;g-;
+bar
+
+1: 4.g;8e;;f;4;
+1 2: 8d;c;b-;c;;a-;;b-;
+2 2: e-;a-;d-;g-;
+bar
+
+1: g;c+;8e+;d+;c+;a;
+1 2: 8d;c;4e;a;d;
+2 2: e-;8a-;g-;4f-;c;
+bar
+
+1: g;8e;f;g;b;4c+;
+1 2: 2s;4d;e;
+2: 8b;f;e;d;2s;
+2 2: 2g-;4e-;8a-;g-;
+bar
+
+1: 4.a;8;4d;8g;f;
+1 2: 8c;d;e;f;a-;b-;a-;b-;
+2 2: f-;d-;g-;;
+bar
+
+1: 8e;d;e;g;d+;4.c+;
+1 2: 2g-;e;
+2 2: c;b-;a-;g-;
+bar
+
+1: 4.a;8c+;f+;e+;a;b;
+1 2: 8e;d;4c;a;f;
+2 2: f-;c;g-;g;
+bar
+
+1: 1c+;
+1 2: 1e;
+2: 1g;
+2 2: 1c;
+endbar

@@ -1,0 +1,158 @@
+header
+	title (16) "Tone Poem (No. 82)"
+	title (14) " "
+	title "" "John A. Krallmann (July 1, 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 82) - \%"
+score
+	staffs=2
+	key=2&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,24
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=76";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+
+1: 8d+;4e+;16b;c+;8d+;4e+;16b;c+;
+2: g-;gbd+;f#-;f#bd+;
+bar
+
+1: 8d+;4c+;16b;a;8g;4.c+;
+2: f-;fbd+;e-;egc+;
+bar
+
+1: 16c+;b;4a;8b;;4e;8d+;
+2: d-;fbd+;c-;egc+;
+bar
+
+1: 16e+;d+;4c+;8d+;e+;f+;g+;a+;
+2: f-;fae+;c-;fae+;
+bar
+
+1: 16f+;e+;4d+;8f;16d+;c+;8b;a;f;
+2: b-;fbd+;g-;gbd+;
+bar
+
+1: 2b;4.a;8g;
+1 2: 16g;f;4e;8d;16c;d;4.e;
+2: e-;egc+;a--;egc+;
+bar
+
+1: 4.f#;8g;4.a;8d;
+1 2: 16a-;b-;4.c;16e;d;4.c;
+2: d-;f#a;d-;df#;
+bar
+
+1: 16bn;c+;4d+;16a&;g;16d+;e+;4.c+;
+1 2: 2f;4g;8f;e;
+2: g-;fbnd+;c-;egc+;
+bar
+
+1: 4.a;16g;f;c+;d+;4.b;
+1 2: 16c;d;4.e;4;16d;e;8f;
+2: f-;efa;b-;fb;
+bar
+
+1: 16g+;f+;4.e+;16f+;e+;4.d+;
+1 2: b;16g;a;8b;4a;16f;g;8a;
+2: e-;gbe+;d-;fad+;
+bar
+
+1: 16e+;d+;c+;b;g;e;g;b;d+;e+;d+;c+;8g;f;
+1 2: 2g;f;
+2: c-;egc+;f-;fac+e+;
+bar
+
+1: 16c+;d+;c+;b;4b;16c+;d+;c+;b;4;
+1 2: e;d;;;
+2: b-;fb;g-;8gb;8f-;
+bar
+
+1: 16c+;d+;c+;b;8a;b;16f+;g+;f+;en+;8f+;f#+;
+1 2: 2eg;a;
+2: e-;gbc+e+;f-;fac+e+;
+bar
+
+1: 16c++;b+;;a+;;g+;8;16c++;b+;;a+;;g+;8g+;
+1 2: d+;8c+;b;4d+;8c+;b;
+2: g-;8a+;g+;4f-;8a+;g+;
+2 2: s;bd+;s;bd+;
+bar
+
+1: 16c++;b+;;a+;;g+;8g+;16c++;b+;;a+;;g+;;e+;
+1 2: d+;8c+;b;4en+;e&+;
+2: e-;8a+;g+;4c-;gc+e+;
+2 2: s;bd+;2s;
+bar ending "1."
+
+1: 2d+;32r;with d- below;with g- below;b-;d;f#;g;f;g;d;g;a;b;c+;d+;f+;
+mussym below 1: 2.75 "uferm";
+1 2: 16f#;e;;d;;c;;d;2s;
+2: d-;f#a;[down]2g-;
+mussym above 2: 2 "ferm";
+ital above all: 1.5 "rit."; 3 "a tempo";
+boldital between 1&2: 3 "p";
+bar
+
+1: 1e+;
+1 2: 16g;a;[with>]4b;8a;4.g;8e;
+2: 1cge+;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1d+;
+1 2: 16g;a;4b;8a;4g;d;
+2: 1g-d;
+bar
+
+1: 16e;f;4g;8e;4c;<<staff clef=treble>>8ea;16g;a;
+2: 1c-g-;
+bar
+
+1: 4.db;8ca;2b-g;
+2: 1g-d;
+bar
+
+staff 2 clef=treble
+music
+
+1: 4.b+;8a+;2g+;
+1 2: 2d+;;
+2: 2egc+;dgb;
+boldital between 1&2: 1 "pp";
+bar
+
+staff 2 clef=bass
+music
+
+1: 2deg;b-dg;
+2: 2cgc+;g-dg;
+repeatend ending "2."
+
+1: 1d+;
+1 2: 16f#;e;;d;;c;;a-;2s;
+2: d-;f#a;8g-~;g-d tie;g-dg tie;g-dg with b above tie;
+bar
+
+1: 1g;
+2: 1g-dg with b above;
+endbar

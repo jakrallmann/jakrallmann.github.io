@@ -1,0 +1,136 @@
+header
+	title (16) "Tone Poem (No. 87)"
+	title (14) " "
+	title "" "John A. Krallmann (Sep 23, 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 87) - \%"
+score
+	staffs=2
+	key=3&
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+	scoresep=12,26
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+
+1: 4.s bm with staff below;8d ebm;8e bm;c+;b;a ebm;
+2: 8c bm with staff above;g;c+;s ebm;2s;
+bar
+
+1: 8a;g;;f;2g;
+2: g-;8d;bn;d+;a;g;f;
+bar
+
+1: 4.g;8c+;2;
+1 2: 8e;d;4c;8f;e;d;c;
+2: c-;g-;g;c;
+bar
+
+1: 4.g;8c+;2;
+1 2: 8d;e;;f;g;f;e;d;
+2: a--;e-;a;c;
+bar
+
+1: 4.a;8e+;;d+;c+;b;
+1 2: 8c;d;e;g;4f;d;
+2: f--;a;b--;a;
+bar
+
+1: 2g~;8;;c+;d+;
+1 2: 8d;e;f-;g-;2c;
+2: c-;g-;e;b-;
+bar
+
+1: 4.e+;8a+;c++;b+;g+;f+;
+1 2: 8a;b;4c+;d+;8b;a;
+2: f--;e;b-;d+;
+bar
+
+1: 8c+a+;4bg+;8ae+;4.e+;8b;
+1 2: 2s;8g;f;e;d;
+2:e-;g;c;g;
+bar
+
+1: 2c+~;8;e+;d+;b;
+1 2: 8g;a;c;e;4d;a;
+2: f-;a;b--;af+;
+bar
+
+1: 2g~;8;c+;4~;
+1 2: 8d;g-e;b-;d;4c;8g;e;
+2: e-;b-;a-;e;
+bar
+
+1: 8c+;e+;;d&+;;c+;;b;
+1 2: 4f;;f&;fn;
+2: d&;a;c+;d&+;
+bar
+
+1: 8f&d&+;ec+;;d&b;2ec+;
+2: a--;e;8a;g-;f-;e-;
+bar
+
+1: 8b;c+;d+;e+;g+;f+;b+;a+;
+1 2: d;f;a;8c+;d+;
+2: b--;a;d+;b-;
+bar
+
+1: 2g+~;8;f+;e+;f+;
+1 2: 8d+;e+;g;d&+;4c+;c&+;
+2: e-;b-;a-;e;
+bar
+
+1: 8g+;b+;f++;e++;d++;c++;e+;f+;
+1 2: b;a+;e+;f;
+2: e-;g;a-;c+;
+bar
+
+1: 8a+;g+;e+;b;2;
+1 2: b;f;8;g;e;b-;
+2: e-;g;e-;g;
+bar
+
+1: 8d&+;c+;b;a;2~;
+1 2: 2e;8g;f;e;c;
+2: a--;eac+;a--;cfa;
+bar
+
+1: 8a;c+;b;f#;2g~;
+1 2: 2d;8;e;d;b-;
+2: b--;dab;e-;dg;
+bar
+
+1:8g;b;e+;g+;2c++;
+1 2: 2e;8b+;a+;g+;e+;
+2: ceg;b--;a--;eac+;
+bar
+
+1: 2ac+ tie;8;b;d+g+;f+;
+1 2: 8g;f;e;c;2d;
+2: f--;cfa;b--;ad+with f+b+ above;
+mussym above 1: 4 "ferm"; 4.5 "ferm";
+bar
+
+1: 1be+;
+1 2: 8f;g;f;e;2b-;
+2: e-;b-;2g;
+endbar

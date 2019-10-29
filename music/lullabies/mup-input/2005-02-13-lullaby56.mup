@@ -1,0 +1,252 @@
+header
+	title (18) "Lullaby No. 56"
+	title "" "John A. Krallmann (2/13/05)"
+
+header2
+	title (12) "Lullaby No. 56 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	brace=3-4
+	barstyle=3-4
+	measnum=y
+	staffscale=0.85
+	packfact=1.25
+	scoresep=10,30
+	size=14
+	release=0
+	vscheme=2f
+	visible=whereused
+
+staff 1 defoct=5
+	vscheme=1
+	emptymeas="mr;"
+
+define T3
+	score time=3/4
+	beamstyle=4,4,4
+	music
+@
+
+define T2
+	score time=2/4
+	beamstyle=4,4
+	music
+@
+
+music
+
+midi all: 1 "tempo=64";
+midi 1: 0 "channel=7"; 0 "program=89"; 0 "onvelocity=56";
+midi 2: 0 "channel=8"; 0 "program=74";
+midi 3 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=70";
+midi 3 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=64";
+midi 4 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=64";
+midi 4 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=64";
+
+define M 2-3 @
+define B 4 @
+
+phrase above M: 3 til 10m+2;
+M: 2s;4g+;
+4: 2s;4r;
+bar
+
+M: 4.d+;8c+;4d+~;
+B: r;2gb;
+bar
+
+M: 8d+;e+;d+;b;4c+~;
+B: 2.fan;
+bar
+
+M: 8c+;d+;c+;b;4c+~;
+B: 2.eg;
+bar
+
+T2
+
+M: 8c+;an;4b~;
+B: 2df;
+bar
+
+T3
+
+M: 8b;g;an;b;4a~;
+B: 2.ce;
+bar
+
+T2
+
+M: 8a;g;4g~;
+B: 2b-d;
+bar
+
+staff B clef=bass
+T3
+
+M: 8g;e;f;g;4d~;
+B: 2.a(&)c+;
+bar
+
+T2
+
+M: 8d;e;4~;
+B: 2gb;
+bar
+
+M: 8e;d;e;c;
+B: 2fa;
+bar
+
+T3
+
+ital between 3&4: 1 "rit"; 3 "a tempo";
+M:8b;c+;4b;8g;f;
+3 2: e;2d;
+B: 2.b-a;
+phrase above M: 3 til 4m+2;
+bar
+
+1: 2b;4e;
+M: 8g-;b-;4f;g;
+3 2: 2f-;8e;d;
+B: 2.e-b-;
+bar
+
+1: e;2f;
+M: 8g;f;4a;8c;e;
+3 2: 2c;4s;
+B: 2.a-f;
+bar
+
+1: d;f;8g;a;
+M: 8e;d;c;b-;a;b;
+3 2: 2a-;8c;d;
+B: 2.b-f;
+bar
+
+1: 2b;4b;
+M: 8f;a;4g;;
+3 2: 8a-;c;4b-;8e;d;
+B: 2.ee-;
+4 2: c;2b-;
+phrase above M: 3 til 3m+3;
+bar
+
+1: c+;a;f;
+M: 8g;f;4c+;;
+3 2: c;8a;g;f;e;
+B: 2.a-f;
+bar
+
+1: g;a;b~;
+M: 8c+;b;f+;e+;d+;c+;
+3 2: d;a;f;
+B: 2.b-~f;
+bar
+
+1: 8b;4.a;4g;
+M: 8g;a;4f;g;
+3 2: d;c;e;
+B: b-a;a;b;
+4 2: s;2e;
+bar
+
+phrase above M: 1 til 12m+1;
+1: 8f;e;4d;e;
+M: 8f;g;2e;
+3 2: e;d;c;
+B: db;2cg;
+bar
+
+T2
+
+1: 8f;d;c;b-~;
+M: 8f;g;c;d;
+3 2: e;b-~;
+B: b-g;e~;
+4 2: s;a-;
+bar
+
+1: 2b-; 
+M: e;b-;
+3 2: b-;s;
+B: e;8f;e;
+4 2: 2g-;
+bar
+
+T3
+
+1: 8b-;a-;4b-;e;
+M: 8b;a;4b;c+;
+3 2: 2.a-;
+B: g;2f;
+4 2: 2f-c~;4e-c;
+bar
+
+1: 2f;4b-~;
+M: 2f;8g;a;
+3 2: 8c;b-;4f-;a-;
+B: 2.d-b-;
+bar
+
+1: b-;4.e+;8f+;
+M: 2b;8e+;d+;
+3 2: 8f;e;4b-;fbn;
+B: 2g-e;4g-f;
+bar
+
+1: bn;c+;8b&;a;
+M: 8d+;c+;4;8g;a;
+3 2: fbn;efa;s;
+B: 2.a-f;
+bar
+
+1: f;e;b-;
+M: 2fb(&);8d;e;
+3 2: e;2b-;
+B: 2.g-e;
+bar
+
+1: a-;e;8g;a;
+M: 2a;4b;
+3 2: ce~;2bn-e;
+B: 2.f-e;
+bar
+
+ital between 3&4: 3 "rit. e dim.";
+1: 2.b;
+M: 2g;8e;g;
+3 2: 2b(&)-e;4s;
+B: f;2e;
+4 2: 2.g-;
+bar
+
+1: c+;a;e+;
+M: a;2e+;
+3 2: 2.c;
+B: 2.f-e;
+bar
+
+1: 2e+;8g+;a+;
+M: 2.e+~;
+3 2: a;g;f;
+B: c;b-;a-;
+4 2: 2.e-;
+bar
+
+1: 2.b+;
+M: 2.e+;
+3 2: 2.g;
+B: 2.b-;
+4 2: 2.e-;
+endbar 

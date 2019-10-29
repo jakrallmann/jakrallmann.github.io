@@ -1,0 +1,132 @@
+header
+	title (16) "Song Without Words (No. 31)"
+	title "" "John A. Krallmann (5/22/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+
+score
+	staffs=2
+	key=5&
+	time=6/8
+	beamstyle=4., 4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	staffsep=18
+	vscheme=2f
+	clef=bass
+music
+
+midi all: 0 "tempo=88";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+define  M [with-] @
+define H [ho 0] @
+
+1: mr;
+1 2: f;a;d+;f;a;d+;
+2: M 4.d-; M e;
+bar
+
+1: 4.r;4;8e+;
+1 2: f;a;d+;f;a;e+;
+2: M 4.d;M c;
+bar
+
+1: 4.e+;8d+;f+;c+;
+1 2: H e+;f;b;d+;f+;c+;
+2: M 2.b-;
+bar
+
+1: 4c+;8d+;4.b;
+1 2: c+;e;d+;H b;d;g;
+2: 2.g-;
+bar
+
+1: 4b;8a;g+;f+;en+;
+1 2: b;c;a;g+;f+;en+;
+2: 4.a-;a; 
+bar
+
+1: 4.en+;f+;
+1 2: H en+;gn;b;H f+;f;{16bn;c+;d+;}3;
+2: 4.d-;a-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 4.a;4g;8e;
+1 2: H a;b-;d;g;b-;e;
+2: 4.g-;d;
+bar
+
+1: 4.g;4f;8d;
+1 2: H g;an-;e;f;a&-;d;
+2: 4.d-;a-;
+bar
+
+1: 4.f;4e;8d;
+1 2: H f;gn-;b-;e;g-;d;
+2: 4.e-;d;
+bar
+
+1: 4.e;8a;[pad 2]a+;[pad 3]g+;
+mussym above 1: 5 "ferm"; 6 "ferm";
+1 2: H e;g(&)-;b-;4.c;
+2: 4.a--;gf+;
+bar
+
+staff 2 clef=treble
+music
+
+1: 4.f+;4;8e+;
+2: d;e+;d+;c;a;g;
+ital between 1&2: 1 "delicatissimo";
+bar
+
+1: 4.e+;d+;
+2: b-;f;c+;a-;f;b;
+bar
+
+1: 4.e+;8b;c+;d+;
+2: g-;d;b;<<staff clef=bass>>e;b;g+;
+bar
+
+1: 4.d+;c+;
+2: f;an;e+;f+;g+;e+;
+bar
+
+1: 4.dn+;8b+;a+;f+;
+2: b-;a;f+;<<staff clef=treble>>bn-;f;b(&);
+ital between 1&2: 1 "un poco agitado";
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.f+;e+;
+1 2: 4.g;8e;d;b-;
+2: e-;b-;f;4.gn;
+bar
+
+1: 4.c~;8;d;c;
+2: 8f-;c;g;f;gn;an;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.b~;;
+1 2: H 8b;d;e;4.f;
+2: H b--;f-;a-;4.b-;
+2 2: 4.b--~;;
+endbar

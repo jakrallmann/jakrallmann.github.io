@@ -1,0 +1,290 @@
+header
+	title (16) "Tone Poem (No. 84)"
+	title (14) " "
+	title "" "John A. Krallmann (July 21-22, 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 84) - \%"
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+rom above all: 1 "Allegro ( \(smup4n) = 120 )";
+define THEME
+1: 8g;a;4gb;bd+;
+2: g-;d;b;
+bar
+
+1: 8c+e+;bd+;4.ac+;8gb;
+2: a-;e;c+;
+bar
+
+1: 8fa;gb;4.ac+;8bd+;
+2: d-;a-;f;
+bar
+
+1: 4.fa#;gb;
+2: g-;d;b;
+bar
+
+1: 8eb;a;4;e+;
+2: c-;g-;e;
+bar
+
+1: 8b-a;g;4g;d+;
+2: g-;d;b;
+bar
+
+1: 8c#a#;g;4;an;
+2: d#-;a#-;g;
+bar
+
+1: 4.df;8eg;4fa;
+2: d-;a-;f;
+bar
+
+1: 8ac+;gb;4fna;ac+;
+2: fn-;c;a;
+bar
+
+1: g#b;2eg;
+2: e-;b-;g#;
+bar
+
+//
+
+1: 8fna;eg;4df;fa;
+2: d-;a-;fn;
+bar
+
+1: 4.eg#;gb;
+2: e-;b-;g#;
+bar
+
+1: 8d+fn+;c+e+;4bd+;d+f+;
+2: d-;a-;fn;
+bar
+
+1: be+;2c+a+;
+2: a-;e;c+;
+bar
+
+1: 8d+b+;c+a+;4bg#+;d+b+;
+2: e-;b-;g#;
+bar
+
+1: 2.a+;
+1 2: 8c+;d+;4e+;a;
+2: a-;e;c+;
+bar
+
+1: 8f;g;4a;d+;
+2: d-;a-;f;
+bar
+
+1: 8c+e+;bd+;2ac+;
+2: a-;e;c+;
+bar
+
+1: 8f;g;4a;d+;
+2: d-;a-;f;
+bar
+
+1: 8e+g+;d+f+;2c+e+;
+2: a-;e;c+;
+bar
+
+1: 8a;b;4c+;bd+;
+2: d-;a-;f;
+bar
+
+//
+
+1: 4.c+e+;d+f+;
+2: a-;e;c+;
+bar
+
+1: 4.e+g+;d+f+;
+2: d-;a-;f;
+bar
+
+1: c+e+;bd+;ac+;
+2: a-;e;c+;
+bar
+
+1: gb;fa;eg;
+2: e;d-;a-;
+bar
+
+1: 4.ce;df;
+2: a-;e;a;
+bar
+
+1: 2a-df;8g;f;
+2: 2.d-;
+bar
+
+1: g-b-e;2b-eg;
+2: 2e-;4b-~;
+bar
+
+1: 2cea;4g;
+2: b-;2a-;
+bar
+
+1: 8b;a;4g;c;
+2: 2e;4a-;
+bar
+
+1: 4.a-df;cea;
+2: 4.d-;a-;
+bar
+
+1: 2dfa;8g;f;
+2: 2.d-;
+bar
+
+1: 4.g-b-e;ceg;
+2: 4.e-b-;c-g-c;
+bar
+
+1: 4.cea;a-df;
+2: 4.a--e-a-;b--f-b-;
+bar
+
+1: 2.g-b-e tie;
+2: 2.e-b- tie;
+bar
+@
+THEME
+
+1: 2g-b-e;4b-;
+2: 2.e-b-;
+dblbar
+
+score
+	key=3#
+	time=4/4
+	beamstyle=4,4,4,4
+music
+
+rom above all: 1 "Moderato ( \(smup4n) = 108 )";
+midi all: 0 "tempo=108";
+1: 2.g;8f;en;
+1 2: e;e&;2d;
+2: e-;b-;2g;
+bar
+
+1: 2.c+;8b;a;
+1 2: a;g;2gn;
+2: a-;e;2c+;
+bar
+
+1: 2.f;8a;b;
+1 2: e;d;2c;
+2: d-;a-;2f;
+bar
+
+1: 4.e;8a;2;
+1 2: 8d;c;4b-;2c;
+2: a-;e;a;g-;
+bar
+
+1: 4.c+;8f+;2;
+1 2: 8g;a;4;8b;a;g;f;
+2: f-;c;a;c;
+bar
+
+1: 4.c+;8f+;2;
+1 2: 8g;a;4;8b;a;g;f;
+2: d-;a-;f;a-;
+bar
+
+//
+
+1: 4.d+;8f+;2;
+1 2: 8c;d;4e;8b;a;g;f;
+2: b--;f-;d;f-;
+bar
+
+1: 2..e+;8d+;
+1 2: 8f;g;;b;;g;f;e;
+2: e-;b-;g;b-;
+bar
+
+1: 1c+;
+1 2: 8g;a;;d#;;e;4;
+2: a-;e;c+;e;
+bar
+
+1: 1f+;
+1 2: 8c+;d+;;a#;;b;;f;
+2: d-;a-;f;a-;
+bar
+
+1: 2..c+;8a;
+1 2: 8g;a;;d#;;e;4;
+2: a-;e;c+;e;
+bar
+
+1: 2..f;8a;
+1 2: 8e;d;;c;;b-;;a-;
+2: d-;a-;f;a-;
+bar
+
+1: 1c+;
+1 2: 8g;a;;e;2;
+2: a-;e;c+;e;
+bar
+
+1: 1c+;
+1 2: 8g;a;;e;2;
+2: a-;e;c+;e;
+bar
+
+1: 8b-;c;;e;2;
+2: a-;e;b;a;
+bar
+
+1: 8b-;c;;e;2;
+2: a-;e;b;a;
+bar
+
+1: 1b-ce;
+2: 1a-e;
+dblbar
+
+score
+	time=3/4
+	key=1#
+	transpose=up major 2
+music
+
+midi all: 0 "tempo=120";
+rom above all: 1 "Tempo I";
+THEME
+
+1: 2.g-b-e;
+2: 2.e-b-;
+endbar

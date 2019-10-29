@@ -1,0 +1,114 @@
+header
+	title (16) "Tone Poem (No. 72)"
+	title (14) " "
+	title "" "John A. Krallmann (5/29/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 72)  - \%" 
+
+score
+	staffs=2
+	key=2&
+	time=12/8
+	beamstyle=4.,4.,4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.83
+	vscheme=2f
+	packfact=0.7
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+
+1: [with-]b-;d;g;[with-]a-;d;g;[with-]b-;d;g;[with-]c;d;a;
+2: 4.g-;d;g;d;
+bar
+
+1: [with-]b;c;d;[with-]a;c#;d;[with-]g#;cn;d;a;e;d;
+2: 4.f#-;d;a;d;
+bar
+
+1: 4.e+~;8;d+;b;4.c+~;8;f+;e+;
+1 2: r;g;a;4.b;8r;g;e;4.f#;
+2: 4.c;g;a-;d;
+bar
+
+1: 4.d+~;8;b+;d+;4.c+~;8;c++;a+;
+1 2: 8r;g;a;4.b;8r;d;en;4.f#;
+2: 4b-;8a-;4.g-;4a-~;8a-g;4.f#;
+bar
+
+1: d++;g+;d+;f+;e+;g;b;g;d;a;f#;c;
+2: 4.b-;c;d;d-;
+bar
+
+1: f#;g;a;g;d+;g;e+;f+;e+;d+;c+;b;
+2: 4.e-;b-;g;e+;
+bar
+
+1: c+;a;g;f;g;a;e;f;g;e;f;a;
+2: 4.f-;c;a;c;
+bar
+
+1: a;g;d;4g;8a;;g;d;4g;8d+;
+2: 4.b-;f;b-;f;
+bar
+
+
+1: f+;e+;d+;4e+;8g;f+;e+;d+;4e+;8g;
+2: 4.c;g;c;g;
+bar
+
+1: f;a;b;4c+;8e;;d;c;4d;8a&-;
+2: 4.f-;c;b-;f;
+bar
+
+1: a&-;g-;f-;4g-;8d&;;c;b-;4c;8e;
+2: 4.e-;b-;a&-;e;
+bar
+
+1: e;d;c;4d;8e;g;f;e;4f;8b-;
+2: 4.a(n)-;f;b-;a&;
+bar
+
+1: e+;d+;c+;g;c+;d+;e+;d+;c+;g;c+;d+;
+2: 4c;8g;c+;4d+;b-;8g;c+;4d+;
+ital between 1&2: 1 "un poco agitado";
+bar
+
+1: e+;d+;c+;g;c+;d+;e+;d+;c+;f;d+;c+;
+mussym above 1: 11 "ferm"; 12 "ferm";
+2: 4a-;8g;c+;4d+;f-;8a;4.e+;
+ital between 1&2: 10 "dolce";
+bar
+
+rom above all: 1 "Largo";
+1: 2.b;;
+1 2: 4r;8d;4.ce;4r;8d;4.ce;
+2: r;f~;f~b;4.f;8r;f~;f~b;4.f;
+2 2: 2.b-;;
+bar
+
+
+1: 2.b+;;
+1 2: 4r;8d+;4.e+;4r;8d+;4.e+;
+2: r;f;b;4.c+;8r;f;b;4.c+;
+2 2: 2.b-;;
+bar
+
+1: 1.f-d;
+2: 1.b--f-;
+boldital between 1&2: 1 "pp";
+endbar

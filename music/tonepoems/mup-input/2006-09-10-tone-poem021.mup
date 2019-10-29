@@ -1,0 +1,190 @@
+header
+	title (18) "Tone Poem (No. 21)"
+	title "" "John A. Krallmann (Sep 10, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=g major
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.85
+staff 2
+	clef=bass
+
+
+music
+
+midi all: 1 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=90, 70";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+1: r;8;a;b;d+;
+2: g-;ad+;gd+;
+bar
+
+1: 8d+;e+;4.g;8e;
+2: c-;c+e+;be+;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 4.a;8a#;
+1 2: 8e;e&;4d;
+2: d-;df;
+bar
+
+1: 2b~;
+1 2: 8d;d#;e;d;
+2: g-;db;
+bar
+
+1: 8b;d+;;c+;
+1 2: d(n);e;
+2: b--;c-;
+bar
+
+1: ag+;gc+;
+2: c+e+;e+;
+2 2: s;8a;g;
+bar
+
+score time=3/4
+music
+
+1: 8ac+;g#b;fa+;ag+;af+;c+e+;
+2: fd+;dc+;d-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4.a#c#+;8cn+e+;4bd+;deb;
+2: g-;db;bg+;g#-;
+bar
+
+1: 4.ceb;8a;4ac+a+;;
+2: a-;e;ae+;ge+;
+bar
+
+1: ac+a+;ac+g+;gc+g+;ac+f+;
+2: fd+;ec+;e+;d+;
+2 2: 2s;da;
+bar
+
+1: f+;e+;ege+;ec+;
+1 2: 2g;s;
+2: b;e+;ca;a-g;
+2 2: 2e;s;
+bar
+
+1: fa;g;a;ca#;
+1 2: 2.c;4s;
+2: d;e;f;d-;
+2 2: 2.d-;4s;
+bar
+
+1: 4.db;8c+e+;4gd+;gb;
+2: g-;d;b;d#+;
+bar
+
+1: 4.eb;8a;4ea;eg;
+2: c-;ea;gc+;ac+;
+bar
+
+1: cdf;fe+;ed+;fc+;
+2: d-;a;c+;d+;
+bar
+
+1: 4.b;8e+;4ee+;b;
+1 2: fg#;e;2s;
+2: e-;b-;g#;d+;
+bar
+
+1: d+;c+;b;a;
+1 2: 1e;
+2: a-;e;c+;e;
+bar
+
+1: eg;df;ce;cf;
+2: d-;a;f;d;
+bar
+
+1: 2.ca;4cd;
+2: g-;f;e;d;
+bar
+
+1: 2.b-g;4d;
+2: 1g-d;
+bar
+
+1: 1b;
+1 2: d;a;g;f;
+2: g-;d;b;d;
+bar
+
+1: d+;c+;b;g;
+1 2: 1e;
+2: a-;e;c+;e;
+bar
+
+1: 2.a;4a#;
+1 2: e;f;2e;
+2: d-;a-;f;d+;
+bar
+
+1: 2.b;4g;
+1 2: a;g;f;s;
+2: g-;d;b;d+;
+bar
+
+1: 2.e+;4ag+;
+1 2: d+;c+;b;s;
+2: c;g;e+;g;
+bar
+
+1: ba+;bg+;d+f+;bg+;
+2: g-;d;b;d;
+bar
+
+1: d+f+;c+e+;ac+;ae+;
+2: c;g;e+g+;ge+;
+bar
+
+1: 2.bd+;4gb;
+2: g-;d;b;d+;
+bar
+
+1: 2.bd+;4gb;
+2: g-;d;b;d+;
+bar
+
+1: 2.bg+;4gb;
+2: g-;d;b;d+;
+bar
+
+1: d+;c+;b;a;
+1 2: 2e;c;
+2: c-;g-;e;g-;
+bar
+
+1: 2cg;[pad 3]a =a g+;
+2: 2e;e&c+;
+print (a.x-7, a.y) "\(acc_gt)";
+bar
+
+1: [pad 3]1b =b g+;
+2: 1gd+;
+print (b.x-7, b.y) "\(acc_gt)";
+endbar

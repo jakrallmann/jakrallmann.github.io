@@ -1,0 +1,181 @@
+header
+	title (18) "Lullaby No. 1"
+	title "" "John A. Krallmann (September 14, 2003)"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1&
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	measnum=y
+	staffscale=0.8
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=76";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=82,64";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+1: 4.a;8g;f;e;
+1 2: 2.c;
+2: f-;c;a;
+bar
+
+1: 8.e;32f;e;4.d;{32d;e;f;g;a;}5;
+1 2: c;2b-;
+2: b-;f;a-;
+bar
+
+1: 8b;f+;4.g+;8d+;
+1 2: 2.d;
+2: g-;d;b;
+bar
+
+1: 8e+;d+;c+;b;f#;g;
+1 2: b;e;c;
+2: c;g;b;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8dg#;4ca;8e;2db;
+2: f-;c;g-;d;
+bar
+
+1: [grace;slash 1]8c+;b;4a;8g;d;a;4eg;
+1 2: d;e;2s;
+2: c;g;b;c+;
+bar
+
+1: 8g;4f;8c;2d;
+1 2: b-;a-;2s;
+2: 2s;8a;g;f;g;
+2 2: f-;c;2b-;
+bar
+
+1: 8d;g;a;g;b-g;4a-f;8c+;
+1 2: b-;e;2s;
+2: c;g;f-;c;
+bar
+
+1: 8c+;b;f;g;a;c+;d+;e+;
+1 2: 2d;4e;g;
+2: b-;f;c;b;
+bar
+
+1: 2f+;;
+1 2: 8b;a;g;a;2f;
+2: f-;c;a;c;
+dblbar
+
+score key=5&
+music
+
+1: 8f+;e+;d+;c+;en;f;a;c+;
+1 2: a;f;s;d;
+2: d-;a-;d;f;
+bar
+
+1: 8c+;b~;2.;
+1 2: 2d;4c;b-;
+2: g-;d;a;g;
+bar
+
+1: e;f;4.a;8g;
+1 2: 1c;
+2: g;a;b;c+;
+2 2: 1a-;
+bar
+
+1: 8.g;32a;g;2.a-f;
+1 2: b-;2.s;
+2: d-;a-;b-;d;
+bar
+
+1: f;2.e;
+1 2: 1b-;
+2: g-;d;e;g;
+bar
+
+1: 8e;f;2.;
+1 2: g-;a-;b-;d;
+2: d-;a-;e;d;
+bar
+
+1: 2b-;4.d;8e;
+2: g-;d;e;d;
+bar
+
+1: 4.a-;8b-;d;e;f;a;
+2: d-;a-;b-;a-;
+bar
+
+1: a;g;4.d;8e;
+1 2: 1b-;
+2: g-;d;a;d;
+bar
+
+1: f;a;;8f+;e+;
+1 2: 2b-;c;
+2: 2g;4a;g;
+2 2: 1a-;
+bar
+
+1:  1d+;
+1 2: 2f;4g-;a-;
+2: r;a-;b-;c;
+2 2: 1d-;
+bar
+
+1: 1f-d;
+2: 1d-d;
+dblbar
+
+score key=3#
+music
+
+midi all: 0 "tempo=60";
+1: 8e+;c+;b;a;2f+a+;
+1 2: 2s;8r;a;g;a;
+2: c+;d+;r;8e;f;
+2 2: 2a-;d-;
+bar
+
+1: 2c+e+;fa;
+1 2: 8r;e;f;a;r;b-;c;d;
+2: r;e;r;d;
+2 2: 2a-;d-;
+bar
+
+midi all: 3 "tempo=56"; 4 "tempo=52";
+1: 8d;f;e;d;4d;8c;{32a-;b-;c;d;e;}5;
+1 2: 2g-;s;
+2: r;b-;8f;fn;4e;
+2 2: 2e-;a-;
+bar
+
+midi all: 1 "tempo=48"; 3 "tempo=44";
+1: 8f;a;a;16b;a;8d;e;4c;
+2: 8r;a-;4b-;f;e;
+2 2: 2d-;a-;
+bar
+
+midi all: 1 "tempo=36";
+1: ms;
+2: f;a;2ca;
+2 2: 2d-a-;a--;
+endbar

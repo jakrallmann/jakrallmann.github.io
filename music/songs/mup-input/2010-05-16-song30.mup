@@ -1,0 +1,145 @@
+
+header
+	title (16) "Song Without Words (No. 30)"
+	title "" "John A. Krallmann (5/16/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=5&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.78
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=68";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+rom above all : 1 "Rubato ( about \(smup4n) = 68 )";
+1: 4.s;8a;b;a;
+2: 4.s;8r;4;
+bar
+
+1: 4.f+;8a+;g+;e+;
+2: 8d;a;4b&&;e+;
+bar
+
+1: 4.f+;8e+;d+;b&&;
+2: 8d;a;4b&&;e+;
+bar
+
+score time=4/4 ; beamstyle=2,2
+music
+
+1: b&&;2.a;
+2: 8d-;a-;f;a;e+;d+;f+;e+c&+;
+bar
+
+1: 2db;gc+;
+2: 8g-;d;a;g;a-;g;b;a;
+bar
+
+1: 2fd+;4.e;8b&&;
+2: 8b-;f;c+;b;g-;e;b&&;e;
+bar
+
+1: eb&& ph above;2.fa eph; 
+2: 8d-;a-;f;a;e+;d+;c+;a;
+bar
+
+1: 8a ph above;[up]4.b eph;8b ph above;4.c+ eph;
+2: 8g-;d;a;g;a-;g;b;a;
+bar
+
+1: 8c+ ph above;4.d+ eph;8f+ ph above;e+;d+;e+ eph;
+2: 8b-;f;c+;b;g-;d;b&&;g;
+bar
+
+1: f+ ph above;2.aa+ eph;
+2: 8d-;a-;f;a;e+;d+;c+;a;
+bar
+
+1: 8a+ ph above;4.bb+ eph;8b+ ph above;4.c+c++;
+2: 8g-;d;c+;b;a-;g;b;a;
+bar
+
+1: 2e+e++ eph;8dbe+ ph above;ff+;4gg+ eph;
+2: 8b-;f;c+;d+;g-;d;b&&;e;
+bar
+
+1: 8gg+ ph above;4.ff+ tie,eph;2;
+2: 8d-;a-;f;a;e+;d+;e+;f+;
+bar
+
+define M1
+1: [pad 4]8e =e f ph above; [pad 4]d =d f eph,tie;2.;
+2: 8d-;a-;e;f;a;f;e;d;
+print (e.x-7, e.y) "\(acc_gt)";
+print (d.x-7, d.y) "\(acc_gt)";
+bar
+@ 
+
+M1
+M1
+
+1: 8fa ph above;eg eph,tie;2.;
+2: 8e-;b-;f;e;b;g;f;e;
+bar
+
+define M2
+1: 8eg ph above;df eph,tie;2.;
+2: 8d-;a-;e;d;a;f;e;d;
+bar
+@
+
+M2
+M2
+
+score time=6/8 ; beamstyle=4.,4.
+music
+
+rom above all: 1 "( \(smup8n) = \(smup8n) )";
+1: {eg;fa;}2,4.;{ge+;fd+;}2,4.;
+2: 8e-;b-;a;g;b;f;
+bar
+
+1: 4.ed+;ec+;
+2: 8a-;e;g;b;a;c+;
+bar
+
+1: 8ec+;4fd+ tie;4.;
+2: 8b-;f;c+;b;d+;b;
+bar
+
+1: 8db;4ec+ tie;4.;
+2: 8g-;d;b;g;b;f-;
+bar
+
+1: 8b-g;4ca tie;4.;
+2: 8e-;b-;g;b-;g;b-;
+bar
+
+1: 8b-g;4ca tie;4.;
+2: 8a-;e;g;e;g;a-;
+bar
+
+1: 2.fa;
+1 2: [pad 4]4.e =e;[pad 4]d =d;
+print (e.x-7, e.y) "\(acc_gt)";
+print (d.x-7, d.y) "\(acc_gt)";
+2: 8d-;a-;e;4.f;
+endbar

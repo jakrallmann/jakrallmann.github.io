@@ -1,0 +1,140 @@
+header
+	title (16) "Song Without Words (No. 26)"
+	title "" "John A. Krallmann (11/20/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2#
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,24
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=84";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: 2r;8;b-;d#;f;
+2: b-f;;;;
+bar
+
+1: 4.a;8g;4.f;8b-;
+2: b-g;;b-a;;
+bar
+
+1: 2b~;8;d+;b;a;
+2: b-g#;;b-gn;;
+bar
+
+1: 2.b;4d+;
+1 2: e;;d;;
+2: b-g#;;b-a;;
+bar
+
+1: 8e+;4d+;8c+;2b;
+1 2: e;;f;;
+2: b-g#;;b-a;;
+bar
+
+1: 2b;8e+;4d+;8c+;
+1 2: d;e;c;d;
+2: b-g#;;b-gn;;
+bar
+
+1: 2b;e;
+1 2: c;;;;
+2: b-a;;;;
+bar
+
+1: 1f~;
+1 2: c;;d;;
+2: b-f;;;;
+bar
+
+1: 1f;
+1 2: [with>]c;;d;;
+2: b-f;;;;
+bar
+
+1: 2a;4g;f;
+1 2: b-;;;;
+2: g-e;;;;
+bar
+
+1: 2f;e;
+1 2: b-;;c;;
+2: a-g;;;;
+bar
+
+1: 2a;d;
+1 2: e;;a-;;
+2: f-d;;f-e;f-d;
+bar
+
+1: 2b;e;
+1 2: d;;b-;;
+2: g-f;;g-a;g-g;
+bar
+
+1: 2d+;4c+;b;
+1 2: e;;c;d;
+2: g#-fb;;;g-eb;
+bar
+
+1: 2b;a;
+1 2: d;;c;;
+2: a-eg;;;;
+bar
+
+1: 2d+;a;
+1 2: e;;d;;
+2: f-da;;;;
+bar
+
+1: 2f+;e+;
+1 2: a;;g;;
+2: g-db;;;;
+bar
+
+1: 2d+;c+;
+1 2: cg;;cf;cg;
+2: a-b;;a-a;;
+bar
+
+1: 2c+;b;
+1 2: d#f;;;;
+2: b-f;;;;
+bar
+
+1: 2a;g;
+1 2: b-e;;b-d;;
+2: g-e;;;;
+bar
+
+1: 2f;e;
+1 2: b-;;a-c;;
+2: a-g;;;;
+bar
+
+1: 1g;
+1 2: b-e;;b&-e;;
+2: d-d;;;;
+bar
+
+1: [ho+2.5]1f;
+1 2: 1a-e;
+2: 1d-d;
+endbar

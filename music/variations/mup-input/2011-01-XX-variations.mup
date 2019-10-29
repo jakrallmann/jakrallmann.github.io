@@ -1,0 +1,709 @@
+
+header
+	title (18) "Theme and Variations"
+	title "" "John A. Krallmann (January 2011)"
+
+header2
+	title (12) "Theme and Variations - \%"
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	rehstyle=circled
+	packfact=1.4
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=2
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=90";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=90";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+
+define TEMPO(X)	
+midi all: 1 "tempo=" + `X`;
+rom above all: 1.5 "( \(smup4n) = " + `X` + " )";
+@
+
+TEMPO(154)
+1: b ph above;e+;2g eph;
+2: e-;egb;
+boldital between 1&2: 1 "f";
+bar
+
+1: c+ ph above;e+;2a eph;
+2: a-;eac+;
+bar
+
+1: f ph above;b-;c+;b;
+2: b--;d#fb;
+bar
+
+1: g;f;2e eph;
+2: e-;egb;
+bar
+
+1: c ph above;b-;a;f;
+2: f-;d#ab;
+bar
+
+1: g;a;b;d+;
+2: e-;dgb;
+bar
+
+1: e+;b;a;g;
+2: c-;eac+;
+bar
+
+1: a;b;c+;d+;
+2: d-;fad+;
+bar
+
+1: a#;b;2 eph;
+2: g-;dgb;
+bar
+
+1: b ph above;e;2 eph;
+2: c-;gac+;
+bar
+
+1: [grace;slash 1]8a ph above;4;d;2 eph;
+2: b--;fab;
+bar
+
+1: g ph above;c;;b-;
+2: a--;ega;
+bar
+
+1: a-;f;2 eph;
+1 2: 2s;4b-;c;
+2: d-;df;
+bar
+
+1: a ph above;g;a;b;
+2: e-;degb;
+bar
+
+1: b;e;2 eph;
+2: c-;gac+;
+bar
+
+1: [grace;slash 1]8a ph above;4;d;2d eph;
+2: b--;fab;
+bar
+
+1: [grace;slash 1]8d+ ph above; 4;c+;b;g;
+2: a--;eac+;
+bar
+
+1: e+;d+;e+;f+;
+2: d-;fc+d+;
+bar
+
+1: a+;g+;;b;
+2: e-;egb;
+bar
+
+1: d+;c+;;e;
+2: a--;eac+;
+bar
+
+1: 2.g;4f;
+1 2: a-;b-;2c;
+2: d-;df;
+bar
+
+1: f;g;2e eph;
+1 2: a-;b-;2g-;
+2: e-;b-;
+bar
+
+1: f+ ph above;g+;f+;e+ eph;
+1 2: a;b;a;g;
+2: e;b;
+boldital between 1&2: 1 "p";
+bar
+
+1: f ph above; g;2e eph;
+1 2: a-;b-;a-;g-;
+2: e-;b-;
+boldital between 1&2: 1 "mf";
+bar
+
+1: f ph above;g;a;f+;
+2: d-;fad+;
+boldital between 1&2: 1 "f";
+bar
+
+1: 8g+;a+;f+;g+;2e+ eph;
+2: e-;bg+;
+bar
+
+
+1: 8g+ ph above;a+;f+;g+;2e+ eph;
+2: e-;gbe+;
+boldital between 1&2: 1 "mp";
+bar
+
+1: 8g+ ph above;a+;f+;g+;2e+ eph;
+2: e-;gbe+;
+boldital between 1&2: 1 "pp";
+bar
+
+1: f;g;a;d+;
+2: d-;fad+;
+bar
+
+1: 2r;[with>]e+;
+2: e-;gbe+;
+dblbar reh num
+
+newpage
+
+score
+	packfact=0.8
+music
+
+TEMPO(144)
+1: b;8g+;f+;e+;b;a;g;
+2: e-;gbe+;
+bar
+
+1: c+;8a+;g+;f+;e+;c+;a;
+2: a-;eac+;
+bar
+
+1: 8b;b-;e#;f;d+;c+;b;a;
+2: b--;d#fb;
+bar
+
+1: 8g;a;g;f;4e;8a#-;b-;
+2: e-;egb;
+bar
+
+1: 8c;a;b-;c;a;f;g;a;
+2: f-;d#ab;
+bar
+
+1: 8f;a;e#;f;d+;c+;b;a;
+2: d#ab;fc+d#+;
+bar
+
+1: 8g;a;b;d+;e+;g+;f+;d+;
+2: e-;dgb;
+bar
+
+1: 8e+;b;a;g;a;g#;a;b;
+2: c-;eac+;
+bar
+
+1: 8a;b;c+;c#+;f+;e+;d+;cn+;
+2: d-;fad+;
+bar
+
+1: 8a#;b;;c+;4b;;
+2: g-;dgb;
+bar
+
+1:8b;e;;d#;e;c+;{b;a;g#;}3;
+2: c-; gac+;
+bar
+
+1: 8a;d;;c#;d;a;{;g;f;}3;
+2: b--;fab;
+bar
+
+1: 8g;c;;b-;c;e;{e;g;b;}3;
+2: a--;ega;
+bar
+
+1: 8b;c+;b;a;e&;d;en;f;
+2: d-;df;
+bar
+
+1: 8a;g;a;g;a;g;a;b;
+2: e-;degb;
+bar
+
+1: 8e+;b;a;e;4;e&;
+2: c-;gac+;
+bar
+
+1: 8d+;a;g;d;4;f;
+2: b--;fab;
+bar
+
+1: 8d+;c+;;b;;a;;g;
+2: a--;eac+;
+bar
+
+1: 8e+;d+;;e+;;f+;;a+;
+2: d-;fc+d+;
+bar
+
+1: 8a+;g+;;f+;;e+;;b;
+2: e-;egb;
+bar
+
+1: 8d+;c+;;b;;a;;g;
+2: a--;eac+;
+bar
+
+1: 8a;b;;c+;;d+;;f+;
+2: d-;dfc+;
+bar
+
+1: 8f+;g+;f+;e+;4.;8f+;
+2: e-;4egb;d-;
+bar
+
+1: 8f+;g+;f+;e+;;a;b;c+;
+2: c-;eac+;
+bar
+
+1: 8f+;g+;f+;e+;b;e;f;g;
+2: e-;egb;
+bar
+
+1: 8f;g;a;a~;;d+;e+;f+;
+2: d-;fad+;
+bar
+
+1: 8b+;a+;g+;f+;4e+;b;
+2: e-;bg+;
+bar
+
+1: 8g;a;g;f;4e;b-;
+2: e-;eg;
+bar
+
+1: 8g;a;f;g;4e;b-;
+2: e-;eg;
+bar
+
+1: 8f;g;a;~;;;4d+;
+2: d-;fad+;
+bar
+
+1: r;e+;2;
+2: e-;gbe+;
+dblbar reh num
+
+newpage
+
+define G [grace; slash 1]8 @
+define GB [grace]8 @
+
+TEMPO(124)
+1: G c+;4b;G f+;4e+;G a;2g;
+2: 2.e-;4egb;
+bar
+
+1: G b;4c+;G d+;4e+;G g#;2a;
+2: 2.a-;4eac+;
+bar
+
+1: G g;4f;G c;4b-;G b;4c+;G c+;4b;
+2: 2b--;4d#fc+;dfb;
+bar
+
+1: G a;4g;G g;4f;G f;2e;
+2: 2.e-;4egb;
+bar
+
+1: G b-;4c;G c;4b-;GB c+;GB b;4a;GB a;GB g;4f;
+2: 2f-;4d#ac+;dab;
+bar
+
+1: GB b-;GB f;4g;GB e;GB f;4a;GB g;GB a;4b;GB b;GB c+;4d+;
+2: 2e-;4d#gb;dngb;
+bar
+
+1: GB g+;GB f+;4e+;GB d+;GB c+;4b;GB f;GB g; 4a;GB e;GB f;4g;
+2: 2.c-;4eac+;
+bar
+
+1: GB f;GB g;4a;G a;4b;GB f; GB a;4c+;16g+;f+;e+;c+;
+2: 2.d-;4fad+;
+bar
+
+staff 2 timeunit=4
+music
+
+1: 4.a#;16b;c+;2b;
+2: g-;dgb;;;
+bar
+
+1: 4.b;{16c+;b;a;}3;4.e;8a;
+2: c-;eac+;;gac+;
+bar
+
+1: 4.a;{16b;a;g;}3;2d;
+2: b--;dgb;fgb;fngb;
+bar
+
+1: G a;4.g;8c;4;{8b-;a-;b-;}3;
+2: a--;eac+;ega;c#eg;
+bar
+
+1: GB c;GB b-;4.a-;8f;{4f;g;a;}3;
+2: d-;df;cf;;
+bar
+
+1: 4.d+;8b;a;g;a;b;
+2: b--;dgb;d#gb;egb;
+bar
+
+1: 4.ebe+;8a;{4a;g#;a;}3;
+1 2: 2s;{2e;4d#;}3;
+2: c-;gac+;egac+;gc+;
+bar
+
+1: 4.dad+;8da;{4a;g;a;}3;
+1 2: 2s;{2d;4d#;}3;
+2: b--;fab;dgb;d#gb;
+bar
+
+1: 4.ead+;8c+;b;a;b;c+;
+2: a--;eac+;egac+;efac+;
+bar
+
+1: 4.fae+;8d+;G d+;8c#+;d+;16e+;f+;g+;a+;
+2: d-;fad+;fd+;fc+d+;
+octave below 2: 1 "8va";
+bar
+
+1: G c++;8b+;4a+;G;8g+;G a+;8g+;4b;G e+;8d+;
+2: e-;egb;;dgb;
+bar
+
+1: G e+;8d+;G;4c+;G;8b;G c+;8b;G;4e;8g;
+2: a--;eac+;;egac+;
+bar
+
+1: 8g;4.f~;;16e;f;
+1 2: 8a-;4;8b-;2c;
+2: d-;df;;;
+bar
+
+1: G g;8a-f;4b-g;8g-e;G f;2g-e;
+2: e-;b-;;;
+bar
+
+1: G g+;8af+;4bg+;8af+;G f+;2ge+;
+2: b-;d#;e;b;
+boldital between 1&2: 1 "p";
+bar
+
+1: 8a-f;b-g;a-e;g-e tie;4;8g;f;
+1 2: 2.s;4a-;
+2: e-;b-;c;d;
+boldital between 1&2: 1 "mf";
+bar
+
+1: 8e;f;G b;8a;G b;8a~;4;Gg+;16f+;e+;8d+;
+2: d-;fad+;;;
+bar
+
+1: 16g+;a+;g+;f+;2.e+;
+2: e-;gbe+;fad+;egc+;
+bar
+
+1: 16g;a;g;f;2.e;
+2: e-;egb;dfa;ceg;
+octave below 2: 1 "8va";
+bar
+
+1: 16g+;a+;g+;f+;2.e+;
+2: e-;fad+;;egc+;
+bar
+
+1: 8a;b;a;b;c+;d+;e+;f+;
+2: e-;fad+;fae+;fc+d+;
+bar
+
+1: 2r;GB g+;GB f+;2e+;
+2: 2e-;egb;
+boldital between 1&2: 1 "p";
+dblbar reh num
+
+newpage
+
+TEMPO(116)
+1: b;8f+;g+;b;e;f;g;
+2: e;2egb;4degb;
+bar
+
+1: 8a;b;c+;d+;4e+;8g;a;
+2: a--;2eac+;4egac+;
+bar
+
+1: 8f;b-;c;b-;c+;b;e#;f;
+2: b--;2d#fa;4dfab;
+bar
+
+1: 8a;g;f;g;4.e;8d;
+2: e-;2egb;4degb;
+bar
+
+1: 8c;b-;a#-;b-;e#;f;c+;b;
+2: f-;2b-d#f;4dfab;
+bar
+
+1: 8f;g;a;b;d+;g+;f+;d+;
+2: e-;2dgb;4efgb;
+bar
+
+1: 8e+;g+;b;a;g#;a;b;c+;
+2: c-;2eac+;4gac+;
+bar
+
+1: 8a;b;c+;d+;e+;f+;g#+;a+;
+2: d-;2fad+;4dfac+;
+bar
+
+1: 8a#+;b+;e++;e&++;d++;b+;f+;g+;
+2: g-;2dgb;4egb;
+bar
+
+1: 8b+;e+;;d#+;e+;f+;g+;a+;
+2: c-;2gac+;4egac+;
+bar
+
+1: 8a+;d+;;c#+;d+;e+;f+;g+;
+2: b--;2fab;4dfgb;
+bar
+
+1: 8g+;c+;;b;a;b;c+;e+;
+2: a--;2gac+;4egad+;
+bar
+
+1: 8a;b;c+;d+;e+;f+;g+;a+;
+2: d-;2dfc+;4fac+d+;
+bar
+
+1: 8a+;16b+;a+;8g+;a+;4.b+;16a+;g+;
+2: e-;2egb;4dgb;
+bar
+
+1: 8b+;e+;;16a+;g#+;4.a+;16f+;g+;
+2: c-;2gac+;4efac+;
+bar
+
+1: 8a+;d+;;c#+;d+;e+;16f+;g+;a+;c++;
+2: b-;2fab;4d#fab;
+bar
+
+1: 8d++;4c++;16b+;a+;8d++;4c++;16b+;g+;
+2: a--;2eac+;4egac+;
+bar
+
+1: 8e+;4d+;16c#+;d+;[with>]8e&+;4d+;16en+;f+;
+2: d-;fc+d+;[with>]8gc+e&+;4.fc+d+;
+bar
+
+1: 8a+;4g+;16a+;b+;8a+;4g+;16a;b;
+2: e-;2egb;4dgb;
+bar
+
+1: 8d+;4c+;16e;g;8d+;4c+;16e;g;
+2: a--;2eac+;4egac+;
+bar
+
+1: 8b;4a;16b-;c;8b;4a;16e;f;
+2: d-;2df;4fc+d+;
+bar
+
+1: 8b-a;4b-g;8a-f;4.g-e;16f+;g+;
+2: e-;b-;e;b-;
+bar
+
+1: 8c+a+;4bg+;8af+;4ge+;[with>]a-df;
+2: e-;b-;e;[with>]b-;
+bar
+
+1: 8a-df;4dg;8dfa;fad+;4.gbe+;
+1 2: 8s;a-;b-;s;2;
+2: e-;b-;e;b-;
+boldital between 1&2: 1 "ff";
+bar
+
+1: 8a-df;4a-dg;8dfa;ad+e+;4.ad+f+;
+2: d-;a-;fad+;ad+f+;
+bar
+
+1: 8g+;4a+;8g+;2e+;
+2: e-;bg+;af+;fd+;
+ital between 1&2: 1 "subito \f(TX)p";
+bar
+
+1: 8g+;4a+;8g+;2e+;
+2: e-;bg+;fd+;ec+;
+bar 
+
+1: 8g;a;g;f;2e;
+2: e-;df;2cega;
+mussym above 1: 3 "ferm";
+bar
+
+1: 8d;e;f;g;a;b;c+;d+;
+2: d-;a-;f;d+;
+boldital between 1&2: 1 "pp";
+bar
+
+1: 1e+g+;
+2: e-;b-;2e+g+;
+dblbar reh num
+
+newpage
+
+score
+	packfact=0.7
+	scoresep=7
+music
+
+TEMPO(100)
+midi 1 1-2: 0 "onvelocity=70";
+midi 2 1: 0 "onvelocity=90";
+1: 8r;16g;a;8b;e+;2d+;
+1 2: 2s;8a;b;g;f;
+2: b;e+;g~ down;gb;
+bar
+
+1: 8r;16a;b;8c+;e+;2c+;
+1 2: 2s;8a;g;f;e;
+2: c+;e+;a~ down;ac+;
+bar
+
+1: 8r;16d;e;8f;a;;g;d#;e;
+2: f;b-;c+;b;
+bar
+
+1: 8b;e+;16a;d+;e+;f+;8bg+;af+;4ge+;
+2: g;f;4.e;8d;
+bar
+
+1: 8r;16e+;f+;8g+;d+;;c+;16a;b;8c+;
+2: c;b-;a;f;
+bar
+
+1: 8ac+;gb;bd+;ac+;ae+;ad+;b;a;
+1 2: d;e;f;cf;
+2: g;a;b;d;
+bar
+
+1: 8a;g;a-dg;a-df;;g-ce;;g-cd;
+1 2: b-e;2.s;
+2: e;b-;c;a-;
+bar
+
+1: 8r;g-cd;r;f-a-d;r;g-b-e;r;a-df;
+2: a-;b-;c;d;
+bar
+
+1: 8r;b-d#f;;;[with>]b-dg;b-df;b-de;b-df;
+2: 1b-;
+bar
+
+1: 8b-eg#b;;;;;;;;
+2: 8.b-;16;2.e-;
+bar
+
+1: 8eac+;;dfa;;;;;;
+2: 8.a-;16;2d-~;8;16d;c;
+bar
+
+1: 8dgb;;g-ce;;;;;;
+2: 8.g-;16;2c~;8.;16b-;
+bar
+
+1: 8g-ce;;f-a-b-d#;;;;;;
+2: 8a-;16b-;c;8.f-~;16b--f- tie;4.;16a-;b-;
+bar
+
+1: 8f-a-b-d#;;;;;;g-b-e;;
+2: [with>]16c;b-;a-;b-;[with>]c;b-;a-;b-;[with>]c;b-;a-;b-;[with>]8.b-;16e-;
+bar
+
+1: 8g-b-e;;;;;;;;
+2: 2..e-;16f-;g-;
+bar
+
+1: 8g-ce;;a-df;;;;[with>]a-dg;a-df;
+2: 8.a-;16;2.d-;
+bar
+
+1: 8r;16d;;;e;8f;g;d;16b-;c;8d;
+1 2: f-;a-;;g-;
+2: d;c;b-;g-;
+bar
+
+1: 8c;g;b-;g;c;g;d;a;
+1 2: g-;;;c;
+2: e;d;e;f;
+bar
+
+1: c+;8;b;16;a;8g;16b;a;8g;
+1 2: 16d;e;8f;4d;;;
+2: a;g;;b-;
+bar
+
+1: 8f-c;a;16a;g;8f;16a;g;8f;g;e;
+1 2: s;g-c;a-c;g-b-;
+2: d-;e&-;d-;en-;
+bar
+
+1: 2.g-ceg;16a;g;8f;
+1 2: 2.s;4a-d;
+2: 2.c-;16b--;c-;8d-;
+bar
+
+1: 8f;g;2b-eg;<<staff clef=bass>> 8f ph;g;
+1 2: a-d;2.s;
+2: e-;2;8f ph;g;
+octave below 2: 2 "8va" til 3;
+boldital between 1&2: 4 "pp";
+bar
+
+1: [with.]e eph;8f ph;g;[with.]4e eph;8f ph;g;
+2: [with.]e- eph;8f- ph;g-;[with.]4e- eph;8f- ph;g-;
+bar
+
+score time=5/4 ;beamstyle=4,4,4,4,4
+music
+
+1: [with.]e eph;8f ph;g;[with.]4e eph;8f;g;a;d+;
+2: [with.]e- eph;8f- ph;g-;[with.]4e- eph;8f-;g-;a-;f-;
+bar
+
+score time=4/4
+music
+
+1: 16b ph;c+;a;b;[with.]4g eph;16b ph;c+;a;b;[with.]4g eph;
+2: 16g- ph;a-;f-;g-;[with.]4e- eph;16g- ph;a-;f-;g-;[with.]4e- eph;
+bar
+
+1: 16g ph;a;f;g;4e eph;8f;g;a;16g+;f+;
+2: 16e- ph;f-;d-;b--;4e- eph;8f-;g-;a-;16g;f;
+boldital between 1&2: 3 "mp";
+boldital between 1&2: 4.5 "sfz";
+bar
+
+1: e+;2.e;
+2: e;2.e-;
+boldital between 1&2: 2 "sfz";
+dblbar

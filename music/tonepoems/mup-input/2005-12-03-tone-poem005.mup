@@ -1,0 +1,175 @@
+header
+	title (18) "Tone Poem (No. 5)"
+	title "" "John A. Krallmann (12/3/05)"
+
+header2
+	title (12) "Tone Poem (No. 5) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.25
+	staffsep=16
+	scoresep=10,23
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=70";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 8a;b;4~;8;;16c+;b;a;g;
+2: 2gd+;fd+;
+bar
+
+1: 8a;b;4g~;8;;16c+;b;a;g;
+2: 2end+;e&c+;
+bar
+
+1: 8f#;g;a;c+;4b;8e+;16d+;c+;
+2: 8c+;b;a;f#;2g~;
+2 2: 2d~;8;b-;4c;
+bar
+
+1: b;8.a;16b;8a;b;4;
+2: 4.g;8f#;2d+;
+2 2: 8d;c;4d;4.g;8;
+bar
+
+1: 8a;b;4;8a;g;;c+;
+2: 2d+;4;c+~;
+2 2: 4.f;8;2en;
+bar
+
+1: 4.c+;16b;a;4.b;8f;
+1 2: 2s;8r;f;4;
+2: 8c+;g+;4f#+;2s;
+2 2: 2e(&);d;
+bar
+
+1: 4.e;16c+;e;8;16b-;c;8d;b-;
+1 2: 8r;b-;4a-;2s;
+2: 2s;4g&;f;
+2 2: 2c;b-;
+bar
+
+1: 8g;;;;4.f;16c;d;
+1 2: d;c;8;;4b-;
+2: b;a;d-;f;
+2 2: 2e;s;
+bar
+
+1: 4.e;16b-;c;4g-e;8f-d;b-;
+1 2: 8b-;;4g&-;4b-;s;
+2: c-;e;c;b-;
+2 2: 2s;b--;
+bar
+
+1: 8g;;b;16a;g;4cf;cg;
+1 2: d;e;2s;
+2: e-b-;cg;da;eb;
+bar
+
+1: cg;cg#;ea;;
+2: enb;;fc+;f#c+;
+bar
+
+1: gb;2gc+;8e+;16d+;c+;
+1 2: 2.s;4g;
+2: d+;2eb;4cb;
+2 2: 8g;f;2.s;
+bar
+
+1: 2.d+;8bn;c+;
+1 2: 2g;f#;
+2: 1dad+;
+dblbar
+
+score key=1#
+music
+
+1: 4.bd+;16b;a;4.gb;16g;a;
+1 2: 8a;g;4f;8;e;4;
+2: 2gd+;b;
+2 2: 2s;4.e;8d;
+bar
+
+1: 8b;a;;g;4.a;16b;c+;
+1 2: 2e;8;e&;4d;
+2: 2g;4;f;
+2 2: c;c#;2d;
+bar
+
+1: bd+;g+;g;8a;b;
+1 2: 8a;g;a;b;f;4.e;
+2: 2gd+;b;
+2 2: 2s;4e;d;
+bar
+
+1: e;8f;g;c;d;e;g;
+1 2: 8d;c;4d;2g-;
+2: 2g;e;
+2 2: c;b-;a-;g-;
+bar
+
+1: 4.a;8b;4egc+;dad+;
+1 2: 2a-d;s;
+2: 2d;4e;f;
+2 2: f-;e-;2d-a-;
+bar
+
+1: 4.e+;8;4e+;8d+;c+;
+1 2: 2eg;gc+;
+2: 2e-b-g;c-g-e;
+bar
+
+1: b;8a;g;4.ea;8e;
+1 2: 2d;4;c;
+2: 2g-db;a-e;
+bar
+
+1: 4.f-a-d;8c;4g-b-d;g;
+2: 2d-a-;g-d;
+dblbar
+
+score key=0#
+music
+
+1: 8b;c+;b;g;4.a;8;
+2: 1a-ec+;
+bar
+
+1: 8a;g;f;e;df;eg;fa;fd+;
+2: 2f-ca;8a;b;c+;b;
+2 2: 2s;g-d;
+bar
+
+1: 2fd+;ge+ tie;
+2: a;a&;2cge+ tie;
+2 2: 2cd+;s;
+bar
+
+1: 1ge+;
+2: 1cge+;
+ifdef MIDI
+ 2 2: 1c--;
+else
+ 2 2: 1c-;
+ octave below 2: 0.5 "8va" til 4.5;
+endif
+endbar

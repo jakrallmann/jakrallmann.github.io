@@ -1,0 +1,190 @@
+header
+	title (16) "Song Without Words (No. 49)"
+	title "" "John A. Krallmann (1/7/12)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 49) - \%"
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	packfact=1.4
+	staffsep=18
+	scoresep=10,22
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=108";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=82";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: {2b;4f#~;}3;{f;a;g;}3;
+2: d#;a;c+;a;
+bar
+
+1: 2f#;[grace]8g;[]f;{4e;b-;d;}3;
+2: e-;b-;g;b-;
+bar
+
+1: {c;d;e;}3;{a;b;g;}3;
+2: a-;e;g;c+;
+bar
+
+1: 1a;
+1 2: {e;f#;e;}3;{d;a-;a#-;}3;
+2: d-;a-;f#;a-;
+bar
+
+1: {f#;g;f;}3;{b-;d;f;}3;
+1 2: 1b-;
+2: g-;d;g;d;
+bar
+
+1: {f#;g;f;}3;{d;e;g;}3;
+1 2: 1g-;
+2: c-;g-;e;g-;
+bar
+
+1: 2a;{4b;a;e;}3;
+1 2: {c;d;e;}3;2c;
+2: d-;a-;f#;a-;
+bar
+
+1: 1g;
+1 2: {b-;c;d;}3;{b-;c;d;}3;
+2: g-;d;f;g--;
+bar
+
+1: 1e;
+1 2: {g-;a-;c;}3;{g-;a-;c;}3;
+2: c-;g-;e;g-;
+bar
+
+1: 1f;
+1 2: {a-;d;c;}3;{a-;b-;c;}3;
+2: d-;a-;f;a-;
+bar
+
+1: {a;g;a;}3;{d;e;f;}3;
+1 2: 1b-;
+2: g-;d;f;d;
+bar
+
+1: 1g;
+1 2: {d;e;c;}3;{g-;c;b&-;}3;
+2: c-;g-;e;g-;
+bar
+
+1: {g;f;g;}3;{f;e;d;}3;
+1 2: 2a-;2a&-;
+2: f-;c;{d;e;f;}3;
+bar
+
+1: {f;e;c;}3;{g-;c;e;}3;
+1 2: 1g-;
+2: c-;g-;d;g-;
+bar
+
+1: {e;d;c;}3;{a-;a;d;}3;
+1 2: 1f-;
+2: d-;a-;c;f#;
+bar
+
+1: 2g;{4b;a;g;}3;
+1 2: {b-;c;d;}3;2;
+2: g-;d;f;b;
+bar
+
+1: {d+;c+;d+;}3;{b;c+;a;}3;
+1 2: 1e;
+2: a-;e;c+;b;
+bar
+
+1: {d+;c+;d+;}3;{b;c+;a;}3;
+1 2: 2e;d;
+2: f-;c;a;c;
+bar
+
+1: {d+;e+;d+;}3;{c+;b;a;}3;
+1 2: 1f#;
+2: d-;a-;f#;c+;
+bar
+
+1: 1d+;
+1 2: {f;a;a&;}3;{g;g&;f;}3;
+2: g-;d;b;g-;
+octave below 2: 4 "8va";
+bar
+
+1: {c+;b;a;}3;{e;e+;a;}3;
+1 2: 1e;
+2: a--;e-;b-;c;
+bar
+
+1: 1f+;
+1 2: {a;b;c+;}3;{a;b;c+;}3;
+2: d-;a-;f;c+;
+bar
+
+1: 2f+;4g+;f+;
+1 2: {a;b;c+;}3;{b;a;g;}3;
+2: g-;d;2b;
+bar
+
+1: 1e+;
+1 2: {g;c+;b;}3;{b&;d;c;}3;
+2: c-;g-;e;g-;
+bar
+
+1: 1a+;
+1 2: {a;f+;e+;}3;{d+;c+;a;}3;
+2: f-;c;a;c;
+bar
+
+1: 1f+;
+1 2: {a;c+;d+;}3;{b;a;f;}3;
+2: d-;a-;f;a-;
+bar
+
+1: 1d+;
+1 2: {f;g;a;}3;{b;a;g;}3;
+2: g-;d;b;d;
+bar
+
+1: 2b;d+;
+1 2: {f;g;a;}3;{;g;f;}3;
+2: g-;d;b;d;
+bar
+
+1: {c+;d+;e+;}3;2;
+1 2: 2e;{4b;c+;a;}3;
+2: a-;e;c+;e;
+bar
+
+1: {a;b;c+;}3;2;
+1 2: 2f;{4d;e;f;}3;
+2: d-;a-;f;a-;
+bar
+
+1: {b;c+;d+;}3;{;c+;b;}3;
+1 2: 2f;;
+2: g-;d;b;d;
+bar
+
+1: 2c+;;
+1 2: {e;f;g;}3;2e;
+2: c-;g-;2e;
+endbar

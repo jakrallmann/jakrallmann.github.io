@@ -1,0 +1,171 @@
+header
+	title (18) "Tone Poem (No. 28)"
+	title "" "John A. Krallmann (1/20/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,28
+	staffscale=0.85
+
+staff 1
+	vscheme=2f
+
+music
+
+midi all: 1 "tempo=66";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 4.e+;8a+;4e+;
+2: a-;e;8b;c+;
+bar
+
+1: 4.e+;8a+;4e+;
+2: g-;e;8b;c+;
+bar
+
+1: 8e+;d+;4.a+;8c+;
+2: f-;c;a;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8b;c+;d+;e+;f+;b;
+2: e;b;g#+;
+bar
+
+1: 8b;a;4.a+;8c++;
+2: f;c+;d+;
+bar
+
+1: 8b+;g+;4f#+;8e+;g+;
+2: e;b;g+;
+bar
+
+1: 8a+;f+;4e+;8d+;a;
+2: d;a;f+;
+bar
+
+1: 8b;e;4.c+;8b;
+2: e;b;d+;
+bar
+
+1: 2a~;8;b;
+1 2: 8c;d;4e;c;
+2: a-;e;g-;
+dblbar
+
+score key=2&
+music
+
+1: 8c+;d+;e+;d+;c+;b;
+1 2: e;g;e;
+2: f-;c;a;
+bar
+
+1: a;g;f;
+1 2: 8c;c#;e;d;cn;c#;
+2: f-;c;a;
+bar
+
+1: d;8f;e;4d;
+1 2: 8a-;b-;4g-;8f-;f#-;
+2: b--;f-;b-;
+bar
+
+1: 8d;c;4g;;
+1 2: g-;8e;d;c;b-;
+2: e-;b-;g;
+bar
+
+1: 8c+;b;a;g;g&;f;
+1 2: 8e;c;a-;b-;e;;
+2: f-;c;a;
+bar
+
+1: 8d+;c+;b;a&;f+;f#+;
+1 2: 8f;e;d;c;a&;;
+2: b-;f;d+;
+dblbar
+
+score key=4&
+music
+
+1: 8g+;f+;e+;d+;c+;b;
+1 2: 8b;a;g;f;e;d;
+2: e-;b-;g;
+bar
+
+1: 8a+;g+;4.f+;8g+;
+1 2: 8c+;b;a;g;f;g;
+2: f-;c;a;
+bar
+
+1: 8a+;g+;4.f+;8c+;
+1 2: 8f+;c+;a;g;4f;
+2: e-;c;a;
+bar
+
+1: 8c+;b;4.;8a;
+1 2: f;8;b-;4;
+2: d-;a-;f;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4.b;8c+;d+;e+;f+;g+;
+1 2: a-f;g-e;e;g;
+2: e-;b-;g;d+;
+ital between 1&2: 3 "cresc";
+bar
+
+1: 8a+;g+;4f+;8a+;g+;4f+;
+1 2: 8c+;b;4a;8c+;b;4a;
+2: f-;c+f+;e-;c+f+;
+bar
+
+1: 8a+;g+;4f+;8g+;e+;4;
+1 2: 8c+;b;4a;8b;g;4;
+2: d-;d+f+;c-;c+e+;
+ital between 1&2: 3 "dim";
+bar
+
+1: 1af+;
+2: 1d+f+;
+boldital between 1&2: 1 "subito p";
+bar
+
+rom above all: 1 "molto legato";
+1: 8g;f;4f;2a;
+1 2: 8e;d;4;2f;
+2: 1da;
+bar
+
+1: 8g;e;4;2g;
+1 2: 8e;c;4;2e;
+2: 1cg;
+bar
+
+1: 2f;e;
+1 2: 2d;;
+2: 2b-f;b-g;
+bar
+
+1: 1f;
+1 2: 1an-;
+2: 1f-c;
+endbar

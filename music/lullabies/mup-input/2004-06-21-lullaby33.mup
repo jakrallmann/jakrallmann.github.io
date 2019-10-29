@@ -1,0 +1,89 @@
+header
+	title (18) "Lullaby No. 33"
+	title (10) " "
+	title "" "John A. Krallmann (6/21/04)"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=12/8
+	beamstyle=4.,4.,4.,4.
+	key=3&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,26
+	staffscale=0.9
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=96, 80";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=80";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=80";
+
+1: 4.c+;8g;an;b;4.c+;8g;f;g;
+1 2: 8c+;en;f;4.d&;8g;f;c;4.d;
+2: 4.an;b;a;b;
+bar
+
+1: 4.c+;8eg;df;eg;4;8gb;fan;gb;ac+;
+1 2: 8f;en;d;4.s;;;
+2: 2.cb;8f-;c;g;an;g;f;
+bar
+
+1: 4d+;8;eg;fan;gb;c+;b;a;an-c;4b-d;
+1 2: 8an;g;f;4.s;e;4.s;
+2: 8b-;f;b;e-;b-;g;f-;c;an;b-;f;an-;
+bar
+
+1: 4db;8dan;4dg;8ca&;da;4an~;8;b;c+;
+1 2: 4.s;;8;4c~;4.;
+2: 8g-;d;fb;enb;4c-;8f-;c;g;4.f;
+bar
+
+1: 4.d+;4g;8;4c+;8;8d;4e;
+1 2: 8an;g;f;;e;b-;f;e;d;b-;d;c;
+2: 8b--;f-;d;e-;b-;g;a-;f;a;g-f;4cg;
+bar
+
+1: 8a;g;e;a;g;e;4.a-cf;a-cg&;
+1 2: 4.c;;s;;
+2: 4.f-e;e-c;d-b-;b-d;
+bar
+
+1: 8g(n);f;g;e;f;a;g;f;g;4ce;8c+;
+1 2: 4.b-;f-c;b-e;8b-;a-;f-;
+2: 4.e-b-;a-e;e-b-;a-e;
+bar
+
+1: 8b-gb;a-fa;g-eg;<<staff clef=bass>> fac+;ac+f+;ec+e+; 4.ab;egb;
+1 2: 4.s;;8d;c;d;4.s;
+2: 4.e-b-;b--;e-b-;;
+bar
+
+staff 1 clef=treble
+music
+
+1: 4ce;8a;4b-a-;8f;4a-f;8c;4.g-e;
+2: 8b;a;f;e;4d;4.e-b-;;
+2 2: 4.a-e;4b-;8b--;4.s;;
+bar
+
+1: {8ac+;bd+;}2,4.;{c+e+;d+f+;}2,4.;2.g+b+;
+1 2: 2.s;eb;
+2: 2.ae+;2.s;
+bar
+
+2 1: 2.gb;eg;
+2 2: 2.e-b-;;
+endbar

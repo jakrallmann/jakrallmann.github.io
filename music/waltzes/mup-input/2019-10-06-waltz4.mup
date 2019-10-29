@@ -1,0 +1,230 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title " " "(October 6, 2019)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=1&
+	beamstyle=2.
+	brace=1-2
+	barstyle=1-2
+	scale=0.93
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=112";
+midi 1 1-2: 0 "onvelocity=86,72";
+midi 2 1-2: 0 "onvelocity=68";
+
+1: r;8;c+;bn;c+;
+2: mr;
+bar
+
+define T
+1: 4.c+;8;bn;c+;
+2: f;ac+f+;;
+bar
+
+1: 4.c+;8;bn;c+;
+2: e;gc+e+;;
+bar
+
+1: 8f+;e+;d+;c+;8.a;16f;
+2: d;fad+;;
+bar
+
+1 :4.a;16b;a;4g;
+2: b-;dgb;fbd+;
+bar
+
+1: 4.f#;8g;a;b;
+2: c-;egb;gbc+e+;
+bar
+
+1: 2g#d+;4ac+;
+2: f-;dg#bn;ac+f+;
+bar
+
+1: 4.dfac+;8b;4;
+2: b--;dgb;fad+;
+bar
+
+1: 4.dfb;8a;4cea;
+2: c-;dgb;egb;
+bar
+
+1: 4.a-cg;8f;4b-d&f;
+2: f--;cf;g;
+bar
+
+1: 2c;8f;g;
+1 2: 4.g-;8a-;4;
+2: f--;d&;c;
+bar
+
+1: 4.ca;8ec+;4;
+2: a-e;ea;ac+;
+bar
+
+1: ec+;4.db;8ca;
+2: b-f;dg;gb;
+bar
+
+1: 4.b-g;8ca;db;ec+;
+2: c-;ce;eg;
+bar
+
+1: 4.db;8ca;4;
+2: f-;cf;fa;
+bar
+
+1: 4.da;8g;4dg;
+2: b-;dg;fb;
+bar
+
+1: 4.g;8f;4;
+1 2: 2a-;4;
+2: f-;cf;;
+bar
+
+1: 8d;e;f;g;a;d+;
+2: b--;dgb;fad+;
+bar
+
+1: 8fd+;4.ec+;8d+;e+;
+2: c-;fbd+;ebc+;
+bar
+
+1: 8bg+;af+ tie;2;
+2: d-;ac+e+;ac+f+;
+bar 
+
+1: 8bg+;af+ tie;2;
+2: g-;gbd+;bd+f+;
+bar
+
+1: 8bg+;af+ tie;2;
+2: d-;ac+e+;ac+f+;
+bar
+
+1: 8bg+;4.af+;4bg+;
+2: g-;bd+f+;bd+g+;
+bar
+
+1: 2ba+;4bg+;
+2: c-;dgb;ebc+;
+bar
+
+1: 2.af+;
+2: f-;fac+;ac+f+;
+@
+T
+dblbar
+
+score key=2&
+music
+
+1: c+e+;bd+;ac+;
+2: f-;gbd+;ac+e+;
+bar
+
+1: 4.dfd+;8ee+;4ff+;
+2: b--;dfb;;
+bar
+
+1: 4.faf+;8gg+;4aa+;
+2: d-;dfa;afd+;
+bar
+
+1: af+a+;2ge+g+;
+2: e-;egb;egc+;
+bar
+
+1: 4.ceac+;8;4;
+2: f-;cfa;;
+bar
+
+1: cec+;4.b-db;8cec+;
+2: f-;cfa;;
+bar
+
+1: 2.dfd+;
+2: b-;dfb;;
+bar
+
+1: 2.fa&f+;
+2: b-;fa&b;fad+;
+dblbar
+
+newscore
+
+score key=3&
+music
+
+1: 4.gbg+;8;4;
+2: e-;egbd&+;;
+bar
+
+1: gbg+;4.aa+;8bb+;
+2: e-;gbd&+e+;;
+bar
+
+1: 2.bd&+b+;
+2: a-;fbd&+;f&bd+;
+bar
+
+1: 2ac+a+;4gg+;
+2: a-;eac+;;
+bar
+
+1: faf+;;;
+2: b--;dab;abd+;
+bar
+
+1: faf+;4.ege+;8dfd+;
+2: b--;ab;fab;
+bar
+
+1: 2.ege+ tie;
+2: e-;b-eg;egb;
+bar
+
+1: 4.ege+;8e+;d+;e+;
+2: 2.gbe+;
+dblbar
+
+score
+	key=1&
+	transpose=up minor 3
+music
+
+T
+bar
+
+midi all: 1 "tempo= 112 to 88" til 2m;
+1: bg+;af+;ge+;
+2: c-;dgc+;egb;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 2.ac+f+ tie;
+2: f-;cfa;fac+;
+bar
+
+1: 2.ac+f+;
+2: 2.ac+f+;
+endbar
+

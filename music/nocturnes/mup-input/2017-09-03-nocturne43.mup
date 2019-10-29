@@ -1,0 +1,185 @@
+
+header
+	title (18) "Nocturne"
+	title "No. 43"
+	title "" "John A. Krallmann"
+	title " " "(Sep 3, 2017)"
+
+header2
+	title "Nocturne No. 43 - \%"
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=1#
+	time=cut
+	beamstyle=2,2
+	measnum=y
+	scale=0.82
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+
+midi all: 0 "tempo=98";
+midi 1: 0 "channel=11"; 0 "onvelocity=102";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=92";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=85";
+
+1: 8r;b;a;g;4e;d;
+2: e-;ca;
+bar
+
+1: 2e;b-;
+2: e-;b-g;
+bar
+
+1: 8r;c+;b;a;4g;e;
+2: a-;ec+;
+bar
+
+1: 8b;a;b;c+;4b;f;
+2: b-;fd#+;
+bar
+
+1: 8f;e;f;e;4g;b-;
+2: e-;b-g;
+bar
+
+1: 8b-;a-;b-;a-;2b-;
+2: e-;b-f;
+bar
+
+1: 8r;c;d;e;4a;e;
+2: a--;ec+;
+bar
+
+1: 8g;a;2.f~;
+2: b--;ec+;
+bar
+
+1: 4.f;8;b;c#+;d#+;g+;
+2: d#b;b--;
+bar
+
+1: 4f+;e+;4.g+;8b;
+2: e-;gbe+;
+bar
+
+1: 8b;a;b;c+;2b;
+2: f-;fad#+;
+bar
+
+1: 8b;a+;;g+;4b+;f+;
+2: b--;fad#+;
+bar
+
+1: 8a+;g+;;f+;2e+;
+2: e-;4f+;e+;
+2 2: s;gb;
+bar
+
+1: 8e+;d+;;c+;4;g;
+2: c;gc+e+;
+bar
+
+1: 8c+;b;;a;4d#;e;
+2: a-;ec+;
+bar
+
+1: 8a;g;;fn;e;f;a;c+;
+2: fn-;dfnac+;
+bar
+
+1: 8c+;b;;a;b;c+;d+;d#+;
+2: g-;gbfn+;
+bar
+
+1: 8e+;d+;;c+;;g;f;g;
+2: c;gc+e&+;
+bar
+
+1: 8b&;a&;;g;2a;
+2: a&-;e&a&c+;
+bar
+
+1: 8g;fn;;e;2f;
+2: d-;da&c+;
+bar
+
+1: 8e&;d;;c;2d;
+2: g-;dgb;
+dblbar
+
+score key=0#
+music
+
+1: 8e;g;c+;d+;;e+;d+;c+;
+2: c-;eac+;
+bar
+
+1: 8e+;d+;;c+;2d+;
+2: d-;fac+;
+bar
+
+1: 8c+;b;;a;2b;
+2: g-;gbf+;
+bar
+
+1: 8a;g;;f#;2g;
+2: c-;egac+;
+bar
+
+1: 8e;g;c+;d+;;e+;;g+;
+2: c-;eac+;
+bar
+
+midi all: 2 "tempo=88";
+1: 8g+;f+;;e+;2f+;
+1 2: 2a;8a&;g;f;a;
+2: f-;dc+;
+ital between 1&2: 2 "rit.";
+bar
+
+midi all: 2 "tempo=78";
+1: 8e+;d+;;c+;d+;c+;;b;
+1 2: g;f;
+2: 4c-g-;e;d-a-;f;
+ital between 1&2: 1 "allargando";
+bar
+
+1: 8b;g;;e;2 cea;
+1 2: d;s;
+2: 4e-b-;g;2f-ca;
+roll 1: 2;
+roll 2: 2;
+mussym above all: 2 "ferm";
+bar
+
+1: 4r;8a;e+;d+;c+;a;g;
+2: mr;
+bar
+
+1: 8b;g;2~;8;16a;b;
+1 2: 1e;
+2: 1e-b-g;
+bar
+
+1: 8a;f;2.;
+1 2: 1d;
+2: 1d-a-f;
+bar
+
+1: r;4;8e;c+;
+2: 4r;8a-;e;b;c+;4r;
+bar
+
+1: 1a;
+2: mr;
+endbar

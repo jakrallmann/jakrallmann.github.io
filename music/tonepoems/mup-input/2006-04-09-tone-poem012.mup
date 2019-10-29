@@ -1,0 +1,137 @@
+header
+	title (18) "Tone Poem (No. 12)"
+	title "" "John A. Krallmann (April 9, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1
+	staffscale=0.95
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: r;8;d;g;a;b;d+;
+2: 8g-;d;4b;a;8g;f#;
+bar
+
+1: 8d+;e+;b;g;2a;
+1 2: 2e;8g;f;e;c;
+2: c;g;f-;c;
+bar
+
+1: 8f;g;a;g;a;b;e;f;
+1 2: a-;c;b-;;
+2: d-;a-;g;g-;
+bar
+
+1: 2e~;8;c;f;g;
+1 2: 8d;c;b-;g- =g;[up; ho 0]2 with e- =e below;
+2 2: c-;g-;[down]c;g;
+dotted line (g.x + 1, g.y - 2) to (e.x, e.y + 3)
+bar
+
+1: a-a;;cc+;;
+1 2: 8e;d;c;d;g;f;e;f;
+2: f-;c;a;c;
+bar
+
+1: g;8a;g;2a;
+1 2: 8b-;c;4b-;8;c;d;e;
+2: g-;d;a-;e;
+bar
+
+1: 4.c+;8;8d+;c+;b;a;
+1 2: 8a;g;f;e;b;a;g;f;
+2: f-;c;a;c;
+bar
+
+1: 2b~;8;e;c#+;b;
+1 2: 8g#;f#;e;d;2b-;
+2: e-;b-;g#;b-;
+bar
+
+1: 2e+~;8;;d+;e+;
+1 2: 8b;c#+;b;a;2e;
+2: a-;e;c+;e;
+bar
+
+1: 2e+~;8;d+;c+;b;
+1 2: 8b;;c+;b;2e;
+2: g-;e;b;e;
+bar
+
+1: 2d+~;8;;a;b;
+1 2: 8a;;b;a;2d;
+2: f-;c;a;d;
+bar
+
+1: 2c+;b;
+1 2: 8d;e;f#;a;g#;d;e;b-;
+2: e-;b-;e;b-;
+bar
+
+1: 2c#+;e+;
+1 2: 8g#;a;g;e;a;b;a;e;
+2: a-;e;g-;8b;c+;
+bar
+
+1: 4.e+;8d+;c+;b;a;g;
+1 2: 8a;d;e;f;2d;
+2: f-;d;g-;f;
+bar
+
+1: 4.g+;8e+;;d+;c+;d+;
+1 2: 8d+;c+;g;g#;4a;g;
+2: e-;c;f-;c;
+bar
+
+1: 4.g+;8e+;d+;c+;d+;f+;
+1 2: 8g;c+;d+;c+;2dg#;
+2: e-;g;f-;f+;
+bar
+
+1: 4.g+;8e+;d+;c+;d+;c+;
+1 2: 8d+;c+;b;c+;2cg#;
+2: e-;c;f;c;
+bar
+
+score
+	time=5/4
+	beamstyle=2,2,4
+music
+
+ital between 1&2: 1 "rit.";
+1: 4.e+;8c+;e+;d+;4c+;d+;
+1 2: 2g;4a;2f;
+2: 8c-;g-;4e;8f-;c;2a;
+bar
+
+score time=4/4
+music
+
+1: [pad 5]2 e+ =e c++;<<staff clef=bass>>ec+;
+2: 2c+g+;c-g-;
+print (e.x - 7, e.y) "\(acc_gt)";
+bar
+
+1: 1ec+;
+2: 1c-g-;
+endbar

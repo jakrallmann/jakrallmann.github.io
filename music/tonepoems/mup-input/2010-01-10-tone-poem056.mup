@@ -1,0 +1,185 @@
+header
+	title (16) "Tone Poem (No. 56)"
+	title "" "John A. Krallmann (1/10/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 56) - \%"
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: 2s;4a;a&;
+2: 2s;r;
+bar
+
+1: g;f+;e+;d+;
+1 2: 2s;4e;;
+2: e;b;a&+;b-;
+bar
+
+1: d+;c+;e;c+;
+1 2: 2.e;4;
+2: a-;e;c+;g-;
+bar
+
+1: b;a;g+;f+;
+1 2: c;d;a;a&;
+2: f-;c;a;d;
+bar
+
+1: 2e+;4d+;d#+;
+1 2: f;f#;g;fn;
+2: g-;d;b;d;
+bar
+
+1: 2e+;4d+;f+;
+1 2: g;g#;a;a#;
+2: c-;g-;e;c+;
+bar
+
+1: 2e+;4d+;f+;
+1 2: a(n);a&;f;a;
+2: f-;c;a&;c+d+;
+bar
+
+1: 2.g+;4e+;
+1 2: d+;c+;g;g#;
+2: e-;g;d+;b;
+bar
+
+1: 2de+;ee+;
+1 2: b;a;b;c+;
+2: a-;f;c+;a;
+bar
+
+1: 2.df;4;
+1 2: c;b-;a-;b-;
+2: d-;a-;f;a-;
+bar
+
+//
+
+1: e;g#;dd+;ee+;
+1 2: 2g#-b-;4g;;
+2: e-;b-;f;e;
+bar
+
+1: 2d+;c+;
+1 2: 2eg#;ea;
+2: a-;e;b;a;
+bar
+
+define AA
+1: f+;b+;a+;f+;
+1 2: 2ad+;4bf+;g;
+2: d-;a-;f;b;
+ifdef P boldital between 1&2: 1 "p"; endif
+bar
+
+1: 1e+;
+1 2: b;e;2a;
+2: a-;e;b;c+;
+bar
+@
+AA
+define P @
+AA
+
+1: f;a;g;f;
+1 2: b-;d;b-;;
+2: d-;a-;f;a-;
+bar
+
+1: 1e~;
+1 2: b-;a-;[with>]b-;a-;
+2: a-;e;[with>]f;e;
+bar
+
+1: 1e;
+1 2: [with>]b-;a-;[with>]b-;a-;
+2: [with>]f;e;[with>]f;e;
+bar
+
+1: 1e;
+1 2: c;a-;c;a-;
+2: e;c;e;c;
+2 2: 1f-;
+ital between 1&2: 1 "cresc.";
+bar
+
+1: 1e;
+1 2: c;a-;c;a-;
+2: e;c;e;c;
+2 2: 1f-;
+bar
+
+1: 1g;
+1 2: d;b-;d;b-;
+2: g;b-;g;b-;
+2 2: 1e-;
+bar
+
+1: 1g;
+1 2: d;b-;d;b-;
+2: g;b-;g;b-;
+2 2: 1e-;
+bar
+
+//
+
+1: 1a;
+1 2: e;c;e;f;
+2: a;c;a;c;
+2 2: 1f-;
+bar
+
+1: 1a;
+1 2: e;c;e;f;
+2: a;c;a;c;
+2 2: 1f-;
+bar
+
+1: 1g;
+1 2: e&;b&-;e;f;
+2: e&-;b&-;g;b-;
+ital between 1&2: 1 "dim.e rit.";
+bar
+
+1: 1g;
+1 2: e&;b&-;e;f;
+2: e&-;b&-;g;b-;
+bar
+
+1: 1f#;
+1 2: d;a-;d;e;
+2: d-;a-;e;a-;
+bar
+
+
+1: 1f#;
+1 2: d;a-;d;e;
+2: d-;a-;e;a-;
+bar
+
+1: 1f#;
+1 2: 1a-de;
+2: 1d-;
+endbar

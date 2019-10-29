@@ -1,0 +1,139 @@
+header
+	title (18) "Nocturne"
+	title "No. 45"
+	title "" "John A. Krallmann"
+	title " " "(Feb 18, 2018)"
+
+header2
+	title "Nocturne No. 45 - \%"
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	scale=0.9
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+
+midi all: 0 "tempo=50";
+midi 1: 0 "channel=11"; 0 "onvelocity=72";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=50";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=48";
+
+rom above all: 1 "Largo ( \(smup4n) = 50 )";
+1: 2g~;8;f;
+2: 8egb;;;;dgb;;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8.e;16f;8.f;16en;
+2: 8d&gb;;cgb;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.c+~;8;e+;
+2: 8a-cf;;a-cg;;a-cen;;a-cf;;
+bar
+
+1: 2.e+;8g;a;
+2: 8b-da;;b-cea;;b-dfa;;;;
+bar
+
+score time=3/4
+music
+
+1: 4.b;8d+;4;
+2: 8g-b-df;;;;a-cef;;
+bar
+
+1: 2.c+;
+2: 8a-ceg;;a-ceb;;a-cea;;
+bar
+
+score time=4/4
+music
+
+1: 2.d+~;8;16f;g;
+2: 8g-an-cg;;g-bn-dg;;g-dfg;;g-ceg;;
+bar
+
+score time=3/4
+music
+
+1: 2.g+;
+2: 8g-bn-dg;;;;f-b-dg;;
+bar
+
+1: {16f;g;an;}3;{bn;c+;d+;}3;8.e+;16c+;8.g+;16c+;
+2: 8f-bn-dg;;e-g-ce;;;;
+bar
+
+1: 4c++~;8;16d++;c++;8b+;an+;
+2: 8d-f#-a-d;;;;;;
+bar
+
+score time=4/4
+music
+
+1: 2.g+;4g;
+2: 8g-b-dg;;g-ceg;;g-dfg;;an-ceg;;
+bar
+
+1: 1g;
+2: 1g-bn-dg;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.g;8;4.;16a;g;
+2: 8r;e-g-c;4;8r;d-g-bn-;4;
+bar
+
+1: 4.g;8c+;4;bn;
+2: 8r;e-g-c;4;f-a-d;g-d;
+bar
+
+1: 4.f;8e;4.a;8g;
+2: 8r;a-c;4;8r;f-a-c;4;
+bar
+
+staff 1 clef=treble
+music
+
+1: 4.d;8c;4.g;8f;
+2: 8r;a-cf;4;8r;f-a-d;4;
+bar
+
+1: 2c+;f;
+2: mr;
+bar
+
+1: 1g;
+1 2: r;[with.]ce;2;
+2: 4r;[with.]c;2;
+bar
+
+1: 1g;
+1 2: 4r;[with.]bn-d;2;
+2: 4r;[with.]g-;2;
+bar
+
+1: mr;
+2: 2r;c;
+endbar

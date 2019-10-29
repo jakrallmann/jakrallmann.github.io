@@ -1,0 +1,192 @@
+header
+	title (16) "Song Without Words (No. 46)"
+	title "" "John A. Krallmann (11/13/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 46) - \%"
+score
+	staffs=2
+	key=4&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.9
+	release=0
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=132";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92";
+midi 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2c+~;8;;
+2: f;a;c+;
+bar
+
+1: {d+;c+;b;a;}4,2.;
+2: e;a;c+;
+bar
+
+1: 2c+~;8;f;
+2: d;f;b;
+bar
+
+1: 2f~;8;b;
+2: d;g;b;
+bar
+
+1: 2b~;8;e;
+2: c;e;a;
+bar
+
+1: {2e;f;}2,2.;
+2: c&;f;a;
+bar
+
+1: 2.g~;
+2: b-;e;e+;
+bar
+
+1: 2.g;
+2: dn+;g;b;
+bar
+
+1: {2g;c+;}2,2.;
+2: a-;e;c+;
+bar
+
+1: f;g;a;
+2: d-;a-;f;
+bar
+
+1: {2d;a;}2,2.;
+2: e-;a-;f;
+bar
+
+1: g;a;b;
+2: e;f;g;
+bar
+
+1: 2.d+;
+2: a-;b;f;
+bar
+
+1: 2.c+;
+2: a-;c+;e;
+bar
+
+1: 4.f+;8d;a;f+;
+2: d-;a-;f;
+bar
+
+1: 8e+;g;2e+;
+2: c-;b;g;
+bar
+
+1: 8d+;f;4d+;c+;
+2: b--;a;d+;
+bar
+
+1: 8b;d;4c+;d+;
+2: e-;b-;g;
+bar
+
+1: 8e+;b+;4a+;g+;
+2: c-;a-;c+;
+bar
+
+1: g+;2f+;
+2: d-;a-;d+;
+bar
+
+1: 8f+;d++;4c++;b+;
+2: b--;f-;d+;
+bar
+
+1: a+;2g+;
+2: e-;b-;g;
+bar
+
+1: [grace]16a+;[]b+;2.c++~;
+2: [with-]f-;c;a;
+bar
+
+1: 2.c++~;
+2: g;f;c;
+bar
+
+1: 2.c++~;
+2: [with-]f-;c;a;
+bar
+
+1: 2.c++;
+2: g;f;c;
+bar
+
+1: [grace]16a;[]b;2c+;4g+;
+2: f-;c;a;
+bar
+
+1: f+;c+;8g;a;
+2: c;a;c;
+bar
+
+1: b;c+;a;
+2: d-;a-;f;
+bar
+
+1: g;2f~;
+2: f-;c;a;
+bar
+
+1: 2.f;
+2: f-;c;a;
+bar
+
+1: [grace]16a;[]b;2c+;8a+;g+;
+2: f-;c;a;
+bar
+
+1: 4.f+;8c+;g;a;
+2: f-;c;a;
+bar
+
+1: 8b;c+;4.a;8g;
+2: d-;a-;f;
+bar
+
+1: 8g;f~;2~;
+2: f-;c;a;
+bar
+
+1: 2f;8a;g;
+2: f-;c;a;
+bar
+
+1: 8g;f~;2~;
+2: f-;c;a;
+bar
+
+1: 2f;8a;g;
+2: f-;c;a;
+bar
+
+1: f;2r;
+2: f-;2r;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.f;
+2: 2.f-;
+endbar

@@ -1,0 +1,212 @@
+header
+	title (16) "Waltz"
+	title (6) ""
+	title "" "John A. Krallmann (7/10/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	key=2&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.97
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=180";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: 2s;4d;
+2: 2s;4r;
+bar
+
+1: 2a; 4b~;
+2: 2.g-;
+bar
+
+1: b;d+;c+;
+2: 2.d;
+bar
+
+1: 2b;4a~;
+2: 2.f#-;
+bar
+
+1: a;g;a;
+2: 2.d;
+bar
+
+1: 2c+;4b~;
+2: 2.e-;
+bar
+
+1: b;a;g;
+2: 2.c;
+bar
+
+1: g;2a~;
+1 2: 2s;4c;
+2: 2.d-;
+bar
+
+1: a;g;a;
+1 2: 2.d;
+2: 2.a-;
+bar
+
+1: e+;d+;c+;
+2: 2.c-;
+bar
+
+1: 4.g;8a;4b;
+2: 2.e+;
+bar
+
+1: d+;c+;a;
+2: 2.d-;
+bar
+
+1: 4.d;8a;4b;
+2: 2.f#c+;
+bar
+
+1: a;2g~;
+1 2: 2s;4d;
+2: 2g-;4gb;
+bar
+
+1: 2g;8a;b;
+1 2: 2.e;
+2: 2.gc+;
+bar 
+
+1: a;2g~;
+1 2: 2s;4d;
+2: 2g-;4gb;
+bar
+
+1: 2g;8a;b;
+1 2: 2.e;
+2: 2.gc+;
+bar 
+
+midi all: 0 "tempo=160";
+rom above all: 1 "a little slower";
+1: 8e+g+;d+f+;4c+e+;bd+;
+2: 2c-;4gc+e+;
+bar
+
+1: 8c+e+;bd+;4ac+;gb;
+2: 2d-;4gc+e+;
+bar
+
+1: 8ac+;gb;4f#a;eg;
+2: 2d-;4ca;
+bar
+
+1: 8df#;ce;4b-d;a-c;
+2: 2.da;
+dblbar
+
+score key=1#
+music
+
+1: 8b-;c;4d;db;
+2: g-;2dgb;
+bar
+
+1: 8b;a;2cea;
+1 2: a-e;2s;
+2: 2c-;4eg;
+bar
+
+1: 8d;e;f;g;a;a#;
+2: d-;2dfc+;
+bar
+
+1: 2b;4;
+1 2: 8d;e;4d;fn;
+2: g-;2dgb;
+bar
+
+1: 8d+;c+;4;8g;a;
+1 2: e;;e&;
+2: c-;gc+;ac+;
+bar
+
+1: 8c+;b;4;8f;g;
+1 2: d;2;
+2: g-;gb;;
+bar
+
+1: 8b;a;4a;8f;g;
+1 2: e;2;
+2: c-;aec+;;
+bar
+
+1: 2a;4a#;
+1 2: 8e;e&;4d;;
+2: d-;dfc+;;
+bar
+
+1: 8db;bg+;4bg+;afn+;
+2: g-;gbd+;gbfn+;
+bar
+
+1: 8afn+;ge+;4;8d+;c+;
+2: c-;gc+e+;;
+bar
+
+1: 8e+;d+;4;c+;
+1 2: f#;;;
+2: d-;dfc+;dfe+;
+bar
+
+1: 2.fnd+;
+2: g-;dgb;;
+bar
+
+1: 2c+;8b;a;
+1 2: 2.e;
+2: a-;eac+;;
+bar
+
+1: 2c+;8b;a;
+1 2: 2.e;
+2: g-;eac+;;
+bar
+
+1: 2.cea;
+2: fn-;cfna;;
+bar
+
+1: 2.b-g;
+2: g-;dg;;
+bar
+
+1: 2.ce;
+2: a-;ea;;
+bar
+
+1: g;fn;d;
+2: d-;a-;fn;
+bar
+
+1: 2.c#e;
+2: 2.a-e;
+endbar

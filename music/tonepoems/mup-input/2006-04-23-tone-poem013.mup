@@ -1,0 +1,124 @@
+header
+	title (18) "Tone Poem (No. 13)"
+	title "" "John A. Krallmann (April 23, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2.gb;8bd+;ac+;
+2: g-;c#gb;2dgb;
+bar
+
+1: 2g#b tie;8;e;a;b;
+2: e-;8d+;c+;4egb;dgb;
+2 2: s;eg#;2s;
+bar
+
+1: 4.bd+;8c+e+;4ac+;{8b;a;g;}3;
+1 2: 2.s;4g;
+2: a-;eac+;fad+;gbe+;
+bar
+
+1: 4.dgb;8a;4cfa;dg;
+2: a-;eac+;fa;gb;
+bar
+
+1: 2.ce;8a;g;
+1 2: 4.b-;8a-;4;b-d;
+2: a-;e;f;g;
+bar
+
+1: 2ce;4a-cd;8g;f;
+1 2: 4.b-;8a-;4s;a-d;
+2: a-;e;f;d-;
+bar
+
+1: 2.b-e;8aa+;bb+;
+1 2: a-;8g#-;f#-;4g-;s;
+2: e-;b-;e;ebd+;
+bar
+
+1: 4.e+a+c++;8b+;4c+f+a+;d+g+;
+1 2: 2.s;8a;b;
+2: a--;eac+;fad+;gbe+;
+bar
+
+1: ac+e+;gbd+;fac+;;
+2: ae+;be+;dac+;d#ac+;
+bar
+
+1: 4.e+;8d+;4deb;dg#c+;
+1 2: 2ea;s;
+2: 2c+;4g#b;e;
+2 2: e;f#;2s;
+bar
+
+1: 4.b;8a;4cea;ce;
+1 2: 2de;s;
+2: a-;e;a;ga;
+bar
+
+1: a;8f+;e+;4d+;8g+;f+;
+1 2: 2cd;gb;
+2: a;8d+;e+;4d+;8e+;f+;
+2 2: 2f;g;
+bar
+
+1: e+;8f+;g+;4af+a+;8d+;e+;
+1 2: 2bc#+;s;
+2: 2e+;c+d+;
+2 2: a;g;f;e;
+bar
+
+1: d+;8e+;f+;4gd+g+;8e+;c+;
+1 2: 2b;4s;a;
+2: 2d+;s;
+2 2: g;f;e;f#;
+bar
+
+1: 2ae+;[grace]16f+;[]e+;4gd+;g;
+1 2: 1f;
+2: 2c+;b;
+2 2: 1g;
+bar
+
+1: c+;;;8d+;e+;
+1 2: 2e;;
+2: 2a-eb;g-ea;
+bar
+
+1: c+;;;8d+;e+;
+1 2: 2e;cg;
+2: 2f-ca;e-cg;
+bar
+
+1: c+;;;8;d+;
+1 2: 2dfa;cf;
+2: 2d-a-f;d&-a&-f;
+bar
+
+1: 1cec+;
+2: 1c-g-e;
+endbar

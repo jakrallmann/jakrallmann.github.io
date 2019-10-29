@@ -1,0 +1,266 @@
+header
+	title (18) "Lullaby No. 51"
+	title (10) " "
+	title "" "John A. Krallmann (1/14-15/05)"
+
+header2
+	title (12) "Lullaby No. 51 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=84,70";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=50"; 0 "onvelocity=70";
+
+1: mr;
+2: 4d-;a-;e;f;
+bar
+
+1: 4a;g;2a~;
+1 2: d;4e;f;
+2: b;a~;
+2 2: s;d;
+bar
+
+1: 4a;;;g;
+1 2: 1d~;
+2: 1a;
+2 2: c;b-~;
+bar
+
+1: 2.g;4f;
+1 2: 1d~;
+2: 4g;d;2f~;
+2 2: 1b-~;
+bar
+
+1: 2.f;4e;
+1 2: d;c~;
+2: 1f;
+2 2: b-;a-~;
+bar
+
+1: 2.e;4f;
+1 2: 1c;
+2: 1g;
+2 2: a-;b-~;
+bar
+
+1: 1d;
+1 2: c;b-;
+2: 1f~;
+2 2: 1b-;
+bar
+
+1: 2.c;4g;
+1 2: 1g-;
+2: f;e;
+2 2: 1c;
+bar
+
+1: 4g;c+;2c+;
+1 2: b-;f;
+2: f-d;ca;
+bar
+
+1: d+;f+;
+1 2: 4a;g;2a;
+2: b-f;fd+;
+bar
+
+1: 4d+;2.c+;
+1 2: c;f;
+2: a-f;ca;
+bar
+
+1: 4b;2a;4g;
+1 2: 1d;
+2:f;b;
+2 2: 1g-;
+bar
+
+1: g;g#;
+1 2: 1b-;
+2: 1e-c;
+bar
+
+1:2.a;4c+;
+1 2: 1c;
+2: 1f-a;
+bar
+
+1: c+;b;
+1 2: 1d;
+2: 1b-f;
+bar
+
+1: 2.d;4c;
+1 2: 1b-;
+2: 1c-e;
+bar
+
+1: 1d~;
+1 2: 1f-;
+2: 4d-;a-;d;e;
+bar
+
+1: 4d;a;;g;
+2: f;c+d+;
+bar
+
+1: 4g;d+;2c+;
+1 2:2s;f~;
+2: bd+;ad+~;
+bar
+
+1: 2.b;8f;g;
+1 2: 1f;
+2: gd+;c-;
+bar
+
+1: 2.a;4f;
+1 2: 4e;d;2d~;
+2: f-;b--;
+bar
+
+1:2.g;4f;
+1 2: 4d;b-;2d;
+2: f-;b--;
+bar
+
+1: 2.e;4d;
+1 2: 4s;8g-;a-;2b-;
+2: c-;g-;
+bar
+
+1: 4c;g;;a~;
+1 2: 4b-;s;2a-;
+2: 4s;e;2s;
+2 2: c-;f-;
+bar
+
+1: 2.a;8b;c+;
+1 2: 4d;c;2d#;
+2: c;f-g;
+bar
+
+1: 2.d+;4f+;
+1 2: 4a;g;2f;
+2: b--;f-;
+bar
+
+1: 1c+;
+1 2: 4g;f;bn-;c;
+2: a--;f-;
+bar
+
+1: 2.b;4c+;
+1 2: 4f;d;f;e;
+2: g--;c-;
+bar
+
+1: 4g;e;2a-f;
+1 2: 4c;g-;e;d;
+2: a--;d-;
+bar 
+
+1: 2.b;8g;a;
+1 2: 1d;
+2: g-;f-;
+bar
+
+1: 4b;c+;d+;f+;
+1 2: c;fc+;
+2: e-;d-;
+bar
+
+1: 2.g+;4f+;
+1 2: 1fd&+;
+2: c-;b;
+bar
+
+1: 2f+;e+;
+1 2: 4g;a;2b;
+2: 1c+;
+mussym above all: 2 "ferm";
+bar
+
+staff 2 clef=treble
+music
+
+1: a+;f+;
+1 2: 1c+;
+2: 1fa;
+bar
+
+1: a+;4g+;f+;
+1 2: 1c+;
+2: 1e&g;
+bar
+
+1: c++;b+;
+1 2: 1f+;
+2: 1db;
+bar
+
+1: f+;g+;
+1 2: 1b;
+2: 1d&g;
+bar
+
+1: 1f+;
+1 2: 1a;
+octave above 1: 0.5 "8va" til 2.5;
+2: 1ca;
+bar
+
+1: 1c++;
+1 2: g+;f+;
+2: 1ca;
+bar
+
+1: 1d++;
+1 2: 1d+g+;
+2: 1b-f;
+bar
+
+1: 1c+c++;
+1 2: f+;e+;
+2: 1cg;
+bar
+
+staff 2 clef=bass
+music
+
+1: 1f+;
+1 2: 1a;
+octave above 1: 0.5 "8va" til 1m+2.5;
+2: 4s;<<staff clef=treble>>a;c+;d+;
+2 2: 1f--;
+bar
+
+1: 1a+;
+1 2: 1c+;
+2: 1f+;
+endbar

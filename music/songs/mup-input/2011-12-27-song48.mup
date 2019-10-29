@@ -1,0 +1,196 @@
+header
+	title (16) "Song Without Words (No. 48)"
+	title "" "John A. Krallmann (12/27/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 48) - \%"
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	staffsep=18
+	measnum=y
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=108";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=82, 60";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1-2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+define A
+1: b;c+;d+;
+2: 2.gd+;
+bar
+
+1: 2a;8b;a;
+2: 2.fd+;
+bar
+
+1: g;a;b;
+2: 2.ec+;
+bar
+
+1: d;g;f;
+2: 2.db;
+bar
+
+1: e;f;g;
+2: 2.ca;
+bar
+
+1: 2d;4b;
+2: a;2g;
+2 2: 2.b-;
+bar
+
+1: b;a;g;
+1 2: 2.c;
+2: 2.a-e;
+bar
+
+1: 2.a;
+1 2: e;2f;
+2: 2.a;
+2 2: 2d;4c;
+bar
+
+1: d+;b;g;
+1 2: 2.d;
+2: 2.b-g;
+bar
+
+1: 2.e;
+1 2: d;c;b-;
+2: 2.cg;
+bar
+
+1: c+;a;g;
+1 2: 2.e;
+2: 2.a-g;
+bar
+
+1: 2.f;
+1 2: e;d;c;
+2: 2.da;
+bar
+
+1: d+;b;g;
+1 2: 2.fn;
+2: 2.b-g;
+bar
+
+1: e+;f+;g+;
+1 2: 2g;4b;
+2: 2cg;4c#a;
+bar
+
+1: 4.b;8a;4e;
+1 2: 2.c;
+2: e;f;g;
+2 2: 2.d;
+bar
+
+rom between 1&2: 1 "Fine";
+1:2.b-g;
+2: 2.g-d;
+dblbar
+
+@
+A
+
+1: b-g;fa;gb;
+2: e-;b-;g;
+bar
+
+1: 4.gb;8ac+;4fa;
+2: a-;e;c+;
+bar
+
+1: 8g;a;4f;d;
+1 2: 2b-;4g-;
+2: e-;b-;f;
+bar
+
+1: 2.e;
+1 2: 8f-;g-;4b-;g-;
+2: c-;g-;e;
+bar
+
+1: 2.a;
+1 2: 8c;d;4e;f;
+2: d-;a-;f;
+bar
+
+1: 2.f;
+1 2: 8a-;b-;4c;d;
+2: d-;a-;f;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2b;4d+;
+1 2: 8f;g;4f;e;
+2: 2.g-;
+bar
+
+1: d+;2c+;
+1 2: 2.e;
+2: 2c-;4g-;
+bar
+
+1: 2.a;
+1 2: 8e;f;4e;d;
+2: d-;2a-;
+bar
+
+1: 2a;4c+;
+1 2: 8e;f;4e;d;
+2: d-;2a-;
+bar
+
+1: 2.b;
+1 2: 8f;g;4f;e;
+2: e-;2b-;
+bar
+
+1: 2.b;
+1 2: 8f;g;4f;d;
+2: e-;2b-;
+bar
+
+1: 2.e+;
+1 2: 8g;a;4c+;g;
+2: c-;g-;e;
+bar
+
+1: 2.a;
+1 2: 8e;f;4e;d;
+2: d-;2a-;
+bar
+
+1: 8eg;fa;4gb;fa;
+2: e-;b-;d;
+bar
+
+rom between 1&2: 1 "D.C. al Fine";
+1: 2eg;<<staff clef=treble>>8g;a;
+2: 2.e-b-;
+dblbar
+
+ifdef MIDI
+A
+endif

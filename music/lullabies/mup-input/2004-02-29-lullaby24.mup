@@ -1,0 +1,286 @@
+header
+	title (18) "Lullaby No. 24"
+	title (10) " "
+	title "" "John A. Krallmann (February 29, 2004)"
+
+header2
+	title (12) "Lullaby No. 24 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.83
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=110";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=78, 64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+1 2: 2.g;4f~;
+2: 4r;bd+;2ac+;
+bar
+
+1 2: 4f;2e;4d~;
+2: gb;fa;
+bar
+
+1: 2.s;4a;
+1 2: 4d;c;2a-;
+2: eg;df#;
+bar
+
+1: 4a;2g;4b;
+1 2: e;d;
+2: ca;b-g;
+bar
+
+1: 4b;2a;4c+~;
+1 2: d;;
+2: g-en;a-f#;
+bar
+
+1: 4c+;2b;4d+~;
+1 2: d;g;
+2: b-f(n);eb;
+bar
+
+1: 4d+;c+;2b;
+1 2: 2g;;
+2: enb;fc+e+ tie;
+bar ending "1."
+
+1: 1a;
+1 2:1f;
+2: 1fc+e+;
+repeatend ending "2."
+
+1: 4a;c+;d+;e+;
+1 2: 1f;
+2: fc+e+;e;
+dblbar endending
+
+score key=3&
+music
+
+1: 2.f+;4c+;
+1 2: 1a;
+2: 4c+;c&+;2b;
+2 2: 1d;
+bar 
+
+1: 4c+;2b;4a~;
+1 2: d;e;
+2: b-a;ca;
+bar
+
+1: 4a;b;2a;
+1 2: f;;
+2: db;e~c+;
+bar
+
+1: 2.g;4b;
+1 2: 1e;
+2: eb;d;
+bar
+
+1: 2.e;4g~;
+1 2: 1c;
+2: 1g;
+2 2: c;b-;
+bar
+
+1: 4g;2e;4f~;
+1 2: c;b-;
+2: a-e;g-e;
+bar
+
+1: 4f;2e;4;
+1 2: a-;a-c;
+2: f-c;b-f;
+bar
+
+1: 4b;2g;4b;
+1 2: d;e;
+2: b-;c;
+2 2: 1e-;
+bar
+
+1: 2.g;4b;
+1 2: d;e;
+2: d;c;
+2 2: 1e-;
+bar
+
+1: 4g;2b;4c+;
+1 2: d;e;
+2: b-;c;
+2 2: 1e-;
+bar
+
+1: 1g;
+1 2: d;e;
+2: d;c;
+2 2: 1e-;
+bar
+
+1: 4f;2e;4f;
+1 2: c;bn-;
+2: f;e;
+2 2: 1a-;
+bar
+
+1: 4f;2e;4f;
+1 2: bn-;;
+2: f;e;
+2 2: 1a-;
+bar
+
+1: 1b~;
+1 2: 1e;
+2: 1b-a tie;
+bar
+
+1: b;b+~;
+1 2: d;r;
+2: b-a;r;
+bar
+
+staff 2 clef=treble
+music
+
+1: 4b+;a+;g+;f+;
+1 2: 1e+;
+2: 1eb;
+bar
+
+1: 1e+;
+1 2: 4d+;2.c+~;
+2: 1g~;
+2 2: c;b-~;
+bar
+
+1: e+;{4e+;f+;g+;}3;
+1 2: c+;;
+2: g;a-e;
+2 2: b-;s;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2.a+;4g+;
+1 2: 1c+;
+2: 1e+;
+2 2: f;e;
+bar
+
+1: {4f+;g+;a+;}3;{f+;e+;f+;}3;
+1 2: a;;
+2: db;4c+;c+&;
+2 2: 2s;e~;
+bar
+
+1: 1g+~;
+1 2: 1b~;
+2 2: 1eb tie;
+bar
+
+1: g+;{4c+;d+;e+;}3;
+1 2: b;ab;
+2 2: eb;c+e+; 
+bar
+
+1: 1b;
+1 2: 1g;
+2: 1be+;
+bar
+
+1: {4c+;d+;e+;}3;2b~;
+1 2: 1f;
+2: ae+;g~;
+bar
+
+1: b;~;
+1 2: 1e;
+2: 1g;
+bar
+
+1: {4b;a;g;}3;2a~;
+1 2: 1e;
+2: 1fc+;
+bar
+
+1: a;a~;
+1 2: 1e;
+2: 1ec+;
+bar
+
+1: 2a;b~;
+1 2: 1f;
+2: 1db;
+bar
+
+1: b;a;
+1 2: 1e~;
+2: 1ca;
+bar
+
+1: 1f~;
+1 2: e;d;
+2: 1b-a tie;
+bar
+
+1: 1f;
+1 2: c;bn-;
+2: 1b-a;
+bar
+
+1: 1f~;
+1 2: 1a-~;
+2: s;d;
+2 2: 1e-~;
+bar
+
+1: 1f;
+1 2: 1a-;
+2: c;c&;
+2 2: 1e-;
+bar
+
+1: 1f;
+1 2: 1a-;
+2: 1e-~c&;
+bar
+
+1: 1g;
+1 2: 1b-;
+2: 1e-b-;
+bar
+
+1: 1f;
+1 2: 1a-;
+2: 1e-~c&;
+bar
+
+1: 1e;
+1 2: 1g-;
+2: 1e-b-;
+endbar
+

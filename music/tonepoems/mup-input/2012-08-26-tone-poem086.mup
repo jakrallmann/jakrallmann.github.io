@@ -1,0 +1,218 @@
+header
+	title (16) "Tone Poem (No. 86)"
+	title (14) " "
+	title "" "John A. Krallmann (Aug 26, 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 85) - \%"
+score
+	staffs=2
+	key=2&
+	time=2/4
+	beamstyle=4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+1: [grace]8b;[]a;2g;
+2: g-;dgb;
+bar
+
+1: {8b;c+;a;}3;{4g;8a;}3;
+2: e-;egc+;
+bar
+
+define W [with "\(wedge)"] @
+1: f#;W d+;
+2: d-;W f#ad+;
+bar
+
+1: r;8;d+;
+2: d-;W f#ad+;
+bar
+
+1: 2e+;
+2: c-;egc+;
+bar
+
+1: [grace]8d+;[]c+;{4b;8a;}3;4g;
+2: g-;dgb;
+bar
+
+1: a;d;
+2: d-;df#c+;
+bar
+
+1: [grace]8c+;{4b;8a;}3;4g;
+2: g-;dgb;
+bar
+
+1: 8e;4;8e+~;
+2: c-;egc+;
+bar
+
+1: 8e+;4d+;8c+;
+2: c-;egc+;
+bar
+
+1: 8b;4;8c+;
+2: g-;dgb;
+bar
+
+1: W g+;r;
+2: g-;W dgb;
+bar
+
+1: 8c+;4d+;8e+~;
+2: c-;egc+;
+bar
+
+1: 8e+;4f+;8g+;
+2: c-;egc+;
+bar
+
+1: 2a+~;
+2: d-;W f#ad+;
+bar
+
+1: 2a+;
+2: d-;W ac+f#+;
+bar
+
+1: 8c++;4b+;8a+;
+2: e-;egc+;
+bar
+
+1: 2g+;
+2: e-;gbe+;
+bar
+
+1: 8c++;4b+;8a+;
+2: d-;fbd+;
+bar
+
+1: 8bn;c+;d+;f+;
+2: g-;gbnd+;
+bar
+
+1: 8f+;e+;g+;b;
+2: c-;gc+e+;
+bar
+
+1: 8a;4b;8c+;
+2: f-;fae+;
+bar
+
+1: 8d+;e+;d+;a+~;
+2: f#-;f#ad+;
+bar
+
+1: 8a+;f#+;d+;c+;
+2: d-;f#c+d+;
+bar
+
+1: 8b;c+;b;g+~;
+2: g-;gbd+;
+bar
+
+1: 2g+;
+2: f-;fbd+;
+bar
+
+1: 8b;c+;b;g+~;
+2: e-;egc+;
+bar
+
+1: 2g+;
+2: e-;d-;
+bar
+
+1: 8e+;f+;g+;c++~;
+2: c-;egc+;
+bar
+
+1: 8c++;4.b+;
+2: b--;gc+e+;
+bar
+
+1: 2a+~;
+2: d-;ad+f#+;
+bar
+
+1: 2a+;
+2: d;c+f#+a+;
+bar
+
+1: 2b+;
+2: g-;gbd+;
+bar
+
+1: 2a+;
+2: f-;fbd+;
+bar
+
+1: 2g+;
+2: e-;gbe+;
+bar
+
+1: 2f+;
+2: d-;fbd+;
+bar
+
+1: 2e+;
+2: c-;egc+;
+bar
+
+1: f+;e+;
+2: a--;egc+;
+bar
+
+1: 2d+~;
+2: d-;f#ad+;
+bar
+
+1: d+;c+;
+2: c-;f#ad+;
+bar
+
+1: 2b;
+2: g-;dgb;
+bar
+
+1: a;g;
+2: e-;d&gb;
+bar
+
+1: e;d~;
+2: d-;a-f#a;
+bar
+
+1: d;8b;a;
+2: d-;a-f#a;
+octave below 2: 1 "8va";
+mussym above 1: 1 "ferm";
+bar
+
+1: 2g;
+2: 2g-;
+bar
+
+1: df#ad+;W gbd+g+;
+2: d-d;W g--g-;
+boldital between 1&2: 1 "ff";
+endbar
+
+

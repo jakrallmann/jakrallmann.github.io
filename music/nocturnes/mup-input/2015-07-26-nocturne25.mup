@@ -1,0 +1,227 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 25"
+	title "" "John A. Krallmann"
+	title " " "(July 26, 2015)"
+
+header2
+	title (12) "Nocturne No. 25 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	key=3&
+	measnum=y
+	staffscale=0.75
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+
+midi all: 0 "tempo=100";
+midi 1: 0 "onvelocity=78";
+
+1: 2g;4.e+;8b;
+2: r;e-;g;b-;
+bar
+
+1: 2.a;4c;
+2: f-;e;c;a;
+bar
+
+1: 2c+;4.d+;8c&+;
+2: b--;d;c+;a;
+bar
+
+1: 2.b;4e;
+2: e-;f;g;d&+;
+octave below 2: 1 "8va";
+bar
+
+1: 2c+;4.f+;8c+;
+2: a--;e;c+;e+;
+bar
+
+1: 2b;4.e+;8f+;
+2: g--;f;d;b;
+bar
+
+1: 2g+;4.f+;8e+;
+2: a--;f;c+;e+;
+bar
+
+1: 2f+;f#+;
+2: b--;d;a;d+;
+bar
+
+1: 2g+;4.f+;8e+;
+2: e-;g;d+;c+;
+octave below 2: 1 "8va";
+bar
+
+1: g+;2.f+;
+2: a--;e;c+;a;
+bar
+
+1: 2g+;4.b+;8c++;
+2: e-;g;e+;d+;
+octave below 2: 1 "8va";
+bar
+
+1: 2c++;4b+;a+;
+2: a--;e;d+;c+;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 2g+;4f+;e+;
+2: e-;f;g;b;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: 2c+;4.b;8a;
+2: a-;e;c+;e+;
+bar
+
+1: 2g;4f;e;
+2: e-;b-;g;b;
+bar
+
+1: 1c;
+2: a--;d;f;e;
+bar
+
+1: 1a;
+2: f--;c;b;a;
+bar
+
+1: 2f;4.g;8a;
+2: b--;d;a;f;
+bar
+
+1: b;a+;g+;f+;
+2: g--;d;an;bn;
+bar
+
+1: 2f+;e+;
+2: c-;d;c+;g;
+bar
+
+1: 1f;
+2: a--;e;f;a;
+bar
+
+1: 1g;
+2: g--;d;an;bn;
+bar
+
+1: 2enen+;4c+;ee+;
+2: c-;g-;en;g-;
+bar
+
+1: 1ee+;
+2: a--;e;c+;e;
+bar
+
+1: 2enen+;4c+;ee+;
+2: c-;g-;en;g-;
+bar
+
+1: bb+;2.aa+;
+2: f-;c;g;a;
+bar
+
+1: 2gg+;4en+;gg+;
+2: en-;c;g;c;
+bar
+
+1: 2a+;4g+;f+;
+1 2: 1a;
+2: f-;c;b;a;
+bar
+
+1: 1d+;
+1 2: d;a;g;f;
+2: g-;d;bn;g;
+bar
+
+1: 4.enen+;8ff+;2gg+;
+2: c;g;c+;b;
+dblbar
+
+score key=4&
+music
+
+1: 2gg+;aa+;
+2: f-;c;g;a;
+bar
+
+1: 2bb+;4.aa+;8bb+;
+2: d-;a-;f;a;
+bar
+
+1: 2d+d++;c+c++;
+2: c-;g-;en;b;
+bar
+
+1: 2g+;4.c+;8g+;
+1 2: 1g;
+2: f-;c;a;c;
+bar
+
+1: 1ff+;
+2: d-;a-;f;a-;
+bar
+
+1: 2c+g+;4.c+;8g+;
+1 2: 1g;
+2: f-;c;a;c;
+bar
+
+1: g+;2.f+;
+1 2: 2gc+;4b;a;
+2: d-;a-;f;a;
+bar
+
+1: 2g+;4b+;a+;
+2: f-;c;g;a;
+bar
+
+1: g+;f+;e+;d+;
+2: d-;a-;f;a;
+bar
+
+1: 2e+;4c+;b;
+2: c-;g-;e;g;
+bar
+
+1: an;b;c+;e+;
+2: f-;c;an;c+;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 2d+;4.f;8a;
+2: b--;f-;d;a;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: 2g;4.c;8en;
+2: c-;g-;en;g;
+bar
+
+1: 1f;
+2: f-;c;a;c+;
+bar
+
+1: mr;
+2: 1f+;
+endbar

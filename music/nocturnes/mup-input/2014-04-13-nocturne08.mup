@@ -1,0 +1,201 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 8"
+	title "" "John A. Krallmann"
+	title " " "(April 13, 2014)"
+
+header2
+	title (12) "Nocturne (No. 8) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=68";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+define THEME
+1: 2s;8d;e;
+2: 2s;4r;
+bar
+
+1: f;a;8c#+;d+;
+2: d-;c#fa;8b-;a-;
+bar
+
+1: 8.b;16f;4e;d#f;
+2: g-;gbd+;8b-;b--;
+bar
+
+1: eg;4.c#+e+;8bd+;
+2: 8e-;d-;4a--;ac#+g+;
+bar
+
+1: 8gb;fa;4df;ca;
+2: d-;da;16d;a-;8d-;
+bar
+
+1: 8gb;bd+;4c+a+;bfn+;
+2: g--;gfn+;16g;d;8g-;
+bar
+
+1: 8afn+;ge+;4ec+;8a;b&;
+1 2: 2s;4e;
+2: c-;gc+;16g;c;8c-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8eb&;fna;4;8;df;4;
+2: fn--;a;d-;a;
+2 2: s;8c;c#-;4s;8d;c;
+bar
+
+1: 8a-dfn;fn-a-d;;a-df;2a-c#e;
+2: b&--;b&-;8a--;g;f;e;
+bar
+
+1: 8a-df#;cfa;;dfb&;ce&a;b&-dg;4;
+2: d-;d;g--;8g-;fn-;
+bar
+
+1: 8b&-dg;g-e&;8.;16b-g;2a-f;
+2: e&-;c;8d-;e&;d;c;
+bar
+
+1: 8a-b-d#f;ca;cda;b-g;a-f;g-e;4g-b-e;
+1 2: 2s;4c;s;
+2: b--;b-f;e-;8e;d-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8gbe+;egc+;e&gc+;gac+e&+;2df#d+;
+2: c-;g-;8d-;e&;d;c;
+bar
+
+staff 1 clef=treble
+music
+
+1: 8a-b-d#;a;g;f;c+;16b;a;4eg;
+1 2: s;d;df;s;
+2: b--;b-a;8e-;b-;g;d-;
+bar
+
+1: 8e+;d+;16c+;b;a;g;8f+;e+;16d+;c+;b;a;
+1 2: 2g;a;
+2: 8c-;g-;e;g;d-;a-;f;a-;
+bar
+
+1: 8.bg+;16d+f+;4e+;8.af+;16ge+;4d+;
+1 2: s;16b;a;8g;4s;16a;g;8f;
+2: 8e-;b-;g;b-;d-;a-;f;a-;
+bar
+@
+THEME
+
+rom above all: 4 "meno mosso";
+1: 2.ge+;8e;f;
+2: 2.b;4r;
+2 2: 8.e;16b-;2e-;4s;
+dblbar
+
+score key=4#
+music
+
+1: g;2e+;8d+;e+;
+2: 2eb;dgb;
+bar
+
+1: d+;2c+;8f;g;
+2: 2cea;a-e;
+bar
+
+1: a;4.f+;8e+;d+;c+;
+2: 2f-e;b-da;
+bar
+
+1: a#;2b;8g;an;
+2: 2e-;egb;
+bar
+
+score time=3/4
+music
+
+1: b;4.g+;8a+;
+2: 2e-;4gbe+;
+bar
+
+1: g+;4.f+;8cn+;
+2: 2d-;4ac+f+;
+bar
+
+1: b;4.f+;8g+;
+2: 2b--;4fbd+;
+bar
+
+1: d+;2e+;
+2: 2e-;4dngb;
+bar
+
+1: c+;4.;8e+;
+2: 2a--;4fac+;
+bar
+
+1: b;4.;8e+;
+2: 2g--;4gbe+;
+bar
+
+1: a#;4.;8c+;
+2: 2gn--;4cneb&;
+bar
+
+1: 2.b;
+2: g--;2gbe+;
+bar
+
+1: a;4.;8b;
+2: 2f-;4fac+;
+bar
+
+1: g;4.;8c+;
+2: 2e-;4gbe+;
+bar
+
+1: f;4.;8b;
+2: 2b--;4b-da;
+bar
+
+1: 2.g-e;
+2: 2.e-b-;
+dblbar
+
+score
+	key=1#
+	transpose=up maj 2
+music
+
+rom above all: 3 "tempo I ";
+THEME
+1: 2.ge+;4s;
+2: 2.b;4s;
+2 2: 8.e;16b-;2e-;4s;
+endbar

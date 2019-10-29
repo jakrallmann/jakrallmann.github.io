@@ -1,0 +1,280 @@
+header
+	title (16) "Waltz"
+	title (6) ""
+	title "" "John A. Krallmann (2/21/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	key=1#
+	time=3/4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.97
+
+staff 2
+	clef=bass
+	timeunit=2.
+music
+
+midi all: 0 "tempo=180";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+rom above 1: 1 "(\(smup2n)\(smdot) = 60)";
+define THEME
+1: b;a#;b;
+2: g-; 
+bar
+
+1: d;e+;e&+;
+2: dgb;
+bar
+
+1: c+;b;c+;
+2: a-;
+bar
+
+1: e;g#;a;
+2: eac+;
+bar
+
+1: g;f;fn;
+2: d-;
+bar
+
+1: e;e&;d;
+2: a-df;
+bar
+
+1: a#;b;c+;
+2: g-;
+bar
+
+1: b;f+;g+;
+2: dgb;
+bar
+
+1: b+;a+;g+;
+2: c;
+bar
+
+1: e+;g#+;a+;
+2: eac+;
+bar
+
+1: g+;f+;c+;
+2: 2.d;
+bar
+
+1: a;b;c+;
+2: fad+;
+bar
+
+//
+
+1: e+;d+;e+;
+2: g-;
+bar
+
+1: d+;c++;b+;
+2: dgb;
+bar
+
+1: b+;a+;b+;
+2: c;
+bar
+
+1: a+;;;
+2: eac+;
+bar
+
+1: a+;g+;a+;
+2: d;
+bar
+
+1: g+;;;
+2: gbd+;
+bar
+
+1: e+;f;;
+2: d;
+bar
+
+1: f;f+;a+;
+2: ac+d+;
+bar
+
+1: a+;g+;;
+2: g-;
+bar
+
+1: 2.g+;
+2: bd+g+;
+bar
+
+1: b+;;;
+2: g-;
+bar
+
+1: b+;c++;b+;
+2: bd+g+;
+bar
+
+1: a+;g+;e+;
+2:c;
+bar
+
+1: c+;d+;e+;
+2: gc+e+;
+bar
+
+1: a+;;f+;
+2: d;
+bar
+
+1: d+;e+;f+;
+2: fc+d+;
+bar
+
+1: a#+;b+;;
+2: g-;
+bar
+
+1: b+;a+;g+;
+octave above 1: 2 "8va" til 4m+3.5;
+2: gbd+;
+bar
+
+1: f+;e+;;
+2: c;
+bar
+
+1: e&+;;c+;
+2: gc+e&+;
+bar
+
+1: e&+;d+;;
+2: g-;
+bar
+
+1: b;;g;
+2: gbd+;
+bar
+
+1: e ifndef LAST & else (n) endif +;;c+;
+2: c;
+bar
+
+1: a;;g;
+2: gc+e&+;
+bar
+
+1: b;;;
+2: g-;
+bar
+
+1: 2.b;
+2: bd+g+;
+ifdef LAST endbar else repeatend endif
+@
+
+THEME
+
+score key=2&
+music
+
+1: b;;g;
+2: e;
+bar
+
+1: b;;c+;
+2: gbe+;
+bar
+
+1: d+;;g;
+2: d;
+bar
+
+1: b;;c+;
+2: gbd+;
+bar
+
+1: d+;;a;
+2: d;
+bar
+
+1: b;;c+;
+2: gben+;
+bar
+
+1: d+;e+;d+;
+ital between 1&2: 1 "cresc";
+2: d-;
+bar
+
+1: c+;b;c+;
+2: gben+;
+bar
+
+1: d+;e+;d+;
+2: d-;
+bar
+
+1: c+;b;c+;
+2: ad+f#+;
+bar
+
+1: d+;e+;d+;
+2: d-;
+bar
+
+1: c+;b;c+;
+2: ben+g+;
+bar
+
+1: e+;;c+;
+ital between 1&2: 1 "dim.";
+2: c-;
+bar
+
+1: g;g+;e+;
+2: gc+e+;
+bar
+
+1: d+;;b;
+2: g-;
+bar
+
+1: g;a;b;
+2: gbd+;
+bar
+
+1: a;;f#;
+2: d-;
+bar
+
+1: 2d;4f#;
+2: f#ac+;
+bar
+
+1: 2.g~;
+2: g-;
+bar
+
+1: 2.g;
+2: gbd+;
+dblbar
+
+score key=1#
+music
+
+define LAST @
+THEME

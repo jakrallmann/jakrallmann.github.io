@@ -1,0 +1,156 @@
+header
+	title (18) "Lullaby No. 8"
+	title (12) " "
+	title "" "John A. Krallmann (November 22-23, 2003)"
+	title (12) " "
+
+header2
+	title (12) "Lullaby - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	key=3#
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+	vscheme=2f
+	measnum=y
+	scoresep=12,32
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=50";
+midi 1 1: 0 "channel=11"; 0 "program=49";
+midi 1 2: 0 "channel=12"; 0 "program=49";
+midi 2 1: 0 "channel=13"; 0 "program=49";
+midi 2 2: 0 "channel=14"; 0 "program=49";
+
+1: 4.s;8e;e#;f;8.b;16a;
+2: 4.s;8r;2;
+bar
+
+1: 2s;8r;e+;f+;g+;
+1 2: 8b#-;c;8.e;16d#;2dn;
+2: 2s;8r;g;f;e;
+2 2: 8a-;e;c;cn;2b-;
+bar
+
+1: d+;8.a+;16b+;2c++;
+1 2: 8r;4.e;8r;c+e+;bd+;ac+;
+2: 8r;g;f;e;4r;e;
+2 2: 2e-;a--;
+bar
+
+1: f;8.g;16a;4b;8e;16g+;a+;
+1 2: 2s;8r;4.d;
+2: 8r;c+;b;a;r;4.e;
+2 2: 2d;4.g-;8e-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: b+;8.a+;16b+;16c++;d++;c++;b+;
+1 2: 8r;4.d+;4r;
+2 2: g+;8f+;e+;4a--~;
+bar
+
+score time=4/4 ; beamstyle=2,2
+music
+
+1: 2a+;f+;
+octave above 1: 3 "8va" til 3m+2.9;
+1 2: 8r;c+e+;bd+;ac+;r;a;g;f;
+2: 8r;c+;d+;e+;r;f+;e+;d+;
+2 2: 2a--;d;
+bar
+
+1: 2e+;4.d+;32e+;d+;c+;d+;
+1 2: 8r;b;a;e;r;fn;4e;
+2: 8r;a;e+;g+;r;a;4g;
+2 2: 2c;b-;
+bar
+
+1: 4.c+;16d+;e+;8f+;b;8.;32c+;d+;
+1 2: 8r;g;2gn;4fn;
+2: r;e+;r;g+;
+2 2: 2a-;d-;
+bar
+
+1: 8e+;a;4f+;b;8.a;16g;
+1 2: 4e;16b;a;f;d;8r;4.d;
+2: c-;d-;8e-;g-;f;e;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2a~;8;16a+;g+;
+1 2: 8r;d;4.c;8r;
+2: 8r;fn-;4.e-;8r;
+2 2: 2.a--;
+dblbar
+
+score key=2#
+time=4/4 ; beamstyle=2,2
+music
+
+1: 4.f+;16a+;f+; 4.e+;16g#;a;
+1 2: 8r;16e+;d+;4d+;8r;16b;a;4a;
+2: 8r;a;4f+;8r;a;4e+;
+2 2: 2d; c;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 4.d+;8;16e+;d+;c+;d+;
+1 2: 8r;16a;g#;2;
+2: 8r;16f;fn;2e;
+2 2: 2.b-;
+bar
+
+score time=4/4 ; beamstyle=2,2
+music
+
+1: 4.e+;8e#+;4.f+;8a+;
+1 2: 8b;a;4;8r;cn+;4;
+2: 2g(n);4r;8e+;f+;
+2 2: 2c;d;
+bar
+
+1: d+~;16;;e+;f+;4.g+;8a+;
+1 2: 8r;a;4g;8r;d+;4c+;
+2: 2s;8r;b;4a;
+2 2: b-;e-;2a-;
+bar
+
+1: 2f+;4.b;8;
+1 2: 8r;e+;4d+;8r;d;4e~;
+2: 4r;f;r;e~;
+2 2: 4.b-;8a-;2g-;
+bar
+
+midi all: 2 "tempo=42"; 3 "tempo=38"; 4 " tempo=32";
+1: 4.a;8a+;2f+;
+1 2: 8e;d;4c;8r;fa;eg;a-g;
+2: e;g;r;a-;
+2 2: 2a-;d-;
+ital between 1&2: 2 "molto rit.";
+bar
+
+midi all: 1 "tempo=20";
+1: df;f-d;2;
+2: d-a-;;2;
+boldital between 1&2: 2 "pp";
+endbar

@@ -1,0 +1,195 @@
+header
+	title (16) "Tone Poem (No. 50)"
+	title "" "John A. Krallmann (4/19/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 50) - \%"
+score
+	staffs=2
+	key=3#
+	time=cut
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=2,2
+	staffsep=14
+	scoresep=10,26
+
+staff 1
+	timeunit=8
+staff 2
+	clef=bass
+	timeunit=2
+music
+
+midi all: 0 "tempo=120";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86,64";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+rom above all: 1 "( \(smup2n) = 60 )";
+1: 2.s;8a;;
+2: 2.s;4r;
+bar
+
+1: g;;a;;fd+;;a;;
+2: d;fad+;
+bar
+
+1: g;;a;;be+;;a;;
+2: c;eac+;
+bar
+
+1: gn;;f;;g;;cn+;g;
+2: cn;egncn+;
+bar
+
+1: f;;e#;;f;a;gn;f;
+2: b-;d#acn+;
+bar
+
+1: e;;d;;e;;e#;;
+2: g-;dgb;
+bar
+
+1: b-;;a-;;b-;;cn;d;
+2: e-;b-eg;
+bar
+
+1: c;;d;;e;;d;c;
+2: a--;cea;
+bar
+
+1: f;;gn;;a;;g;f;
+2: d-;fad+;
+bar
+
+1: gn;;a;;b;;a;g;
+2: e-;egnb;
+bar
+
+1: f;;g;;a#;;g;f;
+2: f-;ea#c+;
+bar
+
+1: c+;;b;;a#;;b;;
+2: d-;fbd+;
+bar
+
+1: d+;;c+;;b#;;d(n)+;;
+2: c-;fad#+;
+bar
+
+1: b#d#+;;a#c+;;gb;;fa;;
+2: g--;d#gb#;
+bar
+
+1: e#g;;d#f;;ce;;b#-d;;
+2: g--;g-f;
+mussym above all: 2.9 "rr";
+midi all: 2.9 "tempo=40"; 3 "tempo=120";
+bar
+
+newpage
+
+1: ce;;b-d#;;a-c;;b-d;;
+2: a--;a-e;
+bar
+
+1: cea;;b-g;;d#f;;ce;;
+2: f-g;cg;
+bar
+
+1: ec+;;db;;ca;;egn;;
+2: a--;cea;
+bar
+
+1: df;;cne;;b-d;;a-c;;
+2: d-;df;
+bar
+
+rom above all: 1 "Misterioso";
+1: g-b-;;f-a-;;g-b-;;a-cn;b-d;
+boldital between 1&2: 1 "p";
+ital between 1&2: 1.5 "dim.";
+midi 1: 0 "onvelocity=64,42";
+midi 2: 0 "onvelocity=42";
+2: e-;b-e;
+bar
+
+1: b-d;;a-c;g-b-;a-c;;g-b-;f-a-;
+2: e-;b-e;
+bar
+
+define M
+1: [with >]g-b-;;;f-a-;[with>]g-b-;;;f-a-;
+2: e-;b-e;
+bar
+@
+M
+M
+
+1: a-cn;;;gn-b-;a-c;;;g-b-;
+2: fn-;cnfn;
+ital between 1&2: 1 "cresc.";
+midi 1: 0 "onvelocity=74,52";
+midi 2: 0 "onvelocity=52";
+bar
+
+define SWELL
+< between 1&2: 1 til 1.75;
+> between 1&2: 2 til 2.75;
+midi 1: 1 "onvelocity=74,52"; 1.5 "onvelocity=80,58"; 2 "onvelocity=86,64"; 2.5 "onvelocity=80,58";
+midi 2: 1 "onvelocity=52"; 1.5 "onvelocity=58"; 2 "onvelocity=64"; 2.5 "onvelocity=58";
+@
+
+1: a-cn;gn-b-;a-c;b-d;dfn;ce;b-d;a-c;
+2: fn-;cnfn;
+SWELL
+bar
+
+1: b-d;;;a-c;b-d;;;a-c;
+2: gn-;dgn;
+bar
+
+1: b-d;a-cn;b-d;ce;e&gn;dfn;ce;b-d;
+2: gn-;dgn;
+SWELL
+bar
+
+midi 1: 1 "onvelocity=86,64";
+midi 2: 1 "onvelocity=64";
+1: cne;;;b-d;ce;cb;ca;ce;
+2: a-;ea;
+bar
+
+1: a-gn;a-fn;;a-e;a-f;a-d;a&-cn;a-d;
+2: d-;a-fn;
+bar
+
+1: gn-fn;g-e;;g-d;g-e;g-cn;g-b-;g-c;
+2: cn-;gn-e;
+bar
+
+1: a-e;a-d;;a-cn;a-d;a-c;a-;;
+2: fn-;fn-cn;
+octave below 2: 0.5 "8va" til 1.2; 
+bar
+
+staff 1 clef=bass
+music
+
+1: 8a;;gna;;fna;;ea;;
+2: 1a--;
+ital between 1&2: 1 "rit.";
+midi all: 1 "tempo=115"; 1.5 "tempo=108"; 2 "tempo=100"; 2.5 "tempo=90";
+bar
+
+1: 1f(#)a;
+2: 1d-;
+octave below 2: 0.5 "8va" til 2;
+endbar

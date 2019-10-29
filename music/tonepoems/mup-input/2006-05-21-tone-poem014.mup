@@ -1,0 +1,141 @@
+header
+	title (18) "Tone Poem (No. 14)"
+	title "" "John A. Krallmann (May 21, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	timeunit=4
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=92";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: mr;
+2: g-;d;a;g;
+bar
+
+1: mr;
+2: c+;b;e+;d+;
+bar
+
+1: 1d+~;
+2: f-;c;a;g;
+bar
+
+1: 2.d+;4f;
+2: d+;c+;g;a;
+bar
+
+1: 2.g;8a;b;
+2: e-;b-;d+;b;
+bar
+
+1: 8b;16c+;b;2.a;
+2: f-;c;e+;c+;
+bar
+
+1: 8f+;16g+;f+;8e+;d+;c+;b;c+;d+;
+2: d-;a-;f;a;
+bar
+
+1: 4.c+;16d+;c+;4b;g+;
+2: g-;d;b;f+;
+bar
+
+1: 8e+;d+;e+;c+;4.a;8e+;
+2: a-;e;c+;g-;
+bar
+
+1: 8e+;d+;e+;c+;4a;8b;c+;
+2: f-;c;a;e-;
+bar
+
+1: 8g+<>;f+;b+<>;a+;d++<>;c++;b+;a+;
+2: d-;a-;f;d+;
+bar
+
+1: 8c++;b+;a+;g#+;f+;e+;16b;c+;d+;e+;
+2: e-;b-;g#;d+;
+bar
+
+1: 8d+;c+;b;a;g;f;c;d;
+2: a-;e;d-;g#-f;
+bar
+
+ifdef MIDI
+ 1: 4.e;8g;8d;32e;d;e;d;e;d;e;d;16c;d;
+else
+ 1: 4.e;8g;4.d;16c;d;
+endif
+mussym above 1: 2.4 "tr" til 2.7;
+2: g--;ec+;g--;fb;
+bar
+
+1: 4.c;8g;;a;b&;a;
+2: c-;eg;d&-;e;
+bar
+
+1: 8e+;a;g+;f+;e+;d+;a;b;
+2: g;d&+;f-;adn+;
+bar
+
+1: 8c+;d+;b;a;;g;c+;b;
+2: f#-;ad+;g-;fb;
+bar
+
+1: a;8c+;d+;;c+;d+;c+;
+1 2: 8f;g;4a;e;f;
+2: 8c+;b;f+;b;2s;
+2 2: g;;c-;g#c+;
+bar
+
+1: 2ge+;8e+;d+;e+;d+;
+1 2: 2s;4f;;
+2: c-;ge+;d-;ad+;
+bar
+
+1: 2f+;8;e+;d+;c+;
+1 2: 8a;g;f;e;4a;f;
+2: d-;ad+;d-;ad+;
+bar
+
+1: b;8c+;d+;;c+;d+;e+;
+1 2: 8g#;f#;4e;;;
+2: e-;g#b;a-;eb;
+bar
+
+1: 2e+;8f;g;a;b;
+1 2: 8c+;b;a;g;2a-;
+2: a-;ec+;d-;a-;
+bar
+
+1: 8c+;d+;e+;f+;2e+;
+1 2: 2s;8a;g#;f#;e;
+2: f;d+;e-;b-;
+bar
+
+1: 8d;c;b-;c;b-;a-;b-;c;
+2: g#;e;a-;e;
+bar
+
+1: 1a;
+2: 1c+;
+endbar

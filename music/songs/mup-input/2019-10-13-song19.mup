@@ -1,0 +1,148 @@
+header
+	title (16) "Song"
+	title "" "John A. Krallmann"
+	title " " "(October 13, 2019)"
+
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+
+staff 2
+	clef=bass
+
+music
+
+midi 1: 0 "onvelocity=92";
+midi 2: 0 "onvelocity=42";
+midi all: 0 "tempo=72";
+
+1: 4e ph above;8;;16;f;8g eph;
+2: c;g;d+;c+;b;a;
+boldital between 1&2: 1 "mf";
+bar
+
+1: 4f ph above;8;;16;g;8a eph;
+2: d;a;e+;d+;c+;a;
+bar
+
+1: 4b ph above;8;;16;c+;8d+;
+2: g;d+;a+;g+;f+;b;
+bar
+
+1: 4.d+;[grace]16e+;[]d+;4.c+ eph;
+2: c;g;d+;e+;g+;b;
+bar 
+
+1: 4c+ ph above;8;;16;d+;8e+ eph;
+2: a;e+;a+;g;e+;a+;
+bar
+
+1: 4c+ ph above;8;;16;d+;8e+ eph;
+2: f;c+;a+;e;c+;g+;
+bar
+
+1: c+ ph above;8.a;16c+;8b;g;16;b;
+2: d;a;f+;e;b;d+;
+bar
+
+1: 4.b;a eph;
+2: a-;e;b;c+;d+;e+;
+bar
+
+1: c+ ph above;4;16f+;e+;8d+;c+;
+2: f-;c;a;b&-;f;d+;
+boldital between 1&2: 1 "f";
+bar
+
+1: {4a;f~;}2,4.;{;b& eph;}2,4.;
+2: f-;c;a;b&-;f;d+;
+bar
+
+1: {4a ph above;c+;}2,4.;{d+;f+;}2,4.;
+2: f-;c;a;b&-;f;d+;
+bar
+
+1: {4g+;a+~;}2,4.;4. eph;
+2: f-;c;a;b&;a;f;
+bar
+
+1: 4.a+~ ph above;16;g+;a+;g+;a+;g+;
+2: a-;e;c+;b;c+;b;
+boldital between 1&2: 1 "mp";
+bar
+
+1: 4.a+~;{4;e+;}2,4.;
+2: a-;e;c+;b;c+;a;
+bar
+
+1: {4e+;f+~;}2,4.;4. eph;
+2: b&-;f;d+;c+;d+;b&;
+bar
+
+1: {4e+ ph above;c+~;}2,4.;4. eph;
+2: a-;e;c+;b;c+;a;
+boldital between 1&2: 1 "pp";
+bar
+
+1: 16c+ ph above;b&;4f~;~;16;d;
+2: b&-;f;d+;c+;d+;b&;
+boldital between 1&2: 1 "p";
+bar
+
+1: 2.f eph;
+2: f-;c;a;g;a;f;
+bar
+
+1: f ph above;4d~;;16e;f;
+2: d-;a-;f;e;f;d;
+boldital between 1&2: 1 "mp";
+< between 1&2: 6 til 1m+6;
+bar
+
+1: g;4e~;;16f#;g;
+2: e-;b-;g;f#;g;e;
+bar
+
+1: a;4f~;;16g;a;
+2: f-;c;a;g;a;f-;
+bar
+
+1: 4.b~;4 eph;16f+;e+;
+2: e-;b-;g#;f#;g;e;
+boldital between 1&2: 1 "f";
+ital between 1&2: 6 "dim.";
+bar
+
+1: d+;4c+~;~;16;a;
+2: a-;e;c+;b;c+;a;
+bar
+
+1: g;4f~;;16c;d;
+2: d-;a-;f;e;f;d;
+bar
+
+1: e;4d~;;16c;b-;
+2: e-;b-;g#;f#;g;b-;
+bar
+
+1: 2.a-~;
+2: a--;e-;c;b-;c;e-;
+bar
+
+1: 2.a-;
+2: 2.a--;
+endbar
+
+
+

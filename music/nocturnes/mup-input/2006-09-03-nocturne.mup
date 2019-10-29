@@ -1,0 +1,260 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann (Sep 3-4, 2006)"
+
+header2
+	title (12) "Nocturne - \%"
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.97
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 4r;8;d~;;4g;8d+;
+2: 8g-;d;a;bn~;2;
+bar
+
+1: 8d+;c+;bn;g;4e;8f#;g;
+1 2: 2en;s;
+2: c;g;8d+;c+;g;en;
+bar
+
+1: 8c+;a;g;e;c;d;a-ef#;f#-c;
+1 2: 2en;s;
+2: a-;en;f#;d-;
+bar
+
+1: bn-d;8f#-en;ca;4d;dd+;
+1 2: 8a-;g-;4s;8c;b-;a;g;
+2: g-;d-;g-;bn-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8d+;c+;4ec+g+;e&c+;
+1 2: ena;2s;
+2: c;g;{8a-;bn-;c;}3;
+bar
+
+1: 8c+;bn;4gg+;g;
+1 2: d;2s;
+2: a;bn;;
+2 2: 2g-;8en;d;
+bar
+
+1: 8g;a;4en+;8e#+;f#+;
+1 2: en;2g;
+2: d&a;a--;da;
+bar
+
+score time=4/4
+music
+
+mussym above all: 1 "sign";
+1: 2.d+;4b;
+1 2: 8c;d;e;e#;2f#;
+2: d-;c+;2d+;
+2 2: s;2.d;
+bar
+
+1: 2.bn;8d+;c+;
+1 2: 4.a;8g;f#;g;;a;
+2: g-;d;bn;e+;
+bar
+
+1: 2bn;4gg+;c+a+;
+1 2: 4.a;8g;2s;
+2: g-;d;bn;e+;
+bar
+
+1: 4.c++;8bn+;4d+b+;8bn;d+;
+1 2: 8d+;e+;f&+;e+;2s;
+2: g-;d;bn;d;
+bar
+
+1: 2e+~;8;c+;f#;a;
+1 2: 8a;b;c+;b;4a;s;
+2: f#-;d;c+;d;
+bar
+
+1: 4.a;8a&;g;d;c(#);d;
+1 2: 8c;c#;d;bn-;4b&-;;
+2: g-;d;;g-;
+bar
+
+score time=3/4
+music
+
+1: 8d;en;f;e;d;bn-;
+2: g#-;en;<<staff clef=treble>> en+;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8bn-;a-;4c#;8;b-;
+2: fn;en;<<staff clef=treble>> en+;
+2 2: 2a-;4s;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8a-;d;f#;a;b;a;
+2: f#-;d;c+;
+bar
+
+1: 8ca;16b;a;2b-g;
+2: g-;d;f-;
+bar
+
+1: 8g-;b-;e;g;a;b;
+2: e-;b-;g;
+bar
+
+1: 2.d+;
+1 2: 8f#;g;a;c+;b;a;
+2: d-;a-;f#;
+bar
+
+1: 8e+;d+;dc+;eb;c;g-e;
+1 2: g;2s;
+2: c-;g-;e;
+bar
+
+1: 8b-a;16b;a;8g;g&;f;d;
+2: g-;d;f-;
+bar
+
+1: 8c;g+;d+;g;d;e;
+2: e-;b-;g;
+bar
+
+1: 8e++;a+;g+;d+;e+;a;
+2: f-;e;c+;
+bar
+
+1: 8e++;d++;[grace;slash 1]g#+;a+;c+;d+;a;
+2: f#-;d;a;
+bar
+
+1: [grace;slash 1]8b;a;g;4.g+;8d+;
+2: g-;b;f-;
+bar
+
+1: 2g+;8b;g;
+1 2: 8g;a;4c+;c;
+2: e-;b-;g;
+bar
+
+1: 2c;4f-c#;
+1 2: 8g-;a-;4g-;s;
+2: f-;2e;
+bar
+
+1: 2d;4a&-f;
+1 2: 8f#-;g-;4a-;s;
+2: b--;f-;d;
+bar
+
+1: 8f;16g;f;4.e;8b-;
+1 2: g-;2s;
+2: e-;c;b-;
+bar
+
+1: 8c;d;4e;8f;c;
+1 2: a-;2s;
+2: f-e;f;a;
+bar
+
+1: d;b-g;db;
+1 2: 8a-;g-;2s;
+2: g-;d;g;
+bar
+
+1: cgd+;4.dgc+;8egb;
+2: e-;c;g;
+bar
+
+1: g-ca;4.a-g;8ef;
+2: f-;c;a;
+bar
+
+1: dc+d+;dbd+;dad+;
+2: f#-;d;a;
+bar
+
+1: dac+;dbg;dgc+;
+2: g-;d;f-;
+bar
+
+1: cgbd+;cgbc+;cg&b;
+2: en-;c;e&;
+bar
+
+1: ae&+g&+;bgn+;ac+d+a+;
+2: d-;a-;f#;
+bar
+
+1: d+c++;d+b+;af#+;
+2: f#-;d;c+;
+bar
+
+1: af#+;bg+;db;
+2: g-;d;b;
+bar
+
+1: db;ec+;cea&;
+2: a&-;e;f-g;
+bar
+
+1: 2.cdg;
+2: g--;d-;a&;
+bar
+
+1: gd+g+;gc+g+;gbng+;
+2: fg;eg;dg;
+bar
+
+1: 2.a&c+a&+;
+2: f-ca&;f+;e+;
+bar
+
+1: fe+;gd+;a&c+;
+2: c+;bd+;ec+;
+bar
+
+/// coda
+ifdef CODA
+1: 2.g;
+1 2: b-;;c;
+2: d;;en;
+2 2: 2.g-;
+bar
+
+boldital between 1&2: 1 "p";
+1: 2.bg+;
+2: 2.gd+;
+endbar
+
+endif

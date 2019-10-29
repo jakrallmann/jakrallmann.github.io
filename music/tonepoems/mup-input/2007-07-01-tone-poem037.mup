@@ -1,0 +1,175 @@
+header
+	title (18) "Tone Poem (No. 37)"
+	title "" "John A. Krallmann (7/1/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	vscheme=2f
+	release=0
+staff 2
+	clef=bass
+
+define A mussym above 1: 1 "acc_gt";
+midi 1: 1 "onvelocity=96,80"; 1.5 "onvelocity=80,64"; @
+
+music
+
+midi all: 1 "tempo=80";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=80, 64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+1: 4.g;8a;b;c+;
+1 2: r;2ce;
+2: r;2g;
+2 2: 2c;4b-;
+bar
+
+1: 4.c+;8d+;e+;g+;
+1 2: 2.ea;
+2: b;2a;
+2 2: 2a-;4g-;
+bar
+
+1: 4.g+;8f+;c++;f+;
+1 2: 2ac+;4d+;
+2: d;c;a;
+2 2: 2.f-;
+bar
+
+1: e+;d+;8a;g;
+1 2: 2.f;
+2: a;b;d;
+2 2: 2.g-;
+bar
+
+1: 4.e;8g+;c++;b+;
+1 2: d;c;d+;
+2: c-;g-;eg+;
+bar
+
+1: b+;a+;8d+;e+;
+1 2: 2c+;4f;
+2: f-a;c;dac+;
+bar
+
+1: f+;g+;d+;
+1 2: a;g;f;
+2: b;a;b;
+2 2: 2.g-d;
+bar
+
+1: 2e+;4g;
+1 2: b;2e;
+2: c-e;g;8c+;b;
+bar
+
+1: 2a+;8e+;d+;
+1 2: c+d+;2d;
+2: f-;a;c;
+bar
+
+1: 2d+;8e+;f+;
+1 2: ca;2b-g;
+2: g-;d;f-;
+bar
+
+1: 4.gg+;8g;e;g;
+1 2: 8d+;c+;2b;
+2: e-;c;g;
+bar
+
+1: 2ac+;8d+;e+;
+1 2: g;f;c;
+2: f-;c;ea;
+bar
+
+1: 4.f+;8e+;d+;c+;
+1 2: e;2d;
+2: d-;a-;f;
+bar
+
+1: 8b;a;g#;a;b;e;
+1 2: 2d;4b-;
+2: e-;b-;g#;
+bar
+
+A
+1: 8ec+;db;2ca;
+2: a-;e;g-;
+bar
+
+A
+1: 8ec+;db;2ca;
+2: f-;c;d;
+bar
+
+A
+1: 8db;ca;2b-g#;
+2: e-;b-;d;
+bar
+
+A
+1: 8db;ca;2b-g#;
+2: e-;b-;e;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi all: 1 "tempo=82";
+ital between 1&2: 1 "un poco accel.";
+1: 8ec#+;db;4ec+;8f#d+;ec+;4fd+;
+2: a-;e;a;b;
+bar
+
+midi all: 1 "tempo=84";
+1: 8bg+;af#+;4ge+;2af+;
+2: d+;a;d;d&;
+bar
+
+midi all: 1 "tempo=88";
+1: 8af(n)+;ge+;4af+;2ge+;
+2: c;a;c;g;
+bar
+
+1: 8fd+;e&c+;4fd+;2enc+;
+2: b&-;f;a-;e;
+bar
+
+define R
+mussym above 1: 1 "acc_gt"; 3 "acc_gt";
+midi 1: 1 "onvelocity=96,80"; 1.5 "onvelocity=80,64"; 3 "onvelocity=96,80"; 3.5 "onvelocity=80,64";
+1: 8db;ca;4b-g;8ec+;bd;4ca;
+2: g-;d;a-;e;
+bar
+
+A
+1: 8db;ca;4b-g;2ca;
+2: g-;d;a-;e;
+bar
+@
+R 
+R
+
+ital between 1&2: 1 "Lento e dim.";
+midi all: 1 "tempo=62";
+1: 2db;b-g;
+2: g-;d;g;d;
+bar
+
+1: 1b-ca;
+2: 1a-e;
+endbar

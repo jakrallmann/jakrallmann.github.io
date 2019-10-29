@@ -1,0 +1,209 @@
+
+header
+	title (16) "Song"
+	title "" "John A. Krallmann"
+	title " " "(July 21, 2019)"
+
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=2/4
+	beamstyle=4,4
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.95
+	measnum=y
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi 1: 0 "onvelocity=86,64";
+midi all: 0 "tempo=104";
+
+1: 8d+ ph above;c#+;4d+;
+2: g;bd+g+;
+bar
+
+1: 8b;a#;4b;
+2: e;gbe+;
+bar
+
+1: 8g;f;g;c+;
+2: c;egc+;
+bar
+
+1: b eph; 8c#+ ph above;d+;
+2: g-;bd+g+;
+bar
+
+1: 8e+;d#+;4e+;
+2: c;gc+e+;
+bar
+
+1: 8e+;d#+;4e+;
+2: a-;eac+;
+bar
+
+1: 8f+;e+;4f+;
+2: b-;fad+;
+bar
+
+1: 2g+ eph;
+2: e-;gbe+;
+bar
+
+1: 8a+ ph above;g+;4f+;
+2: a-;ac+e+;
+bar
+
+1: 8g+;f+;4e+;
+2: b-;gbe+;
+bar
+
+1: 8f+;e+;4d+;
+2: b-;fbd+;
+bar
+
+1: 2e+ eph;
+2: e-;gbe+;
+bar
+
+1: 8e ph above;f;g;a;
+2: e-;gbe+;
+bar
+
+1: 8b;f+;e+;b;
+2: g-;gbe+;
+bar
+
+1: 8a;g;f;g;
+2: b--;fabd#+;
+bar
+
+1: 2e eph;
+2: e-;gb;
+dblbar
+
+score key=0#
+music
+
+1: 8c ph above;d;e;f;
+2: c-;egc+;
+bar
+
+1: 8g;d+;c+;g;
+2: e-;egc+;
+bar
+
+1: 8f;a-;b-;c;
+2: d-;a-df;
+bar
+
+1: 2d eph;
+2: g--;b-dg;
+bar
+
+1: 8d ph above;b-;c;d;
+2: g#--;g#-b-e;
+bar
+
+1: 8b;d;e;b;
+2: g#--;g#-b-e;
+bar
+
+1: 8b;a;b;c+;
+2: a--;eac+;
+bar
+
+1: 8f+;e+;d+;c+;
+2: d-;ad+f+;
+bar
+
+1: 4.b eph;8c+ ph above;
+2: e-;g#be+;
+bar
+
+1: 8b;c+;b;g#;
+2: e-;g#be+;
+bar
+
+1: 2a;
+2: a--;eac+;
+bar
+
+1: 2b eph;
+2: g--;gbf+;
+bar
+
+1: 8c+ ph above;d+;c+;d+;
+2: a--;eac+;
+bar
+
+1: 2e+ eph;
+2: a-;c+e+a+;
+bar
+
+1: 8e+ ph above;g+;e+;g+;
+2: e-;gbe+;
+bar
+
+1: 2e+ eph;
+2: e-;be+g+;
+bar
+
+1: 8a+ ph above;g+;f+;e+;
+2: f-;ac+f+;
+bar
+
+1: 4.d+ eph;8f+ ph above;
+2: g-;bd+g+;
+bar
+
+1: 8e+;d+;c+;b;
+2: e-;g#be+;
+bar
+
+1: 4.c+ eph;8b ph above;
+2: a-;eac+;
+bar
+
+1: 4.a;8c+;
+2: f-;ac+f+;
+bar
+
+1: 8b;a;4g;
+2: e-;gbe+;
+bar
+
+1: 2a~;
+2: d-;fad+ tie;
+bar
+
+1: 2a~;
+2: fad+;eac+;
+bar
+
+1: 2a~;
+2: 2fad+;
+bar
+
+1: 2a eph;
+2: 2dgb;
+bar
+
+1: 2a+~;
+2: 2aec+ tie;
+bar
+
+1: 2a+;
+2: 2eac+;
+endbar

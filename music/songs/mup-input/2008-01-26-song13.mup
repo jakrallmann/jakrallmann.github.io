@@ -1,0 +1,233 @@
+header
+	title (18) "Song Without Words (No. 13)"
+	title "" "John A. Krallmann (1/26-27/08)"
+
+header2
+	title (12) "Song Without Words (No. 13) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=1&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+
+staff 1
+	vscheme=3f
+staff 2
+	vscheme=2f
+	clef=bass
+
+define BRACK(V)
+line (V.w - 1.5, V.s - 0.5) to (V.w - 1.5, V.n + 10)
+line (V.w - 1.5, V.s - 0.5) to (V.w, V.s - 0.5)
+@
+
+music
+
+midi all: 1 "tempo=80";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=72";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+define THEME
+1: 2c+~;8;d+;f+;d+;
+1 2: a;g;2f;
+2: 2c;d;
+2 2: 1f-;
+boldital between 1&2: 1 "mf";
+bar
+
+1: 2.c+;8g;a;
+1 2: a;g;2f;
+2: 2e;d;
+2 2: 1f-;
+bar
+
+1: g;f;g;8b;a;
+1 2: 2d;d&;
+2: 2f;g;
+2 2: 1b-;
+bar
+
+1: 2.a;4c+;
+1 2: e;d;2c;
+2: c;d;2e;
+2 2: 1f-;
+bar
+
+1: 4.f+;8e+;4d+;8e+;f+;
+1 2: 2a;4g;f;
+2: e+;d+;bn;b&;
+2 2: 1d;
+bar
+
+1: 2e+;4d+;a;
+1 2: 8c+;b;a;g;4f;e;
+2: e+;g;a;g;
+2 2: 2.d;4c;
+bar
+
+1: g;f;d;c;
+1 2: d;c;2b-;
+2: f;;;e;
+2 2: b-;a-;2g-;
+bar
+
+1: 2.d;4f;
+1 2: g-;f-;g-;a-;
+2: b-;a-;bn-;c;
+2 2: 1d-;
+bar
+
+1: g;a;b;a;
+1 2: d;c;d;c;
+2: f;g;a;f;
+2 2: b-;a-;g-;a-;
+bar
+
+1: g;a;4.b;8d;
+1 2: d;c;2d;
+2: f;;2;
+2 2: b-;a-;2g-;
+bar
+
+1: c;;;g;
+1 2: b-;;;;
+2: [pad 2]f =f;[]e =e ;[]d =d;c;
+BRACK(f)
+BRACK(e)
+BRACK(d)
+2 2: 1c-;
+bar
+
+1: 2g;f;
+1 2: a-;b-;2a-;
+2: c;d;2c;
+2 2: 1f-;
+repeatend
+@
+THEME
+
+rom above all: 1 "A little slower and more rubato";
+midi all: 0 "tempo=68";
+1: 2a;4d+;8a;b;
+1 2: f;e;2d;
+2: a;g;2f;
+2 2: 2.d;4c;
+bar
+
+1: 2g;4.e;8a;
+1 2: 2d;4d;c#;
+2: 8f;g;f;d;e;f;4g;
+2 2: 2b-;a-;
+bar
+
+1: 4.b;8d+;g+;f+;e+;d+;
+1 2: 8d;e;4f;8e+;d+;c+;b;
+2: 8f;e;4d;8b;c+;d+;e+ =e;
+2 2: 2g-;c;
+bar
+
+1: 8d+;c+;b;a;c+;d+;e&+;f+;
+1 2: 8b;a;g;f;2e&g;
+1 3: [ho 1;down; len 8]2f =f;s;
+dotted line (e.e + 1, e.y) to (f.w - 1, f.y)
+2: 8f-;c;g;a;2b;
+2 2: 2f-;c;
+bar
+
+score key=2&
+music
+
+1: 8f+;e+;d+;e+;2d+;
+1 2: 2gb;fb;
+2: 8d+;c+;b;c+;;b;a;b;
+2 2: 2e;d;
+bar
+
+1: 8d+;c+;b;d+;gc+;g&b;ga;fc+;
+1 2: 2eng;e&;
+2: 8g;a;b;c+;f-;c;4a;
+2 2: 2c;f-;
+mussym above 1: 4.5 "ferm";
+bar
+
+1: 8b;a;4b;8;a;4b;
+1 2: 8g;d;g;d;g;d;g;d;
+2: 8g-;d;4b;8f-;d;4g;
+2 2: 2g-;f-;
+bar
+
+1: 8b;g;4b;8a;g;4a;
+1 2: 8c;e;f;e;f;en;f;c;
+2: 8e-;b-;4g;8d-;a-;4f;
+2 2: 2e-;d-;
+boldital between 1&2: 3 "p";
+< between 1&2: 3.5 til 2m+4.5;
+bar
+
+1: 8g;f;g;b;2ac+;
+1 2: 8e;b-;4ce;8g;f;g;a;
+2: 8e-;b-;4g;8f-;c;4a;
+2 2: 2e-;f-;
+bar
+
+1: 2bd+;;
+1 2: 8a;g;a;d;a;g;a;d;
+2: 8g-;d;4b;8f-;d;4b;
+2 2: 2g-;f-;
+bar
+
+1: 2e+g+;4.eg;8b;
+1 2: 8d+;c+;d+;g;d;c;d;e;
+2: 8e-;b-;4g;8e-;b-;4g;
+2 2: 2e-;;
+bar
+
+1: 4.a;8b;c+;b;4a;
+1 2: 8c;d;4e;8a;g;4f;
+2: 8e;d;c;b-;2e;
+2 2: 2f-;;
+bar
+
+1: 8a;g;a;g;2b;
+1 2: 1b-;
+2: 1d;
+2 2: 2.g-;4f-;
+bar
+
+1: 8a;g;a;g;4b;c+;
+1 2: 1g-;
+2: 1b-;
+2 2: 1e-;
+bar
+
+1: 1bnd+ tie;
+1 2: 8a;g;a;g;2a;
+2: 1g~;
+2 2: 1g-~;
+bar
+
+1: 1bd+;
+1 2: 8a;g;a;g;2a;
+boldital between 1&2: 1 "ppp";
+2: 1g;
+2 2: 1g-;
+repeatstart
+
+score
+	key=1&
+	transpose=up major 2
+music
+
+rom above 1: 1 "Tempo I";
+midi all: 0 "tempo=80";
+THEME

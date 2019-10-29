@@ -1,0 +1,123 @@
+header
+	title (16) "Song Without Words (No. 55)"
+	title "" "John A. Krallmann (9/9/12)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=5#
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.95
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=78";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=82";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1-2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 8g;4;8;{b;c+;b;}3;8.f;16fn;
+2: e-;gbe+;d-;dfb;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8e;4c;8d;{e;f;g;}3;
+2: c-;b-eg;8a-;g-;
+bar
+
+1: 2a;{8g;e#;f;}3;
+2: 4f-;fae+;efa;
+bar
+
+score time=4/4
+music
+
+1: 8e+;4d+;8f+~;4;{8e+;d+;c+;}3;
+2: b--;fgbd+;g-;fgxbd+;
+bar
+
+1: 8d+;4c+;8g+~;4;8g;gn;
+2: e-;gbe+;c-;gbe+;
+bar
+
+1: 8gn;4f;8e+;;4d+;8c+;
+2: f-;gbe+;f-;fae+;
+bar
+
+1: 8e+;4d+;8b;4f;8g;a;
+2: b--;fbd+;d-;fad+;
+bar
+
+1: 8c+;4b;8g+~;4;8g;gn;
+2: e-;gbe+;c-;gbe+;
+bar
+
+1: 8f;c+;a;b~;;c+;d+;f+;
+2: d-;fad+;g-;f-;
+bar
+
+1: 2g+~;8;4.;
+1 2: 8b;c+;d+;c+~;;4.b;
+2: e-;gbe+;c-;gbe+;
+bar
+
+1: 8g+;f+;e+;d+~;;4.c+;
+1 2: a;8g;f~;;4.e;
+2: f--;fae+;f--;efa;
+bar
+
+1: 8e#c+x;fd+;ge+;fd+ tie;;4.db;
+2: b--;fbe+;fbd+;8g-;gn-;
+bar
+
+1: 8ec+;fd+;ge+;fd+ tie;;4.ec+;
+2: c-;egc+;c-;egc+;
+bar
+
+1: 2.a;8f+;e+;
+1 2: 8c;d;e;d~;;4.c;
+2: f-;cfa;f-;cfa;
+bar
+
+1: 1d+;
+1 2: 8a;b;a;g~;;4.d;
+2: g-;dgb;e-;egb;
+bar
+
+1: 8c+;d+;e+;d+~;;4.c+;
+1 2: b;a;4.g;8f;
+2: f--;fgbe+;fae+;;
+bar
+
+1: 1d+;
+1 2: 8b#;a;b;g;2d;
+2: g--;dgb#;;f-;
+bar
+
+1: 2.d+;4g;
+1 2: 8b;a;b;g;2e;
+2: e-;gbe+;2cgb;
+bar
+
+1: 8g;f;g;f;4g;f;
+1 2: a-;b-;2a-;
+2: f--;f-e;2f-c;
+bar
+
+1: 1db;
+2: 8b-;f-;g-;b-;2d;
+2 2: 1b--;
+endbar

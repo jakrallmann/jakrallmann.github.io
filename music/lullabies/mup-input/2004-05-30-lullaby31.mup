@@ -1,0 +1,192 @@
+header
+	title (18) "Lullaby No. 31"
+	title (10) " "
+	title "" "John A. Krallmann (5/30/04)"
+
+header2
+	title (12) "Lullaby No. 31 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/4
+	beamstyle=4,4,4,4,4,4
+	key=4#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,24
+	staffscale=0.85
+	transpose=down aug 1
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=76";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=76, 60"; \
+			0 "param=65,1"; 0 "param=7,127";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=60"; \
+			 0 "param=65,1"; 0 "param=7,127";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "onvelocity=60"; \
+			0 "param=65,1"; 0 "param=7,127";
+midi 2 2: 0 "channel=14"; 0 "program=50"; 0 "onvelocity=60"; \
+			0 "param=65,1"; 0 "param=7,127";
+
+1: 2.s;2e+;4d+;
+2: 2.s;r;
+bar
+
+1: 4.d+;16e+;d+;4c+;f;g;a;
+2: a-;e;c+~;;g-;f-;
+bar
+
+1: 2b;8g;f;d;e;4.g;8e;
+2: g-;e;b;2c;4b-;
+bar
+
+1: 2e;4g;;4.f;8b;
+1 2: cb-;a-;s;c;2d;
+2: 2s;4e;2.s;
+2 2: 2.a-;b-;
+bar
+
+1: 2b;4;2e;8f;g;
+1 2: f;e;d;2c;4s;
+2: 2.s;4f;2e;
+2 2: 2.g-;2a-;4g-;
+bar
+
+1: 2a;8g;a;2f;8g;a;
+1 2: e;d;a-c;e;2d;
+2: 2.s;a;
+2 2: 2.f-;2b-;4a-;
+bar
+
+1: 2b;8d+;e+;2c+;4;
+1 2: f;2e;4g;f;e;
+2: 2.g-eb;a-ec+;
+bar
+
+1: b;4.c+;8d+;4g+;f+;8e+;d+;
+1 2: d;e;f;2.a;
+2: 2.b-da;;
+bar
+
+1: e+;d+;c+;b;a;b;
+1 2: 2.a;f;
+2: 2.cea;dac+;
+bar
+
+midi 1-2 1-2: 5 "param=7,115";
+1: 2.g~;4;e#;f;
+1 2: 2dc;4a#-;2.cn;
+2: 2.d;f;
+2 2: 1.g-;
+repeatstart
+
+score key=7#
+music
+
+midi all: 1 "tempo=70";
+1: 2.eg;4g;4.f;8e;
+1 2: d;c;b-;2.a-c;
+2: d;2e;f-cf;4d-;
+2 2: 2.c-g-;s;
+bar
+
+1: b-d;a-c;b-d;f-an-d;4.e;8;
+1 2: 2.s;4;2g-;
+2: 2.g-df;4an-;2g-;
+2 2: 2.s;c-;
+bar
+
+1: 2a;4;2d;8g;f;
+1 2: e;d;c;;b-;8a-;b-;
+2: c;d;f;2.g-f;
+2 2: 2.f-;s;
+bar
+
+1: 2e;4g;2.c;
+1 2: d;c;d;b-;2a-;
+2: 2.g;e;
+2 2: 2c;4b-;2a-;4g-;
+bar
+
+1: f;e;c;f;4.e;8c;
+1 2: 2.a-;;
+2: 2.f-c;f-d;
+bar
+
+1: a;g;f;e;gn;an;
+1 2: 2.b-;;
+2: 2.g-d;an-e;
+bar
+
+1: a;b;c+;e+;4.d+;8c+;
+1 2: 2.c;da;
+2: 2.e;f-d;
+2 2: 2a-;4g-;2.s;
+bar
+
+1: d+;4.c+;8b;4d+;c+;d+;
+1 2: 2.f;;
+2: 2.fb;4b;a;b;
+2 2: 2g-;4;2.;
+bar ending "1."
+
+midi 1: 5 "onvelocity=64,52";
+midi 1 2: 5 "onvelocity=52";
+midi 2 1-2: 5 "onvelocity=52";
+midi 1-2 1-2: 5 "param=7,110";
+1: 1.c+;
+1 2: 2e;4f;g;f;e;
+2: c-;g-;a-;bn-;d;c;
+repeatend ending "2."
+
+midi all: 1 "tempo=60";
+midi 1: 1 "onvelocity=54,40"; 1 "param=7,102"; 4 "param=7,92";
+midi 2 1-2: 1 "onvelocity=40"; 1 "param=7,102"; 4 "param=7,92";
+1: 2.gc+g+;ad+a+;
+2: 2.c-g-e;f-ca;
+bar
+
+midi 2 1-2:  1 "param=7,90"; 4 "onvelocity=36"; 4 "param=7,82";
+1: 2.c+c++;2.r;
+1 2: f+;e+;d+;2.s;
+ifdef MIDI
+  2: 2.f-can;4c-~;c-g- tie;c-g-e tie;
+else
+  2: 2.f-can;4c-;g-;e;
+endif
+bar
+
+midi all: 4 "tempo=44";
+midi 1: 4 "param=7,65";
+midi 2 1-2: 4 "param=7,74";
+1: 2.r;<<score release=500>> e+c++;
+ifdef MIDI
+  2: c-~g-~e~g;c-~g-~e~c+;c-~g-~e~d+;2.c-g-ee+g+;
+else
+  2: g;c+;d+;2.e+g+;
+endif
+bar
+
+midi all: 1 "tempo=32";
+midi 2 1-2: 1 "onvelocity=33"; 1 "param=7,63"; \
+			4 "onvelocity=30"; 4 "param=7,50";
+2: 2.ec+;;
+2 2: 2.c-g-;;
+endbar
+
+ifdef MIDI
+midi 1-2 1-2: 1.5 "param=7,127";
+1: 4r;2s;2.;
+bar
+endif

@@ -1,0 +1,218 @@
+header
+	title (18) "Song Without Words (No. 14)"
+	title "" "John A. Krallmann (6/29/08)"
+
+header2
+	title (12) "Song Without Words (No. 14) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.2
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=136";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=100";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=8";
+midi 2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=85";
+
+1: r;g+;d#+;f+;
+2: mr;
+bar
+
+1: e+;d+;c+;g;
+2: {2c-;g-;e;}3;
+bar
+
+1: b;c+;b;a;
+2: {2f-;c;a;}3;
+bar
+
+1: f+;e+;d+;c+;
+2: {2d-;a-;f;}3;
+bar
+
+1: b;a;b;e+;
+2: {2e-;b-;g#;}3;
+bar
+
+1: c#+;e;d+;e+;
+2: {2a-;e;c#+;}3;
+bar
+
+1: f+;e+;d+;c+;
+2: {2d-;a-;f;}3;
+bar
+
+1: d+;g;e+;f+;
+2: {2g-;d;b;}3;
+bar
+
+1: g+;c+;a+;b&+;
+2: {2e-;c;b&;}3;
+bar
+
+1: g#+;a+;e+;f+;
+2: {2f-;c;a;}3;
+bar
+
+score time=6/4 ; beamstyle=2.,2.
+music
+
+1: 2d+;4g;d+;e+;f+;
+2: {2g-;a;}2,2.;{<<staff clef=treble>>f;b;}2,2.;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2d+;4c+;c++;b+;g+;
+2: {2c-;g-;}2,2.;{e;c+;}2,2.;
+bar
+
+1: g+;f+;e+;2.c+;
+2: {2f-;c;}2,2.;2.a;
+bar
+
+1: g+;f+;e+;2.c+;
+2: {2d-;2a-~;}2,2.;{;f+;}2,2.;
+bar
+
+1: 2.a;g;
+1 2: a;d;c;g;c;b-;
+2: {2g-;d;}2,2.;{f;g-;}2,2.;
+bar
+
+1: 2.g;;
+1 2: e;d;c;2.e;
+2: {2c-;g-;}2,2.;2.e;
+dblbar
+
+newscore
+
+midi all: 1 "tempo=120";
+rom above all: 1 "A little slower";
+1: e;d;c;2.g-;
+2: {2c-;<<staff clef=treble>> g+;}2,2.;4c++;d++;e++;
+bar
+
+staff 2 clef=bass
+music
+
+1: b-;c;b-;2.a-;
+2: {2f-;<<staff clef=treble>> a+;}2,2.;{4f++;e++;d++;c++;}4,2.;
+bar 
+
+score time=4/4
+staff 2 clef=bass
+music
+
+1: f;e;d;c;
+2: {2d-;<<staff clef=treble>>4f+;g+;a+;c++;}3;
+bar
+
+score time=6/4
+staff 2 clef=bass
+music
+
+1: b-;a-;b-;2.e;
+2: {2e-;<<staff clef=treble>>b;}2,2.;{4g#+;f+;e+;d+;}4,2.;
+bar
+
+score time=4/4
+staff 2 clef=bass
+music
+
+1: c#;e-;d;e;
+2: {2a-;<<staff clef=treble>>e+;c#++;}3;
+bar
+
+staff 2 clef=bass
+music
+
+1: f;e;d;c;
+2: {2d-;<<staff clef=treble>>4a+;b+;c++;d++;}3;
+bar
+
+staff 2 clef=bass
+music
+
+1: d;g-;e;f;
+2: {2g-;<<staff clef=treble>>b;g+;}3;
+bar
+
+staff 2 clef=bass
+music
+
+1: g;c;a;b&;
+2: {2e-;<<staff clef=treble>> 4c+;4d++;c++;b&+;}3;
+bar
+
+staff 2 clef=bass
+music
+
+1: g#;a;e;f;
+2: {2f-;<<staff clef=treble>>4a+;}3;8f++;e++;d++;c++;
+bar
+
+score time=6/4
+staff 2 clef=bass
+music
+
+1: 2d;4g-;d;e;f;
+2: {2g-;<<staff clef=treble>>b+;}2,2.;{f+;b;}2,2.;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2d;4c;c+;b;g;
+2: {2c-;<<staff clef=treble>>g+;}2,2.;{e+;c++;}2,2.;
+bar
+
+staff 2 clef=bass
+music
+
+1: g;f;e;2.c;
+2: {2f-;<<staff clef=treble>>c+;}2,2.;4d+;e+;f+;
+bar
+
+staff 2 clef=bass
+music 
+
+1: g;f;e;2c~;8;a-;
+2: {2d-;<<staff clef=treble>>c+;}2,2.;4f+;g+;a+;
+bar
+
+staff 1,2 clef=bass
+music
+
+1: 2.a;g;
+1 2: a;d;c;b-;c;d;
+2: 4.g-;<<staff clef=treble>>8b;c+;d+;{2g+;<<staff clef=bass>>g-;}2,2.;
+octave below 2: 1 "8va"; 5 "8va" til 1m+3;
+bar
+
+staff 1 clef=treble
+music
+
+midi 1 1: 1 "onvelocity=109";
+1: 1.g;
+1 2: d;g-;d;2.e;
+2: 2.c-;<<staff clef=treble>>c+c++;
+endbar

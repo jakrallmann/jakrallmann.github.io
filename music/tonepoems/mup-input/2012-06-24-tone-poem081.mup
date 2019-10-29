@@ -1,0 +1,171 @@
+header
+	title (16) "Tone Poem (No. 81)"
+	title (14) " "
+	title "" "John A. Krallmann (June 24 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 81) - \%"
+score
+	staffs=2
+	key=1#
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.78
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=86";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: 4.c+;8g+;f+;d+;8.c+;16g;
+2: c;gc+e&+;d-;gc+e+;
+bar
+
+1: 4.a;16fn+;e&+;4d+;8.a;16a#;
+2: d-;gc+e&+;2fc+d+;
+bar
+
+1: 4.b;8d+;4;8b;a;
+2: g-;c#gb;dgb;d#gb;
+bar
+
+1: 4.egb;8a;2d+;
+1 2: 2s;8g#;a;b;c+;
+2: c-;eac+;fc+d+;c+d+f+;
+bar
+
+1: 2d+;8b;a;g;e;
+1 2: 8a;b;a;g;2e;
+2: b--;gd+;c-;enac+;
+bar
+
+1: 2.a;8c#;d;
+1 2: 8e;f;e;e&;4d;s;
+2: d-;eac+;2fac+;
+bar
+
+1: 2b~;8;d+;c+;a;
+1 2: 8f;g;f;d;4e;g;
+2: g-;dgb;cgb;e&ac+;
+bar
+
+1: 2.b;4g;
+1 2: 8df;g;f;d;2e;
+2: g-;dgb;2cgb;
+bar
+
+1: 2a~;8;fn;a;d+;
+1 2: 8e;fn;e;c;2d;
+2: fn-;cfna;2dfa;
+bar
+
+//
+
+1: 2.e+;4;
+1 2: 8g#;a;b;a;2g;
+2: e-;dfna;2ebd+;
+bar
+
+1: 2fn+~;8;b+;a+;f+;
+1 2: 8a;b;c+;b;4cfna;dfab;
+2: d-;ac+fn+;2s;
+bar
+
+1: 2ee+;fna;
+1 2: 8b;c+;b;a;e;d;e;c;
+2: a--;eac+;d-;cfna;
+dblbar
+
+score key=2&
+music
+
+1: 2df;8a-;b-;d;f;
+1 2: 8c;b-;c;b-;4f-;8a-;b-;
+2: b--;f-d;b-d;f-d;
+bar
+
+1: eg;8b;c+;2a;
+1 2: 8d;c;4e;8c;d;e;f;
+2: c-;cgb;f-;cfa;
+bar
+
+1: 8c+;b;a;b;c+;b;a;b;
+1 2: 2df;;
+2: b--;dfb;g--;dgb;
+bar
+
+1: 8c+;b;a;b;2c+;
+1 2: 2eg;8e;f;g;a;
+2: e-;egc+;f-;cfa;
+bar
+
+1: 8c+;b;a;b;f+;e+;d+;e+;
+1 2: 2d;g;
+2: b--;dfb;e-;gbd+;
+bar
+
+//
+
+1: 8b-g;a-f;b-g;a-f;2d;
+1 2: 2s;8a-;g-;a-;f-;
+2: f-e;cf;b--f-;b-d;
+bar
+
+1: [ho-1]8 with en-b-c below slope -20;g;g+en++;f+d++;[ho+1]en+c++;d+b+;c+a+;bng#+;
+2: c-;bc+en+;[ho-2]with c+e+b+ above;bc+e+;
+bar
+
+1: 8d+b+;c+a+;;bf+;f+;e+;d+;c+;
+1 2: 2s;a;
+2: f-;cfa;8e+;g+;f+;e+;
+2 2: 2s;f;
+bar
+
+1: 8b;g;;a;2b;
+1 2: 1d;
+2: a;8b;a;2g;
+2 2: 2.g-d;4f-;
+bar
+
+1: 8b;g;;a;2b;
+1 2: 1d;
+2: g;8b;a;2g;
+2 2: 2.e-b-;4d-;
+bar
+
+1: 8b;g;;a;b;d+;c+;b;
+1 2: 1e;
+2: c-;8b;a;2g;
+bar
+
+define XX
+1: 1g;
+1 2: 8b- bm with staff below;4s;8a- ebm;2b-;
+2: 8s bm with staff above;g;;s ebm;2s;
+2 2: 1g-;
+bar
+@
+XX
+XX
+
+1: 1g;
+1 2: 8b- bm with staff below;4s;8a- ebm;8b- bm;d;g;a ebm;
+2: 8s bm with staff above;g;;s ebm;2s;
+2 2: 1g-~;
+bar;
+
+1 2: 1b;
+2 2: 1g-;
+endbar

@@ -1,0 +1,144 @@
+header
+	title (16) "Song Without Words (No. 44)"
+	title "" "John A. Krallmann (9/11/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 44) - \%"
+score
+	staffs=2
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.95
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=96";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92,68";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+define R 1: @
+define R2 1 2: @
+define L 2: @
+
+R mr;
+L e-;b-;g;
+bar
+
+R 8a;b;4c+;16c++;b+;a+;g+;
+L f-;c;a;
+bar
+
+R 8f+;e+;4f+;8a;b;
+L b-;f;d+;
+bar
+
+R 8g;f+;4e+;16g+;f+;e+;d&+;
+L e-;b-;g;
+bar
+
+R 8fd&+;ec+;4.;8dn+;
+L a-;e;g-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+R 2e+~;8;16c++;b+;a+;g+;f+;e+;
+R2 8a;g;a;f;4c;s;
+L f-;c;a;e-;
+bar
+
+score time=3/4
+music
+
+R 2d+~;8;f#+;
+R2 8a;b;c&+;b;4a;
+L b--;f-;d;
+bar
+
+score time=4/4
+music
+
+R 2g+~;8;16d++;c++;b+;a+;g+;e+;
+R2 8b;bn;c+;b;4b&;s;
+L e-;b-;g;b-;
+bar
+
+R 8b+;a+;2.a+;
+R2 2c+;8f;g;a;f;
+L a-;e;c&+;f;
+bar
+
+R 8c&+a+;bg+;2.g+;
+R2 s;b;8f;g;b;g;
+L e-;b-;g;b;
+bar
+
+R 8bg+;af+;;ge+;4.f+;8c+;
+R2 2s;8a;g;f;e;
+L f-;c;a;c;
+bar
+
+R 2b~;8;c+;d+;f+;
+R2 8a;g;f;e;2d;
+L b-;f;a;b--;
+bar
+
+R 2e+~;8;;;f+;
+R2 8g;e;;f;2g;
+L c;g;d+;c+;
+bar
+
+R 2.g+~;8;;
+R2 8e+;c+;;d+;2e+;
+L b-;g;c+;b;
+bar
+
+R 8g+;e+;;f+;g+;e+;16a+;g+;8f+;
+R2 2.c+;4c&+;
+L a-;e;c+;e;
+bar
+
+R 8g+;e+;;f+;4g+;b+;
+R2 1b;
+L e-;b-;g;b;
+bar
+
+R 8g+;e+;;f+;8.g+;16b+;4;
+R2 1b;
+L e-;b-;g;b;
+bar
+
+R 8g+;e+;;f+;g+;b+;e++;f++;
+L e-;b-;g;b;
+bar
+
+staff 2 clef=treble
+music
+
+R 1e++g++;
+L 1eb;
+bar
+
+staff 1 clef=bass
+staff 2 clef=bass
+music
+
+R 1eg;
+L 1e-b-;
+endbar
+

@@ -1,0 +1,242 @@
+header
+	title (16) "Tone Poem (No. 55)"
+	title "" "John A. Krallmann (10/4/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 55) - \%"
+score
+	staffs=2
+	time=cut
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=2,2
+	staffscale=0.78
+staff 1
+	timeunit=8
+	vscheme=2f
+staff 2
+	timeunit=2
+	clef=bass
+music
+
+midi all: 0 "tempo=152";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+rom above all: 1 "(\(smup2n) = 76)";
+define THEME
+1: r;e;a;b~;;c+;d+;e+~;
+2: a-;ec+;
+boldital between 1&2: 1 "mf";
+bar
+
+1: e+;d+;c+;a~;;b;c+;d+;
+2: f-;ca;
+bar
+
+1: b;a;b;g~;;a;b;d+~;
+2: e-;b-g;
+bar
+
+1: d+;c+;b;e~;;a;b;c+;
+2: a-;ec+;
+bar
+
+1: g+;f+;e+;a~;;b;c+;e+~;
+2: f-;ca;
+bar
+
+1: e+;d+;b;g~;;a;4b~;
+2: g-;db;
+bar
+
+1: b;c+;b;a~;4;b~;
+2: a-;ec+;
+bar
+
+1: b;c+;b;a~;4;b~;
+2: g-;db;
+bar
+
+1: b;c+;b;a~;4;b;
+2: f-;ca;
+bar
+
+1: g;f#;g;b-~;;d;c;b-;
+2: e-;b-g;
+bar
+
+1: a;g;f;c~;;d;f;a;
+2: f-;ca;
+bar
+
+1: g;a;d+;b~;;a;4g;
+2: g-;db;
+bar
+
+1: e+;d+;c+;a~;4;;
+2: a-;ec+;
+bar
+
+1: d+;c+;d+;g~;4;;
+2: g-;db;
+bar
+
+1: e+;d+;e+;a~;;b;c+;e+;
+2: a-;ec+;
+bar
+
+1: d+;c+;d+;g~;;a;b;d+;
+2: g-;db;
+bar
+
+1: c+;b;c+;a~;;b;c+;d+;
+2: f-;ca;
+bar
+
+1: g#;f#;g;e~;;f;g;b;
+2: e-;b-g#;
+bar
+
+1: f;e;f;d~;;e;f;a~;
+2: d-;a-f;
+bar
+
+1: a;g;a;d+~;;e+;4f+;
+2: g-;db;
+bar
+
+1: e+;d+;e+;b~;;c+;4d+~;
+2: g#-;eb;
+bar
+
+1: d+;c+;d+;e+;4a+;b+;
+2: a-;ec+;
+bar
+
+1: c++;b+;a+;g+;4f+;b+~;
+2: f-;ca;
+bar
+
+1: b+;a+;g+;f+;4e+;a+~;
+2: e-;b-g;
+bar
+
+1: a+;g+;f+;e+;d+;c+;b;a;
+2: d-;a-f;
+bar
+@
+
+THEME
+
+1: 4e;de;ce;b-e;
+2: e-;b-g;
+< between 1&2: 1 til 2.5;
+ital between 1&2: 1 "molto accel.";
+bar 
+
+midi all: 0 "tempo=240";
+midi 2: 1 "onvelocity=80";
+rom above all : 1 "allegro agitato";
+1: a-a;b-;c;d;a-;b-;c;e;
+boldital between 1&2: 1 "sfz";
+ital between 1&2: 1 "marcato il basso";
+2: a--a-;g--g-;
+bar
+
+1: a-;b-;c;d;a-;b-;c;e;
+2: f-f;e-e;
+octave below 2: 1 "8va" til 1m+1.5; 
+bar
+
+1: f;a-;d;f;a-;d;f;a-;
+2: dd-;cc-;
+bar
+
+1: f;g-;d;f;g-;d;f;g-;
+2: 1b--b-;
+bar
+
+1: e;g-;c;e;g-;c;e;g-;
+2: 1b&--b&-;
+bar
+
+1: e;a-;c#;e;a;e;c;a-;
+2: a-a;g-g;
+octave below 2: 1 "8va" til 1m+1.5;
+bar
+
+1: a;c;f;a;c;f;a;c;
+2: 1f-f;
+bar
+
+1: a;c;f;a;c;f;a;c;
+2: 1e&-e&;
+bar
+
+1: c+;a;f#;d;f;a;d+;c+;
+2: 1d-d;
+bar
+
+1: b&;d;g;a;b;d;g;a;
+2: g-g;f-f;
+bar
+
+1: b&;c;g;a;b;d+;c+;b;
+2: 1e-e;
+bar
+
+1: a;c;f;g;a;c+;b&;a;
+2: 1e&-e&;
+bar
+
+1: 2..f;8g;
+1 2: c;b&-;a-;b-;2f-;
+2: 2.d-d;4d&-d&;
+ital between 1&2: 1 "dim.";
+rom above all: 1 "slowing back to tempo I,\nand more dulce";
+bar
+
+1: 2..a;8f;
+1 2: g;f;e;f;2c;
+2: 2.c-c;4a--a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.d+;4f+;
+1 2: b&;a;g;f;2d;
+2: 1g--g-;
+bar
+
+1: 1c+;
+1 2: a;g;a;f;2c;
+2:1f--f-;
+mussym above all: 2 "ferm";
+dblbar  
+
+staff 1 clef=treble
+music
+
+midi all: 0 "tempo=152";
+midi 2: 1 "onvelocity=64";
+rom above all: 1 "Tempo I";
+THEME
+
+1: 4e;de;ce;b-e;
+2: e-;b-g;
+< between 1&2: 1 til 2.5;
+bar 
+
+1: 2a<>;[with.]8a-;r;4;
+boldital between 1&2: 1 "sfz";
+2: 2a-<>;[with.]8a--;r;4;
+endbar

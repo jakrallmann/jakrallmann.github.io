@@ -1,0 +1,420 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 26"
+	title "" "John A. Krallmann"
+	title " " "(Aug 2-7, 2015)"
+
+header2
+	title (12) "Nocturne No. 26 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	key=2& minor
+	measnum=y
+	staffscale=0.78
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal below 1,2: 1;3; endif @
+
+midi all: 0 "tempo=80";
+midi 1: 0 "onvelocity=76";
+midi 2: 0 "onvelocity=46";
+
+define THEME
+ifdef V1 1: d+;8f#;g;4e+;8f+;e+; endif
+ifdef V2 1: 8d+;b+;f#+;g+;4e+;8f+;e+; endif
+ifdef V3 1: 8d+;16e+;d+;8f#;g;e+;16a+;g+;8f+;e+; endif
+ifdef V4 1: 4.d+;16f#;g;4.e+;16f+;e+; endif
+ifdef V5 1: b;{8f#;g;b;}3;4e+;{8f+;e+;c+;}3; endif
+ifdef V6
+ 1: d+;8f#;g;4e+;8af+;ge+;
+ 1 2: 8a;b;4s;8c+;b;4s;
+endif
+ifdef V7
+ 2: {8g--;d-;b-;g-;d;b;}6;{c-;g-;e;c;g;c+;}6;
+else
+ 2: g-;gbd+;c-;gc+e+;
+endif
+P
+bar
+
+ifdef V1 1: 8d+;g;f#;g;4e+;8d+;c+; endif
+ifdef V2 1: 8d+;g;f#+;g+;4e+;8d+;c+; endif
+ifdef V3 1: 8d+;16a;g;8f#;g;e+;16f+;e+;8d+;c+; endif
+ifdef V4 1: 8d+;g;8.f#;16g;4e+;8.d+;16c+; endif
+ifdef V5 1: 8d+;g;{f#;g;b;}3;e+;g+;{e+;d+;c+;}3; endif
+ifdef V6
+ 1: 8ad+;g;f#;g;4e+;8bd+;ac+;
+ 1 2: 2s;8c+;16d+;c+;4s;
+endif
+ifdef V7
+ 2: {8g-;d;b;g;b;d+;}6;{c-;g-;e;g;c+;e+;}6;
+else
+ 2: g-;gbd+;c-;gc+e+;
+endif
+P
+bar
+
+ifdef V1 1: 8a;b;a;g;e+;d+;b;a; endif
+ifdef V2 1: 8a;b;a;g;e+;d+;b+;a+; endif
+ifdef V3 1: 16a;b;a;g;a;b;a;g;8e+;16d+;c+;8b;a; endif
+ifdef V4 1: 16a;b;a;g;4a;16e+;d+;c+;b;4a; endif
+ifdef V5 1: 8a;b;{a;g;a;}3;e+;d+;{c+;b;a;}3; endif
+ifdef V6
+ 1: 8a;b;a;g;e+;d+;b;a;
+ 1 2: en;s;f#;s;
+endif
+ifdef V7
+ 2: {8d&-;a-;g;d&+;g;d&;}6;{dn-;a-;f#;a;c+;f#+;}6;
+else
+ 2: d&-;egd&+;dn-;ac+f#+;
+endif
+P
+bar
+
+ifdef V1 1: 8b;a;g;e;4d;8e+;d+; endif
+ifdef V2 1: 8b+;a+;g+;d&+;8e+;dn+;g+;a+; endif
+ifdef V3 1: 8b;16;a;8g;e;d;16f#;a;8e+;d+; endif
+ifdef V4 1: 16c+;b;a;g;8e;c;4d;8.c#+;16d+; endif
+ifdef V5 1: 8b;a;{g;e;c;}3;d;a;{e+;d+;c+;}3; endif
+ifdef V6
+ 1: 8bd+;ac+;gb;ec+;dd+;a;8be+;ad+;
+endif
+if defined(V4) && ! defined(V7)
+then
+ 2: g--;gb;d-;cf#a;
+else
+ ifdef V7
+  2: {8g--;d-;b-;g;b;d;}6;{d-;a-;f#;c;f#;a;}6;
+ else
+  2: g--;gbd+;d-;cf#a;
+ endif
+endif
+P
+bar
+
+ifdef V1 1: 8b+;a+;g+;e+;4.d+;8a; endif
+ifdef V2 1: 8b+;a+;g+;b+;e+;4d+;8a; endif
+ifdef V3 1: 8b+;16a+;g+;8f+;e+;d+;16c+;b;8a;d+; endif
+ifdef V4 1: 16b+;a+;g+;d+;8.;16;;c+;b;a;4a; endif
+ifdef V5 1: 8b+;a+;{g+;b+;e+;}3;d+;c+;{a;b;c+;}3; endif
+ifdef V6
+ 1: 8g+b+;c+a+;d+g+;c+e+;4d+;8b;a;
+ 1 2: 2s;8f#;g;4s;
+endif
+ifdef V7
+ 2: {8g-;d;b;g;d+;g+;}6;{d-;a-;f#;a;d+;f#+;}6;
+else
+ 2: g-;bd+g+;d-;ad+f#+;
+endif
+P
+bar
+
+ifdef V1 1: 8c+;b;a;g;4.d&;8a; endif
+ifdef V2 1: 8c+;b;a;g;d&;4a;8b; endif
+ifdef V3 1: 8c+;16b;a;8g;e;d&;16g;a;8b;c+; endif
+ifdef V4 1: 16c+;b;a;g;4;16d&;g;a;b;8.a;16g; endif
+ifdef V5 1: 8c+;b;{a;g;a;}3;d&;g;{b;a;g;}3; endif
+ifdef V6
+ 1: 8c+;b;a;g;4.d&;8a;
+ 1 2: g;e;8g-;a-;4b-;
+endif
+ifdef V7
+ 2: {8e-;b-;g;e;g;d&+;}6;{e-;b-;g;e;g;a;}6;
+else
+ 2: e-;egd&+;e-;eg;
+endif
+P
+bar
+
+ifdef V1 1: 4.d(n);8f#;g;a;b;c+; endif
+ifdef V2 1: 8d+;4d;8f#;g;a;e+;c+; endif
+ifdef V3 1: 8d+;16c+;b;8a;d;16e;g;a;b;8f+;e+; endif
+ifdef V4 1: 4.d;8f#;g;a;8.b;16c+; endif
+ifdef V5 1: 8d;f#;{;g;a;}3;8g;a;{;b;c+;}3; endif
+ifdef V6
+ 1: 4.d;8f#;g;a;eb;dc+;
+ 1 2: 8c;b-;2.s;
+endif
+ifdef V7
+ 2: {8d-;a;f#;d;a;c;}3;{b--;g-;d;g;b;d;}6;
+else
+ 2: d-;f#a;c-;fa;
+endif
+P
+bar
+
+ifdef V1 1: d+;8a+;g+;4.d+;8a; endif
+ifdef V2 1: d+;8a+;g+;b+;d+;c+;b; endif
+ifdef V3 1: 8d+;16c++;b+;8a+;f+;d+;a;;g; endif
+ifdef V4 1: 4.d+;16a+;g+;a+;g+;8d+~;8.;16a; endif
+ifdef V5 1: 8d+;b+;{a+;g+;d+;}3;;a;{c+;b;a;}3; endif
+ifdef V6
+ 1: fd+;8a+;g+;4.d+;8a;
+ 1 2: 8c+;b;4;8a;b;4c+;
+endif
+ifdef V7
+ 2: {8b--;f-;d;f;b;d+;}6;{g-;d;b;f#;b;d+;}6;
+else
+ 2: b--;fbd+;g-;f#bd+;
+endif
+P
+bar
+
+ifdef V1 1: 8a;g;f;g;4.d&;8g; endif
+ifdef V2 1: 8a;g;f;g;d&+;b;a;g; endif
+ifdef V3 1: 8a;16g;f;8e;f;d&;e;f;g; endif
+ifdef V4 1: 8a;g;8.f;16g;4.d&;16a+;g+; endif
+ifdef V5 1: 8a;g;{f;g;f;}3;d&;e;{f;g;a;}3; endif
+ifdef V6
+ 1: 8a;g;f;g;4.d&;8g;
+ 1 2: b-;s;8g-;a-;4b-;
+endif
+ifdef V7
+ 2: {8e-;b-;g;e;g;d&+;}3;{e-;b-;g;e;g;d+;}6;
+else
+ 2: e-;egd&+;e-;eg;
+endif
+P
+bar
+
+ifdef V1 1: 2fd+;4.c+a+;8bg+; endif
+ifdef V2 1: 8f;d+;a+;g+;;f+;d+;b; endif
+ifdef V3
+ 1: 8d+;16b+;a+;8g+;f+;d+;16c+;b;8a;b;
+ 1 2: f;2.s;
+endif
+ifdef V4 1: 8d+;4b+;8a+;g+;d+;c+;b; endif
+ifdef V5 1: d+;{8b+;a+;b+;}3;a+;g+;{d+;e+;f+;}3; endif
+ifdef V6
+ 1: d+f+;d+;4.a+;8g+;
+ 1 2: 8c+;b;a;g;c+;b;a;b;
+endif
+ifdef V7
+ 2: {8b--;f-;d;f;b;d+;}6;{g-;d;b;g;b;d+;}6;
+else
+ 2: b--;abd+;gbd+;fbd+;
+endif
+P
+bar
+
+ifdef V1 1: 2af+;4.ge+;8b; endif
+ifdef V2
+ 1: 8f+;e+;;d+;e+;d+;c+;b;
+ 1 2: a;g;2g;
+endif
+ifdef V3 1: 8f+;g+;d+;c+;e+;d+;c+;b; endif
+ifdef V4 1: 8g+;4f+;8e+;;d+;c+;b; endif
+ifdef V5 1: {8f+;g+;f+;}3;e+;d+;{e+;f+;e+;}3;d+;c+; endif
+ifdef V6
+ 1: 2f+;4.e+;8b;
+ 1 2: 8a;g;a;b;c+;b;a;g;
+endif
+ifdef V7
+ 2: {8e-;b-;g;e;b;d+;}6;{c-;g-;e;g;c+;e+;}6;
+else
+ 2: e-;gbe+;c-;gc+e+;
+endif
+P
+bar
+
+ifdef V1 1: 2.a;8b;c+; endif
+ifdef V2 1: 8a+;4g+;8f+;e+;4d+;8c+; endif
+ifdef V3 1: 8a;16b;c+;8b;16c+;d+;8c+;16d+;e+;8f+;e+; endif
+ifdef V4 1: 8a;4b;c+;8d+;e+;f+; endif
+ifdef V5 1: a;g+;{8f+;e+;d+;}3;{e+;d+;c+;}3; endif
+ifdef V6
+ 1: 4.a;4;8;gb;ac+;
+ 1 2: 8c;d;2.s;
+endif
+ifdef V7
+ 2: {8f-;c;a;f;e+;a;}6;{d-;a-;f#;d;c+;a;}6;
+else
+ 2: f-;e+g+;d+f+;c+e+;
+endif
+P
+bar
+
+ifdef V1 1: 4.bn;8c+;2d+; endif
+ifdef V2 1: 8bn;4c+;8d+;;e+;f+;g+; endif
+ifdef V3 1: 8bnd+;c+;d+;e+;4f+;8a&+;g+; endif
+ifdef V4
+ 1: 1g+;
+ 1 2: 8bn;4c+;8d+;;f+;e+;d+;
+endif
+ifdef V5 1: 4.bn;8c+;4d+;{8d+;e+;f+;}3; endif
+ifdef V6
+ 1: 4.bnd+;8ac+;4bd+;8c+e+;d+f+;
+endif
+ifdef V7
+ 2: {8g-;d;bn;g;f+;b;}6;{a&-;f;c+;a&;f+;c+;}6;
+else
+ 2: g-;gbn;bd+;a&d+f+;
+endif
+P
+bar
+
+ifdef V1 1: 4.f+;8e+;2c+; endif
+ifdef V2 1: 8f+;e+;d+;e+;4.c+;8b; endif
+ifdef V3 1: 8f+;g+;e+;d+;4c+;8b;c+; endif
+ifdef V4
+ 1: 8f+;4e+;8d+;2c+;
+ 1 2: a&;g;8;an;g;f;
+endif
+ifdef V5 1: {8f+;g+;f+;}3;e+;d+;4c+;{8;b;a;}3; endif
+ifdef V6
+ 1: 4.f+;8e+;2c+;
+ 1 2: 2a&;8g;an;g;f;
+endif
+if (defined(V4) || defined(V6)) && ! defined(V7)
+then
+ 2: c-;gc+e+;f-;ac+;
+else
+ ifdef V7
+  2: {8c-;g-;e;g;c+;e+;}6;{f-;c;a;f;e+;a;}6;
+ else
+  2: c-;gc+e+;f-;ac+f+;
+ endif
+endif
+P
+bar
+
+ifdef V1 1: 4.a;8b;4.c+;8d+; endif
+ifdef V2 1: 8a;b;c+;d+;e+;4d+;8c+; endif
+ifdef V3 1: 8a;b;c+;d+;e+;f+;d+;c+; endif
+ifdef V4 1: 8f#a;4b;8c+;e+;4d+;8c+; endif
+ifdef V5 1: 4.a;8b;c+;d+;{e+;d+;c+;}3; endif
+ifdef V6
+ 1: 4.a;8b;4.c+;8d+;
+ 1 2: 8f#;en;4s;8f;g;b;a;
+endif
+ifdef V7
+ 2: {8d-;a-;f#;a;d+;f#+;}6;{d-;a-;f#;e+;d+;c+;}6;
+else
+ 2: d-;ad+f#+;d-;ae+f+;
+endif
+P
+bar
+
+ifdef V1 1: 2.b;4a; endif
+ifdef V2 1: 4.b;8c+;a;b;a;f; endif
+ifdef V3 1: 8b;16c+;b;8a;b;a;g;a;b; endif
+ifdef V4 1:  16d+;c+;4b;8a;b;a;g;f; endif
+ifdef V5 1: 8c+;4b;8a;{b;a;g;}3;{a;g;f;}3; endif
+ifdef V6
+ 1: 2.b;4fa;
+ 1 2: 8a;4g;8f;4d;s;
+endif
+if defined(V6) && ! defined(V7)
+then
+ 2: g-;abd+;gb;fbd+;
+else
+ ifdef V7
+  2: {8g-;d;b;a-;d;a;}6;{g-;d;b;f-;d;a;}6;
+ else
+  2: g-;abd+;gbd+;fbd+;
+ endif
+endif
+P
+bar
+
+ifdef V1 1: 2g;4.a;8f; endif
+ifdef V2 1: g;8a;b;4a;8g;f; endif
+ifdef V3 1: g~;16;a;b;c+;4a~;16;g;f;a; endif
+ifdef V4 1: g~;16;a;b;c+;a;;8~;16;d+;en+;f#+; endif
+ifdef V5 1: g;{8;a;b;}3;4a;{8f;g;a;}3; endif
+ifdef V6
+ 1: 4.g;8;4.a;8f#;
+ 1 2: 8d;e;4r;8;c;4e;
+endif
+ifdef V7
+ 2: {8e-;b-;g;e;c+;b;}6;{d-;a-;f#;d;c+;a;}6;
+else
+ 2: e-;gbc+;d-;ac+;
+endif
+P
+bar
+
+ifdef V4
+ 1: 1g+;
+else 
+ ifdef V6
+  ifdef V7
+   1: 8g;a;8.b;16c+;2g;
+  else
+   1: 8g;g-;b-;d;2g;
+  endif
+ else
+  1: 1g;
+ endif
+endif
+if defined(V6) && ! defined(V7)
+then
+ 2: 1g-;
+ octave below 2: 1 "8va";
+else
+ ifdef V7
+  2: {8g-;d;b;g;d+;d;}6;2g-;
+ else
+  2: g-;gb;2bd+;
+ endif
+endif
+ifdef V5
+ octave below 2: 1 "8va";
+endif
+ifdef MIDI pedal below 1,2: 1;5; endif
+dblbar
+@
+
+define V1 @
+THEME
+newscore
+undef V1 define V2 @
+THEME
+newscore
+undef V2 define V3 @
+THEME
+newscore
+undef V3 define V4 @
+THEME
+newscore
+undef V4 define V5 @
+THEME
+newscore
+undef V5 define V6 @
+THEME
+
+newscore
+score beamstyle=2,2
+music
+undef V6 define V1 @ define V7 @
+THEME
+
+newscore
+undef V1 define V6 @
+THEME
+
+newscore
+undef V6 define V2 @
+THEME
+
+newscore
+undef V2 define V5 @
+THEME
+
+newscore
+undef V5 define V4 @
+THEME

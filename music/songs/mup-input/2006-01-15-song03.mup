@@ -1,0 +1,195 @@
+header
+	title (18) "Song Without Words (No. 3)"
+	title "" "John A. Krallmann (1/15/06)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=110";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 4a;2b;8c+;d+;
+1 2: 1g;
+2: 1d+;
+2 2: g;f;
+bar
+
+1: 4d+;c+;2a;
+1 2: 1g;
+2: 2.c+;8b;a;
+2 2: e;e&;
+bar
+
+1: 4b;d+;2e+;
+1 2: 1g;
+2: 2.b;8a;g;
+2 2: d;d&;
+bar
+
+1: e+;d+;
+1 2: g;a;
+2: 1c+;
+2 2: 4d(n);e;2f;
+bar
+
+1: 4b-;2d;4f;
+1 2: 1a-;
+2: 1d;
+2 2: g-;f-;
+bar
+
+1: 4f;e;;b-;
+1 2: 1g-;
+2: 1b-;
+2 2: e-;d-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.a;8b;c+;
+1 2: 4g;e;2e&;
+2: 1a-;
+2 2: 1c#-;
+bar
+
+1: 1a;
+1 2: g;f;
+2: 4a-;b-;d;c;
+2 2: 1d-;
+bar
+
+1: 4b;f+;;b;
+1 2: 1f;
+2: 1b-;
+2 2: 1d#-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 2a;g;
+1 2: f;e;
+2: 1b-;
+2 2: 1e-;
+bar
+
+1: 2.b-;4d;
+2: 1g~;
+2 2: 1a-~;
+bar
+
+1: e;e#;
+1 2: 1c#;
+2: 1g;
+2 2: 1a-;
+bar
+
+1: 2.f;4g;
+1 2: 4e;2.d~;
+2: a;b&~;
+2 2: 1d~;
+bar
+
+1: a;g;
+1 2: 1d;
+2: 1b;
+2 2: 1d;
+bar
+
+1: 2.f;4a;
+1 2: 4e;2.d;
+2: 1a;
+2 2: d;c#;
+bar
+
+1: e+;d+;
+1 2: 1f;
+2: c#+;b;
+2 2: 1b-;
+bar
+
+1: 2.e;4f;
+1 2: 4d;c;2b-;
+2: 1g;
+2 2: 2.c;4b-;
+bar
+
+1: 4a;g;f;e;
+1 2: 1c;
+2: g;e;
+2 2: 1a-;
+bar
+
+1: 1f;
+1 2: 4e;d#;c#;b-;
+2: f;4e;d#;
+2 2: 1b-;
+dblbar
+
+score key=4#
+music
+
+1: 1g;
+1 2: 4b-;c;d;e;
+2: e-;b-;
+bar
+
+1: 4g;2f;4e;
+1 2: 1c;
+2: a-;e;
+bar
+
+1: 4d;c+;b;gn;
+2: a;4c;d;
+2 2: 1b-;
+bar
+
+1: 1g(#);
+1 2: 4b-;c;d;e;
+2: e-;b-;
+bar
+
+1: 4g;2f;4e;
+1 2: 1c;
+2: a-;e;
+bar
+
+1: 4c;2.b-;
+1 2: 1a-;
+2: e;d;
+2 2: 1b-;
+bar
+
+1: 1e;
+1 2: g-;a-;
+2: b-;c;
+2 2: 1e-;
+bar
+
+1: 1e;
+1 2: 1g-;
+2: 1b-;
+2 2: 1e-;
+endbar

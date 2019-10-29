@@ -1,0 +1,316 @@
+header
+	title (18) "Nocturne"
+	title (12) "" "John A. Krallmann (1/27/02)"
+
+header2
+	title (12) "Nocturne - \%"
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=1#
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	vscheme=2f
+	staffscale=0.95
+	packfact=1.5
+	measnum=y
+
+staff 2
+	clef=bass
+
+voice 1 1
+	release=10
+staff 2
+	release=40
+music
+
+midi all: 0 "tempo=58";
+midi 1 1: 0 "channel=11"; 0 "program=49"; 0 "param=10,88";
+midi 1 2: 0 "channel=12"; 0 "program=49"; 0 "param=10,72";
+midi 2 1: 0 "channel=13"; 0 "program=49"; 0 "param=10,56";
+midi 2 2: 0 "channel=14"; 0 "program=49"; 0 "param=10,40";
+
+S 1g;
+A b-;;;;
+B g-;;;f-;
+bar
+
+S 1g;
+A b-;;;;
+B e-;;;d-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+S 8g;f;g;a;
+A a-;;
+B c-;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 2g;f;
+A a-;b-;c;d;
+B d-;;;;
+bar
+
+S 2.g;8f;g;
+A b-;;;;
+B e-;;d-;;
+bar
+
+S 1e;
+A b-;;a-;;
+B c-;;;;
+bar
+
+S 2.d;4c;
+T g;;f;;
+B d-;;;;
+bar
+
+S 1b-;
+T 2a;g#;
+B e-;;;;
+bar
+
+S 2.e;8f;g;
+T a;;;;
+B c-;;;;
+bar
+
+S 2.d;8f;g;
+T a;;g;;
+B b--;;;;
+bar
+
+S 2.c;8e;d;
+T g;;f;;
+B a--;;d-;;
+bar
+
+//
+
+S 1b;
+A d;;;8a;g;
+B g-;;fn-;;
+bar
+
+S d+;2.c+;
+A 2g;4f;8e;d;
+B e-;;d-;;
+bar
+
+S 2.d+;4c+;
+A g;f;e;;
+B b-;;c-;;
+bar
+
+S 1a;
+A ce;;cg;cf;
+B d-;;d;;
+bar
+
+S 4.b;8a;2g;
+A d;;c;b-;
+B g-;;;;
+bar
+
+S 4.b;8a;2g;
+A g;8;f;4b-;;
+B e-;;;d-;
+bar
+
+S 2a;e;
+A e;;b-;a-;
+B c-;;;;
+bar
+
+S 2g;a;
+A b-e;ce;dg;df;
+B d-;;;;
+bar
+
+S 2b;;
+A dg;;eg;;
+B g-;;e-;;
+bar
+
+S 4.c+;8d+;2;
+A eg;;ga;;
+B c-;;d-;;
+bar
+
+S 2d+;e+;
+A fa;;gd+;gc+;
+B d-;;c-;;
+bar
+
+//
+
+score time=2/4 ; beamstyle=4,4
+music
+
+S 2f+;
+A bd#+;;
+B b--;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 1g+;
+A be+;;;;
+B e-;;d-;;
+bar
+
+S 8b;4.a~;2;
+A ce;;;;
+B a--;;b--;c-;
+bar
+
+S 8g;4.f~;2;
+A a-e;a-d;a-e;a-d;
+B d-;;c-;;
+bar
+
+S 2g;c+;
+A g-d;;eg;;
+B b--;;a-;;
+bar
+
+S 1d+;
+A eg;;ea;fa;
+B d-;;;;
+bar
+
+S 1b;
+A dg;;da;dg;
+B g-;;;f-;
+bar
+
+S 1b;
+A eg;;ea;eg;
+B e-;;d-;;
+bar
+
+S 1g+;
+A be+;;ae+;ge+;
+B c-;;;;
+bar
+
+S 1g+;
+A ad+;gd+;fd+;gd+;
+B b--;;;;
+bar
+
+S 1c+;
+A eg;;ce;df;
+B a--;;d-;;
+bar
+
+S 1b;
+A fa;;eg;;
+B e-;;b-;e-;
+bar
+
+//
+
+S 2a;4b;a;
+A ce;;;;
+B a-;;d-;;
+bar
+
+S 1g;
+A b-d;;;;
+B g-;;f-;;
+bar
+
+S 2a;g;
+A b-e;;;;
+B e-;;d-;;
+bar
+
+S 2.b;4a;
+A ce;;;;
+B c-;;;;
+bar
+
+S 1b;
+A ef;;d#f;;
+B b--;;b-;a-;
+bar
+
+S 1c+;
+A eg;;dg;eg;
+B g-;;c-;;
+bar
+
+S 2d+;4c+;b;
+A ga;;dg#;;
+B b--;;e-;;
+bar
+
+S d+;c+;b;a;
+A ee+;;;;
+B a-;;g-;;
+dblbar
+
+score key=0#
+music
+
+S d+;c+;b;a;
+A ff+;;;;
+B d-;;g-;;
+bar
+
+S 2gg+;4fc+f+;fc+e+;
+A d+;c+;2s;
+B e-;;g#-;;
+bar
+
+S fc+d+;dc+;gc+f+;gc+e+;
+B g#-;;gn-;;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+S fad+;fac+;
+B d-;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 2d+;4f+;e+;
+A fa;;;fb;
+B g-;;;;
+bar
+
+voice 1 2 release=50
+music
+
+midi all: 1 "tempo=48";
+S 1e+g+ tie;
+A a;;g;;
+B 1c- tie;
+bar
+
+midi 1-2 1-2: 5 "param=10,63";
+S 1e+g+;
+A 1a;
+B 1c-;
+endbar

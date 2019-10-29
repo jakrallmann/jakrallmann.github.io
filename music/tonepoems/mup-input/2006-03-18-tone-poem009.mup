@@ -1,0 +1,192 @@
+header
+	title (18) "Tone Poem (No. 9)"
+	title "" "John A. Krallmann (March 18 and 25, 2006)"
+
+ifndef VIDEO
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+endif
+
+score
+	staffs=2
+	time=cut
+	timeunit=4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	ifdef VIDEO
+		pagewidth=16
+		pageheight=9
+		scale=1.5
+		packfact=1.25
+		scoresep=10,28
+	else
+		staffscale=0.85
+	endif
+
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2r;4;8;g~;
+2: g-;eac+;2fad+;
+bar
+
+1: 2.g;8e;f;
+2: g-;eac+;2fad+;
+bar
+
+1: 8g;a;b;c+;4.d+;8e+~;
+2: g-;eac+;fad+;g-;
+bar
+
+1: 8e+;d+;c+;a;4.d+;8e+;
+2: 2eac+;4fad+;g-;
+bar
+
+1: 8g+;e+;d+;c+;4.a;8g;
+2: eac+;2fad+;4g-;
+bar
+
+1: 4.e;8a;4.;8g;
+2: 2eac+;fad+;
+bar
+
+1: 2.a;8b;c+;
+2: 2eac+;dgb;
+bar
+
+ifndef VIDEO
+mussym above all: 1 "sign";
+endif
+define SIGN2FINE
+1: 2.e+;8g+;f+;
+2: a-;eac+;2fad+;
+bar
+
+1: 8e+;d+;4e+;d+;8c+;b;
+2: a-;eac+;2fad+;
+bar
+
+1: 4.e;8a;4;8c+;d+;
+2: a-;eac+;2fad+;
+bar
+
+1: 4.e+;8a+;c++;4b+;8a+;
+2: a-;eac+;fad+;a-;
+bar
+
+1: 4.e+;8c+;4.d+;8a;
+2: 2eac+;4fad+;a-;
+bar
+
+1: 4.c+;8a;4.d+;8e+;
+2: 2eac+;4fad+;a-;
+bar
+
+1: 4.a;8;4.;8;
+2: 2eac+;fad+;
+bar
+@
+SIGN2FINE
+
+ifndef VIDEO
+rom between 1&2: 1 "Fine";
+endif
+1: 2.ca;8a;b;
+2: 1a-e;
+bar
+
+ifdef VIDEO
+newpage
+score packfact=1.1
+music
+endif
+
+1: 4.c+;8d+;c+;b;a;g;
+2: a-;eac+;2fad+;
+bar
+
+1: 4.e;8a;;b;c+;e+;
+2: a-;eac+;2fbd+;
+bar
+
+1: 4.a+;8e+;d+;c+;b;c+;
+2: a-;eac+;2fad+;
+bar
+
+1: 4.a;8e;g;f;b;c+;
+2: a-;eac+;2fad+;
+bar
+
+1: 4.a;8e+;4a+;8c++;b+;
+2: a-;eac+;2fad+;
+bar
+
+1: 8a+;e+;4a+;8b+;e+;4b+;
+2: a-;eac+;g-;egb;
+bar
+
+1: 8c++;a+;4c++;8b+;g+;d+;e+;
+2: f-;fad+;e-;egbg+;
+bar
+
+1: 4.af+;8e+;4.ad+f+;8c+;
+2: d-;dfaf+;c-;dfa&c+;
+bar
+
+1: 4.e+;8c#+;4d+;d#+;
+1 2: 2fg;;
+2: b--;fgd+;2;
+bar
+
+1: 4.bc+e+;8d+;4ad+;g+;
+2: c-;ebe+;2fad+;
+bar
+
+1: 4.d+;8c+;4gc+e+;g;
+1 2: 2fa&;s;
+2: c-;dfa&f+;c-;eanc+;
+bar
+
+1: a;c+;;d+;
+2: 2.fad+;4r;
+bar
+
+1: 1a~;
+2: a-;eac+;2fad+;
+bar
+
+1: 1a~;
+2: a-;eac+;2fad+;
+bar
+
+ifndef VIDEO
+rom between 1&2: 1.5 "D.S. al Fine";
+endif
+1: 2.a;8b;c+;
+2: a-;eac+;2fad+;
+bar
+
+if defined(MIDI) || defined(VIDEO)
+then
+
+SIGN2FINE
+
+1: 1ca;
+2: 1a-e;
+endbar
+
+endif

@@ -1,0 +1,184 @@
+header
+	title (18) "Song"
+	title (9) ""
+	title (12) "" "John A. Krallmann (12/5/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (9) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	vscheme=2o
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	packfact=1.5
+	staffsep=16
+	scorepad=5
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=90";
+midi 1 1: 0 "channel=11"; 0 "program=74"; 0 "onvelocity=64"; 0 "param=10,34";
+midi 1 2: 0 "channel=12"; 0 "program=74"; 0 "onvelocity=54"; 0 "param=10,54";
+midi 2 1: 0 "channel=13"; 0 "program=74"; 0 "onvelocity=54"; 0 "param=10,74";
+midi 2 2: 0 "channel=14"; 0 "program=60"; 0 "onvelocity=64"; 0 "param=10,94";
+
+
+define SONG
+S 2c+;;
+A e;f;e;f;
+T g;a;g;a;
+B 1c;
+bar
+
+S 2e+;;
+A g;c+;e;a;
+T g;a;g;a;
+B 1c;
+bar
+
+S 2c+;;
+A e;f;g;f;
+T g;a;b;a;
+B 1c;
+bar
+
+S 1c+;
+A e;f;e;d;
+T g;a;g;f;
+B 1c;
+bar
+
+S 2g;;
+A c;b-;a-;b-;
+T f;d;f;d;
+B 1g-;
+bar
+
+S e;d;2c;
+A c;b-;2g-;
+T g;f;2e;
+B 1c;
+bar
+
+S a-;c;;d;
+A 1f-;
+T 2c;4a;f;
+B 1f-;
+bar
+
+S 2e;g;
+A 2c;e;
+T 2g;c+;
+B 1c;
+bar
+
+S a-;c;;d;
+A 1f-;
+T 2c;4a;f;
+B 1f-;
+bar
+
+S 1c;
+A 1g-;
+T 1e;
+B 1c;
+dblbar
+
+score key=1&
+music
+
+S g;c;d;e;
+A e;2.s;
+T b;g;b;g;
+B 1c;
+bar
+
+S f;g;2a;
+A c;;2;
+T f;e;g;f;
+B a-;g-;2f-;
+bar
+
+S b;a;g;f;
+A 2d;;
+T f;a;;bn;
+B 2b-;d;
+bar
+
+midi all: 4 "tempo=72"; 5 "tempo=90";
+S 1g;
+A f;e;d;c;
+T 1b(&);
+B c;d;e;g;
+bar
+
+S a;c+;;f;
+A 1f;
+T 1c+;
+B 2f;e&;
+bar
+
+S c+;b;f;g;
+A 1f;
+T 1b;
+B 2d;d&;
+bar
+
+ifdef SECOND
+	midi 1 1: 1 "onvelocity=16";
+else
+	midi 1 1: 1 "onvelocity=34";
+endif
+midi all: 1 "tempo=88";
+S 1f+;
+A a;c+;f;g;
+T 2.a;4b;
+B 1c;
+bar
+
+ifdef SECOND
+   midi all: 1 "tempo=85"; 3 "tempo=78"; 4 "tempo=72"; 5 "tempo=64";
+else 
+   midi all: 4 "tempo=70";
+endif
+S 2f+;e+;
+A a;f;g;c+;
+T 2c+;b;
+B 1c;
+bar
+
+S 1f+;
+A 1a;
+T 1c+;
+B 1f;
+endbar
+@
+SONG
+
+ifdef MIDI
+midi all: 1 "tempo=90";
+midi 1 1 & 2 2: 1 "onvelocity=36";
+midi 1 2 & 2 1: 1 "onvelocity=30";
+1: r;2.s;
+bar
+score key=0&
+music
+define SECOND @
+SONG
+midi 1-2 1-2: 1 "param=10,63";
+1: 2r;2s;
+bar
+endif

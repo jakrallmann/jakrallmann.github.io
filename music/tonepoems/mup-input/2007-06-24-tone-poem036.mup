@@ -1,0 +1,162 @@
+header
+	title (18) "Tone Poem (No. 36)"
+	title (8) " "
+	title "" "John A. Krallmann (6/24/07 - 6/29/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	vscheme=2f
+	release=0
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=84, 64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+1: 4.s;8e+;d+;c+;
+2: 4.s;8r;4;
+bar
+
+1: 4.g;8e+;d+;c+;
+2: 8c-;g-;e;d;e;g;
+bar
+
+1: 8.b;16c+;8a;e;f;a;
+2: 8f-;c;a;f;d;c;
+bar
+
+1: 8.a;16b;8g;d;e;f;
+2: 8g-;d;b;a;g;d;
+bar
+
+1: 8.f;16g;4e;8.f+;16g+;
+2: 8c-;g-;e;g-;e;g-;
+bar
+
+1: 2e+;{16c+;d+;e+;g+;a+;c++;b+;}7;
+2: 8c-;g-;e;g-;e;g-;
+bar
+
+1: 8.a+;16c+;8.a+;16b+;e++;d++;c++;a+;
+2: 8f-;c;a;b;c+;d+;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8.g+;16b;g+;f+;e+;d+;
+2: 8e-;b-;g;b-;
+bar
+
+1: 8.b;16c+;8a;e;
+2: 8a--;e-;c;e-;
+bar
+
+1: 8.e;16f;8d;c;
+2: 8d-;a-;f;a-;
+bar
+
+1: 8.e;16f;d+;c+;b;a;
+2: 8g-;d;b;d+;
+bar
+
+1: 8.f#;16g;f+;e+;d+;c+;
+2: 8c;g;d+;e+;
+bar
+
+1: 8.b;16a;8a+;c+;
+2: 8f-;c;a;f+;
+bar
+
+1: 8.b;16c+;e+;d+;c+;b;
+2: 8g-;d;b;f+;
+bar
+
+1: 8.b;16c+;4a;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.b;16c+;8a;g;
+2: 8g-;d;b;d;
+bar
+
+1: 8.b;16a;4a+;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.c++;16b+;8a+;c+;
+2: 8f-;c;a;d+;
+bar
+
+1: 8.e+;16f+;8d+;g;
+2: 8g-;d;b;f+;
+bar
+
+1: 8.d+;16e+;4c+;
+2: 8c-;g-;e;g-;
+bar
+
+1: 8.d+;16e+;8a;e;
+2: 8a--;e-;b;c+;
+bar
+
+1: 8.g;16a;8f;c;
+2: 8d-;a-;f;a;
+bar
+
+1: 8.e;16f;8d;e;
+2: 8g-;d;b;d;
+bar
+
+1: 8.e;16a;4;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.c+;16b;8a;a+;
+2: 8f-;c;a;c;
+bar
+
+1: 8.g+;16e+;8b;g;
+2: 8e-;b-;g;b-;
+bar
+
+1: 8.f+;16e+;8d+;c+;
+2: 8d-;a-;f;a-;
+bar
+ 
+1: 16b;c+;d+;e+;f+;g+;a+;b+;
+2: 8g-;d;b;d;
+bar
+
+1: 8.b+;16a+;8a+;16b;c+;
+octave above 1: 2 "8va" til 2m+2.9;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.e+;16f+;8d+;c+;
+2: 8d-;a-;f;a-;
+bar
+
+1: 8.b;16e;f+;e+;c+;b;
+2: 8e-;b-;g#;b-;
+bar
+
+1: 16a+;e+;c+;b;4a;
+2: 8a-;e;4c+;
+endbar

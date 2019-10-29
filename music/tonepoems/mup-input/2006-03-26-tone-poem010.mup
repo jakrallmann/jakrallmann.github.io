@@ -1,0 +1,158 @@
+header
+	title (18) "Tone Poem (No. 10)"
+	title "" "John A. Krallmann (March 26, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2.s;8g+;f+;
+2: 2.s;4r;
+bar
+
+1: 8e+;4.g;4e+;8f+;g+;
+2: c;8e+;d+;4c+;b&;
+bar
+
+1: 8g+;a+;f+;e+;4a;8d+;e+;
+2: f-;c;a;e-;
+bar
+
+1: 8e+;f+;a;c+;4.d+;8a;
+2: d-;a-;f;c+;
+bar
+
+1: 8c+;d+;c+;d+;4e+;g+;
+1 2:2f;4g;8a;b;
+2: a;a&;b;f+;
+2 2: 1g-;
+bar
+
+1: 8d#+;e+;f+;e+;4c+;8g;g#;
+1 2: 2.g;4;
+2: c-;g-;e;g-;
+bar
+
+1: 8a;c+;d+;e+;4f+;8e+;d+;
+2: f-;c;a;a&;
+bar
+
+1: 8g;a;b;d+;;c+;d+;e+;
+2: e-;b-;b;a;
+2 2: 2s;a-;
+bar
+
+1: 8e+;d+;;c+;4d+;d#+;
+1 2: 2a;8;g;a;b;
+2: f;d;b;8g;f;
+2 2: 2d-;g-;
+bar
+
+1: 2e+~;8;;f+;g+;
+1 2:8g;g#;a;g;2gn;
+2: e;d;e;b&c+;
+2 2: 1c-;
+bar
+
+1: 8g+;f+;g+;a+;4c+a+;8bg+;af+;
+1 2: 2a;s;
+2: f-;c;a;c;
+bar
+
+1: 8bg+;af+;ge+;af+;4bg+;ge+;
+2: e-;b-;g;b-;
+bar
+
+1: 8af+;ge+;fd+;ec+;4fd+;ae+;
+2: d-;a-;a;c+f+;
+bar
+
+1: e+;2d+;4d#+;
+1 2: 2a;4a&;8b;an;
+2: 2.bf+;4g-;
+bar
+
+1: 1e+;
+1 2: 8b;c+;b;g;4e;g;
+2: c-;g-;8b;c+;b;g;
+2 2: 2s;c;
+bar
+
+1: 8g;f;g;a;2;
+1 2: 2a-;8e;d;c;a-;
+2: f-;c;f;c;
+bar
+
+1: 8a;g;a;g;4c+;d+;
+1 2: 2b-;f;
+2: g-;d;a;a&;
+bar
+
+1: 2.e+;8f+;g+;
+1 2: 8b;a;g;a;4b;b&;
+2: c-;g-;e;c+;
+bar
+
+1: 8g+;f+;g+;a+;4c+a+;8bg+;af+;
+1 2: 2a;s;
+2: f-;c;a;c;
+bar
+
+1: 8f+;e+;;d+;4e+;8b;c+;
+1 2: g;a&;2g;
+2: c-;g-;e;g;
+bar
+
+1: 8e+;d+;;c+;4d+;8e+;f+;
+1 2: 2da;cf;
+2: f-;c;a&;c;
+bar
+
+1: 4.d+;8c+;2e+;
+1 2: 2eg;8b;a;g;e;
+2: c-;g-;e;c+;
+bar
+
+1: e+;d+;f+;8e+;d+;
+1 2: 2ea;a&;
+2: f-;c;2fd+;
+bar
+
+1: 4.d+;8c+;2gc+;
+1 2: 2eg;4d;e;
+2: c-;g-;2e;
+bar
+
+1: a&f+;b&g+;c+a&+;d+b&+;
+2: f-;c;2d+;
+ital between 1&2: 1 "rit. e dim.";
+bar
+
+mussym above 1: 3 "ferm";
+1: 2d+e+c++;<<staff clef=bass>> ec+;
+boldital between 1&2: 3 "pp";
+2: 2c+g+;c-g-;
+endbar
+
+

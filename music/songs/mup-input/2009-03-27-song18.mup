@@ -1,0 +1,126 @@
+header
+	title (18) "Song Without Words (No. 18)"
+	title "" "John A. Krallmann (3/27/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,20
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=100";
+midi 1 2-3: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=85";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=85";
+
+
+1: 2s;{8a;e+;d+;}3;
+2: 2s;4r;
+bar
+
+1: 8c+;b;4;{8e;d+;c+;}3;
+2: 2.e+;
+2 2:a;2g;
+bar
+
+score time=4/4 ; beamstyle=2,2
+music
+
+1: 8b;a;2;{8e;a;c+;}3;
+2: 2e+;4d+;a;
+2 2: gn;2f;4c;
+bar
+
+score time=3/4
+music
+
+1: 8c+;b;4;{8f;g;a;}3;
+1 2: 2f;4d;
+2: 2da;4b-fa;
+bar
+
+1: 8a;g;4;{16e;f;g;a;b;}5;
+1 2: 2.d;
+2: e;2g;
+2 2: 2.e-b-;
+bar
+
+score time=4/4
+music
+
+1: 4.d+;8c+;4;8a;g;
+1 2: 2fna~;4ea;s;
+2: a--;e;<<staff clef=treble>>a+e++;r;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.g;8f;4f;8b;g;
+1 2: 2a-;4f-b-;s;
+2: d-;a-;<<staff clef=treble>> ad+f+;r;
+octave above 2: 3 "8va" til 3.5;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.e-e;8e+;4;d+;
+1 2: b-;a-;2fa;
+2: c-;a-;2d-a-f;
+roll 2: 3;
+bar
+
+1: 2.db;8d+;c+;
+2: g;f;fn;e;
+2 2: 1e-b-;
+roll 2 1 to 2 2: 1;
+bar
+
+1: 4.b-g;8a;4ca;ec+;
+2: a--;e-;c;gn;
+bar
+
+1: 4.dfc+;8b;4a-fb;8d+;c+;
+2: d-;a-;2f;
+bar
+
+1: 4.ceb;8a;4gc+;fe+;
+2: a--;e-;c;a;
+bar
+
+1: 8a+;g+;f+;e+;ad+f+;ge+;fd+;ec+;
+1 2: 2fc+;s;
+2: d-;ad+f+;b--;fad+;
+octave below 2: 0.5 "8va" til 1.5;
+bar
+
+1: 8db;ca;b-gn;ca;db;ec+;fd+;ge+;
+2: gn-;b-dgn;dgb;gbd+;
+octave below 2: 0.5 "8va" til 1.5;
+bar
+
+1: 2ac+f+;bd+f+a+;
+2: d-;ad+f+;gn-;bd+gn+;
+octave below 2: 0.5 "8va" til 1.5; 2.7 "8va" til 3.5;
+bar
+
+1: 1ad+f+a+;
+2: 1d-;
+octave below 2: 0.5 "8va" til 1.5;
+endbar

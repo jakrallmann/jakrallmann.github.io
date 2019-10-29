@@ -1,0 +1,218 @@
+header
+	title (16) "Nocturne"
+	title (14) "No. 1"
+	title "" "John A. Krallmann"
+	title " " "(Sep 15, 2013)"
+
+header2
+	title (12) "Nocturne (No. 1) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=6&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.82
+	scoresep=10,32
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=58";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=98,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+rom above all: 0 "Rubato";
+define THEME
+1: cn+ ph;{8dn;e;a;}3;8c+;4a+;8gn+;
+2: a-;eacn+;f-;cnfa;
+bar
+
+1: 16af+;ge+;8fd+ tie;4 eph;16fbd+ ph above;ecn+;8dg&b tie;4 eph;
+2: d-;fbd+;g-;dgb;
+bar
+
+1: 16cnean ph above;db;8eacn+ tie;4 eph;16dn+ ph;e+;8f+~;4 eph;
+1 2: 2s;4fa&;a;
+2: f-;cnfan;b-;fbdn+;
+bar
+
+1: 16f+ ph;e+;8b~;4 eph;16a ph;b;8cn+~;4 eph;
+1 2: gb;g;;{8;f;e;}3;
+2: e-;ebd+;a-;eacn+;
+bar
+
+1: {8cn+ ph;d+;c+;}3;4fb eph;{8c+ ph;d+;c+;}3;4gb eph;
+1 2: d;s;d;s;
+2: b-;8fbd+;a-;4g-;8gbd+;f-;
+bar
+
+//
+
+1: {8a+ ph;g+;b;}3;;d+;{d+;cn+;b;}3;{c+;d+;e+;}3;
+1 2: s;g;e;g;
+2: e-;ebd+;a-;eacn+;
+bar
+
+1: f+~;8 eph; ph;{g+;a+;g+;}3;b;b&&;
+1 2: {8an;b;cn+;}3;4a;2s;
+2: f-;fcn+e+;e-;dgb;
+bar
+
+1: {8b&&;a;;}3;;g;{f;d;;}3;;cn;
+1 2: d;e;2a-;
+2: a-g;cn;d-;a-;
+bar
+
+1: {8c;en;f;}3;{gn;a;an;}3;{b;f+;e+;}3;4b;
+1 2: 2a-;4d;{8g&;f;f&;}3;
+2: d-a-;dfc+;g-;db;
+octave below 2: 3 "8va";
+bar
+
+//
+
+1: 2e eph;{8f ph;e;d;}3;{f+;e+;d+;}3;
+1 2: {8b-;a-;b-;}3;4e-;{4c;8a-;}3;{4c+;8f;}3;
+2: c-;{8c;b-;a-;}3;4d-;{4a-;8f;}3;
+bar
+
+1: 2b eph;{8g+ ph;f+;g+;}3;4e+ eph;
+1 2: {8g;f;g;}3;4e;b;c+;
+2: e-;b-g;eb;ae+;
+boldital below 1: 3 "p";
+bar
+
+1: {8g ph;f;g;}3;4e eph;{8g+ ph;f+;g+;}3;4e+ eph;
+1 2: c;g-;b;cn+;
+2: ea;e-b-;eb;ae+;
+boldital below 1: 1" mf"; 3 "p";
+bar
+
+1: g+ ph;{8f+;e+;dn+;}3;2e+ eph;
+1 2: c(&)+;a;2g;
+2: ae+;bdn+;{eb;8b-;}3;4e-;
+boldital below 1: 1 "mp";
+@
+THEME
+(dblbar) repeatstart
+
+newscore
+
+score
+	key=3&
+	time=6/8
+	beamstyle=4.,4.
+
+music
+
+1: 4.bg+ tie;8;f+;e+;
+2: e-;f+;e+;4.b;
+bar
+
+1: e+;4d+;8bd+;c+;d+;
+1 2: 4.bn;s;
+2: g-;d;a+;4g+;8f+;
+bar
+
+1: 4f+;16a+;g+;4e+;16f;g;
+2: c-;d+;a;c-;e+;g;
+bar
+
+1: a;c+;e+;d+;8.a+;16g+;
+2: f-;c;a;g-;d;bn;
+bar
+
+1: 16f+;e+;8d+;c+;a;b;c+;
+2: c;g;e+;f-;c;a;
+bar
+
+1: bn;8.f+;16g+;8a+;8.g+;16f+;
+2: g-;d;bn;g-;d;b;
+bar ending "1."
+
+1: 16e+;d+;4c+~;4.;
+2: c;g;e+;c;g;e+;
+repeatend ending "2.";
+
+1: 16e+;d+;4c+;8.r;16g;c+;d+;
+2: c;g;e+;c;g;e+;
+octave above 1: 5.5 "8va" til 5m+3.75;
+repeatstart endending 
+
+1: 8.e+;16g;c+;d+;8e+;f+;e+;
+2: <<staff clef=treble>>c;g;e+;c;g;e+;
+bar
+
+1: e+;4d+~;8;c+;d+;
+2: f;c+;a+;d;a;f+;
+bar 
+
+1: 4.bn~;8;g;16c+;d+;
+2: g-;d;a;g;f;e;
+bar
+
+staff 2 clef=bass
+music
+
+1: 16e+;f+;8.g+;16a+;g+;f+;8e+;16f;g;
+2: c;g;d+;e+;f+;g+;
+bar
+
+1: 16b;c+;8a;g;4.a+;
+1 2: 4.s;16f+;e+;8d+;c+;
+2: a-;e;c+;f-;c;16a;e;
+bar
+
+1: 16f+;e+;d+;c+;b;a;f+;e+;d+;c+;b;a;
+1 2: a;f;d;a;f;d;
+2: b--;f-;d;b--;f-;d;
+bar
+
+1: df;4eg;8;4ce;
+2: c-;g-;b--;4a--;8e;
+bar
+
+1: df;4bn-d;8;4ce;
+2: 4g--;8d;4a--;8e;
+bar
+
+1: 4dfac+;8a;g-g;a-g;an-g;
+2: 4.f--;4g--;8g-;
+mussym above 1: 1 "ferm";
+bar
+
+1: bn-g;eg;dbn;4.ec+ tie;
+2: 4e;8g-;4c-g-;8g-;
+bar ending "1.";
+
+1: 4.ec+;8.r;16g;c+;d+;
+octave above 1: 4 "8va" til 6.75;
+2: 4.c-;8c;g;e+;
+repeatend ending "2."
+
+1: 2.ec+;
+2: 2.c-;
+dblbar endending
+
+score
+	key=6&
+	transpose=up major 3
+	time=4/4
+music
+
+newpage
+
+THEME
+endbar

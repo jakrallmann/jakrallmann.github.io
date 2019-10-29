@@ -1,0 +1,132 @@
+header
+	title (18) "Lullaby"
+	title "" "John A. Krallmann"
+	title " " "(Jan 3, 2016)"
+
+footer
+	title (12) "\(copyright) Copyright 2016 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	key=2#
+	packfact=1.4
+	staffscale=0.9
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	vscheme=3f
+	clef=bass
+music
+
+midi all: 0 "tempo=56";
+midi 1 1: 0 "onvelocity=82";
+midi 1 2: 0 "onvelocity=75";
+midi 2 1-3: 0 "onvelocity=70";
+midi 1-2 1-3: 0 "program=75";
+
+rom above all: 1 "(\(smup4n) = 56)";
+1: f ph;4.f+;8g+;f+;e+;
+1 2: 2.d;4a;
+2: 1a;
+2 2: 2d;c;
+bar
+
+1: 8f+;e+;2.d+ eph;
+1 2: 2f;4b;a;
+2: 2d+;cn+;
+2 2: 2b-;a-;
+2 3: 1f;
+bar
+
+1: 2b ph;a;
+1 2: a;g;e;d;
+2: a;b;e;f;
+2 2: 2g-d;f-;
+bar
+
+1: 2.g;8f;a;
+1 2: e;b-;c;d;
+2: 1b-g;
+2 2: 2e-;d-;
+bar
+
+1: e;f;g;a eph;
+1 2: 2g-a-;4b-;c;
+2: 1a-;
+2 2: c-;b--;2a--;
+bar
+
+1: d+ ph; b;f;g eph;
+1 2: 2df;4b-;e;
+2: 2b--f-d;e-b-g;
+bar
+
+1: d+ ph;a;f;e eph;
+1 2: e;f;2d;
+2: 2f-da;g-db;
+bar
+
+1: a ph; d+;;a;
+1 2: 2d;;
+2: 2f-da;4a;cn+;
+2 2: 2s;fn-cn;
+bar
+
+1: b;8a;g;2a eph;
+1 2: 2d;4;c;
+2: g;b;e;a;
+2 2: 2e-b-;a-;
+bar
+
+1: b ph; 8g+;f+;4.e+ eph;8g+ ph;
+1 2: d;b;2ga;
+2: b;d+;b;a;
+2 2: 2g-d;c;
+bar
+
+1: 8f+;e+;d+;c+;2b eph;
+1 2: 2a;8;g;f;d;
+2: a;d+;b;g;
+2 2: 2f-d;g-d;
+bar
+
+1: 8g ph;f;e;d;4e;f;
+1 2: d;b-;2a-~;
+2: f;g;a-;b-;
+2 2: 2e-b-;c-~;
+bar
+
+1: g;a eph;8d+ ph;c+;b;a;
+1 2: 2a-;f;
+2: 8c;b-;4a-;b--f-;d+;
+2 2: 2c-;s;
+bar
+
+1: 2f eph; 8b ph;a;g;d;
+1 2: b-;a-c;2d;
+2: 2f-c;4a;b;
+2 2: 2s;g-d;
+bar
+
+1: 2a eph;8g ph;f;e;d;
+1 2: e;df;d;b-;
+2: 2d-a-;4e;f;
+2 2: 2s;e-b-;
+bar
+
+1: b-;d;2a-d tie;
+1 2: 2g-;;
+2: 2g-d;d-a- tie;
+bar
+
+1: 1a-d eph;
+1 2: 1f-;
+2: 1d-a-;
+endbar

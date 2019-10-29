@@ -1,0 +1,190 @@
+ifdef VIDEO
+header
+	title (48) " "
+	title (48) "Tone Poem (No. 2)"
+	title (64) " "
+	title (18) "by John A. Krallmann"
+	title (14) " "
+	title (18) "composed October 9-11, 2005"
+else
+header
+	title (18) "Tone Poem (No. 2)"
+	title "" "John A. Krallmann (10/9-11/05)"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+endif
+
+score
+ifdef VIDEO
+	pagewidth=16
+	pageheight=9
+	scale=1.75
+else
+	staffscale=0.75
+endif
+	staffs=2
+	key=1#
+	time=9/8
+	beamstyle=4.,4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+ifdef VIDEO
+newpage
+endif
+
+midi all: 1 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76, 46";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=46";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=46";
+
+1: 2.s;8g+;d+;g+;
+2: 2.s;4.r;
+bar
+
+1: 4.a+~;8;g+;f+;e+;c+;e+;
+2: 8d-;a-;g;4.f;a-;
+bar
+
+1: [grace]16f+;[]e+;4.f+~;8;e+;c+;a;e;g;
+2: d-;a-;g;4.f;a-;
+bar
+
+1: 4.c+~;8;a;e;c;e;g;
+2: d-;a-;g;4.f;8d-;a-;e;
+bar
+
+1: 4.a~;8;e;c; with e- below; with a- below; c;
+2: 4.f;c+;[down]8d-;a-;d;
+bar
+
+score time=6/8 ; beamstyle=4.,4.
+music
+
+1: 4.d;8f;e;f;
+2: 4.f;8d+;c+;d+;
+bar
+
+score time=9/8
+music
+
+1: 4.d~;8;a;b;4.b;
+1 2: 8a-;g-;a-;4.b-;8e;d;e;
+2: 4.g-;d;c-;
+bar
+
+1: 4.a;8f;g;a;4.d;
+1 2: c;e;c;4.;8a-;b-;g-;
+2: 4.g-;d-;g-;
+bar
+
+1: a;b;c+;4.d+;g;
+1 2: 4.d;8a;g;a;d;c;g-;
+2: 4.f-;fn-;e-;
+bar
+
+1: 4.c+;b;8;a;g;
+1 2: g;a;g;;d;g;4.e;
+2: 4.e&-;d-;d&-;
+bar
+
+1: 4.a;8;g;f;4.g;
+1 2: e;c;e;4.e&;8g-;d;g-;
+2: 4.c-;;b--;
+bar
+
+1: 4.e =e; with e- =b below ; 8c =c;b-;a-;
+dotted line (e.e, e.s) to (b.w, b.n + 7)
+dotted line (b.e + 4, b.n + 6) to (c.w, c.s)
+1 2: [up] with c below;with b- below; with g- below;4.s;[up;ho 0] with f- below;
+2: 4.a--;[down]8d-;a-;c;4.d;
+bar
+
+1: 2.g-;8g+;f+;d+;
+2: 8g--;d-;a-;4.b-;4.r;
+bar
+
+1: b;a;g;a;b;c+;d+;a+;g+;
+2: a-;e;c+;d;a;f+;b-;g;d+;
+bar
+
+1: 4.e+;a;8b;a;e+;
+2: c;g;e+;c#;a;e+;a-;g;c#+;
+bar
+
+score time=6/8
+music
+
+1: 4.e+;8d+;b;a;
+2: d;a;c+;4.f+;
+ital between 1&2: 4 "molto rit.";
+bar
+
+1: 4.d;8g+;f+;e+;
+2:b-;a;g;e-;b-;g;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: c+;b;g;4a;16b;c+;
+2: a-;e;c+;d;c+;f+;
+bar
+
+1: 4.d+;b;
+2: b-;a;g;e;f+;g+;
+bar
+
+1: 4.b;g+;
+2: c;g;e+;4.a+;
+mussym above all: 4 "ferm";
+bar
+
+score time=9/8
+music
+
+1: 2.bg+;8g+;f+;d+;
+2: g-;d;a;2.b;
+bar
+
+score time=6/8
+music
+
+1: 4.b;a;
+1 2: 4.s;8g;f;e;
+2: c;g;e+;d;a;c;
+bar
+
+1: 4.d+;4g;16a;b;
+1 2: a;g;f;;e;d;
+2: b-;g;d+;c;g;b-;
+bar
+
+1: 4c+;8b;4c+;8a;
+1 2: 4.e;;
+2: a-;e;c+;g-;e;c+;
+bar
+
+1: e+;d+;a;4.b;
+1 2: 4.d;8f;g;d;
+2: f-;d;a;g-;d;b;
+bar
+
+1: 4.a;f;
+1 2: e;a-;c;e;d;c;
+2: 4.c;d;
+bar
+
+1: 2.g;
+1 2: 4b-;8c;4.b-;
+2: r;d;e;4.d;
+2 2: 2.g-;
+endbar

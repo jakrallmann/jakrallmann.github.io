@@ -1,0 +1,403 @@
+header
+	title (18) "Theme and Variations"
+	title "" "John A. Krallmann (9/18-19/09)"
+
+header2
+	title (12) "Theme and Variations - \%"
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.78
+	rehstyle=circled
+	scoresep=14,28
+
+staff 1
+	beamstyle=4.,4.
+	vscheme=2f
+staff 2
+	clef=bass
+	beamstyle=2.
+
+music
+
+midi all: 1 "tempo=112";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=90";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=90";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+define A 2: a-;e;c+;b;c+;a; @
+define D 2: d;a;f+;e+;f+;d+; @
+define D2 2: d;a;d+;c+;d+;a; @
+
+define THEME
+1: mr;
+A
+ifdef FIRST boldital below 2: 1 "p"; endif
+bar
+
+1: mr;
+A
+ifdef FIRST repeatstart else bar endif
+
+if defined(FIRST) || defined(SECOND) then 1: 2.e+~ ph above; endif
+ifdef THIRD 1: 4.e+~;4;16g+;f+; endif
+ifdef FOURTH 1: 4.e+;{4g+;f+;}2,4.; endif
+ifdef OTHER 1: 4.e+~;16;f+;e+;d+;c+;d+; endif
+A
+ifdef FIRST boldital below 1: 1 "f"; endif
+bar
+
+ifdef FIRST 1: 2.e+; endif
+ifdef SECOND 1: 4.e+~;4;16a+;b+; endif
+ifdef THIRD 1: 4.e+~;4;16b;c+; endif
+ifdef FOURTH 1: 4.e+;{4b;c+;}2,4.; endif
+ifdef OTHER 1: 8.e+;16a+;8e+~;16;d+;c+;d+;e+;c+; endif
+A
+bar
+
+ifdef FIRST 1: 2.f+~; endif
+ifdef SECOND 1: 4.c++;f+~; endif
+ifdef THIRD 1: {4e+;f+~;}2,4.;4;16d+;e+; endif
+ifdef FOURTH 1: 4.e+;{4f+;;}2,4.; endif
+ifdef OTHER 1: 8.f+;16g+;8f+~;16;g+;f+;e+;d+;e+; endif
+D
+bar
+
+ifdef FIRST 1: 4.f+~;4;16b;c+; endif
+ifdef SECOND 1: 4.f+~;4;16b+;c++; endif
+ifdef THIRD 1: {4e+;f+~;}2,4.;4;16b;c+; endif
+ifdef FOURTH 1: 4.f+;{4g+;f+;}2,4.; endif
+ifdef OTHER 1: 8.f+;16g+;8f+~;16;g+;f+;e+;d+;c+; endif
+D
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 4.e+~;4;16a;b; endif
+ifdef THIRD 1: {4e+;d+;}2,4.;{c+;b;}2,4.; endif
+ifdef FOURTH 1: 4.e+;{4d+;b;}2,4.; endif
+ifdef OTHER 1: 8.e+;16f+;g#+;f+;e+;d+;c+;b;a;b; endif
+2: e;b;f+;e+;d+;b;
+bar
+
+ifdef FIRST 1: 2.c+~; endif
+ifdef SECOND 1: 4.d+;c+~; endif
+ifdef THIRD 1: {4c+;b;}2,4.;4.a; endif
+ifdef FOURTH 1: 4.d+;{4c+;;}2,4.; endif
+ifdef OTHER 1: 16d+;e+;4c+~;;16;e; endif
+A
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 2.c+ eph; endif
+ifdef THIRD 1: {4c+;b;}2,4.;4.a; endif
+ifdef FOURTH 1: 4.b;{4;a;}2,4.; endif
+ifdef OTHER 1: 16d+;e+;4c+~;;16;e; endif
+A
+bar
+
+ifdef FIRST 1: 2.e ph above; endif
+ifdef SECOND 1: 4.e~ ph above;4;16c+;d+; endif
+ifdef THIRD 1: {4e;a;}2,4.;{b;c+;}2,4.; endif
+ifdef FOURTH 1: 4.e;{4g;f;}2,4.; endif
+ifdef OTHER 1: 8.e;16f#;g#;a;b;c+;d+;e+;g+;f+; endif
+ifdef FIRST boldital below 1: 1 "mp"; endif
+A
+bar
+
+ifdef FIRST 1: 2.e+; endif
+ifdef SECOND 1: 4.e+~;4;16f+;e+; endif
+ifdef THIRD 1: 4.e+~;{8;c+;4c++;}4,4.; endif
+ifdef FOURTH 1: 4.e;{4e+;;}2,4.; endif
+ifdef OTHER 1: 8.e+;16a+;8e+~;16;a+;e+;a+;c++;b+; endif
+A
+boldital below 1: 1 "f";
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 2.a+~; endif
+ifdef THIRD 1: 4.a+~;4;16f+;g+; endif
+ifdef FOURTH 1: 4.a+;{4f+;g+;}2,4.; endif
+ifdef OTHER 1: 8.a+;16f+;8a+;16d+;e+;f+;g+;c++;b+; endif
+D
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 4.a+~;4;16b;c+; endif
+ifdef THIRD 1: 4.a+~;4;16b+;a+; endif
+ifdef FOURTH 1: 4.a+;{4d+;f+;}2,4.; endif
+ifdef OTHER 1: 4a+~;16;g+;f+;e+;d+;c+;b;a; endif
+D
+bar
+
+ifdef FIRST 1: 2.g#+~; endif
+ifdef SECOND 1: 2.b+; endif
+ifdef THIRD 1: 4.g#+~;4;16f+;e+; endif
+ifdef FOURTH 1: 4.g#+;{4b+;a+;}2,4.; endif
+2: e;b;f+;e+;f+;d+;
+bar
+
+ifdef FIRST 1: 4.g+~;4;16f;e; endif
+ifdef SECOND 1: 4.g#+~;4;16f;e; endif
+ifdef THIRD 1: 4.g#+~;4;16a+;b+; endif
+ifdef FOURTH 1: 4.g#+;{4d+;b;}2,4.; endif
+2: e;b;f+;e+;d+;b;
+bar
+
+ifdef FIRST 1: 2.a~; endif
+ifdef SECOND 1: 4.b;a~; endif
+ifdef THIRD 1: 4.d++;c++; endif
+ifdef FOURTH 1:2.b~; endif
+A
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 2.a eph; endif
+ifdef THIRD 1: 4.b+;a+; endif
+ifdef FOURTH 1:2.b; endif
+A
+ifdef FIRST repeatend else bar endif
+
+ifdef FIRST 1: 2.e; endif
+ifdef SECOND 1: 4.e~;4;16g;f; endif
+ifdef THIRD
+ 1: 4.e+;8a;b;c+;
+ 1 2: 2.e;
+endif
+ifdef FOURTH 1: 4.e;{4g;f;}2,4.; endif
+A
+bar
+
+ifdef FIRST 1: 2.e; endif
+ifdef SECOND 1: 4.e~;4;16c+;b; endif
+ifdef THIRD
+ 1: 4.e+;8a;b;c+;
+ 1 2: 2.e;
+endif
+ifdef FOURTH 1: 4.e;{4c+;b;}2,4.; endif
+A
+bar
+
+ifdef FIRST 1: 2.a; endif
+ifdef SECOND 1: 4.a;{4d+;c+;}2,4.; endif
+ifdef THIRD 1: 4.ad+;8d+;c+;b; endif
+ifdef FOURTH 1: a;b;c+;d+;e+;f+; endif
+1 2: {4e;f~;}2,4.;4.;
+D2
+bar
+
+ifdef FIRST 1: 2.a; endif
+ifdef SECOND 1: 4.a;{4d+;c+;}2,4.; endif
+ifdef THIRD 1: 4.a;8d+;c+;b; endif
+ifdef FOURTH 1: a;b;c+;d+;e+;f+; endif
+1 2: {4e;f~;}2,4.;4.;
+D2
+bar
+
+ifdef FIRST 1: 2.b; endif
+ifdef SECOND 1: 4.b~;4;8c+; endif
+ifdef THIRD 1: 4.b;8d+;c+;b; endif
+ifdef FOURTH 1: b;c+;d+;b;c+;d+; endif
+1 2: {4d;e;}2,4.;{f;e;}2,4.;
+2: e-;b-;g#;b;g;e;
+bar
+
+ifdef FIRST 1: 2.b; endif
+ifdef SECOND 1: 4.b;8;c+;d+; endif
+ifdef THIRD 1: 4.b;8d+;c+;b; endif
+ifdef FOURTH 1: g#;a;b;c+;d+;b; endif
+1 2: {4d;e;}2,4.;{f;e;}2,4.;
+2: e-;b-;g#;b;g;d;
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 4.b;c+~; endif
+ifdef FIRST 1 2: 4.d;e~; endif
+ifdef SECOND 1 2: 4.d;e; endif
+ifdef THIRD
+ 1: 4.b;c+;
+ 1 2: 4.d;e;
+endif
+ifdef FOURTH
+ 1: 4.b;c+~;
+ 1 2: {4d;e;}2,4.;4.;
+endif
+2: a-;e;b;c+;a;e;
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 2.c+; endif
+ifdef FIRST 1 2: 2.e; endif
+ifdef SECOND 1 2: {4d;e;}2,4.;{f;e;}2,4.; endif
+ifdef THIRD
+ 1: 4.b;c+;
+ 1 2: 4.d;e;
+endif
+ifdef FOURTH
+ 1 : 2.c+;
+ 1 2: {4d;e;}2,4.;4.e;
+endif
+A
+bar
+
+ifdef FIRST 1: mr; endif
+ifdef SECOND 1: {4d;e;}2,4.;{f;a;}2,4.; endif
+ifdef THIRD 1: 2.ce; endif
+ifdef FOURTH
+ 1: mr;
+ 1 2: {4d;e;}2,4.;4.e;
+endif
+A 
+bar
+
+ifdef FIRST 1: 2.c+e+; endif
+ifdef SECOND 1: 4.c+e+ tie;8;f+;e+; endif
+ifdef THIRD 1: 4.c+e+;8g+;f+;e+; endif
+ifdef FOURTH 1: 4.c+e+;c+f+; endif
+1 2: {4b;a;}2,4.;{b;a;}2,4.;
+2: a-;e;c+;e;c+;e;
+bar
+
+ifdef FIRST 1: 2.c+e+; endif
+ifdef SECOND 1: 4.c+e+ tie;8;f+;e+; endif
+ifdef THIRD 1: 4.c+e+;8g+;f+;e+; endif
+ifdef FOURTH 1: 4.c+e+; c+f+; endif
+1 2: {4b;a;}2,4.;{b;a;}2,4.;
+2: g-;e;c+;e;c+;e;
+bar
+
+ifdef FIRST 1: 2.ac+; endif
+ifdef SECOND 1: 4.ac+ tie;8;d+;c+; endif
+ifdef THIRD 1: 4.c+e+;8g+;f+;e+; endif
+ifdef FOURTH 1: 4.ac+e+;ac+f+; endif
+1 2: {4g;f;}2,4.;{g;f;}2,4.;
+2: f-;c;a;c;a;c;
+bar
+
+ifdef FIRST 1: 2.g#b; endif
+ifdef SECOND 1: 4.g#b tie;8;c+;d+; endif
+ifdef THIRD 1: 4.d+;8;c+;b; endif
+ifdef FOURTH 1: 4.g#bd+;gbe+; endif
+1 2: {f;e;}2,4.;{f;d;}2,4.;
+2: e-;b-;g#;b-;g;b-;
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 4.db;ec+; endif
+ifdef THIRD
+ 1: 4.b;c+;
+ 1 2: {4d;e;}2,4.;{e;a;}2,4.;
+endif
+ifdef FOURTH 1: 4.dfg#b;eac+; endif
+2: a-;e;b;c+;a;e;
+bar
+
+if defined(FIRST) || defined(SECOND) then 1: 4.db;ec+; endif
+ifdef THIRD
+ 1: 4.b;c+;
+ 1 2: {4d;e;}2,4.;{e;a;}2,4.;
+endif
+ifdef FOURTH 1: 4.dfg#b;eac+; endif
+boldital below 1: 1 "mp";
+2: a-;e;b;c+;a;e;
+bar
+
+ifdef FIRST 1: 2.af+ tie; endif
+ifdef SECOND
+ 1: 2.f+~;
+ 1 2: 4.a~;8;c+;b;
+endif
+ifdef THIRD
+ 1: 2.f+;
+ 1 2: {4a;b;}2,4.;{d+;c+;}2,4.;
+endif
+ifdef FOURTH
+ 1: 4.f+;8f+;g+;a+;
+ 1 2: 2.a;
+endif
+boldital below 1: 1 "f";
+2: d-;a-;f;e;f;d;
+bar
+
+ifdef FIRST 1: 2.af+; endif
+ifdef SECOND
+ 1: 2.f+;
+ 1 2: 4.a~;8;b;c+; endif
+ifdef THIRD
+ 1: 2.f+;
+ 1 2: {4a;b;}2,4.;{d+;c+;}2,4.;
+endif
+ifdef FOURTH
+ 1: 2.ad+a+;
+ 1 2: {4e+;f+;}2,4.;{e+;f+;}2,4.;
+endif
+2: d-;a-;f;e;f;d;
+bar
+
+if defined(FIRST) || defined(THIRD) then 1: 2.b; endif
+ifdef SECOND 1: 4.b~;4;16d+;c+; endif
+if defined(FIRST) || defined(SECOND) then 1 2: 2.d; endif
+ifdef THIRD 1 2: {4d;a;}2,4.;8.g#;16f;e;d; endif
+ifdef FOURTH
+ 1: 4.e+;{4d+;c+;}2,4.;
+ 1 2: 4.da;f;
+endif
+2: e-;b-;f;e;f;d;
+bar
+
+if defined(FIRST) || defined(THIRD) then 1: 2.b; endif
+ifdef SECOND 1: 4.b~;4;16f;e; endif
+if defined(FIRST) || defined(SECOND) then 1 2: 2.d; endif
+ifdef THIRD 1 2: {4d;a;}2,4.;8.g#;16f;e;d; endif
+ifdef FOURTH
+ 1: 4.b;{4c+;d+;}2,4.;
+ 1 2: 2.d;
+endif
+2: e-;b-;f;e;f;d;
+bar
+
+if defined (FIRST) || defined(THIRD) then 1: 2.a~; endif
+ifdef SECOND 1: 4.b;a~; endif
+if defined(FIRST) || defined(SECOND) then 1 2: 2.c~; endif
+ifdef THIRD 1 2: c;d;e;d;e;b-; endif
+ifdef FOURTH
+ 1: 2.a+~;
+ 1 2: 2.c+~;
+endif
+2: a--;e-;c;b-;c;e-;
+bar
+
+if defined(FIRST) || defined(SECOND) || defined(THIRD) then
+ 1: 2.a;
+ 1 2: 2.c;
+endif
+ifdef FOURTH
+ 1: 2.a+;
+ 1 2: 2.c+;
+endif
+2: 2.a--;
+dblbar
+
+@
+
+define FIRST @
+THEME
+newscore
+
+undef FIRST
+define SECOND @
+THEME
+newscore
+
+undef SECOND
+define THIRD @
+THEME
+
+newpage
+
+undef THIRD
+define FOURTH @
+THEME
+
+//undef THIRD
+//define OTHER @
+//THEME

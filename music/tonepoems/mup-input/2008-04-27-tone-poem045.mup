@@ -1,0 +1,108 @@
+header
+	title (18) "Tone Poem (No. 45)"
+	title (8) " "
+	title "" "John A. Krallmann (4/27 - 5/2, 2008)"
+
+header2
+	title (12) "Tone Poem (No. 45) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=cut
+	key=6&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+staff 1
+	timeunit=8
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=108";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+1: 2.s;4b;
+2: 2.s;4r;
+bar
+
+1: 4b;8c+;b;an;b;e+;g+;
+2: e-;gbe+;
+bar 
+
+1: c+;g+;a+;g+;b+;a+;g+;e+;
+2: a-;gac+e+;
+bar
+
+1: e+;f;d+;a+;c++;b+;a+;an+;
+2: d-;dfc+;
+bar
+
+1: b+;d++;cn+;d+;2g+;
+2: g-;bd+g+;
+bar
+
+1: e+;g+;e+;g+;b+;a+;e++;g+;
+2: c;gc+e+;
+bar
+
+1: cn+;d+;e+;d+;g+;a+;b+;d++;
+2: g-;bd+g+;
+bar
+ 
+1: d++;c++;b+;g+;a;b;c+;e+;
+2: c; gc+e+;
+bar
+
+1: e+;c;a+;g+;f+;e+;d+;an;
+2: d;ad+f+;
+bar
+
+1: b;d+;b;f+;e+;d+;b;g;
+2: g-;bd+f+;
+bar
+
+1: b;e;a;g;4a;8b;c+;
+2: c-;gc+e+;
+bar
+
+1: a+;c+;f+;e+;d+;c+;b;an;
+octave above 1: 1.5 "8va" til 1m+1.9;
+2: d-;ad+f+;
+bar
+
+1: c+;b;a;g;4d+;dn+;
+1 2: 2s;8a;a&&;4g;
+2: g-;bf&+;
+bar
+
+1: e+;g;g+;a+;b+;a+;g+;dn+;
+2: c-;gc+e+;
+bar
+
+1: d(&)+;f;b;a;4g;8a;b;
+1 2: 2s;8f;4.e;
+2: b--;b;
+2 2: s;4e;d;
+bar
+
+1: 4e;8g;a;4e;;
+1 2: 8d;c;4d;8;c;b-;c;
+2: g;a-e;
+2 2: 4c;b-;2s;
+bar
+
+1: 1g-e;
+2: 1e-b-;
+endbar
+

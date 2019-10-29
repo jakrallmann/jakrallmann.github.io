@@ -1,0 +1,130 @@
+header
+	title (16) "Song Without Words (No. 40)"
+	title "" "John A. Krallmann (12/23/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 40) - page \%"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	key=3#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.2
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=82";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=62";
+midi 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+1: 4.c+ ph;8d+;e+;g+;
+2: a-;gc+e+;;
+bar
+
+1: 4.g+;8a+;c+;e+;
+2: f-;eac+;;
+bar
+
+1: 8e+;f+;4.a;8b;
+2: d-;fad+;fnad+;
+bar
+
+1: 4.d+;c+ eph;
+2: a-;eac+;;
+bar
+
+1: 8c+ ph above;f;4.;8b;
+2: d-;fae+;fad+;
+bar
+
+1: 8b;e;2;
+2: c-;ceb;eac+;
+bar
+
+1: 8a;d;4;c;
+2: b--;fab;d#fa;
+bar
+
+1: 8b;d;4. eph;16e+ ph;d+;
+2: e-;fb;gb;
+bar
+
+1: 8c+;a+;4.;8c++;
+2: f-;fac+;eac+;
+bar
+
+1: 8c++;f+;4.;16g+;a+;
+2: d-;fae+;fad+;
+bar
+
+1: 8b+;e++;4e+;dad+ tie, eph;
+2: c-;eac+;b-fna tie;
+bar
+
+1: 2.dad+;
+2: 2.b-fa;
+bar
+
+1: 2c+ ph;8a;b;
+1 2: 4.s;8e;a;b;
+2: 8e-;c~;2ca;
+bar
+
+1: 2c+;8a;b;
+1 2: 4.s;8fn;a;b;
+2: 8fn-;c~;2ca;
+bar
+
+1: 2c+ eph;8a ph;c+;
+1 2: 4.s;8f;a;c+;
+2: 8f-;c~;2ca;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8c+;d+;b;a;g;4a;8b;
+2: 8b--;f-;d;b;e-;b-;4g;
+bar
+
+1: 1c+ eph;
+2: 8f-;c;4g;2a;
+bar
+
+1: 8f+ ph;c+;4b;2;
+2: 8d-;a-;2fad+;4;
+bar
+
+1: 8d#+;e+;g;b;4.a eph;8f ph above;
+2: c-;eac+;2b-fd+;
+bar
+
+1: 2.e;8f;g;
+2: 8e-;b-;f;g;2;
+bar
+
+1: 1f eph;
+2: 8f-;c;g;a;2c+;
+bar
+
+1: 8d ph above;e;f;a;g;a;b;e+;
+2: 8b--;f-;d;f;e-;b-;g;d+;
+bar
+
+1: 1f+ eph;
+2: 8f-;c;4g;2a#;
+endbar

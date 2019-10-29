@@ -1,0 +1,578 @@
+header
+	title (16) "Waltz"
+	title (6) ""
+	title "" "John A. Krallmann (September 2010)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.87
+	scorepad=3
+	scoresep=14,24
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=2.
+music
+
+midi all: 0 "tempo=250";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: c+;b;a;
+2: a-;
+bar
+
+1: 2b;4e+;
+2: e-;
+bar
+
+1: 2.e;
+2: 2.g#;
+bar
+
+1: d+;c+;b;
+2: g#-;
+bar
+
+1: 2c+;4a+;
+octave above 1: 2.5 "8va" til 1m+2;
+2: a-;
+bar
+
+1: 2.a;
+2: e;
+bar
+
+1: e+;d+;c+;
+2: f#-;
+bar
+
+1: 2d+;4a+;
+2: d;
+bar
+
+1: 2a+;4b+;
+2: c+;
+bar
+
+1: c++;b+;a+;
+2: d-;
+bar
+
+1: 2a+;4g+;
+2: g-;
+bar
+
+1: 2g+;4d#+;
+2: f+;
+bar
+
+1: 2.e+;
+2: c-;
+bar
+
+1: e+;d#+;e+;
+2: gc+e+;
+bar
+
+1: 2e+;4f+;
+2: d-;
+bar
+
+1: 2f+;4a+;
+2: ad+f+;
+bar
+
+1: 2c++;4b+;
+2: g-;
+bar
+
+1: b+;a+;g+;
+2: gd+f+;
+bar
+
+1: 2a+;4a&+;
+2: c-;
+bar
+
+1: 2.g+;
+2: gc+e+;
+bar
+
+1: 2e+;4;
+2: f-;
+bar
+
+1: e+;d+;e+;
+2: ac+e+;
+bar
+
+1: 2a+;4d+;
+2: d-;
+bar
+
+1: 2d+;4c+;
+2: ad+f+;
+bar
+
+1: 2b;4;
+2: e-;
+bar
+
+1: b;c+;d+;
+2: g#d+f+;
+bar
+
+1: 2c#+;4d+;
+2: a-;
+bar
+
+1: 2e+;4f+;
+2: gc#+e+;
+bar
+
+1: 2.e+;
+2: d-;
+bar
+
+1: 2d+;4c+;
+2: ad+f+;
+bar
+
+1: 2b;4e;
+2: e-;
+bar
+
+1: 2e;4b;
+2: dg#b;
+bar
+
+1: 2b&;4a;
+2:c#-;
+bar
+
+1: e;f;g;
+2: c#a;
+bar
+
+1: g;a;g;
+2: d-;
+bar
+
+1: f;e;d;
+2: da;
+bar
+
+1: 2.e+~;
+2: a--;
+bar
+
+1: e+;b&;a;
+2: gc#+e+;
+bar
+
+1: 2.d+~;
+2: d-;
+bar
+
+1: 2.d+;
+2: ad+f+;
+repeatstart
+
+score key=2&
+music
+
+1: e+;d+;c+;
+2: c-;
+bar
+
+1: g;a;b;
+2: ge+;
+bar
+
+1: d+;c+;d+;
+2: f-;
+bar
+
+1: f;g;a;
+2: fac#+;
+bar
+
+1: a;g;f;
+2: b-;
+bar
+
+1: 2g;4a;
+2: fbd+;
+bar
+
+1: a;g;f;
+2: b-;
+bar
+
+1: 2.g;
+2: fbd+;
+bar
+
+1: e+;d+;c+;
+2: c-;
+bar
+
+1: 2d+;4e+;
+2: gc+e+;
+bar
+
+1:e+;d+;c+;
+2: f-;
+bar
+
+1: 2d+;4e+;
+2: ae+f+;
+bar
+
+1: f+;e+;d+;
+2: d-;
+bar
+
+1: f+;g+;a+;
+2: ad+f+;
+bar
+
+1: c++;b+;a+;
+2: g-;
+bar
+
+1: 2b+;4d+;
+2: fbd+;
+bar
+
+1: f+;e+;d+;
+2: c-;
+bar
+
+1: 2e+;4f+;
+2: gbe+;
+bar
+
+1: e+;d+;c+;
+2: c-;
+bar
+
+1: 2e+;4g;
+2: gbe+;
+bar
+
+1: f;g;f;
+1 2: 2.e;
+2: f-;
+bar
+
+1: e+;d+;c+;
+2: fa;
+bar
+
+1: b;ac+;a&d+;
+2: b-;
+ital between 1&2: 1 "rit.";
+bar
+
+1: d+;e+;f+;
+1 2: 2a&;4;
+2: b--;
+dblbar
+
+newscore
+
+score key=3&
+music
+
+1: f+;d+;e+;
+1 2: 2.g;
+2: bn--;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: 2f+;4;
+1 2: 2.g;
+2: gbnd+;
+bar
+
+1: f+;d+;en+;
+1 2: 2.g;
+2: bn--;
+bar
+
+1:2f+;4g+;
+1 2: 2.g;
+2: bnd+f+;
+bar
+
+1: e+;c+;d+;
+1 2: 2.g;
+2: c-;
+bar
+
+1: 2e+;4;
+1 2: 2.g;
+2: gc+e+;
+bar
+
+1: e+;c+;d+;
+1 2: 2.g;
+2: b--;
+bar
+
+1: 2e+;4g+;
+1 2: 2.g;
+2: gbe+;
+bar
+
+1: g+;f+;e+;
+1 2: 2.c+;
+2: a--;
+bar
+
+1: g+;f+;e+;
+1 2: 2.c+;
+2: efac+;
+bar
+
+1:c+;b;c+;
+1 2:2.da;
+2: b-;
+bar
+
+1: g+;f+;g+;
+1 2: 2.b;
+2: abd+;
+bar
+
+1: 2.ge+;
+2: e-;
+bar
+
+1: 2.fd&+;
+2: fad&+;
+bar
+
+1: 2.ec+;
+2: g&b;
+bar
+
+1: 2.eb;
+2: g(n)b;
+dblbar
+
+score key=4&
+music
+
+1: 2a;4;
+1 2: 2.c;
+2: f-;
+bar
+
+1: a;g;f;
+2: fa;
+bar
+
+1: 2c;4d;
+2: b-;
+bar
+
+1:d;b;a;
+2: fa;
+bar
+
+1: g;f;e;
+2: e-;
+bar
+
+1: b-;c;d;
+2: dg;
+bar
+
+1: 2f;4f&;
+2: a--;
+bar
+
+1: e;d+;c+;
+2: ca;
+bar
+
+1: c+;f;;
+2: d-;
+bar
+
+1: f;an;b;
+2: db;
+bar
+
+1: b;e;;
+2: c-;
+bar
+
+1: e;f;g;
+2: ca;
+bar
+
+1: a;dn;;
+2: c&-;
+bar
+
+1: dn;e;f;
+2: b-a;
+bar
+
+1: g;a;b;
+2: e-;
+bar
+
+1: b;c+;d+;
+mussym above 1: 3 "ferm";
+2: 2fad+;4gbe+;
+bar
+
+1: e+;g;f+;
+2: c-;
+bar
+
+1: e+;d+;c+;
+2: gc+e+;
+bar
+
+1: e+;f;;
+2: d-;
+bar
+
+1: f;b+;a+;
+2: ad+;
+bar
+
+1: g+;f+;e+;
+2: e-;
+bar
+
+1: d+;c+;b;
+2: gbe+;
+bar
+
+1: 2.a~;
+2: a-;
+bar
+
+1: 2a;4c+;
+2: ec+;
+bar
+
+1: c+;c++;b+;
+2: a-;
+bar
+
+1: a+;g+;f+;
+2: eac+;
+bar
+
+1: a+;d+;;
+2: b-;
+bar
+
+1: d+;b+;a+;
+2: ad+f+;
+bar
+
+1: [grace;slash 1]8a+;4g+;f+;e+;
+2: e-;
+bar
+
+1: b;c+;d+;
+2: gd+f+;
+bar
+
+1: bn;c+;f+;
+2: a-;
+bar
+
+1: 2.c+;
+2: eac+;
+bar
+
+1: e+;;;
+2: a-;
+bar
+
+1: e+;dn+;e+;
+2: eac+;
+bar
+
+1: en+;f+;b+;
+2: d-;
+bar
+
+1: 2f+;8g+;a+;
+2: fad+;
+bar
+
+1: g+;;f#+;
+2: e-;
+bar
+
+1: g+;;f+;
+2: egd+;
+bar
+
+1: bn;c+;d++;
+2: a-;
+bar
+
+1: c++;g+;a+;
+2: eac+;
+bar
+
+1: f+;en+;f+;
+octave above 1: 1 "8va" til 1m+3.5;
+2: d;
+bar
+
+1: a;e+;d+;
+2: ad+f+;
+bar
+
+1: c++;bn+;c++;
+2: a-;
+bar
+
+1: e+;g+;a+;
+2: eac+;
+bar
+
+1: e+;dn+e+;d&+e+;
+2: e-;
+bar
+
+1: e+;f+;g+;
+1 2: 2.g;
+2: egd+;
+bar
+
+1: a+;c+;e+;
+2: a-;
+bar
+
+1: 2.a+;
+2: eac+;
+repeatend

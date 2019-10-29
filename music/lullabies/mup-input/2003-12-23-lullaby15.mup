@@ -1,0 +1,182 @@
+
+header
+	title (18) "Lullaby No. 15"
+	title (10) " "
+	title "" "John A. Krallmann (December 23 and 30, 2003)"
+	title (12) " "
+
+header2
+	title (12) "Lullaby - \%"
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	key=1&
+	beamstyle=2,2
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	vscheme=2f
+	measnum=y
+	staffscale=0.85
+
+staff 1
+	vscheme=1
+	visible=n
+staff 3
+	clef=bass
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=52"; 0 "onvelocity=40";
+midi 2 1: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=78,64";
+midi 2 2: 0 "channel=13"; 0 "program=50";
+midi 3 1-2: 0 "channel=14"; 0 "program=50";
+
+midi all: 0 "tempo=46";
+2: 2s;8;f;f#;g;
+3: 2s;8;r;4;
+bar
+
+midi all: 0 "tempo=54";
+2: 2a;8g;f;e;d;
+2 2: 8r;c#;d;c;2d;
+3: 8r;e;f;e;2a;
+3 2: 2a-;d;
+bar
+
+2: 8ce;df;ce;b-d;2c;
+2 2: 2s;4g-;a-;
+3: 2b-f;f-c;
+bar
+
+midi all: 0 "tempo=68";
+rom above 2: 1 "A little faster";
+2: b-;d;4.b;8a;
+2 2: 2g-;4d;e;
+3: 2g-f;cg;
+bar
+
+2: eg;d#f#;2eg;
+3: 2.cb;4c-;
+bar
+
+midi all: 0 "tempo=72";
+2: 4.a;8b;4c+;8g;f;
+2 2: 2s;2e&;
+3: f-;c;2a;
+bar
+
+2: db;e&c+;fd+;ge&+;
+3: b-f;a-f;a&-b;g-b;
+bar
+
+2: c+;f;g;a;
+2 2: 2e&;;
+3: 2a-f;f-a;
+bar
+
+2: db;e&b;2db;
+3: b-f;b-g;2b-f;
+dblbar
+
+score key=3&
+music
+
+2: f+;d+;b;f+;
+2 2: 2a;;
+3: 2db;fd+;
+bar
+
+2: eg;fa;2gb;
+3: b;a;2g;
+3 2: 2.e;4b-;
+bar
+
+2: c;e;2f;
+2 2: 2a-;4e;d;
+3: e;f;a;f;
+3 2: 2a-;b-;
+bar
+
+midi all: 3 "tempo=50"; 5 "tempo=70";
+2: b-e;ce;2b-e;
+3: eg;ea;2eg;
+dblbar
+
+2: b;g;an;8b;c+;
+2 2: 2d;e;
+3: 2gb;cg;
+bar
+
+2: 8an;g;4f;2d;
+2 2: 2e;4c;b-;
+3: 2f;b-f;
+bar
+
+2: d;g;8a;g;4f;
+2 2: 2g-;bn-;
+3: 2bn-f;g-f;
+bar
+
+2: 2df;ce;
+3: 1cg;
+bar
+
+staff 1 visible=y
+music
+
+1: mr;
+2: f;g;a;g;
+2 2: 1c;
+3: a;g;f;e;
+3 2: 1f-;
+bar
+
+1: 2c+;b;
+2: 2cg;4df;b-;
+3: 1b-a;
+bar
+
+1: 2b;c+;
+2: e;;;8f;g;
+2 2: 2b-;c;
+3: 2g-e;a-e;
+bar
+
+1: 2b;c+;
+2: e;b-;2c;
+2 2: 2b-;4;a-;
+3: 2g-e;a-e;
+bar
+
+1: 2.f+;4g+;
+2: b-;f;;g;
+2 2: 2a-;4;b-;
+3: 2b-d;b--;
+bar
+
+midi all: 4 "tempo=56";
+1: 2f+;e+;
+2: 2a-f;g-e;
+3: 2e-b-;;
+bar
+
+midi 1: 1 "onvelocity=30";
+rom above 2: 1 "Slower";
+1: 2r;4;b+;
+2: b-;f;;g;
+2 2: 2a-;4;b-;
+3: 2b-d;b--;
+bar
+
+score release=200
+music
+
+1: 2g+;g+;
+2: 2g-e;;
+3: 2e-b-;;
+endbar

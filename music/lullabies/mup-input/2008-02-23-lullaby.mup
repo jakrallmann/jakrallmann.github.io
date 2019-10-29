@@ -1,0 +1,97 @@
+header
+	title (18) "Lullaby"
+	title "" "John A. Krallmann (2/23/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=4#
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=42";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+rom above all: 1 "Largo con rubato";
+
+1: 8g+;16a+;g+;f+;e+;d+;c+;d+;f;c;c+;f;g;a;c+;
+2: e-;gc+e+;a-;eac+;
+phrase above 1: 1 til 4.75;
+bar
+
+1: 16a+;g+;b+;a+;g+;f+;e+;c+;;c;a;g;f;g;a;b;
+2: f-;cae+;b-;dac+;
+phrase above 1: 1 til 1m+4;
+bar
+
+1: 16f;a-;c;g;a;b;c+;e+;d+;c+e+;b#f+;c+e+;4d+;
+1 2: 2.s;16a;g;d;f;
+2: e-;cefac+;g-db#;g-;
+roll 2: 3;
+octave below 2: 4 "8va";
+ital between 1& 2: 4 "rit.";
+bar
+
+1: 16e#+;g;d+;c+;b;a;g;f;g;e#;a+;g+;4e+;
+2: c-;eac+;c-;gc+e#+;
+ital between 1& 2: 1 "a tempo";
+phrase above 1: 1 til 4;
+bar
+
+1: 16e#+;d+;e+;d+;a;b;c+;d+;;c+;d+;c+;4c++;
+2: f-;ac+f+;c-;gc+e#+;
+phrase above 1: 1 til 2.75; 3 til 4;
+bar
+
+1: 16e+;d+;e+;d+;c+;d+;e+;f+;c+;d+;a;g;f;e;f;g;
+2: a-;ac+f+;g-;eac+;
+phrase above 1: 1 til 1m+1;
+bar
+
+1: f;16;e;a;g;4f;16a+;g+;f+;e+;
+2: dac+;cefa;b-a;eac+;
+2 2: 2s;8e;d;4s;
+phrase above 1: 2 til 3; 4 til 2m+4.75;
+bar
+
+1: 8.c+;16cn+;8.b;16g;8.gn;16;8.f;16d;
+1 2: 16f;g;f;cn;f;g;e;b-;;c#;d;e;b-;d;b-;f-;
+2: a-e;g-e;gn-e;f-d;
+bar
+
+1: 16d;c;d;f;g-e;a#-f;g-b-;f-a-;an-f;ce;b-d;g-e;a-f;dg;ca;db;
+1 2: g-;2.s;
+2: e-b-;f-e;2b--b-;
+bar
+
+1: 16c+e+;gd+;ec+;gb;b;a;g;a;;g;;f;;e;;f;
+1 2: s;ce;8a-c;b-d;4a-;
+2: c-;f-;b-;8c;cn;
+2 2: 2.s;4e-;
+phrase above 1: 1 til 2m+2;
+bar
+
+1: 16g;b;;g+;a;b;;f+;g;b;;g+;a;e+;;f+;
+1 2: b-;f;e;f;
+2: e-b-;ec+;eb;ec+;
+bar
+
+1: 16a+;g+;;b;4g+;<<staff clef=bass>>2b-g;
+1 2: 2b;s;
+2: 2eb;e-;
+endbar

@@ -1,0 +1,163 @@
+header
+	title (16) "Tone Poem (No. 76)"
+	title (14) " "
+	title "" "John A. Krallmann (1/1/12)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 76)  - \%" 
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	packfact=0.7
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=84";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: [grace]8g;[]a;4.b;8d+;8.c+;16b;
+2: g-;d;b;d;b;d;
+bar
+
+1: a;4g~;4.;
+2: e-;b-;g;a;g;d;
+bar
+
+1: 4.e+;8b;8.g;16b;
+2: c;g;b;g;b;g;
+bar
+
+1: b;4a~;4.;
+2: f-;c;a;b;c+;a;
+bar
+
+1: 4.f+;8e+;8.d+;16a;
+2: d-;a-;f;g;a;c+;
+bar
+
+1: c+;4b~;;8f;
+2: g-;d;a;c+;b;g;
+bar
+
+1: 2.e;
+2: c-;g-;d;e;g;e;
+bar
+
+1: 4.a~;8;8.d+;16c+;
+2: f-;c;g;f;a;d+;
+bar
+
+1: f+;4e+~;4.;
+2: c-;g-;d;e;g;e;
+bar
+
+1: [grace]8c+;[]b;4.a;[grace]8f;[]e;4.d;
+2: f-;c;a;g-;d;b;
+bar
+
+1: [grace]8e;[]f;2.e;
+2: a-;e;c+;b;c+;a;
+bar
+
+1:[grace]8e+;[]f+;2.e+;
+boldital between 1&2: 1 "p";
+2: a-;e;c+;b;c+;a;
+bar
+
+1: [grace]8e+;[]f+;e+;d+;c+;b;c+;a;
+2: a-;e;c+;e;c+;e;
+bar
+
+1: g;4f~;4.;
+2: f-;c;a;[with>]b;c+;a;
+bar
+
+1: [grace]8e+;[]f+;e+;d+;c+;b;c+;e+;
+2: a-;e;c+;a;e;a-;
+bar
+
+1: 2.f+;
+2: d-;a-;e;f;a;c+;
+bar
+
+1: 4.b;8g;8.b;16d+;
+2: g-;d;a;b;d+;f+;
+bar
+
+1: fd+;4ec+ tie;4.;
+2: a-;e;b;c+;a;e;
+bar
+
+1: 4.f~;8;g;f;
+1 2: 2.a-;
+2: d-;a-;e;d;e;d;
+bar
+
+1: 2.dg#;
+2: e-;b-;f;e;f;d;
+bar
+
+1: 2.a;
+1 2: c;d;e;d;e;c;
+2: a-;e;a;e;a;e;
+bar
+
+1: [with>]b-g;4a-f tie;4.;
+2: f-;c;g;f;a;f;
+bar
+
+1: 2.a;
+1 2: c;d;e;d;e;c;
+2: a-;e;[with>]b;e;a;e;
+bar
+
+1: 2.a-f;
+2: d-;a-;e;d;f;a-;
+bar
+
+1: 4.g~;8;8.b;16d+;
+1 2: 2.b-;
+2: g-;d;a;g;a;b;
+bar
+
+1: f+;4e+~;4.;
+1 2: 2.g;
+2: c;g;d+;e+;c+;g;
+bar
+
+1: f+;e+;d+;f+;e+;d+;
+1 2: 4.a;a&;
+2: f-;c;a;f-;d;a&;
+bar
+
+1: 2.ge+;
+2: c-;g-;e;d;e;g-;
+bar
+
+1: 2.ec+;
+2: c-;g-;e;d;e;g-;
+bar
+
+1: 2.ce;
+2: c-;g-;e;d;e;g-;
+bar
+
+1: 2.ce;
+2: 2.c-g-;
+endbar

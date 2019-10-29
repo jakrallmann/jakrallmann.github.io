@@ -1,0 +1,102 @@
+header
+	title (16) "Song Without Words (No. 22)"
+	title "" "John A. Krallmann (9/13/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=1&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=2,2
+staff 2
+	clef=bass
+	timeunit=8
+music
+
+midi all: 0 "tempo=84";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+1: 2r;8;bn;c+;a;
+2: g-;d;a;d;bn;d;c+;d;
+bar
+
+1: 4.a+;8bn;2;
+2: e-;bn-;f#;b-;g;b-;g;f;
+bar
+
+1: 4.bn;8a;4f+;e+;
+2: f-;c;a;c;bn;c;c+;c;
+bar
+
+1: 2e+;4d+;8.f+;16g+;
+2: g-;d;a;d;bn;d;a;g-;
+bar
+
+1: e+;2.a+;
+2: a-;e;c#+;e;[with>]d+;e;[with>]c+;e;
+bar
+
+1: a+;c++;e+;f+;
+2: f-;c;a;c;bn;c;c+;c;
+bar
+
+1: d+;e+;f+;g+;
+2: b-;f;d+;f;e+;f;d+;f;
+bar
+
+1: 2.c+;4a;
+2: a-;e;[with-]bn;e;[with-]c+;e;[with-]d+;[with-]e+;
+bar
+
+1: 4.d+;8c+;b;c+;d+;f+;
+2: b-;f;d+;f;e+;f;f+;b-;
+bar
+
+ifdef MIDI
+ 1: 32e+;d+;16+4e+;8f+;4g+;8.b+;16a;
+else
+ 1: 4.e+;8f+;4g+;8.b+;16a;
+ mussym above 1: 1 "invmor";
+endif
+2: a-;e;c#+;e;d+;e;e+;e;
+bar
+
+1: 2g;4f;8.e;16f;
+2: d-;a-;e;g;d;a;c;a;
+bar
+
+1: 2d+;4f+;a+;
+2: b-;f;e+;c+;d+;a+;f+;d+;
+bar
+
+1: a+;b+;c+;8a;b;
+2: c;g;d+;e+;d+;e+;d+;c+;
+bar
+
+1: c+;8g+;a+;e+;4.f+;
+2: a-;e;g;e;d;a;e+;d+;
+bar
+
+1: 4.f+;8b;4c+;8g;a;
+2: b-;f;d+;f;a-;e;c+;e;
+bar
+
+1: 4.c+;8b;4f;8g;a;
+2: g-;d;b;d;b;d;a;d;
+bar
+
+1: 4.b;8a;4g;c;
+2: c-;g-;d;e;d;e;d;c;
+bar
+
+1: 1f;
+2: f-;c;g;a;2c+;
+endbar

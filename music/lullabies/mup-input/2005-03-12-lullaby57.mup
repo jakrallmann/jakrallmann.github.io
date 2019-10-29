@@ -1,0 +1,165 @@
+header
+	title (18) "Lullaby No. 57"
+	title "" "John A. Krallmann (3/12/05)"
+
+header2
+	title (12) "Lullaby No. 57 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	size=14
+	release=120
+
+staff 1
+	vscheme=2f
+
+voice 1 1
+	release=0
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=52";
+midi 1: 0 "channel=11"; 0 "program=52"; 0 "onvelocity=80,64"; 0 "param=65,1";
+midi 1 2: 0 "channel=12"; 0 "program=49"; 0 "onvelocity=64";
+midi 2: 0 "channel=13"; 0 "program=49";
+
+1: 2g~;8;b;a;g;
+1 2: b-d;;;;
+2: g-d;;;;
+bar
+
+1: 8f;e~;2;8d;c;
+1 2: cb-;;a-c;a-;
+2: cg;;f-c;;
+bar
+
+1: 8e;d~;2;8c;d;
+1 2: a-;b-;;;
+2: b-f;;g-d;;
+bar
+
+1: 4.e;8d;f;e;d;e;
+1 2: g-;;b-;;
+2: e-b-;;c-g-;;
+bar
+
+1: 8d;4c;8b-;<<staff clef=bass>>4ec+;8d+;e+;
+1 2: g-;;8b;a;4e;
+2: e-b-;;f-c;;
+bar
+
+staff 1 clef=treble
+music
+
+1: f;;b-;8c;d;
+1 2: 8c;b-;a-;b-;a-;g-;4f-;
+2: d-b-;;e-b-;d-b-;
+bar
+
+score time=5/4 ; beamstyle=4,4,4,4,4
+music
+
+1: 8e;4d;8c;4g;8en;f;16g;a;b;c+;
+1 2: g-;;b-;2s;
+2: c-b-;;f-ce;;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8d+;c+;4;16b;a&;g;a;4g~;
+1 2: g;f;d;8df;ce;
+2: b-fa&;;b-f;cg;
+bar
+
+1: 2g;16;f;e;f;8;e;
+1 2: ce;;d;c;
+2: cg;b-g;;a&-e;
+bar
+
+1: 2e~;4.;8f;
+1 2: a-;b-;a&-;;
+2: g-e;;f-c;;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 2b-f;
+1 2: c;d;
+2: b-f;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 1g~;
+1 2: de;;ce;;
+2: cg;;;;
+bar
+
+1: 2.g;16e;f;g;b;
+1 2: de;;ce;s;
+2: b-g;;;;
+bar
+
+1: 4.c+;8f;4.;8g;
+1 2: e;;c;;
+2: a-f;;a&-f;;
+dblbar
+
+score key=1&
+music
+
+1: 2.g;8e;f;
+1 2: cd;;bn-d;b-;
+2: g-d;;;;
+bar
+
+1: 2g;4.c+;8a;
+1 2: de;ce;fg;;
+2: e-c;;a-f;;
+bar
+
+1: 4.f;8g;2f;
+1 2: d;;c;;
+2: b-a;b-g;a-g;a-f;
+bar
+
+1: 2d;<<staff clef=bass>>c+;
+1 2: b-;;fb;eb;
+2: g-f;;c-g-;;
+bar
+
+1: 2.d+;8e+;f+;
+1 2: g;;f;;
+2: d-a-;;;;
+bar
+
+1: 2.d+;8e+;g+;
+1 2: bn;;b&;;
+2: g-d;;;;
+bar
+
+staff 1 clef=treble
+music
+
+ital between 1&2: 1 "molto rit.";
+1: 1f#a;
+1 2: 2e;d;
+2: d-a-;;2;
+endbar

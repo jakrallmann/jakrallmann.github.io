@@ -1,0 +1,243 @@
+
+header
+	title (16) "Tone Poem (No. 77)"
+	title (14) " "
+	title "" "John A. Krallmann (1/15-22/12)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 77)  - \%" 
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.91
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+
+1: 8c+;g;a;e~;;f;4g;
+2: c;g;b&-;f;
+bar
+
+1: 8e;c;d;e~;;c;4d;
+2: a-;g&;a&-;f;
+bar
+
+1: 8e;c;d+;c+~;;4e;8g;
+2: g-;e;b;e;
+bar
+
+1: 8a;b;c+;e+~;;[with>]4g;8f;
+2: f-;c;a;c;
+bar
+
+1: 8g#;a;b;e+~;;d+;c+;b;
+2: e-;b-;g#;d+;
+bar
+
+1: 8a;b;c+;a+~;;e+;g+;f+;
+2: a-;e;b;d+;
+bar
+
+1: 8e+;c+;d+;e+~;2;
+2: a-;e;d+;c+;
+bar
+
+1: 8e+;a;c+;f+~;;4e+;8c+;
+2: f-;c;a;e+;
+bar
+
+1: 8b;c+;d+;f~;;4e;8b;
+2: e-;b-;g#;b-;
+bar
+
+1: 8b;c+;d+;f~;;4e;8a;
+2: d-;a-;b;d;
+bar
+
+1: 8b;c+;d+;f~;;4e;8b;
+2: e-;b-;g#;b-;
+bar
+
+1: 8b;c+;b;a~;2;
+2: a-;e;b;c+;
+bar
+
+1: 8b;c+;b;a~;2;
+2: a-;e;b;c+;
+dblbar
+
+score key=1&
+music
+
+1: 8fa;eg#;fa;egn tie;;4df;8ce;
+2: d-;a-;f;a-;
+bar
+
+1: 8df;ce;df;b-d tie;2;
+2: b--;f-;d;f-;
+bar
+
+1: 8ce;b-d;ce;b-c tie;2;
+2: c-;g-;e;g-;
+bar
+
+1: 8b-d;a-c;b-d;a-c tie;2;
+2: f-;c;f;e;
+bar
+
+1: 2..d;8f;
+1 2: 8a-;b-;a-;f-~;;g-;4b-;
+2: b--;f-;d;f-;
+bar
+
+1: 2..e;8g;
+1 2: 8g-;a-;b-;g-~;;a-;4b-;
+2: c-;g-;e;g-;
+bar
+
+1: 8f;g;a;f~;;g;a;c+;
+1 2: 1a-;
+2: d-;a-;f;a-;
+bar
+
+1: 1d+;
+1 2: 8f;g;a;f~;;4d;8f;
+2: b--;f-;d;f-;
+bar
+
+1: 4.d+;8c+~;2;
+1 2: 8e;f;4g~;8;4.e;
+2:c-;g-;e;g-;
+bar
+
+1: 4.d+;8c+~;4.;8e+;
+1 2: 8e;f;4g~;8;4.e;
+2: c-;g-;e;g-;
+bar
+
+1: 2..d+;8f+;
+1 2: 8f;g;a;f~;;4.d;
+2: d-;a-;f;a-;
+dblbar
+
+score key=1#
+music
+
+1: 4.a+;8g+~;4.;8b+;
+1 2: 8b;c+;d+;b~;;4.g;
+2: g-;d;b;d;
+bar
+
+1: 1a+;
+1 2: 8c+;d+;e+;c+~;;b;a;g;
+2: a-;e;[with>]b;e;
+bar
+
+1: 4.e+;8d+~;4;c+;
+1 2: 8fn;g;a;g~;;f;e;d;
+2: d-;a-;[with>]e;a-;
+bar
+
+1: 4.a;8b&~;;4a;8g;
+1 2: 8c#;d;e;c~;;4;8a-;
+2: e-;a-;g;e;
+bar
+
+1: 8f;g;a;f~;;a;g;f;
+1 2: 1b-;
+2: d#-;f;b-;a;
+bar
+
+1: 8f;g;f;e~;;d;g;f;
+1 2: 4.a-;8g-~;4;f-;
+2: e-;b-;c;d;
+bar
+
+1: 8f#;g;f;e~;2;
+1 2: 4.ce;8b-~;2;
+2: e-;b-;f;e;
+bar
+
+1: 8f;g;f;e~;2;
+1 2: 4.a-e;8g-~;2;
+2: c-;g-;d;c;
+bar
+
+//
+1: 8f;g;f;e~;2;
+1 2: 4.ce;8a-~;2;
+2: a--;e-;f;c;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1d#+;
+1 2: 8f;g;a;f~;;4.;
+2: b--;f-;a-;b-;
+bar
+
+1: 1c+;
+1 2: 8f;g#;a;f~;;4.;
+2: g#--;d#-;c;g#-;
+bar
+
+1: 8d#+;c#+;d+;e#+;2;
+1 2: 4.f;8g#~;2;
+2: c#-;g#-;e#;g-;
+dblbar
+
+score key=7#
+staff 1 clef=treble
+music
+
+1: 8a;g;a;g~;;4.f;
+1 2: 4.c;8b-~;;4.a-;
+2: f--;c-;c;d;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1e+;
+1 2: 8g;a;c+;g~;2;
+2: c-;g-;e;g-;
+bar
+
+1: 1c+;
+1 2: 8f;g;an;df tie;;4.fd+;
+2: f--;c-;an-;c-;
+bar
+
+1: 1e+;
+1 2: 8g;a;c+;g~;2;
+2: c-;g-;e;g-;
+bar
+
+1: 1e+;
+1 2: 8g;a;c+;g~;2;
+2: c-;g-;e;g-;
+bar
+
+1: 1gac+e+;
+2: 1c-;
+endbar

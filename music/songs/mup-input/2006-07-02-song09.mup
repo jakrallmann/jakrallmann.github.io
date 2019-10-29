@@ -1,0 +1,109 @@
+header
+	title (18) "Song Without Words (No. 9)"
+	title "" "John A. Krallmann (July 2, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	staffsep=16
+	scorepad=5
+	measnum=y
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=62";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2r;8;e;f;g;
+2: 8d;a;g;a;f;a;e;a;
+bar
+
+1: 4.a;8e+;4d+;8d;e;
+2: 8d;a;g;a;f;a;e;a;
+bar
+
+1: 8b;a;b;f+;e+;e;f;e;
+2: 8c#;a;g;a;c;a;g;a;
+bar
+
+1: 4.e;8d;4.d+;8;
+2: 8d;a;f;a;c;a;f;a;
+bar
+
+1: 8d+;f+;g+;d+;4.;8b;
+2: 8b-;a;f;a;b-;g;d;e;
+bar
+
+1: 8bn;c+;f+;a+;;g+;;a+;
+1 2: 2s;4d+;b&;
+2: 8a-;f;c+;e+;b-;f;4c#+;
+bar
+
+1: 4.f+;8c+;b;c+;d+;f+;
+1 2: 8c+;e;4f;2s;
+2: 8a-;f;4c+;8g-;d;b;d+;
+bar
+
+1: 4.g+;8e+;g+;f+;e+;dn+;
+1 2: 8d+;d&+;c+;b;4a;d;
+2: 8c;g;4e+;8d;a;4f+;
+bar
+
+1: 8c+;b;f;g;b;a;4;
+1 2: d;g-;c;8e;f;
+2: 8b-;f;4d&+;8f-;c;g;a;
+bar
+
+1: 8g;f;;g;2a;
+1 2: d;d&;8g;f;e;c;
+2: 8b-;f;g;b;f-;c;4a;
+bar
+
+1: 4.d+;8f+;g+;f+;e+;c+;
+1 2:8c+;b;f;g;4.a;8e;
+2: 8b-;f;d+;d&+;f-;c;a;c+;
+bar
+
+1: 8c+;b;f;g;c+a+;bg+;af+;efc+;
+1 2: 2d;s;
+2: 8b-;f;g;b;f-;c;a;c+;
+bar
+
+1: 8ec+;db;b-d&f;b-dg;8b;a;4cfa;
+1 2: f;s;cf;s;
+2: 8b-;f;4g;8f-;c;g;f;
+bar
+
+1: 8g;f;dg;[pad 5]a =_a1 f+;[pad 5]2 a =_a2 f+;
+print (_a1.w - 5, _a1.y) "\(acc_gt)";
+print (_a2.w - 5, _a2.y) "\(acc_gt)";
+1 2: b-d&;b-;2s;
+2: 8b-;f;4g;8f-;c;g;a;
+bar
+
+1: 8g;f;g;f;2ca;
+1 2: 2b-d;s;
+2: 8b-;g;f;g;2f-f;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2fa;;
+2: 2f-c;;
+endbar

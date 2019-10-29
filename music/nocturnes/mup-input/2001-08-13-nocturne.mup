@@ -1,0 +1,336 @@
+header
+	title (18) "Nocturne"
+	title (12) "" "John A. Krallmann (8/13/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=1&
+	vscheme=2o
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	release=0
+	staffscale=0.85
+	measnum=y
+
+voice 1 1 timeunit=1
+voice 2 2 timeunit=1
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=130";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=100"; 0 "param=10,74";
+midi 1 2: 0 "channel=12"; 0 "program=89"; 0 "onvelocity=86"; 0 "parameter=10,30";
+midi 2 1: 0 "channel=13"; 0 "program=60"; 0 "onvelocity=54"; 0 "parameter=10,96";
+midi 2 2: 0 "channel=14"; 0 "program=43"; 0 "onvelocity=68"; 0 "param=10,52";
+
+S c+;
+A r;b;a;g;
+T r;e;f;g;
+B c;
+bar
+
+S a;
+A r;c;d;f;
+T r;a;g;f;
+B f-;
+bar
+
+S f;
+A r;d;c;b-;
+T r;b-;c;d;
+B b--;
+bar
+
+S f;
+A r;a-;b-;c;
+T r;c;d;e;
+B f-;
+bar
+
+S g;
+A r;b-;c;e;
+T r;d;c;b-;
+B c-;
+bar
+
+S c+;
+A r;f;g;a;
+T r;c;d;c;
+B f-;
+bar
+
+S f+;
+A r;e+;d+;a;
+T r;a-;d;f;
+B d-;
+bar
+
+S c+;
+A r;b;a;f;
+T r;d;g;b;
+B g-;
+bar
+
+S g;
+A r;c;d;e;
+T r;e;d;c;
+B c-;
+bar
+
+S b;
+A r;a;g;f;
+T r;d;a;b;
+B g-;
+bar
+
+S g;
+A r;c;d;c;
+T r;g-;d;e;
+B c-;
+bar
+
+S e;
+A r;g-;c;b-;
+T r;b-;a-;g-;
+B c-;
+bar
+
+S f~;
+A r;a-;b-;c;
+T r;c;d;e;
+B f-~;
+bar
+
+S f;
+A 1a-;
+T 1f;
+B f-;
+bar
+
+S a;
+A r;f;e;d;
+T r;c;d;f;
+B f-;
+bar
+
+S a;
+A r;g;f;e;
+T r;e;d;c;
+B f-;
+bar
+
+S bn;
+A r;a;g;f;
+T r;d;g;bn;
+B g-;
+bar
+
+S c+;
+A r;g;a;b;
+T r;e;f;g;
+B c;
+bar
+
+S a;
+A r;c;f;g;
+T r;c;d;c;
+B f-;
+bar
+
+S d;
+A r;a-;b-;c;
+T r;f;g;a;
+B b-;
+bar
+
+S b;
+A r;a;g;f;
+T r;d;b;d+;
+B g-;
+bar
+
+S c+;
+A r;e;f;g;
+T r;g;a;b;
+B c-;
+bar
+
+S c+;
+A r;f;g;a;
+T r;a;g;f;
+B a--;
+bar
+
+S d+;
+A r;c+;b;f;
+T r;f-;d;f;
+B b--;
+bar
+
+S g+;
+A r;b;c+;d+;
+T r;g-;e;b;
+B c-;
+bar
+
+S e+;
+A r;b;c+;e;
+T r;e;g;c+;
+B c-;
+bar
+
+S c+;
+A r;f;g;a;
+T r;a;g;f;
+B f-;
+bar 
+
+S f+;
+A r;a;b;d+;
+T r;f-;g-;b-;
+B b--;
+bar
+
+S e+;
+A r;d+;c+;g;
+T r;b-;c;e;
+B c-;
+bar
+
+S f+~;
+A r;a-;b-;c;
+T r;c;d;e;
+B f-~;
+bar
+
+S f+;
+A 1a-;
+T 1f;
+B f-;
+bar	//
+
+S a;
+A r;c#;d;e;
+T r;e;f;g;
+B a--;
+bar
+
+S a;
+A r;f;e;d;
+T r;a;g;f;
+B d-;
+bar
+
+S b;
+A r;d;f;g;
+T r;b;a;g;
+B g-;
+bar
+
+S a;
+A r;d;f;g;
+T r;a-;d;e;
+B d-;
+bar
+
+S a;
+A r;c#;d;e;
+T r;e;f;g;
+B a-;
+bar
+
+S d+;
+A r;f;g;f;
+T r;a-;b-;a-;
+B d-;
+bar
+
+S d+;
+A r;g;a;b;
+T r;b-;a-;g-;
+B d-;
+bar
+
+S a;
+A r;c;f;g;
+T r;c;d;e;
+B f-;
+bar
+
+S c+;
+A r;b;a;f;
+T r;c;f;a;
+B f-;
+bar
+
+S d+;
+A r;c+;b;f;
+T r;f;c+;d+;
+B b-;
+bar
+
+S c+;
+A r;e;f;g;
+T r;g;a;b;
+B c;
+bar
+
+S g;
+A r;c;d;e;
+T r;e;f;g;
+B c;
+bar ifdef MIDI ending "1." endif
+
+S c;
+A r;e-;f-;g-;
+T r;b-;a-;g-;
+B c-;
+bar
+
+S f~;
+A r;a-;b-;c;
+T r;c;d;e;
+B f-~;
+bar
+
+S f;
+A 1a-;
+T 1f;
+B f-;
+repeatend ifdef MIDI ending "2."
+
+midi all: 1 "tempo=127"; 2 "tempo=124"; 3 "tempo=121"; 4 "tempo=118";
+S c;
+A r;e-;f-;g-;
+T r;b-;a-;g-;
+B c-;
+bar
+
+midi all: 1 "tempo=112"; 2 "tempo=102"; 3 "tempo=92"; 4 "tempo=82";
+S f~;
+A r;a-;b-;c;
+T r;c;d;e;
+B f-~;
+bar
+
+midi all: 1 "tempo=60";
+midi 1-2 1-2: 5 "parameter=10,63";
+S f;
+A 1a-;
+T 1f;
+B f-;
+endbar
+endif

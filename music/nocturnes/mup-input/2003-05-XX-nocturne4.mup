@@ -1,0 +1,276 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann (May 2003)"
+
+header2
+	title (12) "Nocturne - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1#
+	time=4/4
+	beamstyle=4,4,4,4
+	staffs=3
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	staffscale=0.75
+	scoresep=10,28
+	vscheme=2f
+	release=0
+	measnum=y
+
+staff 1
+	vscheme=1
+staff 3
+	clef=bass
+
+
+music
+
+define P pedal below  2,3: @
+
+midi all: 0 "tempo=68";
+midi 1: 0 "channel=15"; 0 "program=71"; 0 "onvelocity=32"; 0 "param=10,80";
+midi 2: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=88,72"; 0 "param=10,56";
+midi 2 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=72"; 0 "param=10,48";
+midi 3 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=72"; 0 "param=10,36";
+
+1: 2.d+;8b;a; 
+2: 2.d+;4c+;
+2 2: 8a;b;a;e;4d;e;
+3: d;e;f;g;
+3 2: 1g-b;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 2d+;4e+;8d+;c+;
+2: 2d+;c+;
+2 2: 8a;b;a;e;4;8e&;d;
+3: a;b;2c+;
+3 2: 2.f-d;4d-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 2b;8a;4.g;
+2: 8d;e;f;g;a;b;a;g;
+2 2: 1b-;
+3: r;f;e;e&;
+3 2: 1g-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 2d;4e;8a;g;
+2: 2d;4e;8a;g;
+2 2: 8a-;b-;2.c;
+3: d;e;f;e&;
+3 2: 1g-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 2d+;4e+;f+;
+2: 2d;8a;g#;a;a#;
+2 2: 8a-;b-;4c;2;
+3: d;en;2d;
+3 2: 2g-;4f-;d-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 2g+;4e+;8a;b;
+2: 8b;c+;d+;e+;;d+;c+;b;
+2 2: 2d;4fn;8e;d;
+3: d;b;2;
+3 2: 2g-;g#-d;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: c+;b;a;fn;
+2: 8b;c+;b;g;;fn;c;d;
+2 2: 2e;4a-;a&-;
+3: 2ec+;4c;d;
+3 2: a-;g(n)-;2fn-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+midi all: 0 "tempo=66";
+1: 8d;e;fn;g;2a;
+2: 8d;g;;a;e;a;4;
+2 2:2b-;4d;c#;
+3: fn;8e;d;4e;8b;a;
+3 2: 2g-;a-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+midi all: 0 "tempo=64";
+1: d+;8e+;d+;4a;g;
+2: 8fn+;e+;d+;a;;b&;4g;
+3: 4e+;fn+;2db&;
+3 2: 2da;4.g-;8fn-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: a;2c+;4b&;
+2: 8a;b&;4g;8a;b;c+;g;
+2 2: g-;8fn;e&;2g;
+3: 2s;4e&+;g;
+3 2: 2e&-b&-;c;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+midi all: 1 "tempo=52"; 2 "temp=20"; 2.5 "tempo=40";
+1: 8e&+;16f+;e+;4d+;
+2: 8g;16a;g;8f(#);d+;
+2 2: e&;d;
+3: 8b&;c+;4a;
+3 2: 2d;
+ital between 1&2: 1 "rit";
+ifdef MIDI P 1;1.5;2; endif
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi all: 0 "tempo=56";
+bold between 1&2: 1 "Slower";
+1: 4.b;8a;4.g;8f;
+2: 8b;g+;;b;g;e+;;g;
+2 2: 2a;4f;e;
+3: 2d+;b;
+3 2: g;f;e;d;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 4.e;8e&;2d;
+2: 8e;f;8.g;16a;2d;
+3: 8d+;c+;b;a;;g;f;g;
+3 2: 2c;b-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 8g;e;f;g;2a;
+2: 8d;e;8.f;16g;8e;d;a-;d+;
+3: g;g&;2;
+3 2: 2b&-;a-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: 8b;g;a;b;2c#+;
+2: 8f+;e+;8.d+;16b;8;e+;;e#+;
+2 2: b;e;dea;a;
+3: 2b;4e;c#+;
+3 2: 2g-d;a-;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+1: d+;8e+;f+;a+;b+;4g+;
+2: af+;8c+a+;c+;ec+;16b+;a+;4db;
+3: 8e;d;f;16e+;f+;8e;f;a;g;
+3 2: 2d-;4g-;;
+ifdef MIDI P 1;2;3;4; endif
+bar
+
+ital between 1&2: 3 "rit.";
+midi all: 1 "tempo=52"; 3 "tempo=44"; 3.5 "tempo=38"; 4 "tempo=30"; 5 "tempo=54";
+1: 8c+;d+;4e+;8f+;g+;4a+;
+2: 8ee+;dd+;cc+;b-b;a+;g+;4f+;
+2 2: 2s;c+;
+3: 8e;f;g;g#;e+;e&+;4d+;
+3 2: 2c-g-;4.da;8d-;
+ifdef MIDI P 1;2;3;4; endif
+repeatstart
+
+1: 4.b+;8g+;2e+;
+2: 2d+b+;8db;4.ec+;
+2 2: 8r;d;g;f;2s;
+3: 8r;a;4b;8c-;g-;f;g;
+3 2: 2g-;s;
+ifdef MIDI P 1;2;3*;3.5; endif
+bar
+
+1: 4.d+;8a;f;4.g; 
+2: 4.d+;8a;8c#a#;4.db;
+2 2: 8f;e;d;c;2s;
+3: 8d-;a-;f;a;g-;d;a;g;
+ifdef MIDI P 1;3*;3.5; endif
+bar
+
+1: 8c+;d+;e+;a;2b;
+2: 2e+;d+;
+2 2:8b;c+;f;g;a;b;c#;d;
+3: 8c-;g-;e;e+;g-;d;4b;
+ifdef MIDI P 1;3; endif
+bar
+
+1: 8b;4a;8g;f;e;d;c;
+2: 8b;4a;8e;c+;d+;e+;f+;
+2 2: 2c(n);8g;f;e;c;
+3: 8a-;e;4g;8d-;a-;f;d;
+ifdef MIDI P 1;3; endif
+bar
+
+1: b-;g;c+;8b;a;
+2: 8c+a+;4.d+b+;8fn+d++;e+c++;d+b+;c+a+;
+3: 8g-;d;a;b;c-;g-;e;a;
+ifdef MIDI P 1;3; endif
+bar
+
+1: g;d;2e;
+2: 2bg+;8fd+;4.ec+;
+3: 8d-;b-;f;g;c-;g-;f;e;
+ifdef MIDI P 1;3*;3.5; endif
+boldital between 2&3: 3 "pp";
+midi 2: 3 "onvelocity=70,56"; 5 "onvelocity=84,72";
+midi 3: 3 "onvelocity=56"; 5 "onvelocity=72";
+bar ending "1."
+
+1: 8d;4e;8d;a;4.g;
+2: 8db;ca;ec+;db;f;4.g;
+2 2: 2s;8a-;b-;c;d;
+3: 8d-;a-;e;f;r;d;a;b;
+3 2: 2s;g-;
+boldital between 2&3: 1 "mp";
+ifdef MIDI P 1;2;3*;3.5; endif
+repeatend ending "2."
+
+ital between 1&2: 1 "rit.";
+midi 1: 1 "onvelocity=28";
+midi all: 1 "tempo=48"; 3 "tempo=41"; 4 "tempo=30"; 5 "tempo=50";
+1: 8d;4e;8f;2g;
+2: 8db;ca;ec+;db;2bg+;
+3: 8d-;a-;e;f;g-;d;4b;
+ifdef MIDI P 1;2;3; endif
+bar
+
+midi all: 3 "tempo=48";
+midi 1: 1 "onvelocity=16";
+midi 2,3: 1 "onvelocity=56";
+1: 2g;a;
+2: 2eg;4c+;g+;
+3: c~;cg tie;2cgc+;
+boldital between 2&3: 1 "dim.";
+ifdef MIDI P 1; endif
+bar
+
+midi all: 1 "tempo=46"; 3 "tempo=41"; 4 "tempo=34"; 5 "tempo=68";
+1: 1b~;
+2: mr;
+3: g-~;g-d tie;g-db tie;g-dbd+ tie;
+ifdef MIDI P 1; endif
+bar
+
+score release=400
+music
+
+1: 1b;
+2: 1d+b+;
+3: 1g-dbd+g+;
+ifdef MIDI P 5*; endif
+endbar
+

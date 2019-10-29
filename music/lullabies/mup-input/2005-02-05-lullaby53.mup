@@ -1,0 +1,179 @@
+header
+	title (18) "Lullaby No. 53"
+	title "" "John A. Krallmann (2/5/05)"
+
+header2
+	title (12) "Lullaby No. 53 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2#
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.7
+	size=14
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=84,74";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "onvelocity=74";
+midi 2 2: 0 "channel=14"; 0 "program=50"; 0 "onvelocity=80";
+
+1: 2.a;{8b-;d;e;}3;
+2: d-;fb;2fa;
+bar
+
+1: 2.f;16d;e;f;a;
+2: d-;fb;2fa;
+bar
+
+1: 2.b;{8d+;f;g;}3;
+2: s;e+;;s;
+2 2: g-;{8b;a;g;}3;4b;e-;
+bar
+
+1: 2.a;{8g;f;e;}3;
+1 2: e;{8d;c#;d~;}3;2b-d;
+2: f-;fab;g-;eb;
+bar
+
+1: 2.df;{8c;d;f;}3;
+2: a-;fb;2fa;
+bar
+
+1: 2.f;{8a;g#;a;}3;
+2: a-;gc+;2;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 2d+~;
+2: d-;{8b&e+;d+;e+;}3;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: d+;;;
+2: 2.ad+f+;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.d+;{8a+;g+;fn+;}3;
+1 2: s;{8a;g;a;}3;2gb&;
+2: b&-;b&d+;;bd&+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2d+;{8;e+;fn+;}3;
+1 2: {8fn;g;a;}3;{f;g;a;}3;4f;
+< between 1&2: 3 til 1m+3.8;
+2: a-;ad+;;
+bar
+
+1: d+g+;;;
+1 2: {8fn bm with staff below; 4s ebm;}3;2s;
+2: {8s bm with staff above;e+;d+ ebm;}3;{fn+ bm;e+;d+ ebm;}3;{f+ bm;e+;d+ ebm;}3;
+2 2: b&-;2s;
+bar
+
+1: {8b&+;cn++;b+;}3;4a+;{8g+;fn+;g+;}3;
+1 2: d+;{8c(#)+;b;c+;}3;4d+;
+> between 1&2: 2 til 1m+1;
+2: a-;ae+;b&fn+;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: c+;{8b&;a;b;}3;
+1 2: s;g;
+ital between 1&2: 2 "subito\n\f(BX)pp";
+2: ae+;gd+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: c+e+;{8b&;a;g;}3;{e;d;e;}3;
+1 2: s;2d;
+2: ae+;2eb&;
+ital between 1&2: 2.5 "rit.";
+boldital between 1&2: 2 "mf";
+> between 1&2: 2.5 til 1m+1;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.ce;4a-;
+2: 2.a-e;4r;
+ital above all: 4 "dulce";
+repeatstart
+
+score time=12/8 ; beamstyle=4.,4.,4.,4.
+music
+
+1: f-;a-;d;e;f#;a;4.f;4a;8g;
+2: 2.s;4.b;c+;
+2 2: 4.d-;a-;2.g;
+bar
+
+1: f;d;a-;g#-;a-;d;4d;8g;e;f;g;
+1 2: 2.s;4.gn-;8c;b-;a-;
+2: 4.d-;df;2.e;
+2 2: 2.s;4.b&-;a-;
+bar
+
+1: 4a;8;8b;d+;b;4.a;8e;f;g;
+1 2: e;d;c;4.f;8e;d;c;4.b-;
+2: 4f-;8d;4g-;8e;4f-;8d;4g-e;8c+;
+bar
+
+1: 4a;8;;g;f;4.g-b-f;4ce;8a;
+1 2: d;a-;d;4b-d;8g-;4.s;8b-;a-;g-;
+2: 4.fa;e-b-;gd;a-e;
+bar
+
+1: d+;c+;d+;4db;8b;a;e+;g;4.df~;
+1 2: 4.ea;8a;g;f;4.c;8c;b-;c~;
+2: 4f-d;8a;4g-d;8g;4a-g;8e;4.b-f~;
+bar
+
+1: f;g;a;4.b-d;8d;e;d;e;f;e;
+1 2: 4.a-c;8a-;g-;f-;4.g-;b-;
+2: 4.a-f;g-d;4e-b-;8e;4.a-g;
+bar
+
+1: a;b;c+;d+;e+;f+;;e+;d+;c+;b;e+;
+1 2: 4.cg;f;g;;
+2: b;a;g;c+;b;a;4.b;8b;e+;c+;
+2 2: 4.s;b-;g-;a-;
+bar
+
+1: 4.a;4g;8a;4f;8a-;4.f-d;
+1 2: e;d;a-;d;4b-;4.c;s;
+2: 4.f-;e-;a-g;d-a-;
+bar
+
+1: 2.f-d;s;
+2: 2.d-a-;s;
+repeatend

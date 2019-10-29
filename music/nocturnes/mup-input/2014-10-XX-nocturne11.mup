@@ -1,0 +1,235 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 11"
+	title "" "John A. Krallmann"
+	title " " "(October 2014)"
+
+header2
+	title (12) "Nocturne (No. 11) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scale=0.8
+music
+
+midi all: 0 "tempo=52";
+
+1: 2s;r;
+2: 2s;8r;g-;8.e;16d;
+bar
+
+1: 8f+ ph above;g+;4~;8;c++;b+;a+;
+2: 4.g;8c+;4.g;8b;
+2 2: 2c;b-;
+bar
+
+1: 8g+;a+;4~;8;g+;f+;c+;
+2: 4.c+;8d+;4ac+;e;
+2 2: 2f;s;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8e+;d+;;c+;;c&+ eph;
+2: f;a;d;
+2 2: 2.b-;
+bar
+
+1: 8b ph above;a+;4.g+;16a+;g+;
+2:2.g;
+2 2: e;d;d&;
+bar
+
+1: 8f+;e+;4f+;8g+;a+;
+2: ca;a;8g;f;
+2 2: s;2c&;
+bar
+
+1: 8g+;e+;4.c++;8d++;
+1 2: s;2e+;
+2: b-eb;g;g&;
+2 2: s;2an-;
+bar
+
+score time=4/4
+music
+
+1: 8c++;b+;a+;g+;f+;e+;c&+;d+ eph;
+1 2: e+;d+;c+;s;
+2: b-g;bn-g;cg;da;
+bar
+
+1: 8b ph above;g+;;f+;e+;f+;d+;e+;
+1 2: 2s;4c+;b;
+2: 2g;4cg;b-g;
+2 2: 4.e;8d;2s;
+bar
+
+1: 8c+;b+;8.a+;16e+;8f+;4.g+ eph;
+1 2: 2a;b;
+2: 2e;4eg;<<staff clef=bass>>8e;d;
+2 2: 8a-;b-;c;d;2s;
+bar
+
+//
+1: 8g+ ph above;e+;;16f+;g+;8f+;d+;;16e+;f+;
+1 2: 2c+;b;
+2: 8a-e;c+;d+;e+;g-;c+;d+;f+;
+bar
+
+1: 8e+;c+;8.;16d+;2 eph;
+1 2: g;f;8an;bn;g;f;
+2: 8a-;e;c+;e;g-;d;an;bn;
+bar
+
+1: 8d+ ph above;g;8.;16d+;c+;d+;c+;a;8.f eph;16a ph above;
+2: 8e-;b-;f;g;a-;e;c+;bn;
+bar
+
+1: 8b;g;8.g+;16f+;;g+;f+;e+;4c+ eph;
+2: 8g-;d;bn;d+;c;g;e+;b-;
+bar
+
+1: 8e+ ph above;d+;8.c+;16e+;8d+;b;4g eph;
+2: 8a-;e;c+;e+;g-;d;an;b;
+bar
+
+1: 8.a ph above;16c;8.c+;16f;2bn eph;
+2: 8f-;c;g;a;g-;d;16e+;d+;c+;bn;
+bar
+
+1: 16en+ ph above;f+;8g+~;4 eph;16b+ ph above;a+;g+;f+;8.c+;16e&+;
+2: 8c-;g-;16en+;f+;8g+;f-;c;16an;d+;8e&+;
+bar
+
+1: 16d+;g;a;bn;d+;e+;a+;g+;c++;g+;e+;d+;4c+~;
+2: 8g-;d;bn;d;c;g-;4c-~;
+octave below 2: 3 "8va" til 1m+3;
+bar
+
+score beamstyle=4,4,4,4
+music
+
+midi all: 3 "tempo=42";
+1: 2c+ eph;r;
+2: 2c-;<<staff clef=treble>>8r;g-;e;d;
+ital between 1&2: 3 "meno mosso";
+bar
+
+1: 16f+;g+;;a+;4g+;16;c++;b+;c++;4g+;
+2: g~;16;c+;b;a;4g~;16;c+;b;a;
+2 2: 2c;b-;
+bar
+
+//
+
+1: 16g+;a+;;b+;4a+~;16;b+;a+;g+;f+;e+;c+;a;
+2: c+~;16;d+;e+;f+;2eac+;
+2 2: 2f;s;
+bar
+
+1: 16e+;d+;;c+;;c&+;;b~;2;
+2: 8f;g;a;d~;2;
+2 2: 2b-;s;
+ital between 1&2: 1 "rit";
+bar
+
+midi all: 1 "tempo=42";
+1: 16b;a+;g+;a+;4g+~;16;a+;g+;a+;b+;a+;g+;a+;
+2: 2g~;8;a;b;e;
+2 2: 4.e;8d;2d&;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: 16g+;f+;g+;f+;4;16g+;f+;e+;f+;g+;a+;g+;f+;
+2: a~;16;c&+;b;a;2c&a;
+2 2: 2c;s;
+bar
+
+1: 16g+;f+;e+;d+b+;c++;d++;e++;f++~;2;
+1 2: 4s;2.e+;
+2: 16b;a;g;f;g;f;e;c&~;2;
+2 2: b-e;2.an-;
+ital between 1&2: 2 "rit";
+bar
+
+//
+midi all: 1 "tempo=42";
+1: 16c++;b+;8;16a+;g+;8;16f+;e+;;d+;bn;c+;d+;e+;
+1 2: e+;d+;c+;s;
+2: 8.g;16b;a;g;f;d;4g;8f;e;
+2 2: b-;bn-;8c;b&-;4a-;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: 8.b;16g+;16;f+;e+;f+;;e+;d+;e+;c+;b+;a+;g+;
+1 2: s;c+;b;a;
+2: 16f;e;d;e;8f;e;f;e;c;f;
+2 2: g-;a-;g-;f-;
+bar
+
+score time=3/4
+music
+
+1: 2.g+;
+1 2: 16c+;d+;8c+;2bn;
+2: 8d;a;2g;
+2 2: 2.g-;
+ital between 1&2: 1 "rit";
+bar
+
+score time=4/4
+staff 2 clef=bass
+music
+
+1: 16g+;f+;e+;d+;c+;d+;e+;f+;;e+;d+;c+;b;c+;d+;f+;
+1 2: 2gc+;fb;
+2: 16a-;e;8f;16d+;f;8a;16g-;d;8f;16d+;c+;8bn;
+ital between 1&2: 1 "a tempo";
+bar
+
+//
+1: 16e+;d+;c+;b;a;b;c+;e+;2bnd+;
+1 2: 2g;16f;g;a;g;4f;
+2: 16cc+;d+;8e+;16f;e;f;e;8g-g;bn;16d+;a-;g-;f-;
+bar
+
+1: 16d+;c+;b;g;;a;b;d+;c+;d+;c+;a;f;g;a;c+;
+2: 8e-;b-;f;g;a-;e;c+;16f;e;
+bar
+
+1: 16b;c+;a;g;8.g+;16f+;;g+;f+;e+;8.c+;16d+;
+2: 8g-;d;16an;bn;8g;c;g;16d+;e+;8c+;
+bar
+
+1: 16e+;f+;8d+;8.c+;16e+;d+;e+;d+;b;8.g;16b;
+2: 8a-;e;16c+;d+;8e+;g-;d;16b;c+;8d+;
+bar
+
+1: 16a;b;c+;b;a;g;f;c;2bn;
+2: 8f-;c;a;e;16g-;d;an;bn;e+;d+;b;g;
+bar
+
+1: 16e+;f+;8g+~;8.;16a+;b+;a+;g+;f+;c+;d+;e+;f+;
+2: 8c;16g;d+;e+;f+;8g+;f-;c;a;32c;b-;16a-;
+bar
+
+1: 16d+;g;[with>]f+;bn;[with>]g+;d+;[with>]bn+;g+;c++;g+;e+;d+;4c+~;
+2: 8g-;d;bn;16e+;d+;8c-;g-;4e~;
+bar
+
+1: 2c+;s;
+2: 2e;s;
+endbar

@@ -1,0 +1,202 @@
+
+header
+	title (18) "Nocturne"
+	title "No. 41"
+	title "" "John A. Krallmann"
+	title " " "(July 9, 2017)"
+
+header2
+	title "Nocturne No. 41 - \%"
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=2#
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	scale=0.97
+	vscheme=2f
+	scoresep=10,24
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal below 1,2: 1;4; endif @
+
+midi all: 0 "tempo=92";
+midi 1: 0 "channel=11"; 0 "onvelocity=102";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=92";
+midi 2: 0 "channel=13"; 0 "onvelocity=65";
+
+1: a;d+;f+;
+1 2: 2.f;
+2: 2e+;4d+;
+2 2: 2.fa;
+bar
+
+1: f+;e+;d+;
+1 2: 2.g;
+2: 2.ebf+;
+bar
+
+1: 2ge+;8f;g;
+2: c+;b;a;
+2 2: 2.a-e;
+bar
+
+1: 2a;4;
+1 2: c;a-;c;
+2: 2d;4e;
+2 2: 2.f-;
+bar
+
+1: ca;2b-g;
+2: 2g-d;4e-;
+bar
+
+1: b-g;4.a-f;8g-e;
+2: 2a--;4c;
+bar
+
+1: 2g#-e#;4a-f;
+2: d-;a-;d;
+bar
+
+1: a-f;2b-g;
+2: g-~;g-d;f-;
+bar
+
+1: b-g;2fd+;
+2: e-;b-;g;
+bar
+
+1: d+;4.c+;8a;
+1 2: 2.e;
+2: a-;e;c+;
+bar
+
+1: 2ca;4db;
+2: b-;f;b;
+bar
+
+1: db;ca;b-g;
+2: g-;d;g;
+bar
+
+1: 2.a-ca;
+2: d;e;d;
+2 2: 2.f-;
+bar
+
+1: a;g;d;
+1 2: 2.a-d;
+2: 2.e-b-g;
+bar
+
+1: 2.g-e;
+1 2: c;b-;a-;
+2: 2.a--e-;
+bar 
+
+1: 2d+;4af+;
+1 2: e;f;s;
+2: d-;a-;f;
+bar
+
+1: af+;4.bg+;8f+;
+2: e-;b-;g;
+bar
+
+1: bg+;4.af+;8ge+;
+2: a-;c+;g;
+bar
+
+1: 2g+;4af+;
+1 2: 4.b;8b&;4s;
+2: d-;a-;f;
+bar
+
+1: b;2;
+1 2: f;e;d;
+2: g-;d;g;
+bar
+
+1: ea;2da;
+2: f-;d;a;
+bar
+
+1: a;g;f;
+1 2: 2.b-;
+2: e-;b-;g;
+bar
+
+1: 2a;8b;c+;
+1 2: b-;2c;
+2: a--;e-;g;
+bar
+
+1: 2d+;4gad+f+;
+1 2: c;d;s;
+2: b--;f-;cn+;
+bar
+
+1: ad+f+;4.bd+g+;8f+;
+2: g--;da;bg+;
+bar
+
+1: 8e+;f+;4.g+;8a+;
+1 2: 2.g;
+2: a-;e;c+;
+bar
+
+1: 2.f+;
+1 2: 2ac+;4bd+;
+2: b-;f;d+;
+bar
+
+1: f+;4.e+;8d+;
+1 2: 2.g;
+2: g-;d;b;
+bar
+
+1: e+;4.d+;8c+;
+1 2: 2.g;
+2: a-;e;c+;
+bar
+
+1: c+;2b;
+1 2: 2.d;
+2: b-;f;b;
+bar
+
+1: c+;2b;
+1 2: 2.d;
+2: g-;d;b;
+bar
+
+1: {2c+;b;}2,2.;
+1 2: 2.d;
+2: b-;f;b;
+bar
+
+1: {2c+;b;}2,2.;
+1 2: 2.d;
+2: g-;d;b;
+bar
+
+1: 2.c+;
+1 2: 2.d~;
+2: b-~;b-f tie;b-fb tie;
+bar
+
+1: 2.b;
+1 2: 2.d;
+2: 2.b-fb;
+endbar
+

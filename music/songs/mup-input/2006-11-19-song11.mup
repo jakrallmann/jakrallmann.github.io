@@ -1,0 +1,221 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Song Without Words (No. 11)"
+	title "" "John A. Krallmann (11/19-20/06)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	scoresep=10,24
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=100";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76, 46";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=46";
+midi 2 1-2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=46";
+
+
+1: 2gb;4;
+2: 2gd+;4;
+bar
+
+1: gc+;g+;c+a+;
+2: 2ge+;4ge&+;
+bar
+
+1: 2d+g+;4gac+;
+1 2: c+;b;s;
+2: 2gd+;4e&c+;
+bar
+
+1: 2d+;4dg;
+1 2: a;g;s;
+2: 2.b-g;
+bar
+
+1: 2a-a;4ca;
+1 2: e;d;s;
+2: 2.fn-c;
+bar
+
+1: 2b-d;4b-fn;
+1 2: a-;g-;s;
+2: 2g-d~;4g#-d;
+bar
+
+1: 2c#e;4a;
+1 2: b-;2a-;
+2: 2a-e;4f-;
+bar
+
+1: b-;c#;d;
+1 2: 2.a-;
+2: 2.d;
+2 2: 2g-;4f-;
+bar
+
+1: g;f;e;
+1 2: 2.b-;
+2: 2.e-b-d;
+bar
+
+1: g;f;d;
+1 2: 2.b-;
+2: 2.d-b-e;
+bar
+
+1: 2.e;
+1 2: d;c;g-;
+2: 2.c-g-e;
+bar
+
+1: f;g;fa;
+1 2: 2c;4s;
+2: e;d;c;
+2 2: 2.d-a-;
+bar
+
+
+1: 2g#b;4dc+;
+1 2: f;e;s;
+2: e-;b-;g#;
+bar
+
+1: b;a;e;
+1 2: 2.c;
+2: a-;e;g;
+bar
+
+1: d;e;f;
+1 2: 2.c;
+2: 2f;4d-;
+bar
+
+1: 2a;4cf;
+1 2: c;d;s;
+2: 2f-;4d;
+bar
+
+1: a;g;a-c;
+1 2: 2b-;4s;
+2: 2d;4e;
+2 2: 2.g-;
+bar
+
+1: 2.b-d;
+2: 2.g-d;
+bar
+
+1: 2.c+;
+1 2: e;a;g;
+2: a-;e;c+;
+bar
+
+1: ec+;db;ca;
+2: d-;a-;f;
+bar
+
+1: a-c;b-d;cg;
+2: g-;d;e;
+bar
+
+1: 2.b-g;
+2: 2.d;
+bar
+
+1: 2ec+;4;
+2: a-;e;g;
+bar
+
+1: dae+;ead+;fac+;
+2: 2f;4d;
+bar
+
+1: 2gb;4dad+;
+1 2: f;e;s;
+2: 2e;4b-;
+bar
+
+1: 2eg;4egc+;
+1 2: d;g-;s;
+2: 2c;4a-;
+bar
+
+1: 2.dd+;
+1 2: a;g;f;
+2: 2.b-;
+bar
+
+1: d+;c+;a-eg;
+1 2: 2eg;4s;
+2: 2c;4c#;
+bar
+
+1: 2.ce;
+1 2: g-;a-;g-;
+2: 2.d;
+bar
+
+1:a-f;bd+;dc+;
+2: 2.d-;
+bar
+
+1: a-fb;b-c+;fb;
+2: 2.d#-;
+bar
+
+1: ag+;bf+;fd#+;
+2: 2.b-;
+bar
+
+1: fd#+;ge+;eg;
+2: 2e-;4b-;
+bar
+
+1: a;b;c+;
+1 2: 2.c;
+2: 2fn;4f#;
+2 2: 2.a-;
+bar
+
+1: 2.eb;
+2: 2.b-g;
+bar
+
+1: 2.fc+;
+2: 2.b-a;
+bar
+
+1: 2.b;
+1 2: f;e;b-;
+2: 2.b-g;
+bar
+
+staff 1 clef=bass
+music
+
+1: a;b;c+;
+1 2: 2.f;
+2: 2.e;
+2 2: c;b-;a-;
+bar
+
+1: 2.g#b;
+2: 2.e-b-;
+endbar 

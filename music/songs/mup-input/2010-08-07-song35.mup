@@ -1,0 +1,169 @@
+header
+	title (16) "Song Without Words (No. 35)"
+	title "" "John A. Krallmann (8/7/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 35) - page \%"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+staff 1
+	vscheme=2o
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=98";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: 4.s;8b;a;b;
+2: 4.s;8r;4;
+bar
+
+1: 8c+;4d+;8c+;b;a;
+1 2: e;d;c;
+2: a-;e;a;
+bar
+
+1: 2g#~;8;e;
+1 2: 8f;e;b-;c;4d;
+2: e-;b-;g#;
+bar
+
+1: 4.a;8c+;b;c+;
+1 2: 8e;d;4a-;f;
+2: f-;c;a;
+bar
+
+1: 4.e+;8;;;
+1 2: 8g#;d;c+;b;a;g;
+2: e-;b-;b;
+bar
+
+1: 4.f+;8a+;g+;f+;
+1 2: 8c+;b;a;g;a;b;
+2: d-;a;d+;
+bar
+
+1: 4.e+;8d+;c+;b;
+1 2: 8b;c+;e;c;d;e;
+2: a-;e;b;
+bar
+
+1: 4.ca;8c+;b;a;
+1 2: 8f;g;f;d;e;d;
+2: d-;a-;f;
+bar
+
+1: 4.a;8;;;
+1 2: 8b-;c;e;d;c;b-;
+2: a-;e;g-;
+bar
+
+1: 4.a;8;;;
+1 2: 8c;d;f;e;d;c;
+2: f-;c;a;
+bar
+
+1: 4.b;8f+;e+;d+;
+1 2: 8g#;f#;e;d;g;e;
+2: e-;b-;b;
+bar
+
+1: 2d+~;8;c+;
+1 2: 8e;[with>]b;e;[with>]a;4e;
+2: a-;e;b;
+bar
+
+1: 2c+~;8;b;
+1 2:8e;[with>]a;e;[with>]g;4e;
+2: g-;e;b;
+bar
+
+1: 2b~;8;a;
+1 2: 8c;[with>]a;c;[with>]g;c;[with>]f;
+2: f-;c;a;
+bar
+
+1: 2.g;
+1 2: 8d;g-;b-;d;b-;g-;
+2: e-;b-;d;
+bar
+
+staff 1 clef=bass
+music
+
+1: f+;e+;d+;
+1 2: ac+d+;2fgb;
+2: d-;2g-;
+bar
+
+1: 2c+;8c+;b;
+1 2: 2.e;
+2: 2.c-g-;
+bar
+
+staff 1 clef=treble
+music
+
+1: a-;a;d+;
+1 2: s;f;8a;a&;
+2: 8f-;c;g;f;4c+;
+bar
+
+1: 8gb;f#a;4.eg;8e;
+2: 8e-;b-;g;a;4b;
+bar
+
+1: 4.f;8g;f;g;
+1 2: 8c;b-;4a-;c;
+2: 8d-;a-;4f;d;
+bar
+
+1: 2e~;8;;
+1 2: 8b-;a-;c;a-;4;
+2: a-;e;g-;
+bar
+
+1: 8e;d;;c;d;f;
+1 2: a-;;a&-;
+2: f-;c;f;
+bar
+
+1: 8d;c;;g-;g;a;
+1 2: 2g-;4c;
+2: e-;c;e&-;
+bar
+
+1: 4.b;8;a;g;
+1 2: 8g;d;2b-;
+2: d-;g;e&+;
+bar
+
+1: 4.b;8;a;g;
+1 2: 8g;d;2b-;
+2: d-;g;e(n)+;
+bar
+
+1: 4.d+;8;;;
+1 2: 2.f#c+;
+2: 8d-;a-;e;f#;a;d+;
+bar
+
+1: 2.g+;
+1 2: 2.ab;
+2: 2.gd+;
+endbar

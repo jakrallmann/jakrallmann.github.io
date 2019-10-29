@@ -1,0 +1,190 @@
+header
+	title (18) "Lullaby No. 6"
+	title "" "John A. Krallmann (October 20, 2003)"
+
+header2
+	title (12) "Lullaby No. 6 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+	scoresep=12,24
+	vscheme=2f
+	measnum=y
+	addtranspose=down perfect 4
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=80";
+midi 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=74";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 
+midi 2 1-2: 0 "channel=13"; 0 "program=50"; 
+
+1: 2s;4g;
+2: 2s;4f+;
+2 2: 2s;8a;b;
+bar
+
+define AA
+1: [grace;slash 1]8g;4.e+;8c+;b;c+;
+2: c-;g-;e;
+bar
+
+score time=4/4; beamstyle=4,4,4,4
+music
+
+1: 8b;4.a~;4;a+;
+1 2: d;c;2d;
+2: f-;d;a;8d+;c+;
+bar
+
+1: a+;g+;f+;8c#+;d+;
+1 2: 2b;4;f;
+2: 8f;g;a;b;4a+;s;
+2 2: 2.g-;4;
+octave below 2: 4 "8va";
+bar
+
+1: 8d#+;e+~;2.;
+1 2: 2g;8a;a&;g;a;
+2: c-;g-;e;c+;
+bar
+
+1: 4.a;8b;4.c+;8d+;
+1 2: 8d;4.c;2d;
+2: f-;c;a;a&;
+bar
+
+1: 2.g;8b;c+;
+1 2: 8d;c~;2.;
+2: e-;c;d;e;
+bar
+
+1: 8f;g;4a;8f+;g+;a+;b+;
+1 2: 2c;4a;b;
+2: d-;a-;g-;;
+octave below 2: 3 "8va";
+bar
+
+1: 4.e++;8b+;;4.a+;
+1 2: 2g+;c+;
+2:c-;g-;f-;c;
+bar
+@
+
+AA
+
+1: 8a+;g+;f+;d+;4a;8e+;d+;
+1 2: b;a;f;;
+2: g-;d;b;g-;
+octave below 2: 4 "8va";
+bar
+
+1: 2.c+;8f+;g+;
+1 2: 1e;
+2: c-;g-;2b&;
+repeatstart
+
+score key=1&
+music
+
+1: 4.a+;8c++;4a+;8e+;f+;
+1 2: 2c+;4;;
+2: f-;c;f+;e+;
+bar
+
+1: 2.d+;8a+;g+;
+1 2: 8a;4.g~;2;
+2: f;g;d+;d&+;
+2 2: 1b-;
+bar
+
+1: 1c+;
+1 2: 8g;f;4c;bn-;c;
+2: 1a-f;
+bar
+
+1: 8b;a;b;c+;4d+;b+;
+2: g-;d;b;8g+;f+;
+bar
+
+1: 8a+;4.g+~;4;8a+;b+;
+1 2: 1b;
+2: c;b;f+;e+;
+bar
+
+1: 4.c+c++;8f+;g++;f++;e++;f++;
+2: a-;f;c+;a+;
+bar
+
+1: 8e++;d++~;2.;
+1 2: 1f+;
+2: b-;f;c+;b;
+bar
+
+1: 2bg+;4a+;8c+;d+;
+2: f;e;2b;
+2 2: 2.c;4c-;
+bar ending "1."
+
+1: 2f+;2af+;
+1 2: a;b;2s;
+2: c;d;2s;
+2 2: 2f-a;2f-ca;
+repeatend ending "2.";
+
+mussym above 1: 3 "ferm";
+midi all: 3 "tempo=30"; 4 "tempo=80";
+1: 2f+;4af+;c+;
+1 2: a;b;2s;
+2: c;d;2s;
+2 2: 2f-a;4f-ca;r;
+bar endending
+
+score time=3/4 ; beamstyle=4,4,4 
+	key=0&
+	transpose=up perfect 4
+music
+
+AA
+
+midi all: 1 "tempo=76"; 3 "tempo=68"; 4 "tempo=54";
+1: 8a+;g+;f+;d+;4a;8a+;b+;
+1 2: b;a;f;b;
+2: g-;d;b;g-;
+bar
+
+// for clef change
+score time=2/4n
+music
+
+1: 2e+c++;
+2: 2c+g+;
+invisbar
+
+staff 1 clef=bass
+music
+
+midi all: 1 "tempo=40";
+1: 2ec+;
+2: 2c-g-;
+bar
+
+score time=4/4n
+music
+
+1: 1ec+;
+2: 1c-g-;
+endbar

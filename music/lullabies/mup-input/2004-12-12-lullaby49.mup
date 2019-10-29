@@ -1,0 +1,170 @@
+header
+	title (18) "Lullaby No. 49"
+	title (10) " "
+	title "" "John A. Krallmann (12/12/04)"
+
+header2
+	title (12) "Lullaby No. 49 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	release=0
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+
+midi all: 1 "tempo=78";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84,70";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+1: c++;e+;g+;c++;e+;g+;
+2: c+;b;
+bar
+
+1: c++;e+;g+;c+;e+;a+;
+2: 2.a;
+bar
+
+1: a+;c+;e+;a+;c+;f+;
+2: g;f;
+bar
+
+1: g+;g;d+;c+;d;e;
+2: 2.e;
+bar
+
+1: f+;a;c+;f+;a;g+;
+2: d;c;
+bar
+
+1: a+;d;d+;f+;a;g+;
+2: b-;g-;
+bar
+
+1: e+;g;c+;e+;g#;d+;
+2: c;b-;
+bar
+
+1: d+;e;b;c+;e;a;
+2: a-;g-;
+bar
+
+1: a;e;a-;a;d;16b;c+;
+2: f-;;
+bar
+
+1: f#;g;g-;d;c;16d;e;
+2: 2.e-;
+bar
+
+1: f;a-;e;f;d;a;
+2: d-;c-;
+bar
+
+1: d++;g;f+;c++;d+;b+;
+2: b--;g--;
+bar
+
+1: b+;d+;e+;a+;b;c+;
+2: 2.a--;
+bar
+
+1: g+;a;c+;f+;e;a-;
+2: 2.d-;
+bar
+
+1: f+;a;c+;g+;f;a+;
+2: 2.g-;
+bar
+
+mussym above 1: 4 "ferm";
+1: c++;a;f+;4.f+g+d++;
+2: g--;g-;
+bar
+
+1: 2.e+c++ tie;
+2: 8c-;g-;e;g;c+;d+;
+bar
+
+1: 4.e+c++;;
+2: 2.e+;
+dblbar
+
+score key=3&
+music
+
+1: 2.e+c++ tie;
+2: 8a-;e;a;b;c+;d+;
+bar
+
+1: 4.e+c++;8c++;b+;a+;
+1 2: 4.s;e+;
+2: 2.e+;
+bar
+
+1: 2.b+~;
+1 2: 4.f+;e+~;
+2: 8g-;e;b;<<staff clef=treble>>e;f;b;
+bar
+
+1: 4.b+;8;a+;g+;
+1 2: 4.e+;;
+2: 2.b;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2.aa+;
+1 2: 4.e+;4d+;8c+;
+2: 8f-;c;a;c+;d+;f+;
+bar
+
+1: 4.c+e+a+;4be+b+;8aa+;
+2: 8b--;b-;a;c+;d+;f+;
+bar
+
+1: 4.f#f#+;gg+;
+2: 8e-;b-;g;b;e+;d+;
+bar
+
+1: 4.gc+g+;cc+ tie;
+1 2: 4.s;8g;4f;
+2: 8a-;e;c+;a--;a-;d;
+bar
+
+1: 8cc+;d+;f+;4b-b;8ee+;
+1 2: 4.s;8f;4e;
+2: 4.f;8g-;e;bn;
+bar
+
+1: bd&+b+;ac+a+;gg+;4.faf+ tie;
+2: 8a-;f;c+;b-;a;e+;
+bar
+
+1: 8faf+;c+;e+;4.fe+b+~;
+roll 1: 4;
+2: 4.d+;8e-;b-;f;
+bar
+
+1: 2.bb+;
+2: 2.ge+;
+endbar

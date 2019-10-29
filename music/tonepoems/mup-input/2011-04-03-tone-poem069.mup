@@ -1,0 +1,141 @@
+
+header
+	title (16) "Tone Poem (No. 69)"
+	title (14) " "
+	title "" "John A. Krallmann (4/3/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 69)  - \%" 
+
+score
+	staffs=2
+	key=1#
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=84";
+midi 1 1-2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 2 1-2: 0 "channel=13"; 0 "program=0";
+
+
+1: 8b;e+;f+;g+;f+;4.b;
+2: r;gb;r;8gb;fa;
+2 2: 2e;e&;
+bar
+
+1: 8b;e+;f+;g+;b;e;f;g;
+2: r;gb;r;gb;
+2 2: 2d;d&;
+bar
+
+1: 8b;e;g;b~;;e;g;b~;
+2: r;2gb;4gb tie;
+2 2: 2c;;
+bar
+
+1: 8b;e;g;b~;;f;g;a;
+2: gb;2;4 tie;
+2 2: 2b-;;
+bar
+
+midi all: 4 "tempo=80";
+1: 2.b;8c ph;b-;
+2: 8gb;ac+;gb;fa;gb;fa;4d#f;
+2 2: 1b-;
+ital between 1&2: 2 "rit.";
+rom above all: 4 "Slower";
+bar
+
+1: 8f;4.g#~;8;16c;b-;8c+;b;
+2: 8e-;b-;fn;e;g#;d;g#-;e;
+bar
+
+1: 8b;4.c+~;8;16ff+;gg+;8aa+;gg+;
+1 2: s;8f;e;2d#;
+2: 8r;e;a;g;f;a;b;c+;
+2 2: 1a-;
+bar
+
+1: [with >]8ee+ eph;16f ph;g;8a;16g;f;4e;b- eph;
+boldital below 1: 1 "sfz"; 1.5 "p";
+2: 8e-;b-;g;b-;e-;b-;g;b-;
+bar 
+
+1: [with >]8ee+ ph;16f;g;8a;16g;f;4e;8b- eph;g ph;
+boldital below 1: 1 "sfz"; 1.5 "p";
+2: 8e-;b-;g;b-;e-;b-;g;b-;
+bar 
+
+1: 8a;16;b;8c+;16d+;c+;8.b;16a;4fn eph;
+2: 8fn-;c;a;c;f-;c;a;c;
+bar
+
+1: 8a ph;16;b;8c+;16d+;c+;8.b;16a;4fn eph;
+2: 8fn-;c;a;c;f-;c;a;c;
+bar
+
+1: 8g# ph;16;a;8b;16;c+;8.d+;16e+;4fn+ eph;
+2: 8e-;b-;g#;b-;e-;b-;g;b-;
+bar
+
+1: 8e#+ ph;16;d#+;8c#+;16;d+;8.e+;16d+;8c+ eph;cn+ ph;
+2: 8c#-;g#-;e#;g-;c-;g-;e;g-;
+bar
+
+1: 8b;16;a#;8g#;16;a;8.b;16c#+;4d+ eph;
+2: 8e-;b-;g#;d+;b;g;e;b-;
+bar
+
+1: 8e&+ ph;16;d+;8c+;16;d+;8.e+;16d+;4c+ eph;
+2: 8c-;g-;e&+;d+;c+;g;e&;g-;
+bar
+
+1: 8g# ph;16;f;8e;16;f;8.g;16f;8e eph;d+ ph;
+2: 8d-;e;g#;d+;b;g;e;b-;
+bar
+
+1: 8.a;16b;8c#+;e+;8.;16f;8;16d+;f;
+2: 8c#-;a-;e;c#+;d-;a-;f;b;
+bar
+
+1: 4.e;8g#;8.b-g;16c#a;4 eph;
+2: 8e-;b-;4g#;8a-;e;a;e;
+bar
+
+ital between 1&2: 1 "rit. poco a poco";
+midi all: 4 "tempo=76";
+1: 8.b& ph;16a;g;d+;a;b;c+;e&;c+;b;8a eph;16d ph;e;
+2: 8g-;d;b&;d;c-;g-;e&;g-;
+bar
+
+midi all: 4 "tempo=72";
+1: 8.a;16d;a;d;b&;a;8.bn;16c+;8d+eph;16a&+ ph;g+;
+2: 8d-;a-;f;a-;g-;d;b;d;
+bar
+
+midi all: 4 "tempo=68";
+1: 8fn+;16e&+;d+;8e+;16d+;c+;8a;16g;fn;4g eph;
+1 2: 16r;8.a&;16r;8.g;16r;8.c;16r;e&;d;c;
+2: 8c-;g-;c;g;fn-;c;c-;g-;
+bar
+
+midi all: 4 "tempo=64";
+1: 8a& ph;16g;fn;e&;d;8c;8.g;16a&+;8g+;16c+;d+;
+2: 8fn-;a&;f#-;f;g-;b-;b;d;
+bar
+
+1: 1c+e+ eph;
+2: 8c-;g-;2.e;
+endbar

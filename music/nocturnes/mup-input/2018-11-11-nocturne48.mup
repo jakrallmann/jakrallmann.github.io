@@ -1,0 +1,148 @@
+header
+	title (18) "Nocturne"
+	title "No. 48"
+	title "" "John A. Krallmann"
+	title " " "(Nov 11, 2018)"
+
+header2
+	title "Nocturne No. 48 - \%"
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=1&
+	time=12/8
+	beamstyle=4.,4.,4.,4.
+	measnum=y
+	vscheme=2f
+	scale=0.75
+	packfact=0.6
+staff 2
+	clef=bass
+	timeunit=4.
+music
+
+midi all: 0 "tempo=112";
+midi 1: 0 "channel=11"; 0 "onvelocity=90";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=82";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=78";
+
+1: b;d;b;a;c;a;g;d;g;a;c;a;
+2: g-;d;b;d;
+bar
+
+1: b;d;b;a;c;a;g;b-;g;a;c;a;
+2: e&-;b-;g;b-;
+bar
+
+1: b;e&;b;a;e;a;g;e;g;a;e;a;
+2: c-;g-;e&;g-;
+bar  
+
+1: f#;c;f;g;b-;g;a;a-;a;b;d;c+;
+2: d-;a-;f#;a-;
+repeatend
+
+1: d+;a;b;c+;d;a;b;c;g;a;c;d;
+2: g-;d;b;d;
+bar
+
+1: b;b-;g;a;c;f;g;b-;e&;a;c;f;
+2: e&-;b-;g;b-;
+bar
+
+1: f;a-;d;g;a-;d;a;a-;d;a;b;c+;
+2: d-;a-;f;a-;
+bar
+
+1: d+;a;b;e+;g;b;f+;a;b;e+;g;b;
+2: g-;d;b;d;
+bar
+
+1: d+;g;b;c+;f;e;a;c;f;a;b;c+;
+2: c;b;f-;e&-;
+bar
+
+1: d+;a;b;e+;g;b;f+;f;a;c+;c;f;
+2: b--;g-;d;a-;
+bar
+
+1: d+;f;b;c+;e;b;a;e;f;a;e;f;
+2: b-;c;d;c;
+bar
+
+1: g;f-;d;f;f-;c;f;a-;b-;d;f-;b-;
+2: b-;a-;g-;;
+bar
+
+1: 1.f;
+1 2: f;f-;a-;c;b-;g-;2.a-;
+2: 4.s;d;2.c;
+2 2: 1.f-;
+repeatstart
+
+1: a;c;a;g;b-;g;f;a-;f;g;b-;g;
+2: f-;c;d;c;
+bar
+
+1: a;d;f;g;a-;d;f;a-;d;g;a-;d;
+2: d-;a-;d;a-;
+bar
+
+1: a;d;f;g;d;f;f;d;f;g;d;f;
+2: b-;f;g;f;
+bar
+
+1: 1.g;
+1 2: r;f;e;r;c;e;r;c;e;r;c;e;
+2: c;b-;a-;g-;
+repeatend
+
+1: 1.d+;
+1 2: r;f;b;r;f;b;r;f;b;r;f;b;
+2: b-;f;e+;d+;
+bar
+
+1: 1.c+;
+1 2: r;c;f;r;c;f;r;c;f;r;c;f;
+2: a-;f;g;f;
+bar
+
+1: 1.b;
+1 2: r;d;f;g;f;d;g;f;d;g;f;d;
+2: g-;d;f;g;
+bar
+
+1: 2.c+~;4.;8;d+;e+;
+1 2: r;e;g;b;g;e;b;g;e;4.s;
+2: c;g;d+;4c+;8b;
+bar
+
+1: 1.f+;
+1 2: r;a;d+;r;a;d+;r;a;d+;r;a;d+;
+2: d;a;e+;d+;
+bar
+
+midi all: 0 "tempo=108";
+ital between 1&2: 1 "rit.";
+1: 1.f+;
+1 2: r;f;d+;r;a;b;r;e;f;r;f;d+;
+2: b-;f;d+;f;
+bar
+
+midi all: 0 "tempo=102";
+1: 2.e+~;4.~;8;c+;e+;
+1 2: r;g;f;r;f;e;r;e;f;4.s;
+2: c;g;c+;g;
+bar
+
+midi all: 0 "tempo=68";
+1: 4.d+~;4;8f+;2.d+;
+1 2: 4.s;8f~;fa tie;tie;2.;
+2: 8d~;da tie;dad+ tie;4. tie;2.;
+endbar

@@ -1,0 +1,90 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 18"
+	title "" "John A. Krallmann"
+	title " " "(March 29, 2015)"
+
+header2
+	title (12) "Nocturne (No. 18) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.82
+
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=60";
+midi 1: 0 "onvelocity=90,74";
+midi 2: 0 "onvelocity=68";
+
+1: 16a;g#;8a;b&;a;16e&+;d+;c+;b;8a;gn; 
+2: f-;f#ae&+;g-;gb&d+;
+boldital between 1&2: 1 "mf";
+bar
+
+1: 8f;e&;16d+;c+;b&;a;8e&;d;8c#+;d+;
+2: e&-;e&gc+;d-;f#ad+;
+bar
+
+1: 16e&+;d+;8c+;f#;g;16b&;a;8g;c#;d;
+2: c-;gc+e&+;g--;dgb&;
+bar
+
+1: 16f;e&;8d;c+;f#;a&;g;16f+;e&+;8d+;
+2: a&--;a&-cdf#;g--;gbd+;
+bar
+
+1: 16e+;f+;8g+;d&++;c++;d++;c++;g&+;f+;
+2: c-;gc+e+;f-;ac+e&+f+;
+bar
+
+1: 16e&+;d&+;8c+;b&;a&;16g;f;8e;d&;c;
+2: d&-;fa&d&+;c-;cegb&;
+bar
+
+1: 16a;b&;8c+;16g&+;f+;8e&+;16c+;b;c+;b;8d&+;f;
+2: f-;fac+e&+;b&--;fb&d&+;
+bar
+
+1: 16c+;b&;c+;b;8d&+;f;16e&;f;g;f;8e;b;
+2: b&-;fb&d&+;e&-;e&gd&+;
+boldital between 1&2: 1 "p"; 3 "mf";
+bar
+
+1:16e&;d;e;f;g;a&;b&;bn;c+;d+;e+;f+;8g+;c+;
+2: e&-;e&gd&+;en-;gc+e+;
+bar
+
+1: 16a&+;g+;f+;c+;8g;f;16d&;e&;f;g;a&;b&;c+;d&+;
+2: f-;fa&c+;b&--;fb&d&+;
+bar
+
+1: 16c+;d+;e+;f+;c++;b&+;a&+;g+;an+;b+;c++;d&++;f++;e&++;d++;a+;
+2: c-;gc+e+;f-;ac+f+;
+bar
+
+1: 16c++;b&+;c++;b+;8d&++;f+;16e&+;f+;g+;f+;8e+;b&;
+2: b&-;fb&d&+;e&-;gd&+e&+;
+bar
+
+1: 16e&+;f+;g+;f+;8e+;b&;16c+;d&+;e+;f+;g&+;a&+;b&+;c++;
+2: e&-;b&e&+g+;a&--;a&c+e&+g&+;
+bar
+
+1: 8d&++;f+;4d++;8g&+;b&;4g+;
+2: b&--;fb&d&+;e&-;g&b&e&+;
+bar
+
+1: 8f+;g&;4e&+;2d&+;
+2: a&--;g&a&c+;d&-;fad&+;
+endbar

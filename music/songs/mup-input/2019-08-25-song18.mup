@@ -1,0 +1,185 @@
+header
+	title (16) "Song"
+	title "" "John A. Krallmann"
+	title " " "(August 25, 2019)"
+
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+
+staff 1
+	timeunit=4
+staff 2
+	clef=bass
+
+music
+
+midi 1: 0 "onvelocity=92,64";
+midi all: 0 "tempo=144";
+
+define T
+1: r;2d+ ph above;8f#;g;
+2: g-;gbd+;
+bar
+
+1: b;2.a eph;
+2: d-;f#ad+;
+bar
+
+1: a ph above;2g;8;a;
+2: e-;b-eg;
+bar
+
+1: e;d;a;b;
+2: d-;df#ac+;
+bar
+
+1: a;g;4.d+ eph;8 ph above;
+2: g-;gbd+;
+bar
+
+1: d+;e+;b;c+;
+2: e-;egc+;
+bar
+@
+T
+
+1: 2.a;8e;d;
+2: d-;f#ad+;
+bar
+
+1: 1g eph;
+2: g-;dgb;
+bar
+
+1: e ph above;;;;
+2: c-;cgb;
+bar
+
+1: e;2.d eph;
+2: d-;a-df#;
+bar
+
+1: a ph above;;b;c+;
+2: e-;egc+;
+bar
+
+1: e+;2.d+ eph;
+2: d-;f#ad+;
+bar
+
+1: f+ ph above;;e+;c+;
+2: c-;egc+;
+bar
+
+1: d+;;b;g;
+2: g-;gbd+;
+bar
+
+1: a;;4.b;8a;
+2: d-;f#ac+d+;
+bar
+
+1: 1g eph;
+2: g-;gbd+;
+dblbar
+
+score
+	key=3&
+music
+
+1: e ph above;;;f;
+2: e-;b-eg;
+bar
+
+1: g;;;b;
+2: g-;dgb;
+bar
+
+1: g;;;f;
+2: a-;eac+;
+bar
+
+1: 1g eph;
+2: e-;b-eg;
+bar
+
+1: c+ ph above;;;e+;
+2: a-;eac+;
+bar
+
+1: b;;;d+;
+2: g-;dgb;
+bar
+
+1: a;;;g;
+2: f-;eac&+;
+ital between 1&2: 3 "poco rit.";
+bar
+
+1: 2f eph;4c ph above; b-;
+2: b-;dfa;
+ital between 1&2: 3 "a tempo";
+bar
+
+1: g;;;b;
+2: e-;b-eg;
+bar
+
+1: 2b;[grace]8c+;[]b;4a;c;
+2: a-;eac+;
+bar
+
+1: b-;;4.g;8f;
+2: b-;dfa;
+bar
+
+1: 2e;d& eph;
+2: e-;b-eg;
+bar
+
+1: c ph above;;;e;
+2: a-;cea;
+bar
+
+1: b-;;;e;
+2: g-;b-eg;
+bar
+
+1: g;;4.;8f;
+2: b--;b-dfa;
+bar
+
+1: 1e eph;
+2: e-;b-eg;
+dblbar
+
+score
+	key=2&
+music
+
+T
+
+1: 2.a;8e+;d+;
+2: d-;f#ad+;
+bar
+
+1: 1g+~;
+2: g-;dgb tie;
+bar
+
+1: 1g+ eph;
+2: 1dgb;
+endbar

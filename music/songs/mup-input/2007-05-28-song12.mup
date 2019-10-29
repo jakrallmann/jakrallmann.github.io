@@ -1,0 +1,274 @@
+ifndef VIDEO
+header
+	title (18) "Song Without Words (No. 12)"
+	title "" "John A. Krallmann (5/28/07 - 6/3/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+endif
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	ifdef VIDEO
+		pagewidth=16
+		pageheight=9
+		scale=1.25
+		packfact=1.8
+	else
+		staffscale=0.82
+	endif
+	vscheme=2f
+	release=0
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=82";
+midi 1 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=86, 46";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+define THEME
+1: 2s;8d;e;f;a;
+2: 2s;r;
+bar
+
+1: 1e+~;
+1 2: r;2g;4;
+2: c-;2egc+;4;
+bar
+
+score time=3/4 ; beamstyle=2.
+music
+
+1: e+;8e;g;a;c+;
+1 2: a;2s;
+2: 2.eac+;
+bar
+
+score time=4/4
+music
+
+1: 1d+~;
+1 2: r;2fa;4eg;
+2: d-;2fac+;4eac+;
+bar
+
+score time=3/4
+music
+
+1: d+;8a;c+;d+;f+;
+1 2: dfa;2s;
+2: 2.dac+;
+bar
+
+score time=4/4
+music
+
+1: 1d++~;
+1 2: r;2f+;4g+;
+2: g--;<<staff clef=treble>>2cfa;4b-cg;
+bar
+
+score time=3/4
+music
+
+1: d++;8d+;e+;f+;a+;
+1 2: a+;2s;
+2: 2.a-cf;
+bar
+
+score time=4/4
+staff 2 clef=bass
+music
+
+1: 1a+~;
+1 2: r;2d+;4e+;
+2: g-;<<staff clef=treble>> 2b-fa;4cfa;
+bar
+
+score time=3/4
+music
+
+1: a+;8e+;d+;e+;f+;
+1 2: d+;2s; 
+2: 2.b-fa;
+bar
+
+score time=4/4
+staff 2 clef=bass
+music
+
+1: 2f+;8e+;d+;c+;d+;
+1 2: r;g#c+;2s;
+2: c-;2g#c+f+;4;
+bar
+
+score time=3/4
+music
+
+1: 2e+;8d+;c+;
+1 2: r;gc+;s;
+2: c-;2gc+e+;
+bar
+
+1: a+;8f+;e+;d+;e+;
+2: f-;<<staff clef=treble>> cdfa;;
+bar
+
+1: f+;g+;f+;
+2: 2b-dg;4;
+bar
+
+staff 2 clef=bass
+music
+
+1: e+;8d+;c+;b;c+;
+2: a--;ac+e+;gc+e+;
+bar
+
+1: a;c+;8d+;e+;
+1 2: 2s;4g;
+2: 2fc+d+;4egc+;
+bar
+
+1: f+;e+;8d+;c+;
+1 2: 2a;4g;
+2: 2dac+;4egc+;
+bar
+
+score time=4/4
+music
+
+1: a;2.c+;
+1 2: e;2.f;
+2: fc+;2.da;
+bar
+
+rom between 1&2: 2 "Fine";
+1: 1c+;
+1 2: 1de;
+2: 1cg;
+dblbar
+@
+THEME
+
+ifdef VIDEO
+newpage
+endif
+
+1: 1e+~;
+1 2: r;2g;4b;
+2: c;2c+e+;4bc+e+;
+bar
+
+score time=3/4
+music
+
+1: e+;8;d+;a;c+;
+1 2: a;2s;
+2: 2ac+e+;4gc+e+;
+bar
+
+1: 2a;4d+;
+1 2: e;d;c;
+2: 2.fa;
+bar
+
+1: d+;e+;f+;
+1 2: f;e;g;
+2: b;a;g;
+2 2: 2.g-;
+bar
+
+1: 2f+;8e+;d+;
+1 2: a;2g#;
+2: c-;2fd+;
+bar
+
+1: 2e+;8b;c+;
+1 2: 2g;4s;
+2: c-;be+;ac+e+;
+bar
+
+1: 2.fac+e+;
+2: f-;efa;cfa;
+bar
+
+1: dfad+;cfac+;dfad+;
+2: d-;fa;cfa;
+bar
+
+1: 2dfac+;8d+d++;c+c++;
+2: g-;a;f;
+bar
+
+1: bf+b+;c+c++;d+d++;
+2: g-;b;f+;
+bar
+
+1: 2.gg+;
+1 2: d+;c+;b;
+2: e-;c+e+;be+;
+bar
+
+1: 2ac+;8dd+;ee+;
+1 2: g;f;s;
+2: f-;cfac+;e-;
+bar
+
+1: 2.fac+f+;
+2: d-;dfac+;8d-;c-;
+bar
+
+1: 2gbd+g+;8c+c++;bb+;
+2: b--;abf+;g#bf+;
+bar
+
+1: 2ac+e+a+ tie;8;ee+;
+2: b;2a;
+2 2: 2a-;4g-;
+bar
+
+1: dd+;ee+;ff+;
+2: f;e;d;
+2 2: 2.d-;
+bar
+
+1: 2.be+ tie;
+1 2: a;g#;f#;
+2: e-;b-;g#;
+bar
+
+1: be+;8b;c+;d+;g#;
+1 2: e;2s;
+2: d+;b;e;
+bar
+
+1: 2.a~;
+1 2: r;c;d;
+2: r;e;f;
+2 2: 2.a-~;
+bar
+
+rom above all: 0 "D.C. al Fine";
+1: 2.a;
+1 2: 2.c;
+2: 2.e;
+2 2: 2.a-;
+dblbar
+
+ifdef MIDI
+score time=4/4
+music
+THEME
+endif

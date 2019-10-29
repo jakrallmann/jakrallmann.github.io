@@ -1,0 +1,186 @@
+header
+	title (18) "Waltz No. 4"
+	title (4) " "
+	title "" "John A. Krallmann (1/1/05)"
+
+header2
+	title (12) "Waltz No. 4 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=2&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	packfact=1.3
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=120";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84, 64";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=64";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+1: r;d;f;
+2: r;;;
+bar
+
+1: 2.b;
+1 2: r;df;;
+2: b--;fc+;fb;
+bar
+
+1: 2.a;
+1 2: r;df;;
+2: d-;fc+;fb;
+bar
+
+1: g;b-c;b-d;
+2: e-;eg;;
+bar
+
+1: b-e;cf;8g;a;
+2: f-;fa;ea;
+bar
+
+1: dc+;db;da;
+2: b--;fc+;fb;
+bar
+
+1: a;4.g;16a;b;
+1 2: b-;;;
+2: e-;eg;dg;
+bar
+
+1: ge+;4.;8d+;
+2: c-;ec+;;
+bar
+
+1: 8d+;c+;4c+;8d+;e+;
+1 2: a;g;f;
+2: f-;eac+;;
+bar
+
+1: 2.bf+;
+1 2: r;en;f;
+2: d-;bd+;;
+bar
+
+1: e+;4.d+;8c+;
+2: c-;e+g+;;
+bar
+
+1: 2.b;
+1 2: r;b-e;;
+2: f-;g;;
+bar
+
+1: c+;d+;e+;
+2: f-;fa;efa;
+bar
+
+1: 2.f+;
+1 2: r;c+;b;
+2: d-;fd+;;
+bar
+
+1: 2.d+;
+1 2: r;a;g;
+2: g-;bd+;;
+bar
+
+1: 2d+;4c+;
+2: e-;gb;gbe+;
+bar
+
+1: 2ec+ tie;8;16g;a;
+2: f-;fa;;
+bar
+
+1: 2c+;4g;
+1 2: r;2e;
+2: f-;fa;;
+bar
+
+1: f;g;8d;e;
+2: f-;fa;;
+bar
+
+1: en;4.f;8;
+2: b--;db;;
+bar
+
+1: f;en;f;
+2: b--;db;;
+bar
+
+1: g;4.;8;
+2: e-;fb;eb;
+bar
+
+1: g;4.f;8f+;
+2: d-;fb;;
+bar
+
+1: 2.ge+;
+2: c-;gbe+;;
+bar
+
+1: 2gbe+f+;4g+;
+2: c-;gbe+;;
+bar
+
+1: 2.e+b+;
+1 2: g;f;g;
+2: f-;gbe+;;
+bar
+
+1: 2.e+a+c++;
+2: f-;ae+g+;ae+f+;
+bar
+
+1: 2d+b+d++;8enen+;ff+;
+2: b--;fbd+;;
+bar
+
+1: gg+;aa+;bb+;
+2: d-;fbd+;;
+bar
+
+1: aa+;2gg+;
+2: e-;gbe+;d-;
+bar
+
+1: 2.e+e++;
+2: c-;gbf+;gbe+;
+bar
+
+1: 2d+d++;8enen+;ff+;
+2: f-;fae+;;
+bar
+
+1: 2d+d++;8enen+;ff+;
+2: f-;fae+;;
+bar
+
+1: 2.bb+;
+2: b--;gbf+;g&be+;
+bar
+
+1: 2.bb+;
+octave above 1: 0.5 "8va" til 3;
+2: 2.fbd+;
+repeatend

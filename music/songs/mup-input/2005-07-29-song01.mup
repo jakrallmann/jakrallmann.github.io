@@ -1,0 +1,406 @@
+header
+	title (18) "Song Without Words (No. 1)"
+	title "" "John A. Krallmann (7/29-31/05)"
+
+header2
+	title (12) "Song Without Words (No. 1) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	key=3&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.2
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=110";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=78, 70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+
+1: 2egb;4;
+2: 2eb;4;
+bar
+
+1: 2dfb;4;
+2: 2db;4;
+bar
+
+1: 2ceb;4;
+2: 2ca;4;
+bar
+
+1: 2.dfb;
+2: 2.b-a;
+bar
+
+1: 2ceg;4;
+2: 2cg;4;
+bar
+
+1: 2ceg;4;
+2: 2b-g;4;
+bar
+
+1: f;g;cea;
+1 2: 2ce;4s;
+2: 2a-f;4;
+bar
+
+1: 2b-ef;4b-df;
+2: 2b-f;4;
+bar
+
+1: 2b-=db;4b-dg;
+2: 2g-f;4;
+bar
+
+1: 2b-ce;4;
+2: 2cg;4b-g;
+bar
+
+1: 2ceac+;4b-efb;
+2: 2a-ea;4g-eg;
+bar
+
+1: 2a-d&a;4d;
+2: 2.f-d&f;
+bar
+
+1: 2g-ceg;4c;
+2: 2.c-g-c;
+bar
+
+1: 2f-a-d&f;4g;
+2: 2.d&-a-d&;
+bar
+
+1: 2.g-ceng;
+2: 2.c-g-c;
+bar
+
+//
+staff 2 clef=treble
+music
+
+1: 2f+a+;4;
+2: 2fc+;4;
+bar
+
+1: 2e+f+a+;4;
+2: 2ec+;4;
+bar
+
+1: 2c+f+a+;4;
+2: 2da;4;
+bar
+
+1: a+;g+;f+;
+1 2: 2.bd+;
+2: 2.b-f;
+bar
+
+1: 2g+;4;
+1 2: 2.bnd+;
+2: 2.bn-fg;
+bar
+
+1: d+;e+;f+;
+2: 2.bn-fg;
+bar
+
+1: f+;g+;f+;
+1 2: 2.a;
+2: 2.cf;
+bar
+
+1: e+;c+;d+;
+1 2: 2.g;
+2: 2.ce;
+bar
+
+1: 2e+;4;
+1 2: 2.fc+;
+2: 2.a-e;
+bar
+
+1: d+;c+;b;
+1 2: 2.f;
+2: 2.b-d;
+bar
+
+1: 2g;4;
+2: 2ce;4b-d;
+bar
+
+staff 2 clef=bass
+music
+
+1: d;e;f;
+2: 2.ac+;
+bar
+
+1: 2cg;4c;
+2: 2.eg;
+bar
+
+1: d;c;b-;
+2: 2.b-f;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2g;4;
+2: 2ce;4b-d;
+bar
+
+1: g;f;e;
+2: 2.a-c;
+bar
+
+1: 2.cf;
+2: 2.c-a-;
+bar
+
+1: 2.fa;
+2: 2.f-d;
+bar
+
+1: 2.eng;
+2: 2.c-g-;
+bar
+
+staff 1 clef=treble
+staff 2 clef=treble
+music
+
+1: 2a+c++;4g+b+;
+2: 2e+f+;4d+e+;
+bar
+
+1: 2f+a+;4;
+2: 2c+e+;4bne+;
+bar
+
+1: f+;b+;a+;
+2: 2.b(&)d+;
+bar
+
+1: 2.g+;
+1 2: f+;e+;d+;
+2: 2.c+;
+bar
+
+1: c+;f+;e+;
+2: 2.fa;
+bar
+
+1: d+;c+;b;
+2: 2.b-a;
+bar
+
+1: 2.g~;
+2: e;f;e;
+2 2: 2.c;
+bar
+
+1: g;f;e;
+2: 2.b-d;
+bar
+
+1: f;e;~;
+2: 2.a-c;
+bar
+
+staff 2 clef=bass
+music
+
+1: e;d;e;
+2: 2.gb;
+bar
+
+1: c;b-;c;
+2: 2.fa;
+bar
+
+1: d;e;f;
+2: 2.b-f;
+bar
+
+1: d;e;d;
+1 2: 2.c~;
+2: 2.cg~;
+bar
+
+1: e;f;g;
+1 2: 2.c;
+2: 2.b-g;
+bar
+
+1: 2c;4;
+2: 2.a-ef tie;
+bar  
+
+1: c;b-;c;
+2: 2.a-ef;
+bar
+
+1: 2.e-c;
+2: 2.c-g-;
+bar
+
+score key=4&
+staff 2 clef=treble
+music
+
+1: 2c+e+;4;
+2: 2a;4gb;
+bar
+
+1: c+;d+;e+;
+2: 2.g&b;
+bar
+
+1: 2d+;4;
+2: 2.fa;
+bar
+
+1: d+;c+;b;
+2: 2.f&a;
+bar
+
+1: 2c+;4;
+2: 2ea;4e&&a;
+bar
+
+1: c+;b;a;
+2: 2.dfa;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2b;4a;
+2: 2.d+e+;
+2 2: 2g;4f;
+bar
+
+1: g;c+;d+;
+2: 2.d+e+;
+2 2: 2.e;
+bar
+
+1: 2e+;4;
+1 2: 2.e;
+2: b;a;g;
+2 2: 2.c;
+bar
+
+1: e+;d+;c+;
+1 2: 2.a;
+2: 2.c+;
+2 2: 2f;4e;
+bar
+
+1: d+;c+;a;
+1 2: 2.f;
+2: 2.b-a;
+bar
+
+1: 2b;4;
+1 2: f;2g;
+2: 2.b;
+2 2: 2e;4d;
+bar
+
+1: 2.ee+;
+2: a;b;a;
+2 2: 2.c;
+bar
+
+1: 2.c+;
+1 2: b;a;g;
+2: 2.fc+;
+bar
+
+1: 2.f;
+2: 2.abd+;
+bar
+
+1: 2e;4g;
+2: 2.gbd+;
+bar
+
+1:  2c;4f;
+2: 2.fa;
+bar
+
+1: 2c;4e;
+2: 2.eg;
+bar
+
+1: 2.cf;
+2: 2.df;
+bar
+
+1: 2e;4f;
+1 2: 2.b-;
+2: 2.eg;
+bar
+
+1: 2.cf;
+2: 2.a;
+2 2: 2f;4e;
+bar
+
+1: 2.df;
+2: 2.a;
+2 2: 2d;4c;
+bar
+
+1: 2.dnfa;
+2: a;g;f;
+2 2: 2.bn-;
+bar
+
+1: 2.ceng;
+2: g;a;b;
+2 2: 2.c;
+bar
+
+1: 2.cfan tie;
+2: 2.f-can tie;
+bar
+
+1: 2.cfa;
+2: 2.f-ca;
+bar
+
+2: 2.fb tie;
+2 2: 2.f-d tie;
+bar
+
+2: 2.f~b;
+2 2: 2.f-~d;
+bar
+
+2: 2.fan tie;
+2 2: 2.f-c tie;
+bar
+
+2: 2.fa;
+2 2: 2.f-c;
+endbar

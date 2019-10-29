@@ -1,0 +1,175 @@
+header
+	title (16) "Tone Poem (No. 80)"
+	title (14) " "
+	title "" "John A. Krallmann (May 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 80) - \%"
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.73
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: b;a#;d+;b;
+2: g-;d;2b;
+bar
+
+1: a;g;a;a#;
+2: c;g;2e+;
+bar
+
+1: b;a#;d+;b;
+2: g-;d;2b;
+bar
+
+1: a;g;e;g;
+2: c;g;d+;c+;
+bar
+
+1: 4.b;8a+;4g+;8f#;g;
+2: g-;d;b;d+;
+bar
+
+1: 4.b;16c+;b;4a;e;
+2: c-;g-;e;g;
+bar
+
+1: 4.g;8a;4d;c;
+2: d-;a-;f#;d;
+bar
+
+1: 4.c;16d;c;4b-;8a-;g-;
+2: g-;d;g;f;
+bar
+
+1: 4.d;8e;4c;8a;g;
+2: c-;g-;e;g;
+bar
+
+1: 4.a;8b;4g;fd+;
+2: g-;d;b;8a;g;
+bar
+
+//
+
+1: 4.fd+;8ge+;4ec+;8d+b&+;e+c++;
+2: c-;g-;e;g;
+bar
+
+1: 8d+b&+;4c+a+;8d+b+;4c+a+;af+;
+2: f-;c;a;c+e+;
+bar
+
+1: 8a+;4g+;8a+;4b&d+g+;gbd+f+;
+1 2: 2gd+;s;
+2: b&--;f-;d;d+;
+bar
+
+1: 8e+;4d+;8e+;c+;b;a;b;
+1 2: fb&;g;2e;
+2: c-;g-;e;c-;
+bar
+
+1: 8d&b&;4ca;8dnb;4ca;8g;f;
+1 2: 2.s;4a-;
+2: f-;c;f;e&;
+bar
+
+1: 8c+;4b&;8c+;4f;g;
+1 2: 2d;b&-;
+2: b&--;f-;d;d&;
+bar
+
+1: 8d&b&;4ca;8b&-g;2c;
+1 2: 2s;8g-;4.a-;
+2: f-;c;f;c;
+dblbar
+
+score key=4&
+music
+
+1: 8d;e;f;g;a;b;c+;d+;
+1 2: 2f-;s;
+2: b--;f-;d;b;
+bar
+
+//
+
+1: 2c+~;8;;d+;c+;
+1 2: 8en;f;g;a;2b;
+2: c-;g-;c+;;
+bar
+
+1: 1d+;
+1 2: 8c+;b;a;g;f;g;a;b;
+2: b--;f-;d+;g;
+bar
+
+1: 1ac+;
+1 2: 8g;f;g;e;c;e;;g;
+2: f--;c-;a;g;
+bar
+
+1: 4.a;16b;a;8g;4e;8g;
+1 2: 2df;b-;
+2: b--;f-;e-;b-;
+bar
+
+1: 2.a-cf;8b;c+;
+2: f-;c;2f-;
+bar
+
+1: 8e+;4d+;8c+;4d+;8c+;b;
+1 2: 2fb;fa;
+2: b--;fad+;fbd+;fad+;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8ge+;4fd+;8ec+;8b;c+;d+;e+;
+1 2: 2s;4e;g;
+2: e-;b-;d;b-;
+bar
+
+//
+
+1: 1c+e+;
+1 2: 8b;4a;8g;4e;g&;
+2: a--;e-;c;a-;
+bar
+
+1: 8g&e+;4fd+;8ge+;4fd+;<<staff clef=treble>>bn-fa;
+2: d-;a-;d;d-;
+bar
+
+1: 8a;4g&;8d+;4;8e+;f&+;
+1 2: 2b-d;f&;
+2: g&-;d;g&;b;
+bar
+
+1: 2g&c&+g&+;ac+a+;
+2: 2e-c&g&;f&-c&a;
+bar
+
+1: 1c&+e+c&++;
+2: 1c&-g&-e;
+endbar

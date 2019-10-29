@@ -1,0 +1,150 @@
+header
+	title (16) "Song Without Words (No. 54)"
+	title "" "John A. Krallmann (8/19/12)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.95
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=78";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=82";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1-2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2.s;8.g;16d+;
+2: 2.s;4r;
+bar
+
+1: 2.e+;{8d+;c+;b;}3;
+2: c;a&c+e+;gc+e+;a-;
+bar
+
+score
+	time=7/4
+	beamstyle=4,4,4,4,4,4,4
+music
+
+1: 8.c+;16e;1a~;4;8b;g;
+2: eac+;f-;ac+e+;gbd+;dgb;2fac+;
+bar
+
+score
+	time=4/4
+music
+
+1: 2.a;8.e;16f;
+2: f-;ac+e+;2cfa;
+bar
+
+1: 2g~;8;;c+;d+;
+2: g-;fac+;2gbd+;
+bar
+
+1: 8f+;4e+;8g+;;g;b;c+;
+2: c-;a&c+e+;gc+e+;f#anc+e+;
+bar
+
+1: 8e+;4.d+~;;8b;
+2: f(n)ac+e+;;fac+d+;;
+bar
+
+1: 8d+;4.c+~;4;8b;a;
+2: egc+;;e&gc+;;
+bar
+
+
+1: 8g;a;4b;4.e+;8g;
+2: dgb;;c#ea;;
+bar
+
+1: 8g;4a;8g;4.d+;8g;
+2: c(n)e&a;;b-dg;;
+bar
+
+1: 8g;4a;8g;c+;e;4f;
+2: b&-dg;;a-cg;a-cf;
+bar
+
+1: 2.b&;8c+;b;
+2: g-df;;g-d&f;;
+bar
+
+1: 1a;
+1 2: 4.c;8d;2a-;
+2: f-cg;;f-cf;;
+bar
+
+1: 1a;
+1 2: 4.d;8f;2g-;
+2: b&-fa;;b-fb&;;
+bar
+
+1: 1f+;
+1 2: 4.a;8c+;2f;
+2: f-cg;;f-ca;;
+dblbar
+
+score key=5&
+music
+
+1: 8f+;e+;d+;c+;4.f;8a;
+2: d-a-f;a-df;b-df;a-df;
+roll 2: 1;
+bar
+
+1: 2b~;8;d+;e+;d+;
+1 2: 8a;g;f;e;4d;b;
+ifdef MIDI
+  2: a;b;s;gd+f+;
+else
+  2: a;b;(d+);gd+f+;
+endif
+2 2: 2.g-d;4s;
+bar
+
+1: 8g+;f+;e+;d+;4.a;8c+;
+1 2: a;f;8e;f;4d;
+2: d-a-e;a-df;b-fa;a-fa;
+bar
+
+1: 2b~;8;d+;c+;b;
+1 2: 8a;g;f;e;4d;;
+ifdef MIDI
+ 2: a;b;s;g-e;
+else
+ 2: a;b;(d+);g-e;
+endif
+2 2: 2.g-d;4s;
+bar
+
+1: 2a~;8;f;d;f;
+1 2: 8e;f;c;e;2d;
+2: a;c;2b-f;
+2 2: 1f-;
+bar
+
+1: 2g~;8;gg+;f+;e+;
+1 2: 8d;e;b-;d;4c;ga;
+2: g;d;a-g;eac+;
+2 2: 2e-b-;s;
+bar
+
+1: 1dfad+;
+2: 8a-;b-;d;e;2f;
+2 2: 1d-;
+endbar

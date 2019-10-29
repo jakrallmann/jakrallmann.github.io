@@ -1,0 +1,195 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 17"
+	title "" "John A. Krallmann"
+	title " " "(March 8 and 15, 2015)"
+
+header2
+	title (12) "Nocturne (No. 17) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.94
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=60";
+midi 1: 0 "onvelocity=90,74";
+midi 2: 0 "onvelocity=68";
+
+rom above all: 1 "Adagio (\(smup4n) = 60)";
+1: d+;b+;8a+;g+;f+;d+;
+2: g-;d;e-;b-;
+bar
+
+1: 8e+;d+;c+;g;2d+;
+2: c-;g-;8b--;a;g;d;
+bar
+
+1: 8c++;b+;a+;e+;b+;g+;f+;e+;
+2: a-;e;e-;b-;
+bar
+
+1: 8f+;e+;d+;c+;4d#+;8e+;f+;
+2: c-;g-;8b--;c+;b;a;
+bar
+
+1: 8g#+;fn++;e++;d++;e++;d++;c++;b+;
+2: e-;b-;g#;d+;
+bar
+
+1: 8d++;c++;b+;a+;4.e+;8g+;
+2: a-;e;8b;c+;a;e;
+bar
+
+1: 8f+;g+;a+;c+;4.b;8f+;
+2: b--;f;8d#+;a;b;d#;
+bar
+
+1: 8a+;g+;f+;e+;4.b;8g;
+2: e-;b-;8a;g;f;e;
+bar
+
+1: 8a;b;c+;b;4.a;8g;
+2: c-;e;8a;b;c+;e+;
+bar
+
+1: 8f;g;a;g;2f;
+2: b--;c#;8d#;a-;g-;f-;
+bar
+
+1: 8g#;a;b;a+;2g#+;
+2: e-;b-;8f;g#;e+;f+ =f;
+bar
+
+1: 8b;c+;d+;e+;4.d+;8;
+1 2: 2g =g;s;
+dotted line (f.x+2, f.y) to (g.x-2, g.y)
+2: g-;d;8b;d+;g+;f+;
+bar
+
+1: 8e+;f+;g+;a+;4.e++;8c++;
+2: c-;e;8c+;g;a;e;
+bar
+
+1: 8d++;c++;b+;a+;4.;8d#+;
+2: b--;f;8c+;b;a;f;
+bar
+
+1: 8a+;g+;f+;e+;2b;
+2: e-;b-;8f;g#;e+;d+;
+bar
+
+1: 8c+;d+;e+;c+;4.a;8e;
+2: a-;e;8b;c+;a;g;
+bar
+
+1: 8a;b;c+;b;4a;f+;
+2: d-;f;8c+;d+;b;a;
+bar
+
+1: 8g+;a+;b+;g+;4.e+;8f+;
+2: e-;b-;8g;a;b;d;
+bar
+
+1: 8g+;a+;b+;g+;2e+;
+2: c-;e;8g;a;b;e;
+bar
+
+1: 8c++;d++;e++;c++;4.a+;8g+;
+2: a--;e;8b;c+;a;e;
+bar
+
+1: 8f+;g+;a+;g+;4.f+;8d+;
+2: d-;f;8c+;d+;b;a;
+bar
+
+1: 8g+;a+;b+;f+;4.e+;8f+;
+2: 8e-;b-;g;a;f+;g+;e+;d-;
+bar
+
+1: 8g+;a+;b+;g+;4.e+;8c+;
+2: 8c-;g;a;b;c+;d+;e+;g+;
+bar
+
+1: 8af+;gg+;fa+;gg+;2f+;
+1 2: 2s;8c+;b;a;f;
+2: 8b--;a-;d#;e;b--;f;d;b-;
+bar
+
+1: 8d+g#+;fn+d++;e+c++;d+b+;ed+;4.ac+;
+2: 8e-;b-;g#;e-;a--;e;d;c;
+bar
+
+
+1: 8b;a;8.d+;16a;2g#b;
+1 2: 8g;fn;e;d;f;e;d;b-;
+2: 8fn-;c;a;c;e-;b-;f;g#;
+bar
+
+1: 8ec#+;b&g+;afn+;ge+;ec+;4.fnd+;
+2: 8a--;a-;e;c#+;d-;a-;e;d;
+bar
+
+1: 8c+;b&;a;b;2a;
+1 2: e;d;8b-;c#;fn;e;
+2: 8g-;d;b&;d;a-;e;a;g;
+dblbar
+
+score key=2#
+music
+
+1: 8f;g;a;b;2a;
+1 2: 2d;8c;e;d;c;
+2: 8d-;a-;f;a-;f-;d;a;d;
+bar
+
+1: 8b;c+;d+;e+;g+;f+;e+;d+;
+1 2: d;g;a;8g;f;
+2: 8g-;d;b&;g;d-;a-;e;f;
+bar
+
+1: 8b&;cn+;d+;e+;2f+;
+1 2: d;8a;g;2f;
+2: 8g-;d;b&;g;d-;a-;e;f;
+bar
+
+1: 8a+;g+;f+;e+;g+;4.f+;
+1 2: 2s;a;
+2: 8g-;d;b;d+;d-;a-;e;f;
+bar
+
+1: 8e+;d+;b&;g;2fa;
+2: 8g-;d;g;b&;d-;a-;g;f;
+bar
+
+1: 8b&;cn+;d+;e+;g+;4.f+;
+1 2: d;8a;g;2a;
+2: 8g-;d;b&;g;d-;a-;e;f;
+bar
+
+1: 8e+;d+;b&;eg;2fa;
+2: 8g-;d;g;b&;d-;a-;f;a-;
+bar
+
+1: 1f;
+1 2: 8e;d;c;a-;[with>]b&-;4a-;8g-;
+2: 8d-;a-;f;a-;d-;a-;f;a-;
+bar
+
+1: 1f-a-;
+2: 1d-a-;
+endbar

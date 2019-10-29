@@ -1,0 +1,252 @@
+header
+	title (18) "Nocturne"
+	title "No. 49"
+	title "" "John A. Krallmann"
+	title " " "(Nov 25, 2018)"
+
+header2
+	title "Nocturne No. 49 - \%"
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	time=4/4
+	beamstyle=4,4,4,4
+	measnum=y
+	vscheme=2f
+	scale=0.96
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1: 0 "channel=11"; 0 "onvelocity=90,76";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=76";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=72";
+
+define TH
+1: b;d;4.g;16g;a;
+2: g-;d;b;d;
+bar
+
+1: b;2c+;4b;
+1 2: d;e;f;d;
+2: g#-;e;b;e;
+bar
+
+1: 2b;a;
+1 2: c;e;c;e;
+2: a-;e;b;a;
+bar
+
+1: 2g;f;
+1 2: b-;c;2;
+2: f-;c;g;a;
+bar
+
+1: 1f;
+1 2: a-;b-;c;a-;
+2: d-;a-;e;f;
+bar
+
+1: 2.g;4f;
+1 2: b-;c;d;b-;
+2: g-;d;f;g;
+bar
+
+1: 1e;
+1 2: b-;c;b-;a-;
+2: c-;g-;e;a-;
+bar
+
+1: d;c;a-;c;
+1 2: 2a&-;f-;
+2: f-;c;d;c;
+bar
+
+1: f-a&-d;e-e;2c+;
+2: c-;g-;d;e;
+bar
+
+1: d;c;4.d;8e;
+1 2: 2a&-;f-;
+2: f-;c;d;c;
+bar
+
+1: 1e;
+1 2: g-;d;c;g-;
+2: c-;g-;e;g-;
+bar
+
+1: 1g-g;
+1 2: d;e;d;c;
+2: c-;g-;e;g-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1g;
+1 2: d;e;d;c;
+2: c-;g-;c-;g-;
+boldital between 1&2: 1 "pp";
+bar
+
+1: 1g;
+1 2: d;e;d;c;
+2: c-;g-;c-;g-;
+bar
+
+1: 1de;
+2: c-;a-;g-;a-;
+bar
+
+1: 2.de;<<staff clef=treble>>4eg;
+2: c-;a-;g-;a-;
+boldital between 1&2: 4 "mf";
+bar
+
+1: 2.eg;4dc+;
+2: c-;g-;d;e;
+bar
+
+1: 2.ec+;4ge+;
+2: g;a;b;c+;
+bar
+
+1: e+;f+;4.d+;8c+;
+1 2: g;a;f;e;
+2: f-;c;a;f;
+bar
+
+1: 2.d+;4a;
+1 2: f;e;d;c;
+2: d-;a-;f;a;
+bar
+
+1: ca;2b-g;4b-f;
+2: g-;d;a;g;
+bar
+
+1: ca;2b-g;4a-f;
+2: g-;d;a;g;
+bar
+
+1: a-f;2g-e;4f#-d#;
+2: c-;g-;e;g-;
+bar
+
+1: 1g-e;
+2: c-;g-;e;g-;
+bar
+
+1: bg+;2af+;4g#e+;
+2: f-;c;a;c;
+bar
+
+1: 1af+;
+2: d-;a-;g;f;
+bar
+
+1: a&f+;2ge+;4fd+;
+2: f-;d;a&;d+;
+bar
+
+1: 2.ge+;4ec+;
+2: c-;g-;d;e;
+bar
+@
+TH
+
+score time=6/4
+ beamstyle=4,4,4,4,4,4
+music
+
+1: ec+;2ca tie;;8db;ec+;
+2: f-;c;g;a;2f;
+bar
+
+1: db;2b-g tie;;8ca;db;
+2: g-;d;a;g;2d;
+bar
+
+1: 1.a;
+1 2: r;;ce;2;4b-d;
+2: a-;e;b;;2a;
+bar
+
+1: 1.a;
+1 2: r;;ce;2;4df;
+2: a-;e;b;;2a;
+bar
+
+1: 2.e+~;2;4f+;
+1 2: r;;ac+;;2bd+;
+2: a-;e;b;2;4e;
+bar
+
+1: 1.e+;
+1 2: r;;ac+;;2bd+;
+2: a-;e;b;2;4e;
+bar
+
+1: 1.a+;
+1 2: r;;d+f+;;c+e+;bd+;
+2: a-;e;b;2;4e;
+bar
+
+define N
+1: 1.a;
+1 2: r;;df;;ce;b-d;
+2: 2a-;4e;2;4;
+bar
+@
+N
+N
+
+1: 2a-c;4e;;d;c;
+1 2: 2.s;a&-;
+2: 2.a-e;e-b-;
+bar
+
+score time=4/4
+music 
+
+1: 1a-;
+2: 1a-;
+dblbar 
+
+score transpose=up major 2
+music
+
+TH
+
+define P
+1: fd+;2e&c+;4fd+;
+2: a&-;e&;a&;c+;
+bar
+@
+P
+P
+
+1: 1fd+;
+2: {2c-;g-;e;}3,1;
+bar
+
+1: 1ge+;
+2: 1c+;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1e;
+2: 1c-g-;
+endbar 

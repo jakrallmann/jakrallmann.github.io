@@ -1,0 +1,190 @@
+header
+	title (18) "Lullaby No. 30"
+	title (10) " "
+	title "" "John A. Krallmann (5/18/04)"
+
+header2
+	title (12) "Lullaby No. 30 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	key=5#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,24
+	staffscale=0.9
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=98";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=86, 70";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+1: 2.g;8f;e;
+1 2: r;c;2;
+2: r;e;2;
+2 2: 1an-;
+bar
+
+1: 2.f;8e;d;
+1 2: r;cn;2;
+2: r;e;2;
+2 2: 1an-;
+bar
+
+1: 2.e;8a-;b-;
+1 2: r;b-;2;
+2: r;e;2;
+2 2: 1g-;
+bar
+
+1: 2.d;8cx+;d#+;
+1 2: r;8c;b-;2a-;
+2: r;d;;;
+2 2: 1gn-;
+bar
+
+1: 2.c+;8f+;e+;
+1 2: 2.e;4g;
+2: a;8c+;b;2a;
+2 2: 2.g(#)-;4d;
+bar
+
+1: 2.c+;8b;a;
+1 2: 2.e;4;
+2: a;8c+;b;4a;g;
+2 2: 2.g-;4c;
+bar
+
+midi all: 1 "tempo=94";
+1: g;8b;a;4g;f;
+1 2: d;e;2d;
+2: 2.b;4a;
+2 2: d;cx;2d;
+bar
+
+1: d;;4.g-;8b-;
+1 2: b-;;f-;e-;
+2: d;;2b-;
+2 2: g-;f-;2e-;
+bar
+
+1: d;f;4.g;8e;
+1 2: 2b-;;
+2: 2d;c;
+2 2: 2f-;e-;
+bar
+
+1: 2.c;4f;
+1 2: 2b-;a-;
+2: c;d;2e;
+2 2: 1f-;
+bar
+
+1: 2.b;8a;b;
+1 2: 1d;
+2: g;a;2b;
+2 2: 2.g-;4f-;
+bar
+
+1: 2.g;8a;b;
+1 2: 1b-;
+2: f;e;2b-;
+2 2: 2.e-;4d-;
+bar
+
+1: 2.e+;8d+;c+;
+1 2: 2g;f;
+2: r;b-;a-;e;
+2 2: 1c-;
+bar
+
+1: 2.f+;8e+;d+;
+1 2: r;c+;2b;
+2: r;b-;2an;
+2 2: 1d-;
+bar
+
+1: b+;a+;g+;8a+;g+;
+1 2: g+;f+;e+;;
+2: g;a;b;c;
+2 2: 1e-;
+bar
+
+rom above all: 1 "gradually slower and softer to the end";
+midi all: 1 "tempo=92";
+1: 2f+;b;
+1 2:8c+;b;4.a;8f;4g;
+2 2: 2d-;e-;
+bar
+
+1: e+;d+;e+;8b;c+;
+1 2: 2g;;
+2 : 2c-;b--;
+bar
+
+midi all: 1 "tempo=88";
+1: 2c+;cx+;
+1 2: 1ef;
+2 2: 1a--;
+bar
+
+1: d+;b;;c+;
+1 2: 2f;cg;
+2 2: 2b--;e-;
+bar
+
+1: 2c+;b;
+1 2: 1d;
+2 2: 1b--;
+bar
+
+midi all: 1 "tempo=82";
+1: d+;b;;c+;
+1 2: 2g;c;
+2 2: 1e-;
+bar
+
+1: 1d =d f+;
+1 2: 2c;b-;
+2 2: [pad 5] 1b-- =b;
+medium curve (b.x - 5, b.y) to (d.x - 3, d.y) bulge 2
+bar
+
+1: c+;b;;;
+1 2: 2.g;4gn;
+2: 1b-;
+2 2: 1e-;
+bar
+
+1: 1f+;
+1 2: 1f;
+2: 2c;d;
+2 2: 1b--;
+bar
+
+midi all: 1 "tempo=52"; 3 " tempo=44";
+1: g;b;e+;b+;
+2: 2g;c;
+2 2: 1e-;
+bar
+
+midi all: 1 "tempo=38";
+1: 1b+;
+1 2: 2e+;d+;
+2: 1f+;
+2 2: 1b;
+endbar

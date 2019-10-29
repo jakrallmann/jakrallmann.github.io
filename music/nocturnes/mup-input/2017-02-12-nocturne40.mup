@@ -1,0 +1,166 @@
+header
+	title (18) "Nocturne"
+	title "No. 40"
+	title "" "John A. Krallmann"
+	title " " "(February 12, 2017)"
+
+header2
+	title "Nocturne No. 40 - \%"
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=1#
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	scale=0.87
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal below 1,2: 1;4; endif @
+
+midi all: 0 "tempo=56";
+midi 1: 0 "channel=11"; 0 "onvelocity=102";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=92";
+midi 2: 0 "channel=13"; 0 "onvelocity=65";
+
+midi 1 1-2: 0 "parameter=10,74";
+midi 2: 0 "parameter=10,54";
+midi 1-2 1-2: 0 "parameter=91,70";
+
+rom above 1: 0 "Molto expressivo ( \(smup4n)\(smdot) = 40 )";
+1: {4b;e+;}2,4.;{[with>]f+;e+;}2,4.;
+2: e;b;f+;g+;f+;e+;
+P
+bar
+
+1: {4b;e+;}2,4.;{[with>]f+;e+;}2,4.;
+2: d;b;f+;g+;f+;b;
+P
+bar
+
+1: {4b;e;}2,4.;4e~;16;32a-;b-;
+2: c;g;d+;c+;b;g;
+P
+bar
+
+1: 4.f~;8;8.e;16f;
+2: b-;f;c#+;4.d#+;
+P
+bar
+
+1: 4.g#~;8;8.e;16g;
+2: e-;b-;f;4.g#;
+P
+bar
+
+1: 4.g(n)~;8;c;16a;b;
+2: c-;g-;f;4.e;
+P
+bar
+
+1: 4.g#~;8;b-;;
+2: e-;b-;f;4.g#;
+P
+bar
+
+1: 32b-;a-;16b-~;4~;8;b;;
+2: e-;b-;f;4.g#;
+P
+bar
+
+1: 32b;a;16b~;8;g+~;;16f+;e+;d+;b;
+2: g-;d;a;b;d+;e+;
+P
+bar
+
+1: 2.b;
+1 2: {4f;g;}2,4.;{f;e;}2,4.;
+2: e-;b-;f;b-;f;b-;
+P
+bar
+
+1: 2.c+;
+1 2: {4g;a;}2,4.;{g;e;}2,4.;
+2: a-;e;c+;e;b;a-;
+P
+bar
+
+1: 4.a;{4g;f;}2,4.;
+1 2: {4e;f;}2,4.;4.b-a-;
+2: b--;f-;d#;b-;d;b--;
+P
+bar
+
+1: {4a-f;g-e;}2,4.;{ca;a-f;}2,4.;
+2: e-;b-;f;e;a-;c;
+P
+bar
+
+1: 4.b-g# tie;8;8.e;16f;
+2: e-;b-;f;4.g#;
+P
+bar
+
+1: 4.b-g# tie;8;8.e;16f;
+2: e-;b-;f;4.g#;
+P
+bar
+
+1: 4.g(n);8ec+;8.db;16ca;
+1 2: 4.s;f;
+2: c-;g-;e;a--;e;a;
+P
+bar
+
+1: 2.eb;
+1 2: {4a-;b-;}2,4.;{a-;b-;}2,4.;
+2: e-;b-;g;b-;g;b-;
+P
+bar
+
+1: [with>]4.e+;[];
+1 2: 8.c+;16b;8a;8.c+;16b;8a;
+2: a-;e;c+;a-;e;c+;
+P
+bar
+
+1: 4.b;;
+1 2: [with>]8.g;16f;8e;[with>]8.g;16f;8e;
+2: e-;b-;g;e-;b-;g;
+P
+bar
+
+1: 8.ec+;16db;8ca;8.ec+;16db;8ca;
+2: a--;e;a;a--;e;16a-;g-;
+P
+bar
+
+1: 8.cfa;16b-g;8a-f;8.cfa;16b-g;8a-f;
+2: b--;f-;d#;b--;f-;d;
+P
+bar
+
+midi all: 1 "tempo=52 to 36" til 1m+6;
+ital between 1&2: 1 "rit.";
+1: 4.a-f;;
+2: e-;a-;b-;c;b-;a-;
+P
+bar
+
+1: 4.b-g#;g#-b-g;
+2: 4.e-b-;;
+boldital between 1&2: 4 "pp";
+midi 1: 4 "onvelocity=70";
+midi 2: 4 "onvelocity=35";
+ifdef MIDI pedal below 1,2: 1;4;7*; endif
+endbar

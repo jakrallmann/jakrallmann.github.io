@@ -1,0 +1,115 @@
+header
+	title (16) "Song Without Words (No. 33)"
+	title "" "John A. Krallmann (6/27/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	packfact=2
+	staffsep=15
+	scoresep=10,22
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=112";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+
+1: 2g;4;
+2: 2.e;
+bar
+
+1: 2b;4;
+1 2: f;e;f;
+2: 2.d;
+bar
+
+1: e+;d+;c+;
+1 2: 2.g;
+2: 2.c;
+bar
+
+1: 2.d+;
+1 2: a;g;d;
+2: 2.b-;
+bar
+
+1: c+;g;a;
+1 2: 2.e&;
+2: 2.a-;
+bar
+
+1: 2b;8f;g;
+1 2: b-;c#;d;
+2: 2.d-;
+bar
+
+1: a;g;f;
+1 2: 2c;4d;
+2: 2a-;4d-;
+bar
+
+1: 2.g;
+1 2: b-;c;d;
+2: 2g-;4fn-;
+bar
+
+score key=2&
+music
+
+1: 2c+;4b;
+1 2: g;2c;
+2: 2.en-;
+bar
+
+1: b;2a;
+1 2: c;8d;e;4;
+2: 2.f-;
+bar
+
+1: 2d+;4c+;
+1 2: a;8d;en;4f#;
+2: 2.f#-;
+bar
+
+1: c+;2b;
+1 2: 2.d;
+2: 2g-;4f-;
+bar
+
+1: e+;d+;c+;
+1 2: 2.g;
+2: 2c-;8d-;e-;
+bar
+
+1: 2d+;4g;
+1 2: 8g;a;4b;b-;
+2: 2d-;4;
+bar
+
+1: 2d;4;
+1 2: 8b-;c;4b-;8en-;f#-;
+2: 2d-;4;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g-;
+endbar
+

@@ -1,0 +1,324 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 14"
+	title "" "John A. Krallmann"
+	title " " "(December 21-28, 2014)"
+
+header2
+	title (12) "Nocturne (No. 14) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scale=0.77
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=56";
+midi 1: 0 "onvelocity=86";
+midi 1 2: 0 "onvelocity=72";
+midi 2: 0 "onvelocity=60";
+
+
+rom above all: 1 "Lento";
+1: r;8;g;c+;dn+;
+2: c;g;;
+bar
+
+1: 8e+;g+;4.e+;8c+;
+2: b-;g;;
+bar
+
+1: 8e+;g+;4.e+;8a~;
+2: a-;g;;
+bar
+
+1: 4.a;8g;e+;dn+;
+2: g-;g;;
+bar
+
+1: 8en+;b+;a+;g+;8.f+;16e+;
+2: c;g;;
+bar
+
+1: 4.g+;16b+;a+;8c+;g+;
+2: f-;g;a;
+bar
+
+1: 8a+;16b+;a+;4.c+;8f+;
+2: e-;g;a;
+bar
+
+1: 8g+;16b+;a+;4.d+;8f;
+2: d-;f;a;
+bar
+
+1: 8d+;16c+;b;4g+~;16;en+;d+;c+;
+2: c-;en;b;
+bar
+
+1: 16b+;a+;g+;a+;4.f+;8c+;
+2: f-;g;a;
+bar
+
+1: 16b+;a+;g+;a+;4.c+;8f+;
+2: e-;g;a;
+bar
+
+1: 16b+;a+;g+;a+;4.d+;8b+;
+2: d-;f;a;
+bar
+
+1: 16d++;c++;b+;c++;4g+;16bn;c+;f+;g+;
+2:c-;en;b;
+bar
+
+1: 16an;g&+;f+;e+;4.f+;16bn;c+;
+2: f-;an;e+;
+octave above 1: 0.5 "8va" til 1m+3;
+bar
+
+1: 16e+;d+;c+;d+;4.f;8b;
+2: b--;c+;d+;
+bar
+
+1: 8d+;c+;f#+;4g+;8c+;
+2: c-;en;b;
+bar
+
+1: 16b+;a+;g+;a+;8g+;f+;bn;c+;
+2: f-;a;c+;
+bar
+
+1: 8e+;f+;4.d+;16en;f;
+2: b-;f;a;
+bar
+
+1: 8c+;e+;c+;4b;16en;f;
+2: e-;g;d+;
+bar
+
+1: 16g;g+;f+;e+;4.c+;16e+;en+;
+2: a--;g;e;
+bar
+
+1: 16f+;e++;d++;c++;8.d++;16f+;8.;16en+;
+2: d-;f;d+;
+bar
+
+1: 16e+;f+;e+;dn+;8.e+;16b+;8.e+;16d+;
+2: c-;g-;e;
+bar
+
+1: 16d+;e+;f+;e+;8d+;c+;8.b;16f;
+2: 4b--;f-;d;
+bar
+
+1: 16en+;f+;g+;a+;8c++;b+;a+;g+;
+2: c-;g-;en;
+bar
+
+1: 16an+;b+;c++;d++;8f++;e++;d++;a+;
+2: f-;c;an;
+bar
+
+1: 8c++;16d++;c++;8b+;f+;c+;b;
+2: b--;c;d;
+bar
+
+1: 8a;g&;4.e+;16g&+;f+;
+2: e-;b-;g&;
+bar
+
+1: 16e+;d+;8c+;16;b;8a;16;g&;f;e;
+2: a--;e-;c;
+bar
+
+1: 2.d+;
+1 2: 8f;a;16;g&;f;e;4f;
+2: d-;a-;d;
+mussym above all: 3 "ferm";
+dblbar
+
+newscore
+
+score
+	transpose=down major 2
+	packfact=0.7
+music
+
+/// second time
+
+1: 8r;g;;;16c+;dn+;8e+;
+2: 8c;g;4;8;;
+bar
+
+1: 16e+;f+;g+;f+;4.e+;16e+;c+;
+2: 8b-;g;;;4;
+bar
+
+1: 16e+;f+;g+;f+;4.e+;8a~;
+2: 8a-;g;;;4;
+bar
+
+1: 16a;b;a;g;8;;8.e+;16dn+;
+2: 8g-;g;;;4;
+bar
+
+1: 16en+;b+;a+;g+;a+;g+;f+;e+;8.f+;16e+;
+2: 8c;g;;;4;
+bar
+
+// 35
+1: 8g+;16b+;a+;8g+;f+;16c+;f+;g+;a+;
+2: 8f-;f;g;a;8.;16g;
+bar
+
+1: 8g+;16b+;a+;8g+;f+;16c+;f+;g+;a+;
+2: 8e-;f;g;a;8.;16g;
+bar
+
+1: 8g+;16b+;a+;4d+~;16;f;g;a;
+2: 8d-;f;;g;4a;
+bar
+
+1: 16d+;c+;b;a;4g+~;16;en+;d+;c+;
+2: 8c-;g;en;f;g;b;
+bar
+
+// 39
+1: 16b+;a+;g+;a+;8.g+;16f+;c+;f+;g+;a+;
+2: 8f-;g;;a;g;f;
+bar
+
+1: 16b+;a+;g+;a+;8.c+;16en+;f+;g+;a+;b+;
+2: 8e-;f;g;a;;16g;f;
+bar
+
+//
+1: 16b+;a+;g+;a+;4d+~;16;f+;g+;a+;
+2: 8d-;e;f;g;8.a;16d;
+bar
+
+1: 16d++;c++;b+;c++;en+;f+;8g+;16bn;c+;f+;g+;
+2: 8c-;en;b;c+;;c;
+bar
+
+// 43
+1: 16an;g&+;f+;e+;4f+;16bn;c+;f+;e+;
+2: 8f-;g;16an;e+;f+;c+;8f;f-;
+octave above 1: 1 "8va" til 1m+2.9;
+bar
+
+1: 16g&+;f+;e+;d+;8.f;16d;b;c+;d+;e+;
+2: 8b--;f-;16e+;d+;c+;b;8g&;e;
+bar
+
+1: 16d+;c+;bn;c+;f#+;8g+;16c+;8.d+;16c+;
+2: 8c-;en;g;b;c+;en+;
+bar
+
+1: 16b+;a+;g+;a+;8.g+;16f+;16bn;c+;f+;e+;
+2: 8f-;c;g;a;c+;an-;
+bar
+
+// 47
+1: 16e+;f+;d+;c+;8.d+;16f;e;g;a;b;
+2: 8b-;f;b;a;g;f;
+bar
+
+1: 16c+;e+;8c+;16c+;b;an;b;8;16en;f;
+2: 8e-;e;g;b;4d+;
+bar
+
+1: 16g;g+;f+;e+;8.d+;16c+;d+;e+;a+;g+;
+2: 8a--;c;g;a;e;c;
+bar
+
+1: 16f+;e++;d++;c++;d++;c++;b+;a+;b+;a+;d+;f+;
+2: 8d-;a-;f;a;d+;f;
+bar
+
+// 51
+1: 16e+;f+;e+;dn+;8e+;16c++;b+;8.e+;16c+;
+2: 8c-;e;g;e;c;g-;
+bar
+
+1: 16d+;e+;f+;e+;8.d+;16c+;b;a;g;f;
+2: 8b--;f-;b-;a-;d;d-;
+bar
+
+1: 16en+;f+;g+;a+;c++;d++;b+;c++;a+;b+;g+;a+;
+2: 8c-;g-;en;g;e;c;
+bar
+
+1: 16an+;b+;c++;d++;f++;e++;d++;c++;d++;c++;a+;f+;
+2: 8f;c;g;an;c+;e+;
+bar
+
+// 55
+1: 8.c++;32e++;d++;16c++;b+;f+;c+;;b;f;b;
+2: 8b--;f-;c;d;b-;a-;
+bar
+
+1: 16a;g&;f;g;4.e+;16g&+;f+;
+2: 8e-;b-;f;g&;b;e+;
+bar
+
+1: 16e+;d+;c+;a;d+;c+;a;e;a;g&;f;e;
+2: 8a--;e-;a-;c;;g&;
+dblbar
+
+score
+	time=2/4
+	beamstyle=4,4
+music
+
+1: 2d+;
+1 2: 8f;a;f;a;
+2: 8d-;a-;f;c-;
+bar
+
+1: 2d+;
+1 2: 8f;b;f;b;
+2: 8b--;f-;c;d;
+bar
+
+1: 8f+;4.e+;
+1 2: 8g&;b;g;b;
+2: 8e-;b-;f;g&;
+bar
+
+1: 8d+;c+;8.b;16c+;
+1 2: 2e;
+2: 8a-;e;c+;a;
+bar
+
+1: 2d+;
+1 2: 8f;a;f;a;
+2: 8d-;a-;f;a;
+bar
+
+1: 2d+;
+1 2: 8f;a;f;a;
+2: 8d-;a-;f;a;
+bar
+
+1: 2d+;
+1 2: 2f;
+2: 2d+;
+endbar

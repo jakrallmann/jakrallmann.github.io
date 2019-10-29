@@ -1,0 +1,144 @@
+header
+	title (16) "Song Without Words (No. 60)"
+	title (14) " "
+	title "" "John A. Krallmann (March 3, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4& minor
+	time=cut
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	packfact=1.25
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+
+1: 2.s;8f ph above;g;
+2: 2.s;4r;
+bar
+
+1: 4.a;8c+;4;8f+;g+;
+2: 1c+~;
+2 2: 2.f;4e;
+bar
+
+1: 4.a+;8g+;4f+ eph; 8c+ ph above;d+;
+2: 4c+;a;2b~;
+2 2: 1d;
+bar
+
+1: 4.e+;8c+;4a;g;
+2: 4b;g;f;e;
+2 2: 1c;
+bar
+
+1: 4b;c+;2b eph;
+1 2: f;4;g;
+2: 2.a;4b;
+2 2: d;e;
+bar
+
+1: 4e+ ph above;8c+;b;2a eph;
+1 2: 2g;4;8f;g;
+2: 4c+;g;2c+~;
+2 2: c;4f;e;
+bar
+
+1: 4a ph above;8g;f;2e eph;
+1 2: 4f;e;b-;c;
+2: 4c+;2a;4e;
+2 2: d;a-;
+bar
+
+1: 4df ph above;8d+;c+;2b eph;
+1 2: s;4f;g;
+2: 4a;f;d+;e+;
+2 2: b-;e;
+bar
+
+1: 4e+ ph; 8c+;b;4gb;fa eph;
+1 2: g;s;
+2: 4b;g;e+;c+;
+2 2: c;f;
+bar 
+
+1: 4f ph;a;g;b;
+1 2: d;e;
+2: b-a;cb;
+bar
+
+1: 4a;c+;b;d+;
+1 2: f;g;
+2: dc+;ed+;
+bar
+
+1: 4c+;g+;2f+;
+1 2: 1a~;
+2: fc+;4e+;d+;
+2 2: s;d~;
+bar
+
+1: 2.a+ eph;4f+ ph;
+1 2: 1a;
+2: 1a;
+2 2: 1d;
+bar
+
+1: 4e+;c+;2a eph;
+1 2: g;f;
+2: ca;da;
+bar
+
+1: f ph;e;
+1 2: d;c;
+2: b-a;cg;
+bar
+
+1: g;f eph;
+1 2: b-;a-;
+2: g;c;
+2 2: 1f-;
+bar
+
+1: g ph;f eph;
+1 2: b-;a-;
+2: d;c;
+2 2: 1f-;
+bar
+
+1: g ph;f eph;
+1 2: b-;a-;
+2: e;c;
+2 2: 1f-;
+bar
+
+1: g ph; f eph;
+1 2: b-;a-;
+2: d;c;
+2 2: 1f-;
+bar
+
+1: 4e ph;;a;g;
+1 2: 1g-;
+2: e-b-;db;
+bar
+
+1: 1f eph;
+1 2: 1a-;
+2: 1f-c;
+endbar

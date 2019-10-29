@@ -1,0 +1,855 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 16"
+	title (9) "(Theme and Variations)"
+	title "" "John A. Krallmann"
+	title " " "(Feburary 8, 2015)"
+
+header2
+	title (12) "Nocturne (No. 16) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=cut
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.9
+
+staff 1
+	timeunit=4
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1: 0 "onvelocity=88";
+midi 2: 0 "onvelocity=56";
+
+1: 8a ph;b;4c+;8e;d+;4e+;
+2: a-;eac+;
+bar
+
+1: 8f+;g+;a+;f+;4d+;c+;
+2: d-;ad+f+;
+bar
+
+1: 8b;c+;d+;a;g#;f;e;d;
+2: e-;ebd+;
+bar
+
+1: 8a;b;4c+;2e eph;
+2: a--;eac+;
+bar
+
+1: 8f ph;a;4b;8;c+;4d+;
+2: d-;ad+f+;
+bar
+
+1: e+;b;f;e;
+2: e-;eg#d+;
+bar
+
+1:8a;b;4c+;d#+;e+;
+2: a--;eac+;
+bar
+
+1: g+;f+;c#+;d+;
+2: d-;ad+f+;
+bar
+
+1: c+;b;e;g#;
+2: e-;eg#d+;
+bar
+
+1: 1a eph;
+2: a--;eac+;
+bar
+
+1: a ph;c+;d+;f+;
+2: f-;ad+f+;
+bar
+
+1: e+;c+;b;a;
+2: a-;eac+;
+bar
+
+1: a;c+;d+;f+;
+2: f-;ad+f+;
+bar
+
+1: 2e+;a+ eph;
+2: a-;eac+;
+bar
+
+1: c++ ph;b+;a+;c++;
+2: f-;ad+f+;
+bar
+
+1: b+;g+;2;
+2: e-;gbe+;
+bar
+
+1: a+;f+;e+;d+;
+2: d-;ad+f+;
+bar
+
+1: 1b eph;
+2: e-;g#be+;
+bar
+
+1: c#+ ph;d+;e+;g+;
+2: a-;ac#+a#+;
+bar
+
+1: f+;e+;2d+;
+2: d-;ad+f+;
+bar
+
+1: c+;b&;a;b;
+2: b&-;fb&d+;
+bar
+
+1: 2a;e+ eph;
+2: a-;ac#+g+;
+bar
+
+1: f#+ ph;g+;a+;b&+;
+2: d-;ad#+f#+;
+bar
+
+1: a+;g+;2;
+2: g-;fb&d+g+;
+bar
+
+1: f+;e&+;;f+;
+2: e&-;gb&e&+;
+bar
+
+1: 2d+;a+ eph;
+2: d-;ad+f#+;
+bar
+
+1: a+ ph;b&+;c++;d++;
+2: c-;gc+e&+;
+bar
+
+1: b&+;a+;g+;d+;
+2: g-;b&d+g+;
+bar
+
+1: a+;g+;e+;f+;
+2: a--;ac#+g+;
+bar
+
+1: 2e+;d+ eph;
+2: d-;ad+f+;
+bar
+
+1: 2c#++ ph;d++;
+2: g-;gbd+f+;
+bar
+
+1: 2.c++;4g+;
+2: c-;gc+e+;
+bar
+
+1: 2.a+;4e+;
+2: a--;eac+;
+bar
+
+1: 2.f+;4d+;
+2: d-;ad+f+;
+bar
+
+1: g+;a+;2b+;
+2: g-;gd+f+;
+bar
+
+1: 2b+;c++;
+2: a-;eac+;
+bar
+
+1: e++;d++;c++;b+;
+2: f-;ad+f+;
+bar
+
+1: 2.a+;4g+;
+2: g--;gbf+;
+bar
+
+1: 1a+~;
+2: a--;eac+;
+bar
+
+1: 1a+ eph;
+2: 1ac+e+;
+dblbar
+
+newscore
+
+staff 2 timeunit=4
+music
+
+1: 8a;b;4c+;8e;d+;4e+;
+2: a-;eac+;a-;eac+;
+bar
+
+1: 8f+;g+;a+;f+;d+;c+;b;a;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: 8b;c+;d+;a;g#;f;e;d;
+2: e-;ebd+;e-;ebd+;
+bar
+
+1: 8a;b;c+;f;2e;
+2: a--;eac+;a--;eac+;
+bar
+
+1: 8f;a;4b;8;c+;4d+;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: 8e+;d+;c+;b;f;e;d#;e;
+2: e-;eg#f+;e-;egd+;  
+bar
+
+1: 8a;b;4c+;d#+;e+;
+2: a--;eac+;a--;eac+;
+bar
+
+1: 8g+;f+;e+;d+;4c#+;d+;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: 8c+;b;a;g#;4e;g;
+2: e-;eg#d+;e-;egd+;
+bar
+
+1: 8a;b;c+;b;2a;
+2: a--;eac+;a--;eac+;
+bar
+
+1: 8a;b;4c+;8d+;e+;4f+;
+2: f-;ad+f+;d-;ad+f+;
+bar
+
+1: 8e+;d+;4c+;b;a;
+2: a-;eac+;a-;eac+;
+bar
+
+1: 8a;b;4c+;8d+;e+;4f+;
+2: f-;ad+f+;d-;ad+f+;
+bar
+
+1: f+;e+;b+;a+;
+2: a-;eac+;a-;eac+;
+bar
+
+1: c++;b+;8a+;b+;4c++;
+2: f-;ad+f+;f-;ad+f+;
+bar
+
+1: 8b+;a+;4g+;f+;e+;
+2: e-;gbe+;e-;gbe+;
+bar
+
+1: 8a+;g+;4f+;e+;d+;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: c+;b;a#;b;
+2: e-;g#be+;e-;gbe+;
+bar
+
+1: c#+;d+;8e+;f+;4g+;
+2: a-;ac#+g+;a-;ac+a#+;
+bar
+
+1: f+;e+;c#+;d+;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: c+;b&;a;b;
+2: b&-;fb&d+;b-;fbd+;
+bar
+
+1: a;c#+;f+;e+;
+2: a-;ac#+g+;a-;ac+g+;
+bar
+
+1: f#+;g+;a+;b&+;
+2: d-;ad#+f#+;d-;ad+f+;
+bar
+
+1: a+;g+;f#+;g+;
+2: g-;fb&d+g+;g-;fbd+g+;
+bar
+
+1: f+;e&+;;8f+;e+;
+2: e&-;gb&e&+;e-;gbe+;
+bar
+
+1: e&+;d+;g#+;a+;
+2: d-;ad+f#+;d-;ad+f+;
+bar
+
+1: a+;b&+;c++;8e&++;d++;
+2: c-;gc+e&+;c-;gc+e+;
+bar
+
+1: b&+;a+;g+;d+;
+2: g-;b&d+g+;g-;bd+g+;
+bar
+
+1: a+;g+;8f+;e+;d#+;e+;
+2: a--;ac#+g+;a--;ac+g+;
+bar
+
+1: e+;f+;e+;d+;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: c#++;d++;;8f++;e++;
+2: g-;gbd+f+;g-;gbd+f+;
+bar
+
+1: d++;c++;f#+;g+;
+2: c-;gc+e+;c-;gc+e+;
+bar
+
+1: a+;g+;f+;e+;
+2: a--;aec+;a--;eac+;
+bar
+
+1: f+;e+;2d+;
+2: d-;ad+f+;d-;ad+f+;
+bar
+
+1: g+;a+;a#+;b+;
+2: g-;gd+f+;g-;gd+f+;
+bar
+
+1: b+;c++;d++;e++;
+2: a-;eac+;a-;eac+;
+bar
+
+1: e++;d++;c++;b+;
+2: f-;ad+f+;f-;ad+f+;
+bar
+
+1: a+;g+;a+;d++;
+2: g--;gbf+;g--;gbf+;
+bar
+
+1: 2.c++;8e++;f++;
+2: c-;fad+;ad+f+;a&d+f+;
+bar
+
+1: 1c+c++ tie;
+octave above 1: 1 "8va" til 1m+2.5;
+2: c-;fad+;2a&c+f+;
+bar
+
+1: 1c+c++;
+2: 1gc+e+;
+dblbar
+
+//// var 3
+newscore
+
+1: 8a;b;;c+;4;d+;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8e;c+;d+;e+;4f+;e+;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8f+;g+;a+;g+;4e+;d+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8b;c+;d+;a;4g#;e;
+2: 4.e-;8ebd+;2;
+bar
+
+1: 8a;b;c+;f+;4;e+;
+2: 4.a--;8eac+;2;
+bar
+
+1: 8f;a;b;c+;4e+;d+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8e+;d+;c+;b;4f;e;
+2: 4.e-;8eg#d+;2;
+bar
+
+1: 8a;b;c+;d+;4d#+;e+;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8g+;f+;e+;d+;4c#+;d+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8c+;b;a;g#;4e;g;
+2: 4.e-;8eg#d+;2;
+bar
+
+1: 8a;b;c+;a;4a+;a;
+2: 4.a--;8eac+;2;
+bar
+
+1: 8a;b;c+;d+;4f+;e+;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8e+;d+;c+;b;4g#;a;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8a;b;c+;d+;4e+;f+;
+2: 4.f-;8ad+f+;2;
+bar
+
+1: 8e+;c++;b+;a+;4g#+;a+;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8c++;b+;a+;g+;4a+;c++;
+2: 4.f-;8ad+f+;2;
+bar
+
+1: 8b+;a+;g+;f+;4e+;g+;
+2: 4.e-;8gbe+;2;
+bar
+
+1: 8a+;g+;f+;e+;4d+;c+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8b;c+;d+;c+;4b;e+;
+2: 4.e-;8g#be+;2;
+bar 
+
+1: 8c#+;d+;e+;f+;4a+;g+;
+2: 4.a-;8ac#+g+;2;
+bar
+
+1: 8f+;e+;d+;c#+;4e+;d+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8c+;b&;a;b;4d+;b;
+2: 4.b&-;8fb&d+;2;
+bar
+
+1: 8a;b;c+;d+;4f+;e+;
+2: 4.a-;8ac#+g+;2;
+bar
+
+1: 8f#+;g+;a+;b&+;4d++;a+;
+2: 4.d-;8ad+f#+;2;
+bar
+
+1: 8c++;b+;a+;g+;4f#+;g+;
+2: 4.g-;8fbd+g+;2;
+bar
+
+1: 8f+;e&+;;d+;4e+;f+;
+2: 4.e&;8gb&e&+;2;
+bar
+
+1: 8d+;e+;f#+;g+;4b&+;a+;
+2: 4.d-;8ad+f#+;2;
+bar
+
+1: 8a+;b&+;c++;d++;4f++;e&++;
+2: 4.c-;8gc+e&+;2;
+bar
+
+1: 8c++;b&+;a+;g+;4e&+;d+;
+2: 4.g-;8b&d+g+;2;
+bar
+
+1: 8a+;g+;f+;e+;4e&+;en+;
+2: 4.a--;8ac#+g+;2;
+bar
+
+1: 8g+;f+;e+;d+;4c#+;d+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8c#++;d++;e++;f++;4e++;d++;
+2: 4.g-;8gbd+f+;2;
+bar
+
+1: 8d++;c++;b+;a+;4f#+;g+;
+2: 4.c-;8gc+e+;2;
+bar
+
+1: 8a+;g+;f+;e+;4e&+;en+;
+2: 4.a--;8eac+;2;
+bar
+
+1: 8f+;e+;d+;c#+;4d+;a+;
+2: 4.d-;8ad+f+;2;
+bar
+
+1: 8g+;a+;;b&+;4;bn+;
+2: 4.g-;8gd+f+;2;
+bar
+
+1: 8d++;c++;b+;a+;4b+;c++;
+2: 4.a-;8eac+;2;
+bar
+
+1: 8e++;d++;c++;b+;4a+;g+;
+2: 4.f-;8ad+f+;2;
+bar
+
+1: 8a+;e+;c+;b;4a;e;
+2: 4.a--;8eac+;2;
+bar
+
+1: 8e+;c+;b;a;4f;e;
+2: 4.a--;8eac+;2;
+bar
+
+1: 8c+;a;f;d;4b-;c;
+2: 4.a--;8a-df;2;
+bar
+
+1: 1a-;
+2: 4.a-;8d-g-b-;2a--e-a-;
+dblbar
+
+// var 4
+
+newscore
+midi all: 0 "tempo=88";
+
+1: 8a;b;4c+;2;
+2: a-;e;b;c+;
+bar
+
+1: 8e;d+;4e+;2;
+2: c;a;b;c+;
+bar
+
+1: 8f+;g+;a+;g+;4.f+;8d+;
+2: d-;c;f;a;
+bar
+
+1: 8d+;e+;f+;e+;4.d+;8c+;
+2: g-;d;b;f+;
+bar
+
+1: 8b;c+;d+;c+;b;a;4g#;
+2: e-;b-;g#;d+;
+bar
+
+1: 8g#;f;e;d;e;b-;4d;
+2: e-;b-;g#;e;
+bar
+
+1: 8a;b;4c+;2;
+2: a--;e;b;c+;
+bar
+
+1: 8c+;d+;4e+;2;
+2: a-;e;8d+;c+;b;a;
+bar
+
+1: 8f;a;e+;d+;c+;b;4;
+2: d-;a-;8d;e;4f;
+bar
+
+1: 8b;c+;d+;e+;4.d+;8b;
+2: e-;b-;g#;e+;
+bar
+
+1: 8e+;d+;;c+;b;c+;4a;
+2: a--;e;b;c+;
+bar
+
+1: 8f;e;e;d;2e;
+2: e-;e;g#;b;
+bar
+
+1: 8a;b;4c+;2;
+2: a--;8d;e;a;b;4c+;
+bar
+
+1: 8c+;d+;4d#+;4.e+;8g+;
+2: a--;8d;e;a;b;4c+;
+bar
+
+1: 8g+;a+;f+;e+;4.f+;8d+;
+2: d-;8f;a;d+;e+;4f+;
+bar
+
+1: 8c#+;d+;e+;f+;2d+;
+2: g-;f;8g;a;4b;
+bar
+
+1: 8c+;b;;a;4.b;8f;
+2: e-;b-;g#;d+;
+bar
+
+1: 8e;f;g#;a;4.g;8e;
+2: e-;b-;8b;d;4e;
+bar
+
+1: 8a;b;c+;b;2a;
+2: a--;e;b;c+;
+bar
+
+1: 8a;b;c+;b;2a;
+2: a--;e;b;c+;
+bar
+
+1: 8a;b;c+;d+;2c+;
+2: f-;a;f+;d;
+bar
+
+1: 8d+;e+;f+;e+;4.d+;8g;
+2: g-;a;8b;e+;4f+;
+bar
+
+1: 8e+;d+;e+;d+;4.c+;8e;
+2: a-;e;8a;b;4c+;
+bar
+
+1: 8c+;b;c+;b;2a;
+2: a--;e-;8b-;c;a-;g-;
+bar
+
+1: 8a;b;c+;d+;4.c+;8g;
+2: f-;c;8a;g+;4f+;
+bar
+
+1: 8f+;d+;f+;d+;4.g+;8f+;
+2: g-;d;b;g+;
+bar
+
+1: 8e+;a+;c++;b+;4.e+;8a+;
+2: a-;e;8b;c+;4a;
+bar
+
+1: 8b+;c++;d++;b+;2a+;
+2: f-;c;8b;c+;a;e-;
+bar
+
+1: 8c++;b+;;a+;2b+;
+2: f-;a;8d+;e+;f+;a+;
+bar
+
+1: 8a+;b+;c++;d++;2c++;
+2: d-;a;8d+;e+;f+;a+;
+bar
+
+1: 8b+;a+;;g+;2;
+2: e-;b-;8a;b;g;e;
+bar
+
+1: 8g+;b;g+;;2;
+2: e-;b-;8a;b;g;e;
+bar
+
+1: 8a+;g+;f+;e+;2f+;
+2: d-;f;8a;d+;e+;f+;
+bar
+
+1: 8e+;d+;;c#+;4.d+;8b;
+2: g-;a;8b;e+;4f+;
+bar
+
+1: 8c+;b;;a;2b;
+2: e-;g#;8e+;f+;e+;d+;
+bar
+
+1: 8b;c+;d+;c+;2b;
+2: e-;b-;8g#;b;f+;e+;
+bar
+
+1: 8c#+;d+;;e+;2;
+2: a-;c#+;8b&+;a+;g+;e+;
+bar
+
+1: 8e+;f+;g+;a+;2g+;
+2: a-;b;8c#+;d+;f+;e+;
+bar
+
+1: 8f+;e+;;d+;4.e+;8a;
+2: d-;a;c#+;g+;
+bar
+
+1: 8d+;e+;f+;e+;2d+;
+2: d-;a;8e+;f+;4d+;
+bar
+
+1: 8c+;d+;b&;a;4.b;8g;
+2: b&-;f;8c+;d+;4b&;
+bar
+
+1: 8g;a;b&;c+;2b;
+2: c-;e;8d+;c+;g;b&;
+bar
+
+1: 8a;b;c#+;e+;2a;
+2: c#-;a;8f+;e+;c#+;a;
+bar
+
+1: 8e+;f+;a+;g+;2e+;
+2: a--;c#+;8b&+;a+;g+;e+;
+bar
+
+1: 8f#+;g+;a+;b&+;2a+;
+2: d-;a;8f#+;e&+;d+;c+;
+bar
+
+1: 8a+;b&+;c++;b+;2a+;
+2:d-;a;8e+;f#+;d+;a;
+bar
+
+1: 8a+;g+;;;2;
+2: g-;a;8b&;c+;d+;g;
+bar
+
+1: 8a+;g+;;;2;
+2: g--;a-;8b&-;c;d;g-;
+bar
+
+1: 8f+;e&+;;;2;
+2: e&-;g;8b&;c+;e&+;g;
+bar
+
+1: 8f+;e&+;;;2;
+2: c-;g;8b&;c+;e&+;g;
+bar
+
+1: 8d+;f#+;b&+;a+;4e&+;d+;
+2: d-;f#;8d+;f#+;b&+;a+;
+bar
+
+1: 8a+;b&+;d++;c++;2a+;
+2: d-;f#;8e&+;d+;b&+;a+;
+bar
+
+1: 8a+;b&+;c++;d++;2b+;
+2: c-;g;8c+;d+;e&+;c+;
+bar
+
+1: 8c++;d++;e&++;f++;2d++;
+2: e&-;g;8c+;d+;e&+;c+;
+bar
+
+1: 8b&+;a+;;g+;2a+;
+2: g-;b&;8d+;g+;d+;b;
+bar
+
+1: 8g+;f+;;e&+;2d+;
+2: e&-;g;8d+;g+;d+;b&;
+bar
+
+1: 8a+;g+;;e+;2g+;
+2: a--;c#+;8e+;g+;b&+;a+;
+bar
+
+1: 8g+;f+;;e+;2;
+2: a--;c#+;8e+;g+;b&+;a+;
+bar
+
+1: 8e+;d+;;;2;
+2: d-;g;8a;d+;e+;f+;
+bar
+
+1: 8e;d;;;2;
+2: d-;g-;8a-;d;e;f; 
+octave below 2: 1 "8va";
+bar
+
+1: 8c#+;d+;a+;g+;c+;4.d+;
+2: g-;d;b;g+;
+bar
+
+1: 8d+;f+;c++;b&+;e&+;4.d+;
+2: b&-;f;d+;f+;
+bar
+
+1: 8c++;b&+;a+;g+;2c++;
+2: c-;g;8d+;e+;c+;g;
+bar
+
+1: 8c++;b&+;a+;g+;2;
+2: e&-;g;8c+;d+;e&+;g+;
+bar
+
+1: 8a+;g+;f+;e+;2a+;
+2: a-;e;8c#+;d+;e+;a+;
+bar
+
+1: 8a+;g+;f+;e+;2;
+2: a--;g;8a;g;f;e;
+bar
+
+1: 8f+;e+;d+;e+;2f+;
+2: d-;f;8d+;e+;f+;d+;
+bar
+
+1: 8f+;e+;d+;c#+;2d+;
+2: d-;f;8d+;e+;f+;d+;
+bar
+
+1: 8g+;a+;g+;d+;g+;4.a+;
+2: g-;a;b;f+;
+bar
+
+1: 8b+;a+;g+;a+;2b+;
+2: g-;a;f+;g;
+bar
+
+1: 8b+;c++;b+;a+;b+;4c++;8b+;
+2: a-;e;b;c+;
+bar
+
+1: 8e++;d++;c++;b+;2c++;
+2: a-;e;a;c+;
+bar
+
+1: 8e++;d++;;c++;2d++;
+2: f-;a;d+;f+;
+bar
+
+1: 8c++;b+;;a+;2b+;
+2: g-;a;b;f+;
+bar
+
+1: 8a+;g+;;f+;g+;4.a+;
+2: g--;d;a;f+;
+bar
+
+1: 8a+;g+;;f+;2g+;
+2: g--;g;b;f+;
+bar
+
+1: 8e++;d++;c++;b+;2a+;
+2: a--;e;a;c+;
+bar
+
+1: 8a+;e+;d+;c+;2a;
+2: a--;e;a;c+;
+bar
+
+1: 8a;e;d;c;2a-;
+2: a--;e-;2a-;
+endbar

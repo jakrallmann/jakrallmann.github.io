@@ -1,0 +1,267 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 35"
+	title "" "John A. Krallmann"
+	title " " "(June 26, 2016)"
+
+header2
+	title (12) "Nocturne No. 35 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2016 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=2&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.8
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal 1,2: 1; endif @
+midi all: 0 "tempo=88";
+midi 1: 0 "onvelocity=92,64";
+
+define THEME
+1: 2.d+;
+2: g-;b;d;
+bar
+
+1: d+;4.e+;8c+;
+2: f#-;a;d;
+P
+bar
+
+1: 2.a+;
+2: g-;b;d;
+P
+bar
+
+1: 8b+;a+;2g+;
+2: e-;g;b-;
+P
+bar
+
+1: 2.f+;
+2: d-;f;a-;
+P
+bar
+
+1: 8f+;g+;4.e+;8d+;
+2: e-;g;b-;
+P
+bar
+
+1: 2.c+;
+2: f-;a;c;
+P
+bar
+
+1: 2.c#+;
+2: f-;a;e;
+P
+bar
+
+1: 8d+;e+;2f+;
+2: b--;a;d;
+P
+bar
+
+1: 2.g+;
+2: e-;g;b-;
+P
+bar
+
+1: 8f+;g+;2a+;
+2: d-;f;a-;
+P
+bar
+
+1: 2a+;4b+;
+2: e-;g;b-;
+P
+bar
+
+1: 8c++;b+;4.a+;8f+;
+2: f-;a;c;
+P
+bar
+
+1: 8b+;a+;2g+;
+2: g-;b;d;
+P
+bar
+
+1: 8a+;g+;4.f+;8c+;
+2: d-;f;a-;
+P
+bar
+@
+THEME
+
+1: 2.d+;
+2: g-;b;d;
+P
+bar
+
+1: mr;
+2: g-;b;d;
+P
+bar
+
+1: 8g+;a+;2b+;
+1 2: c+;2d+;
+2: g-;b;d;
+P
+bar
+
+1: 8a+;b+;2c++;
+1 2: c+;2d+;
+2: f#-;a;d;
+P
+bar
+
+1: 8c++;b+;4a+;g+;
+1 2: c+;d+;e+;
+2: d-;f#;a-;
+P
+bar
+
+1: 2.f#+;
+1 2: 2.d+;
+2: d-;f#;a-;
+P
+bar
+
+1: 8g+bn+;a+c++;2f+d++;
+2: g-;bn;d;
+P
+bar
+
+1: 8f+d++;e+c++;2g+e++;
+2: c-;d+;c+;
+P
+bar
+
+1: 8g+e++;f+d++;4.;8e+c++;
+2: a&--;c+;e;
+P
+bar
+
+1: 2.f+d++;
+2: g--;bn;d;
+P
+bar
+
+1: 8en+;f+;4.g+;8c+;
+2: c-;en+;b;
+P
+dblbar
+
+score key=4&
+music
+
+1: 8b+;a+;4.f+;8c+;
+2: f-;a;c;
+P
+bar
+
+1: 8b+;a+;4g+;f+;
+2: d-;d+;a;
+P
+bar
+
+1: 2f+;4en+;
+2: c-;d+;c+;
+P
+bar
+
+1: 8an+;b+;2e+c++;
+2: f-;an;c;
+bar
+
+1: 2e+c++;4d+b+;
+2: b--;d+;f;
+P
+bar
+
+1: 8g&+e++;f+d++;4e+c++;d+b+;
+2: e-;b;e;
+P
+bar
+
+1: 2.c+an+;
+2: f-;an;c;
+P
+bar
+
+1: 2.fd+;
+2: b-;d+;f;
+P
+bar
+
+1: 2.fd+;
+2: a-;c+;f;
+P
+bar
+
+1: 2.ed+;
+2: g&-;b;d;
+P
+bar
+
+1: 2.b-g&;
+2: e-;dn;e;
+P
+bar
+
+1: 2.a-f;
+2: a--;f;c;
+P
+bar
+
+1: 2.ca;
+2: a--;g&;c;
+P
+bar
+
+1: 2.fd+ tie;
+2: d-;f;a;
+P
+bar
+
+1: 2.fd+;
+2: 2.d+;
+P
+dblbar
+
+score
+	key=2&
+	transpose=down maj 3
+music
+
+THEME
+
+1: 8a;b;2g;
+2: g-;b;d;
+P
+bar
+
+1: 2r;4d+;
+2: g-;b;d;
+P
+bar
+
+1: 2.bg+;
+2: 2.g-;
+ifdef MIDI pedal 1,2: 1;4*; endif
+endbar

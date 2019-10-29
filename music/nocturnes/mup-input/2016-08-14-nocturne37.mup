@@ -1,0 +1,183 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 37"
+	title "" "John A. Krallmann"
+	title " " "(Aug 14 and 28, 2016)"
+
+header2
+	title (12) "Nocturne No. 37 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2016 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=2&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,24
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=68";
+midi 1: 0 "onvelocity=78";
+
+1: 4.b;8;;4c+;8a;
+2: g;d+g+;f#;ad+;
+bar
+
+1: 4.a;16b;a;4.g;8;
+2: e;gc+;c;ge+;
+bar
+
+define T1
+1: 4.f#;8;{4c+;b;a;}3;
+2: d;ad+;d;ad+;
+bar
+
+ifdef V2
+ 1: 4.a;8b;c+;b;a;g;
+else
+ 1: 4.a;8d;c+;b;a;g;
+endif
+2: g-;db;e-;gc+e+;
+bar
+
+ifdef V2
+ 1: 8a;4.f;8;4e;8b;
+else
+ 1: 8g;4.f;8;4e;8b;
+endif
+2: d-;fad+;e-;cegb;
+bar
+
+ifdef V2
+ 1: 2d+~;8;f+;b+;a+;
+else
+ 1: 2d+;4f+;8b+;a+;
+endif
+2: f-;fad+;f-;ad+f+;
+bar
+
+ifdef V2
+ 1: 2a+;4g+;8a+;b+;
+else
+ 1: 2.g+;8a+;b+;
+endif
+2: g-;bd+g+;f-;ad+f+;
+bar
+
+ifdef V2
+ 1: 2g+~;8;a+;b+;c++;
+else
+ 1: 2.g+;8a+;b+;
+endif
+2: e-;gbe+;c-;gc+e+;
+bar
+
+ifdef V2
+ 1: 8e++;d++~;4~;8;b+;a+;f+;
+else
+ 1: 8e++;d++~;4~;8;b+;a+;b+;
+endif
+2: g-;bd+g+;ad+f+;gc+e+;
+bar
+
+1: 2g+~;8;b;a;f;
+2: g-;bd+g+;ad+f+;gc+e+;
+bar
+
+1: 1g~;
+ifdef V2
+ 2: 2g--;cfa;
+else
+ 2: 2g--;4cfa;dgb tie;
+endif
+bar
+
+1: 1g;
+2: 1dgb;
+ifdef V2 endbar else bar endif
+@
+
+T1
+
+define T2
+
+ifdef V2
+ 1: 2d+~;8;16a+;g+;8f+;e+;
+else
+ 1: 2d+~;8;g+;f+;e+;
+endif
+2: g-;gbd+;f-;ad+f+;
+bar
+
+ifdef V2
+ 1: 8d+;4.g~;8;a;b;16d+;c+;
+else
+ 1: 8d+;4.g~;8;a;b;c+;
+endif
+2: e-;gbd+;c-;gc+e+;
+bar
+
+ifdef V2
+ 1: 8b;4.a~;8;d;g;a;
+else
+ 1: 2a~;8;d;g;a;
+endif
+2: d-;gc+e+;f#c+d+;d-;
+bar
+
+1: 2bn;b&;
+2: g--;bnd+g+;e-;b&e+g+;
+bar
+
+ifdef V2
+ 1: 4bn;8d+;g+;f+;e+;d+;c+;
+else
+ 1: 4bn;8d+;g+;e+;d+;c+;g;
+endif
+2: g-;bnd+g+;c-;gc+e+;
+bar
+
+ifdef V2
+ 1: 8b;4.a~;8;b;16c+;d+;b;a;
+else
+ 1: 2a~;8;b;c+;d;
+endif
+2: d-;gc+e+;f#c+d+;d-;
+bar
+
+ifdef V2
+ 1: 1g~;
+ 2: 2g--;cfa;
+ bar
+
+ 1: 1g;
+ 2: 1dgb;
+ bar
+else 
+ 1: 1g;
+ 2: g--;cfa;2dgb;
+ bar
+endif
+@
+
+T2
+define V2 @
+T2
+
+1: 4.bn;8;;4c+;8a;
+2: g;d+g+;f;ad+;
+bar
+
+1: 2a;g;
+2: en;gc+;c;gen+;
+bar
+T1

@@ -1,0 +1,174 @@
+header
+	title (16) "Song Without Words (No. 43)"
+	title "" "John A. Krallmann (6/11/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 43) - \%"
+score
+	staffs=2
+	key=2&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.2
+	staffsep=18
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=96";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92,68";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+1: 8g;a;2b;
+2: g-;d;b;
+bar
+
+1: 8d+;c+;2g;
+2: e-;b-;g;
+bar
+
+1: 8f#;g;4.a;8d;
+2: d-;a-;f#;
+bar
+
+1: 8a;b;2d;
+2: g-;d;b;
+bar
+
+1: 8a-;b-;4.g;8d;
+2: e-;b-;g;
+bar
+
+1: 8d;e;4c;g-;
+2: c-;g-;e;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8a-;b-;a-;4f#;8a-;b-;a-;
+2: d-;a-;f#;a-;
+bar
+
+1: 8a-;g-;c+;4b;8d;a;g;
+2: g-;d;b;d;
+bar
+
+1: 8f;g-;f;4e;8a-;b-;d;
+2: e-;b-;g;d-;
+bar
+
+1: 8e;g-;e;4d;8c;g-;e;
+2: c-;g-;e;b--;
+bar
+
+1: 8d;g-;d;4c;8g-;c;b-;
+2: a--;a-;e;a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8a;d;a;<<staff clef=treble>>cc+ tie;2;
+2: d-;a-;e;a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8a;d;a;<<staff clef=treble>>4ee+;dd+;8cc+;
+2: d-;a-;f#;a-;
+bar
+
+1: 8g;a;b;d+;c+;4.b;
+2: g-;d;b;d;
+bar
+
+1: 8d+;c+;b;g~;2;
+2: e-;b-;g~c+;gb;
+bar
+
+1: 8f#;g;a;b;c+;4.d;
+2: d-;a-;f#e+;af#+;
+bar
+
+1: 8a;b;a;d~;2;
+2: g-;d;8a;b;4g;
+bar
+
+1: 8a-;b-;g-;4g;f;8e;
+2: e-;b-;f;g;
+bar
+
+1: 8d;e;d;4c;g-;8c;
+2: c-;g-;e;b--;
+bar
+
+1: 8a-;b-;a-;[with>]4f#;8a-;b-;a-;
+2: d-;a-;f#;a-;
+bar
+
+1: 8a-;g-;[with>]c+;[with>]4b;8d;a;g;
+2: g-;d;b;d;
+bar
+
+1: [with>]8f;g-;[with>]f;[with>]4e;8a-;b-;d;
+2: e-;b-;g;d-;
+bar
+
+1: [with>]8en;g-;[with>]e;[with>]4d;8c;g-;e;
+2: c-;g-;en;b--;
+bar
+
+1: 8f;f-;f;[with>]4e;d;8c;
+2: a--;f-;e;f-;
+bar
+
+1: [with>]8f#;a-;f;[with>]4e;d;8c;
+2: d-;a-;f#;a-;
+bar
+
+1: 8a;g;a;cc+ tie;2;
+2: g-;d;e;d;
+bar
+
+1: 8a;d;a;4ee+;dd+;8cc+;
+2: d-;a-;f#;a-;
+bar
+
+define L
+1: [with>]8g+;b;c+;d+~;2;
+1 2: 1g;
+boldital below 1: 1 "sfz";
+2: g-;d;b;d;
+bar
+@
+L
+L
+L
+
+1: 1b-g;
+2: 1g-d;
+boldital between 1&2: 1 "p";
+bar
+
+staff 2 clef=treble
+music
+
+1: 1bg+;
+octave above 1: 0 "8va" til 4;
+2: 1gd+;
+boldital between 1&2: 1 "pp";
+endbar

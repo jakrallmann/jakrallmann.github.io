@@ -1,0 +1,208 @@
+header
+	title (18) "Lullaby No. 48"
+	title (10) " "
+	title "" "John A. Krallmann (12/5/04)"
+
+header2
+	title (12) "Lullaby No. 48 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=2.
+	key=1&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+	vscheme=2f
+	release=0
+
+staff 2
+	clef=bass
+
+define P ifdef MIDI pedal below 1,2: 1; endif  @
+
+music
+
+midi all: 1 "tempo=76";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=74,60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: e;g;c+;e;g;c+;
+2: 2.cgc+ tie;
+P
+bar
+
+1: e;g;c+;e;g;c+;
+2: 2.cgc+;
+bar
+
+1: e;f;d+;e;f;d+;
+2: 2.dad+ tie;
+P
+bar
+
+1: e;f;c+;e;f;bn;
+2: 2.dad+;
+P
+bar
+
+1: d;g;b;d;g;a;
+2: 4.a;g;
+2 2: 2.g-d tie;
+P
+bar
+
+1: d;g;b;d;a;b-;
+2: 4.f;e;
+2 2: 2.g-d;
+P
+bar
+
+1: g;b-;d&;f;b-;d;
+2: 2.e-cg tie;
+P
+bar
+
+1: f;b-;d&;e;b-;c;
+2: 2.e-cg;
+P
+bar
+
+1: e;a-;f;g;d;a;
+2: 2.d-a-f;
+P
+bar
+
+1: a;d;g;b;f;a;
+2: 2.g-da;
+P
+bar
+
+1: a;d;g;c+;e;a&;
+2: 2.cgb;
+P
+bar
+
+1: an;c;e;c+;g;f;
+2: 2.f-ca;
+P
+bar
+
+1: c+;d;f;b;d;f;
+2: 4.a;g;
+2 2: 2.b-;
+P
+bar
+
+1: g;b-;c;f;b-;c;
+2: 4.e;d;
+2 2: 2.c-~;
+P
+bar
+
+1: b;a;b;c+;e;g;
+2: 4.c;a--;
+2 2: 4.c-;s;
+P
+bar
+
+1: a;e;f;g-;a-;d;
+2: 2.d-;
+P
+bar
+
+1: a;d;f;g;d;f;
+2: 2.b-;
+P
+bar
+
+1: g;b-;d;f;b-;e;
+2: 2.c;
+P
+bar
+
+1: f;a-;c;e;f-;e&;
+2: 2.f-;
+P
+bar
+
+1: d;a-;b-;g-;e;f;
+2: 2.b-;
+P
+bar
+
+1: c+;e;g;c;g;f;
+2: 2.a-;
+P
+bar
+
+1: b;c+;d+;d;d+;e+;
+2: 2.g-;
+P
+bar
+
+1: e+;b;a;e;d+;e+;
+2: 2.a-;
+P
+bar
+
+1: f+;a;e;e+;f;d+;
+2: 2.d-;
+P
+bar
+
+1: c+;d;f;b;d;a;
+2: 2.g-;
+P
+bar
+
+1: g;b-;d;f;d&;e;
+2: 2.c;
+P
+bar
+
+1: c+;g+;f+;g;f;c;
+2: 2.a-;
+P
+bar
+
+1: c+;b;a;4.b;
+1 2: 4.d;d&;
+2: 2.b-f;
+P
+bar
+
+ital between 1&2: 1 "rit.";
+midi all: 1 "tempo=70";
+1: b;a;g;4.a;
+1 2: 2.c;
+2: 2.a-f;
+P
+bar
+
+midi all: 1 "tempo=56"; 4 "tempo=48";
+1: a;g;f;d;cn;d;
+1 2: 4.c&;b-;
+2: 2.g-d;
+P
+bar
+
+midi all: 1 "tempo=36";
+1: 4.f#-a-d;tie;
+2: 4.d-a-;tie;
+P
+bar
+
+1: 2.f-a-d;
+2: 2.d-a-;
+ifdef MIDI pedal below 1,2: 6.8*; endif
+endbar

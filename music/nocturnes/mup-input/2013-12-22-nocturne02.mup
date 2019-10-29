@@ -1,0 +1,246 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 2"
+	title "" "John A. Krallmann (Dec 22-23, 2013)"
+header2
+	title "Nocturne (No. 2) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=4/4
+	key=2&
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	scoresep=10,24
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	vscheme=3f
+
+music
+
+midi all: 0 "tempo=56";
+midi 1: 0 "channel=11"; 0 "onvelocity=92,72";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=72";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=72";
+
+// midi adjust to compensate for octave mark that shouldn't really apply
+define MA ifdef MIDI + endif @
+
+rom above 1: 1 "Adagio - rubato";
+1: 2s;8a;b;8.bn;16c+;
+2: 2s;r;
+bar
+
+define AA
+mussym above 1: 0.7 "sign";
+1: 4.d+;16c#+;d+;f+;e+;d+;cn+;b;a;g;a;
+2: g-;gbd+;df#c+;d-;
+bar
+
+1: 8.a;16b;8.g;32f#;g;8.a;16b;8c;c#;
+2: g-;gbd+;e-;egb;
+bar
+
+1: 8e;d;8.b;16a;4d;8f#;g;
+2: d-;f#bc+e+;g-;dgb;
+octave below 2: 3 "8va";
+bar
+
+1: 8d+;e+;bn;c+;2;
+1 2: 2s;8g#;a;en;f;
+2: c-;gc+e+;f-;fac+e+;
+bar
+
+1: 8e+;d+;c+;b;2g;
+1 2: f;d;8;e;bn-;c;
+2: b--;dfb;c-;g-eg;
+bar 
+
+1:8g+;f+;bn;c+;ge+;fd+;db;ec+;
+1 2: 4ae+;2.s;
+2: f-;fac+e+;c-;g-eg;
+octave below 2: 1 "8va";
+bar
+
+1: 8eac+;b-gb;ca;b-g;4a-df#;[with .,>]d+f#+a+;
+2: d-;g-eg;d-;[with.,>]ad+f#+;
+octave below 2: 3 "8va";
+bar
+
+1: 16g;a;8b~;;16c+;b;8;a~;4;
+1 2: 2ce;4c;16c;d;8e;
+2: c-;egc+;f-;fa;
+bar
+
+1: 8a;g;4;8f;e;d+;c+;
+1 2: b-;16;c;8d;4g-;e;
+2: g-;dg;c-;8bn;c+;
+2 2: 2.s;4g-e;
+bar
+
+1: 4.b;8a;;g;b;d;
+1 2: 8c;d;4e;c;d;
+2: f-;cf#b;ea;dg;
+2 2: 2s;g-;
+octave below 2: 1 "8va";
+bar
+
+1: 8f;e;4g;4.a;8f;
+1 2: g-;8bn-;c;;d;4e;
+2: b-;c;e;a;
+2 2: 2e-;f-;
+bar
+
+1: 4.db;8dad+;4.e+;8f+;
+1 2: 2s;8a;g;4eb;
+mussym above 1: 4 "ferm";
+midi all: 4 "tempo=36"; 4.5 "tempo=56";
+2: 8a;g;a;f;4cgb;f-;
+2 2: 2g-;s;
+ital between 1&2: 4 "subito";
+boldital between 1&2: 4 "p";
+octave below 2: 4 "8va" til 1m+1.5;
+bar
+
+1: 2d+;8f;e;e+;16g+;f+;
+1 2: 8a;g;b;d;4g-;g;
+2: g;dgb;c-;cb;
+bar
+
+1: 2d+;8a;b;4g;
+1 2: 8a;b;d;g;4b-;8bn-;c;
+2: g-;dgb;e-;eg;
+bar
+
+1: 8g+;f+;bn;c+;g&e+;fd+;4b&;
+1 2: a;f;s;16f;e;8d;
+2: f-;fae+;b--;a&-db;
+octave below 2: 1 "8va";
+dblbar
+
+score key=3&
+music
+
+1: 8bnd+;af+;gf+;fg+;fd+;ec+;ec+;dd+;
+1 2: 4.s;16e+;d+;4a;s;
+2: bn;d;c-;g;
+2 2: 2g-;4s;8c;b-;
+bar
+
+1: 4.e+;8f+;abf+a+;4gb&e+g+;16d+;e+;
+1 2: 8c+;a;4bn;2s;
+2: b;bn;e-b-e;gb&e+;
+2 2: 2a-e;s;
+bar
+
+1: 8ad+f+a+;4ge+g+;8e+;e++;d++;c++;a+;
+1 2: 2s;f+a+c++;
+2: c-;egc+;a--;eac+;
+bar
+
+1: 4.f+;8d+;2ge+ tie;
+1 2: 8a;b;c+;f;2s;
+octave above 1: 1 "8va" til 1m+2;
+boldital between 1&2: 4 "pp";
+2: b--;abd+;s;8f+ MA;e+ MA;
+2 2: 2s;e-~;
+2 3: 2.s;[down]4a MA;
+octave below 2: 3 "8va" til 1m+3;
+ital below 2: 3 "ten.";
+bar
+@
+AA
+
+midi all: 4 "tempo=50";
+1: 2.ge+;8r;d;
+2: 2.g MA e+ MA;4s;
+2 2: 2.e-;4r;
+rom between 1&2: 2 "Fine";
+bar
+
+1: 8d&;c;8.a;16g;8.;32a;g;8f;16f+;e+;
+2: 8en-;c;b;en;f-;c;a;an-;
+bar
+
+1: 8e+;d&+;f;g;16b;a;g;f;8en;c;
+2: 8b-;f;a;d&;c-;en;4b;
+bar
+
+1: 8an;g&+;16;f+;e+;c+;e+;d&+;c+;b;en;f;g;a&;
+2: 8f-;c;an;c+;b--;d&;a&;dn;
+bar
+
+1: 8b;16f+;f&+;8ebe+;16f;g;4ca;16b+;a+;g+;fn+;
+1 2: d&;2.s;
+2: 8e-;b-;4gd&+;f-;c;
+bar
+
+1: c+;8f;eg;4f-b-a;16f+;e+;d&+;c+;
+roll 1: 3;
+2: a;8f-;e-;4d&-;a-;
+octave below 2: 2 "8va" til 3.5;
+bar
+
+1: f;8.a;16b;4g;16g+;f+;en+;d&+;
+2: d&+;c;c-;cb;
+bar
+
+1: c+;8an;b;4ac+;16an+;g+;f+;d+;
+2: en+;c-;8g;an;4fbd+;
+2 2: 2s;4f-;s;
+bar
+
+1: 8bn;c+;f+;g+;f+an+;a+c++;g+b+;f+a+;
+2: anc+f+;c-;f-;fbe+;
+bar
+
+1: 8d&+f&+;4.dn+fn+;8f+;a+;g+;f+;
+1 2: 2s;4bn;8an;b;
+2: b--;fbd+;g-;gbnf+;
+octave below 2: 3 "8va";
+bar
+
+1: 8af+;4ge+;8d+;c+;b;an;d;
+1 2: 2s;2eg&;
+2: c-;ge+;d-;f#d+;
+bar
+
+1: 8dbn;c+a+;bng+;fd+;;4ge+;8eg;
+mussym above 1: 1.5 "ferm"; 2" ferm"; 2.5 "ferm";
+midi all: 1.5 "tempo=36"; 3 "tempo=56";
+2: g-;gd+;c-;ge+;
+octave below 2: 1 "8va";
+bar
+
+1: 8eg;4fa;8df;2ce;
+2: f-;ca;8.g;16f;8e;c;
+2 2: 2s;g-;
+bar
+
+1: 2bn-d;<<staff clef=bass>>ec+;
+2: 8.g-;16f-;8e-;d-;2c-g-;
+2 2: 2g--;s;
+rom between 1&2: 2.75 "DS al Fine";
+dblbar
+
+ifdef MIDI
+score key=2&
+staff 1 clef=treble
+music
+midi all: 4 "tempo=56";
+AA
+
+1: 2.ge+;4r;
+2: 2.ge+;4s;
+2 2: 2.e-;4r;
+endbar
+endif

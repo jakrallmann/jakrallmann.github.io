@@ -1,0 +1,170 @@
+header
+	title (16) "Song Without Words (No. 58)"
+	title (14) " "
+	title "" "John A. Krallmann (Jan 13, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.9
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: d;8g;;4.a;8b;
+2: g-;d;b;d;
+bar
+
+1: 4.b;16c+;b;4a;8f#+;e+;
+2: a-;e;c+;e;
+bar
+
+1: 4.d+;8c+;b;a;g;a;
+2: d-;a-;f#;a-;
+bar
+
+1: 4.a#;16d+;c+;4.b;8f;
+2: g-;d;b;d;
+bar
+
+1: 4.e;8d+;4c+;e+;
+2: c;g;e+;b&-;
+bar
+
+1: 4.e+;8a;4;8f+;e+;
+2: f-;d;a;c+;
+bar
+
+1: 4.d+;8g;4;8e+;d+;
+2: g-;d;b;f;
+bar
+
+1:4.c+;8e;4;8d+;e+;
+2: a-;e;c+;e;
+bar
+
+1: 8a+;b+;a+;g+;4f+;a&;
+2: f-;c;a;d+;
+bar
+
+1: 4.g;8a;4b;d+;
+2: e-;b-;g;b;
+bar
+
+1: 4.d+;8e+;4a;g;
+2: a-;e;c+;e;
+bar
+
+1: 4.f;8e;4d;a;
+2: d-;a-;f#;a-;
+bar
+
+1: 4.b;8c+;4d+;d#+;
+2: g-;d;b;f;
+bar
+
+1: 4.e+;8a+;4g+;8f+;e+;
+2: c-;g-;e;b&;
+bar
+
+1: 4.g+;8a;4;8f+;d+;
+2: f;c;a;a&;
+bar
+
+1: 4.f+;8e+;4g;e;
+2: c-;g-;e;c+;
+bar
+
+1: 4.e;8d;4a;c+;
+2: f-;c;a;d;
+bar
+
+1: 4.b;8f;4e;a&;
+2: e-;b-;a&;d;
+bar
+
+1: 4.b;8a;4e;g;
+2: c-;e;b;g;
+bar
+
+1: 4.b;8a;4f;a;
+2: f-;c;a;e;
+bar
+
+1: 4.f+;8e+;4d+;a;
+2: d-;e;f;f#;
+bar
+
+1: 4.b;8c+;4d+;d#+;
+2: g--;f;b-;g-;
+bar
+
+1: 4.e+;8g;4;8d+;c+;
+2: c-;b&;e;c;
+bar
+
+1: 4.e+;8a;2;
+2: f-;c;a;c;
+bar
+
+1: 4.d+;8a&;2;
+2: f-;c;a&;d;
+bar
+
+1: 4.d+;8g;4;8a;b;
+2: e-;g;b-;d;
+bar
+
+1: 1c+;
+2: a--;e;c+;g--;
+bar
+
+1: 4.c+;8f;2;
+2: f--;a;d+;c+;
+bar
+
+1: 4.d+;8g;2;
+2: g--;g;b;f+;
+bar
+
+1: 4.e+;8a;4;8d+;e+;
+2: a--;e;c+;e;
+bar
+
+1: 1af+a+;
+2: d-;a-;f;a;
+bar
+
+1: 2a+;g+;
+1 2: 4.b;8c+;4d+;b;
+2: g-;d;b;d;
+bar
+
+1: 2a+;g+;
+1 2: 4.b;8c+;4d+;b;
+2: g-;d;b;d;
+bar
+
+1: 1a+;
+1 2: 4.c+;8d+;4e+;c+;
+2: a-;e;c+;e;
+bar
+
+1: 2ca;;
+2: 2a-e;;
+endbar

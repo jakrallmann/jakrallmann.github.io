@@ -1,0 +1,201 @@
+
+header
+	title (18) "Lullaby No. 12"
+	title "" "John A. Krallmann (December 16, 2003)"
+	title (12) " "
+
+header2
+	title (12) "Lullaby - \%"
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	measnum=y
+	staffscale=0.8
+
+staff 2
+	clef=bass
+
+voice 2 2
+	timeunit=2.
+
+music
+
+midi 1-2 1-2: 0 "channel=11"; 0 "program=4";
+midi all: 0 "tempo=78";
+1: e+;g;e+;g;e+;g;
+2 2: c+;
+bar
+
+1: d+;g;d+;g;d+;g;
+2 2: bn;
+bar
+
+1: d+;f;d+;f;d+;f;
+2 2: b(&); 
+bar
+
+1: c+;f;c+;f;c+;f;
+2 2: a;
+bar
+
+1: b;f;b;f;b;f;
+2 2: d;
+bar
+
+1: a;f;a;f;a;f;
+2 2: c;
+bar
+
+1: g;d;g;d;g;d;
+2 2: b-;
+bar
+
+1: 2.g;
+1 2: 4.e;c;
+2 2: c;
+bar
+
+/////
+
+1: f;c;f;c;f;c;
+2 2: a-;
+bar
+
+1: c+;f;c+;f;c+;f;
+2 2: a-;
+bar
+
+1: d+;f;d+;f;e+;d+;
+2 2: b-;
+bar
+
+1: c+;f;c+;f;c+;f;
+2 2: a-;
+bar
+
+1: b;d;b;d;c+;b;
+2 2: g-;
+bar
+
+1: a;c;a;c;b;a;
+2 2: f-;
+bar
+
+1: g;d;g;e;b-;g;
+2 2: 4.b-;c;
+bar
+
+1: 4.a-f;4c+;8b;
+2 2: 4.f-;r;
+repeatstart
+
+1: a;f;c;f;a;f;
+2 2: f;
+bar
+
+1: b;e;c;e;a;b;
+2 2: g;
+bar
+
+1: c+;a;f;e&;b;c+;
+2 2: a;
+bar
+
+1: d+;b;f;d;e+;f+;
+2 2: b;
+bar
+
+1: c+;a;f;a;c+;c;
+2 2: a;
+bar
+
+1: b;g;e;c;d;e;
+2 2: g;
+bar
+
+1: 4.a-f;;
+2 2: 4.f;;
+bar
+
+////
+
+1: f;d;a-;e;f;a;
+2 2: d;
+bar
+
+1: d+;b;f;b;c+;d+;
+2 2: b-;
+bar
+
+1: c+;a;f;c;f;a;
+2 2: f;
+bar
+
+1: 2.ac+;
+2 2: f;
+bar
+
+1: a;f;c;f;a;c+;
+2 2: f;
+bar
+
+1: d+;b;f;b;d+;b;
+2 2: b-;
+bar
+
+1: g;d;e;g;a;b;
+2 2: c;
+bar
+
+1: 2.ca;
+2 2: f;
+bar
+
+1: f;d;f;d;f;b-;
+2 2: b-;
+bar
+
+1: g;e;c;b-;c;e;
+2 2: c;
+bar ending "1."
+
+1: 4.a-f;4c+;8b;
+2 2: 4.f;r;
+repeatend ending "2."
+
+1: 4.a-f;;
+2 2: 4.f;;
+bar
+
+midi all: 0 "tempo=68";
+rom above 1: 1 "Slower";
+boldital between 1&2: 1 "pp";
+midi 1-2 1-2: 1 "onvelocity=44";
+2: b;f;b;f;b;f;
+2 2: d;
+bar
+
+midi all: 0 "tempo=64";
+2: a;f;a;f;a;f;
+2 2: c;
+bar
+
+midi all: 0 "tempo=58";
+2: g;d;g;d;g;d;
+2 2: b-;
+bar
+
+midi all: 0 "tempo=48";
+2: 2.ca;
+2 2: f-;
+endbar

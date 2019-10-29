@@ -1,0 +1,220 @@
+header
+	title (16) "Song Without Words (No. 38)"
+	title "" "John A. Krallmann (10/24/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 38) - page \%"
+
+define D 1 @
+define M 2 @
+define B 3 @
+
+score
+	staffs=3
+	time=3/4
+	beamstyle=4,4,4
+	brace=2-3
+	barstyle=2-3
+	measnum=y
+	staffscale=0.90
+staff D
+	timeunit=2.
+	staffscale=0.8
+staff B
+	clef=bass
+ifdef MIDI
+	//defoct=2
+endif
+music
+
+midi all: 0 "tempo=120";
+midi D: 0 "channel=12"; 0 "program=48"; 0 "onvelocity=44";
+midi M: 0 "channel=13"; 0 "program=79"; 0 "onvelocity=90";
+midi B: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=88";
+
+D: f+;
+M: a ph;b;c+;
+B: d;a;f+;
+bar
+
+D: d+;
+M: d+;2b eph;
+B: g-;d;b;
+bar
+
+D: e+;
+M: 4.c+ ph;8b;4a;
+B: a-;e;c+;
+bar
+
+D: g+;
+M: b;g;b;
+B:e-;b-;g;
+bar
+
+D: f+;
+M: 4.a;8g;4f;
+B: f-;c;a;
+bar
+
+D: g+;
+M: b;g;b;
+B: g-;d;b;
+bar
+
+D: e+;
+M: c+;2a eph;
+B: a-;e;c+;
+bar
+
+D: g+;
+M: b ph;2g eph;
+B: e-;b-;g;
+bar
+
+D: a+;
+M: 4.a ph;8g;4f eph;
+B: f-;c;a;
+bar
+
+D: b+;
+M: b ph;c+;d+;
+B: g-;d;b;
+bar
+
+D: c++;
+M: e+;2c+ eph;
+B: a-;e;c+;
+bar
+
+D: d+;
+M: 8f+ ph;e+;2d+ eph;
+B: d-;a-;f;
+bar
+
+D: e+;
+M: e+ ph;2c+ eph;
+B: a-;e;c+;
+bar
+
+D: f+;
+M: 8a+ ph;g+;2f+ eph;
+B: f-;c;a;
+bar
+
+D: g+;
+M: g+ ph;2d+ eph;
+B: g-;d;b;
+bar
+
+D: a+;
+M: c+ ph;2a eph;
+B: a-;e;c+;
+bar
+
+D: 2b+;8c++;b+;
+M: b ph;2g eph;
+B: e-;b-;g;
+bar
+
+D: 4a+;2e+;
+M: 2.a~;
+B: a-;e;c+;
+bar
+
+D: 8c+;b;2a;
+M: 2.a;
+B: a-;e;c+;
+bar
+
+//
+
+D: f+;
+M: 8a ph;b;2c+;
+B: f-;c;a;
+bar
+
+D: d+;
+M: d+;2b eph;
+B: g-;d;b;
+bar
+
+D: e+;
+M: 8c+ ph;d+;2e+;
+B: a-;e;c+;
+bar
+
+D: f+;
+M: f+;2d+ eph;
+B: d-;a-;f;
+bar
+
+D: b;
+M: 8b ph;a;2b eph;
+B: e-;b-;g#;
+bar
+
+D: g;
+M: 8c#+ ph;d+;2e+ eph;
+B: a-;e;c#+;
+bar
+
+D: f;
+M: 8f+ ph;e+;4d+;a;
+B: d-;a-;f;
+bar
+
+D: 2d;4e;
+M: a;2b eph;
+B: e-;b-;g#;
+bar
+
+D: 2g;4b&;
+M: 8c#+ ph;d+;2e+ eph;
+B: a-;e;c#+;
+bar
+
+D: 4a;g;f;
+M: 8g+ ph;f+;2d+ eph;
+B: d-;a-;f;
+bar
+
+D: 4e;d;e;
+M: 8b ph;c+;4d+;e+;
+B: e-;b-;g#;
+bar
+
+D: 4e;d;e;
+M: 8c+;b;2a eph;
+B: a-;e;c+;
+bar
+
+D: f;
+M: 8d ph;e;4f;a;
+B: d-;a-;f;
+bar
+
+D: 2a;4c+;
+M: 8c+;b;2a eph;
+B: a-;e;c+;
+bar
+
+D: 2d+;4e+;
+M: 8g# ph;e;d+;c+;b;c+;
+B: e-;b-;g#;
+bar
+
+D: a+~;
+M: 2.a~ eph;
+B: a-;e;c+;
+bar
+
+D: a+;
+M: 2.a;
+B: 2.a-;
+endbar

@@ -1,0 +1,122 @@
+header
+	title (16) "Tone Poem (No. 88)"
+	title (14) " "
+	title "" "John A. Krallmann (Oct 7, 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 88) - \%"
+score
+	staffs=2
+	key=5#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.75
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=60";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+
+1: {8a;b;g;}3;{a;[with>]d+;b;}3;{a;b;g;}3;
+2: 4g;d+;b;
+bar
+
+1: {8a;b;g;}3;{a;[with>]d+;b;}3;{a;b;a;}3;
+2: 4e;b;f;
+bar
+
+1: {8g;a;b;}3;{g;a;b;}3;{g;[with>]d+;b;}3;
+2: 4c;e+;g;
+bar
+
+1: {8c+;e;g;}3;{f;e;f;}3;{e;d;e;}3;
+2: 4f-;g;a;
+bar
+
+1: 2.d;
+1 2: {8g-;fx-;g-;}3;{f#-;b-;a-;}3;{f-;b-;a-;}3;
+2: 4b--;f-;d;
+bar
+
+1: 2.e;
+1 2: {8g-;a-;b-;}3;{g-;a-;b-;}3;{g-;c;b-;}3;
+2: 4c-;d;e;
+bar
+
+1: {8e;f;g;}3;{c+;b;a;}3;{e+;d+;c+;}3;
+1 2: a-;e;8g;16f;e;
+2: 8f-;c;f;g;4a;
+octave below 2: 1 "8va";
+bar
+
+1: 2.d+;
+1 2: {8f;g;b;}3;{a;f;a;}3;{g;d;g;}3;
+2: 8b--;f;f-;d+;b--;f;
+bar
+
+1: d+;af+;{4ge+;8d+;}3;
+1 2: {8a;b;f;}3;2s;
+2: 8f-;d+;{e-;b-;a;}3;4g;
+octave below 2: 2 "8va";
+bar
+
+1: ec+;{8;gn+;f+;}3;4e#cx+;
+mussym above 1: 2.33 "ferm"; 2.66 "ferm";
+2: {8f-;a;g;}3;4f;{8b--;g;cx;}3;
+octave below 2: 1 "8va";
+bar
+
+1: 4fd+;gf+;{4ge+;8c+;}3;
+2: {8b--;an;d+;}3;{e-;d+;g;}3;4cb;
+bar
+
+1: 8.gne+;16f+;{8d+;c+;b;}3;4g;
+1 2: s;f;{8d;e;b-;}3;
+2: {8b--;c+;e;}3;b--;d;e-;d;
+bar
+
+1: a;{8c+;b;a;}3;4g;
+1 2: {8c;g;f;}3;4d;{8;e;b-;}3;
+2: 8f-;e;g-;a;e-;d;
+bar
+
+1: {8g+;f+;e+;}3;4d+;;
+1 2: 8.a;16f;{8c;b;a;}3;{a;b;g;}3;
+2: 8f-;e+;gn-;d;g#-;b;
+bar 
+
+1: b-egc+;cf tie;8;e;
+roll 1: 1;
+1 2: s;{8b-;a-;g-;}3;4f-;
+2: c-;f-;c;
+bar
+
+1: d;g;{8a;g;f;}3;
+1 2: {8g-;b-;g-;}3;{;a-;b-;}3;4c;
+2: g-;e;f-;
+octave below 2: 1 "8va"; 3 "8va";
+bar
+
+1: {8f;g;a;}3;4b-g;;
+2: {8a;g;f;}3;4g-d;;
+boldital between 1&2: 3 "p";
+bar
+
+1: {8a+;g+;f+;}3;{c+;e+;d+;}3;4g;
+2: g+;d+;g;
+boldital between 1&2: 1 "pp";
+endbar

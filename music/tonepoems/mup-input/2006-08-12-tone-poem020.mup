@@ -1,0 +1,169 @@
+header
+	title (18) "Tone Poem (No. 20)"
+	title "" "John A. Krallmann (Aug 12-13, 2006)"
+
+header2
+	title (12) "Tone Poem (No. 20) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=12/8
+	beamstyle=4.,4.,4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.8
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=92";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2.b~;4.;8g;a;b;
+2: 4.g--;ad+;gd+;g&-;
+bar
+
+1: 4.b;8c+;d+;b;4.~;8;f;e;
+2: 4.e-;a&f+;a-;fd+;
+bar
+
+rom above all: 3 "Slower";
+1: 4a;8;;e+;a;4.f+~;4;8;
+2: 4.ec+;{4f-;e-;}2,4.;4.d-;ac+d+f+;
+bar
+
+1: 8af+;bg+;f#d#+;4.af+~;8f+;e+;e&+;4gen+;8g;
+1 2: 4.s;;a&;s;
+2: 4.g-;c-;g-;c+;
+bar
+
+1: 8g;a;g;4.f~;~;4;8a;
+1 2: 4.b&-;4a-;8e;;d;c#;4.d;
+2: 4.c;d-;a-;f;
+bar
+
+1: 8a;e+;a;g+;f+;e+;2.f+;
+1 2: 4.g;a;4;8;4.;
+2: 4.d&-;dn-;cd+;8d+;e+;f+;
+bar
+
+midi all: 9 "tempo=82";
+1: 4g;8g;g#;d+;e+;4.d+;4d&+;8;
+1 2: 2.d;4.f;e;
+2: 4.b&-f;;8f;g;g#;4a-a;8g-;
+2 2: 4.s;;a-;s;
+bar
+
+score time=9/8 ; beamstyle=4.,4.,4.
+music
+
+rom above all: 1 "Slower";
+1: 4c+;8;4;8b&;a;g;ag+;
+1 2: 4.d;8e&;d;c;4.b&-;
+2: 4.f#-da;d-;4g-;8fn-;
+bar
+
+score time=12/8
+music
+
+1: 8f+;4e&+;4c+;8;;b&;a;;g;;
+1 2: 4.gc+;e&;d;;
+2: 4c-;8b&;4.f-a;d-g&;g-b&;
+bar
+
+1: 4.g-g~;4g;8a;g;f#;e;4f;8;
+1 2: 8d;c;b&-;4.c;2.a-d;
+2: 4.e&-;c;4d-;8a-;4.d;
+bar
+
+1: 8f#;g;a;;g;f;;e;b;db;ec+;db;
+1 2: 4b(n)-;8c;4b-;8a-;4g-;8d;4.s;
+2: 4e&-;8b-;4f#;8b-;4en-;8b-;4g#;8e-;
+bar
+
+midi all: 1 "tempo=76";
+1: 8db;cb;ca;b-a;ca;da;ca;da;e&c+;;cb&;da;
+2: 4.a--;f-;f#-;d-;
+bar
+
+1: b&-a;b-g;gb&g+;gg+;ag+;bg+;d+c++;e&+c++;e+b&+;c+a+;ag+;fe+;
+2: 4g-;8f-;4e&-;8d-;4.c-;f-;
+bar
+
+1: ad+;b&d+;dc+;c+;b;g;4.g+;4c+;16d+;e&+;
+1 2: 4.s;d;8g;a;b;g;a;f;
+2: 4f#-;8a;;g;f;e&-;c;g;fn-;c;a;
+2 2: 4.s;g-;s;;
+bar
+
+1: 4.d+;8c;d;e&;4.ca&;4b-g;8g-;
+1 2: a;b&;d;4.s;;;
+2: g-;d;b&;a&-;e&;c+;g-;d;f;4.g;
+bar
+
+midi all: 1 "tempo=68";
+rom above all: 1 "Slower";
+1: 4e;16d#;e;8.a;16c+;d+;c+;2.g+;
+1 2: 2.s;8.d+;16e+;d+;c+;8g;c+;16d+;e+;
+2: c-;g-;e;f-;c;a;c-;g-;e;c+;b;b&;
+bar
+
+1: 4e+;16f+;e+;8;d+;a;4.ca&;4b-g;16g+;f+;
+1 2: 4.a;d;2.s;
+2: f-;c;a;f#-;d;c+;g-;d;f;4.g;
+bar
+
+1: 4e+;8;;d+;16f+;e+;8.b;16a;g;f;4.e;
+1 2: 2.s;4.;8.d;16c;b-;a-;
+2: a&-;e;16d+;c+;8b;e;e-;an-;f;b;a-;e;g;
+bar
+
+1: 4.f;a;4;16g;a;4dac+;8ad+;
+1 2: 8.a-;16b-;c;d;8.f;16e;d;c;4.c;4s;16e;f;
+2: d-;a-;f;d-;f;a-;g-;f;a;g-;d;a;
+bar
+
+midi all: 7 "tempo=60";
+1: 4g+;16;;4gbg+;16g;;4.g;a&;
+1 2: 4.fc+;s;8e&;16d;e;d;e;8c;16f;e;d;c;
+2: a;f;a;4.g-db;8e&-;b&-;g;f-;c;a&;
+2 2: 4.g-;s;2.;
+bar
+
+1: 4.b&;e&c+;cd+;8f+;16e&+;d+;c+;f;
+1 2: 8d;16g;f;e&;d;8g;16a&;g;f;e;8a;16g;f;e;d;4.fc+;
+2: g-;d;f;a&-;f;c+;g-;d;b;a&-;f;d+;
+bar
+
+1: 4.b&;16a&;b;8c+;16a;g;4.f;16b;e;8e&+;16b;c+;
+1 2: 8f;16e&;d;e;b&-;4.s;16c;d;8c;b-;4.s;
+2: g-;e&;b&;f-;c;a&;b&-;a;;g-;e;d&+;
+bar
+
+1: e(n)b&d&+;4e&a&c+;16f;g;a;b;a;f;<<staff clef=bass>> 4.b&; <<staff clef=treble>> 16c;d&;8c;16g;a&;
+1 2: 4.s;a&-;16f;g;8f;e&;4.g-;
+2: a&-;e&;c+;d&-;b&-;f;e&-;b-;d&;en-;b-;en;
+bar
+
+score time=9/8
+music
+
+1: 8g;4f; <<staff clef=bass>> 4fb&;8a&;4b;16c+;d&+;
+1 2: 4.a&-;s;8f;4g;
+2: f-;c;e&-;d&-;b&-;d&;4.e-b-;
+bar
+
+1: 4.c+~;2.;
+1 2: 4b&;8g;2.a(n);
+2: 4.f-c tie;2.;
+endbar

@@ -1,0 +1,138 @@
+header
+	title (16) "Tone Poem (No. 49)"
+	title "" "John A. Krallmann (3/8/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=2,2
+	staffscale=0.92
+	vscheme=2f
+
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=12";
+midi 2 1-2: 0 "channel=13"; 0 "program=0";
+
+rom above all: 1 "( \(smup4n) = 96 )";
+define  T
+1: 8e+;g+;g;d+;e+;g+;g;d+;
+2: 2c;b-;
+bar
+
+1: 8d+;e;a;c+;;e;g;b;
+2: 2a-;g-;
+bar
+
+1: 8a+;c+;f+;g+;f+;a;c+;e+;
+2: 2f-;d-;
+bar
+
+1: 8e+;f;a;d+;;f;c+;b;
+2: 2g-;;
+bar
+
+1: 8g+;b;e+;d+;c+;b;ad+;ge+;
+2: 2e-;a-;
+bar
+
+1: 4.f+;8e+;2d+;
+1 2: 8c+;b;4a;8;b;g;f;
+2: 2d-;g-;
+bar
+
+1: 2g+;4c+;8d+;e+;
+1 2: 8e+;d+;c+;b;a;g;f;e;
+2: 2e-;a-;
+bar
+
+1: 2f+;4.b;8d+;
+1 2: 8f+;e+;d+;c+;d;e;4f;
+2: 2d-;g-;
+bar
+
+1: 8d+;c+;b;c+;b;b&;4a;
+1 2: 2e;4d;c;
+2: 2g#-;4.a-;8gn-;
+bar
+
+1: 4.a;8f;4.g;8e;
+1 2: 8c;d;4e;8d;c;4;
+2: 2f-;e-;
+bar
+
+1: 8f;eg;fa;dc+;4.bd+;8d#+;
+1 2: 2s;8a;g;4f;
+2: 2d-;g-;
+bar
+
+1: 4.e+;8g+;;f+;c;d;
+1 2: 8g;a;4b;8;a;c;d;
+2: 2c-;f-;
+bar
+
+1: 4.d;8f;a-f;g-e;af+;ge+;
+1 2: 8a-;b-;4g-;2s;
+2: 2g-;c-;
+bar
+
+1: 4.a;8c+;4.g;8e;
+1 2: 8e;f;4d;8;g-;4c;
+2: 2f-;e-;
+bar
+
+staff 1 clef=bass
+music
+
+1: c+;;2ec+;
+1 2: 8g;a;d;f;2s;
+2: 2f-;c-g-;
+rom between 1&2: 4 "Fine";
+@
+T
+(dblbar) repeatstart
+
+staff 1 clef=treble
+music
+
+midi all: 0 "tempo=56";
+rom above all: 1 "Meno mosso ( \(smup4n) = 58 )";
+1: 8e+;g+;c+;g+;2f+;
+1 2: 2s;8b;c+;d+;b;
+2: 2c+g+;8d+;e+;f+;d+;
+2 2: 2s;g;
+bar
+
+1: 4.e+;8a+;4.d+;8d#+;
+1 2: 8c+;b;4a;8;a&;4g;
+2: 8e+;d+;4c+;f+;b;
+2 2: 4.a;8f;2g;
+bar
+
+1: 4.e+;8g+;;4f+;8c+;
+1 2: 8c+;b;4b&;2a;
+2: c;e+;f-;a;
+bar
+
+rom between 1&2: 2.2 "D.C. al Fine";
+1: 4.b;8g;2ec+;
+1 2: 8d;e;4f;2s;
+2: g-;g;2cg;
+repeatend
+
+ifdef MIDI
+ midi all: 1 "tempo=96";
+ T
+ endbar
+endif

@@ -1,0 +1,133 @@
+header
+	title (18) "Tone Poem (No. 30)"
+	title "" "John A. Krallmann (2/3/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	staffscale=.9
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2s;4a+;
+2: 2s;4r;
+bar
+
+1: 4.g+;8e+;d+;g;
+2: c-;c+e+;be+;
+bar
+
+1: 4.c+;8d+;e+;f+;
+1 2: b;a;;
+2: 2e+;4fd+;
+2 2: a;g;s;
+bar
+
+1: 4.g+;8e+;d+;c+;
+1 2: 8d+;c+;4b;a;
+2: c+;g;fd+;
+2 2: 2e;4s;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4.d+;8d#+;4.e+;8g+;
+1 2: 8a;a&;4g;8b;an;4g;
+2: b;f+;c-;be+;
+2 2: 2g-;s;
+bar
+
+1: 8c++;b+;;e+;4.a+;8f+;
+1 2: c+;;8e+;d+;4c+;
+2: ae+;ge+;c+;d+;
+2 2: 2s;f;
+bar
+
+1: 4.g+;8e+;a;b;c+;d+;
+1 2: 8d+;c+;4b;g;f;
+2: c+;g+;c+;d+;
+2 2: 2e;f;
+bar
+
+1: 2g;4f;a;
+1 2: 2e;8e;d~;;f;
+2: 8d+;c+;b;c+;2a;
+2 2: 2e;4d;c;
+bar
+
+1: 4.d+;8g;f+;e+;d+;e+;
+1 2: 8a;g;4f;8a;g;f;g;
+2: g;d+;b;8a;b;
+2 2: 2b-;g-;
+dblbar
+
+score key=1&
+music
+
+1: 8d+;c+;b;e;fa;c+;;f+;
+1 2: 8f;e;d;c;e;d;16f;g;8a;
+2: 2b;4s;16a;b;8c+;
+2 2: c;c-;f-;c;
+ital between 1&2: 1 "rit."; 3 "a tempo";
+bar
+
+1: 8d+f+;c+e+;4bd+;8c+e+;bnd+;4ac+;
+1 2: 8f;e;16d;e;8f;4e;16c;d;8e;
+ital between 1&2: 3 "subito \f(TX)pp";
+2: b-;f;a-;e;
+bar
+
+1: 8b(&)d+;;gb;d+;be+;bd+;bc+;be+;
+1 2: 8a;g;16b-;c;8d;g;c;d;e;
+2: g-;d;c-;c;
+< between 1&2: 3 til 4.5;
+bar
+
+1: 8f+;e+;d+;c+;f+;e+;d+;c+;
+1 2: 8a;f;16d;e;8f;a;f;16d;e;8f;
+2: d-;ca;b--;8b-g;a-f;
+bar
+
+1: 8d+;c+;b;a;c+;b;a;g;
+1 2: 8b;a;g;f;e;d;;e;
+2: g-b;8d;f;4c-;cb;
+dblbar
+
+score key=2&
+music
+
+1: 8a;g;f;e;<<staff clef=bass>>d+;c+;b;a&;
+1 2: 8c;b-;a-;g-;f;e;d;c;
+2: f-;c;b--;f-;
+bar
+
+1: 8g;a(n);b;d+;e+;f+;;e+;
+1 2: e;f;g;g&;
+2: e-b-;d-b-;c-b-;;
+ital between 1&2: 1 "rit. e dim.";
+bar
+
+1: 1d+f+;
+1 2: 1f;
+2: 1b--b-;
+endbar

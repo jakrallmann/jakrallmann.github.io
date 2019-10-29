@@ -1,0 +1,125 @@
+header
+	title (16) "Tone Poem (No. 78)"
+	title (14) " "
+	title "" "John A. Krallmann (1/29/12)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.92
+	scoresep=10,26
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+1: 2s;4d;e;
+2: 2s;r;
+bar
+
+1: 4.a;16g;f;8e;4f;8e;
+2: f-;ca;a-;ec#+;
+bar
+
+1: 4.d;16g;f;8e;4c;8e;
+2: b-;fa;a-;eg;
+bar
+
+1: 2d;e;
+1 2: {a-;b-;c;}3;{g-;a-;b-;}3;
+2: g-;df;c-;eg;
+bar
+
+1: {g;f;e;}3;2d;
+1 2: 2a-;{4a-;b-;g-;}3;
+2: d-;df;b--;f-d;
+bar
+
+1: {g;f;e;}3;{g;f;e;}3;
+1 2: 2b-;;
+2: c-;g-c;c-;ce;
+bar
+
+1: {g;f;e;}3;{f;g;a;}3;
+1 2:2b-d;a-;
+2: d;e;2cf;
+2 2: 2f-;4;e-;
+bar
+
+1: {d+;c+;b;}3;{d+;c+;b;}3;
+1 2: 2da;eb;
+2: b--f-;f;g--;fbd+;
+bar
+
+1: 2ec+;{4c+;b;a;}3;
+1 2: {g;a;g;}3;2df;
+2: a--;cea;d-;dfb;
+bar
+
+1: {b;a;b;}3;{b;a;g;}3;
+1 2: 2df;d&f&;
+2: g--;dfb;c-;ceb;
+bar
+
+1: 2a~;{4;g;f;}3;
+1 2: {ce;f;e;}3;2b-d;
+2: f-;cfa;b--;dfb;
+bar
+
+1: 1g;
+1 2: {b-;c;d;}3;{b-;c;d;}3;
+2: g--;dfb;c-;ceb;
+bar
+
+1: 2c+;16d+;d&+;c+;c&+;b;a;a&;g;
+1 2: {e;f;g;}3;2e;
+2: c-;ceb;c-;ceb;
+bar
+
+1: 4.c&a&;8cnan;4;e&gc+;
+2: f-;cf;fa;e&fa;
+bar
+
+1: 4.c+;8b;4;8a;g;
+1 2: 2df;4;d&f;
+2:b--;dfb;dgb;d&gb;
+bar
+
+1: 4.b;8a;4a;8f;g;
+1 2: 2cf;4;d&;
+2: f-;cfa;;d&fgb;
+bar
+
+1: 4.b;8a;4;8f;g;
+1 2: 2cf;4;d;
+2: f-;cfa;;dfgb;
+bar
+
+1: 4.b;8a;4;g;
+1 2: 2cf;4;d&;
+2: f-;cfa;;b-f;
+bar
+
+1: 2cfa;4b;c+;
+1 2: 2s;d&f;
+2: 2f-ca;b-f;
+bar
+
+1: 1gac+;
+2: 1f-ca;
+endbar

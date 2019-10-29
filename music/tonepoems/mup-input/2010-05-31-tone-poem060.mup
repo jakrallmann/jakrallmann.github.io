@@ -1,0 +1,115 @@
+header
+	title (16) "Tone Poem (No. 60)"
+	title "" "John A. Krallmann (5/31/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 60) - \%"
+
+score
+	staffs=2
+	key=5&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=2
+music
+
+midi all: 0 "tempo=108";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: 2.fa;4f;
+1 2: e;8d;c~;;d;4s;
+2: d-;a-;
+bar
+
+1: dfab;8d+;egbd+ tie;;e+;4d+;
+2: g-;d;
+bar
+
+1: ad+f+;8ge+;fd+ tie;4;dfc+;
+2: d-;a-;
+bar
+
+1: b-fc+;8b;dfb tie;4;8b;c+;
+2: g-;d;
+bar
+
+1: ceb;8a;cea tie;4;8g;a;
+2: a-;e;
+bar
+
+1: 8f;b;d+;[with>]fbe+ tie;4;fbd+;
+2: b-;f;
+bar
+
+1: 8f+;e+;f+;bd+ tie;2;
+1 2: 4.eb;8a~;4;g;
+2: g-;d;
+bar
+
+1: 8f+;e+;f+;a+~;4;g+;
+1 2: 4.gc+;8 tie;2;
+2: a-;e;
+bar
+
+1: 2.ff+;4f+;
+1 2: 8c+;b;c+;d+~;2;
+2: b-;f;
+bar
+
+1: 8f+;e+;d+;e+~;;4;8;
+1 2: 1fb;
+2: g-;d;
+bar
+
+1: 8d+;c+;b;c+~;;4;8;
+1 2: 1cean;
+2: f-;c;
+bar
+
+1: 8dgnd+;dnadn+;;tie;;4e+;8f+;
+2: b-;f;
+bar
+
+1: 8f+;e+;;~;4;d+;
+1 2: 4.gb;8 tie;2;
+2: e-;b-;
+bar
+
+1: 8d+;c+;;~;;4d+;8c+;
+1 2: 1ean;
+2: f-;c;
+bar
+
+1: 8c+;b;;~;4;a;
+1 2: 4.df;8ce tie;2;
+2: b--;f-;
+bar
+
+1: 8a;g;;~;4;f;
+1 2: 4.b-e;8ce tie;2;
+2: b--;f-;
+bar
+
+1: 8e;;;~;;4c;8a-;
+1 2: 1a-c;
+2: b--;;
+bar
+
+1: [with.]b-;r;[with "\(acc_hat)"]2b-;
+2: [with.]4b--b-;r;[with "\(acc_hat)"]2b--b-;
+endbar
+

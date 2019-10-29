@@ -1,0 +1,223 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann (March 2003)"
+
+header2
+	title (12) "Nocturne - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1#
+	time=4/4
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.75
+	release=0
+	measnum=y
+
+staff 2
+	clef=bass
+
+
+music
+
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84,74";
+//midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=50";
+//midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=74";
+
+define P1 2: {8e-;b-;g;}3;{f;b-;f-;}3;{e-;b-;g;}3;{f;b-;f;}3; @
+
+1: mr;
+P1
+bar
+
+1: 2.b;16f;g;a;b;
+P1
+bar
+
+1: 2.e+;8b;f;
+P1
+bar
+
+1: 2c;b-;
+P1
+bar
+
+1: 2r;4;16g;f;g;a;
+P1
+bar
+
+1: 2.b;8.a;32g;a;
+P1
+bar
+
+1: 2c+;4..b;32e+;f+;
+P1
+bar
+
+1: 2...g+;{32e+;f+;g+;}3;
+P1
+bar
+
+1: 1e++;
+P1
+bar
+
+
+define P2 2: {8a-;e;c+;}3;{b;e;b;}3;{c+;e;c+;}3;{b;e;b;}3; @
+
+1: 2...e+;32c+;d+;
+P2
+bar
+
+1: 2..e+;16a;g;
+P2
+bar
+
+1: 2fn;e~;
+P2
+bar
+
+1: 1e;
+P2
+bar
+
+1: 1a;
+2: {8fn-;c;a;}3;{d+;c+;a;}3;{d+;c+;a;}3;{fn;c;f-;}3;
+bar
+
+1: 1g;
+2: {8e-;b-;g;}3;{f;b-;f;}3;{g;b-;g;}3;{f;b-;f;}3;
+bar
+
+1: 1e;
+2: {8c-;g-;e;}3;{d+;c+;g;}3;{f;g;e;}3;{f;g;e;}3;
+bar
+
+1: 1g#;
+2: {8e-;b-;g#;}3;{f;b-;f;}3;{g;b-;g;}3;{f;b-;f;}3;
+bar
+
+1: 1g(n);
+2: {8c-;g-;e;}3;{d+;c+;g;}3;{e+;d+;c+;}3;{b;c+;g;}3;
+bar
+
+1: 1g;
+2:{8c-;g-;e;}3;{d+;c+;g;}3;{e+;d+;c+;}3;{b;c+;b&;}3;
+bar
+
+1: 1a;
+2: {8fn-;c;a;}3;{d+;c+;a;}3;{e+;fn+;e+;}3;{c+;a;c+;}3;
+bar
+
+1: a;2.b;
+2: {8g-;d;a;}3;{b;fn+;b;}3;4a;a&;
+bar
+
+1: 1c+;
+2:{8c-;g-;e;}3;{a;b;a;}3;{g;e;g;}3;{a;c+;a;}3;
+bar
+
+score key=4&
+time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2.c+;
+2: {8a-;e;b;}3;{c+;e+;c+;}3;{b;a;b;}3;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2bn;;
+2: {8f;a;bn;}3;{dn+;b;g;}3;{f;g;b;}3;{d+;b;a;}3;
+bar
+
+1: 2b(&);;
+2: {8dn;a;b;}3;{f+;b;a;}3;{d;a;b;}3;{f+;b;a;}3;
+bar
+
+1: 1b;
+2: {8d(&);g;b;}3;{f+;b;g;}3;{d;g;b;}3;{f+;b;g;}3;
+bar
+
+1: b;2.a;
+2: {8c;e;a;}3;{e+;a;e;}3;{c;e;a;}3;{e+;a;e;}3;
+bar
+
+1: 2a;g;
+2: {8bn-;e;a;}3;{bn;e+;f+;}3;{b-;e;g;}3;{e+;b;g;}3;
+bar
+
+1: f;;2b;
+2: {8a-;dn;b;}3;{dn+;a;b;}3;{g-;e;b;}3;{f+;e+;b;}3;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2e+;4f~;
+2: {8c-;g-;e;}3;{dn;c;b-;}3;{a-;f;c+;}3;
+bar
+
+1: 2f;8g;a;
+2: c+;2bn;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2f;4e;dn;
+2: {8b-;dn;f;}3;{a;c&+;b;}3;4cn+;b;
+bar
+
+1: 2.e;{16f;g;a;b;c+;dn+;}6;
+2: {8e-;b-;e;}3;{f;g;b;}3;2g;
+bar
+
+1: 1e+;
+2: {8c-;g-;dn+;}3;{c+;g;c+;}3;{d+;g;d+;}3;{c+;g;c+;}3;
+dblbar
+
+score key=7&
+music
+
+define P3 2: {8c-;g-;e;}3;{d;g-;d;}3;{e;g-;e;}3;{d;g-;d;}3; @
+
+1: 2..e+;{16c+;d+;e+;}3;
+P3
+bar
+
+1: 1g+;
+P3
+dblbar
+
+score key=2#
+music
+
+1: 1f+;
+2: {8d-;a-;f;}3;{e;a-;e;}3;{f;d+;c+;}3;{b;f;a;}3;
+bar
+
+1: 2b;g+;
+2: {8g-;d;a;}3;{f+;g+;b;}3;{e;b;a+;}3;{g+;d+;b;}3;
+bar
+
+1: bg+;af+;;a+;
+2:{8a-;e;b;}3;4c+;2;
+bar
+
+1: 1bf+a+;
+2: {8d-;a-;e;}3;{f;e+;b;}3;2d+f+;
+endbar
+
+

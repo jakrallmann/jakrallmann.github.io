@@ -1,0 +1,202 @@
+header
+	title (16) "Song Without Words (No. 45)"
+	title "" "John A. Krallmann (10/23/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 45) - \%"
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4., 4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=14,25
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=96";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92,68";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1-2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+
+1: 4.s;4;8f;
+2: 4.s;4;8r;
+bar
+
+1: g;f#;g;a;g;a;
+2: 4.r;be+;
+2 2: 2.e;
+bar
+
+1: 4b;8f;4;8;
+2: 4.r;fb;
+2 2: 2.d;
+bar
+
+1: e;d;e;g;f;e;
+2: 4.r;ea;
+2 2: 2.c;
+bar
+
+1: d;e;en;4f;8b-;
+2: 4.r;da&;
+2 2: 2.b-;
+bar
+
+1: g;f#;g;c+;b;g;
+2: 4.r;be+;
+2 2: 2.e;
+bar
+
+1: f;g;b;d+;;;
+2: 4.r;fb;
+2 2: 2.d;
+bar
+
+1: d+;c+;b;d+;c+;b;
+2: 4.c;gben+;
+bar
+
+1: f+;g+;f+;;d+;e+;
+2: 4.f-;ac+e+f+;
+bar
+
+1: f+;g+;f+;d+;e+;f+;
+2: 4.d-;a&c+f+;
+bar
+
+1: f+;bn;;4.;
+2: 4.g-;bnd+;
+2 2: 4.s;8a&;g;f;
+bar
+
+1: e+;g;;;a;b;
+2: 4.c-;gbc+e+;
+bar
+
+1: d+;c+;d+;e+;f+;d+;
+2: 4.f-;fa&bnd+;
+bar
+
+1: d+;g;;4.;
+2: 4.e-;8c+;d+;c+;
+2 2: 4.s;gbe+;
+bar
+
+1: c+;f;;4.;
+2: 4.d-;8b;c+;b;
+2 2: 4.s;f;
+bar
+
+1: b;e;;4.;
+2: 4.c-;8b;c+;g;
+2 2: 4.s;c;
+bar
+
+1: c;d;e;b;a;;
+2: 4.f-;e+;
+2 2: 4.s;4g&;8f;
+octave below 2: 1 "8va";
+bar
+
+1: c+;b;;4gb;8c+;
+2: 4.d+;ec+;
+2 2: 4g;8f;4.s;
+bar
+
+1: 16d+;f;g;a;b;c+;4d+;8;
+2: 4.f-;fbd+;
+bar
+
+1: 16d+;g;a;b;c+;d+;4;8;
+2: 4.e-;gbd+;
+bar
+
+1: 16f+;a;b;a;b;f;4.;
+2: 4.d-;8c+;b;f;
+2 2: 4.s;d;
+bar
+
+staff 1 clef=bass
+music
+
+1: 16e+;g;c+;b;a;g;8e;f;g;
+2: 4.r;g-;
+2 2: 2.c-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 16a-;b-;c;d;e;f;g;a;b;c+;d+;e+;
+2: 4.f-;fae+;
+octave below 2: 1 "8va";
+bar
+
+1: 4.f+;g+;
+1 2: c+;b;f;16bn;c+;d+;e+;f+;d+;
+2: 4.d-;gd+;
+bar
+
+1: e+;c+;d+;4.e+;
+1 2: 4.g;16;a;b;a;8g;
+2: 4.c-;fc+;
+bar
+
+1: bd+;b;c+;bd+;b;c+;
+1 2: 4.f;g;
+2: 4b-;8a-;4g-;8f-;
+bar
+
+1: bd+;b;c+;4f#a;8d;
+1 2: 4.g;s;
+2: 4.e-;d-;
+dblbar
+
+score key=3&
+music
+
+1: 16bn;an;b;c+;d+;e+;8f+;e+;d+;
+2: 4.g-;bnd+;
+2 2: 4.s;8a;g;f;
+bar
+
+1: 16e+;d+;c+;d+;e+;d+;4c+;8g;
+2: 4.c-;gc+e+;
+bar
+
+1: 16a;g;f;g;a;b;8c+;b;a;
+2: 4.f-;fad+;
+octave below 2: 1 "8va";
+bar
+
+1: 16g;f;e;f;g;e;4.c;
+2: 4.c-;g;
+2 2: 4.s;8e;d;c;
+bar
+
+1: 16a-;b-;c;d;e;f;8g;f;e;
+2: 4.f-e;a-f;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.ec+;enc+ tie;
+2: 4.c-g-;c-g- tie;
+bar
+
+1: 2.ec+;
+2: 2.c-g-;
+endbar

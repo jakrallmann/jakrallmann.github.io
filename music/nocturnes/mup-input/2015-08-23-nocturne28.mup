@@ -1,0 +1,226 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 28"
+	title "" "John A. Krallmann"
+	title " " "(Aug 23 and 30, 2015)"
+
+header2
+	title (12) "Nocturne No. 28 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	key=4#
+	measnum=y
+	transpose=down aug 1
+	staffscale=0.92
+	scoresep=8,25
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal below 1,2: 1;3; endif @
+
+midi all: 0 "tempo=74";
+midi 1: 0 "onvelocity=76,62";
+midi 1 2: 0 "onvelocity=62";
+midi 2 1-2: 0 "onvelocity=50";
+
+1: 2s;4.a;8g;
+2: 2s;r;
+bar
+
+1: b-;g;4.a;8g;
+2: e-;b-;g;b-;
+bar
+
+1: 2g~;8;a;g;f;
+1 2: 8b-#;c;cx;d;4e;d;
+2: d-;b#-;g;b-;
+bar
+
+1: 8c+;a+;g+;f+;e+g+;d+f+;c+e+;fgd+;
+1 2: e;a;2s;
+2: c-;g-;e;g-;
+bar
+
+1: 8ge+;fd+;ec+;db;ec+;db;ca;b-g;
+2: a--;e-;c;g-;
+bar
+
+1: 8ga;fa;fna;ea;4a;8d+;c+;
+1 2: 2s;8cx;d;4fx;
+2:f--;c-;b-;a;
+bar
+
+1: 2b~;8;16a;g;a+;g+;f+;e+;
+1 2: 8g;f;e;d;2dn;
+2: e-;b-;g;e-;
+octave below 2: 1 "8va";
+bar
+
+1: 8gg+;4ac+;8bc+;2c+;
+1 2: 2s;8a;g;f;e;
+2: a--;e-;a;c;
+bar
+
+1: 8ff+;4ac+;8acn+;ab;g+;a+;gn+;
+2: b--;d;a;d+;
+bar
+
+1: 8aa+;4bg+;8fe+;2b;
+1 2: 2s;8f;g;f;e;
+2: e-;b-;g;b-;
+bar
+
+1: 2cn+;8e+;f+;gn+;a+;
+1 2: 8e;f;gn;a;2;
+2: a-;e;cn+;e;
+bar
+
+1: 2f+;8a;gn;f;b-;
+1 2: 8cn+;b;c+;b;2s;
+2: b--;f-;d;b-;
+bar
+
+1: 8gg+;f+;e+;b;2g;
+1 2: 2s;8d;e;d;b-;
+2: e-;b-;g;b-;
+bar
+
+1: 8cc+;b;a;g;4c;8.e;16f;
+2: a--;e-;8b;a;g;f;
+bar
+
+1: 8d;4c+;8b;f+;e+;d+;f;
+2: b--;f-;d;a;
+bar
+
+1: 8fx;g;c;cn;4.b-;8b+;
+2: e-;b-;g;b--;
+bar
+
+1: 8c++;e++;a+;g+;2f+;
+1 2: 2s;8c+;e+;a;g;
+2: a--;c;a;c;
+bar
+
+1: 8d+;f+;c+;cn+;4.b;8f;
+1 2: 2f;8;a;cn;b-;
+2: b--;f-;d;a;
+bar
+
+1: 8a;g;f;e;4.g;8e;
+1 2: c;cn;2b-;
+2: e-;b-;[grace;slash1]8e-;4g;b-;
+bar
+
+1: 8g;f;e;f;4g;b;
+1 2: c;cn;2b-;
+2: a--;e-;e;g-;
+bar
+
+1: 8f+;e+;d+;c+;2b;
+1 2: 2c+;8f;e;d;b-;
+2: a-;e;g-;e;
+bar
+
+1: 8c+;b;a;e;2b;
+1 2: 2e;8f;e;d;b-;
+2: a-;e;g-;e;
+bar
+
+1: 8a;g;f;e;4c;b-;
+1 2: 2c;s;
+2: f-;e;b-;d;
+bar
+
+1: 1c;
+2: 8c-;g-;e;d;2e#;
+dblbar
+
+score key=7#
+music
+
+midi all: 0 "tempo=50";
+rom above all: 1 "Meno mosso";
+1: 8e;e+;d+;c+;d+;4.e+;
+2: 8c;g;d+;e+;a-;e;d+;c+;
+bar
+
+1: 8e+;d+;c+;d+;4.e+;8g+;
+2: 8f-;c;a;c+;c-;g-;d;e;
+bar
+
+1: 8b+;c++;a+;f+;a+;4.g+;
+2: 8f-;c;a;c+;e-;c;fx;g;
+bar
+
+1: 4.f+;8a;;4.b;
+2: 8d-;a-;f;c;g-;d;a;g;
+bar
+
+1: 4.c+;8e;;4.f;
+2: 8a--;e;b;c+;d-;a-;e;f;
+bar
+
+1: 4.b+;8an+;2g+;
+2: 8g-;d;b;f;c-;g-;d;e;
+bar
+
+1: 4.a;8e+;8cx+;4.d+;
+2: 8f-;c;a;f;g-;d;a;b;
+bar
+
+1: 4.c+;8e;g;4.a;
+2: 8a-;e;c+;g-;f-;c;d;a;
+bar
+
+1: 4.g;8b-;4.g;8c;
+2: 8e-;c;g;c;en-;c;g;c;
+bar
+
+1: 4.g;8f;4.d;8e;
+2: 8d-;a-;f;d;g-;f;b-;f;
+bar
+
+1: 4.c+;8b;2g;
+2: 8c-;g-;d;e;e-;c;d;e;
+bar
+
+1: 4.a;8c+;d+;4.e+;
+2: 8f-;c;g;a;c-;g-;d;e;
+bar
+
+1: 8g+;4.a+;8d++;4.e++;
+2: 8f-;c;g;a;c-;g-;d;e;
+bar
+
+1: 8d++;c++;8.a+;16c++;2;
+1 2: 2s;8f+;e+;d+;c+;
+2: 8f-;c;a;c+;c-;g-;e;g;
+bar
+
+1: 2a;g;
+1 2: 8g;f;e;c;f;e;d;c;
+2: 8f-;c;f;a;c-;g-;d;e;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2a;g-e;
+1 2: 8g;f;c;d;2s;
+2: 8f--;c-;4an-;2c-;
+octave below 2: 3 "8va" til 4;
+endbar

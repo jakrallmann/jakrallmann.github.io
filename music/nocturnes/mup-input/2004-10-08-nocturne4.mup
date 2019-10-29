@@ -1,0 +1,287 @@
+header
+	title (18) "Nocturne No. 4"
+	title (10) " "
+	title "" "John A. Krallmann (10/8-9/04)"
+
+header2
+	title (12) "Nocturne No. 4 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,24
+	staffsep=15
+	staffscale=0.86
+	release=0
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=92";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=58";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=64";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=64";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=64";
+
+rom above all: 1 "molto legato (shimmering)";
+1: 8a+;d+;e+;f+;a+;d+;e+;f+;
+boldital below 1: 1 "p";
+boldital above 2: 1 "mp";
+2: 2d+;c+;
+bar
+
+1: 8a+;d+;e+;f+;r;d+;e+;f+;
+1 2: 2s;a;
+2: 2b;s;
+bar
+
+1: 8a+;c+;d+;a;g+;c+;d+;a;
+2: 1g-;
+bar
+
+1: 8f+;a;c+;f;e+;f;d+;a;
+2: 1g-;
+bar
+
+1: 8c+;f;a-;c;a;d;f;c;
+2: 1g-;
+bar
+
+1: 8a;c;d;a-;f;g-;c+;d+;
+2: 1g--;
+bar
+
+1: 8d+;e+;d;c;e+;g;d+;c+;
+2: 1c-;
+bar
+
+1: 8b;c;a;c;a;c;a;c;
+2: 2.f-;4e-;
+bar
+
+1: 8f+;a;c+;e;f+;a;d;g+;
+2: 2d-;c-;
+bar
+
+1: 8a+;d+;f;g;d+;d;a;g;
+2: 1b--~;
+bar
+
+1: 8a;d;g;a;b;c+;e;a-;
+2: 2b--;a--;
+bar
+
+1: 8b;c+;e;a-;b;c+;e;a-;
+2: 2g-;f-;
+bar
+
+1: 8g;g-;d;c;f;a-;c;e;
+2: 2e-;d-;
+bar
+
+1: 8f;a-;c;g;;g-;d;f;
+2: 2c-;b--;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8e+;b;c+;e;d+;f;a;c+;
+2: 2a--;d-;
+bar
+
+1: 8d+;a;f;e+;f+;a;g;d#+;
+2: 2c-;b--;
+bar
+
+1: 8e+;g;c+;b;e+;a;c+;f+;
+2: 2c-;f-;
+bar
+
+1: 8d+;f;a;bg+;d+;f;a;e+;
+mussym above 1: 2.5 "ferm";
+2: 2g-;c-;
+bar
+
+1: 1ec+;
+2: 1c-;
+repeatend
+
+score key= f major
+staff 1 clef=treble
+music
+
+midi 1 1: 0 "onvelocity=74,54";
+midi 1 2: 0 "onvelocity=54";
+midi 2 1-2: 0 "onvelocity=54";
+midi all: 1 "tempo=76";
+rom above all: 1 "meno mosso";
+boldital between 1&2: 1 "pp";
+1: r;c;d;8e;f;
+2: mr;
+bar
+
+1: 2.a;8a;b;
+2: d;a;2f+;
+bar
+
+ifdef MIDI
+  1: 32a;g;8.a~;2;8a;g;
+else
+  1: 2.a;8a;g;
+  mussym above 1: 1 "invmor";
+endif
+2: c;a;2e+;
+bar
+
+ifdef MIDI
+  1: 32a;g;8.a~;2;8g;f;
+else
+  1: 2.a;8g;f;
+  mussym above 1: 1 "invmor";
+endif
+2: b-;f;2d+;
+bar
+
+1: 8d;e;2e;4;
+2: a-;e;2c+;
+bar
+
+1: 4.d;8c;4.b-;8c;
+2: b-;2f;4a-;
+bar
+
+1: 8a-;b-~;2~;8;;
+2: g-;d;a;g;
+bar
+
+1: 2.g;4g#;
+1 2: r;c;2d;
+2: 2r;b;
+2 2: 1e;
+bar
+
+1: a;g;4.f;8;
+1 2: 1e&;
+2: c+;b;2a;
+2 2: 2.f;4e&;
+bar
+
+1: 8c+;b;a;b;4g;;
+1 2: 2f;4d;c;
+2: 2db;e&b;
+bar
+
+1: 8e&;d;e;g;2f;
+1 2: 2b-;8c;b-;4;
+2: 2cg;df;
+bar
+
+1: d;8e&;f;2b-e;
+1 2: 2b-;s;
+2: 2a&-f;4f;e&;
+2 2: 2s;g-;
+bar
+
+1: f;8e(n);f;2g;
+1 2: 2a&-c;4c;bn-;
+2: 2a&-e&;g-f;
+dblbar
+
+midi all: 1 "tempo=70";
+rom above all: 1 "meno mosso";
+1: 2e;4df;8e;d;
+1 2: d;c;2s;
+2: 2cg;ca&;
+bar
+
+1: ce;g;8c+;d+;c+;d+;
+1 2: 2s;d;
+2: 2cg;ca&;
+bar
+
+1: ge+;d+g+;;8f+;e+;
+2: 2cg;cb;
+bar
+
+1: 2.c+;8a;b;
+1 2: g;f;8e;d;c;b-;
+2: 2a-f;b-f;
+bar
+
+1: gc+;fc+;2d+;
+1 2: 2s;8a;b;g;f;
+2: 2a;4f;d+;
+2 2: 2a-f;b-;
+bar
+
+1: 8g;a;b;16d+;c+;4a;d+;
+1 2: f;e;8g;e;f;d;
+2: g;8d+;c+;2da;
+2 2: 2c;s;
+bar
+
+1: 4.d+;8b;4.c+;16g;a;
+1 2: 8f;g;a;e;g;f;4c;
+2: 8a;g;f;g;;f;4(c+);
+2 2: 2b-;a-;
+bar
+
+1: 8b;a;g;f;2g;
+1 2: 2d;8d;c;4g-;
+2: 2f;e-c;
+2 2: g-;f-;2s;
+bar
+
+staff 1 clef=bass
+music
+
+midi all: 1 " tempo=64";
+rom above all: 1 "poco a poco rit.";
+1: a;8b;c+;<<staff clef=treble>>4.d;16g;a;
+1 2: 8g;f;4e&;8a-;g-;4f-;
+2: 2f-c;b-d;
+bar
+
+1: 8b;a;b;c+;d+;e+;4;
+1 2: 2d;4f;g;
+2: a;f;4.cb;8c-;
+2 2: 2g-;s;
+bar
+
+midi all: 1 "tempo=58";
+1: f+;8d+;e+;4f+;8d+;e+;
+1 2: 2a;;
+2: 8e;4.d;8;4.a;
+2 2: 2d-;c-;
+bar
+
+1: daf+;8d+;b;4.c+;8;
+roll 1: 1;
+1 2: 2s;8r;4.e;
+2: 8b--;4.g;4a--;g;
+bar
+
+rom above all: 1 "molto rit. e dim.";
+midi all: 1 "tempo=54"; 2 "tempo=48"; 3 "tempo=43"; 4 "tempo=36";
+1: 4.b;16d+;c+;4.a;16bn;c+;
+1 2: 8r;4.d;8r;4.e;
+2: g--;f;c-;b;
+bar
+
+1: 1c+f+a+;
+2: 8s;<<staff clef=treble>>a-?;c?;d?;2a?;
+2 2: 1f-;
+octave below 2: 1 "8va";
+endbar

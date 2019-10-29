@@ -1,0 +1,140 @@
+header
+	title (18) "Tone Poem (No. 41)"
+	title "" "John A. Krallmann (1/20/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=3#
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+staff 1
+	vscheme=2o
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 1 "tempo=80";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=72";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+rom above all: 1 "( \(smup4n) = 80 )";
+1: 4s;4.d+;16c+;d+;e+;f+;gn+;a+;
+2: 4s;r;2;
+bar
+
+1: 4.cn++;8b+;2gn+;
+1 2: 8d+;d#+;e+;d+;b;b#;c+;cx+;
+2: gn-;d;b;d+;
+bar
+
+1: 4.e+;8d+;4b;8c+;d+;
+1 2: 8d;e;f;g;4g;8d;e;
+2: g-;e;8f+;e+;g;e;
+bar
+
+1: 4.d+;8b;4.c+;8a;
+1 2: 8f;fn;b-;d;e;g;4c;
+2: a-;fn;a-;e;
+bar
+
+1: 4.b;8f;4;a;
+1 2: 8f;a-;d;e;d;c;b-;c;
+2: d-;a-;f;;
+bar
+
+1: 4.a;8g;2;
+1 2: 8b-;c;d;b-;;c;d;e;
+2: e-;b-;f;e-;
+bar
+
+1: 4.g;8f;4.f+;8d+;
+1 2: 8a-;c;f;g-;a;g;f;;
+2: f-;c;d-;a-;
+bar
+
+1: 4.e+;8c+;4.;8a;
+1 2: 8g;f;e;b;a;g;4f;
+2: c-;g-;f-;a;
+bar
+
+1: 4.f;8;4.;8e;
+1 2: 8e;d;4c;8g-;a-;4b-;
+2: d-;a-;e-;b-;
+bar
+
+1: 4.f+;8g+;4.e+;16b;c+;
+1 2: 8a;g;4f;8g;f;4e;
+2: f-;c+;c-;g;
+bar
+
+1: 8e+;4d+;16a;b;8d+;c+;4a;
+1 2: f;d;e;a;
+2: d-;a-;a--;c+;
+bar
+
+1: 8c+;b;4f;;e;
+1 2: f;d;8;f-;g-;b-;
+2: d-;a;e-;b-;
+bar
+
+1: 2f;8;g;a;g;
+1 2: 8a-;g-;a-;c;f;c;b-;e;
+2: f-;c;a;e-;
+bar
+
+1: 4.f;8e;f;e;f;a;
+1 2: 8f-;a-;d;a-;d;a-;d;e;
+2: d-;a-;<<staff clef=treble>>d+;a+;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2a;f+~;
+1 2: 8e;a-;c;e;f;cn+;b;b&;
+2: c-;<<staff clef=treble>>8f+;gn+;<<staff clef=bass>>4d-;f;
+bar
+
+1: 8f+;e+;e&+;d+;2b+~;
+1 2: 2a;8d+;e+;en+;e&+;
+2: cn+;f+;gn-;d;
+bar
+
+score key=0#
+music
+
+1: 8b+;a+;g+;f+;2e+~;
+1 2: 2d+;8g;g#;a;g;
+2: b;d;c-;g-;
+bar
+
+1: 8e+;c+;g;g#;2a;
+1 2: 2gn;8e;d;cn;a-;
+2: e;c+;f-;c;
+bar
+
+1: 2s;8.g;[with.]...16g#;8a;b;
+1 2: 2s;8.f;[with.]...16;8;;
+2: d;8e;f;8.g;[with.]...16g;8;;
+2 2: 4d;8e;f;2s;
+boldital between 1&2: 3 "p";
+< between 1&2: 3.25 til 4.9;
+bar
+
+1: 1c+;
+1 2: 1e;
+2: 1cg;
+boldital between 1&2: 1 "f";
+endbar 

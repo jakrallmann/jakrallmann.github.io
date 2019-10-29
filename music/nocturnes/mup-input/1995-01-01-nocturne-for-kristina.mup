@@ -1,0 +1,275 @@
+header
+	title (18) "Nocturne for Kristina"
+	title (12) "" "John A. Krallmann (1/1/95)"
+
+footer
+	title (12) "\(copyright) Copyright 1995 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (10) "Nocturne for Kristina - \%"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	scoresep=12,24
+	staffscale=0.88
+
+staff 2
+	clef=bass
+
+music
+midi all: 0 "tempo=104";
+midi 1 1-2: 0 "channel=11"; 0 "program=0";
+midi 2 1: 0 "channel=12"; 0 "program=0"; 2 "onvelocity=54"; 2.5 "onvelocity=66"; 3 "onvelocity=54"; 
+midi 2 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=28";
+rom above 1: 1 "Dreamily, but with strong accents ( \(smup4n) = 104 )";
+1: ms;
+2 1: 4r;8a;[with>]4b;8a;b;a;
+2 2: 8g-~;g-d tie;2.;
+boldital below 1: 1 "mf";
+boldital below 2: 1 "p";
+bar
+
+1: ms;
+2 1: 4r;8a;[with>]4b;8a;b;a;
+midi 2 1: 2 "onvelocity=54"; 2.5 "onvelocity=66"; 3 "onvelocity=54"; 
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1: ms;
+2 1: 4r;8a;[with>]4b;8d+;c+; ifdef MIDI 16.b;32r; else b; endif
+midi 2 1: 2 "onvelocity=54"; 2.5 "onvelocity=66"; 3 "onvelocity=62"; 
+2 2: 8g-~;g-d tie;2.;
+bar
+
+midi 1: 0 "onvelocity=66";
+1: [with>]4.b-;[]4a-;[]4.b-~;
+2 1: ms;
+2 2: 8f-~;f-c tie;2.f-cg;
+bar
+
+1: 1b-;
+2 1: 4r;[with>]8a;[]g~;2;
+midi 2 1: 2 "onvelocity=54";
+2 2: 8g-~;g-d tie;2.;
+bar
+
+1: 4.e;c;4e;
+2 1: ms;
+2 2: 8c-~;c-g- tie;2.c-g-e;
+bar
+
+1: 4.f;e;4d;
+2 1: ms;
+2 2: 8f-~;f-c tie;2.f-ca;
+bar
+
+1: 1e~;
+2 1: 4.r;[with>]8c+~;2;
+2 2: 8c-~;c-g- tie;2.c-g-e;
+bar
+
+1: 1e;
+2 1: 4.r;[with>]8c+~;2;
+2 2: 8c-~;c-g- tie;2.c-g-e;
+bar
+
+1: 4.a;g;4f;
+2 1: 4r;2.a;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1: 1g;
+2 1: 4r;8a;[with>]b~;2;
+midi 2 1: 2.5 "onvelocity=60";
+2 2: 8g-~;g-d tie;2.;
+bar
+
+1: 4.a;g;4c;
+2 1: ms;
+2 2: 8f-~;f-c tie;2.f-ca;
+bar
+
+1: 4.e;8d~;2;
+2 1: 4r;8a;b~;2;
+midi 2 1: 2 "onvelocity=54";
+2 2: 8g-~;g-d tie;2.;
+> between 1&2: 3 til 4.5;
+bar
+
+midi 1: 0 "onvelocity=58";
+1: 1ce tie;
+2 1: 4r;8d;e~;2;
+midi 2 1: 2 "onvelocity=35"; 2.5 "onvelocity=40";
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+midi all: 3 "tempo=76";
+1: 1ce;
+2 1: 4r;8d;e~;2;
+midi 2 1: 2 "onvelocity=35"; 2.5 "onvelocity=40";
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+midi all: 0 "tempo=104";
+1: 1e+;
+midi 1: 0 "onvelocity=66";
+2 1: 4.r;[with>]4a;4.g;
+midi 2 1: 2.5 "onvelocity=60"; 3.5 "onvelocity=54";
+2 2: 8c-~;c-g- tie;2.c-g-e;
+bar
+
+1: 1c+;
+2 1: 4r;8f;[with>]4g;4.a;
+midi 2 1: 2.5 "onvelocity=60"; 3.5 "onvelocity=54";
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1: [with>]8f+;e+;c+;[with>]~;2;
+midi 1: 1 "onvelocity=68"; 1.5 "onvelocity=62"; 2.5 "onvelocity=68";
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: [with>]8f;e;c;[with>]~;2;
+midi 1: 1 "onvelocity=68"; 1.5 "onvelocity=62"; 2.5 "onvelocity=68";
+2 1: 4r;2a;4f;
+2 2: 8f-~;f-c tie;2.;
+> between 1&2: 3 til 4.5;
+bar
+
+1: 1e;
+midi 1: 0 "onvelocity=66";
+2 1: 4r;8e;~;2;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 1c+e+;
+2 1: 4.r;[with>]4a;4.g;
+midi 2 1: 2.5 "onvelocity=60"; 3.5 "onvelocity=54";
+2 2: 8c-~;c-g- tie;2.c-g-e;
+bar
+
+1: 1fac+;
+2 1: 4r;8g;[with>]4a;4.f;
+midi 2 1: 2.5 "onvelocity=60"; 3.5 "onvelocity=54";
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1: 8ad+f+;gc+e+;egc+; tie;2;
+2 1: 4r;2e;4;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 8a-df;ce;a-c; tie;2;
+2 1: 4r;[with>]8g;4.f;4c;
+2 2: 8f-;f-c tie;2;4s;
+bar
+
+1: 1g-ce tie;
+2 1: 4r;8e;[with>]~;2;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 1g-ce;
+2 1: 4r;8e;[with>]~;2;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 4.g;c+;4e+;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 4.d+;c+;4d+;
+2 1: 4r;2.a;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1: [with>]8f+;e+;d+;[with>]c+~;2;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 4.e;g;4c+;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: 4.d+;c+;4d+;
+2 1: 4r;2.ga;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1: [with>]8f+;e+;d+;[with>]e+~;2;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1: [with>]8d+;c+;a;[with>]c+~;4;[with>]d+;
+2 1: 4r;2.a;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1 1: [with>]1c+e+;
+1 2: 4.r;8g~;2;
+midi 1 2: 0 "onvelocity=54";
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1 1: mr;
+1 2: 4.r;8a~;2;
+2 1: 4r;2.a;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1 1: 1c+e+;
+1 2: 4.r;8g~;2;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1 1: 1ca;
+1 2: 4.g;8f~;2;
+2 1: 4r;2.a;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1 1: 1ge+;
+1 2: 4.d+;8c+~;2;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie; 2.;
+bar
+
+1 1: 1f+g+a+;
+1 2: 4.d+;8c+~;2;
+2 1: 4r;2.a;
+2 2: 8f-~;f-c tie;2.;
+bar
+
+1 1: 4.d++;8c++~;2~;
+1 2: 1e+g+a+ tie;
+2 1: 4r;2.e;
+2 2: 8c-~;c-g- tie;2.;
+bar
+
+1 1: 1c++~;
+1 2: 1 e+g+a+ tie;
+2 1: 4r;8d;e~;4;s;
+midi 2 1: 2 "onvelocity=40"; 2.5 "onvelocity=50"; 3.5 "onvelocity=44";
+2 2: 8c-~;c-g- tie;2c-~g-;4c-g-;
+bar
+
+midi all: 1 "tempo=68";
+1 1: 1c++;
+1 2: 1e+g+a+;
+2 1: ms;
+2 2: 1c-;
+octave below 2: 1 "8va" til 3;
+endbar
+

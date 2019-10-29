@@ -1,0 +1,205 @@
+header
+	title (18) "Nocturne No. 3"
+	title (10) " "
+	title "" "John A. Krallmann (5/22-23/04)"
+
+header2
+	title (12) "Nocturne No. 3 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	beamstyle=4,4,4,4
+	brace=2-3
+	barstyle=2-3
+	measnum=y
+	staffscale=0.85
+
+staff 1 visible=n
+staff 2 timeunit=8
+staff 3
+	clef=bass
+	vscheme=2f
+staff 4 visible=n
+
+music
+
+midi all: 1 "tempo=80";
+midi 2 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=100,84";
+midi 2 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=84";
+midi 3 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=84";
+midi 3 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=90";
+
+define S 2: @
+define B 3: @
+define B2 3 2: @
+define M [with-] @
+
+S {8a+;e+;c+;}3;{a;c+;e+;}3;{a+;e+;c+;}3;{a;c+;e+;}3;
+B mr;
+bar
+
+mussym above all: 5 "sign";
+S {a+;e+;c+;}3;{a;c+;e+;}3;{a+;e+;c+;}3;{a;c+;e+;}3;
+B M... 4.c+;8b;4.a;8g;
+bar
+
+define PARTA
+S {a+;f+;c+;}3;{a;c+;f+;}3;{a+;f+;c+;}3;{a;c+;f+;}3;
+B M... 2.f;4e;
+bar
+
+S {a;c+;f+;}3;{f;a;c+;}3;{f+;c+;a;}3;{f;a;c+;}3;
+B M... 2.d;8e;f;
+bar
+
+S {f+;b;g;}3;{d;g;b;}3;{f+;b;g;}3;{a;b;f+;}3;
+B M 1g;
+bar
+
+S {Me+;e;g#;}3;{b;Mf+;Me+;}3;{Md+;e;b;}3;{Mc+;c;e;}3;
+B M 2g#;4.a;8gn;
+bar
+
+S {Mc+;d;f;}3;{a;Md+;Mc+;}3;{Mb;d;a;}3;{g;Mc+;Md+;}3;
+B 2f;4.g;8f;
+bar
+
+S {Mg+;c+;g;}3;{d;c;g-;}3;{Mg+;c+;g;}3;{f#;g;c+;}3;
+B 2e;e&;
+bar
+
+S {Me+;g;f#;}3;{a-;c;fn;}3;{Md+;f;g;}3;{a;Mc+;Mb;}3;
+B 2g-;g;
+bar
+
+S {Mb;d;f;}3;{g#-;b-;d;}3;{Mc+;g;e;}3;4r;
+B 2.s;{8e;g;c+;}3;
+B2 2c-;;
+bar
+
+S 4s;{8e;g;c+;}3;{Me+;c+;a;}3;{b-;c;e;}3;
+B {8e;g;c+;}3;2.s;
+B2 M...c;b-;2a-;
+bar
+
+S {Me+;c+;a;}3;{e;a;c+;}3;{Md+;a;f;}3;{a-;b-;c;}3;
+B M 2g-;Mf-;
+bar
+
+S {Md+;f;b-;}3;{Mc+;Md;Md+;}3;{Mf+;a;d;}3;{a-;Mc+;Md+;}3;
+B M 2g-;Mc;
+bar
+
+S {Me+;e;g;}3;{M...g-;c;b-;}3;{e+;[-]a;f;}3;{Md+;d;a;}3;
+B 2c-;f;
+bar
+
+S {Md+;d;f;}3;{Md+;g#;Me+;}3;{Md+;e;gn;}3;{Mc+;e;g;}3;
+B 2f-;c-;
+bar
+
+S {Mc+;c;e;}3;{Mb;c;e;}3;{Mb;c;f;}3;{Ma;a-;c;}3;
+B 2e-;4.f-;8e-;
+bar
+
+S {Mf+;c+;a;}3;{f;a;c+;}3;{Mf+;c+;a&;}3;{f;a;c+;}3;
+B 2d-;c-;
+bar
+
+S {Md+;f;a&-;}3;{g-;Me+;Mf+;}3;{Mg+;c+;g;}3;{Mf#;Mg;Mc;}3;
+B 2b--;e;
+bar
+
+S {Me+;b;c+;}3;{Md;Me;Ma-;}3;{Ma+;e+;f+;}3;{Md;Me;Mf;}3;
+B 2a-;f-;
+bar
+
+S {Mg+;b;c+;}3;{Mf#;Mg;Mc;}3;{Mf++;a+;d+;}3;{Md;Me;Mfn;}3;
+B 2e-;d-;
+bar
+
+S {Mf;a-;c;}3;{Mg;c;b-;}3;{Ma;c;f;}3;{Mb;g-;f;}3;
+B 2g-;g--;
+bar
+
+S {Md+;g;e;}3;{Mc+;g;e;}3;{Mb;g-;e;}3;{Ma;c;e;}3;
+B 1c-;
+bar
+
+S {Mg;a-;c;}3;{Mf;a-;c;}3;{Me;a-;c;}3;{Md;f-;a&-;}3;
+B 1f-;
+bar
+
+mussym above all: 4 "ferm";
+S {Mf;g-;b-;}3;{Mg;a-;c;}3;{Ma;b-;f;}3;4fd+;
+B 2.g-;4g--;
+bar
+
+S M 1db;
+B 1c-g-f;
+roll B 1;
+bar
+
+rom above all: 3 "Fine";
+S M 1ec+;
+B 1c-g-e;
+roll B 1;
+@
+PARTA
+repeatstart
+
+S {Ma;e;d;}3;{a-;c;d;}3;{Ma;e;d;}3;{a-;c;d;}3;
+B 2f-;;
+bar
+
+S {Mg;d;c;}3;{g-;d;e;}3;{Mc+;b;a;}3;{e;a;b;}3;
+B 2e-;a-;
+bar
+
+S {Mc+;b;a;}3;{e;a;b;}3;{Md+;c+;a;}3;{d;a;c+;}3;
+B 2g-;f-;
+bar
+
+S {M...e+;b;e+;}3;{f+;a;g+;}3;{e+;[-]b;a;}3;{g#;Mf;Me;}3;
+B e-;d-;2e-;
+bar
+
+S 2s;{M... 8f;g;a;}3;{b;c+;d+;}3;
+B {M 8d+;f;b;}3;{Mc+;e;a;}3;2s;
+B2 2a-;4d-;e-;
+bar
+
+S {Me+;b;c+;}3;{a;b;c+;}3;{d+;c+;a;}3;{M...e+;f#+;g#+;}3;
+B M...a-;g-;f-;e-;
+bar
+
+S {Ma+;e+;c+;}3;{a;c+;e+;}3;{M...a+;b+;c++;}3;{d++;b+;g+;}3;
+B M...a-;g-;f-;e-;
+bar
+
+S {Ma+;f+;d+;}3;{M...a;b;g;}3;{e;[-]a-;b-;}3;4c;
+B 2d-;4.a-;8g-;
+bar
+
+S {Me;a-;b-;}3;{c;Md;Mc;}3;{Md;g-;a-;}3;{b-;Mg;Mf;}3;
+B 2f-;g-;
+bar
+
+S {Me;a-;b-;}3;2.c#;
+B 1a-;
+repeatend
+
+rom above all: 3 "D.S. al Fine";
+S {a+;e+;c#+;}3;{a;c+;e+;}3;{a+;e+;c+;}3;{a;c+;e+;}3;
+B M...4.c#+;8b;4.a;8g;
+bar
+
+ifdef MIDI
+	PARTA
+	endbar
+endif

@@ -1,0 +1,158 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 7"
+	title "" "John A. Krallmann"
+	title " " "(April 6, 2014)"
+
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	scoresep=10,26
+	vscheme=2f
+staff 2
+	clef=bass
+	vscheme=2f
+music
+
+midi all: 0 "tempo=112";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+define S [with.] @
+
+1: 2.s;8e+ ph;f+;
+2: 2.s;4r;
+repeatstart
+
+1: S g+ eph;g;8r;d+ ph;e+;f+;
+2: 2c;b-;
+bar
+
+1: S g+ eph;g;8r;d+ ph;e+;f+;
+2: 2a-;a&-;
+bar
+
+1: S d+ eph;bn+;8r;a&+ ph;g+;f+;
+2: 2g-;g;
+bar
+
+1: 8e+;d+;4c+ eph;8r;S... c+;;;
+2: 2c;b-;
+bar
+
+1: 8e+ ph;d+;4c+ eph;r;b;
+2: 2a&-;g-;
+bar ending "1."
+
+1: 2.c+;8e+;f+;
+1 2: 4.a;8g;2f;
+2: 2c;a;
+2 2: 1f-;
+repeatend ending "2."
+
+1: 2.c+;8f+ ph;e+;
+1 2: 4.a;8g;2f;
+2: 2c;a;
+2 2: 1f-;
+bar endending
+
+1: 8d+;b;4g eph;8r;a ph;b;c+;
+2: 2g-;g;
+bar
+
+1: 8a;f;4c eph;8r;f ph;g;a;
+2: 2f-;a;
+bar
+
+1: 8g;e;4b- eph;8r;e ph;f;g;
+2: 2e-;e;
+bar
+
+score time=3/4 ; beamstyle=2.
+music
+
+1: 8f#;a;d+;c+;b;a eph;
+2: 2d-;4c+;
+bar
+
+score time=4/4
+music
+
+1: 8b ph;g;4d eph;8r;8b ph;a;g;
+2: 2g-;g;
+bar
+
+1: 8a;f;4c eph;8r;f ph;g;a;
+2: 2f-;a;
+bar
+
+1: 8g;b;g+;f+;e+;d+;c+;b;
+2: e-;b-;g;c+;
+bar
+
+score time=3/4
+music
+
+1: 8a;g;4f;8c;e;
+2: f-;c;a;
+bar
+
+1: 2.d eph;
+2: g-;d;b;
+bar
+
+1: 2c ph; 8f;e;
+2: e-;b-;g;
+bar
+
+1: d;[with>]2d+ eph;
+2: d-;a-;f#;
+bar
+
+1: r;8;f#+ ph;g+;a+;
+2: e+;d+;c+;
+bar
+
+1: 8bn+;a+;4g+ eph;8r;f+ ph;
+2: g-;d;bn;
+bar
+
+1: 8f+;e+;4d+;c+ eph;
+2: c;g;e+;
+bar
+
+1: 8b ph;a;2g eph;
+2: g-;d;b;
+bar
+
+1: 8f ph;e;4c eph; 8r;e ph;
+2: c-;g-;e;
+bar
+
+1: d;a eph;r;
+2: d-;a-;f#;
+bar
+
+1: a ph;d+ eph;r;
+2: d-;a-;f#;
+bar
+
+1: [with>]2.bg+;
+2: [with>]2.gd+;
+bar
+
+1: [grace]8b;[]a;2.b-g;
+2: 2.g-d;
+endbar

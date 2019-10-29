@@ -1,0 +1,157 @@
+header
+	title (18) "Song Without Words (No. 15)"
+	title "" "John A. Krallmann (11/9/08)"
+
+header2
+	title (12) "Song Without Words (No. 15) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=100";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=8";
+midi 2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=85";
+
+rom above 1: 1 "Rubato";
+1: 4.c+;8b;;a;;e;
+2: a-;e;c+;e;
+phrase above 1: 1 til 1m+3;
+bar
+
+1: 8e+;f+;e+;c+;4.d+;8c+;
+2: d;a;f+;a;
+phrase above 1: 4.5 til 2m+4.5;
+bar
+
+1: 8b;c+;b;g;a;4b;8a+;
+2: e;b;f;c+;
+bar
+
+1: 8g#;a;b;c+;f+;e+;d+;c+;
+octave above 1: 1 "8va" til 4.7;
+2: e;b;d+;f+;
+bar
+
+1: 8b+;a+;b;c+;f+;e+;g#;a;
+2: a-;e;c+;d+;
+phrase above 1: 1 til 1m+4.5;
+bar
+
+1: 8c+;b;d;e;a;g#;c;d;
+2: e-;b-;d;g#;
+bar
+
+1: 8e;g;e;g;d+;c+;g;e;
+2: c-;g-;e;d+;
+phrase above 1: 1 til 2m+4.5;
+bar
+
+1: 8e;a;c+;d+;f+;e+;c+;a;
+2: f-;c;a;d+;
+bar
+
+1: 8a;b-;g;d+;b+;a+;e+;f+;
+2: g-;d;f;d+;
+bar
+
+1: 8e&+;g;c+;d+;e+;g+;f+;e+;
+2: c;g;e&+;g+;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8e&+;g;c+;d+;e+;g+;f+;e+;
+2: b&-;g;d+;g+;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8e&+;g;a&;c+;e+;g+;f+;e+;
+2: a&-;f;c+;a&+;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8e&+;f;c+;d+;e+;g+;f+;c+;
+2: a-;f;c+;e&+;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8e&+;f;a&;d+;c+;b&;c+;d+;
+2: b&-;f;d+;a&+;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8d+;f;g;c#+;d+;a&+;g+;d+;
+2: b-;f;d+;f+;
+phrase above 1: 1 til 2m+4.5;
+bar
+
+1: 8f+;e&+;d+;c+;b&;a&;g;f;
+2: c;g;a&-;f;
+bar
+
+1: 8a&;g;f;e&;d;e;f;g;
+2: g-;d;b;d;
+bar
+
+1: 8g;f;g;f;e&;f;d+;c+;
+2: a&-;e&;c+;f;
+phrase above 1: 1 til 1m+4.5;
+bar
+
+1: 8b;a;g;a;b;c+;d+;g+;
+2: g-;d;b;g+;
+bar
+
+1: 8e+;d+;e+;c+;g;c+;d+;e+;
+2: c-;g-;d+;e;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8e+;d+;e+;c+;f;c+;d+;f+;
+2: f-;c;a;c+;
+phrase above 1: 1 til 4.5;
+bar
+
+1: 8f+;e+;f+;e+;g+;f+;e+;c+;
+2: d-;a-;f;c+;
+phrase above 1: 1 til 1m+4.5;
+bar
+
+1: 8d+;c+;d+;e+;g+;f+;e+;d+;
+2: g-;d;b;f+;
+bar
+
+1: 8d+;c+;d+;e+;b+;a+;d+;c+;
+2: a-;e;c+;e+;
+phrase above 1: 1 til 3m+3;
+bar
+
+1: 8g+;f+;g+;f+;e+;d+;c+;d+;
+2: d-;a-;f;d+;
+bar
+
+1: 8f+;e+;d+;c+;b;c+;d+;e;
+2: e-;b-;g#;e+;
+bar
+
+1: 8b;a;b;c+;2a+;
+2: a-;e;2c+;
+endbar
+
+

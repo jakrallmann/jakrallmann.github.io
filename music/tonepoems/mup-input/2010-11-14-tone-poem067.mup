@@ -1,0 +1,386 @@
+header
+	title (16) "Tone Poem (No. 67)"
+	title (14) " "
+	title "" "John A. Krallmann (11/14-20/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (14) "Tone Poem (No. 67) - \%"
+
+score
+	staffs=2
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	scoresep=10,24
+	timeunit=4
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=124";
+midi 1 1-2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+1: r;b ph;c+;b;
+2: 1daf+;
+bar
+
+1: b;a;2 eph;
+2: 1cae+;
+bar
+
+1: r;e ph;f;e;
+2: 1b-g#d+;
+bar
+
+1: b;c+;2a~ eph;
+1 2: 1e~;
+2: 2.a-ec+;4g-;
+bar
+
+1: a;e ph above;d;c;
+1 2: e;2.s;
+2: 1f-ca;
+bar
+
+1: d;g;2~;
+2: 1e-b-g;
+bar
+
+1: g;f;d;a-;
+2: 1d-a-f;
+bar
+
+score time=3/2
+music
+
+1: 2.b- eph;4 ph;c#;d;
+2: 4e-;b-;g#~;2.;
+bar
+
+score time=4/4
+music
+
+1: c#;e;2~;
+2: 1a-eg#;
+bar
+
+1: e;f#;d;a-;
+1 2: 1f#-;
+2: 1d-a-;
+bar
+
+1: 1e~ eph;
+1 2: 1c#;
+2: 1a-eg#;
+bar
+
+1: e;f# ph;a;b;
+1 2: f#-;2.s;
+2: 1d-a-;
+bar
+
+1: c#+;e+;2~;
+1 2: 1e;
+2: 1a-eg#;
+bar
+
+1: e+;f#+;a+;b+;
+1 2: f#;2.s;
+2: 1dac#+;
+bar
+
+1: 1e+c#++;
+2: 1ae+g#+;
+bar
+
+1: 1f#c#+f#+;
+2: 1da;
+bar
+
+1: 1c#g#c#+;
+2: 1a-e;
+bar
+
+1: 1f#-df#;
+2: 1d-a-;
+bar
+
+1: 2a;g#;
+1 2: 1b-d;
+2: 2e-b- tie;e-b-e;
+bar
+
+1: 2g#;f#;
+1 2: 1a-c#;
+2: 2f#-c# tie;f-cf#;  
+bar
+
+1: 2e;d;
+1 2: 2g#-;f#-;
+2: 1d-a-;
+bar
+
+1: 1c#eph;
+2: 1a-e;
+dblbar
+
+staff 2 clef=treble
+music
+
+boldital between 1&2: 1 "p";
+rom above all: 1 "dolce";
+1: [with-]2a+c#++;;
+2: f+;e+;c#+;e+;
+bar
+
+1: [with-]2a+c#++;;
+2: f+;e+;c#+;e+;
+bar
+
+1: [with-]2b+d++;;
+2: f+;d+;b;d+;
+bar
+
+1: [with-]2b+d++;;
+2: f+;d+;b;d+;
+bar
+
+1: [with-]2a+c#++;;
+2: e+;c#+;a;c+;
+bar
+
+1: [with-]2a+c#++;;
+2: e+;c#+;a;c+;
+bar
+
+ital between 1&2: 1 "molto legato";
+1: 2b+d++ ph; a+c#++;
+2: g;b;d+;b;
+bar
+
+1: 2g+b+;a+c#++;
+2: g;b;d+;b;
+bar
+
+1: 2a#+c#++;f#+a+;
+2: f#;a#;c#+;a;
+bar
+
+1: 1f#+a#+ eph;
+2: f#;a#;c#+;a;
+bar
+
+1: 2f#+a+ ph;e+g#+;
+2: d;f#;a;f;
+bar
+
+1: 2d+f#+;e+g#+;
+2: d;f#;a;f;
+bar
+
+1: 2e+g#+;d+f#+;
+2: c#;e;g#;e;
+bar
+
+1: 1c#+e+ eph;
+2: c#;e;g#;e;
+bar
+
+1: 2d+f#+ ph;c#+e+;
+2: b-;d;f#;d;
+bar
+
+1: 2bd+;ac#+;
+2: b-;d;f#;d;
+bar
+
+staff 2 clef=bass
+music
+
+1: 1g#b;
+2: e;b;d+;e+;
+bar
+
+1: 1g#c+ eph;
+2: e;c+;2e+;
+bar 
+
+rom above all : 1 "cantabile";
+1: 2.c#+ ph;4e;
+2: a-;e;2c#+~;
+bar
+
+1: a;b;c#+;e+;
+2: 1c+;
+bar
+
+1: c#+;b;2f#~;
+2: d-;a-;f#;a;
+bar
+
+1: f;g#;a;b;
+2: 1d+;
+bar
+
+1: 1c#+~ eph;
+2: a-;e;b;a;
+bar
+
+1: 2c+;c#+ ph;
+2: 1c#+;
+bar
+
+1: 2.c#+;4e;
+2: a-;e;2c#+~;
+bar
+
+1: a;b;c#+;e+;
+2: 1c+;
+bar
+
+1: c#+;b;2f~;
+2: d-;a-;f;a;
+bar
+
+1: f;g;a;b;
+2: 1d+;
+bar
+
+1: 2c#+;e+~ eph;
+2: a-;e;c#+;e+;
+bar
+
+1: 2e+; ph;
+2: 1a+;
+bar
+
+1: e+;d+;c+;d+;
+2: f-;c;a;c+;
+bar
+
+1: 2e+ eph;4 ph;d+;
+2: 2f+;4d-;a-;
+bar
+
+1: c+;d+;e+;a+;
+2: f#;a;2f#+;
+bar
+
+1: a+;g+;;f#+;
+2: g-;d;b;d+;
+bar
+
+score time=3/2
+music
+
+1: 4g+ eph;d#+ ph;2.e+;4b;
+2: 2f+;4c-;g-;d;e;
+bar
+
+score time=2/2
+music
+
+1: b;a;b;c+;
+2: 2c+;e+;
+bar
+
+1: 2.f+;4c+;
+2: d-;a-;2f;
+bar
+
+1: a;b;e+;d+;
+2: g-;d;b;f+;
+bar
+
+1: e+;d++;c++;b+;
+2: a-;e;c+;e+;
+bar
+
+1: 4.a+;8c+;4;d+;
+2: f-;c;a;c+;
+bar
+
+1: 4.e+;8f#+;4g#+;b+;
+2: e-;b-;g#;d+;
+bar
+
+1: 4.b+;8c++;2a+ eph;
+2: a-;e;c+;g-;
+bar
+
+1: 4.b+ ph;8c++;2a+ eph;
+2: f-;c;a;e+;
+bar
+
+1: 4.b+ ph;8c++;2a+ eph;
+2: d-;a-;f;c+;
+bar
+
+1: 4.a+ ph;8g+;4;d+;
+2: g-;d;b;f+;
+bar
+
+1: 1e+ eph;
+2: a-;e;d+;c+;
+bar
+
+1: 4.e+ ph;8a;4;8f+;e+;
+2: f-;c;a;d+;
+bar
+
+1: 4.d+;8a;4;8b;c+;
+2: f#-;d;c+;a;
+bar
+
+1: 4.e+;8d+;4;8c#+;d+;
+2: g-;f;b;d+;
+bar
+
+1: 4.f+;8e+;4d+;8c+;b;
+2: g#-;e;b;d+;
+bar
+
+1: 4.d+;8c+;4b;e;
+2: a-;e;c+;b;
+bar
+
+1: 4.g;8f;4d;f;
+2: d-;a-;f;b;
+bar
+
+1: 4.e;8f#;4g#;b;
+2: e-;b-;c+;b;
+bar
+
+1: 4.b;8c+;2a eph;
+2: a-;e;d+;c+;
+bar
+
+1: 4.b ph;8c+;2a eph;
+2: f-;c;b;c+;
+bar
+
+1: 4.b ph;8c+;2a eph;
+2: d-;a-;f;c+;
+bar
+
+rom above all: 1 "Lento";
+boldital between 1&2: 1 "ppp";
+1: 4.b+ ph; 8c++;2a+~ eph;
+2: a-;e;2c+~;
+bar
+
+1: 1a+;
+2: 1c+;
+endbar

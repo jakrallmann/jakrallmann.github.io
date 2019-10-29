@@ -1,0 +1,216 @@
+header
+	title (18) "Lullaby No. 50"
+	title (10) " "
+	title "" "John A. Krallmann (12/18/04)"
+
+header2
+	title (12) "Lullaby No. 50 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84,70";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+1: 2a+;4d+;;
+2: 1d+f+;
+bar
+
+1: 2a+;4c+;d+;
+2: 1c+e+;
+bar
+
+1: 2a+;4d+;f+;
+2: 1b&d+;
+bar
+
+1: 2e+;4ad#+;ge+;
+1 2: r;b;2s;
+2: 2d+;c#+;
+2 2: 1a;
+bar
+
+1: 2a+;d+;
+1 2: f+;e+;g;a;
+2: 2a;bn;
+2 2: 1d~;
+bar
+
+1: 2d+;c+;
+1 2: f;g;e;a;
+2: 2b&;g;
+2 2: 2d;a-;
+bar
+
+1: a;f;2d;
+1 2: 2d;4a-;g-;
+2: 1b-f;
+bar
+
+1: a-de;a+;b+;8c++;b+;
+1 2: 2s;4d+;d&+;
+2: 2g;4f;e;
+2 2: 1a-;
+bar
+
+1: 2a+;4d+;8b;c+;
+1 2: e+;f+;2g;
+2: d-;a-;b;e+;
+bar
+
+1: 2a;g;
+1 2: r;2.d;
+2: d;b~;;8c;b-;
+bar
+
+1: a;8a+;g+;4f+;8;e+;
+1 2: a;gd+;gc+;;
+2: d-;b;c+;c-;
+bar
+
+1: 16f+;e+;4.d+~;4;8f+;g+;
+1 2: fa;df;2dg;
+2: d-;b;2bn;
+bar
+
+staff 2 clef=treble
+music
+
+1: f+d++;e+c++;2f+a+;
+2: b;c+;2d+;
+bar
+
+score time=2/4
+music
+1: 2d+f+;
+2: 2gb;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+1: 1a+;
+1 2: f+;e+;2d+~;
+2: 2.a;4g~;
+2 2: d;c;2b-~;
+bar
+
+score time=3/4
+music
+1: 2f+;4e+;
+1 2: 2.d+;
+2: 2.g~;
+2 2: b-;2c;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+1: 2.d+;4c+;
+1 2: 1a;
+2: g;f;2e;
+2 2: 2d;c;
+bar
+
+staff 2 clef=bass
+music
+1: a;g;2ea;
+1 2: 2f;s;
+2: 2.d+;4c#+;
+2 2: 2b;a;
+bar
+
+1: 1f#a;
+2: 1da;
+bar
+
+staff 2 clef=treble
+music
+
+midi all: 1 "tempo=76";
+1: 2.a+;8f+;g+;
+1 2: 2f+;e+;
+2: 1a;
+2 2: 2d;c;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8a+;g+;f+;g+;
+1 2: 2d+;
+2: 2b-g;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2e+;d+;
+1 2: 2.c+;4b;
+2: 1f;
+2 2: 2a-;b-;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2b-g;4b-da;cb;
+1 2: f;e;2s;
+2: 2c-;4f;e;
+bar
+
+midi all: 1 "tempo=72";
+1: 8g+;f+;e+;d+;4.ac+;16a;b;
+1 2: b;8g#;e;gn;f;4d;
+2: c-;b;f-;b;
+bar
+
+1: ac+;cc+;fd+;8b+;a+;
+1 2: 8g;f;e;f;4s;d+;
+2: f-;a;8c+;b;;f;
+2 2: 2s;4b-;g-;
+bar
+
+midi all: 1 "tempo=66"; 3 "tempo=61";
+1: 8g+;f+;g+;a+;4.c+;8b;
+1 2: 2b;8g;4.f;
+2: d+;d&+;a-;g-;
+2 2: 2c;s;
+bar
+
+midi all: 1 "tempo=56";
+1: 4.b-g;8f;2a-f;
+1 2: df;d&;2s;
+2: 2c-;fcg;
+bar
+
+staff 2 clef=treble
+music
+
+1: 2fd+;bg+;
+octave above 1: 1 "8va" til 1m+4;
+2: 2cb;fd&+;
+bar
+
+1: 1a+c++;
+2: 1f+c++;
+endbar

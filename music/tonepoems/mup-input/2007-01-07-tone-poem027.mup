@@ -1,0 +1,156 @@
+header
+	title (18) "Tone Poem (No. 27)"
+	title "" "John A. Krallmann (1/7-10/07)"
+
+header2
+	title (12) "Tone Poem (No. 27) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=2/4
+	beamstyle=2
+	brace=1-2
+	barstyle=1-2
+	packfact=1.3
+	scoresep=12,24
+	staffscale=0.95
+	measnum=y
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=56";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: s;g;
+2: s;r;
+bar
+
+1: a;c+;
+2: mr;
+bar
+
+1: 2e+;
+2: {8c-;g;e;e+;c+;g;}6;
+bar
+
+1: 4.e+;8d+d++;
+2: {8b--;g#;e;f+;e+;b;}6;
+bar
+
+1: 8bb+;4aa+;8d+;
+2: {8f-;d;a;f;d+;a;}6;
+bar
+
+1: d+;d#+;
+2: {8g-;f+;b;a+;b;g-;}6;
+bar
+
+1: 2e+;
+2: {8c-;g;e;e+;c+;g;}6;
+bar
+
+1: e+;16f+;e+;d+;b;
+2: {8b--;g#;e;d+;b;e;}6;
+bar
+
+1: 8b;4.c+;
+2: {8a--;e;c+;a;e+;e;}6;
+dblbar
+
+score key=2&
+music
+
+1: 8.c+;16g;4a;
+2: {8e-;c;g;d-;f#;a-;}6;
+bar
+
+1: 8.c+;16g+;4f#+;
+2: {8e-;g;c;d-;a-;f#;}6;
+boldital between 1&2: 1 "p";
+bar
+
+1: {16b+d++;a+c++;g+b+;f#+a+;e+g+;d+f+;}6;16bd+;ac+;gb;f#a;
+roll 1: 1;1.3;1.6;2;2.3;2.6;
+2: {8d-;a-;f#;d-;a-;f;}6;
+bar
+
+1: 2gb;
+2: {8g-;b;d;d+;a;g;}6;
+bar
+
+1: 2gb;
+2: {8f-;b;d;d+;a;g;}6;
+bar
+
+1: 2gb;
+2: {8e-;g;c;c+;b;g;}6;
+bar
+
+1: 2f#a;
+2: {8d-;a-;f#;c+;b;a;}6;
+bar
+
+1: 8gbn;ac+;bd+;16g+bn+;f+a+;
+2: {8g-;d;a;bn;d+;f+;}6;
+bar
+
+1: 16en+g+;d+f+;c+e+;bnd+;8.ac+;16a-f;
+2: {8c-;g-;en;f-;c;d;}6;
+bar
+
+1: eng;a;
+1 2: 8d;c;e;d;
+2: {8c-;g-;en;f-;c;fa;}6;
+bar
+
+1: {16c+;d+;en+;g+;a+;}5;4a+;
+1 2: en;{16c+;bn;a;g;f;d;}6;
+2: {8c-;g-;en;f-;c;a;}6;
+bar
+
+1: c++;32c++;d++;c++;d++;c++;d++;b+;c++;
+1 2: 8d+;4.en+;
+2: {8c-;g-;en;c+;b+;en+;}6;
+bar
+
+1: [grace;slash 1]16c++;{8.aa+;16e+e++;;;;;;;d+d++;e+e++;}6;
+octave above 1: 1 "8va";
+2: {8f-;c;a;e+;f+;e+;}6;
+bar
+
+1: {8d&+d&++;16dn+dn++;bb+;8ff+;}3;8.;16f#f#+;
+2: {8b--;f-;d;d+;b;a&;}6;
+bar 
+
+1: {8.gg+;16cc+;dc+;ec+;}3;8ec+;{32e+;f+;e+;d+;e+;}5;
+1 2: 4.s;8f;
+2: {8e-;c;g;c+;b;a;}6;
+bar
+
+1: {4f+;8c+;}3;4bn;
+1 2: {16c+;b;a;g;f;e;}6;16g;f;e;d;
+2: {8d-;a-;a&;g-;d;f;}6;
+bar
+
+1: 8..e+;32;16g;f;g;f;
+1 2: 16g;f;e;d;4a-;
+2: {8c-;g-;e;f-;c;e+;}6;
+bar 
+
+1: {8g;;16a;b;}3;4b-g;
+1 2: {b-;8c;}3;4s;
+2: {4g-d;8g-e;}3;4g-d;
+endbar

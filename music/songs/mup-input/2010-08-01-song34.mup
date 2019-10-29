@@ -1,0 +1,147 @@
+header
+	title (16) "Song Without Words (No. 34)"
+	title "" "John A. Krallmann (8/1/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 34) - page \%"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=98";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+midi 2 2: 0 "channel=15"; 0 "program=0";
+
+1:8e+;d+;4c+;8b;a;
+2: c+;b;a;
+2 2: 2.a-e;
+bar
+
+1: 8b;e;4.e;8;
+2: 2.g#-b;
+2 2: e;d;e;
+bar
+
+1: 8a;g;f;e;c;d;
+2: 2.f-a;
+2 2: c;d;f;
+bar
+
+1: 8e;f;e;d+;c+;b;
+2: g#;d;b;
+2 2: 2.e-b-;
+bar
+
+1: 8a;e;4;8b;a;
+2: b;c+;a;
+2 2: 2.a-e;
+bar
+
+1: 8g#;e;d+;c+;b;c+;
+2: g#;e;d+;
+2 2: 2.e-b-;
+bar
+
+1: 8b;a;4.;8e+;
+2: c+;b;e+;
+2 2: 2.a-e;
+bar
+
+1: 8f+;d+;4.a;8c+;
+2: d-a-d+;b;a;
+roll 2: 1;
+bar
+
+1: 8b;g#;4.e;8b;
+2: e-b-g#;d+;e;
+bar
+
+1: 8b;a;2;
+2: b;c+;e+;
+2 2: 2.a-e;
+bar
+
+1: 8g;f;2;
+2: e;f;d;
+2 2: 2.d-a-;
+bar
+
+1: e;d;e;
+1 2: 2.g#-;
+2: 8d;c;4b-;8c;b-;
+2 2: 2.e-;
+bar
+
+1: 8d;c;4.a;8c+;
+1 2: a-;b-;c;
+2: 8f;e;d;f;4e;
+2 2: 2.a-;
+bar
+
+1: 8d+;c+;b;c+;4d+;
+2: d-a-f;a;f+;
+bar
+
+1: 8c+;b;a;b;4;
+2: e-b-g#;b;d+;
+bar
+
+1: 8a;g;f;g;4a;
+2: f-cb;a;c+;
+bar
+
+1: 8g#;f#;e;f;4g;
+2: e-b-g#;b;d;
+mussym above all: 3.8 "rr";
+bar
+
+1: 8g;e&;d;c;d;e;
+2: c-;e&;g;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8d+;b&;4a;g;
+2: g-;c;b&-;
+bar
+
+1: 8a;g&;e&;d;g;a;
+2: d-;a-;;
+bar
+
+1: 8a;b&;4;<<staff clef=treble>> 8c+;d+;
+2: g-;2d;
+bar
+
+1: 8e&+;c+;4.;8a;
+2: c-;d+;e&+;
+bar
+
+1: 8b&;a;4.;8d+;
+2: d-;f#;c+;
+bar
+
+1: 8a;g;4;8e&+;d+;
+2: g-;8a;b&;c+;b;
+bar
+
+1: 2.b&g+;
+2: 2.gd+;
+endbar

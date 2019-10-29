@@ -1,0 +1,189 @@
+header
+	title (18) "Tone Poem (No. 3)"
+	title "" "John A. Krallmann (11/20/05)"
+
+header2
+	title (12) "Tone Poem (No. 3) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	packfact=1.25
+	scoresep=10,24
+
+staff 1
+	vscheme=3f
+
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 1 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 1 3: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2d;8d;g;a;b;
+2: 8g-;d;b;c+;2r;
+bar
+
+1: [grace;slash 1]8b;2e;8g;c+;d+;e+;
+2: 8c;g;d+;e+;2r;
+bar
+
+1: 8d+;a;4d+~;8;c+;b;a;
+2: 8d;a;d+;en+;2f#+;
+bar
+
+1: [grace; slash 1]8g;8a;b;4g~;8;;c+;d+;
+2: 8g-;d;b;c+;2d+;
+bar
+
+1: 8d+;e+;4c++~;8;b+;a+;f+;
+2: 8c;g;e+;f+;2g+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: [grace;slash 1]8b+;8a+;b+;4d+~;8;;
+2: 8g-;d;b;c+;4d+;
+bar
+
+score time=4/4
+music
+
+1: 8d+;c+;[grace;slash 1]8en+;4f+~;8;e&+;d+;c+;
+2: 8a&-;f;c+;d+;2a&+;
+bar
+
+score time=3/4
+music
+
+rom above all: 1 "Rubato";
+1: 8e+;d+;c+;bn;a&;g;
+2: 8g-;f;a&+;g+;bn;d+;
+bar
+
+score time=2/4 ; beamstyle=2
+music
+
+1: 8f;e;[grace;slash 1]8e;4c+;
+2: 8c;g;d+;e+;
+bar
+
+score time=4/4
+music
+
+1: 8c+;d+;4a&+~;8;g+;f+;e+;
+2: 8a&-;f;f+;c+;2d+;
+bar
+
+1: 2e+;[grace;slash 1]8e+;2d+;
+1 2: 2s;8r;a&;g;f;
+2: 8g-;d;a&;f;2g;
+dblbar
+
+score key=0& ; time=3/4
+music
+
+1: 2e+~;8;c+;
+1 2: 8r;a;a&;;4g;
+2: 8r;g;4d+;e+;
+2 2: 2.c;
+bar
+
+1: 2e+~;8;;
+1 2: 8r;c+;b;;4a;
+2: 8r;e;4d+;c+;
+2 2: 2.a-;
+bar
+
+score time=4/4
+music
+
+1: [grace]16e+;[]d+;2e+~;8;d+;c+;b;
+1 2: 8r;a;;;2a&;
+2: 8r;c;4d;2f;
+2 2: 1f-;
+bar
+
+score time=3/4
+music
+
+1: 2c+~;8;g;
+1 2: 8r;g;;;4;
+2: 8r;c;4d;c;
+2 2: 2.e-;
+bar
+
+score time=4/4
+music
+
+1: 2f~;8;;e;d;
+1 2: 8r;d;c;;2b-;
+2: 8r;b-;4a-;2g-;
+2 2: 1d-;
+bar
+
+score time=2/4
+music
+
+1: 4.f;16e;d;
+1 2: 8r;c;4;
+2: 8r;a&-;4;
+2 2: 2c-;
+bar
+
+1: 4.eg;8e;
+1 2: 8d;c;;b&-;
+2: r;8e;16d;c;
+2 2: 2c-;
+bar
+
+score time=4/4
+music
+
+1: 2fa~;8a;g;a;c+;
+1 2: 8e;c;;e&;2;
+2: r;c;g;f-;
+2 2: 1f-;
+bar
+
+1: 8c+;b&;;a;b;g;f;g;
+1 2: 2d;d&;
+2: r;f-;2g;
+2 2: 1b&--;
+bar
+
+1: 8b&;a;;g;4cf;8g;a;
+1 2: 2cf;8a- bm with staff below;s;;ebm;
+2: r;f;8s bm with staff above;g;f;16d;d& ebm;
+2 2: 2c-;d-;
+bar
+
+1: 8a;g;;f;4b&-g;8df;ce;
+1 2: a-;g-;8d;e;4s;
+1 3: 2d;s;
+2: r;f-;r;cb&;
+2 2: 2b&--;c-;
+bar
+
+1: a-f;8d+;c+;2af+;
+1 2: s;eg;2s;
+2: f-c;cb&;2f-ca;
+endbar

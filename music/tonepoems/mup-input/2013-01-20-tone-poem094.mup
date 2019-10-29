@@ -1,0 +1,280 @@
+header
+	title (16) "Tone Poem (No. 94)"
+	title (14) " "
+	title "" "John A. Krallmann (Jan 20, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 94) - \%"
+
+score
+	staffs=2
+	key=2& minor
+	time=2/4
+	beamstyle=4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.85
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=108";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+define S [with.] @
+
+define THEME
+
+1: 8g;a;S 4b;
+2: g-;S gbd+;
+bar
+
+1: d+;S e+;
+2: c-;S gc+e+;
+bar
+
+1: 8b;a;S 4g;
+2: g-;S gbd+;
+bar
+
+1: 8f#;e;d;c;
+2: d-;S df#a;
+bar
+
+1: 8g;a;S 4b;
+2: g-;S gbd+;
+bar
+
+1: 8d+;f+;S 4e+;
+2: c-;S gbe+;
+bar
+
+1: 8d+;en+;f#+;a+;
+2: d-;S cf#a;
+bar
+
+1: 8g+;a+;S 4b+;
+2: g-;S gbd+;
+bar
+
+1: 8c++;b+;a+;g+;
+2: c-;S gbe+;
+bar
+
+1: 8a+;e+;d+;c+;
+2: d-;S df#c+;
+bar
+
+1: 8b;a;S 4g;
+2: g-;S dgb;
+bar
+
+1: 8a;d+;f#;a;
+2: d-;S df#c+;
+bar
+
+1: 2g;
+2: g-;dgb;
+dblbar  
+
+score  key=3& minor
+music
+
+1: 8g;a;4b;
+2: e-;gbe+;
+bar
+
+1: 8b;e+;4b;
+2: d&-;gbe+;
+bar
+
+1: 8b;a;g;a;
+2: c-;gben+;
+bar
+
+1: 8b;c+;f;g;
+2: f--;eac+;
+bar
+
+1: 2a;
+1 2: 8d;e;4f;
+2: c-;dab;
+bar
+
+1: 2a;
+1 2: 8d;e;f;f#;
+2: b--;dab;
+bar
+
+1: 8g+;f+;e+;d+;
+1 2: 2b;
+2: e-;gbe+;
+bar
+
+1: 4.c+;8e+;
+1 2: 8a;g;4f;
+2: a-;eac+;
+bar
+
+1: 8f+;e+;d+;c+;
+1 2: a;f;
+2: b-;abd+;
+bar
+
+1: 4.b;8d&+;
+1 2: 8f;g;4;
+2: e-;gbe+;
+bar
+
+1: 4.c+;8e+;
+1 2: 8g;a;4e;
+2: a-;eac+;
+bar
+
+1: 4.d+;8f+;
+1 2: 8a;c+;4b;
+2: b-;dab;
+bar
+
+1: 8e+;f+;g+;e+;
+1 2: 2g;
+2: c-;gc+e+;
+bar
+
+1: 2c+;
+1 2: 8g;b;a;e;
+2: a-;eac+;
+bar
+
+1: 4.b;8a;
+1 2: 8d;e;4f;
+2: b--;dab;
+bar
+
+1: 4.g;8;
+1 2: 8d;e;4;
+2: c-;gc+;
+bar
+
+1: 4.f;8e;
+1 2: 8a-;b-;4c;
+2: f-;ce;
+bar
+
+1: 8d;en;f;g;
+1 2: 2bn-;
+2: g-;dg;
+bar
+
+1: 8en;c+;4;
+2: c-;engc+;
+bar
+
+1: 8c+;en;4;
+2: b--;engc+;
+bar
+
+1: 8c+;f;4;
+2: a--;eac+;
+dblbar
+
+score key=4& minor
+music
+
+1: 8b;f;4;
+2: d-;dgb;
+bar
+
+1: 8b;e;4;
+2: c-;cgb;
+bar
+
+1: 8a;d;4;
+2: b--;a-df;
+bar
+
+1: 8g;f;4en;
+2: c-;enbc+;
+bar
+
+1: 8g;f;4;
+1 2: a-;;
+2: f-;cf;
+bar
+
+1: 8b;a;4g;
+1 2: d;en;
+2: g-;cgb;
+bar
+
+1: 8d+;c+;4b;
+1 2: 8en;f;4g;
+2: c-;cgb;
+bar
+
+1: b-dg;a-f;
+2: f-;cf;
+> between 1&2: 1 til 1m+2;
+bar
+
+1: b-dg;a-f;
+2: f-;cf;
+bar
+
+1: b-g;a-f;
+2: f-;c;
+< between 1&2: 1 til 6m+1;
+bar
+
+1: b-g;a-f;
+2: f;c;
+bar
+
+1: [with>]b-dg;a-f;
+2: f;cf;
+bar
+
+1: [with>]b-dg;a-f;
+2: f;cf;
+bar
+
+1: ceng;g-ce;
+2: c-;g-;
+bar
+
+1: a-cena;g-ceg;
+2: en;c;
+bar
+
+1: 2a-cf;
+2: 2f-cf;
+> between 1&2: 2 til 1m+1;
+bar
+
+1: 2a-cf;
+2: 2f-cf;
+ifdef TWO endbar else dblbar endif
+
+@
+
+THEME
+
+newscore
+
+score
+  key=2& minor
+  transpose=down major 2
+music
+
+define TWO @
+THEME

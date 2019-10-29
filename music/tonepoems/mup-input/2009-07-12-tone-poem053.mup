@@ -1,0 +1,327 @@
+header
+	title (16) "Tone Poem (No. 53)"
+	title "" "John A. Krallmann (7/12-14/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 53) - \%"
+score
+	staffs=2
+	time=3/4
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=4,4,4
+	staffscale=0.9
+	scoresep=15,22
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76,64";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+1: {8a;c+;a;}3;4g+;f+;
+2: 2.fc+;
+bar
+
+1: {8g;c+;g;}3;4f+;en+;
+2: 2.enc+;
+bar
+
+1: {8g;c+;g;}3;4e+;d+;
+2: 2.ec+;
+bar
+
+1: 2.c+;
+1 2: {8a;g;a;}3;4e;f; 
+2: 2f-;8bn-;c;
+bar
+
+1: 2.d+;
+1 2: {8a;g;a;}3;4d;f;
+2: 2b-;8c-;d-;
+bar
+
+1: f+;2e+;
+1 2: {8a;g;a;}3;c+;g;a;b;
+2: 2.e-;
+bar
+
+1: 2c+;8a;b;
+1 2: {8e;d;e;}3;4g;b-;
+2: 2.c-;
+bar
+
+1: {8g;f;g;}3;4c+;e+;
+1 2: a-;8e;f;g;a;
+2: 2.f-;
+bar
+
+1: 2.d+;
+1 2: {8a;g;a;}3;4d;f;
+2: 2b--;4d-;
+bar
+
+1: 2.g;
+1 2: {8d;c;d;}3;4g-;b-;
+2: 2e-;4c;
+bar
+
+1: 2.a;
+1 2: {8d;c;d;}3;4f;a-;
+2: 2b--;4f-;
+bar
+
+1: 2.g;
+1 2: {8d;c;d;}3;4g-;b-;
+2: 2e-;4b-;
+bar
+
+1: 2g;8a;b;
+1 2: {8d;c;d;}3;2g-;
+2: 2en-;4c;
+bar
+
+1: {8d+;c+;d+;}3;4f+;e+;
+1 2: e;g;a;
+2: 2f-;8g-;a-;
+bar
+
+1: 2d+~;8;f+;
+1 2: {8a;g;a;}3;4d;f;
+2: 2b--;4f-;
+bar
+
+1: 2g+~;8;b+;
+1 2: {8d+;c+;d+;}3;4g;b;
+2: 2e-;4b-;
+bar
+
+1: 2c++;4d++;
+1 2: {8d+;c+;d+;}3;4f+;d+;
+2: 2b--;4f-;
+bar
+
+1: 2.g+;
+1 2: {8d+;c+;d+;}3;4g;b;
+2: 2e-;4c;
+bar
+
+1: 2.a;
+1 2: {8f;en;f;}3;4a-;c;
+2: 2d-;4a-;
+bar
+
+1: 2.g;
+1 2: {8d;c;d;}3;4g-;b-;
+2: 2e-;4c;
+bar
+
+1: 2.f#;
+1 2: {8d;c;d;}3;4g#-;a-;
+2: 2d-;4a-;
+bar
+
+1: 2.bn;
+1 2: {8a;g;a;}3;4bn-;f;
+2: 2g--;4d-;
+bar
+
+1: 2.g;
+1 2: {8e;d;e;}3;4c;b-;
+2: 2c-;8d-;e-;
+bar
+
+1: 2f;4a;
+1 2: {8a-;g-;a-;}3;4f-;e;
+2: 2f-;8g-;a-;
+bar
+
+1: {8c+;d+;c+;}3;4b;a&;
+1 2: e;d;c;
+2: 2b--;4b-;
+bar
+
+1: {8b-g;a&-f;b-g;}3;2g-e;
+2: 2e-;4d-;
+bar
+
+staff 1 clef=bass
+music
+
+1: {8ge+;fd+;ge+;}3;2ec+;
+2: 2c-;4b--;
+bar
+
+1: {8ec+;db;ec+;}3;2ca;
+2: 2a--;4g--;
+dblbar
+
+1: <<staff clef=treble>>ms;
+2: ms;
+invisbar
+
+score key=4&
+music
+
+1: {8ca;b-g;ca;}3;2a-f;
+2: 2f-;4e-;
+octave below 2: 0.5 "8va" til 4m+3;
+bar
+
+1: 2.a-f;
+2: d-;d;c;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.ge+;
+2: 2e-;8f;e;
+bar
+
+1: 2.c+~;
+1 2: 2a;4g;
+2: 2.f-~;
+bar
+
+1: 2c+;4;
+1 2: 2.c;
+2: 2.f-;
+bar
+
+staff 1 clef=treble
+music
+
+1: f;a;{8c+;d+;c+;}3;
+1 2: 2.a-;
+2: 2.d-;
+bar
+
+1: 2b;8c+;d+;
+1 2: {8f;g;f;}3;4e;d;
+2: 2e-;4b-;
+bar
+
+1: c+;e+;c+;
+1 2: {8g;a;g;}3;4f;e;
+2: 2a-;4an-;
+bar
+
+1: {8e+;d+;c+;}3;4d+;8a;b;
+1 2: 2f;4df&;
+2: 2b-;4b--;
+bar
+
+1: {8d+;c+;b;}3;4.eac+;8a;
+1 2: f&a;2s;
+2: 2e-;4;
+octave below 2: 2.5 "8va" til 4;
+bar
+
+1: {8d+;c+;b;}3;4.eac+;8a;
+1 2: f&a;2s;
+2: 2e-;4;
+octave below 2: 2.5 "8va" til 4;
+bar
+
+1: {8c+;b;a;}3;4.b;8a;
+1 2: 2.df;
+2: 2e-;4;
+octave below 2: 2.5 "8va" til 4;
+bar
+
+1: {8c+;b;a;}3;4.b;8g;
+1 2: 2.df;
+2: 2e-;4;
+octave below 2: 2.5 "8va" til 4;
+bar
+
+1: {8g;f;g;}3;4.ca;8c+;
+1 2: 4a-;2s;
+2: 2f-;4e-;
+octave below 2: 2.5 "8va" til 1m+2;
+bar
+
+1: {8c+;b;a;}3;4.b;8f+;
+1 2: 2.df;
+2: 2d-;4fabd+;
+dblbar
+
+score
+	time=4/4
+	beamstyle=4,4,4,4
+music
+
+1: {8en+;dn+;e+;}3;4c+;aa+;gg+;
+2: 2c-;gc+en+;
+octave below 2: 0.5 "8va" til 2.5;
+bar
+
+rom between 1&2: 1 "grandioso";
+1: {8aa+;gg+;aa+;}3;4ff+;gg+;aa+;
+2: 2f-;eac+;
+octave below 2: 0.5 "8va" til 2.5;
+bar
+
+1: c+c++;bb+;{ff+;gg+;aa+;}3;
+2: 2d-;fad+;
+octave below 2: 0.5 "8va" til 2.5;
+bar
+
+1: aa+;gg+;{dndn+;ee+;gg+;}3;
+2: 2e-;egd+;
+octave below 2: 0.5 "8va" til 2.5;
+bar
+
+1: gg+;cc+;{ac+a+;bd+b+;c+g&+c++;}3;
+2: 2a--a-;eac+;
+bar
+
+1: c+c++;d+d++;{ff+;aa+;bb+;}3;
+1 2: 2f+;s;
+2: 2d-d;fad+;
+octave below 2: 0.5 "8va" til 2.5;
+bar
+
+1: d+f&+d++;c+e+c++;{ee+;aa+;c+c++;}3;
+2: 2a--a-;eac+;
+bar
+
+1: c+f+c++;fd+f+;{fbf+;aa+;bf&+b+;}3;
+2: 2d-d;fad+;
+bar
+
+1: dndn+;ee+;{aa+;c+c++;a+a++;}3;
+2: 2a--a-;eac+;
+bar
+
+1: abf+a+;b-fab;{bb+;c+c++;d+d++;}3;
+1 2: 2s;f&+;
+octave above 1: 0.5 "8va" til 2.5;
+2: 2d-d;enad+;
+bar
+
+1: e+b+d++;2ec+e+;8dndn+;ee+;
+2: 2a--a-;eac+;
+bar
+
+1: fe+f+;2ad+a+;4bf&+b+;
+2: 2d-d;fad+;
+octave below 2: 0.5 "8va" til 2.5;
+< between 1&2: 1 til 1m + 1;
+bar
+
+1: 1c+a+c++;
+2: 1a--a-;
+endbar

@@ -1,0 +1,134 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title " " "(Oct 8, 2017)"
+
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	brace=2-3
+	barstyle=2-3
+	key=1#
+	time=4/4
+	beamstyle=4,4,4,4
+	measnum=y
+	vscheme=2f
+staff 1
+	cue=y
+	vscheme=1
+staff 3
+	clef=bass
+music
+
+midi 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=38";
+midi 2 1: 0 "channel=12"; 0 "program=73"; 0 "onvelocity=96";
+midi 2 2: 0 "channel=13"; 0 "program=52";
+midi 3 1: 0 "channel=14"; 0 "program=60"; 0 "onvelocity=52";
+midi 3 2: 0 "channel=15"; 0 "program=43"; 0 "onvelocity=60";
+
+1: b;a;g;f;
+2: b-;d#;f;a;
+3: r;f;b;f;
+3 2: 1b-;
+bar
+
+1: 8f;b-;c#;d#;e;a;b;c+;
+2: 2a;g;
+2 2: 2c;e;
+3: r;a;2b;
+3 2: 1e;
+bar
+
+1: e+;g+;;a+;
+2: c+;b;a;e+;
+2 2: 1e;
+3: r;e;c+;e;
+3 2: 1a-;
+bar
+
+1: 8a+;b+;a+;g+;f+;e+;d#+;c+;
+2: 2e+;d#+;
+2 2: a;b;8a;g;4f;
+3: r;f;d#+;f;
+3 2: 1b-;
+bar
+
+1: 8b;e;f;g;a;b;a;g;
+2: 2e+;4g+;f+;
+2 2: g;b;a;b;
+3: r;b;r;b;
+3 2: 2e;d;
+bar
+
+1: 8g;g+;f+;g+;a+;g+;f+;d+;
+2: 1e+;
+2 2: g;a;b;g;
+3: r;g~;g~e+;g;
+3 2: 2.c;4b-;
+bar
+
+1: 8c++;d++;c++;b+;a+;g+;f+;e+;
+2: c+;b;a;g;
+2 2: 1e;
+3: r;e;c+;e;
+3 2: 1a-;
+bar
+
+1: 8f+;e+;d#+;c#+;4d#+;8e+;f+;
+2: 1b;
+2 2: e;8f;e;2d#;
+3: r;f;2b;
+3 2: 2.b-;4a-;
+bar
+
+1: 8g+;a+;b+;a+;g+;f+;e+;d+;
+2: b;d+;g+;f+;
+2 2: 1d;
+3: g-;d;b;d+;
+bar
+
+1: 8e+;f+;g+;e+;a;b;c+;e+;
+2: 1e+;
+2 2: b;c+;b;g;
+3: r;g;e+;g;
+3 2: 1c;
+bar
+
+1: 8d+;e+;f+;d+;b;c+;d+;e+;
+2: d+;b;f;g;
+2 2: 1f;
+3: r;f;d+;f;
+3 2: 1b-;
+bar
+
+1: 8g+;a+;g+;f+;g+;a+;b+;c++;
+2: g;a;b;c+;
+2 2: 1c;
+3: b;a;2e;
+3 2: 1a-;
+bar
+
+1: 8d++;e++;d++;c++;b+;a+;g+;f+;
+2: 2g;8f;e;4d;
+2 2: d;e;2d;
+3: 2g;a;
+3 2: 2c;d;
+bar
+
+1: e+;8b;a;4g;8f;d;
+2: 1e~;
+2 2: 1b-~;
+3: 1g~;
+3 2: 1e~;
+bar
+
+1: 2e;r;
+2: 2e;r;
+2 2: 2b-;r;
+3: 2g;r;
+3 2: 2e;r;
+endbar

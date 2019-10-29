@@ -1,0 +1,189 @@
+header
+	title (18) "Lullaby No. 29"
+	title (10) " "
+	title "" "John A. Krallmann (4/24-25/04)"
+
+header2
+	title (12) "Lullaby No. 29 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+	measnum=y
+
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=60";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=86, 74";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=74";
+
+1: 2c+~;8;a;
+2: 8a-;e;a;b;4c+;
+bar
+
+1: 8a;4g;8e;d;e;
+2: 8e-;b-;4g;8a-;e;
+bar
+
+1: 2.e;
+2: 8b;c+;d+;c+;b;e;
+bar
+
+1: 2a~;8;c+;
+2: 8f-;c;a;g;4a;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2f+~;8;e+;c+;e+;
+2: 8d-;a-;f+;e+;2a;
+bar
+
+1: 8e+;f+;a;a&;g;d+;e+;f+;
+2: 8g-;d;4b;f+;g;
+bar
+
+1: 4.g+;8c++;a+;g+;e+;f+;
+2: 8e-;c;g;b&;f-;c;4a;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8d+;a;a&;e+;
+2: 8g-;d;4b(n);
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.c+;8e;g;
+2: 8c-;g-;e;d;2e;
+bar
+
+1: 2a~;8;b;c+;d+;
+2: 8f-;c;g;e+;2d+;
+bar
+
+1: 8g;d+;c+;g;e;f;c;d;
+2: 8e-;b-;a-;e;d-;a-;4f;
+bar
+
+1: 4.e;8g;4.d;8f;
+1 2: 2s;c;
+2: 8g-;e;4c+;8g-;f;4a&;
+bar
+
+1: 8e;d;c;d;4.e;8g;
+2: 8g-;e;4g;8g-;f;4b;
+bar
+
+1: 2.c+;4;
+2: 8c-;g-;e;d;2e;
+dblbar
+
+score key=3&
+music
+
+midi all: 1 "tempo=50";
+rom above all: 1 "A little slower";
+1: 2c+~;8;16d+;e+;d+;c+;b;c+;
+2: 8a-;e;c+;d+;2e+;
+bar
+
+1: 2g;a~;
+2: 8c-;g-;16f;e;d;e;8f-;c;16e+;d+;c+;d+;
+bar
+
+1: 8a;c+;d+;16f+;e+;d+;c+;8d+~;4;
+2: 2a;8b-;f;16c+;c&+;b;f;
+bar
+
+1: 16e+;d+;8e+~;4;16f+;e+;8f+~;4;
+2: 8c;g;16f+;e+;d+;e+;8a-;e;16c+;d+;e+;f+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 16g+;f+;8g+~;4;16a+;g+;a+;en+;
+2: 8g-;d;c+;bn;f-;c;
+dblbar
+
+score key=4&
+music
+
+1: 2f+;16a+;g+;a+;en+;
+2: 8a;b;c+;f+;d-;a-;
+bar
+
+1: 2f+;16g+;f+;g+;e+;
+2: 8f;g;a;c+;e-;b-;
+bar
+
+1: 8d+;f;c+;d+;bn;c+~;
+2: e;8e+;f+;a-;e;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2c+;16;f;8a~;4;
+2: 8bn;c+;e+;a;d;a;b&;d+;
+bar
+
+1: 16b;e;8a~;4;16f;b-;8d+~;;16e+;d+;
+2: 8a-;c+;b;a;d;a;f+;en+;
+bar
+
+1: 8c+;e;b;a;g;a;8.f;16a;
+2: a-;e;d-;b-;
+bar
+
+1: 8a;g;f;e;f;e;8.a;16b;
+2: e-;d;8a;g;f;e;
+bar
+
+1: 8b;c+;16a+;g+;f+;c+;2b;
+1 2: 2s;4f;en;
+2: 8a-;e;c+;e+;2d-;
+bar
+
+1: 8a;g;f;e;4f;8c+;b;
+1 2: d;8a-;g-;4d;;
+2: e-;b-;e-;en;
+bar
+
+ital above all: 1 "rit. e dim.";
+1: 2b;a;
+1 2: 2d;c;
+2: a--;e-;a--;e-;
+bar
+
+1: b;c+;d+;e+;
+1 2: d;e;f;g;
+2: 2a--;e-;
+bar
+
+1: 1a+;
+1 2: 1c+;
+2: 1a--;
+endbar
+

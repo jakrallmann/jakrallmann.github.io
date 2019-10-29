@@ -1,0 +1,258 @@
+header
+	title (16) "Tone Poem (No. 58)"
+	title "" "John A. Krallmann (3/7/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 58) - \%"
+
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffsep=17
+	scoresep=12,22
+staff 2
+	timeunit=4.
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+1: r;d+;c+;b;c+;a;
+2: e;b;
+bar
+
+1: a;g;a;4f;8f+;
+2: d;a;
+bar
+
+1: e+;d+;e+;g;a;b;
+2: c;b;
+bar
+
+1: d+;c+;d+;f+;e+;c#+;
+mussym above 1: 6 "ferm";
+2: f-;e;
+bar
+
+1: d+;c#+;d+;f;e+;d+;
+2: b-;d;
+bar
+
+1: d+;c+;d+;4g;8c+;
+2: e;c+;
+bar
+
+1: b;a;g;a;b;c+;
+2: f-;c;
+bar
+
+1: 4.d+~;4;8g+;
+1 2: a;g;a;4.b;
+2: g-;d;
+bar
+
+1: f+;e+;d+;4.b;
+1 2: 4.g;8c;d;e;
+2: e-;b-;
+bar
+
+//
+1: 2.d+;
+1 2: a;b;a;4.g;
+2: g-;d;
+bar
+
+1: 2.d+;
+1 2: a;b;a;4.g;
+2: f-;d+;
+bar
+
+1: 2.d+;
+1 2: a;b;a;4.g;
+2: e-;b;
+bar
+
+1: 4.c+~;4;8;
+1 2: e;f;g;4.e;
+2: c-;gb;
+bar
+
+1: 4.c+~;4;8c#+;
+1 2: e;f;g;4.a;
+2: f--;ef;
+bar
+
+1: 2.d+;
+1 2: a;b;a;4d;8a;
+2: b--;fa;
+bar
+
+1: 4.d+~;4;8e+;
+1 2: a;b;a;4.g;
+2: e-;gb;
+bar
+
+1: 4.e+~;8;f+;g+;
+1 2: g;a;b;4.c+;
+2: c-;ge+;
+bar
+
+1: 2.a+;
+1 2: f#+;en+;d+;a;b;c+;
+mussym above 1: 6 "ferm"; 
+2: d-;af#+;
+bar
+
+1: 2.b+;
+1 2: g&+;f+;g+;e+;f+;g+;
+2: e-;be+g&+;
+ital between 1&2: 1 "poco agitado";
+bar
+
+//
+
+1: 2.b+;
+1 2: g&+;f+;g+;4.e+;
+2: c&-;c&+e+g&+;
+bar
+
+1: 2.c&++;
+1 2: g&+;f+;g+;e+;f+;g+;
+2: a&--;c&+e+g&+;
+bar
+
+1: 4.d&++~;4;8;
+1 2: e+;f+;g&+;4.a&+;
+2: d&-;c&+f+;
+octave below 2: 0.5 "8va" til 1.5;
+bar
+
+1: 2.d(n)++;
+1 2: b+;a+;b+;g+;a+;b+;
+2: g--;bd+g+;
+bar
+
+1: 2.e++;
+1 2: c++;b+;c++;4.g+;
+2: c-;8e+;f+;g+;
+2 2: s;g;
+bar
+
+1: 2.d++;
+1 2: b+;a+;b+;g+;a+;b+;
+2: g--;bd+g+;
+bar
+
+1: 2.e++;
+1 2: c++;b+;a+;4.g+;
+2: c-;8f+;e+;c+;
+2 2: s;g;
+bar
+
+1: 2.a+;
+1 2: e+;d+;e+;4c+;8e+;
+2: d-;ae+g+;
+ital between 1&2: 1 "poco dim.";
+bar
+
+1: 2.a+;
+1 2: e+;d+;e+;4c+;8b;
+2: d-;ae+g+;
+bar
+
+//
+
+1: 2.a;
+1 2: e;d;e;4c;8e;
+2: d-;df#;
+bar
+
+1: 4.a~;4;8g;
+1 2: e;d;e;4.c;
+2: d-;df#;
+bar
+
+1: 2.f#;
+1 2: d;c;d;4a-;8d;
+2: d-;df#;
+bar
+
+1: 2.f#;
+1 2: d;c;d;4a-;8d;
+2: d-;cf#;
+bar
+
+1: 2.g;
+1 2: d;e;d;4g-;8d;
+2: bn--;bn-f;
+bar
+
+1: 2.g;
+1 2: d;e;d;4g-;8e;
+2: bn--;bn-f;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.d+;4c+;8g;
+1 2: f;g;f;4.e;
+2: c-;g-;
+bar
+
+1: 4.d+;4c+;8g;
+1 2: f;g;f;4.e;
+2: c-;g-;
+bar
+
+1: 4.a~;4;8b;
+1 2: f#;en;f;4.d;
+2: d-;a-;
+bar
+
+1: 4.a~;4;8b;
+1 2: f#;en;f;4.d;
+2: d-;a-;
+bar
+
+1: 4.a;g;
+1 2: c;d;c;4.b-;
+2: g--;g-;
+bar
+
+1: 4.a;g;
+1 2: c;d;c;4.b-;
+ital between 1&2: 1 "dim.";
+2: g--;g-;
+bar
+
+1: 2.ca;
+2: g--;d-;
+bar
+
+1: 2.ca;
+2: e-;d-;
+bar
+
+1: 2.b-g;
+2: 2.g--d-;
+boldital between 1&2: 1 "pp";
+mussym above 1: 1 "ferm";
+mussym below 2: 1 "uferm";
+endbar
+
+

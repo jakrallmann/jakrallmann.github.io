@@ -1,0 +1,252 @@
+header
+	title (16) "Waltz"
+	title "" "John A. Krallmann (4/24-25/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	key=4#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.92
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86,64";
+midi 1 2: 0 "channel=12";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: 4.g+;8b+;g+;f+;
+2: e-;bd+g+;;
+bar 
+
+1: 4.f+;8e+;4f+;
+2: dn-;ac+f+;;
+bar
+
+1: 4.g+;8b+;g+;f+;
+2: e-;bd+g+;;
+bar 
+
+1: 8f+;g+;4.e+;8c+;
+2: a-;ac+g+;ac+f+;
+bar
+
+1: 4.ec+;4db;8f;
+2: b-;cab;dab;
+bar
+
+1: 4.a-f;8ea;4b-g;
+2: e-;cnf;b-g;
+bar
+
+1: 8f+;e+;d+;c+;fx;g;
+1 2: 2.g;
+2: c-;gc+e+;;
+bar
+
+1: 4.b;8a;;g+;
+1 2: 2c;4;
+2: a-;f;e;
+bar
+
+1: 8b+;a+;g+;f+;d+;e+;
+1 2: 2.c+;
+2: f-;c+e+a+;cn+e+a+;
+octave below 2: 0.5 "8va" til 1.5;
+bar
+
+1: 4.g+;8e#+;4f+;
+1 2: 2ab;{8b;b&;a;}3;
+2: b--;abd+;;
+bar
+
+1: 4.eg;8b;e+;f+;
+1 2: 8d;c;2b-;
+2: e-;b-eg;cneg;
+bar
+
+1: 4.e+g+;8b+;a+;f+;
+1 2: 8d+;c+;d+;c+;d+;e+;
+2: c-;gc+e+;ac+e+;
+bar
+
+1: 4.e+g+;8e+;d+;e+;
+1 2: 8d+;c+;2g;
+2: c-;gc+e+;fc+d+;
+bar
+
+1: 8f+;e+;dn+;e+;f+;g+;
+1 2: a;g;f;
+2: dn-;fadn+;;
+bar
+
+1: 8bg+;af+;ge+;af+;bg+;gf+b+;
+2: e-;gbe+;;
+bar
+
+1: 8c+a+;bg+;af+;ge#+;af+;fa+;
+2: f-;fac+;;
+bar
+
+1: 8gb;ac+;bdn+;c+e+;gf+;bd+;
+2: e-;egdn+;;
+bar
+
+1: 8acn+;gb;ac+;bdn+;fe+;ec+;
+2: a-;eacn+;;
+bar
+
+1: 8dnb;cna;b-g;ca;db;ecn+;
+2: e-;dneg;;
+bar
+
+1: 8dnb;cna;4;;
+2: fn-;fna;efa;
+bar
+
+1: 8afn+;gne+;fndn+;ge+;4af+;
+2: dn-;fnadn+;;
+bar
+
+1: 8gfn+;fd+;ec+;fd+;4ge+;
+2: c-;eac+;;
+bar
+
+1: 8gne+;fndn+;ecn+;fd+;4ge+;
+2: cn-;egncn+;;
+bar
+
+1: 8e&+;d&+;cn+;d+;4e+;
+1 2: gn;fn;g;
+2: b&--;e&b&d&+;;
+dblbar
+
+newscore
+
+score key=5&
+music
+
+midi 1 2: 1 "onvelocity=80";
+1: 2.c+;
+1 2: 8b;a;gn;a;4g&;
+2: a--;eac+;;
+bar
+
+1: 2f~;8;a;
+1 2: 8e;d;c;d;4bn-;
+2: d-;a-df;;
+bar
+
+define OCT
+octave below 2: 0.5 "8va" til 1.5;
+@
+
+1: 2b~;8;d+;
+1 2: 8a;g;f;g;4e;
+2: g-;db;;
+OCT
+bar
+
+1: 2e~;8;f;
+1 2: 8d;c;b-;b&&-;4a-;
+2: a--;a-eg;ceg;
+bar
+
+1: 8a;e+;c+;d+;b;c+;
+2: d-;ad+f+;;
+OCT
+bar
+
+1: 8a;b;f;g;e;d+;
+2: g-;gbd+;;
+bar
+
+1: 8e+;f+;c+;d+;b;c+;
+2: d-;ad+f+;;
+bar
+
+1: 8a;b;f;g;b;d+;
+2: g-;ebd+;fbd+;
+bar
+
+1: 8a+;g+;c++;b+;f+;g+;
+2: e-;be+g+;;
+bar
+
+1: 8b+;a+;c+;d+;g+;f+;
+2: a--;ad+f+;ac+f+;
+bar
+
+1: 8b;d+;f+;e+;f;g;
+2: g-;gbe+;gbd+;
+OCT
+bar
+
+1: 8b;c;a;g;f;en;
+2: a--;cga;;
+bar
+
+1: 8en;f;b;a;e+;d+;
+2: d-;fad+;fbnd+;
+bar
+
+1: 8f+;e+;d+;b;f;g;
+2: g-;gbe+;gb&&e+;
+bar
+
+1: 8e+;d+;gn;a;c+;d+;
+2: f-;fad+;;
+bar
+
+1: 8a+;b;8g+;f+;e+;d+;
+2: g-;bd+g+;;
+OCT
+bar
+
+1: 8f+;g;e+;d+;e+;f+;
+2: a--;bd+g+;b&&d+g+;
+octave above 1: 2 "8va" til 3m;
+bar
+
+1: {8e+;f;e+;}3;{d+;f;d+;}3;{c+;f;c+;}3;
+2: d-;ad+f+;bd+f+;
+OCT
+bar
+
+1: {8b;d;b;}3;{a;c;a;}3;{g;b-;g;}3;
+2: g-;be+g+;bd+g+;
+OCT
+bar
+
+1: {8f+;g;f+;}3;{e+;d+;e+;}3;{f+;e+;f+;}3;
+2: a--;gbd+;ac+e+g+;
+bar
+
+1: {8a+;g+;c+;}3;{;d+;e+;}3;{f+;e+;f+;}3;
+2: a--;ac+g+;and+g+;
+bar
+
+1: 2.e+;
+2: d-;8a-;f;a;e+;
+OCT
+bar
+
+1: 2.d+;
+2: 2.f+;
+endbar

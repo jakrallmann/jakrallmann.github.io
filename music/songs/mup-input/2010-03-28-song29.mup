@@ -1,0 +1,212 @@
+header
+	title (16) "Song Without Words (No. 29)"
+	title "" "John A. Krallmann (3/28/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=3&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.85
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=112";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: 4.a;8;4;
+2: 2.fc+;
+bar
+
+1: 4.a;8;4;
+2: 2.ec+;
+bar
+
+1: a;g;a;
+2: 2.db;
+bar
+
+1: b;2e;
+2: 2.d&gb;
+bar
+
+1: 4.c+;8;4;
+2: 2.bc+en+;
+bar
+
+1: 4.c+;8;4;
+2: 2.ac+f+;
+bar
+
+1: c+;b;g;
+2: 2.gc+en+;
+bar
+
+1: g;2a;
+2: 2.c+;
+2 2: 2f;4e;
+bar
+
+1: 4.f+;8b;4;
+2: 2.d&gb;
+bar
+
+1: 4.e+;8a;4;
+2: 2.cae+;
+bar
+
+1: 4.d&+;8en;4;
+2: 2.b-eng;
+bar
+
+1: c+;d+;e+;
+2: 2.an-ef;
+bar
+
+1: 4.b+;8e+;4;
+2: 2.g-eb;
+bar
+
+1: 4.c++;8f+;4;
+2: 2.a-ef;
+bar
+
+1: 4.b+;8e+;4;
+2: 2.g-eb;
+bar
+
+1: c+;a;g;
+2: 2.a-ef;
+bar
+
+1: 2f;4f#;
+2: 2.b-da;
+bar
+
+1: 2.gg-;
+1 2: d;c;d;
+2: 2.e-b-;
+bar
+
+1: 2.ca;
+1 2: f;e;c;
+2: 2.a-e;
+bar
+
+1: 2.g-g;
+1 2: f;e;b-;
+2: 2.e-b-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.c+;
+1 2: g;f;e;
+2: 2.a-e;
+bar
+
+staff 1 clef=treble
+music
+
+1: 2.b-g;
+2: 2.e-b-f;
+bar
+
+1: 2.b-g;
+2: 2.e-b-e;
+bar
+
+1: f+;4.e+;8c+;
+2: 2e;4f;
+2 2: 2.a-;
+bar
+
+1: an;2b;
+2: 2e;4b;
+2 2: 2.g-;
+bar
+
+1: b;a;8e;f;
+1 2: 2.c;
+2: e;f;an;
+2 2: 2.f-;
+bar
+
+1: 4.c+;4c&+;8b~;
+1 2: 2.dfa;
+2: b--;f-;d;
+bar
+
+1: 8b;a;g;f;g;b;
+2: a;b;a;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4.f;8e;d;c;d;e;
+1 2: g-;b-;2s;
+2: e-;b-;e;b-;
+bar
+
+score time=3/4
+music
+
+1: 2a;8;;
+1 2: 8c;a-;f;e;d;c;
+2: f-;c;a;
+bar
+
+1: 4.a;8c+;b;f#;
+1 2: 8d;e;4f;d;
+2: b--;d;b;
+bar
+
+1: 4.g;8;a;b;
+1 2: 8d;g-;d;e;d&;;
+2: e-;b-;8g;e;
+bar
+
+1: 4.c+;8;e+;f+;
+1 2: 8g;f;4c;f;
+2: a--;e;c+;
+bar
+
+1: 4.b;8g;f;e;
+1 2: 8f;e;2b-;
+2: g--;d;cg;
+bar ending "1."
+
+staff 1 clef=bass
+music
+
+1: 4.c+;8;;;
+1 2: 8g;f;4e;f;
+2: a--;f-;a-;
+bar
+
+1: 2.ec+;
+2: 2.c-g-;
+repeatend ending "2."
+
+1: 4.c+;<<staff clef=treble>>8a;g;f;
+1 2: 8g;f;4e;cf-;
+2: a--;f-;a-;
+bar
+
+1: 2.ceng;
+2: 2.c-g-en;
+endbar endending

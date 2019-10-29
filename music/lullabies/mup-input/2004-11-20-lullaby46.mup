@@ -1,0 +1,176 @@
+header
+	title (18) "Lullaby No. 46"
+	title (10) " "
+	title "" "John A. Krallmann (11/20-21/04)"
+
+header2
+	title (12) "Lullaby No. 46 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	beamstyle=2,2
+	key=1&
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	measnum=y
+	staffscale=0.7
+	scoresep=10,25
+	vscheme=2f
+	staffsep=15
+	release=0
+
+staff 1
+	defoct=5
+	ifdef MIDI
+		visible=n
+	endif
+
+staff 3
+	clef=bass
+
+
+music
+
+midi all: 1 "tempo=50";
+midi 1: 0 "channel=15"; 0 "program=74"; 0 "onvelocity=20";
+midi 2 1: 0 "channel=11"; 0 "program=4"; 0 "onvelocity=90, 74";
+midi 2 2: 0 "channel=12"; 0 "program=4"; 0 "onvelocity=74";
+midi 3 1: 0 "channel=13"; 0 "program=4"; 0 "onvelocity=74";
+midi 3 2: 0 "channel=14"; 0 "program=4"; 0 "onvelocity=74";
+
+define SONG
+rom above 1: 1 "(Second time only)";
+1: 2f;8g;4d;8b-;
+2: 2.a;8g;f;
+2 2: 2c;d;
+3: 1f;
+3 2: f-;8g-;a-;2b-;
+phrase above 2: 1 til 3m+3;
+bar
+
+1: e;8d;b-;c;d;e;f;
+2: 8g;a;d;d&;4.c;8;
+2 2: 2d;a-;
+3: 2b;4g;f;
+3 2: 2c;a-;
+bar
+
+1: g;d;f;d;
+2: d;8;f;c;f;c+;b;
+2 2: 2b-;4a-;d;
+3: 8a;g;4f;2g;
+3 2: 2b-;4a-;b-;
+bar
+
+1: 4.c;8b-;8a-;f-;e-;f-~;
+2: g;8f;g;2a;
+2 2: d;d&;2c;
+3: 2b;4g;f;
+3 2: 2c;f-;
+bar
+
+1: 8f-;g-;a-;b-;4.c;16f;e;
+2: d;8;f;4c;8;f;
+2 2: 8c;b-;4a-;2s;
+3: 2f;8g;f;4g;
+3 2: 2b-;a-;
+phrase above 2: 1 til 1m+4;
+bar
+
+1: 8d;c;b-;a-;8.g-;16f;4c;
+2: 8b-;a-;b-;c;4g-;a-;
+3: f;e;d;c;
+3 2: 2g-;f-;
+bar
+
+1: g-;8a-;b-;d;c;c;b-;
+2: 8g-;;b-;;d;;f#;g;
+2 2: f-;;b-;;
+3: b-d;g-d;f-df;e-cg;
+phrase above 2: 1 til 2m+4;
+bar
+
+1: c;d;e;f;
+2: 8a;f;b;g;c+;a;;g;
+2 2: c;d;e;d;
+3: f-f;f-g;f-a;b-f;
+bar
+
+1: g;c;8.b-;32a-;g-;4a-;
+2: 8d;g;a;c;4;f;
+2 2: s;8e;c;4b-;a-;
+3: 2b;4d;c;
+3 2: c;c-;2f-;
+bar
+
+1: f;8d;b-;8.c;16a-;8g-;f-;
+2: 8d;;;;4c;;
+2 2: a-;g-;8;;f-;;
+3: 2b-d;a-;
+phrase above 2: 1 til 3m+4;
+bar
+
+1: 8g-;a-;8.b-;16c;8d;e;8.g;32a;b;
+2: 8b-;d;g;a;;g;4b;
+2 2: 2s;4d;8f;e;
+3: f;d;2cb;
+3 2: 2g-;s;
+bar
+
+1: 8c+;a;f;d;b-;g-;a-;16b-;c;
+2: 8c+;;f;;d;;f;a;
+2 2: c;8cd;b-d;a-b-;g-b-;4a-b-;
+3: a-f;b-f;g-f;g-d;
+bar
+
+1: d;e;8f;g;4a;
+2: 8.a;32b;a;4g;8.g;32f;g;4a;
+2 2: d;e;d;f;
+3: 2cb;4b;c+;
+3 2: 2s;f;
+bar 
+
+1: 8b;16a;g;4d;2c;
+2: [with "\s(5) "]b;f+;8g+;f+;e+;c+;
+2 2: d;gb;2a;
+3: 2b-f;f-ca;
+phrase above 2: 1 til 2m+3;
+bar
+
+1: d;8.f;16g;4.c;8b-;
+2: [grace]8d+;c+;b;a;f;e;f;4d;
+2 2: 2d;4c;8;b-;
+3: 2b-f;f;
+3 2: 2s;4a-;b-;
+bar
+
+1: g-;f-;8;g-;4a-;
+2: d;f;2;
+2 2: 2b-;4;a-;
+3: 2cg;4d;c;
+3 2: 2s;f-;
+bar
+
+1: f;b;2c+;
+2: d+;f+;2;
+2 2: 2g;ca;
+roll 2 1 to 2 2: 3;
+3: 2cb;f-;
+@
+
+SONG
+ifdef MIDI
+	bar
+	staff 1 visible=y
+	music
+	SONG
+	endbar
+else
+	repeatend
+endif

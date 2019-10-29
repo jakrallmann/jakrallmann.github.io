@@ -1,0 +1,189 @@
+header
+	title (18) "Lullaby No. 58"
+	title "" "John A. Krallmann (3/24/05)"
+
+header2
+	title (12) "Lullaby No. 58 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	key=1&
+	beamstyle=4,4,4,4
+	measnum=y
+	staffscale=0.8
+	brace=2-3
+	size=14
+	release=0
+
+staff 1
+	staffscale=0.6
+	defoct=5
+
+staff 3
+	clef=bass
+
+music
+
+define T 1 @
+define M 2 @
+define B 3 @
+define T34
+ score time=3/4 ; beamstyle=4,4,4
+ music
+@
+define T44
+ score time=4/4 ; beamstyle=4,4,4,4
+ music
+@
+
+midi all: 1 "tempo=76";
+midi 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=30";
+midi 2: 0 "channel=12"; 0 "program=73"; 0 "onvelocity=90,64";
+midi 3: 0 "channel=13"; 0 "program=33"; 0 "onvelocity=80";
+
+T: 8f;g;2a;4d;
+ital below 1: 1 "(optional)";
+M: 2a~;8;g;f;d;
+B: d-;a-;f;a;
+bar
+
+T34
+
+T: bn-;d;8f;g;
+M: 8a-;bn-;4.;8g;
+B: g-;d;g;
+bar
+
+T: 8a;g;f;e;g-;a-;
+M: 4.a;8f;8bn-;c;
+B: d-;a-;f;
+bar
+
+T: 8bn-;a-;g-;a-;f-;g-;
+M: 2.d;
+B: g-;a;bn;
+bar
+
+T: a--;d-;8f-;bn-;
+M: 8a;bn;c+;b;a;d;
+B: d-;a-;f;
+bar
+
+T: 8c;d;e;f;f#;g;
+M: 8a;bn;4.;8g;
+B: g-;d;bn;
+bar
+
+T44
+
+T: 8d;e;f;e;d;c;d;e;
+M: 8bn;c+;2a~;8;e;
+B: a-;e;bn;c+;
+bar
+
+T34
+
+T: f-;8e-;bn-;a-;g-;
+M: 8d+;e+;4.c+;8bn;
+B: d-;a-;f;
+bar
+
+T: 8a-;g-;f-;bn-;4f-;
+M: 8c+;bn;4.a;8g;
+B: g-;d;bn;
+bar
+
+T44
+
+T: bn-;e-;d;e;
+M: 8d;e;2.e;
+B: a-;e;bn;c+;
+bar
+
+T34
+
+T: 8e;d;;a-;4d;
+M: 8e;f;4d;8g+;f+;
+B: b(&)-;f;b;
+bar
+
+T: 8e;f;g;a;b;c#+;
+M: 2.c#+e+;
+B: a-;e;c#+;
+bar
+
+T: 8d+;c+;b;a;f#;g;
+M: 8b+;a+;g+;d+;a;g;
+B: g-;d;b;
+bar
+
+T: 8b-;a-;g-;f-;e-;a-;
+M: 8d+;e+;4f+;g+;
+B: a-;e;c#+;
+bar
+
+T: 8g;f;e;d;g-;a-;
+M: 2.a+~;
+B: d-;a-;f;
+bar
+
+T: 8d;e;f;a-;g-;a-;
+M: 2.a+;
+B: e+;d+;a;
+bar
+
+T: 8b-;c;d;b-;c;d;
+M: 8b+;a+;g+;d+;a;g;
+octave above M: 1 "8va" til 3.8;
+B: g-;d;b;
+bar
+
+T: 8b-;c;d;b-;c;b-;
+M: 8d+;e+;4f+;g+;
+B: c;g;e+;
+bar
+
+T44
+
+T: a-;8g-;f-;4g-;8g;a;
+M: 8f+;e+;2.d+;
+B: d;a;e+;f+;
+bar
+
+T34
+
+T: 8g;f;d;c;4g-;
+M: 8g;a;b;a;b;c+;
+B: g-;d;b;
+bar
+
+T: 8f;e;d;a-;g-;c;
+M: 2.d+;
+B: d-;a-;f;
+bar
+
+T: b-;2g;
+M: 8e+;f+;g+;a+;b+;c++;
+B: g-;d;b;
+bar
+
+T: 4.a;8d;4;
+M: 2.d++;
+B: d-;a-;f;
+bar
+
+T: b-;2g;
+M: 8e+;f+;g+;f+;e+;c+;
+octave above M: 1 "8va" til 1m+3;
+B: g-;d;b;
+bar
+
+T: 2.d;
+M: 2.d+;
+B: 2.d-;
+endbar

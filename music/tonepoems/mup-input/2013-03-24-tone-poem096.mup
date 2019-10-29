@@ -1,0 +1,199 @@
+header
+	title (16) "Tone Poem (No. 96)"
+	title (14) " "
+	title "" "John A. Krallmann (March 24, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 96) - \%"
+
+score
+	staffs=2
+	key=4&
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.85
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: r;b-;g~;4.;
+2: 4.g-;g;
+bar
+
+1: r;b-;g~;4.;
+2: 4.f-;f;
+bar
+
+1: r;dn;b;4.c;
+2: 4.e-;g;
+bar
+
+1: r;dn;an~;4.;
+2: 4.dn-;f#;
+bar
+
+1: r;e+;c+~;4.;
+2: 4.c-;g;
+bar
+
+1: r;dn+;b~;4.;
+2: 4.g-;g;
+bar
+
+1: r;c+;an~;4.;
+2: 4.dn-;c+;
+bar
+
+1: r;b;g~;4.;
+2: 4.e-;d+;
+bar
+
+1: r;an;f#~;4.;
+2: 4.dn-;c+;
+bar
+
+1: r;dn+;e+~;4.;
+2: 4.c-;an;
+bar
+
+1: r;an;b~;4.;
+2: 4.g-;g;
+bar
+
+1: r;e;dn~;4.;
+2: 4.dn-;f#;
+bar
+
+1: r;c;b-~;4.;
+2: 4.g-;g;
+bar
+
+1: g;a;b;4.e+;
+2: 4.e-;8e+;dn+;c+;
+bar
+
+1: e+;dn+;c+;4.g;
+2: 4.c-;8dn+;e+;c+;
+bar
+
+1: a;g;a;4.f;
+2: 4.d-;8d+;c+;d+;
+bar
+
+1: g;f;g;4.en;
+2: 4.c-;8g;a;b;
+bar
+
+1: f;e;f;4.d;
+2: 4.d-;8f;g;a;
+bar
+
+1: en;dn;en;4.c;
+2: 4.c-;8g;b-;c;
+bar
+
+1: 8e;dn;e;4.c;
+2: 4.an--;8f;g&;e;
+bar
+
+1: c;d;f;4.b;
+2: 4.b--;8c+;d+;b;
+bar
+
+1: c+;b;a;f;g;a;
+2: 4.f--;8a;b;c+;
+bar
+
+score time=4/4 ; beamstyle=2,2
+music
+
+1: 8c+;b;c+;f~;;g;4a;
+1 2: 1d;
+2: 4.b--;8a~;;g;4f;
+bar
+
+1: 8b;a;b;e~;;f;4g;
+1 2: 1d;
+2: 4.e-;8g~;;f;4e;
+octave below 2: 1 "8va";
+bar
+
+1: 8g;f;g;c~;2;
+1 2: 1c;
+2: 4.a--;8g~;;a;4f;
+bar
+
+score time=7/8 ; beamstyle=4.,2
+music
+
+1: 8c;d;f;2b;
+2: 4.b--;8d;e;f;a;
+bar
+
+score time=4/4
+music
+
+1: 8c+;b;g;e~;;f;4g;
+1 2: 1d;
+2: 4.e-;8g~;;f;4e;
+bar
+
+1: 8c+;bn;c+;g~;;a;4b&;
+1 2: 2.en;4c;
+2: 4.c-;8g~;;f;4en;
+bar
+
+score time=6/8
+music
+
+1: b;a;g;4.cf;
+1 2: 4.c;s;
+2: 4.f-;ca;
+bar
+
+1: b;a;g;4.cf;
+1 2: 4.c;s;
+2: 4.e-;ca;
+bar
+
+1: b;a;g;4.cf;
+1 2: 4.d;s;
+2: 4.d-;da;
+bar
+
+1: b;a;g;4.df;
+1 2: 4.d;s;
+2: 4.b--;da;
+bar
+
+1: 4.enc+;dnb;
+2: 4.c-g-;cg;
+bar
+
+1: 4.ca;b-g;
+2: 4.c-g-;cg;
+bar
+
+1: 2.a-f;
+2: 2.f-cf;
+bar
+
+1: [with>]2.af+;
+2: 2.f-cf;
+octave below 2: 1 "8va";
+endbar

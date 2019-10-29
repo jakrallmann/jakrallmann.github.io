@@ -1,0 +1,162 @@
+header
+	title (16) "Miniature Waltz"
+	title "" "John A. Krallmann (8/16/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Miniature Waltz - \%"
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.92
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86,64";
+midi 1 2: 0 "channel=12";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: 4.b;8e+;d+;b;
+2: g-;dgb;;
+bar
+
+1: 4.b;8c+;d+;e+;
+2: e-;eg#d+;;
+bar
+
+1: 4.b;8a;b;c+;
+2: a-;eac+;;
+bar
+
+1: 4.e;8f;g;a;
+2: d-;dfc+;;
+bar
+
+1: 8b;d+;4b;8c#+;d+;
+2: g-;dgb;;
+bar
+
+1: 8a+;g+;4e+;8b;c+;
+2: c-;eac+;;
+bar
+
+1: 8a;b;c+;d+;b;a;
+2: d-;dfe&+;dfc+;
+bar
+
+1: 4.a#;8b;4;
+2: g-;dgb;;
+bar
+
+1: 8e;g;a+;g+;e+;c+;
+2: c-;egc+;eac+;
+bar
+
+1: 4.bd+;8b;a;b;
+1 2: 8a;g;f;e&;4d;
+2: g-;dgb;;
+bar 
+
+1: 8d+;c+;b;a;g#;a;
+1 2: 2eg;4e;
+2: c-;egc+;eac+;
+bar
+
+1: 8d+;c+;b;c+;g#+;a+;
+1 2: 2eg;8b;c+;
+2: a--;eac+;;
+bar
+
+1: 8g+;f+;c+e+;bd+;ac+;bd+;
+1 2: 4a;2s;
+2: d-;ad+f+;;
+bar
+
+1: [with >]4.g&b&;8gnbn;4;
+2: g-;dgb;;
+bar
+
+1: 4.ce;8f;g;a;
+1 2: 8b-;a-;4b-;a-;
+2: c-;ce;;
+bar
+
+1: 4.bd+;8g+;4;
+1 2: 8a;g;a;b;c#+;d+;
+2: g-;dgb;;
+bar
+
+1: 8ge+;af+;bg+;c+a+;d+b+;e+c++;
+2: c-;gc+e+;;
+bar
+
+1: 4.f+d++;8e&+c++;d+b&+;c+a+;
+2: d-;fad+;c+a+;
+bar
+
+1: 4.d+b&+;8c+a+;4b&g+;
+2: g-;dgb&;bd+g+;
+bar
+
+1: 4.d+b&+;8c+a+;4b&g+;
+2: fn-;dgb&;bd+g+;
+bar
+
+1: 4.d+b&+;8c+a+;4b&g+;
+2: e&-;e&gb&;gbe&+;
+bar
+
+1: 4.e&c+e&+;8db&d+;4cac+;
+2: c-;e&gc+;eg;
+bar
+
+1: 4.fd+;8e&c+;db&;ca;
+2: d-;fad+;fa;
+bar
+
+1: 4.db;8ca;4b-g;
+2: g-;dgb;dg;
+bar
+
+1: 4.d&gb&;8ca;4b&-e&g;
+2: e&-;b&-e&g;;
+bar
+
+1: 4.db;8ca;4b-g;
+2: g-;dgb;dg;
+bar
+
+1: 4.db;8ca;4b-g;
+2: g-;dgb;dg;
+bar
+
+1: 2.db;
+2: 2.g-d;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.db;
+2: 2.g--g-;
+bar
+
+mussym above 1: 1 "ferm";
+1: 2.db;
+2: 2.g--g-;
+endbar

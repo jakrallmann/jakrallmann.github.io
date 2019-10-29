@@ -1,0 +1,316 @@
+
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann (Nov 19-23, 2006)"
+
+header2
+	title (12) "Nocturne - \%"
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.95
+	packfact=0.92
+	staffsep=13
+	scoresep=10,24
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+
+1: s;a;{16a;b;a;g;a;}5;
+2: 4s;r;;
+bar
+
+define THEME
+1: 2f+;{16f+;gn+;f+;e+;f+;a+;g+;}7;
+2: d-;ad+f+;a#d+f+;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2f+~;8;d+;;e+;
+2: d-;bd+f+;b&d+f+;ad+f+;
+bar
+
+score time=3/4
+music
+
+1: [grace;slash 1]8b;f+;a+;4gn+;8b;b&;
+2: gn-;gnbe+;be+gn+;
+bar
+
+1: 8a;gn+;4f+;8a;a&;
+2: f-; fad+;ad+f+;
+bar
+
+1:8gn;d#+;4.e+;16b;dn+;
+2: e-;gnb;bd+gn+;
+bar
+
+score time=4/4
+music
+
+1: {16d+;e+;d+;c+;d+;}5;[grace;slash1]8a+;gn+;f+;[grace;slash1]g+;f+;e+;{16d+;e+;d+;c+;d+;}5;
+2: a-;bd+gn+;b&d+g+;ad+f+;
+bar
+
+1: bf+;b&e+;ad+;dbn;
+2: gd+f+;gnd+e+;fad+;e-b-g(n);
+bar
+
+1: 2db&;4ca;gn;
+2: 1a-egn;
+bar
+
+midi all: 1 "tempo=72";
+rom above all: 1 "Slower";
+1: {16f;gn;f;e#;f;}5;8d+;c+;4.;8b;
+1 2: 2s;8d;en;4f;
+2: a#-;f;b-;g;
+bar
+
+score time=3/4
+music
+
+1: gnb&e+;8d+;e+;16a+;gn+;f+;e+;
+2: gnd+;d;b&-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: ad+f+;8.d+;16e+;
+2: 8a-;f;d+;c+;
+bar
+
+1: a#d+f+;8.d+;16e+;
+2: 8a#-;e;gn;d+;
+bar
+
+1: ad+f+;8gn+;f+;
+1 2: s;ad+;
+2: 8an-;f;e+;d+;
+bar
+
+1: 8e+;d+;a#;16a+;gn+;
+1 2: 4gn;s;
+2: 8a#-;gn;d+;e+;
+bar
+
+1: af+;8gne+;fd+;
+2: 8d-;a-;e;f;
+dblbar
+
+score key=2&
+ifdef SECOND transpose=up aug 1 endif
+music
+
+1: 8ec+;db;ca;b-g;
+2: 8g-;d;4g;
+bar
+
+1: 8f;e;b-;c;
+1 2: g-;g&-;
+2: 8e-;b-;e;b-;
+bar
+
+1: f-d;8ec+;db;
+2: 8b--;f-;d;f;
+bar
+
+1: 8a;g;c+;b;
+1 2: g-c;e;
+2: 8e-;b-;g;c+;
+bar
+
+1: 8.b;16a;8ef+;ed&+;
+1 2: 8c;d;4s;
+2: 8f-;c;a;f+;
+bar
+
+1: fd+;8e+c++;d+b+;
+2: 8b-;f;d+;f+;
+bar
+
+1: 8c+a&+;bg+;a&f+;ge+;
+2: 8e-;b-;f;g;
+bar
+
+1: 8fd&+;ec+;4c+a&+;
+2: 8a&-;e;c+;e;
+bar
+
+1: 8bna&+;;b&g+;a&f+;
+2: 8a&-;e;f;e;
+bar
+
+1: 8.b+;16a&+;g+;f+;e+;d&+;
+1 2: 4e+;s;
+2: 8g-;e;b;e;
+bar
+
+1: 8.enbd&+;16c+;8a&e+;a;
+2: 8a&-;en;c+;e&;
+bar
+
+1: 8.d&b;16a&;b;c+;8e+;
+2: 8e-;f;g;d&+g+;
+bar
+
+1: 4.c+a&+;16b;a&;
+1 2: 4.s;8g&;
+2: 8a&--;e-;4a&c+;
+dblbar
+
+score key=5&
+music
+
+1: 8.df;16g;8a-a;af+;
+1 2: 8c;b-;4s;
+2: 8d-;a-;f;d+;
+bar
+
+1: 8.ebf+;16e+;8dgb;dgan;
+2: 8g-;d;b;e;
+bar
+
+1: 16aa+;ana+;ba+;bna+;8c+a+;b&g+;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.af+;16ge+;4fd+;
+2: 8d;a;d+;a;
+bar
+
+1: 8.fd+;16ec+;4db;
+2: 8b-;f;b;f;
+bar
+
+1: 8db;ed+;;fb;
+2: 8g-;d;b;d;
+bar
+
+1: gb;c+;
+1 2: s;8a;g;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.dc+;16d+;8e+;f+;
+2: 8b-;f;c+;d+;
+bar
+
+1: 8a+;g+;fb;ed+;
+1 2: b;s;
+2: 8e-;b-;4g;
+bar
+
+1: 4.d+;8c+;
+1 2: 8.e;16f;4g;
+2: 8a-;e;c+;e;
+bar
+
+1: 4.f+;8b+;
+1 2: 8.c+;16b;4d+;
+2: 8b-;f;d+;f;
+bar
+
+1: 8a+;g+;f+;e+;
+1 2: b;g;
+2: 8e-;b-;f;g;
+bar
+
+1: 8d+;c+;b;e+;
+1 2: g;s;
+2: 8a-;g;c+;g+;
+bar
+
+1: 8.e+;32f+;e+;8d+;c+;
+1 2: f;e;
+2: 8an-;f;c+;f;
+bar
+
+1: 8.c+;32d+;c+;8b;f;
+1 2: e;s;
+2: 8b-;f;d+;a;
+bar
+
+1: 8.f;16e;8b;e;
+1 2: b-;s;
+2: 8g-;d;b;d;
+bar
+
+1: 8.e;16f;g;a;b;c+;
+1 2: d;s;
+2: 8a-;e;c+;e;
+bar
+
+1: 8.c+;16b;8f+;;
+1 2: e;8b;a;
+2: 8b-;f;d+;f;
+bar
+
+1: 8.f+;16e+;8b+;;
+1 2: b;d+;
+2: 8g-;d;b;d;
+bar
+@
+
+THEME
+
+1: 8.b+;16a+;b+;a+;b+;a+;
+1 2: c+;8a;c+;
+ital between  1&2: 1.5 "rit. e dim.";
+2: 8a-;g;c+;g;
+bar
+
+1: 2dn+b+;
+2: 8b--;f-;4dn;
+dblbar
+
+score
+	key=3#
+	transpose=up min 2
+music
+
+newscore
+
+midi all: 1 "tempo=84";
+rom above all: 1 "Tempo I";
+1: a;{16a;b;a;g;a;}5;
+2: r;;
+bar
+
+score time=3/4
+music
+
+define SECOND @
+THEME
+
+1: 8.b+;16a+;b+;a+;b+;a+c++;
+1 2: c+;8a;c+;
+ital between  1&2: 1.5 "rit. e dim.";
+2: 8a-;g;c+;g;
+bar
+
+1: 2f+dn++f++;
+2: 8b-;f;4dn+;
+endbar

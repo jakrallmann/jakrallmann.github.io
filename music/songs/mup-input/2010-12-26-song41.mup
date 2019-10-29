@@ -1,0 +1,164 @@
+header
+	title (16) "Song Without Words (No. 41)"
+	title "" "John A. Krallmann (12/26/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 41) - page \%"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	key=3#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=18
+	scorepad=8
+	scale=0.93
+	vscheme=2f
+
+music
+
+midi all: 0 "tempo=96";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92,68";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1-2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+1: 8fn+;gn+;2a+;
+2: d;fn;a;
+bar
+
+1: 8gn+;fn+;2e+;
+2: c;8e;fn;4gn;
+bar
+
+1: 8d+;g;4d+;8e+;d+;
+2: b&-;d;fn;
+bar
+
+1: 8c+;d+;2e+;
+2: a-;e;gn;
+bar
+
+1: 8b&;a;b;a+;gn+;d+;
+2: gn-;d;fn;
+bar
+
+1: 2e+;4a;
+2: a-;e;gn;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8f+;e+;2f+;
+1 2: 2.a;
+2: 2e+;4d+;
+2 2: 2.da;
+bar
+
+1: 8gn+;f+;2g+;
+1 2: 2.a;
+2: 2a;4gn;
+2 2: 2.cne+;
+bar
+
+1: 8gn+;f+;4g+;d+;
+1 2: 2.a;
+2: 2.b-gnd+;
+bar
+
+1: 2.fn+;
+1 2: 8gn;a;4cn+;a;
+2: 2.fn-cna;
+bar
+
+1: 2.b;
+1 2: 8d;e;4fn;gn;
+2: 2.gn-db;
+bar
+
+1: 2.a;
+1 2: 8b-;cn;4e;c;
+2: 2.a-e;
+bar
+
+1: 2.fn;
+1 2: 8a-;b-;4cn;a-;
+2: 2.fn-cn;
+bar
+
+1: 2.d;
+1 2: 8a-;b-;4a-;gn-;
+2: 2.gn-d;
+bar
+
+1: 2.d;
+1 2: 8g-;a-;4b-;g-;
+2: e;fn;d;
+2 2: 2.e-;
+bar
+
+1: 8c;g;4;8a;g;
+1 2: 2.g-;
+2: c;b-;c;
+2 2: 2.fn-;
+bar
+
+1: 8c+;a;4f;c;
+2: g;f;e;
+2 2: 2.f-;
+bar
+
+1: 2f-f;4a;
+1 2: 8c;b-;2a-;
+2: 2.d-a-e;
+bar
+
+1: 8dfng;ca;2b-dfb;
+2: 2c-g-c;4c-c;
+octave below 2: 3 "8va" til 1m+1.5;
+bar
+
+1: 8d+;b;4f;8a;b;
+2: b--b-;8g;a;4fbd+;
+2 2: s;fd+;s;
+bar
+
+1: 8eg;b-f;2dg;
+2: 4.e-e;8fn-fn;e-e;d-d;
+octave below 2: 1 "8va" til 1.5;
+bar
+
+1: 8e#g;ce;2eg;
+2: 4.c-c;8b--b-;a--a-;g--g-;
+bar
+
+1: db;ca;g-a-c;
+2: 2.f--f-;
+bar
+
+1: 2.a-f;
+2: e;d;a-;
+2 2: 2.d-;
+bar
+
+1: 2.a-e;
+2: b-;a-;e-;
+2 2: 2.c-;
+bar
+
+1: 2.e;
+1 2: a-;f-;g-;
+2: 2.b--e-d;
+bar
+
+1: 2.ce with e- below;
+2: [down] 2.a--a-;
+endbar

@@ -1,0 +1,293 @@
+header
+	title (18) "Song Without Words"
+	title (8) " "
+	title "" "John A. Krallmann (Aug 4-8, 2002)"
+
+header2
+	title (12) "Song Without Words - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1&
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.92
+	vscheme=2f
+	measnum=y
+	scoresep=12,29
+	release=0
+
+staff 2
+	clef=bass
+
+voice 2 2
+	timeunit=4.
+
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=11"; 0 "program=73"; 0 "onvelocity=56,40"; 0 "param=10,44";
+midi 1 2: 0 "channel=12"; 0 "program=73"; 0 "onvelocity=40"; 0 "param=10,92";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=72"; 0 "param=10,76";
+define PED ifdef MIDI pedal below 2: 1; endif @
+
+define THEME
+1: 2.c+;8g;a;
+1 2: 2.a;4s;
+2:f-;c;2a;
+PED
+bar
+
+1: 8d+;c+~;2.;
+1 2: 1a;
+2: f-;c;g;a;
+PED
+bar
+
+1: 8c+;b;a;f;4d;8f;g;
+1 2: 1d;
+2:b-;f;b;f;
+PED
+bar
+
+1: 8g;a~;2.;
+1 2:1c;
+2:f-;c;g;a;
+PED
+bar
+
+1: 2d~;8;e;f;g;
+2: b-;f;b;f;
+PED
+bar
+
+1: 8d;c~;2.;
+2: a-;f;g;f;
+PED
+bar
+
+1: 4.b-;8c;4.d;8f;
+2: g-;d;f;b;
+PED
+bar
+
+1: 1g;
+1 2: 2d;4f;e;
+2 1:c;g;2b;
+2 2: 1c;
+PED
+bar
+
+1: 2a;8g;4.f;
+1 2: 1c;
+2: f-;c;a;c;
+PED
+bar
+
+1: 2b;8a;4.g;
+1 2: 1d;
+2 1: b-;f;b;f;
+2 2: 1b-;
+PED
+bar
+
+1: b-;c;d;e;
+2 1: r;g;b;g;
+2 2:1c;
+PED
+bar
+
+1: 2f;;
+1 2: 2a-;;
+2: f-;c;2f-c;
+PED
+midi all: 3 "tempo=80"; 5 "tempo=104";
+ifdef LAST
+  repeatstart
+  newscore
+else
+  dblbar
+  ifdef SECOND
+	newpage
+  else
+	newscore
+  endif
+endif
+
+@
+
+//midi 1 1: 0 "onvelocity=80,72";
+//midi 1 2: 0 "onvelocity=72";
+//midi 2 1-2: 0 "onvelocity=68";
+THEME
+
+staff 1 defoct=5
+music
+
+define SECOND @
+//midi 2 1-2: 0 "onvelocity=56";
+midi 1 1: 0 "onvelocity=54,40";
+midi 1 2: 0 "onvelocity=40";
+THEME
+
+staff 1 defoct=4
+music
+
+//midi 2 1-2: 0 "onvelocity=68";
+midi 1 1: 0 "onvelocity=70,50";
+midi 1 2: 0 "onvelocity=50";
+define LAST @
+THEME
+
+1: 2d;4a-;8e;f;
+1 2: 2f-;a-;
+2: d-;a-;e;a-;
+PED
+bar
+
+1: 2g;a;
+1 2: 2c;4g;f;
+2: f-;c;2a;
+PED
+bar
+
+1: 2d;4a;g;
+1 2: 2.d;4e;
+2 1: a;g;2s;
+2 2: 2b-;cb;
+PED
+bar
+
+1: 1c;
+ifdef MIDI
+ 1 2: g-;a-~;;g-;
+else
+ 2 1: g;a~;;g;
+endif
+2 2: 2f-;e-;
+PED
+bar
+
+1: 2.f;8g;a;
+1 2: e;2.d;
+2: 2d-;c-;
+PED
+bar
+
+1: a;g;d;e;
+1 2: 2d;b-;
+2: 2b--;c-;
+PED
+bar
+
+1: g;f;2d;
+1 2: 2a-;4c;b-;
+2: 2f-;b-f;
+PED
+bar
+
+1: 2c;4d;e;
+1 2: 2g-;4b-;c;
+2 1: f;e;2s;
+2 2:2c;cg;
+PED
+bar
+
+1: 4.g;16a;g;2f;
+1 2: 2d;c;
+2 1: 2b;a;
+2 2: 1f;
+PED
+bar
+
+1: 2d+;4.;8e+;
+1 2:a;g;8f;e;4d;
+2 1: 2f;b;
+2 2: 1b-;
+PED
+bar
+
+1: 2c+;b;
+1 2: e;f;4.d;8e;
+2: g;a;b;c+;
+2 2: 1c;
+PED
+bar
+
+1: a;g;f;8g;a;
+1 2: 2e;d;
+2 1: 2a;;
+2 2: 2c#;4d;cn;
+PED
+bar
+
+mussym above 1: 1 "ferm";
+mussym below 2: 1 "uferm";
+1: 1f+;
+1 2: 1bd+;
+2: 1g-db;
+roll 1 1 to 1 2: 1;
+roll 2: 1;
+ifdef MIDI pedal below 2: 1;5*; endif
+bar ending "1."
+
+1: r;d+;b;g;
+2: mr;
+bar
+
+1: 2d;c;
+1 2: c;b-;2g-;
+2 1: 2s;4d;e;
+2 2: 2b-f;c;
+repeatend ending "2."
+
+midi 1: 0 "onvelocity=60";
+midi 1 2: 0 "onvelocity=40";
+midi all: 0 "tempo=144";
+1: 2r;d+;
+2: mr;
+bar
+
+1: 2b;g;
+2: mr;
+bar
+
+1: 1d;
+1 2: 2c;b-;
+2: 1b-f;
+bar
+
+1: 1c;
+1 2: 1g-;
+2 1: 2d;e;
+2 2: 1c;
+bar
+
+midi all: 0 "tempo=120";
+1: 1d~;
+2 2: 1d-~;
+bar
+
+1: 1d~;
+ifdef MIDI 1 2: 1f#-; endif
+2 1:1a-df#;
+2 2: 1d-~;
+bar
+
+1: 1d~;
+ifdef MIDI 1 2: 1f#-~; endif
+2 1: 1a-df# tie;
+2 2: 1d-~;
+bar
+
+1: 1d;
+ifdef MIDI 1 2: 1f-; endif
+2 1: 1a-df;
+2 2: 1d-;
+endbar

@@ -1,0 +1,128 @@
+header
+	title (16) "Waltz"
+	title "" "John A. Krallmann (4/5/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	time=3/4
+	beamstyle=2.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86,64";
+midi 1 2: 0 "channel=12";
+midi 2 1-2: 0 "channel=13"; 0 "program=0";
+
+1: 4.s;8g#;a;a#;
+2: 4.s;8r;4;
+bar
+
+1: 8b;f+;e+;d+;a;b;
+2: g-;gbf+;gbe&+;
+bar
+
+1: 8g;a+;g+;e+;d+;c+;
+2: e-;gbe+;gc+e+;
+bar
+
+1: 8e+;4a;8d+;4c+;
+1 2: d;8e;f;d;e;
+2: f-;ac+;fa;
+bar
+
+1: 4.c+;8d+;a;a&;
+1 2: 8d;e;4f;;
+2: g-;gb;bd+;
+bar
+
+1: 4.g;8;c+;b;
+1 2: 8d;c;2b-;
+2: e-;eg;e+~;
+2 2: 2s;8a;g;
+bar
+
+1: 4.a;8a+;bg+;ge+;
+2: 8e+;d+;4.c+;8b;
+2 2: 2f;4e;
+bar
+
+1: 8d+;e+;4f+;d+;
+1 2: 2.a&;
+2: 8c+;e+;4d+;8e+;f+;
+2 2: 2.f;
+bar
+
+1: 4.ge+;8c+;;;
+1 2: 8d;c;4e;d;
+2: c-;fa;fa&;
+bar
+
+1: 8c+;d+;4e+;ec+;
+1 2: e;8g;f;4s;
+2: c-;gc+;;
+bar
+
+1: 8c+;d+;ge&+;fd+;4ec+;
+1 2: e&;2s;
+2: b&--;gd+;gc+;
+bar
+
+1: 8c+a&+;b&g+;a&f+;ge&+;d+;c+;
+1 2: 2s;4an;
+2: f-;fc+;f#c+;
+bar
+
+1: c+a&+;4.bg+;8g+;
+2: 2.d+;
+2 2: 2g;4f;
+bar
+
+1: e+g#+;;;
+2: 8b;f+;e+;d+;c+;b;
+2 2: 2.e;
+bar
+
+1: bg#+;c+a+;ac+;
+2: b;2a;
+2 2: 2a-;4g-;
+bar
+
+1: 2ac+ tie;8;a;
+1 2: 8e;d;e;c;4a-;
+2: 2.f-c;
+bar
+
+1: 2d+~;8;f+;
+1 2: 8a;g;a;d;4;
+2: b;c+;b;
+2 2: 2.g-d;
+bar
+
+1: 2e+~;8;a;
+1 2: 8b;a;b;e;4;
+2: c+;b;a;
+2 2: 2.a-e;
+bar
+
+1: 2.a;
+1 2: 8e;d;e;c;a-;c;
+2: 2.f-c;
+ital between 1&2: 1 "rit. e dim.";
+bar
+
+1: 2.g#-e;
+2: 2.e-b-;
+endbar

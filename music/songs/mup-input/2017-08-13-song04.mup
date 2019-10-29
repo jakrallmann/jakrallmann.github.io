@@ -1,0 +1,123 @@
+
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title " " "(Aug 13, 2017)"
+
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=3&
+	time=4/4
+	beamstyle=4,4,4,4
+	measnum=y
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal below 1,2: 1;4; endif @
+
+midi all: 0 "tempo=68";
+midi 1: 0 "channel=11"; 0 "onvelocity=102";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=92";
+midi 2: 0 "channel=13"; 0 "onvelocity=65";
+
+1: r;8c+;d+;c+;d+;4c+~;
+1 2: s;2e;4~;
+2: r;g;r;g;
+2 2: 2c;b-;
+bar
+
+1: 8c+;g;;f;a;g;4g;
+1 2: e;2c;4bn-;
+2: r;e;r;d;
+2 2: 2a-;g-;
+bar
+
+1: 8a;f;;a;g;e;4;
+1 2: 2c;4;8f-;g-;
+2: r;c;r;c;
+2 2: 2f-;e-;
+bar
+
+1: 8f;d;;e;4d;8a;g;
+1 2: 2a-;bn-;
+2: r;c;2g-d;
+2 2: 2d-;s;
+bar
+
+1: 8c+;g;;a;2g;
+1 2: 2e;8;d;4;
+2: r;g;r;g;
+2 2: 2c;bn-;
+bar
+
+1: 8f;e;;f;2d;
+1 2: 2c;8a-;g-;4bn-;
+2: r;a;r;d;
+2 2: 2d;g-;
+bar
+
+1: 8en;g;c+;d+;2c+;
+1 2: 2r;8r;c;b;a;
+2: r;g;r;e;
+2 2: 2c;a-;
+bar
+
+1: 8g;c;en;g;4a;g;
+1 2: 2s;8a;c;g;c;
+2: r;g;f-;e-;
+2 2: 2c;s;
+bar
+
+1: 4.f#;8f;g;fn;e;d;
+1 2: 8f#;c;d;f;2s;
+2: r;an-;r;d;
+2 2:2d-;g-;
+bar
+
+1: 8en;g;c+;d+;;e+;d+;c+;
+2: r;g;r;e;
+2 2: 2c;a-;
+bar
+
+ifdef MIDI
+ 1: 8g;e;d;s;2d;
+ 1 2: 4.s;8c~;;bn-;a-;g-;
+else
+ 1: 8g;e;d;c ~ to voice 2;2d;
+ 1 2: 2s;8c;bn-;a-;g-;
+endif
+2: r;g;r;d;
+2 2: 2c;g-;
+bar
+
+1: 8e;d;;e;d;c;;g;
+1 2: 2a-;g-;
+2: r;c;r;c;
+2 2: 2f-;e-;
+bar
+
+1: 8g;f;;c;2d;
+1 2: 2a-;4bn-;8a-;g-;
+2: r;c;2g-d;
+2 2: 2d-;s;
+bar
+
+1: 8e;g;;c+;ac+;gb;fa;c;
+1 2: 2g-;s;
+2: r;e;r;a;
+2 2: 2e-c;f-c;
+bar
+
+1: 4.g;8d;2ce-;
+1 2: 8c;bn-;4;2s;
+2: g-d;g--;2c-;
+endbar

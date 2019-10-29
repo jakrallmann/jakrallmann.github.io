@@ -1,0 +1,217 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann (Feb 2003)"
+
+header2
+	title (12) "Nocturne - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=3#
+	time=2/4
+	beamstyle=4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+	vscheme=2f
+	scoresep=12,24
+	measnum=y
+
+staff 2
+	clef=bass
+
+
+music
+
+
+midi all: 0 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=4"; 0 "onvelocity=84,74";
+midi 1 2: 0 "channel=12"; 0 "program=4"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=4"; 0 "onvelocity=74";
+midi 2 2: 0 "channel=14"; 0 "program=4"; 0 "onvelocity=74";
+
+1: 4.s;8r;
+2: 4.s;8e;
+bar
+
+1: mr;
+2: 8f;g;a;b;
+bar
+
+1: 4.dn;16e;d;
+1 2: 2a-;
+2: 2a-~f;
+bar
+
+1: 8c;a-;b-;c;
+2: 2a-e;
+bar
+
+1: 8b;c+;b;f;
+1 2: d;8a-;d;
+2: 2a-f;
+bar
+
+1:  2a;
+1 2: d;c;
+2: 2a-e;
+bar
+
+1: 2fa;
+1 2: 8e;d;e;d;
+2: 2da;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 4.d+;8c+;g;a;
+1 2: 8f;fn;4e;c;
+2 1: b;2a;
+2 2: 2.a-;
+bar
+
+1: 4.f;8g;8.a;16b;
+1 2: 8e;d;2a-;
+2: 2.d-;
+bar
+
+1: 4.e+;8a+;8.g+;16e+;
+1 2: 8g;a;2e;
+2: 2.a-c+;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8e+;f+;4d+;
+1 2: f;fn;
+2 1: 2a;
+2 2: d;b-;
+bar
+
+1: b;c+;
+1 2: 2d;
+2 1: 8f;fn;4e;
+2 2: 2e-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8b;a~;2;
+1 2: 2.c;
+2: 2e~;8;;
+2 2: 2.a-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: mr;
+2: 8f;g;a;b;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2a-c;4d;8f;e;
+1 2: 2s;a-;
+2: 2a-e;a-f;
+bar
+
+1: 2b-d;4a-c;{8a;g;f;}3;
+2 1: f;fn;2e;
+2 2: 2a-;;
+bar
+
+1: 2d#fa;4eg;{8g+;f+;e+;}3;
+2 1: 2a;g;
+2 2: 1c;
+bar
+
+1: 2fd#+;ge#+;
+2 1: a;8b;a;2g;
+2 2: 2c;;
+bar
+
+1: 2a;4c+;cn+;
+1 2: 8c;d#;e;f;2d;
+2: 2f-c;g-d#;
+dblbar
+
+score key=5&
+music
+
+midi all: 0 "tempo=66";
+1: 2fa;8e+;f+;4a+;
+1 2: 8e;d;e;d;4a-;8c;d;
+2: 1d-;
+bar
+
+1: 8c+;b;f;g;2e;
+1 2: 2d;8b-;c;g-;a-;
+2: 2g-;a-;
+bar
+
+1: f;8.g;16f;8c+;d+;e+;f+;
+1 2: 8r;4c;8;;b-;g-;f-;
+2: 2an-;b-;
+bar
+
+1: 8e;d;8.e;16g;2f;
+1 2: 2b-;4;an-;
+2: 2d;4;c;
+2 2: 2g-;f-;
+dblbar
+
+score key=2&
+music
+
+midi all: 0 "tempo=56";
+1: 8d;c;d;f;2g;
+1 2: 2f-b-;8f;e;b-;c;
+2: 2b--f-;e-b-;
+bar
+
+1: f;8.b;16a;8a;g;c;16d;e;
+1 2: 2s;4b-;s;
+2 1: 8a;b;f;d+;f;g;e;c;
+2 2: 2b--f-;e-b-;
+bar
+
+1: c+;8.d+;16e+;8g+;f+;8.e+;16d+;
+1 2: 2e;a&;
+2 1: 8a;g;f;e;4d;8c+;b;
+2 2: 2f-c;b--f-;
+bar
+
+1: e+;8.c+;16d+;8g+;f+;e+;d+;
+1 2: 2g;bn;
+2 1: 8d+;c+;b;a&;bn;d+;f+;g+;
+2 2: 2c;g-d;
+bar
+
+score key=0&
+music
+
+1: 8e+;d+;c+;16d#;e;8b;a;c;16dn;e;
+1 2: 2g;8d;c;4g-;
+2: 8e;g;e+;16b;c+;4a;c;
+2 2: 2c-g-;4f-c;e-;
+bar
+
+1: 8f;c+;;d+;4e+;g+;
+1 2: 2a-;4g;f;
+2: f;8d+;c+;2b;
+2 2: 2d-a-;g-d;
+bar
+
+1: 1ec+e+g+;
+2: 1c-g-e;
+endbar

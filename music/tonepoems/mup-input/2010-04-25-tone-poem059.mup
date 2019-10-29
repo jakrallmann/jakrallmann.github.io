@@ -1,0 +1,154 @@
+header
+	title (16) "Tone Poem (No. 59)"
+	title "" "John A. Krallmann (4/25/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 59) - \%"
+
+score
+	staffs=2
+	key=2#
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=108";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: 4.defa;dega;8d+;c+;
+2: d-;a-;g;a-;
+bar
+
+1: 4.defa;dega;8e+;d+;
+2: d-;a-;g;f;
+bar
+
+1: 4.fbd+f+;gbd+e+;8d+;e+;
+1 2: 2.s;4fb;
+2: g-;d;b;d;
+bar
+
+1: 4.egad+;gae+;8g;a;
+2: a-;e;c+;e;
+bar
+
+1: 4.a-cf;a-df;8g;a;
+2: d-;a-;f;a-;
+bar
+
+1: 4.a-cf;g-b-df;8g;a;
+2: f-;c;d;e;
+bar 
+
+1: 4.b-df;abd+;8c+;b;
+1 2: 2.s;4dg;
+2: g-;d;b;d;
+bar
+
+1: 4.ceb;cea;8g;a;
+2: a-;e;a;e;
+bar
+
+1: 4.b-cf;fbd+;8e;f;
+2: b--;f-;d;b;
+bar
+
+1: 4.b-da;b-dg;8d;e;
+2: e-;b-;d;e;
+bar
+
+1: 4.b-dg;a-cg;8d;e;
+2: a--;e-;c;e-;
+bar
+
+1: 4.b&-dg;a-df;8c;d;
+2: d-;a-;f;a-;
+bar
+
+1: 4.abd+;gbd+;8d;e;
+2: g-;d;b;d;
+bar
+
+1: 4.b&-dg;a-df;8c;d;
+2: d-;a-;f;a-;
+bar
+
+1: 4.b(n)-dg;a-df;8c;d;
+2: d-;a-;f;a-;
+bar
+
+1: 4.abd+;gbd+;8e+;f+;
+2: g-;d;b;d;
+bar
+
+1: 4.fae+;fad+;8e+;f+;
+2: d-;a-;f;a-;
+bar
+
+1: 4.fae+;fad+;8e+;f+;
+2: d-;a-;f;a-;
+bar
+
+1: 4.gbe+;gbd+;8e+;f+;
+2: g-;d;b;d;
+bar
+
+1: 4.gbe+;gbd+;8e+;f+;
+2: g-;d;b;d;
+bar
+
+1: 4.fae+;fad+;8e+;f+;
+2: d-;a-;f;a-;
+bar
+
+1: 4.fae+;fad+;8e;f;
+2: d-;a-;f;a-;
+bar
+
+1: 2e~;8;4.d~;
+2: d-;a-;f;;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2d;8e;f;
+2: 2.f;
+bar
+
+1: 4.e;d~;
+2: d-;a-;f;
+bar
+
+1: 2d;8e;f;
+2: 2.f;
+bar
+
+1: 2.g-e tie;
+2: d-;a-;e;
+bar
+
+1: g-e;d;c;
+2: 2.e;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 2.f-d;
+2: 2.d-a-;
+endbar
+
+

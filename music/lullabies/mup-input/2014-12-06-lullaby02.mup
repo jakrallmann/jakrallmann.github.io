@@ -1,0 +1,160 @@
+header
+	title (18) "Lullaby"
+	title "" "John A. Krallmann (December 6, 2014)"
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=4/4
+	key=1#
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	scoresep=10,24
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=76";
+
+rom above all: 1 "Lento espressivo";
+1: 2s;4.d+ ph;8c#+;
+2: 2s;r;
+bar
+
+1: d+;b&+;4.a+;8g+;
+2: g-;d;e&;a;
+bar
+
+1: 2.d+;4g;
+2: g-;d;a;b&;
+bar 
+
+1: 2e&+;4.fn+;8e+;
+2: c-;g-;e&;c+;
+bar
+
+1: 2.a eph;4d ph;
+2: d-;a-;e;f;
+bar
+
+1: 2b;4.a+;8g+;
+2: g-;d;b;fn+;
+bar
+
+1: 2b+;8a+;4g+;8a+;
+2: c;g;e&+;a+;
+bar
+
+1: 4.c++;16e++;d++;4b+;8f+;g+;
+2: g-;d;b;d+;
+bar
+
+1: 4.a+;8d+;e&+;4d+;8a;
+2: d-;a-;f;c+;
+bar
+
+1: 2b;8a;4g eph;8b ph;
+2: g-;d;b;fn+;
+bar
+
+1: 2e+;4.b+;8a+;
+2: c-;g-;e;g;
+bar
+
+1: 2e+;a;
+2: a--;c;g;c+;
+bar
+
+1: 2c+;4.d;8a;
+2: d-;a-;f;c+;
+bar
+
+1: 1b eph;
+2: e-;b-;g#;e;
+bar
+
+1: 2b ph above;e;
+2: c-;g-;e;g;
+bar
+
+1: 2c+;e;
+2: a--;e-;c;g;
+bar
+
+1: 1f eph;
+2: b--;f-;d#;b-;
+bar
+
+1: 1g# ph;
+2: e-;b-;g#;e;
+bar
+
+1: 1g#;
+2: c#-;g#-;e;c#;
+bar
+
+1: 2e+;4d#+;c#+;
+2: a--;c#;a;e+;
+bar
+
+1: a#;2.b eph;
+2: e-;b-;g#;e;
+bar
+
+1: 2c+ ph;4.e;8a;
+2: a--;e-;c;f;
+bar
+
+1: b;2d#+~;8;c#+;
+2: b--;f-;d#;a;
+bar
+
+1: 1b~;
+2: e-;b-;g#;e;
+bar
+
+1: 1b eph;
+2: d+;c+;b;g#;
+bar
+
+1: 2.c#+ ph;4e+;
+2: a-;e;f+;e+;
+bar
+
+1: 2.f+;4c+;
+2: d-;f;d+;a;
+octave below 2: 1 "8va";
+bar
+
+1: 1b;
+2: g-;d;b;d+;
+bar
+
+1: 1b&;
+2: g-;d;e;g+;
+bar
+
+1: 1a;
+2: d-;d;f;d+;
+octave below 2: 1 "8va";
+bar
+
+1: 1b&-;
+2: g-;d;e;g;
+bar
+
+1: 1a-~;
+2: d-;a-;g;f;
+bar
+
+1: 1a- eph;
+2: 1d;
+endbar

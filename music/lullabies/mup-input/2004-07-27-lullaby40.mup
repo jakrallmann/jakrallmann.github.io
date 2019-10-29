@@ -1,0 +1,175 @@
+header
+	title (18) "Lullaby No. 40"
+	title (10) " "
+	title "" "John A. Krallmann (7/27-8/3 2004)"
+
+header2
+	title (12) "Lullaby No. 40 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=12/8
+	beamstyle=4.,4.,4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=10,26
+	staffscale=0.95
+	release=0
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=102";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 54";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=54";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=54";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=54";
+
+rom above 1: 1 "Moderato";
+1: mr;
+2: 8e-;b-;e;f#;g#;b;e+;b;g;f;e;b-;
+bar
+
+1: [grace]8e+;[]d+;1.e+;
+2: 8e-;b-;e;f#;g#;b;e+;b;g;f;e;b-;
+bar
+
+1: [grace]8d+;[]e+;1.f+;
+2: 8d-;a-;e;f;a;b;d+;c+;b;f;d;a;
+bar
+
+1: [grace]8f+;[]e+;1.f+;
+1 2: 2.s;8g;a;f;4.s;
+2: 8d-;a-;e;f;a;c+;4.s;8c+;a;d;
+bar
+
+1: [grace]8b;[]d+;1.g+;
+1 2: 4.s;8b-;f;g;a;g;f;4.s;
+2: g-;d;a;2.s;8b;a;a&;
+bar
+
+1: [grace]8c+;[]d+;1.e+;
+2: c-;g-;d;e;b;c+;d+;e+;b;;a;a&;
+bar
+
+1: [grace]8a;[]c+;4.e+;d+;~;8;16c+;b;a;g;
+1 2: 4.s;8b-;d;f;2.s;
+2: f-;c;a;4.s;8a;d;g-;g--;f;b;
+bar
+
+1: 2.f;e;
+2: c-;a&-;f;d+;c;d;c-;g-;d;e;a;a&;
+bar
+
+1: 2.e;4.d~;8;e;f;
+2: f-;c;a;;b;c+;g-;d;a;b;g;f;
+bar
+
+1: 2.g;a;
+2: e-;c;d+;c+;g;c;f-;c;a;b;c+;d+;
+bar
+
+midi all: 1 "tempo=96";
+1: 16g;a;8b;c+;d+;8.c+;16b;[pad 7]2.c+ =c e+;
+print (c.x - 7, c.y) "\(acc_gt)"
+2: g-;d;a;b;f+;g;c-;g-;e;4.;
+bar
+
+rom above all: 1 "meno mosso";
+1: 2.a;[grace]8e;[]f;4.g;c;
+2: f-;c;g;a;d+;f+;e-;b-;d;a-;b;e;
+bar
+
+midi all: 1 "tempo=90";
+1: [grace]8d;[]e;4.f~;4;16a;g;4.f;e;
+1 2: 2.s;4.;8d;c;g-;
+2: d-;a-;c+;g-;b;g--;c-;a-;f;c-;g-;e;
+bar
+
+midi all: 1 "tempo=84";
+1: [grace]8d;[]e;[]f;4.a;[grace]8g;[]f;[]e;4d;16e;f;g;f;e;d;c;b-;4.a-g-;
+2: f-;d;a;g-;a;b;c-;g-;e;f-;f;c;
+bar
+
+score time=9/8 ; beamstyle=4.,4.,4.
+music
+
+midi all: 1 "tempo=78"; 4 "tempo=70"; 7 "tempo=60";
+rom above all: 4 "rit.";
+1: 16f;e;d;c;b-;a-;4.a-;g#-;
+2: d-;a-;f;e-;b-;d;e;b-;e;
+repeatstart
+
+score time=6/8 ; beamstyle=4.,4. ; key=a
+music
+
+rom above all: 1 "Andante";
+midi all: 1 "tempo=72";
+1: 4.c~;8;b-;a-;
+2: a--;f;fn;4.e;
+bar
+
+1: 4.c~;8;16f-;g-;a-;e;
+2: a--;f;fn;4.e;
+bar
+
+1: 4.c~;8;b-;a-;
+2: a--;f;fn;4.e;
+bar
+
+1: 4.g-;f-;
+2: d-;a-;d;e;d;a-;
+bar
+
+1: 4.d~;8;f;g;
+2: e-;b-;a;g;e;e-;
+bar
+
+1: 4c+;8d+;e+;8.d+;16c+;
+2: a-;e;b;c+;b;a;
+bar
+
+1: 4.f+~;8;;32b+;a+;g+;f+;
+1 2: c+;b;a;4.f;
+2: d-;a-;f;d+;b;d;
+bar
+
+1: 4.e+;a;
+1 2: b;a;g;;f;;
+2: c;a;e+;d;b;a;
+bar
+
+1: b;c+;d+;e+;f+;g+;
+1 2: 4g;8f;4.dg;
+2: d+;c+;b;4.b;
+2 2: 4.e;4;8d;
+bar
+
+1: b+;a+;g+;e#+;4f+;
+1 2: 4.a;;
+2: 4.a;8b;4a;
+2 2: 4.c;d;
+bar
+
+midi all: 4 "tempo=60";
+1: b;a#;b;d+;16e+;e#+;f+;g+;
+1 2: 4.e;f;
+2: d+;c+;d+;4.;
+2 2: 4.e;;
+bar
+
+rom above all: 1 "rit.";
+midi all: 1 "tempo=50"; 3 "tempo=36";
+1: 4.a+;;
+1 2: 4c+;16b;d+;4.c+;
+2: a-;e;fn;4.a-e;
+repeatend

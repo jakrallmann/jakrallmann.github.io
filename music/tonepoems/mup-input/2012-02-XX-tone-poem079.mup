@@ -1,0 +1,228 @@
+header
+	title (16) "Tone Poem (No. 79)"
+	title (14) " "
+	title "" "John A. Krallmann (Feb-Mar, 2012)"
+
+footer
+	title (12) "\(copyright) Copyright 2012 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 79) - \%"
+score
+	staffs=2
+	key=1#
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.73
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define P ifdef MIDI pedal below 2: 1; endif @
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=54";
+
+1: 4.eg;8;{4;fa;gb;}3;
+2: e-;b-;f;b-;
+P
+bar
+
+1: 4.bd+;16c+e+;bd+;{4ac+;gb;eg;}3;
+2: a-;e;c+;e;
+P
+bar
+
+1: 2fa;{4cea;dfb;eac+;}3;
+1 2: 4.e;8d;2s;
+2: d-;a-;f;a-;
+P
+bar
+
+1: 4.eac+;16d+;c+;{4b;a;g;}3;
+1 2: 2s;d;
+2: g-;d;b;d;
+P
+bar
+
+1: 2gb;{4eg;fa;gb;}3;
+1 2: 4.f;8e;2s;
+2: e-;b-;f;b-;
+P
+bar
+
+1: {gb;ac+;gb;}3;{fa;eg;fa;}3;
+2: a-;e;c+;e;
+P
+bar
+
+1: {d#f;eg;df;}3;{fa;eg;df;}3;
+2: b-;f;c+;f;
+P
+bar
+
+//
+
+1: 2fac+;g-b;
+1 2: {a-;b-;c;}3;{f;e;b-;}3;
+2: e-;b-;e;b-;
+P
+bar
+
+score time=2/4 ;beamstyle=4,4
+music
+
+midi all: 0 "tempo=82";
+1: 16d+;c+;b;g;e;c;g-;a-;
+2: 8c-;g-;e;g-;
+ifdef MIDI pedal below 2: 1*; endif
+bar
+
+score time=6/4 ; beamstyle=2.,2.
+staff 1 clef=bass
+music
+
+undef P
+define P ifdef MIDI pedal below 2: 1;4; endif @
+
+midi all: 0 "tempo=112";
+1: 1.b;
+1 2: f;g;e;f;g;e;
+2: e-;[with>]2b-;4d-;[with>]2b-;
+P
+bar
+
+1: f;g;e;b;c+;d+;
+2: c-;2g-;4a--;e-;a-f;
+P
+bar
+
+1: 1.b;
+1 2: f;g;e;f;g;e;
+2: e-;[with>]2b-;4d-;[with>]2b-;
+P
+bar
+
+1: f;g;e;f;<<staff clef=treble>>a;g;
+2: c-;2g-;4a--;e-;c;
+P
+bar
+
+1: f;2e~;2.~;
+2: e-;b-;g;f;e;b-;
+P
+bar
+
+1: 2.e~;2;8e+;f+;
+2: e-;b-;g;f;e;b-;
+P
+bar
+
+//
+1: 4.g+;8f+;4e+;8d+;c+;b;a;g;fa;
+1 2: 8b;c+;b;a;g;f;2.e;
+2: e-;b-;g;a-;e;c+;
+P
+bar
+
+1: 8c+;b~;2~;2.;
+1 2: 1.b-;
+2: e-;b-;g;f;e;b-;
+P
+bar
+
+1: 8b;a~;2~;2.;
+1 2: 1.a-;
+2: c-;g-;e;g;b;g;
+P
+bar
+
+1: 8a;g~;2~;2.;
+1 2: 1.b-;
+2: g--;d-;b-;a-;b-;d-;
+P
+bar
+
+1: 8d+;c+~;4;b;e;g;b;
+1 2: 2.e;s;
+2: c-;g-;e;c+;e;g-;
+P
+bar
+
+1: 8b;a~;4;f;c;e;c;
+1 2: 2.c;s;
+2: d-;a-;e;f;a;d;
+P
+bar
+
+1: 2b-;4d;b;a;g;
+1 2: f-;2g-;2.e;
+2: g-;2d;4c-;g-;e;
+P
+bar
+
+1: ge+;fd+;ec+;c#a#;2db;
+2: d-;a-;f;g-;d;b;
+P
+bar
+
+//
+
+1: 2.e;f;
+1 2: b-;c;a-;c;e;d;
+2: c-;g-;e;d-;a-;f;
+P
+bar
+
+1: 2.g;2;8;f;
+1 2: c;b-;a-;2.b-;
+2: e;d;c;2.d;
+2 2: 2.g-;;
+P
+bar
+
+1: 2.e;2g;4e;
+1 2: f-;g-;b-;d;e;c;
+2: e-;2b-;4c-;2g-;
+P
+bar
+
+1: d~;8;e;d;c;2b-;8e;fn;
+1 2: 8f-;g-;2a-;4a-;g-;fn-;
+2: d-;a-;f;g-;2d;
+P
+bar
+
+1:dg;egd+;egc+;dg#b;fngd+;egc+;
+2: c-;g-;e;e-;b-;g#;
+bar
+
+1: ceb;2cea;4b-cg;2a-cfn;
+2: a-;e;g;fn-;c;d;
+P
+bar
+
+staff 1 clef=bass
+music
+
+1: 8g;a;4b;e+;8g;a;4b;d+;
+1 2: 2fn;4a;2f;4g#;
+2: g-;d;fn;g-;d;f;
+P
+bar
+
+midi all: 1 "tempo=102"; 2 "tempo=92"; 3 "tempo=78";
+ifdef MIDI pedal below 2: 1;4;6.9*; endif
+1: 1.c+;
+1 2: 2e;4fn;2.e;
+2: r;g-;a&-;2.g-;
+2 2: 1.c-;
+endbar

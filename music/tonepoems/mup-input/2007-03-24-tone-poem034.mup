@@ -1,0 +1,136 @@
+header
+	title (18) "Tone Poem (No. 34)"
+	title "" "John A. Krallmann (3/24/07)"
+
+header2
+	title (12) "Tone Poem (No. 34) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	staffscale=0.95
+	packfact=1.1
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=58";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+
+rom above all: 1 "Largo";
+1: 2.g;8;a;
+1 2: 2s;8c;d;g;a;
+2: 8g-;d;g;b;2s;
+bar
+
+1: 2..b;8g;
+1 2: 2s;8c;d;e;g;
+2: 8e-;b-;g;b;2s;
+bar
+
+1: 2..a;8f;
+1 2: 2s;8c;d;e;f;
+2: 8f-;c;a;b;2s;
+bar
+
+1: 2..g;8d+;
+2: 8g-;d;a;b;c+;b;a;g;
+bar
+
+1: 2..e+;8g;
+2: 8c-;g-;d;e;a;b;c+;b;
+bar
+
+midi all: 1 "tempo=54";
+1: 8.f#;16e;d;c;b-;a-;8.;16b-;8.g;16d+;
+2: 8d-;a-;f#;a-;g-;d;b;d;
+bar
+
+1: 8.e+;16c+;g+;f+;e+;c+;8.e+;16d+;c+;b;a;g;
+2: 8c-;g-;e;c+;g-;d;b;d;
+bar
+
+midi 1 2: 1 "onvelocity=80";
+1: 8.a;16g;8f#;16a;b;8.a;16g;4g+;
+1 2: 8c;b-;16e;d;8c;16b-;c;8d;16b;a;g;d;
+2: 8d-;a-;f#;a-;g-;d;b;d;
+bar
+
+1: 16c++;b+;a+;g+;4;2a+;
+1 2: e+;16c+;b;a;g;f+;en+;f+;d+;4a;
+2: 8c-;g-;e+;c+;d-;a-;16f+;en+;f+;d+;
+ital between 1&2: 1 "un poco agitato";
+bar
+
+1: 2g+;f#+;
+1 2: 16e+;d+;e+;c+;4g;16e+;d+;e+;c+;4f#;
+2: 8e-;b-;16e+;d+;e+;c+;8d-;a-;16e+;d+;c+;d;
+bar
+
+1: 2f+;4e+;e;
+1 2: 16bn;a;b;a;4g;16c+;b&;c+;g;4c;
+2: 8g-;d;16bn;a;b;f;8c-;g-;16c-c;d-d;e-e;c-c;
+ital between 1&2: 4 "appassionato";
+boldital between 1&2: 4 "ff";
+dblbar
+
+score key=3&
+music
+
+1: 16a bm;b;c+;b;8a ebm;16 bm;b;c+;b;8a ebm;16b bm;c+;d+;c+ ebm;
+1 2: 16c bm;d&;e;d;8c ebm;16 bm;d;e;d;8c ebm;16dn bm;e;f;e ebm;
+2: f-f tie;16;ee-;4d&-d& tie;16;c-c;4b--b- tie;
+octave below 2: 1 "8va" til 1m+2;
+bar
+
+midi all: 2 "tempo=44";
+1: 8b;a;g;f#;8.g;16e;8.a;16f;
+1 2: 8d;c;b-;an-;4b-;c;
+2: 2b--b-;8e-;b-;ef;b-;
+ital between 1&2: 2 "meno mosso e dim.";
+boldital between 1&2: 3 "mp";
+bar
+
+1: 8.b;16e;4b;8.ac+;16d+;8c+e+;f+;
+1 2: 8g;b-;4g;16c;d;8e;16b;a;g;f;
+2: 8e-;b-;g;b-;e-;c;a;c;
+ital between 1&2: 3 "cresc.";
+bar
+
+1: 8en+g+;16an+;b+;4e+g+;8f+a+;16a+;b+;8a+c++;16d++;e++;
+1 2: 16d+;c+;8b;16d+;c+;b;g;e&+;d+;c+;b;g+;f+;8e+;
+2: 8c-;g-;c-;g-;f-;c;an;f+;
+bar
+
+1: 16f++;e++;d++;c++;b+;a+;g+;f#+;8.;16g+;4e+;
+1 2: 16a(&)+;g+;f+;e+;d+;c+;b;an;8.;16b;4g;
+2: 8b--;b-;a;d+;e-;b-;g;b-;
+bar
+
+1: 8.e+;16b;4e+;8.;16b;4e+;
+1 2: g;;;;
+2: 8e-;b-;g;b-;e-;b-;g;b-;
+ital between 1&2: 1 "dolce";
+boldital between 1&2: 1 "pp";
+bar
+
+1: b;;2g+;
+1 2: g;;2e+;
+2: 16e-;b-;e;g;<<staff clef=treble>>b-;e;g;b~;2;
+endbar

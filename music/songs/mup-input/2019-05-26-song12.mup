@@ -1,0 +1,183 @@
+header
+	title "" "John A. Krallmann (May 26, 2019)"
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=3/4
+	key=1&
+	beamstyle=4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=56";
+midi 1: 0 "channel=11"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=72";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=72";
+
+1: 8r;d;b;a;4g;
+2: 2b;8a;g;
+2 2: 2.g-d;
+bar
+
+1: 8r;e;a;g;f;e;
+2: 4.c#+;8b;a;g;
+2 2: 2.a-e;
+bar
+
+1: 8e;d;4.a-;8d;
+2: 4.f;8e;4f;
+2 2: 2.d-a-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 4.b;8c+;
+2: 8b;c+;d+;e+;
+2 2: 2g-d;
+bar
+
+1: 4.d+;8;
+1 2: 8d;e;f;a;
+2: 8f;g;a;c+;
+2 2: 2d-a-;
+bar
+
+1: 2b;
+1 2: 8e;f;g;e;
+2: 8b;a;b;g;
+2 2: 2g-d;
+bar
+
+1: 2a;
+1 2: 8c#;d;e;c;
+2: 8e;f;g;e;
+2 2: 2a-;
+bar
+
+1: 8g;f;e;f;
+1 2: b-;a-;
+2: 8e;f;g;d;
+2 2: 2d-a-;
+bar
+
+1: 4.b;8e+;
+1 2: 8c#;d;e;g;
+2: 8e;f;g;b;
+2 2: 2a-;
+bar
+
+1: e+;d+;
+1 2: g;f;
+2: 8e;f;a;d+;
+2 2: 2d-a-;
+bar
+
+1: g+;f+;
+1 2: 2b;
+2: 8a;b;d+;f+;
+2 2: 2g-d;
+bar
+
+1: e+;8d+;c#+;
+1 2: g;8f;e;
+2: 8b;4a;8g;
+2 2: 2a-e;
+bar
+
+1: 8c#+;d+;4;
+1 2: e;d;
+2: 8g;f;4;
+2 2: 4.b-;8a-;
+bar
+
+1: 8g+;f+;e+;d+;
+1 2: 2b;
+2: 8b;a;b;g;
+2 2: 2g-d;
+bar
+
+1: d+;c#+;
+1 2: f;8e;g;
+2: 8b;g;4a;
+2 2: 2a-e;
+dblbar
+
+score key=3&
+music
+
+1: 2d&+;
+1 2: 2g&;
+2: 8b;a;b;d&+;
+2 2: 2g&-d&;
+bar
+
+1: 2d+;
+1 2: 2f;
+2: 8d+;c+;d+;f+;
+2 2: 2b-f;
+bar
+
+1: 8g+;f+;e+;d+;
+1 2: b;g;
+2: ebf+;dbe+;
+bar
+
+1: 8e+;d+;c+;b;
+1 2: g;;
+2: cge+;b-ge+;
+bar
+
+1: 8c+;b;an;g;
+1 2: 2f;
+2: an-fc+;g-enb;
+bar
+
+1: 8an;g;f;ec+;
+2: f-can;e-ca;
+bar
+
+1: fd+;8e+;f+;
+1 2: s;a;
+2: 8b;d+;c+;d+;
+2 2: 2b-f;
+bar
+
+1: af+;bg+;
+2: d+;e+;
+2 2: 2eb;
+bar
+
+1: 8a+;g+;f+;e+;
+1 2: 2a;
+2: a;8g;a;
+2 2: 2f-c;
+bar
+
+1: 8g+;f+;e+;f+;
+1 2: 2a;
+2: d+;8c+;d+;
+2 2: 2b-a;
+bar
+
+1: 2e+~;
+1 2: 8g;;a;;
+2: 8b;;c+;;
+2 2: 2e~;
+bar
+
+1: 2e+;
+1 2: 2g;
+2: 2b;
+2 2: 2e;
+endbar

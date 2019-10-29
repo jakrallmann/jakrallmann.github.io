@@ -1,0 +1,148 @@
+header
+	title (18) "Song Without Words (No. 10)"
+	title "" "John A. Krallmann (Sep 23, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	key=g major
+	time=6/8
+	beamstyle=4.,4.
+	bracket=1 ("Violin")
+	brace=2-3 ("Piano")
+	barstyle=2-3
+	measnum=y
+	vscheme=2f
+	staffscale=0.9
+	staffsep=14
+	transpose=down perfect 4
+staff 1
+	defoct=5
+	vscheme=1
+	ifdef MIDI visible=n endif
+	release=0
+staff 3
+	clef=bass
+
+
+music
+
+midi all: 1 "tempo=48";
+midi 1: 0 "channel=15"; 0" program=40"; 0 "onvelocity=24";
+midi 2 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=90, 70";
+midi 2 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 3 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 3 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+
+define SONG
+rom above all: 1 "Largo  ( \(smup4n) \(smdot) = 32 )";
+ital below 1: 1 "(Violin second time only)";
+1: b-;g;a;b;8.e+;16e;
+2: 4gb;8ab;b;c+;d+;
+2 2: 4.s;4g#;16f;g;
+3: 4gd+;8fd+;4ed+;8eb;
+bar
+
+1: e;a;g;f;e;d;
+2: 4ac+;8;c+;a+;16d+;c+;
+2 2: 4.s;4a;8f;
+3: 4ae+;8ge+;4fd+;8dc+;
+bar
+
+1: g-;a-;b-;8e;b-;d;
+2: 4gb;8;e+;f+;g+;
+2 2: 4.s;4g;8b;
+3: 4eb;8db;4c#a;8a-g;
+bar
+
+1: b-;g-;a-;g-;8.f-;16r;
+2: f+;e+;f+;4d+;8cn+;
+2 2: 4c#+;8a;g;4f;
+3: 4a-g;8;b;4a;
+3 2: 4.s;4d;8d#;
+bar
+
+1: g;a;b;;8.a;16g;
+2: 4b;8;4e+;16g;a;
+2 2: a;g;f;g;f;e;
+3: 4eb;8db;4ca;8;
+bar
+
+1: f;g;f;d;e;g-;
+2: 4d+;8;g;a;c+;
+2 2: a;g;f;fn;4e;
+3: 4b-g;8;4cg;8a-g;
+bar
+
+1: f-;g-;a-;4;8b-;
+2: 4dd+;8;d+;c+;g;
+2 2: 4.s;4e;8;
+3: a;g;f;4cg;8c#a;
+3 2: 4b-;8;4.s;
+bar
+
+1: 16c;d;e;f;g;a;4a;16d+;f;
+2: 4e;16c+;b;4a;8d;
+2 2: 4.c;8g;4f;
+3: 4.da;dc+;
+bar
+
+1: f;b-;a;c+;8.b;16d#;
+2: b;e#+;f+;af+;8.bg+;16af+;
+2 2: 4.f;8a;8.b;16a;
+3: 4a;8b;c+;b;a;
+3 2: 4.d#;4;8b-;
+bar
+
+1: d#;g;d;d;e;f;
+2: ad#+;ge+;ff+;4b;8;
+2 2: 4.s;8a;g;f;
+3: c+;b;a;4eb;8db;
+3 2: 4b-;8;4.s;
+bar
+
+1: g;a;b;c+;d+;e+;
+2: 4ge+;8be+;ag+;gf+;fe+;
+3: d+;c+;e+;4.c+;
+3 2: 4.c;4a-;8a#-;
+bar
+
+1: d+;c+;f;e;f;g;
+2: 4d+;16c+;b;8g;a;b;
+2 2: a;g;f;;4e;
+3: 4b-g;8db;4.b;
+3 2: 4.s;4e;8d;
+bar
+
+1: 4e;16d;e;8f;g;a;
+2: c+;b;g;e;d;a;
+2 2: 4.e;c;
+3: 4.a-g;4a;8f;
+3 2: 4.s;4.d;
+bar
+
+ifdef TWO midi all: 1 "tempo=42"; endif
+1: 4e;8f;4.g;
+2: a;g;e;4.b-g;
+2 2: 4.c;s;
+3: 4e;8a;4.g-dg;
+3 2: 4.g-;s;
+@
+
+SONG
+
+ifdef MIDI
+	bar
+	staff 1 visible=y
+	music
+	define TWO @
+	SONG
+	endbar
+else
+	repeatend
+endif

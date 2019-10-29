@@ -1,0 +1,126 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 36"
+	title "" "John A. Krallmann"
+	title " " "(July 3 and 31, 2016)"
+
+header2
+	title (12) "Nocturne No. 36 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2016 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=3&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.9
+define R 1 @
+define L 2 @
+
+staff L
+	clef=bass
+music
+
+midi all: 0 "tempo=68";
+
+R: r;4.ge+g+ ph;8c++;b+;c++;
+L: c;gc+e+;b-;gc+e+;
+bar
+
+R: 8g+;e+;4.c+;8d+;e+;f+;
+L: a-;gc+e+;f-;ac+d+f+;
+bar
+
+R: 2.d+ eph;8c+ ph;d+;
+L: g-;bnd+a+;bd+g+;gbf+;
+bar
+
+R: 4.en+;8;;f+;e+;d+;
+L: c-;gc+en+;b-;gc+e+;
+bar
+
+R: 8en+;c+;4.an;8bn;c+;d+;
+L: an-;enanc+;g-;eac+;
+bar
+
+R: 8d+;en+;4.an;8bn;c+;d+;
+L: f-;anc+f+;d-;a&d+f+;
+bar
+
+R: 2.d+ eph;8en+ ph;f+;
+L: g-;bnd+a+;bd+g+;gbf+;
+bar
+
+R: 4.g+;8;;a+;g+;f+;
+L: c;gc+en+;b-;gc+e+;
+bar
+
+R: 8g+;e+;4.c+;8b;a;b;
+L: a-;ac+f+;f-;ac+d+f+;
+bar
+
+R: 4.g;8an;4bn;8e+;d+;
+L: g-;gbnf+;g-;bd+f+g+;
+bar
+
+R: 1c+ eph;
+L: c-;gc+e+;2c+e+g+;
+bar
+
+//
+
+R: 8g ph;e+;bn;c+;e+;d+;4;
+L: c;gc+e+;f-;ac+f+;
+bar
+
+R: 8f+;e+;d+;e+;4d+;c+ eph;
+L: g-;gbnf+;c;gc+e+;
+bar
+
+R: 8g ph;e+;bn;c+;e+;16f+;e+;4d+;
+L: c;gc+e+;f-;ac+f+;
+bar
+
+R: 8f+;e+;d+;16f+;e+;8d+;16e+;d+;4c+ eph;
+L: g-;gbnf+;c;gc+e+;
+bar
+
+R: 8a ph above;;;16c+;b;8a;g;4;
+L: f-;ac+f+;c-;gc+e+;
+bar
+
+R: 8f#;;e+;16d+;c+;8e+;d+;4 eph;
+L: d-;f#anc+;g-;gbnf+;
+bar
+
+R: 8en+ ph;;;c+;e+;;;c+;
+L: c;gc+en+;b-;gc+e+;
+bar
+
+R: 8g+;f+;;c+;b+;a+;g+;f+ eph;
+L: a-;ac+f+;d&-;ad&+f+;
+mussym above all: 5 "rr";
+bar
+
+R: 8e+ ph;;;16f;g;8e+;;;16f;g;
+L: c-;gc+e+;d&-;ad&+f+;
+bar
+
+R: 8e+;;;c+;b;4a;8g;
+L: c-;gc+e+;f-;ac+f+;
+bar
+
+R: 2d&fa;b-eg;
+L: 2d&-a-;e-b-;
+bar
+
+R: 1a-f eph;
+L: 1f-c;
+endbar

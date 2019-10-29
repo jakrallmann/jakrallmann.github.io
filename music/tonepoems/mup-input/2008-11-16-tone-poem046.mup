@@ -1,0 +1,182 @@
+header
+	title (16) "Tone Poem (No. 46)"
+	title "" "John A. Krallmann (11/16/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=2.
+	staffscale=0.8
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+music
+
+define PH1M phrase above 1: 1 til 3.5; @
+define PH2M phrase above 1: 1 til 1m+3.5; @
+
+midi all: 0 "tempo=84";
+midi 1 1: 0 "onvelocity=78,64";
+
+1: 8a;4e+;8d+;c+;b;
+2: a-;e;a-;
+PH1M
+bar
+
+1: 8b;4e+;8d+;c+;b;
+2: g-;e;g-;
+PH1M
+bar
+
+1: 8b;a;d;f;e;d;
+2: f-;c;a;
+PH2M
+bar
+
+1: 8b;d;f;e;c+;b;
+2: e-;b-;g#;
+bar
+
+1: 8a;e+;c+;b;4e;
+2: a-;e;c+;
+PH1M
+bar
+
+1: 8c+;e+;c+;b;4e;
+2: g-;e;b;
+PH1M
+bar
+
+1: 8c+;e+;c+;a;4f;
+2: f-;c;a;
+PH1M
+bar
+
+1:8b;a;b;a;4b;
+2: e-;b-;g#;
+PH1M
+bar
+
+1: 8c#+;b;c+;d+;4e+;
+2: a-;e;c#+;
+PH1M
+bar
+
+1: 8f+;e+;d+;e+;4f#+;
+2: d;a;f#+;
+PH1M
+bar
+
+1: 8f#+;c#+;b;a;g#+;a+;
+2: d#;b;f#+;
+PH2M
+bar
+
+1: 8a+;g#+;f#+;e+;c+;b;
+2: e;b;8e+;d+;
+mussym above 1: 3 "ferm"; 3.5 "ferm";
+midi all: 3 "tempo=30"; 4 "tempo=84";
+repeatend
+
+1: 8c#+;e;d+;b+;d++;c#++;
+2: a-;e;c#+;
+phrase above 1: 1 til 3m+1;
+bar
+
+1: 8f#+;a;a+;b+;d+;b;
+2: d-;a-;f#;
+bar
+
+1: 2.c#+e+;
+1 2: 8b;a;b-;c#;4e;
+2: a-;e;8b;c#+;
+bar
+
+1: 2f#;8d+;c#+;
+1 2: 8e;d;c#;4.d;
+2: d-;a-;f#;
+phrase above 1: 3 til 4m+3;
+bar
+
+1: 2d+~;8;c#+;
+1 2: 8g#;f#;e;f;b;a;
+2: e-;b-;g#;
+bar
+
+1: 2b;8e+;d+;
+1 2: 8g#;f#;e;d;c#;d;
+2: e-;b-;g#;
+bar
+
+1: 8c+;d+;e+;d+;c+;b;
+1 2: 2.e;
+2: a-;e;c+;
+bar
+
+1: 8f#a;gb;ac+;gb;4fa;
+2: d-;a-;f#;
+bar
+
+1:8f#a;eg;fa;g#b;4bg#+;
+2: e-;b-;g#;
+PH2M
+bar
+
+1: 8f+a+;e+g+;d+f+;e+g+;4f+a+;
+2: d-;a-;f;
+bar
+
+1: 8e&+g+;d+f+;c+e+;d+f+;4e+g+;
+2: c-;g-;e&;
+phrase above 1: 1 til 2m+3;
+bar
+
+1: 8f#+a+;e+g+;d+f+;e+g+;g+b&+;f+a+;
+2: d-;a-;f#;
+bar
+
+1: 8g+b&+;f#+a+;g+b+;a+c++;4b+d++;
+2: g-;d;b&;
+bar
+
+1: 8g+e&++;f+d++;e&+c++;d+b&+;c+a+;b&g+;
+2: c-;g-;e&;
+phrase above 1: 1 til 2m+2;
+bar
+
+1: b&g+;2af+;
+2: f-;c;a;
+bar
+
+1: af+;2b&g+;
+2: g-;d;b&;
+bar
+
+1: 2.gb&;
+1 2: f;e&;b&-;
+2: e&-;b&-;g;
+phrase above 1: 1 til 3m+1;
+bar
+
+1: 2.gc+;
+1 2: c;e&;b&-;
+2: e&-;b&-;c;
+bar
+
+1: 2.dfb&d+ tie;
+2: b&--;f-;d;
+bar
+
+1: 2.dfbd+;
+2: 2.b&;
+endbar

@@ -1,0 +1,236 @@
+header
+	title (18) "Song Without Words"
+	title (12) "" "John A. Krallmann (8/22/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define D 1 1: @
+define S 2 1: @
+define A 2 2: @
+define T 3 1: @
+define B 3 2: @
+
+score
+	staffs=3
+	key=1#
+	vscheme=2f
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	beamstyle=4,4,4,4
+	release=10
+	measnum=y
+	staffscale=0.95
+
+staff 1
+	staffscale=0.75
+	vscheme=1
+	defoct=5
+	emptymeas="mr;"
+staff 3
+	clef=bass
+
+music
+
+midi all: 0 "tempo=144";
+midi D 0 "channel=15"; 0 "program=11"; 0 "onvelocity=74";
+midi S 0 "channel=11"; 0 "program=70"; 0 "onvelocity=90";
+midi A 0 "channel=12"; 0 "program=52"; 0 "onvelocity=84";
+midi T 0 "channel=13"; 0 "program=52"; 0 "onvelocity=84";
+midi B 0 "channel=14"; 0 "program=42"; 0 "onvelocity=60";
+
+define MAIN
+D b-;c;2d;
+S 2.g;4d;
+A 2d;e;
+B 2b;c+;
+bar
+
+D b-;c;2d;
+S g;a;2b;
+A 2d;g;
+T 2s;d+;
+B b;a;2g;
+bar
+
+D a;d;c;b-;
+S 1d+;
+A 1a;
+T 1d+;
+B 1f;
+bar
+
+D e;b-;a-;g-;
+S 2.a+;4g+;
+A 2f+;e+;
+T 1c+;
+B 2d;e;
+bar
+
+D a-;f;e;c;
+S e+;c+;2d+~;
+A 2a;c+;
+T 2d+;;
+B 2f;g~;
+bar
+
+D g;a;b;d+;
+S 1d+;
+A 2b;a;
+T 1d+;
+B 2g;f;
+bar
+
+D b;a;g;f;
+S 2.b;4a;
+A 2a;g;
+T 1d+;
+B 2g;f;
+bar
+
+D e;d;;c;
+S g;b-;f;g;
+A 2b-;4d;e;
+T 2g;;
+B 2e;c;
+bar
+
+D d;e;f;g;
+S 2e;a;
+A 2d;c;
+T 1g;
+B 2b-;a-;
+bar
+
+D a;g;f;e;
+S 2.d;4a-;
+A 1a-;
+T 2g;f;
+B 1d;
+bar
+
+D c;d;e;f;
+S e;d;2~;
+A 2a-;c;
+T 2d;e;
+B 2f-;g-~;
+bar
+
+D g;b-;d;c;
+S 1d;
+A 1b-;
+T 1d;
+B 1g-;
+bar
+
+D b-;g-;;a-;
+S 2.g;4a;
+A 2b-;e;
+T 2d;c+;
+B 2g-;c;
+bar
+
+D b-;d;e;f;
+S b;c+;2a+;
+A 2g;c+;
+T 2b;d+;
+B d;g;2f;
+bar
+
+D g;d;e;a-;
+S 2g+;e+;
+A 2b;f;
+T 2d+;c+;
+B 2g;d;
+bar
+
+D c;d;e;f;
+S 2.a;4d;
+A 2e;c;
+T 2g;f;
+B 2c;d;
+bar
+
+D a;b;;a;
+S c+;b;2g~;
+A e;f;2d~;
+T c+;d+;2b~;
+B 2d;g~;
+bar
+
+ital between 2&3: 2 "Fine";
+D 1g;
+S 1g;
+A 1d;
+T 1b;
+B 1g;
+dblbar 
+@
+MAIN
+
+S 2.e;4b-;
+A 2b-;a-;
+B 2g;f;
+bar
+
+S e;f;2g;
+A 2b-;e;
+T 2g;;
+B 2e;c;
+bar
+
+S 1e+;
+A 1g;
+T 1c+;
+B 1c;
+bar
+
+S 2.d+;4b;
+A 2g;f;
+T 1a;
+B 1d;
+bar
+
+S a;g;e;g;
+A 2c;;
+T 2g;;
+B 2e;a-;
+bar
+
+S 1g;
+A 1d;
+T 1b;
+B 1g-;
+bar
+
+S 2.b;4a;
+A 2g;f;
+T 2b;d+;
+B 2e;d;
+bar
+
+S g;e;2d;
+A 2e;b-;
+T 2g;4a;g;
+B 2c;b-;
+bar
+
+S 2b-;f;
+A 2b-;4e;d;
+T 2g;a;
+B 2e;d;
+bar
+
+ital above all: 1 "D.C. al Fine";
+S 1e;
+A 1b-;
+T 1g;
+B 1e;
+dblbar
+
+ifdef MIDI
+MAIN
+endif

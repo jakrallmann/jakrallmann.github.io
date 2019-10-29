@@ -1,0 +1,199 @@
+header
+	title (18) "Lullaby"
+	title "" "John A. Krallmann"
+	title " " "(Aug 5, 2018)"
+
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	key=2#
+	staffscale=0.8
+	measnum=y
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=64";
+midi 1 1: 0 "onvelocity=72"; 0 "program=89";
+midi 2 1: 0 "onvelocity=54"; 0 "program=50";
+
+
+1: 2.s;8.e++;16c++;
+2: 2.s;4r;
+bar
+
+1: 4.b+;8a+;f+;e+;4d+;
+2: a-;ac+g+;d;ad+f+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8.b;16;4;8e+;b;
+2: g-;gbe+;;
+bar
+
+1: 8.a;16;4c+;d+;
+2: f-;fad+;;
+bar
+
+1: 8.g;16;4.e+;8d+;
+2: e-;bge+;;
+bar
+
+1:8d+;c+;4b;b&;
+2: a-;ac+g+;;
+bar
+
+1: 8a;;2d+;
+2: f-;fae+;fad+;
+bar
+
+1: 8.b;16;2e+;
+2: g-;gbf+;gbe+;
+bar
+
+1: 8e+;d+;c+;b+;a+;g+;
+2: a-;ac+g+;ac+f+;
+bar
+
+1: 4.e#+;8g+;f+;en+;
+2: d;ad+f+;cn+e+f+a+;
+bar
+
+1: 8d+;b+;4.;8b&+;
+2: g-;bd+a+;bd+g+;
+bar
+
+1: 8a+;a&+;4g+;f+;
+2: f-;fae+;fad+;
+bar
+
+1: 8f+;b;4.;8d+;
+2: e-;bd+g+;;
+bar
+
+1: 4.d+;8c+;b;a;
+2: a-;ac+g+;ac+fn+;
+bar
+
+1: 8a;b+;4a+;8c+;d+;
+2: f-;fae+;fad+;
+bar
+
+1: 8f+;e+;4.;8d+;
+2: g-;gbf+;gbe+;
+bar
+
+1: 8f+;e+;4.;8d+;
+2: g#-;g#bf+;gbe+;
+bar
+
+1: 8f+;e+;4.;8;
+2: a-;ad+g+;ac+g+;
+bar
+
+1: 8e+;d+;4;cn+;
+2: d;ad+f+;;
+bar
+
+1: 8cn+;b;4a;8g;b+;
+2: g-;bd+;;
+bar
+
+staff 2 clef=treble
+music
+
+1: 8b+;e+;4.;8a+;
+2: c;b;a;
+bar
+
+1: 8a+;d+;4.;8f+;
+2: cn;g;f;
+bar
+
+1: 8g+;d+;4;e+;
+2: b-;g;b&-;
+bar
+
+1: 2f+;4a;
+2: 8a-;d;2f;
+bar
+
+1: 8b;c+;4d+;e+;
+2: g-;d;g;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8a;c+;4d+;e+;
+2: f;a;d+;
+bar
+
+1: 8b;c+;4d+;e+;
+2: g;b;d+;
+bar
+
+1: 2.a;
+2: 8f;a;4e+;d+;
+bar
+
+1: 2.g;
+2: 8e;g;4b;d+;
+bar
+
+1: 2f~;8;g;
+2: 8e;g;4b;d+;
+bar
+
+1: 2.e~;
+2: 8a-;d;4e;g;
+bar
+
+1: 2e~;8;a;
+2: 8a-;c;4e;g;
+bar
+
+score time=4/4
+music
+
+1: 2.f;4a;
+2: 8b-;d;4f;c+;a;
+bar
+
+1: 2.g;4f;
+2: 8e;g;4b;f+;d+;
+bar
+
+1: 2.e;8f;g;
+2: 8a-;c;e;g;4b;a;
+bar
+
+1: 2.f;4a;
+2: 8b-;d;4f;c+;a;
+bar
+
+1: 2.g;4f+;
+2: 8e;g;4b;f+;d+;
+bar
+
+1: 2.e+;4a+;
+2: 8a-;e;4b;d+;c+;
+bar
+
+1: 1d++~;
+2: 8d-;a-;d;e;4f;a;
+bar
+
+1: 1d++;
+2: 1d+;
+endbar

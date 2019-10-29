@@ -1,0 +1,157 @@
+header
+	title (16) "Song Without Words (No. 37)"
+	title "" "John A. Krallmann (8/29/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 37) - page \%"
+
+define F 1 @
+define P1 2 @
+define P2 3 @
+define B 4 @
+
+score
+	staffs=4
+	time=3/4
+	beamstyle=4,4,4
+	brace=2-3
+	barstyle=2-3
+	measnum=y
+	staffscale=0.95
+	staffsep=16
+	scoresep=12,36
+staff P1
+	vscheme=2f
+staff P2
+	clef=bass
+staff B
+	clef=bass
+music
+
+midi all: 0 "tempo=88";
+midi F 1: 0 "channel=4"; 0 "program=40"; 0 "onvelocity=40";
+midi P1 1: 0 "channel=12"; 0 "program=70"; 0 "onvelocity=60";
+midi P1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=76";
+midi P2 1: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=86";
+midi B 1: 0 "channel=15"; 0 "program=33"; 0 "onvelocity=74";
+
+F: 2e+;8;f+;
+P1: [grace]8c+;[]b;4.a;8b;c+;d+;
+P2: a-;e;c+;
+B: 2a--;8f-;f#-;
+bar
+
+F: 8e+;d+;c+;b;a;b;
+P1: 8c+;b;4.e;8;
+P2: g#-;e;b;
+B: 4.g#-;8e-;f-;e-;
+bar
+
+F: 4.c+;8b;4a;
+P1: 8a;g;4f;8c;d;
+P2: f-;c;a;
+B: 4.f-;8e-;d-;f-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+F: 4.b;8a;g#;a;b;d+;
+P1: 8g#;b-;4.f;8b-;d;e;
+P2: e-;b-;e;g#;
+B: 8e-;b--;4d-;8e-;d-;c-;b--;
+bar
+
+score time=3/4
+music
+
+F: 8e+;d+;c+;b;a;g#;
+P1: 8b-;c;4a+;8d+;e+;
+P2: a-;e;b;
+B: a--;8c-;b--;f-;e-;
+bar
+
+F: 8g(n);a;b;d+;e+;f+;
+P1:8g+;f+;d+;b;a;f;
+P2: d-;a-;f;
+B: 4.d-;8e-;d-;f-;
+bar
+
+F: 8e+;d+;c+;b;a;b;
+P1: 8e;b;4.c+;8e;
+P2: e-;b-;g#;
+B: 4.e-;8b--;d-;e-;
+bar
+
+score time=4/4
+music
+
+F: 8d+;e+;c+;e+;4a+;8d+;f+;
+P1: 8b;c+;2.a;
+P2: a-;e;b;a;
+B: 4.a--;8e-;g-;d-;f-;d-;
+bar
+
+F: 8d+;a;4a+;8e+;d+;a;b;
+P1: 8b;c+;2.a;
+P2: g-;e;b;c+;
+B: 4.g-;8a-;b-;c;a-;g-; 
+bar
+
+F: 8c+;d+;c+;a;g;a;c+;e+;
+P1: 8e+;a;4e+;d+;c+;
+P2: f-;c;8e+;a;4e+;
+B: 4.f-;8g-;4.a-;8g-;
+bar
+
+F: 8b;d+;b;g;e+;f+;g+;f+;
+P1: 8d+;g;4d+;c+;b;
+P2: e-;b-;8d+;g;4d+;
+B: 4.b-;8g-;a-;b-;d-;e-;
+bar
+
+F: 8f+;e+;f+;e+;d+;c+;f+;d+;
+P1: 8c+;f;4c+;b;a;
+P2: d-;8d+;a;4d+;c+;
+B: 4.f-;8e-;f-;e-;d-;c-;
+bar
+
+F: 8e+;d+;c+;b;c+;d+;e+;f+;
+P1: 4.g#;8;4a;b;
+P1 2: 8g#;b-;g;d;a;d;b;d;
+P2: e-;b-;f#;g#;
+B: 4.e-;8;4f#-;g#-;
+bar
+
+F: 8e+;d+;c#+;b;c;e+;g+;f+;
+P1: b;c#+;d+;e+;
+P1 2: 8b;c#;c#+;e;d+;e;e+;g;
+P2: a-;e;g;b&;
+B: 4.a-;8g-;f-;e-;d-;c-;
+bar
+
+F: e+;8f+;e+;d+;c+;b;a;
+P1: e+;d+;c+;a;
+P1 2: 8e+;g;d+;f;c+;d;a;c;
+P2: d-;a-;e;f;
+B: 4.d-;8;a--;b--;c-;d-;
+bar
+
+F: 8b;c+;d+;e+;f+;g+;a+;b+;
+P1: 2g;8c+;b;d;e;
+P1 2: 8g#;b-;f;e;2s;
+P2: e-;b-;e;g#;
+B: 4.e-;8;e-;f#-;g#-;b-;
+bar
+
+F: 8c++;b+;a+;b+;2c++;
+P1: 2a;;
+P1 2: 8a;b-;c;e;2a;
+P2: a-;e;2a;
+B: 4.a-;8e-;2a--;
+endbar

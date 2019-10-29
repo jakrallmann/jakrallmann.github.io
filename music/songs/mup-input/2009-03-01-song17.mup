@@ -1,0 +1,111 @@
+header
+	title (18) "Song Without Words (No. 17)"
+	title "" "John A. Krallmann (3/1/09)"
+
+header2
+	title (12) "Song Without Words (No. 17) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=cut
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	packfact=2
+	measnum=y
+
+staff 1
+	vscheme=3f
+
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=100";
+midi 1 2-3: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=85";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=85";
+
+rom above 1: 1 "Largo ( \(smup2n) = 42 )";
+1: 2c+;4d+;b;
+1 2: 1g;
+2: 1gd+;
+bar
+
+1: 1b;
+1 2: 4a;f#;2g#;
+2: 1b;
+2 2: 2.e;4d;
+bar
+
+1: 2e+~;{4;d+;c+;}3;
+1 2: 1e;
+1 3:  [down; ho -1]4b;2.a;
+2: 1ec+;
+2 2: 2a-;g-;
+bar
+
+score time=3/2 ; beamstyle=2,2,2
+music
+
+1: {4c+;d+;a~;}3;2ac+;b;
+1 2: 2e;1d;
+2: 2f#-d~a~;g-~d~a;4g-dg;f-;
+bar
+
+score time=cut
+music
+
+1: 2gc+g+;8g+;a+;b+;c++;
+1 2: 2s;ac+;
+2: 2e-cg;e&-cg;
+roll 2 1: 2;
+< between 1&2: 2 til 2.9;
+bar
+
+1: 2d+a+b+d++;4af#+a+;ge+g+;
+2: 4a+;g+;a;g;
+2 2: 2d-b-gd+;e-b-;
+roll 2 1 to 2 2: 1;
+> between 1&2: 2 til 2m+2;
+bar
+
+1: 2be+;4e+;d+;
+1 2: 4a;g;2da;
+2: 2c-g-e; d-a-f#;
+bar
+
+1: 4ad+f#+;gbe+;2c+;
+1 2: 2s;4f#;e;
+2: 4f#;g;e;g;
+2 2: 2e-b-;c-g-;
+bar
+
+1: 2ca;<<staff clef=bass>>dbd+;
+1 2: 4e;f;a;g;
+2: 2f-ca;g--b-;
+bar
+
+1: 2ec+e+;<<staff clef=treble>>c+e+a+;
+1 2: 4b;a;2s;
+2: 2a--a-;e+;
+2 2: 2s;4b;a;
+boldital between 1&2: 2 "p";
+bar
+
+1: 2ac+;gb;
+1 2: 4g;f;e;d;
+2: 2f-ca;g-db;
+> between 1&2: 1 til 1m+2;
+bar
+
+1: 1cea;
+2: 1a-e;
+endbar

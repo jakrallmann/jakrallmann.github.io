@@ -1,0 +1,283 @@
+
+header
+	title (16) "Tone Poem (No. 63)"
+	title "" "John A. Krallmann (9/19/10)"
+
+footer
+	title (12) "\(copyright) Copyright 2010 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 63) - \%"
+
+score
+	staffs=2
+	key=5&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.97
+	scoresep=10,25
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=112";
+midi 1 1-2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=76";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+
+1: c+;8e+;d+;c+;b;a;gn;
+1 2: 1e;
+2: 1a-a--;
+bar
+
+1: 1f;
+1 2: c;8d;c;b-;a-;gn-;f-;
+2: 1d-d;
+bar
+
+1: 1b;
+1 2: f;8g;f;e;d;c;b-;
+2: 1g--g-;
+bar
+
+1: e;8f;g;a;g;f;a;
+1 2: 1c;
+2: 1a--a-;
+bar
+
+1: d;8e;f;g;f;e;d;
+1 2: 1g-;
+2: 1b--b-;
+bar
+
+1: e;8f;g;4a;g;
+1 2: 1a-;
+2: 1c-c;
+bar
+
+1: 2g;4f;d+;
+1 2: b-;b&&-;2a-;
+2: 1d-d;
+bar
+
+1: f+;8e+;d+;4e+;;
+1 2: 2b;b&&;
+2: 1g-g;
+octave below 2:  1 "8va" til 3m+2;
+bar
+
+1: e+;8d+;c+;4d+;;
+1 2: 2a;f;
+2: 1d-d;
+bar
+
+1: d+;8c+;b;4c+;;
+1 2: 2g;e;
+2: 1e-e;
+bar
+
+1: can;8;db;4ec+;fd+;
+2: 1f-f;
+bar
+
+1: 2c+;4b;f;
+1 2: e;8f;e;2d;
+2: 1b--b-;
+bar
+
+1: 2en;gn;
+1 2: c;8;d;4c;8;d;
+2: 1c-c;
+bar
+
+1: 2b;c+;
+1 2: c;8;dn;4en;gn;
+2: 1c-c;
+bar
+
+1: 2d+;;
+1 2: f;8;gn;4a;8;g;
+2: 2b--b-;;
+bar
+
+1: 2d+;4.;8e+;
+1 2: f;8;gn;4a;8;g;
+2: 2b--b-;;
+bar
+
+1: af+;8;bgn+;4c+a+;8;bg+;
+2: 2f-f;;
+octave below 2: 1 "8va" til 11m+4;
+boldital between 1&2: 1 "ff";
+ital between 1&2: 3" cresc.";
+bar
+
+1: af+;8;bgn+;4c+a+;bg+;
+2: 2f-f;;
+bar
+
+1: af+;8;bgn+;4c+a+;8;bg+;
+2: 2d-d;;
+bar
+
+1: af+;bgn+;c+a+;d+b+;
+2: 2d-d;;
+bar
+
+1: f+d++;8;e+c++;4f+d++;d+b+;
+2: 2b--b-;;
+bar
+
+1: d+g+;8;bf+;4d+g+;be+;
+2: 2e-e;;
+ital between 1&2: 1 "dim.";
+bar
+
+1: anc+;8c+;d+;4fe+;ef+;
+1 2: s;g;2s;
+2: 2f-f;;
+bar
+
+1: 2c+;4b;f;
+1 2: e;e&&;2d;
+2: 2b-b;;
+bar
+
+1: 2c+;4b;f;
+1 2: e;8a;e;2d;
+2: 2b-b;;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2e+;4d+;b;
+1 2: g;8a;g;2f;
+2: 2b-b;;
+ital between 1&2: 1 " rit. e dim.";
+bar
+
+1: g;8a;g;2b-f tie;
+1 2: 2e;s;
+2: 2b-b;b--b- tie;
+bar
+
+1: 2.b-f;<<staff clef=treble>>4f;
+2: 2.b--b-;4r;
+dblbar
+
+music
+
+1: 2dn+~;8;c+;b;f;
+2: b-;f;2dn+;
+bar 
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8f#;e+;4.dn+;8an;
+2: dn-;an-;f#;
+bar
+
+1: 4.c+;8b;an;gn;
+2: gn-;dn;b;
+bar
+
+1: 8e;f;4c++;gn+;
+2: c-;gn-;b;
+bar
+
+1: 8e;f;4an+;e+;
+2: f-;c;an;
+bar
+
+1: 8dn+;f+;e++;dn++;b+;f+;
+2: b-;f;dn+;
+bar
+
+1: 8a+;g+;e+;c+;b;g;
+2: e-;b-;g;
+bar
+
+1: 8f;an;c+;e+;g+;f+;
+2: f-;e;an;
+bar
+
+1: 8c+;d+;2b+;
+2: b-;c+;d+;
+bar
+
+1: 8a+;g+;4.;8a+;
+2: e;b;d+;
+bar
+
+1:8g+;f+;4.;8c+;
+2: f;an;e+;
+bar
+
+1: 4.e+;8d+;b;f;
+2: b-;f;d+;
+bar
+
+1: 4.c+;8e;g;f;
+2: f-;c;an;
+bar
+
+1: 8dn+;e+;4.f+;8b;
+2: b-;a;dn+;
+bar
+
+1: 8f+;gn+;2;
+2: e;b;d+;
+bar
+
+1: 8b+;a+;4.e+;8en+;
+2: a-;g;c+;
+bar
+
+1: 8en+;f+;2;
+2: d-;a-;f;
+bar
+
+1: 8f+;g+;4.;8a+;
+2: e-;b-;d;
+bar
+
+1: 8b+;a+;4.e+;8en+;
+2: a--;c;g;
+bar
+
+1: 2f+~;8;c+;
+2: d-;c+;f;
+bar
+
+1: 2b~;8;d+;
+2: g-;d+;e+;
+bar
+
+1: 2af+ tie;8;c+;
+2: d-;c+;f;
+bar
+
+1: 4.b;8c+;d+;e+;
+2: g-;d+;e+;
+bar
+
+1: 2.af+;
+2: d-;2fc+;
+bar
+
+1: 2.ba+;
+2: g-;2ed+;
+bar
+
+1: 2.fc+f+;
+2: 2.b-fd+;
+endbar

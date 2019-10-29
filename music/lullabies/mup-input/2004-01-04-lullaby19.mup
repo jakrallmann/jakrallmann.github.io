@@ -1,0 +1,453 @@
+
+header
+	title (18) "Lullaby No. 19"
+	title (10) " "
+	title "" "John A. Krallmann (January 4, 2004)"
+	title (12) " "
+
+header2
+	title (12) "Lullaby No. 19 - page \%"
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	key=3&
+	time=3/8
+	beamstyle=4.
+	bracket=1,2
+	brace=3-4
+	barstyle=3-4
+	packfact=1.1
+	staffscale=0.77
+	measnum=y
+	release=0
+
+ifdef MIDI
+	staff 1
+		visible=n
+	staff 2
+		visible=n
+endif
+
+staff 3
+	vscheme=2o
+voice 3 1
+	timeunit=4.
+staff 4
+	clef=bass
+	timeunit=4.
+
+music
+
+midi all: 1 "tempo=52";
+ifdef ROLAND
+  define GMPATCH 0 "param=0,81"; 0 "param=32,3"; @
+  midi 1 1: 0 "channel=11"; GMPATCH 0 "program=89"; 0 "onvelocity=92"; 0 "param=10,24"; 0 "param=65,127";
+  midi 2 1: 0 "channel=12"; GMPATCH 0 "program=49"; 0 "onvelocity=80"; 0 "param=10,94"; 0 "param=65,127";
+  //midi 3 1: 0 "channel=13"; 0 "program=48"; 0 "onvelocity=60";
+  midi 3 1: 0 "channel=5"; 0 "param=0,81"; 0 "param=32,2"; 0 "program=35"; 0 "onvelocity=65"; 0 "param=65,127";
+  midi 3 2: 0 "channel=7"; GMPATCH 0 "program=50"; 0 "onvelocity=88"; 0 "param=10,80"; 0 "param=65,127";
+  midi 4 1: 0 "channel=8"; GMPATCH 0 "program=42"; 0 "param=10,48"; 0 "param=65,127"; 0 "onvelocity=70";
+else
+  midi 1 1: 0 "channel=11"; 0 "program=89"; 0 "onvelocity=92"; 0 "param=10,24"; 0 "param=65,127";
+  midi 2 1: 0 "channel=12"; 0 "program=44"; 0 "onvelocity=92"; 0 "param=10,94"; 0 "param=65,127";
+  midi 3 1: 0 "channel=13"; 0 "program=48"; 0 "onvelocity=85"; 0 "param=65,127";
+  midi 3 2: 0 "channel=7"; 0 "program=49"; 0 "onvelocity=85"; 0 "param=10,80"; 0 "param=65,127";
+  midi 4 1: 0 "channel=8"; 0 "program=42"; 0 "param=10,48"; 0 "param=65,127"; 0 "onvelocity=50";
+endif
+
+define DT 1: @
+define D 2: @
+define M 3: @
+define A 3 2: @
+define B 4: @
+
+define SONG
+rom above 1: 1 "(third and fourth time only)";
+DT e+;b;e+;
+rom above 2: 1 "(second and fourth time only)";
+D mr;
+M 8g;f;g;
+B e-;
+bar
+
+DT d+;e+;16g+;a+;
+D mr;
+M 8f;e;f;
+B b-;
+bar
+
+DT g+;f+;c+;
+D c+;d+;e+;
+M e;
+A e;g-;a-;
+B c;
+bar
+
+DT 4f+;16g+;a+;
+D b;c+;d+;
+M f;
+A f;a-;b-;
+B d;
+bar
+
+DT 8.b+;16a+;8g+;
+D 4.e+;
+M g;
+A g;b-;e;
+B e;
+bar
+
+DT g+;f+;16e+;d+;
+D g;an;bn;
+M 4g;8f;
+A g;4bn-;
+B d;
+bar
+
+DT d+;f+;g;
+D 4c+;8g+;
+M 8f;d;e;
+B 4c;8b-;
+bar
+
+DT 4a;8c+;
+D f+;g+;a+;
+M c+;
+A c+;f;e;
+B a-;
+bar
+
+DT a;c+;b;
+D f+;g+;a+;
+M f;
+A f;e;d;
+B b-;
+bar
+
+DT f+;d+;f+;
+D a+;g+;d+;
+M 4a;8g;
+A a;4d;
+B bn-;
+bar
+
+DT 4f+;16a+;b+;
+D 4d+;8f+;
+M f;
+A f;g-;d;
+B c;
+bar
+
+DT g+;f+;e+;
+D 4e+;16d+;e+;
+M e;
+A e;g-;b-;
+B b-;
+bar
+
+DT a;b;c+;
+D 4f+;8c+;
+M c;
+A c;f-;a-;
+B a-;
+bar
+
+DT a;8.f+;16g+;
+D d+;c+;8bn;
+M 4f;8g;
+A f;4a-;
+B b-;
+bar
+
+DT c+;a+;16g+;f+;
+D d+;c+;b;
+M f;
+A f;c;d;
+B b-;
+bar
+
+DT 4e+;8f+;
+D 4g;8f;
+M e;
+A e;g-;a-;
+B 4e-;8b-;
+bar
+
+DT g+;f+;16d+;e+;
+D 4e;8r;
+M 8e;g;b;
+A 4.g-;
+B e-;
+bar
+
+DT a;b;c+;
+D 8c+;d+;e+;
+M c+;
+A c+;f;e;
+B a-;
+bar
+
+DT c+;4d+;
+D 8f+;4b+;
+M 4f;16g;a;
+A e;4d;
+B b-;
+bar
+
+DT d+;bn;g;
+D 8g+;an+;bn+;
+M 4g;8f;
+A g;4d;
+B bn-;
+bar
+
+DT 4.e+;
+D c++;g+;c+;
+M e;
+A d;c;g-;
+B c;
+bar
+
+DT c+;4f+;
+D 4a+;16g+;f+;
+M f;
+A f;c;a-;
+B a-;
+bar
+
+DT 4.c+;
+D e+;8.d+;16e+;
+M 4f;8g;
+A f;4c;
+B an-;
+bar
+
+DT c++;8.b+;16a+;
+D 4f+;8e+;
+M a;
+A a;c;e;
+B b-;
+bar
+
+DT 4f+;16b+;a+;
+D d+;e+;f+;
+M b;
+A b;a-;d;
+B b-;
+bar
+
+DT 4.g+;
+D 4f+;8e+;
+M g;
+A g;b-;d;
+B e-;
+bar
+
+DT 4.f+;
+D d+;c+;b;
+M b;
+A b;d;f;
+B g-;
+bar
+
+DT c+;d+;e+;
+D 8e+;d+;c+;
+M 8c+;8.b;16a;
+B a-;
+bar
+
+DT f+;g+;f+;
+D d+;c+;b;
+M f;
+A f;c;d;
+B b-;
+bar
+
+DT 4.a+;
+D 16e+;d+;c+;a;b;c+;
+M a;
+A a;c;e;
+B f-;
+bar
+
+DT f+;e+;16b;a;
+D d+;e+;f+;
+M f;
+A f;c;d;
+B b-;
+bar
+
+DT 4.a;
+D b;c+;16e+;d+;
+M 4d;16e;f;
+A d;4a-;
+B b-;
+bar
+
+DT 4g;8f;
+D 4.e+;
+M e;
+A e;g-;b-;
+B e-;
+bar
+
+DT e;f;g;
+D mr;
+M c;
+A c;a-;g-;
+B a-;
+bar
+
+DT a;8.b;16d+;
+D a;g;f;
+M d;
+A d;g-;a-;
+B b-;
+bar
+
+DT 4e+~;16;f+;
+D 4g;8b;
+M 4e;8g;
+A e;4g-;
+B 4c;8b-;
+bar
+
+DT g+;f+;e+;
+D 4.c+;
+M c;
+A b-;a-;e-;
+B a-;
+bar
+
+DT e+;g+;a+;
+D c+;d+;c+;
+M a;
+A a;c;e;
+B f-;
+bar
+
+DT e+;8.g+;16a+;
+D c+;e+;c+;
+M g;
+A g;c;e;
+B a-;
+bar
+
+DT 4b+;8c++;
+D 4b;16a;g;
+M 4g;16a;g;
+A g;4d;
+B b-;
+bar
+
+DT d++;c++;16b+;a+;
+D 4f;8r;
+M 4f;16g;a;
+A f;c;d;
+B b-;
+bar
+
+DT g+;b;16e+;d+;
+D mr;
+M b;
+A b;f;e;
+B g-;
+bar
+
+DT 16c+;d+;e+;8f+;16g+;
+D 4r;8e+;
+M e;
+A e;d;c;
+B c;
+bar
+
+DT 4a+;8g+;
+D c+;d+;c+;
+M 4a;8g;
+A a;c;e;
+B f-;
+bar
+
+DT 4f+;8b;
+D 4b;16g;f;
+M 4f;16g;a;
+A e;4d;
+B b-;
+bar
+
+DT g;4b;
+D g;b;e+;
+M b;
+A b;f;e;
+B g-;
+bar
+
+DT g;4c+;
+D g+;f+;e+;
+M e;
+A e;d;c;
+B c-;
+bar
+
+DT b;a;g;
+D b;c+;e+;
+M g;
+A g;a-;c;
+B f-;
+bar
+
+ifdef LAST midi all: 1 "tempo=48"; 3 "tempo=43"; endif
+DT g;a;b;
+D c+;d+;f+;
+M 4g;8f;
+A g;4a-;
+B b-;
+bar
+
+rom above 3: 2 "(repeat 4 times)";
+midi all: ifdef LAST 1 "tempo=40"; 3 "tempo=36"; else 1 "tempo=46"; endif
+DT a;b;f+;
+D 4f+;16b+;a+;
+M f;
+A f;a-;bn-;
+B e-;
+bar
+
+score release=100
+music
+midi all: ifdef LAST 1 "tempo=22"; else 1 "tempo=38"; 4 "tempo=52"; endif
+DT 4.e+;
+D 4.bg+;
+M e;
+A 4.g-;
+B e-;
+@
+
+SONG
+ifdef MIDI
+	bar
+	score release=0
+	staff 2 visible=y
+	music
+	SONG
+	bar
+	score release=0
+	staff 2 visible=n
+	staff 1 visible=y
+	music
+	SONG
+	bar
+	score release=0
+	staff 2 visible=y
+	music
+	define LAST @
+	SONG
+	endbar
+else
+	repeatend
+endif
+

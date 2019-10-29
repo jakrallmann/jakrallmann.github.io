@@ -1,0 +1,285 @@
+
+header
+	title (18) "Nocturne"
+	title "No. 50"
+	title "" "John A. Krallmann"
+	title " " "(Mar 10, 2019)"
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=1&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	scale=0.8
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=94";
+midi 1: 0 "channel=11"; 0 "onvelocity=90,72";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=72";
+midi 2: 0 "channel=13"; 0 "onvelocity=60";
+
+define P ifdef MIDI pedal below 1-2: 1; endif @
+
+1: 2s;{8a;b;d+;}3;
+2: 2s;4r;
+bar
+
+1: {8a;b;a;}3;4.g;8;
+2: e&;b;c+;
+P
+bar
+
+1: {8g;a;g;}3;2f;
+2: d;a;c+;
+P
+bar
+
+1: {8f;g;f;}3;4.d&;8f;
+2: d&;f;a&;
+P
+bar
+
+1: {8c;d&;c;}3;4.g;8;
+2: c;e;b;
+P
+bar
+
+1: {8g;a;g;}3;4d&+;c+;
+2: f;c+;a;
+P
+bar
+
+1: {8c+;b;c+;}3;4.b;8;
+2: d&;f;a&;
+P
+bar
+
+1: {8b;c+;b;}3;4f+;e&+;
+2: e&;d&+;g;
+P
+bar
+
+1: {8e&+;f+;e+;}3;2c+;
+2: a&;e&+;g;
+P
+bar
+
+1: {8c+;b;c+;}3;2a&;
+2: f;c+;e&;
+P
+bar
+
+1: {8c+;b;c+;}3;2a&;
+2: d&;b;a&;
+P
+bar
+
+1: { 8c+;b;c+;}3;2a&;
+2: d;f;b;
+P
+bar
+
+1: {8c+;b;c+;}3;4d&+;e&+;
+2: e&;b;d&+;
+P
+bar
+
+1: {8a&+;g+;a+;}3;2f+;
+2: f;c+;a&+;
+P
+bar
+
+1: {8a&+;g+;a+;}3;2f+;
+2: e&;c+;g+;
+P
+bar
+
+1: {8a&+;g+;a+;}3;2f+;
+2: d&;a&;f+;
+P
+bar
+
+1: {8g+;f+;g+;}3;4.e+;8g;
+2: c;g;e+;
+P
+bar
+
+1: 2.f;
+2: b-;f;d&+;
+P
+bar
+
+1: 2.e;
+2: c;g;b;
+P
+bar
+
+midi all: 1 "tempo=104 to 140" til 2m+1;
+1: {2a&;g;}2,2.;
+2: d&;f;a&;
+ital between 1&2: 1 "accel." til 2m+1;
+P
+bar
+
+1: {2f;e&;}2,2.;
+2: e&;g;b;
+P
+bar
+
+1: 2.c~;
+2: f-;c;g;
+bar
+
+1: 2.c~;
+2: a;g;f;
+P
+bar
+
+1: 2.c~;
+2: f-;c;g;
+bar
+
+1: 2c;8f;g;
+2: a;g;f;
+P
+bar
+
+1: {2a;c+;}2,2.;
+2: f-;c;a;
+P
+bar
+
+1: {2f+;e+;}2,2.;
+2: d+;c+;a;
+P
+bar
+
+1: {2e+;d+~;}2,2.;
+2: b-;f;d+;
+P
+bar
+
+1: 2d+;4a+;
+2: e+;d+;b-;
+P
+bar
+
+1: {2a+;g+;}2,2.;
+2: f-;c;a;
+P
+bar
+
+1: {2f+;e+;}2,2.;
+2: c+;f+;a+;
+P
+bar
+
+1: 2.d+~;
+2: b-;f;d+;
+bar
+
+1: 2.d+;
+2: e+;f+;g+;
+P
+bar
+
+1: 2.c+;
+1 2: {2a;g;}2,2.;
+2: f-;c;b;
+P
+bar
+
+1: {2fd+;ee+;}2,2.;
+2: b-;f;b;
+P
+bar
+
+1: d&d&+;2cc+ tie;
+1 2: 2.g~;
+2: f-;c;a;
+P
+bar
+
+1: 2.cc+;
+1 2: 2.g;
+2: g;a;c;
+P
+bar
+
+1: 2.c+;
+1 2: {2a;g;}2,2.;
+2: f-;c;a;
+P
+bar
+
+1: {2fd+;gg+;}2,2.;
+2: b-;f;d+;
+P
+bar
+
+1: 2.aa+ tie;
+2: f-;c;a;
+P
+bar
+
+1: 2.aa+;
+2: g;a;c;
+P
+bar
+
+1: {2aa+;gg+;}2,2.;
+2: b-;f;d+;
+P
+bar
+
+1: {2ff+;gg+;}2,2.;
+2: g;d+;f;
+P
+bar
+
+1: {2gg+;ff+ tie;}2,2.;
+2: f-;c;a;
+P
+bar
+
+1: 2.ff+;
+2: g;a;c;
+P
+bar
+
+1: {2aa+;gg+;}2,2.;
+2: b-;f;d&+;
+P
+bar
+
+1: {2ff+;gg+;}2,2.;
+2: g;d&+;f;
+P
+bar
+
+midi all: 1 "tempo=140 to 100" til 2m+1;
+1: 2.aa+ tie;
+2: f-;c;a;
+P
+bar
+
+1: 2.aa+ tie;
+2: c+;f+;g+;
+bar
+
+1: 2.aa+;
+2: 2.a+;
+ifdef MIDI pedal below 1-2: 1;4*; endif
+endbar

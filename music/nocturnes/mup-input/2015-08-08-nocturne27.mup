@@ -1,0 +1,209 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 27"
+	title "" "John A. Krallmann"
+	title " " "(Aug 8 and 16, 2015)"
+
+header2
+	title (12) "Nocturne No. 27 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2015 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	key=1& minor
+	measnum=y
+	staffscale=0.74
+	vscheme=2f
+staff 2
+	clef=bass
+voice 2 2
+	timeunit=2
+
+music
+
+define P ifdef MIDI pedal below 1,2: 1;3; endif @
+
+midi all: 0 "tempo=72";
+midi 1: 0 "onvelocity=76,62";
+midi 1 2: 0 "onvelocity=62";
+midi 2 1-2: 0 "onvelocity=50";
+
+define THEME
+1: 8r;a;d+;f+;8e+;16f+;e+; ifdef V2 8b;a; else 4a; endif
+2: r;a;r;a;
+2 2: d;d&;
+bar
+
+1: 8r;a;d+;f+;e+;d+;a;g;
+2: r;a;r;g;
+2 2: c;b-;
+bar
+
+1: 4.c+;8d+;c+; ifdef V2 4b;16c#;d; else 4.b; endif
+2: r;f;r;d;
+2 2: a-;g-;
+bar
+
+1: 4.a;16f#;g; ifdef V2 8d+;4c+; else 4.c+; endif 8e&;
+2: r;b;r;a;
+2 2: c;f-;
+bar
+
+1: ifdef V1 4d+;8.g+16f+; else 4.d+;16g+;f+; endif 8d+;4c+;16e;f;
+2: r;f;r;f;
+2 2: b-;a-;
+bar
+
+1: 4.b;8d; ifdef V2 4g;g#; else 4.g;8g#; endif
+2: r;d;r;b;
+2 2: g-;c;
+bar
+
+ifdef V2
+ 1: a;8.g+;16f+;8a;4g;8f;
+else
+ 1: a;8g+;f+;8a;4.g;
+endif
+2: r;a;r;f;
+2 2: f-;b-;
+bar
+
+ifdef V2
+ 1: a;8.c+;16d+;8g;4f;8g;
+ 1 2: 2c;d;
+else
+ 1: a;8c+;d+;4.dfg;8f;
+ 1 2: 2c;s;
+endif
+2: r;a;r;f;
+2 2: f-;b-;
+bar
+
+1: 8a;b; ifdef V2 8.c+;16f+; else 8c+;f+; endif 8g+;4f+;8g+;
+1 2: 2f;d+;
+2: r;a;r;g;
+2 2: f-;b-;
+bar
+
+1: 8b+;a+; ifdef V2 8.g+c++;16f+; else g+;f+; endif 2d+;
+1 2: 2c+;8a;b;a;f;
+2: r;a;r;f;
+2 2: f-;b-;
+bar
+
+1: 4.g;8a;2f;
+1 2: 8d;e;d;c;a-;b-;c;d;
+2: r;e;r;c;
+2 2: c-;f-;
+bar
+
+1: 8e&g;fa;gb;ac+;2d+;
+1 2: 2s;8a;b;a;f;
+2: a;f;r;d;
+2 2: s;b-;
+bar
+
+1: ifdef V2 4.g;8a;4.f;8g; else 2g;f; endif
+1 2: 8d;e;d;c;a-;e;d;a-;
+2: r;e;r;f;
+2 2: c-;d-;
+bar
+
+1: ifdef V2 2e;4.d;8f; else 2e;d; endif
+1 2: 8bn-;c#;b-;a-;;b&-;a-;f-;
+2: r;e-;r;f-;
+2 2: a--;b--;
+bar
+
+1: 2e;8fa;eg;df;f-d;
+1 2: 8g-;d;c;g-;2s;
+2: r;e;r;a-;
+2 2: c-;d-;
+bar
+
+1: 8c#e;df;eg;ca;af+;ge+;fd+;ea;
+2: r;e-;r;a-;
+2 2: a--;d-;
+bar
+
+1: 2a;8b-d;cne;df;eg;
+1 2: 8c#;d;e;c;2s;
+2: r;e-;r;f-;
+2 2: a--;b--;
+bar
+
+1: 8eg;fa;gb;ac+;2fa;
+1 2: 2s;8e;d;e;a-;
+2: r;e;r;a-;
+2 2: c-;d-;
+bar
+
+1: 2g;8fa;eg;df;f-d;
+1 2: 8d;e;d;g-;2s;
+2: r;g-;r;a-;
+2 2: c-;d-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2e+;<<staff clef=treble>>8f#;g; ifdef V2 8.a;16bn; else 8a;bn; endif
+1 2: 8g;a; ifdef V2 16b;a;8g; else 8b;e; endif 2d;
+2: r;e-;r;f#;
+2 2: a--;d-;
+bar
+
+1: 2a;8bn;c#+; ifdef V2 8.d+;16e+; else 8d+;e+; endif
+1 2: 8c#;e;d;c;2g;
+2: r;a;r;bn;
+2 2: f#-;g-;
+bar
+
+1: 8ag+;d+f#+;f#e+;ad+;2b;
+1 2: 2s;8d;e;fn;g;
+2: r;a-;r;d;
+2 2: d-;g-;
+bar
+
+1: 2a;g;
+1 2: 8c#;d;e;c;b-;cn;d;f;
+2: r;e;r;d;
+2 2: a-;g-;
+bar
+
+staff 1 clef=bass
+music
+
+ifdef V2
+ 1: 4.e+;8c+;2f#d+;
+else
+ 1: 2e+;fd+;
+endif
+1 2: 8g;a;b;e;2s;
+ifdef V2
+ 2: r;g-;2a-d-;
+ 2 2: 2c-;s;
+else
+ 2: r;e-;2a-d-;
+ 2 2: a--;s;
+endif
+@
+
+THEME
+dblbar
+newscore
+
+define V2 @
+staff 1 clef=treble
+music
+
+THEME
+endbar

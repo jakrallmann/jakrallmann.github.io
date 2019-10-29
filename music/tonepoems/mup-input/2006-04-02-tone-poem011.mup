@@ -1,0 +1,122 @@
+header
+	title (18) "Tone Poem (No. 11)"
+	title "" "John A. Krallmann (April 2, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	key=1#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 8b;a;b;a;b;4.d+;
+2: g-;d;b;8g-;f-;
+bar
+
+1: 8b;a;b;g;4e;8f;g;
+2: e-;b-;g;8e-;d-;
+bar
+
+1: 8a;g;a;g;a;c;d;e;
+2: c-;g-;e;g-;
+bar
+
+1: 4.f;8g;4a;a#;
+2: d-;a-;f;c+;
+bar
+
+1: 8b;a;b;a;b;d+;g+;f+;
+2: g-;d;b;d;
+bar
+
+1: 8f+;e+;a;b;4c+;8d#;e;
+2: c-;g-;e;g-;
+bar
+
+1: 8d;a;g#;a;d;a;g;a;
+2: f-;d;a;d;
+bar
+
+1: 8c+;b;a;g;4d;8g;f;
+2: g-;d;b;d;
+bar
+
+1: 8e;g;a;b;4c+;8b;a;
+2: c;g;e+;e&+;
+bar
+
+1: 8d;g;a;b;;a;g;e;
+2: b-;g;c#;a;
+bar
+
+1: 8g;f;g;a;4;a#;
+2: d;a;c+;f;
+bar
+
+rom above all: 4 "Rubato";
+1: 8b;d;g;b;g+;a+;b+;d++;
+2: g-;d;b;8g+;f+;
+bar
+
+staff 2 clef=treble
+music
+
+1: 8d++;c++;;b+;4c++;e+;
+1 2: 2.e+;4c+;
+2: g;g#;a;gn;
+2 2: 1c;
+boldital between 1&2: 1 "p";
+bar
+
+1: 8d+;e+;d+;e+;4f+;8g+;a+;
+1 2: 2.c+;4e+;
+2: f;e;d;ca;
+bar
+
+1: 8b+;a+;4g+;f+;8g#+;a+;
+1 2: e+;8d#+;c#+;2d+;
+2: f;g;a;8b;a;
+2 2: 1b-;
+boldital between 1&2: 4 "mf";
+bar
+
+1: 4.b+;8;4e+;;
+1 2: 8g#+;f+;4e+;;;
+2: 2b;8;a;g#;a;
+2 2: e;d;2c#;
+bar
+
+1: 8a+;b+;a+;b+;4g+;d+;
+1 2: e+;e&+;2d+;
+2: 2ca;b-g;
+bar
+
+octave above 1: 4 "8va" til 1m+3;
+1: 8c+;d+;e+;g+;4c+a+;[pad5]g =_g1 c+g+;
+print (_g1.x - 6, _g1.y) "\(acc_gt)";
+2: 2a-eg;g-e&a;
+bar
+
+1: 1g =_g2 bg+;
+print (_g2.x - 6, _g2.y) "\(acc_gt)";
+2: 1g-db;
+endbar

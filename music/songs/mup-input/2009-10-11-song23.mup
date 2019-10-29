@@ -1,0 +1,297 @@
+
+header
+	title (16) "Song Without Words (No. 23)"
+	title "" "John A. Krallmann (10/11-12/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.8
+staff 2
+	clef=bass
+	timeunit=2.
+music
+
+midi all: 0 "tempo=120";
+midi 1 1-2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1-2: 0 "channel=13"; 0 "program=0";
+
+1: en+ ph;c+;a;
+2: f-ca;
+bar
+
+1: g;b;d+;
+2: g-db;
+bar
+
+1: 2.c+;
+1 2: g;a;en;
+2: a-enc+;
+bar
+
+1: 2.d;
+1 2: c;b-;f-;
+2: b-f;
+bar
+
+1: a-;c;f;
+2: f-c;
+bar
+
+1: g;a;c+;
+2: e-c;
+bar
+
+1:2.f;
+1 2: c;b-;f-;
+2: d-b-;
+bar
+
+1: 2.d;
+1 2: a-;bn-;g-;
+2: g-d;
+bar
+
+1: e;f;g;
+1 2: 2.g-;
+2: cb;
+bar
+
+1: b;a;f;
+1 2: 2.c;
+2: f-e;
+bar
+
+1: 2.bn-d;
+2: 4a;g;d;
+2 2: 2.g-;
+bar
+
+1: 2.g;
+1 2: d;c;g-;
+2: e-b-;
+bar
+
+1: 2c;4e;
+1 2: b-;a-;f-;
+2: f-c;
+bar
+
+1: a-;b-;c;
+1 2: 2.f-;
+2: f-e;
+bar
+
+1: c;d;e;
+1 2: 2.b-;
+2: b-g&;
+bar
+
+1: 2.b-d eph;
+2: b-f;
+bar
+
+1: 2.d+ ph;
+1 2: a;b;c+;
+2: gd+;
+bar
+
+1: 2.d+;
+1 2: a;b;d+;
+2: fd+;
+bar
+
+1: d+;c+;b;
+1 2: 2.g;
+2: ec+;
+bar
+
+1: 2.g&c+;
+2: 4c+;b;a;
+2 2: e;
+bar
+
+1: c+;b;a;
+1 2: 2.f;
+2: db;
+bar
+
+1: 2.fb;
+2: 4c+;b;g;
+2 2: d&;
+bar
+
+1: b;a;g;
+1 2: 2.f;
+2: ca;
+bar
+
+1: 2.fa;
+2: 4a;c+;f+;
+2 2: c;
+bar
+
+1: a;g;f;
+1 2: 2.d;
+2: bn-a;
+bar
+
+1: g;d+;f+;
+1 2: 2.d;
+2: b-g;
+bar
+
+1: f+;en+;d+;
+1 2: 2.g;
+2: 2b;4g;
+2 2: c;
+bar
+
+1: 2.gen+ eph;
+2: cb;
+bar
+
+1: f&+ ph;e+;f+;
+1 2: 2.g;
+2: 2a;4en+;
+2 2: c#;
+bar
+
+1: a+;g+;en+;
+1 2: 2.g;
+2: c#ben+;
+bar
+
+1: en+;d+;e+;
+1 2: 2.f;
+2: aen+;
+2 2: 2d;4c;
+bar
+
+1: 2f+;4d+;
+1 2: 2.g;
+2: b-gd+;
+bar
+
+1: 2.deng;
+2: cg;
+bar
+
+1: 2.cenb;
+2: cb;
+bar
+
+1: 2.enf#a tie;
+2: da;
+bar
+
+1: 2efa eph;4a ph;
+2: d-;
+bar 
+
+1: a;b;a;
+1 2: 2.d;
+2: b-f;
+bar
+
+1: 2g;4c+;
+1 2: f;2en;
+2: cg;
+bar
+
+1: c+;f+;e+;
+1 2: 2.f;
+2: a-f;
+bar
+
+1: 2d+;4f+;
+1 2: c+;b;a&;
+2: b-f;
+bar
+
+1: f+;g+;d+;
+1 2: 2.g;
+2: bn-g;
+bar
+
+1: 2e+;4;
+1 2: d+;c+;b;
+2: cg;
+bar
+
+1: e+;f+;c+;
+1 2: 2g;4e;
+2: 2g;4a;
+2 2: f-;
+bar
+
+1: 2.d+;
+1 2: a;d;f;
+2: b-f;
+bar
+
+1: 2g;4b;
+1 2: d;c;g-;
+2: e-c;
+bar
+
+1: 2f;4a;
+1 2: b-;a-;c;
+2: f-e;
+bar
+
+1: 2.b;
+1 2: a;g;d;
+2: g-d;
+bar
+
+1: e;f;g;
+1 2: 2.c;
+2: cb;
+bar
+
+1: f;;;
+1 2: 2b-;4g-;
+2: f-e;
+bar
+
+1: f;g;a;
+1 2: 2a-;4e;
+2: f-e;
+bar
+
+1: 2.a;
+1 2: c;d;c;
+2: g-d;
+bar
+
+1: 2g;4d;
+1 2: 2.b-;
+2: g-d;
+bar
+
+1: 2.g-b-c;
+2: ce;
+bar
+
+1: 2.a-e;
+2: f-e;
+bar
+
+1: 2.a-bn-d tie;
+2: 2.g-d tie;
+bar
+
+1: 2.a-b-d eph;
+2: 2.g-d;
+endbar

@@ -1,0 +1,1007 @@
+header
+	title (18) "Variations on a Theme"
+	title (14) "for harpsichord and piano"
+	title "" "John A. Krallmann (July 28 - August 10, 2013)"
+
+header2
+	title "page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	vscheme=2f
+	beamstyle=2,2
+	key=3& minor
+	barstyle=1-2,3-4
+	ifdef A415
+		brace=1-2("Harpsichord\n(in A415)"),3-4("Piano")
+	else
+		brace=1-2("Harpsichord"),3-4("Piano")
+	endif
+	ifdef VIDEO
+		pagewidth=16
+		pageheight=9
+		scale=0.9
+	else
+		scale=0.8
+	endif
+	aboveorder=mussym,octave,dyn&chord,ending,reh,othertext
+	emptymeas="mr;"
+	staffsep=14
+	measnum=every 1
+	botmargin=0.6
+staff 2
+	clef=bass
+staff 4
+	clef=bass
+
+ifdef A415
+	ifdef PIANODOWN
+		staff 3,4 transpose=down min 2
+	else
+		staff 1,2 transpose=up aug 1
+		score scale=0.74
+	endif
+endif
+voice 1 2 emptymeas="ms;"
+voice 2 2 emptymeas="ms;"
+voice 3 2 emptymeas="ms;"
+voice 4 2 emptymeas="ms;"
+
+music
+midi all: 0 "tempo=112";
+midi 1-2 1-2: 1 "channel=1"; 1 "program=6"; 1 "onvelocity=54"; 1 "param=10,40";
+midi 3-4 1-2: 1 "channel=2"; 1 "program=0"; 1 "onvelocity=72"; 1 "param=10,88";
+
+define THEME
+
+// 1
+RH 4r;8c;d;e;d;4c;
+LH 2..c;8e;
+bar 
+
+// 2
+RH 8r;a;f;d;bn-;g-;f-;d;
+LH 1d;
+bar
+
+// 3
+RH 8en;c;e;g;c+;b;a;g;
+LH 1c;
+bar
+
+// 4
+RH a;c;2bn-;
+LH f;f#;g;fn;
+bar
+
+// 5
+RH 8b(&)-;g-;b-;c;en;c;b-;g-;
+LH 2en;c;
+bar
+
+// 6
+RH a-;b-;c;g;
+LH f;g;a;b-;
+bar
+
+// 7
+RH 2c;4f;en;
+RH2 s;b-;a-;g-;
+LH 2c;c-;
+bar 
+
+// 8
+RH 1f;
+RH2 8a-;b-;a-;g-;2a-;
+LH 1c;
+LH2 2.f-;4e-;
+bar
+
+// 9
+RH 1f;
+RH2 8a-;b-;a-;g-;2a-;
+ LH 2.b-;4d;
+LH2 1d-;
+bar
+
+// 10
+RH 8f;e;d;b-;2g-;
+RH2 1g-;
+LH 2.b-;4d;
+LH2 1e-;
+bar
+
+// 11
+RH 1f;
+RH2 8a-;b-;a-;g-;2a-;
+LH 2.c;4f;
+LH2 1f-;
+bar
+
+// 12
+RH 1a;
+RH2 8c;d;c;d;4c;bn-;
+LH 1b-fa;
+bar
+
+// 13
+RH 1g;
+RH2 8b-;c;e;c;2b-;
+LH 2.e-b-;4d;
+bar
+
+// 14
+RH 1a;
+RH2 8c;d;e;d;2c;
+LH 2.a;4e;
+LH2 1f-c;
+bar
+
+// 15
+RH 1a;
+RH2 8d;e;f;e;2d;
+ LH 2.b-fa;4bn-;
+bar
+
+// 16
+ RH 8g;c+;d+;e+;4e+;8c+;a;
+RH2 2e;a;
+LH 2cg;fc+;
+bar
+
+// 17
+RH b;g;e;d;
+RH2 2d;c;
+LH 2gb;cg;
+bar
+
+// 18
+ RH 2a-c;4b-;8e;d;
+ RH2 2s;g-;
+LH 2f-c;g-d;
+bar
+
+// 19
+RH 2c;;
+LH 2cg;ceg;
+dblbar
+@
+
+define UNDEF
+undef RH
+undef RH2
+undef LH
+undef LH2
+@
+
+define HHT
+define RH 1: \@
+define RH2 1 2: \@
+define LH 2: \@
+define LH2 2 2: \@
+@
+
+define PHT
+define RH 3: \@
+define RH2 3 2: \@
+define LH 4: \@
+define LH2 4 2: \@
+@
+
+HHT
+rom above all: 0 "Allegro moderato ( \(smup4n) = 112 )";
+THEME
+ifndef NOFEEDS newpage endif
+
+UNDEF
+PHT
+THEME
+ifndef NOFEEDS newpage endif
+
+ifdef VIDEO
+ score packfact=1.2
+else
+ score packfact=0.6
+endif
+music
+
+/////// V3
+1: 4r;8c;d;e;d;4c;
+2: 2..c;8e;
+3: 2r;e+;
+4: 2c;g;
+bar
+
+1: 8r;a;f;d;bn-;g-;f-;d;
+ifdef MIDI
+ 2: 32d;e;16d~;4.~;4;32g-;a-;8.g-;
+else
+ 2: 2.d;4g-;
+ mussym above 2: 1 "mor"; 4 "mor";
+endif
+3: 2.f+;4;
+4: 2d;g;
+bar
+
+1: 8en;c;e;g;c+;b;a;g;
+2: c;b-;a-;en-;
+3: 2.g+;4;
+4: 2c;en;
+bar
+
+ifdef MIDI
+ 1: 32a;b;16a;8g;d;c;bn-;g-;an-;b-;
+else
+ 1: 8a;g;d;c;bn-;g-;an-;b-;
+ mussym above 1: 1 "mor";
+endif
+2: f-;f#-;g-;fn-;
+3: a+;an+;bn+;d++;
+4: 2f;d;
+bar
+
+ifdef MIDI
+ 1: 32b-;c;16b-;8g-;b-;c;32en;f;16e;8c;b-;g-;
+else
+ 1: 8b-;g-;b-;c;en;c;b-;g-;
+ mussym above 1: 1 "mor"; 3 "mor";
+endif
+2: en-;d;c;8d;en;
+3: 2.g+;4f+;
+4: 2en;c;
+bar
+
+define S bm @
+define E ebm @
+define D [with.] @
+
+1: 8a- S;D b- E ;b- S;D c E;c S;D f E;g S;D d&+ E;
+2: f-;g-;a-;b-;
+3: 2.f+;4d&+;
+4: 2f-;a-;
+bar
+
+ifdef MIDI
+ 1: 32c+;d&+;16c+ S;D 8c E;c S;D b- E;32f S;g;16f;D 8en E;e S;D f E;
+else
+ 1: 8c+ S;D c E;c S;D b- E;f S;D en E;e S;D f E;
+ mussym above 1: 1 "smflat"; 1 "mor"; 3 "mor";
+endif
+2: 2c;4a;g;
+3: 2e+;4d+;en+;
+4: 2c;c-;
+bar 
+
+1: 1f;
+1 2: 8a-;b-;a-;g-;2a-;
+2: 2c~;8;e;f;e;
+3: 2.f+;4g+;
+4: 2f-;e-;
+bar
+
+1: 1f;
+1 2: 8a-;b-;a-;g-;2a-;
+2: 2b-~;8;c;d;f;
+3: 2.a+;4b+;
+4: 2d-;b--;
+bar
+
+1: 8f;e;d;b-;2g-;
+1 2: 1g-;
+2: 2b-;8c;d;e;g;
+3: 2.g+;4b+;
+4: 2e-;c-;
+bar
+
+1: 1f;
+1 2: 8a-;b-;a-;g-;2a-;
+2: 2c~;8;d;e;f;
+3: 2.c++;8f+;e+;
+4: 2f-;a-;
+bar
+
+1: 2.a;8b;a;
+1 2: 8c;d;c;d;4c;bn-;
+2: 1b-a;
+2 2: 2f;4e;d; 
+3: 2.d+;4f+;
+4: 2b-;b--;
+bar
+
+1: 1g;
+1 2: 8b-;c;e;c;2b-;
+2: 2g~;8;c;e;c;
+2 2: 1b-;
+3: 2.g+;4f+;
+4: 2e-;b-;
+bar
+
+1: 1a;
+1 2: 8c;d;e;d;2c;
+2: 2a~;8;e;f;e;
+2 2: 1c;
+3: 2.e+;8f;g;
+4: 2f-;a-;
+bar
+
+ifdef MIDI
+ 1: 32a;g;16a~;2..;
+else
+ 1: 1a;
+ mussym above 1: 1 "invmor";
+endif
+1 2: 8d;e;f;e;2d;
+2: 2fa tie;8;g;f;a;
+2 2: 2.b-;4bn-;
+3: 2.a;4;
+4: 2b-;f;
+bar
+
+ifdef MIDI
+ 1: 8g;c+;d+;e+;32f+;g+;16f;8e+;8c+;a;
+else
+ 1: 8g;c+;d+;e+;f+;e+;8c+;a;
+ mussym above 1: 3 "mor";
+endif
+1 2: 2e;a;
+2: 2cg;fc+;
+3: 2.g;4a;
+4: 2c;f;
+bar
+
+ifdef MIDI
+ 1: 8b;a;g;f;32e;f;16e;8d;c;b-;
+else
+ 1: 8b;a;g;f;e;d;c;b-;
+ mussym above 1: 3 "mor";
+endif
+1 2: 2d;c;
+2: 2gb;cg;
+3: b;c+;d+;e+;
+4: 2g;c;
+bar
+
+1: 2c;8b-;c;e;d;
+1 2: 8an-;g-;f-;e-;2g-;
+2: 2f-c;g-d;
+3: 2e+;d+;
+4: 2f-;g-;
+bar
+
+ifdef MIDI
+ 1: 32c;d;16c~;4;8;2;
+else
+ 1: 4.c;8;2;
+ mussym above 1: 1 "mor";
+endif
+2: 2cg;ceg;
+3: 1gc+;
+4: 2c;c-;
+dblbar
+
+/////////////////// V4
+ifndef NOFEEDS newscore endif
+
+staff 1
+	beamstyle=4,4,4,4
+staff 2
+	beamstyle=4,4,4,4
+music
+
+// 1
+1: 2c+e+g+;4e+g+c++;16c+;e+;f+;g+;
+2: 8g;16f;;8e;16d;;8c;16b-;;8a-;16g;;
+3: 4r;8c;d;e;d;4c;
+4: 2..c-c;8e-;
+bar
+
+// 2
+1: 4.bnd+f+a+;8f+;16g;b;d+;f+;g;b;d+;f+;
+2: 8f;16d;;8bn-;16g-;;8d;16f;;8d;16g-;;
+3: 8r;a;f;d;bn-;g-;f;d;
+4: 2..d-d;8g-;
+bar
+
+// 3
+1: 2gc+en+;16c+;e+;g+;b+;c+;e+;g+;b+;
+2: 8c;16b;;8g;16en;;8c;16c#;;8d;16en;;
+3: 8en;c;e;g;c+;b;a;g;
+4: c-;b-;a-;en-;
+bar
+
+// 4
+1: c+f+a+;r;16g;bn;d+;f+;g;b;d+;f+;
+2: 8f;16f#;;8g;16a;;8g;16fn;;8e;16d;;
+3: 8a;c;2.bn-;
+4: f-;g-;8g;f;e;d;
+bar
+
+// 5
+1: 2gc+en+;16c+;e+;g+;b+;c+;e+;g+;b+;
+2: 8en;16d;;8c;16d;;8c;16;;8d;16e;;
+3: 8b-;g-;b-;c;en;c;b-;g-;
+4: en;d;c;8d;e;
+bar
+
+// 6
+1: 2c+f+a+;16c+;f+;g+;a+;b;d+;f+;g+;
+2: 8f-;16;;8g-;16;;8a-;16;;8b-;16;;
+3: 8a-;c;b-;d&;c;a;g;f;
+4: f;g;a;b;
+bar
+
+// 7
+1: 2gc+en+;16f;a;c+;f+;g;b;c+;e+;
+2: 8c;16;;8c-;16;;8c;16;;8c-;16;;
+3: 2cen;8f;g;8.en;16f;
+3 2: s;b-;a-;g-;
+4: 2c;c-;
+bar
+
+// 8
+1: 2ac+f+;16a;c+;f+;a+;c+;f+;a+;c++;
+2: 8f-;16c;;8f-;16c;;8f-;16c;;8e-;16e;;
+3: 1f;
+3 2: 8a-;b-;a-;g-;2a-;
+4: 2f-c tie;8;e;f;e;
+bar
+
+// 9
+1: 2d+f+a+b+;16b;d+;f+;a+;b;d+;f+;a+;
+2: 8d-;16b-;;8d-;16b-;;8d-;16b-;;;a-;g-;f-;
+3: 1f;
+3 2: 8a-;b-;a-;g-;2a-;
+4: 2d-b- tie;8;c;d;f;
+bar
+
+// 10
+1: 2be+g+;16g;b;c+;e+;g;b;c+;e+;
+2: 8e-;16b-;;8e-;16b-;;8e-;16b-;;;c;e;g;
+3: 8f;e;d;b-;2g-;
+3 2: 1g-;
+4: 2b-~;8;c;d;e;
+4 2: 1e-;
+bar
+
+
+// 11
+1: 2ac+f+;16a;c+;f+;a+;c+;f+;a+;c++;
+2: 8f-;16c;;8f-;16c;;8f-;16c;;f;e;d;c;
+3: 1f;
+3 2: 8a-;b-;a-;g-;2a-;
+4: 2c;8d;e;f;g;
+4 2: 1f-;
+bar
+
+// 12
+1: 2d+f+a+b+;16c+;d+;f+;a+;bn;d+;f+;g+;
+2: 8b-;16f;;8b-;16a;;8b-;16b;;8b-;16a;;
+3: 2.a;8b(&);a;
+3 2: 8c;d;c;d;4c;bn-;
+4: 1b-a;
+4 2: 2f;4e;d;
+bar
+
+// 13
+1: 2be+g+;16g;c+;e+;c+;g;c+;e+;c+;
+2: 8e-;16b-;;8e-;16b-;;8e-;16c;;8e-;16c;;
+3: 1g;
+3 2: 8b-;c;e;c;2b-;
+4: 2e-b-g tie;8;c;e;c;
+bar
+
+// 14
+1: 2ac+f+;16f;a;c+;e+;f;a;c+;e+;
+2: 8f-;16c;;8f-;16c;;8f-;16c;;8f-;16e;;
+3: 1a;
+3 2: 8c;d;e;d;2c;
+4: 2a~;8;e;f;e;
+4 2: 1f-c;
+bar
+
+// 15
+1: 2fad+;16f;a;bn;d+;f;a;b;d+;
+2: 8b-;16a;;8b-;16f;;8b-;16a;;8bn-;16a;;
+3: 1a;
+3 2: 8d;e;f;e;2d;
+4: 2fa tie;8;g;f;a;
+4 2: 2.b-;4bn-;
+bar
+
+// 16
+1: 2gc+e+;16a;c+;e+;f+;a;b;d+;f+;
+2: 8c;16g;;8c;16c+;;8f;16f-;;8a-;16d;;
+3: 8g;c+;d+;e+;f+;e+;c+;a;
+3 2: 2e;a;
+4: g;c+;2;
+4 2: 2c;8f;g;a;f;
+bar
+
+// 17
+1: 2gbe+;16g;c+;e+;g+;a;c+;f+;a+;
+2: 8g-;16g;;8b-;16g;;8c;16g;;8a-;16e;;
+3: 8b;a;g;f;e;d;c;b-;
+3 2: 2d;s;
+4: 2b;4cg;a-e;
+4 2: g;b-;2s;
+bar
+
+// 18
+1: c+f+a+;16c+;f+;a+;c++;b;d+;f+;b+;b;d+;f+;b+;
+2: 8f-;16f;;8a-;16d;;8g;16g-;;g;f;e;d;
+3: 2c;8b-;c;e;d;
+3 2: 8a-;b-;a-;g-;2;
+4: 2c;4g-d;g--;
+4 2: f-;d-;2s;
+bar
+
+// 19
+1: c+e+g+;32c+;b;a;g;f;e;d;e;2ceg;
+2: 8c;16c-;;32c;b-;a-;g-;f-;e-;d-;e-;2c-c;
+3: 8c;d;e;g;2c+;
+4: 2c-g-c;c-c;
+octave below 4: 2.8 "8va" til 3.8;
+dblbar
+
+ifndef NOFEEDS newscore endif
+
+//////// V5
+
+score
+	ifndef VIDEO
+		packfact=0.8
+	endif
+	beamstyle=4,4,4,4
+
+music
+midi all: 0 "tempo=68";
+rom above all: 1 "Adagio ( \(smup4n) = 68 )";
+
+// 1
+ifdef MIDI
+ 1: [grace;slash1]8d+;4c+;[grace]8e;[]d;4c;8;d;{32e;f;e;f;e;}5;8d;
+else
+ 1: [grace;slash1]8d+;4c+;[grace]8e;[]d;4c;8;d;e;d;
+ mussym above 1: 4 "tr";
+endif
+2: 2g;4;c;
+2 2: 4.c;8b-;2a-;
+3: 4.c+;8c;4;8c;d;
+4: 4.ceg;8b-;4.a-;8b-;
+bar
+
+score
+	time=3/4
+	beamstyle=4,4,4
+
+music
+
+// 1A
+ifdef MIDI
+ 1: 4c;8c+;a+;f+;32e+;f+;e+;f+;
+ 2 2: 8r;e;32f;g;16f;8e;32d;e;16d;8c;
+else
+ 1: 4c;8c+;a+;f+;e+;
+ mussym above 1: 3.5 "tr";
+ 2 2: 8r;e;f;e;d;c;
+ mussym above 2: 2 "mor"; 3 "mor";
+endif
+2: 2.a;
+3: 4.c+;8e;d;c;
+4: 4.a-ca;8a-;b-;c;
+bar
+
+score
+	time=4/4
+music
+
+// 2
+ifdef MIDI
+ 1: 8.d+;16a;8.f;16d;32bn-;c;b-;c;b-;c;16g-;{32f;g;16f;8e;d;}3;
+else
+ 1: 8.d+;16a;8.f;16d;8.bn-;16g-;{8f;e;d;}3;
+ mussym above 1: 3 "tr"; 4 "mor";
+endif
+2: 2bn-dfa;4g-;d;
+3: 4.a;8f;4.d;8g;
+4: 4.bn-;8a-;4.g-;8b-;
+bar
+
+
+// 3
+ifdef MIDI
+ 1: 32en;f;16e;8c;32e;f;16e;8g;32c+;d&+;16c+;8b;32a;b;a;b;a;g;f;g;
+else
+ 1: 8en;c;e;g;c+;b;32a;b;a;b;a;g;f;g;
+ mussym above 1: 3 "smflat";
+ mussym above 1: 1 "mor"; 2 "mor"; 3 "mor";
+endif
+2: 2cg;4enc+;eg;
+3: 4.c+;8d+;8.en+;16f+;4g+;
+4: 4.c;8b-;4.a-;8en-;
+bar
+
+// 4
+score
+	time=3/4
+music
+
+ifdef MIDI
+ 1: 32a;b;16a;8g;{32f;g;f;g;f;}5;8e;16d;c;bn-;an-;
+else
+ 1: 8a;g;f;e;16d;c;bn-;an-;
+ mussym above 1: 1 "mor"; 2 "tr";
+endif
+2: fac+;d;f#-d;
+3: a+;4.c+;8d;
+4: 8.f-;16g-;8.a-;16g-;8f#-;d-;
+bar
+
+// 4A
+score
+	time=2/4
+	beamstyle=4,4
+music
+
+ifdef MIDI
+ 1: 8g-bn-;g-;{32b-;c;b;}3;16an-;b-;c;
+else
+ 1: 8g-bn-;g-;16b-;an-;b-;c;
+ mussym below 1: 2 "mor";
+endif
+2: g-d;f-d;
+3: 2bn;
+4: 8.g-;16;8.f-;16;
+bar
+
+// 5
+score
+	time=4/4
+music
+ifdef MIDI
+ 1: 32b-;c;16b-;8g-;32b-;c;16b-;8c;32en;f;16e;8c;32b-;c;16b-;8g-;
+else
+ 1: 8b-;g-;b-;c;en;c;b-;g-;
+ mussym below 1: 1 "mor"; 2 "mor"; 3 "mor"; 4 "mor";
+endif
+2: c-c;g-;c-c;g-;
+3: 2b;4en+;b;
+4: en-;d-;c-;8d-;e-;
+bar
+
+// 6
+ifdef MIDI
+ 1: {32a-;b-;16a-;8b-;c;}3;{32b-;c;16b-;8c;d&;}3;{32c;dn;16c;8d;e;}3;{32d;e;16d;8e;f;}3;
+else
+ 1: {8a-;b-;c;}3;{b-;c;d&;}3;{c;dn;e;}3;{d;e;f;}3;
+ mussym below 1: 3 "smnat";
+ mussym below 1: 1 "mor"; 2 "mor"; 3 "mor"; 4 "mor";
+endif
+2: 8f-;c;en-;en;f-;c;g-;d;
+3: 8.a;16c+;8.b;16d&+;8.c+;16e+;8.dn+;16f+;
+4: f-;g-;a-;b-;
+bar
+
+// 7
+ifdef MIDI
+ 1: {32e;f;16e;8c+;e;}3;{32d;e;16d;8g;bn;}3;4ec+;c+e+g+;
+else
+ 1: {8e;c+;e;}3;{d;g;bn;}3;4ec+;c+e+g+;
+ mussym below 1: 1 "mor"; 2 "mor";
+endif
+2: 8c;g;g-;g;{c;e;g;}3;4cc+;
+3: 8.e+;16c+;8.d+;16bn;8.c+;32e;d;4c;
+4: 8.c;32b-;a-;8.g-;32f-;e-;4c-c;;
+bar
+
+// 8
+ifdef MIDI
+ 1: 8a-;b-;{32a-;b-;a-;}3;16g-;a-;b-;4a-;32f;g;f;g;f;g;f;g;
+else
+ 1: 8a-;b-;16a-;g-;a-;b-;4a-;f;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: c;;16r;c;d;e;f;e;d;c;
+3: [grace]8a+;[]g+;2f+;4f;8.;16;
+4: 4.f-a-c;8f-;4;8.e-;16;
+bar
+
+// 9
+ifdef MIDI
+ 1 2: 8a-;b-;{32a-;b-;a-;}3;16g-;a-;b-;4a-;32f;g;f;g;f;g;f;g;
+else
+ 1: 8a-;b-;16a-;g-;a-;b-;4a-;f;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: b-;;16r;c;d;e;f;e;d;c;
+3: 2f+;4f;8.;16;
+4: 4.d-f-b-;8d-;4;8.b--;16;
+bar
+
+// 10
+ifdef MIDI
+ 1: 8f;e;{32d;e;d;}3;16c;b-;a-;4g-;32e;f;e;f;e;f;e;f;
+else
+ 1: 8f;e;16d;c;b-;a-;4g-;e;
+ mussym above 1: 2 "mor"; 4 "tr";
+endif
+2: b-;;16r;c;d;e;f;g;f;e;
+3: 2g+;4g;8.;16;
+4: 4.e-g-b-;8e-;4;8.d-;16;
+bar
+
+// 11
+ifdef MIDI
+ 1: 8a-;b-;{32a-;b-;a-;}3;16g-;a-;b-;4a-;32g;a;g;a;g;a;g;a;
+else
+ 1: 8a-;b-;16a-;g-;a-;b-;4a-;g;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: c;;16r;c;d;e;f;e;d;c;
+3: 2f+;4f;8.;16;
+4: 4.f-a-c;8f-;;g-;8.a-;16c;
+bar
+
+// 12
+ifdef MIDI
+ 1: 8c;d;{32c;d;c;}3;16d;c;d;4c;32bn-;c;b-;c;b-;c;b-;c;
+else
+ 1: 8c;d;16c;d;c;d;4c;bn-;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: b-;;16r;c;d;e;f;e;d;c;
+3: 2a+;4a;8.;16;
+4: 4.b-fa;8b-;4;8.;16;
+bar
+
+// 13
+ifdef MIDI
+ 1: 8b-;c;{32e;f;e;}3;16c;e;c;4b-;32g;a;g;a;g;a;g;a;
+else
+ 1: 8b-;c;16e;c;e;c;4b-;g;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: b-;;16r;c;e;f;g;f;e;d;
+3: 2g+;4g;8.;16;
+4: 4.e-b-;8e-;4;8.;16d;
+bar
+
+// 14
+ifdef MIDI
+ 1: 8c;d;{32e;f;e;}3;16d;e;d;4c;32c+;d+;c+;d+;c+;d+;c+;d+;
+else
+ 1: 8c;d;16e;d;e;d;4c;c+;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: c;;16r;e;f;g;f;e;d;c;
+3: 2a+;4a;8.;16;
+4: 4.f-c;8f-;4;8.c;16;
+bar
+
+// 15
+ifdef MIDI
+ 1: 8d;e;{32f;g;f;}3;16e;f;e;4d;32a;b;a;b;a;b;a;b;
+else
+ 1: 8d;e;16f;e;f;e;4d;a;
+ mussym above 1: 4 "tr";
+ mussym below 1: 2 "mor";
+endif
+2: b-;;16r;f;g;a;g;f;e;d;
+3: 2a+;4a;8.;16;
+4: 4.b-fa;8b-;4;8.bn-;16;
+bar
+
+// 16
+ifdef MIDI
+ 1: 8g;c+;{32d+;e+;d+;}3;16e+;d+;e+;g+;f+;e+;d+;{32c+;d+;c+;}3;16b;an;b;
+else
+ 1: 8g;c+;16d+;e+;d+;e+;g+;f+;e+;d+;c+;b;an;b;
+ mussym above 1: 2 "mor"; 4 "mor";
+endif
+2: 8c;g-;8c;g-;f-;a;b-;an;
+3: 2g+;r;
+4: 2ceg;4f-;8.f#-d;16d-;
+bar
+
+// 17
+ifdef MIDI
+ 1: 32an;b;16a;8g;4;32f;g;16f;8e;4;
+else
+ 1: 8an;g;4;8f;e;4;
+ mussym above 1: 1 "mor"; 3 "mor";
+endif
+1 2: 4.d;8;2an-;
+2: 8g-;b;f-;g;e-;g;16c;d;e;g;
+3: 4.r;8g;4.r;8e;
+4: 4.g-;8d-;4.c-;8c#-;
+bar
+
+// 18
+ifdef MIDI
+ 1: 32d;e;16d;8c;4;32bn-;c;16b-;8d;;16e;d;
+else
+ 1: 8d;c;4;8bn-;d;;16e;d;
+ mussym above 1: 1 "mor"; 3 "mor";
+endif
+2: ca;16a-;b-;c;e;4g-d;8f;g-bn;
+3: 4.r;8c;4.r;8e;
+4: 4.f-;8f#-;4.g-;8; 
+bar
+
+// 19
+ifdef MIDI
+ 1: 32c;d;c;d;c;d;c;d;8c;{16g;;;}3;2c+e+g+;
+else
+ 1: 4c;8r;{16g;;;}3;4c+e+g+;r;
+ mussym above 1: 1 "tr";
+endif
+2: cg;8r;{16g-;;;}3;4c-g-;r;
+3: c;r;[with .]c+e+g+;r;
+4: ceg;r;[with.]c-;r;
+dblbar 
+
+ifndef NOFEEDS newscore endif
+
+///////////////  V6
+score
+	ifndef VIDEO
+		packfact=1.2
+	endif
+	beamstyle=2,2
+staff 1
+	emptymeas="ms;"
+	unset beamstyle
+
+staff 2
+	emptymeas="ms;"
+	unset beamstyle
+
+music
+
+define A [with >] @
+
+rom above all: 1 "Tempo I";
+midi all: 0 "tempo=112";
+midi 3-4 1-2: 1 "onvelocity=80";
+1: {8e;g;c+;e+;c+;g;}6;{e;g;c+;e+;c+;g;}6;
+2: 8c-;c;e-;e;g-;g;e-;e;
+3: 8r;c;d;A eg tie;;d;4c;
+4: 2c-;4.g;8e-;
+bar
+
+1: {8bn;a;f;d;f;a;}6;{b;a;f;d;f;a;}6;
+2: 8d-;d;f-;f;g-;g;f-;f;
+3: 8r;a;f;A d~;;bn-;g-;d;
+4: 2d-;4g;f-;
+bar
+
+1: {8en;g;b;c+;b;g;}6;{e;g;b;c+;b;g;}6;
+2: 8en-;en;b-;b;a-;a;g-;g;
+3: 8r;c;en;g;c+;b;a;g;
+4: c-;b-;a-;en-;
+bar
+
+1: {8c+;a;c;c+;a;c;}6;{bn;g;d;b;g;d;}6;
+2: 8f-;f;f#-;f#;g-;g;fn-;fn;
+3: 8a;4c;8bn-~;;4g-;8d;
+4: f-;f#-;g-;fn-;
+bar
+
+1: {8g;b;c+;en+;c+;b;}6;{g;b;c+;e+;c+;b;}6;
+2: 8en-;e;d-;d;c-;c;g-;g;
+3: 8b-;g-;b-;c;en;c;b-;g-;
+4: en-;d;c;g-;
+bar
+
+1: {8a;b;c+;b;c+;d&+;}6;{c+;d+;e+;d+;e+;f+;}6;
+2: 8f-;f;g-;g;a-;a;b-;b;
+3: 8r;4f-a-;8g-b- tie;;4a-c;8b-g;
+4: f-;g-;a-;d&;
+bar
+
+1: {8c+;f+;a+;c++;a+;f+;}6;{c+;en+;g+;c++;g+;e+;}6;
+2: 8c;c+;b-;b;a-;a;g-;g;
+3: c~;cf tie;8;en~;4ec+;
+4: 8c;4b;8a~;4;8g;c;
+bar
+
+1: {8f;a;c+;f+;c+;a;}6;{f;a;c+;f+;c+;a;}6;
+2: 8f-;f;f-;f;f-;f;e-;e;
+3: 2.f;8c;e;
+3 2: 8a-;b-;a-;g-;2a-;
+4: 2c~;8;e;f;e;
+4 2: 1f-;
+bar
+
+1: {8f;a;b;d+;b;a;}6;{f;a;b;d+;b;a;}6;
+2: 8d-;d;d-;d;c-;c;c-;c;
+3: 1f;
+3 2: 8a-;b-;a-;g-;2a-;
+4: 2b-d tie;8;c;d;f;
+bar
+
+1: {8g;b;e+;g+;e+;b;}6;{g;b;e+;g+;e+;b;}6;
+2: 8e-;b-;g;b-;e-;b-;g;b-;
+3: 8f;e;d;b-;4.g-;8e;
+3 2: 1g-;
+4: 4.b-;8;c;d;e;g;
+4 2: 1e-;
+bar
+
+1: {8a;c+;f+;a+;f+;c+;}6;{a;c+;f+;a+;f+;c+;}6;
+2: 8f-;c;a;c;f-;c;a;c; 
+3: 2..f;8g;
+3 2: 8a-;b-;a-;g-;2a-;
+4: 2c~;8;b-;c;e;
+4 2: 1f-;
+bar
+
+1: {8f;a;b;d+;b;a;}6;{f;a;b;d+;b;a;}6;
+2: 8b-;f;a;f;b-;f;d+;f;
+3: 2a~;8;a;8.b;16a;
+3 2: 8c;d;c;d;4c;bn-;
+4: 1b-a;
+4 2: 2f;4e;d;
+bar
+
+1: {8g;b;c+;e+;c+;b;}6;{g;b;e+;g+;e+;b;}6;
+2: 8e-;b-;g;b-;e-;b-;g;b-;
+3: 2..g;8e;
+3 2: 8b-;c;e;c;2b-;
+4: 2e-b-;8r;c;e;c;
+bar
+
+1: {8a;c+;e+;f+;e+;c+;}6;{a;c+;f+;a+;f+;c+;}6;
+2: 8f-;c;a;c;f-;c;a;c;
+3: 2..a;8f;
+3 2: 8c;d;e;d;2c;
+4: 2f-c;8r;e;f;e;
+bar
+
+1: {8a;b;c+;f+;c+;b;}6;{a;b;c+;e+;d+;c+;}6;
+2: 8b-;f;a;f;b-;f;d+;f;
+3: 2.a;8e+;d+;
+3 2: 8d;e;f;e;2d;
+4: 2b-fa;8r;g;f;g;
+4 2: 2.s;4bn-;
+bar
+
+1: {8g;c+;d+;e+;d+;c+;}6;{a;c+;d+;e+;d+;c+;}6;
+2: 8c;g;c+;g;f-;c;a;c;
+3: 8g;c+;d+;e+;g+;f+;e+;c+;
+3 2: 2e;a;
+4: 2g;4g;a;
+4 2: c;b-;2f-c;
+bar
+
+1: {gbg+;;;}3;{gc+e+;;;}3;
+2: {g-dg;;;}3;{cg;;;}3;
+3: 8c+;b;g;f;f;e;d;e;
+3 2: 2d;c;
+4: g-db;f;cg;b-;
+bar
+
+1: {ac+f+;;;}3;{gd+;;;}3;
+2: {f-c;;;}3;{g-dg;;;}3;
+3: 2c;8b-;c;e;d;
+3 2: 8a-;g-;f-;e-;2g-;
+4: f-c;d-;g-d;g--;
+bar
+
+1: 8r;4e+g+;8d+f+;4c+e+;8r;c+e+g+c++;
+2: 2.c-g-c;8r;c-g-c;
+3: 8r;A 4eg;8df;4ce;8r;A cegc+;
+4: 2.c-c;8r;c-c;
+octave below 4: 4.5 "8va"; 
+endbar

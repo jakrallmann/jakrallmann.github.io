@@ -1,0 +1,195 @@
+header
+	title (16) "Song Without Words (No. 59)"
+	title (14) " "
+	title "" "John A. Krallmann (Jan 17, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3& minor
+	time=2/4
+	beamstyle=4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	packfact=1.25
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=0";
+
+
+1: d;8;e;
+2: 2gb;
+bar
+
+1: d;8;an;
+2: 2fan;
+bar
+
+1: g;8;an;
+1 2: d;c;
+2: 2eg;
+bar
+
+1: 2f#;
+1 2: 2d;
+2: 2an;
+2 2: d;c;
+bar
+
+1: g;8;a;
+1 2: 2d;
+2: 2bn-g;
+bar
+
+1: 8d+;bn;a;g;
+1 2: 2f;
+2: 2g-bn;
+bar
+
+1: f;e;
+1 2: 2c;
+2: a;g;
+2 2: 2c;
+bar
+
+1: 8f;g;4a;
+1 2: 2c;
+2: e;c;
+2 2: 2a-;
+bar
+
+1: 2g;
+1 2: e;b-;
+2: g;e;
+2 2: 2b-;
+bar
+
+1: 8f;e;4d;
+1 2: 2a-;
+2: d;f;
+2 2: 2b-;
+bar
+
+1: 2e~;
+1 2: g-;8b-;a-;
+2: b-;c;
+2 2: 2e-~;
+bar
+
+1: e;b;
+1 2: 2g-;
+2: 2b-;
+2 2: 2e-;
+bar
+
+1: e+;8;d+;
+1 2: 2g;
+2: c+;g;
+2 2: 2c;
+bar
+
+1: 8c+;b;4a;
+1 2: 2e;
+2: 8a;b;4c+;
+2 2: 2a-;
+bar
+
+1: b;8.f;16a;
+1 2: 2d;
+2: a;d;
+2 2: 2b-;
+bar
+
+1: 2g;
+1 2: d;en;
+2: 2cg;
+bar
+
+1: a;f;
+1 2: c;a-;
+2: e;d;
+2 2: f-;8b-;a-;
+bar
+
+1: b;g;
+1 2: 8d;f;4en;
+2: b;g;
+2 2: g-;8c;b-;
+bar
+
+1: c+;a;
+1 2: e;c;
+2: a-a;f-e;
+bar
+
+1: 2f;
+1 2: 2d;
+2: 2a;
+2 2: b-;bn-;
+bar
+
+1: 2e;
+1 2: 2c;
+2: 2g;
+2 2: c;b-;
+bar
+
+1:2e;
+1 2: 2c;
+2: 2a;
+2 2: a-;g-;
+bar
+
+1: a;g;
+1 2: c;;
+2: f-e;a-e;
+bar
+
+1: 2f;
+1 2: c;b-;
+2: e;d;
+2 2: 2b-;
+bar
+
+1: 2e;
+1 2: 2c;
+2: 2g;
+2 2: c;b-;
+bar
+
+1: 2c;
+1 2: 2a-;
+2: 2e;
+2 2: a-;g-;
+bar
+
+1: f;e;
+1 2: 2an-;
+2: 2f-c;
+bar
+
+1: 2d;
+1 2: 2bn-;
+2: 2g-f;
+bar
+
+1: 2en~;
+1 2: 2c~;
+2: 2cg tie;
+bar
+
+1: 2e;
+1 2: 2c;
+2: 2cg;
+endbar

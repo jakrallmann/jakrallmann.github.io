@@ -1,0 +1,241 @@
+header
+	title (18) "Waltz No. 2"
+	title (12) "" "John A. Krallmann (July 2001)"
+
+header2
+	title (12) "Waltz No. 2 - page \%"
+	title (10) " "
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	packfact=1.8
+	scoresep=12,24
+	measnum=y
+
+staff 2
+	clef=bass
+	timeunit=2.
+
+music
+
+midi all: 0 "tempo=180";
+midi 1 1: 0 "channel=11"; 0 "program=0";  0 "onvelocity=86"; 0 "param=10,84";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80"; 0 "param=10,72";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "param=10,55";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "param=10,40";
+midi 1-2 1-2: 0 "param=7,127";
+
+1: 2g;4d;
+1 2: r;2g-;
+2: c-;
+bar
+
+1: 2f;4e;
+1 2: r;2a-;
+2: f-;
+bar
+
+1: 2d;4f;
+1 2: r;2g-;
+2: g-;
+bar
+
+1: f;2e;
+1 2: a-;2g-;
+2: 2c;4b-;
+bar
+
+1: a;b;c+;
+1 2: 2c;4e;
+2: 2a-;4;
+bar
+
+1: b;g;d;
+1 2: 2.d;
+2: 2d;4b;
+bar
+
+1: f#;g;e+;
+1 2: d;;g;
+2: 4a;b;c+;
+bar
+
+1: 2.d+;
+1 2: 2.g;
+2: b;
+bar
+
+1: g+;d+;g;
+1 2: 2g;4b-;
+2: 2b;4e;
+bar
+
+1: 2a;4b;
+1 2: a-;e;c;
+2: 2c;4d;
+bar
+
+1: 2.g~;
+1 2: 2.b-~;
+2: g;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: g;
+bar
+
+define SECTION
+1: e+;g+;e+;
+1 2: 2.c+;
+2: cg;
+bar
+
+1: 2.d+;
+1 2: ac+;2gb;
+2: 2.d+;
+2 2: 4f;2g;
+repeatstart
+
+1: e+;d+;c+;
+1 2: g;f;e;
+2: cg;
+bar
+
+1: f#;2b;
+1 2: d;2g#;
+2: eb;
+bar
+
+1: c+;b;a;
+1 2: e;d;c;
+2: 2a-e;4 tie;
+bar
+
+1: a;2b;
+1 2: c;2g#;
+2: 4a-e;2e-b-;
+bar
+
+1: e;f#;8c#+;b;
+1 2: d;;dg#;
+2: 2e-b-;4;
+bar
+
+1: 2.a;
+1 2: 2.c#;
+2: a-e;
+repeatend
+@
+SECTION
+
+newpage
+
+score key=1&;
+music
+
+1: a;f;8b-;c;
+1 2: 2c;4s;
+2: 2f-c;4;
+bar
+
+1: a;f;8b-;c;
+1 2: 2c;4s;
+2: 2f-c;4;
+bar
+
+1: f;d;8g;a;
+1 2: 2.a-;
+2: 2d-a-;4;
+bar
+
+1: b;c+;d+;
+1 2: d;e;f;
+2: 2g-g;4;
+octave below 2: 0.5 "8va" til 3.9; 
+bar
+
+1: 2c+;8;b;
+1 2: e;d;e;
+2: 2cc-;4;
+bar
+
+1: a;f;8f;g;
+1 2: f;a-;8d;e;
+2: 2f-c;4;
+bar
+
+1: a;f;8f;g;
+1 2: f;a-;8d;e;
+2: 2f-c;4;
+bar
+
+1: a;c+;d+;
+1 2: f;a;f;
+2: 2f-c;4d-a-;
+bar
+
+1: 2.d+;
+1 2: 2.f;
+2: 2.d-a-;
+bar
+
+1: e+;c+;8;d+;
+1 2: c+;e;8;g;
+2: 2c-g-;4;
+bar 
+
+1: e+;c+;8;d+;
+1 2: c+;e;8;g;
+2: 2c-g-;4;
+bar 
+
+1: e+;;f+;
+1 2: c+;;d+;
+2: 2c-g-;4;
+bar
+
+1: 2.g+;
+1 2: 2.bn;
+2: 2.g-d;
+dblbar
+
+score key=0&
+music
+
+SECTION
+
+midi all: 0 "tempo=140";
+midi 1-2 1-2: 1 "param=7,120";
+1: 2.c#+;
+1 2: 2.df#;
+2: e-b-;
+bar
+
+1: 2.c#+;
+1 2: 2.dg#;
+2: e-b-;
+bar
+
+midi all: 1 "tempo=80";
+midi 1-2 1-2: 1 "param=7,114";
+1: 2.e+~;
+1 2: 2.abc#+ tie;
+2: a-e tie;
+bar
+
+midi 1-2 1-2: 4 "param=10,63"; 4 "param=7,127";
+1: 2.e+;
+1 2: 2.abc+;
+2: a-e;
+endbar

@@ -1,0 +1,230 @@
+header
+	title (16) "Song"
+	title "" "John A. Krallmann"
+	title " " "(June 23 and July 7, 2019)"
+
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2#
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.9
+	measnum=y
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi 1: 0 "onvelocity=86,64";
+midi all: 0 "tempo=104";
+
+1: 8r;e+;d+;c+;a;4d+;8c+;
+2: 4a-;gc+e+;f-;fad+;
+bar
+
+1: 8b;e;f;g~;;a;b;d+;
+2: 4g-;egb;e-;gbd+e+;
+bar
+
+1: 8d+;c+;b;c+~;;b;a;b;
+2: 4a-;gac+e+;e-;gac+e+;
+bar
+
+1: 8e#;f;g;f~;;d;c;cn;
+2: 4d-;fad+;a-;dfa;
+bar
+
+1: 8b-;d;c+;b~;;a;g;b;
+2: 4g-;dgb;e-;egb;
+bar
+
+1: 8a;g;a;f~;;e;d;c;
+2: 4f-;cfa;b-;fb;
+bar
+
+1: 4.b-;8d;c;b-;4a-;
+2: 4g-;dg;f-;ce;
+bar
+
+1: 4.b-;8d;c;b-;4a-;
+2: 4e-;dg;f-;ce;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8f;4.b;8d+;c+;4a;
+2: 4b--;b-d;a-c;ce;
+bar
+
+1: 2gb;8b;4a;8b;
+1 2: 2s;f;
+2: 2e-b-;f-c;
+bar
+
+1: 2.b;4;
+1 2: 4d;e;f;g;
+2: 2.b-;4;
+2 2: 4b--;c-;d-;e-;
+dblbar
+
+score key=3#
+staff 1 clef=treble
+music
+
+1: 2.f;4;
+1 2: 4a-;b-;c;d;
+2: 2.c;4g;
+2 2: 4f-;g-;a-;b-;
+bar
+
+1: 2.a;4;
+1 2: 4c;a-;c;a-;
+2: 4c;d#;e;e#;
+2 2: 1f-;
+bar
+
+1: 1c+;
+1 2: 4g;a;g;f;
+2: 4f;g;a;b;
+2 2: 1f-;
+bar
+
+1: 1b;
+1 2:4d;e;f;d;
+2: 4f;g;a;f;
+2 2: 1b-;
+bar
+
+1: 2a;g;
+1 2: 4c;a-;2b-;
+2: 2f;fn;
+2 2: 1c;
+bar
+
+1: 2g<>;f;
+1 2: 2b-;a-;
+2: 2dg;c;
+2 2: 1f-;
+bar
+
+1: 2e<>;d;
+1 2: 1a-;
+2: 1df;
+2 2: 2a-;b-;
+bar
+
+1: 4b-;c;d;b;
+1 2: 1g-;
+2: 4d;c;b-;e;
+2 2: 1e-;
+bar
+
+1: 4.db;16c+;b;4ca;c+;
+2: 2f;e;
+2 2: 1a-;
+bar
+
+1: 2c+<>;b;
+1 2: 1f;
+2: 2a;b;
+2 2: 1d;
+bar
+
+1: 2b<>;a;
+1 2: 1e;
+2: 2b;a;
+2 2: 1c;
+bar
+
+1: 4a;g;f;e;
+1 2: 1d;
+2: 4f;g;a;g;
+2 2: 1b-;
+bar
+
+1: 2b-d;a-c;
+2: 2f;e;
+2 2: 1a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4f;g;a;b;
+2: 2a-;b-~;
+2 2: 1d-;
+bar
+
+1: 1e;
+2: 2b-;a-;
+2 2: 1c-;
+bar
+
+1: 4c+;b;a;f+;
+1 2: 1f;
+2: 2d-a- tie;d-a-d;
+bar
+
+1: 1e+;
+1 2: 2a;g;
+2: 2e-b- tie;e-b-e;
+bar
+
+staff 1 clef=treble
+music
+
+1: 4a;g;f;b-;
+1 2: 1c;
+2: 2c;d#;
+2 2: 1f-;
+bar
+
+1: 1e;
+1 2: 2a-;g-;
+2: 2b-;e;
+2 2: 1e-;
+bar
+
+1: 4f;e;d;a-;
+1 2: 1a-;
+2: 2a-;f-;
+2 2: 1d-;
+bar
+
+1: 1a-c;
+2: 1a--e-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4d+;c+;b;a;
+1 2: 1f;
+2: 2f-;a-;
+2 2: 1b--;
+bar
+
+1: 4c+;b;a;g;
+1 2: 1g;
+2: 2b-;d;
+2 2: 1e-;
+bar
+
+1: 1ca;
+2: 1a--e-;
+bar 
+
+1: 1ca;
+2: 1a--e-;
+endbar 

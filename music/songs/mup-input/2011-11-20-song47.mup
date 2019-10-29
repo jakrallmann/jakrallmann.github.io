@@ -1,0 +1,117 @@
+header
+	title (16) "Song Without Words (No. 47)"
+	title "" "John A. Krallmann (11/20/11)"
+
+footer
+	title (12) "\(copyright) Copyright 2011 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Song Without Words (No. 47) - \%"
+score
+	staffs=2
+	key=3#
+	time=4/4
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	staffsep=18
+	measnum=y
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=78";
+midi 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1-2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: [grace]16gn;[]a;{4b;gn+;f+;}3;{e+;gn;a;}3;
+2: e;b;cn;gn;
+bar
+
+1: {cn+;2b~;}3;2;
+2: e;b;d;b;
+bar
+
+1: [grace]16gn;[]a;{4b;2e~;}3;{4;f;gn;}3;
+2: cn;gn;a-;e;
+bar
+
+1: 4.f;8d#+~;2;
+2: b-;f;{cn+;b;a;}3;
+bar
+
+1: 4.g;8f+;{4e+;b;g;}3;
+2: e;b;d;b;
+bar
+
+1: 4.b;8e;{4;f;a;}3;
+2: 4c;a;cn;a;
+bar
+
+1: 4.g;8e+;{4f;g;a;}3;
+2: b-;g;a-;cn+;
+bar
+
+1: 4.g;8e+~;2;
+2: e;b;f+;e+;
+bar
+
+1: {g;f+;e+;}3;{d#+;c+;g;}3;
+2: c;g;e+;g;
+bar
+
+1: 4.b;8c;{4;d#;e;}3;
+2: a-;e;b;e;
+bar
+
+1: 2g;[grace]16a;[]g;{4f;c;e;}3;
+2: b-;e;a;e;
+bar
+
+1: 2.b;4;
+1 2: {e;f;e;}3;2d#;
+2: b-;e;a;a-;
+bar
+
+1: {e+;f+;e+;}3;{d+;c+;b;}3;
+1 2: f;e;f;e;
+2: g-;e;g-;e;
+bar
+
+score time=3/4 ; beamstyle=2.
+music
+
+1: 2.d+;
+1 2: 4.f;8d;e;f;
+2: a-;b;f;
+bar
+
+1: 2c+~;8;a;
+1 2: 2.e;
+2: a-;e;c+;
+bar
+
+1: 2.f;
+1 2: 8e;d;4c;a-;
+2: d-;a-;f;
+bar
+
+1: 2.dn;
+1 2: f-;g-;e-;
+2: e-;2b-;
+bar
+
+1: 2.db;
+2: f;g;e;
+2 2: 2.a-;
+bar
+
+1: 2.ca;
+2: 2.a-e;
+endbar

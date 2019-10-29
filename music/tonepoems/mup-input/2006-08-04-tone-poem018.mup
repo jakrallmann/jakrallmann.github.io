@@ -1,0 +1,115 @@
+header
+	title (18) "Tone Poem (No. 18)"
+	title "" "John A. Krallmann (Aug 4, 2006)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	scoresep=10,24
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+
+1: 4.d+;16e+;d+;8c+;g;a;b;
+2: g-;b;d+;f-;
+bar
+
+1: 4.c+;8e;4;g;
+2: e-;g;c+;b;
+bar
+
+1: 4.g;8f;4c+;8f+;c+;
+2: f-;e+;a;e+;
+bar
+
+1: 4.e+;8g;4d+;f;
+2:b-;g;f;d+;
+bar
+
+1: 4.d+;8g;4c+;{8f;g;a;}3;
+2: c;e+;a;e+;
+bar
+
+1: 4.c+;8b;4f;f+;
+2: b-;f;d+;a&-;
+bar
+
+1: 4.f+;8e+;4b;{8;c+;b;}3;
+2: e-;b-;g;g&;
+bar
+
+1: 4.e+;8d+;4;8en;f;
+2: b--;g&;f;d+;
+bar
+
+1: 4.d+;8c+;4;b;
+2: e-;b-;g;e+;
+bar
+
+1: 4.b;8c+;4;{16en;f;g;a;b;c+;}6;
+2: f-;e;a;e+;
+bar
+
+1: 4.e+;8d+;4b+;8g+;a&+;
+2: b-;f;d+; <<staff clef=treble>>b;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.a&+;8g+;4;8a;b;
+2: e-;b-;g;e+;
+bar
+
+1: 4.g+;8f+;4c+;e+;
+2: f-;e;a;f+;
+bar
+
+1: 4.e+;8d+;4a;c+;
+2: f#-;d;c+;a;
+bar
+
+1: c+;b;a;g;
+2: g-;d;b;d+;
+bar
+
+1: f;e;4.b-;8c;
+2: e-;c;g&;e;
+bar
+
+1: e;d;4.b;8d;
+2: b--;f-;d;b;
+bar
+
+1: d;c;4.g;8c;
+2: e-;b-;g;b;
+bar
+
+1: e;f;g;ff+;
+2: f-;e;a;e+;
+bar
+
+1: 2e+c++;d+b+ tie;
+2: b--;f-;2d~;
+bar
+
+1: 1d+b+;
+2: 1d;
+endbar

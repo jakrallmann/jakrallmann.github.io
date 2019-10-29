@@ -1,0 +1,275 @@
+header
+	title (16) "Waltz"
+	title (6) ""
+	title "" "John A. Krallmann (11/25-29/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=12,25
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86,64";
+midi 1 2: 0 "channel=12";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+define G [grace;slash1]8 @
+
+define T1
+ifdef SECOND
+boldital between 1&2: 1 "p";
+endif
+1: G c+;2.e;
+2: a-;eac+;;
+bar
+
+1: G c+;2.e;
+2: a&-;ea&c+;;
+bar
+
+1: G c+;4e;d;c;
+2: g-;eac+;ea;
+bar
+
+1: G c+;4d;e;f;
+2: f-;fac+;;
+bar
+
+1: G d+;2.g;
+2: e-;gd+;gc+;
+bar
+
+1: G c+;2.a;
+2: f-;ae+;ad+;
+bar
+
+1: [grace]8f;[]e;2d;8e;f;
+2: g-;fgb;;
+bar
+
+1: G d+;2.g;
+2: e-;egd+;egc+;
+bar
+
+1: G c+;2.c;
+2: a-;eb;ea;
+bar
+
+ifdef SECOND
+ ital between 1&2: 1 "rit.";
+endif
+1: G a-;2f;4e;
+2: d-;efa;cfa;
+bar
+
+1: G a-;2b-d;4b-d#;
+2: g--;g-f;g-g;
+bar
+@
+
+T1
+
+1: G g-;2.b-e;
+2: c-;g-e;;
+bar
+
+1: G c;2.g;
+1 2: d;c;b-;
+2: c-;ceg;;
+bar
+
+1: G a-;2.a;
+1 2: e;d;c;
+2: f-;fa;;
+bar
+
+1: G e;2.f+;
+1 2: c+;b;a;
+2: d-;fac+;;
+bar
+
+1: G f;2.e+;
+1 2: b;a;g;
+2: g-;fgb;;
+bar
+
+1: G f;2e+;4d+;
+1 2: b;a;g;
+2: g-;fgb;;
+bar
+
+1: G e;2.c+;
+2: c-;ce;df;
+bar
+
+1: G c+;2c++;G c+;4c++;
+2: eg;fa;gb&;
+repeatstart
+
+score
+	key=1&
+music
+
+1: 2.c+a+c++; 
+2: f-;ac+g+;ac+f+;
+bar
+
+1: 2.d+d++;
+1 2: a+;f+;g+;
+2: b--;bd+g+;;
+bar
+
+1: 2.c+a+c++;
+2: f-;ac+e+;ac+f+;
+bar
+
+1: 2.d+g+;
+1 2: g;a;b;
+2: b-;fbd+;;
+bar
+
+1: 2.c+a+c++; 
+2: f-;ac+g+;ac+f+;
+bar
+
+1: 2.d+d++;
+1 2: a+;f+;g+;
+2: b--;bd+g+;;
+bar
+
+1: 2.c+a+c++;
+2: f-;ac+e+;ac+f+;
+bar
+
+1: 2.f+;
+1 2: c+;b;a;
+2: b-;fbd+;;
+bar
+
+1: 2.b~;
+1 2: d;4.g;8f;
+2: g--;dgb;;
+bar
+
+1: b;d+;c+;
+1 2: 8d;4.e;4g#;
+2: c-;cb;;
+bar
+
+1: 2a;8g;f;
+1 2: 8e;d;4c;e&;
+2: f-;cfa;;
+bar
+
+1: 2d+;4f+;
+1 2: 8a;g;4f;d+;
+2: b--;dgb;;
+bar
+
+1: 2e+g+;4g#+;
+1 2: 8d+;c+;4b;g#;
+2: c-;gc+e+;;
+bar
+
+1: 2a+;4c++;
+1 2: 8e+;d+;c+;b;a;g;
+2: f-;ac+f+;;
+bar
+
+1: 2f++;4d++;
+1 2: 8d++;c++;b+;a+;f+;g+;
+2: b-;dgb;;
+bar
+
+1: 2c++;8g+;f+;
+1 2: 8g+;f+;e+;f+;4c+;
+2: a-;ac+f+;;
+bar
+
+1: 2d+;8a;b;
+1 2: 8a;g;4f;d&;
+2: b-;dgb;fgb;
+bar
+
+1: 2ac+;4a;
+1 2: 8g;f;4c;c#;
+2: f-;cfa;;
+bar
+
+1: 8a;g;4f;f+;
+1 2: 2d;4g;
+2: b-;dgb;;
+bar
+
+1: 2.f+;
+1 2: 8a;g;2f;
+2: f-;cfa;;
+bar
+
+1: 2.f+;
+1 2: 8a;g;2f;
+2: f-;cfa;;
+bar
+
+1: 2.f+;
+1 2: 8a;g;2f;
+2: b-;dgb;;
+bar
+
+1: 2.f+;
+1 2: 8a;g;2f;
+2: b-;dgb;;
+bar
+
+1: 2.cc+;
+1 2: 8a;g;2f;
+2: f-;cfa;;
+bar
+
+1: 2.cc+;
+1 2: 8a;g;2f;
+2: f-;cfa;;
+repeatend
+
+1: 2.a;
+1 2: 2.cg;
+2: 2.f-;
+bar
+
+1: 2.a;
+1 2: 2.cg;
+2: 2.f-;
+dblbar
+
+score
+ key=0&
+music
+
+define SECOND @
+T1
+
+1: 2.g-b-ce tie;
+2: 2.c-c;
+bar
+
+1: 2.g-b-ce;
+2: 2.c-;
+octave below 2: 1 "8va" til 3;
+endbar

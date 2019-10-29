@@ -1,0 +1,230 @@
+header
+	title (18) "Song Without Words (No. 5)" 
+	title "" "John A. Krallmann (2/5/06)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=82";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2s;4a;
+2: 2s;4r;
+bar
+
+1: a;b;a;
+2: c+;d+;c+;
+2 2: 2.f;
+bar
+
+1: f#;g;;
+2: 2.c+;
+2 2: 2e;4e&;
+bar
+
+1: e;f;g;
+2: 2.b;
+2 2: 2d;4d&;
+bar
+
+1: 2.a;
+1 2: g;f;c;
+2: 2.a;
+2 2: 2.c;
+bar
+
+1: b;c+;d+;
+2: f;d;b;
+2 2: 2.g-;
+bar
+
+1: 8f+;e+;d+;c+;4b;
+1 2: g;8f;e;d;d&;
+2: 2.b;
+2 2: 2.c;
+bar
+
+1: 2.a;
+1 2: 8c;c#;d;c;4cn;
+2: f;g;a;
+2 2: 2.f-;
+bar
+
+1: 8g;a;b;a;4g;
+1 2: 2d;4d&;
+2: f;g;f;
+2 2: 2.b-;
+bar
+
+1: 8f;g;a;g;4f;
+1 2: 2.c;
+2: f;g;8;f;
+2 2: 2.a-;
+bar
+
+1: 8d;e;f;a;g;f;
+1 2: 2b-;4d&;
+2: f;d;f;
+2 2: 2.g-;
+bar
+
+1: 2.g;
+1 2: 8e;d;4d&;c;
+2: 2.b;
+2 2: 2.c;
+bar
+
+1: 2.a;
+1 2: 2.f;
+2: 8c;c#;d;c;4cn;
+2 2: 2.f-;
+bar
+
+1: 2.g;
+1 2: 2.d;
+2: 8f;f#;g;f;4fn;
+2 2: 2.b-;
+bar
+
+1: 8e+;d+;c+;b;a;g#;
+1 2: 8g;f;e;d;c;b-;
+2: b;g;e;
+2 2: 2.c;
+bar
+
+1: 8g#;a;2;
+1 2: bn-;2c;
+2: d;c;f;
+2 2: 2.f-;
+bar
+
+1: 8a;g;4.;8e;
+1 2: 2.d;
+2: f;g;d+;
+2 2: 2.b-;
+bar
+
+1: 8g;f;4.;8c;
+1 2: 2.c;
+2: f;g;a;
+2 2: 2.a-;
+bar
+
+1: 8b-;c;4d;8f;g;
+2: f;d;d&;
+2 2: 2.g-;
+bar
+
+1: a;g;c+;
+1 2: d;2e;
+2: 2.b;
+2 2: 2.c;
+bar
+
+1: c+;f+;;
+1 2: 2f;4a;
+2: f;g;8d+;c+;
+2 2: 2.a-;
+bar
+
+1: df+;ee+;d+;
+1 2: 2b;4eg;
+2: g;f;d+;
+2 2: 2.b-;
+bar
+
+1: 2c+;4a;
+1 2: 2.cf;
+2: g;f;c;
+2 2: 2.a-;
+bar
+
+1: g;a;b;
+1 2: 2.df;
+2: 2.f;
+2 2: b-;a-;g-;
+bar
+
+1: 2c+;4f;
+1 2: 2.cf;
+2: 2.f;
+2 2: 2.a-;
+bar
+
+1: 2.dd+;
+1 2: a;g;f;
+2: 2.f;
+2 2: 2.b-;
+bar
+
+1: 2.c+;
+1 2: g;f;c;
+2: 2.f;
+2 2: 2.a-;
+bar
+
+1: g;a;b;
+1 2: 2.d;
+2: f;d;g;
+2 2: 2.b-;
+bar
+
+1: 2.c+;
+1 2: 2.cf;
+2: g;f;c;
+2 2: 2.a-;
+bar
+
+1: g;f;g;
+1 2: 2.d&;
+2: f;g;b;
+2 2: 2.b-;
+bar
+
+1: 2.c+;
+1 2: g;f;c;
+2: 2g;4f;
+2 2: 2.a-;
+bar
+
+1: 2c+;4;
+1 2: 2.dfb;
+2: 2.db;
+2 2: 2.g-;
+bar
+
+1: 2c+;4;
+1 2: 2.b-g&;
+2: 2.d&;
+2 2: 2.g&-;
+bar
+
+1: 2.c+;
+1 2: 2.fa;
+2: 2.ca;
+2 2: 2.f-;
+mussym above 1: 1 "ferm";
+endbar
+
+

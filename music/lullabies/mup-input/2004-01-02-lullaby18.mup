@@ -1,0 +1,187 @@
+header
+	title (18) "Lullaby No. 18"
+	title (10) " "
+	title "" "John A. Krallmann (January 2, 2004)"
+
+header2
+	title (12) "Lullaby No. 18 - page \%"
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	scoresep=12,22
+	packfact=1.1
+	measnum=y
+	release=120
+
+voice 1 1
+	release=0
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=78,64";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 
+midi 2 1: 0 "channel=13"; 0 "program=50"; 
+midi 2 2: 0 "channel=14"; 0 "program=50";
+
+1: 2.s;16d+;c+;b;a;
+1 2: 2.s;4r;
+2: 2.s;4r;
+bar
+
+1: 2.e;16e+;d+;c+;b;
+1 2: r;a-c;g-b-;r;
+2: r;a-c;g-d;r;
+bar
+
+1: 2.a;16d;e;f;a;
+1 2: r;df;;r;
+2: r;da;;r;
+bar
+
+1: 2.e+;{8a;b;c+;}3;
+1 2: r;bd+;ac+;r;
+2: r;a-e;;r;
+bar
+
+1: 2.f;{8f;g;a;}3;
+1 2: r;a-c;b-d;r;
+2: r;d-a-;g-d;r;
+bar
+
+1: 1e;
+1 2: r;a-c#;2;
+2: r;a-e;2;
+bar
+
+1: 2.f;{8f;g;a;}3;
+1 2: r;a-c;b-d;r;
+2: r;d-;g-;r;
+bar
+
+1: 1e;
+1 2: r;a-c#;2;
+2: r;a-e;2;
+dblbar
+
+score key=2#
+music
+
+define T
+1: 2.f;{8;fn;e;}3;
+1 2: r;a-d;;r;
+2: r;a-;;r;
+2 2: 1d-;
+bar
+
+1: 2.d;{8;f;a;}3;
+1 2: r;fn-a&-;f#-an-;r;
+2: r;a-;;r;
+2 2: 1d-;
+bar
+
+1: 2.b;{8;d+;e+;}3;
+1 2: r;fa;eg;r;
+2: r;d;e;r;
+2 2: 1g-;
+bar
+
+1: 2.f+;{8d+;c+;cn+;}3;
+1 2: r;ad+;;r;
+2: r;b-;a-;r;
+2 2: 1d-;
+bar
+
+1: 2.b;{8b;a;g;}3;
+1 2: r;df;cg;r;
+2: r;d;e;r;
+2 2: 1g-;
+bar
+
+1: 2.a;{8;g;f;}3;
+1 2: r;a-c;b-d;r;
+2: r;e;f;r;
+2 2: 2f-;b-;
+bar
+
+1: 2.g;{8;a;e;}3;
+1 2: r;b&-d;a-e;r;
+2: r;d;c;r;
+2 2: 1e-;
+bar
+
+1: f;;4.g;8f;
+1 2: a-;;b-;a-;
+2 2: d-;a-;d#-;b-;
+bar
+
+1: 2f;4e;b;
+1 2: a-;a&-;2g-;
+2 2: e-;b-;e;d-;
+bar
+
+1: b;a;g;e;
+1 2: 1e;
+2 2: cn-;g-;2e;
+bar
+
+1: 2.f;4d;
+2 2: d-;a-;2a;
+bar
+
+1: 2.e;{8b;a;g;}3;
+1 2: r;g-;2a-;
+2: r;b-;2c;
+2 2: 1e-;
+bar
+
+1: 2.e;{8g(n);a;b;}3;
+1 2: r;g#-;2a-;
+2: r;b-;2c;
+2 2: 1e-;
+bar
+
+1: 2.e;{8b;a;g#;}3;
+1 2: r;g#-;2a-;
+2: r;b-;2c;
+2 2: 1e-;
+bar
+
+ifdef TWO midi all: 1 "tempo=54"; 4 "tempo=34"; 4.6 "tempo=20"; endif
+1: 2.e;{8c;e;f;}3;
+1 2: r;g#-;2a-;
+2: r;b-;2c;
+2 2: 1e-;
+bar
+@
+T
+
+1: 1e;
+1 2: 1g#-;
+2: 1b-;
+2 2: 1e-;
+dblbar
+
+score transpose=up major 2
+music
+
+define TWO @
+T
+
+midi all: 1 "tempo=32";
+1: 1g#;
+1 2: 1g#-;
+2: 1b-;
+2 2: 1e-;
+endbar

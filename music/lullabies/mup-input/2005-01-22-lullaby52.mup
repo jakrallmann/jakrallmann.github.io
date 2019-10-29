@@ -1,0 +1,182 @@
+header
+	title (18) "Lullaby No. 52"
+	title (10) " "
+	title "" "John A. Krallmann (1/22-23/05)"
+
+header2
+	title (12) "Lullaby No. 52 - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=0.8
+	staffscale=0.8
+	staffsep=18
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=84,74";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "onvelocity=74";
+midi 2 2: 0 "channel=14"; 0 "program=50"; 0 "onvelocity=80";
+
+1: s;a;8g;f;e;f;
+2: s;r;b;c+;
+bar
+
+1: 8e;4.d~;4;8g-;a-;
+2: d-;a-;2f;
+bar
+
+1: 4.g-b-;8c;4b-d;ce;
+2: d-;b-;e;c;
+bar
+
+1: 4.bn-dg#;8a;4cfa;{8b+;a+;g+;}3;
+2: f-;d;f;e;
+bar
+
+1: 4.a+;8g+;4;{8;f+;e+;}3;
+1 2: 2bd+;4;fd&+;
+2: b-;f;d+;b;
+bar
+
+1: 4.g+;8f+;{8;e+;f+;}3;4d+~;
+1 2: 2fc+;a~;
+2: a;c;e+;f+;
+2 2: 2s;2d;
+bar
+
+1: 8d+;;2~;8;c+;
+1 2: a;{8;g;a;}3;2d;
+2: c;b-;f;a-;
+bar
+
+1: d+;2f+;8g+;f+;
+1 2: {8a;b;a~;}3;2.;
+2: 2g-;4d;b;
+bar
+
+1: {8e+;d+;e+;}3;4d+;;c+;
+1 2: 1b;
+2: e+;f+;;e+;
+2 2: 1c;
+bar
+
+rom above all: 3 "Dancing";
+1: 2.a;4ca;
+1 2: {8e;d;e;}3;2a-;4s;
+2: 2f-;c;
+bar
+
+midi all: 1 "tempo=80";
+ital between 1&2: 1 "accel.";
+1: ea;fa;2b~;
+1 2: 2s;{8g;f;g;}3;4d~;
+2: 2f;g-;
+bar
+
+1: b;bg+;gf+;ge+;
+1 2: d;2.s;
+2: 2d;b;
+bar
+
+1: {8d+;c+;d+;}3;2c+;4g#;
+1 2: f;2.e;
+2: 2c;b;
+bar
+
+1: {8b;c+;b;}3;2a;4;
+1 2: d;2.c;
+2: 2f-;c;
+bar
+
+1: {8a;g;a;}3;2f;{8g;f;g;}3;
+1 2: 2d;d&;
+2: 2b-;f;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+staff 1 clef=bass
+music
+
+1: 2.ac+;
+1 2: {8g;f;g;}3;2c;
+2: 2.f-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 2f;4g;
+1 2: {8d&;c;d;}3;2b-;
+2: 2.b-;
+bar
+
+ital above 1: 2 "allargando";
+midi all: 3 "tempo=64";
+1: 2ac+;8f+;e+;
+1 2: {8g;f;g;}3;2a;
+2: 2.f-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+rom above all: 1 "Rubato";
+1: {8e+;d+;c+;}3;4d+;{8e+;d+;e+;}3;4f+;
+1 2: 2f;g;
+2: 2b-;bn-~;
+bar
+
+1: {8f+;e+;f+;}3;{g+;e+;d+;}3;4c+;{8b;f;a;}3;
+1 2: a;2b;4d;
+2: 4b-;2.c;
+bar
+
+score time=3/4
+music
+
+1: 2.eg tie;
+1 2: s;g-;a-;
+2: 2.c-~;
+bar
+
+1: 2eg;4c;
+1 2: 2.b-;
+2: 2.c-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.a;4c+;
+1 2: {8e;d;e;}3;2.a-;
+2: 1f-;
+boldital between 1&2: 1 "p";
+bar
+
+1: {8a+;g+;a+;}3;2f+;4g+;
+1 2: 2gd+~;fd+;
+2: 1b-;
+bar
+
+1: 1ac++;
+1 2: {8g+;f+;g+;}3;2.a+;
+2: 1f-;
+boldital between 1&2: 1 "pp";
+endbar

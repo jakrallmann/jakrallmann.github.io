@@ -1,0 +1,223 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 10"
+	title "" "John A. Krallmann"
+	title " " "(Aug 3, 2014)"
+
+header2
+	title (12) "Nocturne (No. 10) - page \%"
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=70";
+
+1: g;4.e+;16f+;e+;
+2: c;g;e+;
+bar
+
+1: 8g+;f+;4.bn;8c+;
+2: a-;e;c+;
+bar
+
+1: 8a+;g+;4.c+;8d+;
+2: f-;c;a;
+bar
+
+1: 8bn;16d++;c++;8bn+;a+;g+;d+;
+2: g-;d;bn;
+bar
+
+1: 8g;e+;4c+;8r;a;
+2: c;g;e+;
+bar
+
+1:8g;e+;4c+;8r;g;
+2: a-;e;c+;
+bar
+
+1: 8f;g+;4f+;8r;e+;
+2: f-;c;a;
+bar
+
+1: 8d+ bm;e+ ebm;d+;f;a bm;d ebm;
+2: g-;d;bn;
+bar
+
+1: 8e+;g;4c+;8r;d+;
+2: c;g;e+;
+bar
+
+//
+1: 8e+;f#;2~;
+2: a-;e;c+;
+bar
+
+1: 8f;g;e+;4.d+~;
+2: g-;d;bn;
+bar
+
+1: 8d+;en+;4;8f+;g+;
+2: c;g;en+;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8b+;a+;b+;a+;4f+;8bn;c+;
+2: f-;c;a;e+;
+bar
+
+1: 8e+;d+;8.d+;16c#+;4d+;8r;c&+;
+2: b-;a;b;d+;
+bar
+
+1: 8f;g;c&+;b;4g;r;
+2: e-;b-;g;d&-;
+bar
+
+1: 8g;e;;d;4c;8e+;f+;
+2: c-;g-;e;b--;
+bar
+
+//
+
+1: 8g+;c+;;g;4;f;
+2: a--;e;a;c+;
+bar
+
+1: 8a;g;;f;d+;e+;4f+;
+2: g--;bn-;g;d+;
+mussym above 1: 4 "ferm";
+ital between 1&2: 3 "molto rit.";
+bar
+
+1: 8g+;f+;e+;d+;4c+;r;
+2: c;g;e+;b-;
+boldital between 1&2: 1 "p";
+ital between 1&2: 1 "a tempo";
+bar
+
+1: 8g+;f+;e+;bn;4;8r;f+;
+2: a-;e;a;bn;
+bar
+
+1: 8g+;f+;e+;b;4;r;
+2: e-;b-;g;e+;
+bar
+
+1: 8bn;16d++;c++;8bn+;a+;g+;f+;g;d+;
+2: g-;d;bn;d;
+boldital between 1&2: 1 "mf";
+bar
+
+score time=3/4
+music
+
+1: 8g;16e+;d+;4c+;8r;16b;a;
+2: c;g;e+;
+bar
+
+//
+1: 8g;16e+;d+;4c+;8r;16a;g;
+2: a-;e;c+;
+bar
+
+1: 8f;16a+;g+;4f+;8r;16e+;f+;
+2: f-;c;a;
+bar
+
+1: 16d+;e+;d+;f;8a;g~;16;bn;c+;d+;
+2: g-;d;bn;
+bar
+
+score time=4/4
+music
+
+1: 16e+;d+;f;g;2c+;8r;d+;
+2: c;g;e+;b-;
+bar
+
+score time=3/4
+music
+
+1: 16f+;e+;d+;c+;4f;f#;
+2: a-;e;c+;
+bar
+
+score time=4/4
+music
+
+1: 4.f#;8g~;;bn;c+;d+;
+2: g-;d;bn;d;
+bar
+
+score time=3/4
+music
+
+1: 8d+;en+~;16;;f+;g+;c++;b+;a+;g+;
+2: c;g;en+;
+bar
+
+//
+
+score time=4/4
+music
+
+1: 16b+;a+;b+;a+;8g+;f+;bn;c+;d+;e+;
+2: f-;c;a;c;
+bar
+
+1: 8e+;d+;16;d&+;c+;d+;4dn+;16;d&+;c+;bn;
+2: b-;a;b;d+;
+bar
+
+1: 8f;g;16c&+;b;b&&;a;4g;8r;16e;f;
+2: e-;b-;g;d&-;
+bar
+
+1: 8g;e;[grace;slash 1]f;16e;f;e;d;c;g;c+;d+;e+;f+;e+;f+;
+2: c-;g-;e;b--;
+bar
+
+1: 16g+;f+;e+;d+;c+;c;e;f;8g;f;e;f;
+2: a--;e;a;c+;
+bar
+
+1: 16a;g;a;f;d+;c+;d+;bn;f+;e+;f+;d+;g+;f+;e+;d+;
+2: g--;bn-;[with>]a;8g+;g;
+mussym above 1: 4.75 "ferm";
+ital between 1&2: 1 "agitato";
+ital between 1&2: 4 "molto rit.";
+bar
+
+1: 8g+;f+;e+;d+;4c+;r;
+2: c;g;e+;b-;
+boldital between 1&2: 1 "pp";
+ital between 1&2: 1 "tranquilo";
+bar
+
+1: 8g;f;e;d;4c;r;
+2: a-;e;a;g-;
+bar
+
+1: 8g+;f+;e+;d+;2c+;
+octave above 1: 1 "8va" til 4;
+2: 1c-;
+octave below 2: 1 "8va" til 4;
+boldital between 1&2: 1 "ppp";
+ital between 1&2: 1 "rit.";
+endbar

@@ -1,0 +1,131 @@
+header
+	title (18) "Tone Poem (No. 40)"
+	title "" "John A. Krallmann (9/9/07)"
+
+header2
+	title (12) "Tone Poem (No. 40) - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=5/4
+	beamstyle=4,4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.85
+	packfact=0.9
+	release=0
+	scoresep=12,24
+staff 1
+	vscheme=3f
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 1 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=1";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+rom above 1: 1 "Rubato";
+1: r;{8g-;b-;e;}3;{f#;e;b-;}3;{g-;b-;e;}3;{f;e;b-;}3;
+2: {8e-~;e-b- tie;e-b-e tie;}3;1;
+bar
+
+1: r;{8f#-;a-;d;}3;{e;d;a-;}3;{f-;a-;d;}3;{e;d;a-;}3;
+2: {8d-~;d-a- tie;d-a-d tie;}3;1;
+bar
+
+1: r;{<<staff clef=bass>>8e;g;c+;}3;{d+;c+;g;}3;{e;g;c+;}3;{d+;c+;g;}3;
+2: {8c-~;c-g- tie;c-g-d tie;}3;1;
+bar
+
+1: r;{8d#;f#;b;}3;{c#+;b;f;}3;{d;f;b;}3;{c+;d#+;f#+;}3;
+2: {8b--~;b--f#- tie;b--f-b- tie;}3;1;
+bar
+
+staff 1 clef=treble
+music
+
+midi 1 1: 0 "onvelocity=92, 64";
+1: 2.g#bd#+ tie;2;
+1 2: r;{8g#-;b-;e;}3;{f#;e;b-;}3;{g-;b-;e;}3;{d#;b-;g-;}3;
+2: {8e-~;e-b- tie;e-b-e tie;}3;1;
+bar
+
+1: 1g#-;{8r;c#+;g#;}3;
+1 2: r;{8g-;b-;d;}3n;{f;d;b-;}3;{g-;b-;d;}3;{f;c#+;g#;}3;
+2: {8c#-~;c-g#- tie;c-g-f tie;}3;1;
+bar
+
+1: 2g#;4f#;;{8a;b;c#+;}3;
+1 2: r;{8a-;c#;e;}3;{8f;e;c;}3;{f;e;c;}3;4e;
+2: {8f#-~;f-c# tie;f-ce tie;}3;1;
+bar
+
+1: 1c+#;{8a;g#;a;}3;
+1 2: 2d#;{8a-;b-;c#;}3;{d#;c;d;}3;{d;c;b-;}3;
+2: {8b--~;b--f#- tie;b--f-a-;}3;{b-~;b-d# tie;b-df# tie;}3;2.;
+bar
+
+1: 1a;{8a;g#;f#;}3;
+1 2: 2c;{8a-;c;e;}3;{f#;e;f;}3;4c;
+2: {8e-;c;e;}3;{f#;e~;ef tie;}3;2.;
+bar
+
+1: 1g#;{8g;a;b;}3;
+1 2: 1b-;{8g;a;b;}3;
+2: {8e-;b-;e;}3;{f#;e;f;}3;{g#;f;g;}3;{b;g;b;}3;{e+;f#+;g#+;}3;
+bar
+
+1: b;2c#+;{8d+;c+;b;}3;{d+;c+;b;}3;
+1 2: d;2e;{8f#;e;d;}3;{f;e;d;}3;
+2: {8e-;b-;e;}3;{g#;f#;g;}3;{d+;c#+;b;}3;{g;f;e;}3;{g;f;e;}3;
+bar
+
+1: 2b;4a;;;
+1 2: 1c#;4r;
+2: {8a--;e-;b-;}3;{c#;e;g;}3;2.a;
+bar
+
+1: 1a;{8;b;c+;}3;
+1 2: c;{8a-;c;f#;}3;4e;d;{8c;d;e;}3;
+2: {8f#-~;f-d tie;f-df# tie;}3;1;
+bar
+
+1: 2c+;2.dn;
+1 2: 2d#;2.b-;
+2: {8g-;d#;a;}3;{c+;b;a;}3;{g-;dn;g;}3;{a;g;a;}3;{b;a;b;}3;
+bar
+
+1: d+;c+;b;a;{8g;f;c;}3;
+1 2: f;e;d;c;a-;
+2: {8c-;g-;d;}3;{e;g;c+;}3;{a--;e-;b-;}3;{c;e;a;}3;{f-;c;f;}3;
+bar
+
+1: 1e;{8g;c+;g+;}3;
+1 2: 2g-;{8g-;c;d;}3;{e;d;e;}3;4g;
+2: {8c-;g-;d;}3;{e;d;e;}3;2.s;
+bar
+
+1: 2.g+;4c+;;
+1 2: 2.a;4;;
+2: {8f-;c;a;}3;{d+;c+;d+;}3;{f+;e+;d+;}3;{f+;e+;d+;}3;{f+;e+;d+;}3;
+bar
+
+1: 1c+;4d+e+g+;
+1 2: 2e;{8d;e;g;}3;{c+;d+;e+;}3;4s;
+mussym above 1: 5 "ferm";
+ital above 1: 5.4 "lunga";
+octave above 1: 5 "8va";
+2: {8c-;g-;d;}3;{e;g;c+;}3;2.s;
+endbar
+

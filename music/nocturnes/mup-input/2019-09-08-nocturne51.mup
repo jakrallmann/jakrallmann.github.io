@@ -1,0 +1,168 @@
+header
+	title (18) "Nocturne"
+	title "No. 51"
+	title "" "John A. Krallmann"
+	title " " "(Sep 8, 2019)"
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=5&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	scale=0.95
+staff 1
+	vscheme=2f
+	timeunit=8
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=84";
+midi 1: 0 "channel=11"; 0 "onvelocity=96";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=48";
+midi 2: 0 "channel=13"; 0 "onvelocity=44";
+
+define P ifdef MIDI pedal below 1-2: 1; endif @
+
+1: c+ ph;d+;dn+;f+;e+;c+;
+2: a-;e;c+;
+P
+bar
+
+1: c+;d+;e+;g+;f+;c+;
+2: an-;f;c+;
+P
+bar
+
+1: c+;b;c+;d+;4f~;
+2: b-;f;d+;
+P
+bar
+
+1: 4.f;8gn;a;b;
+2: e-;b-;8f;gn;
+P
+bar
+
+1: b;c+;[with>]4.dn;8f;
+2: a-;e;bn;
+P
+bar 
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4e eph;8ph above;f;4.a-;8b-;
+2: c;d;f;f&;
+ifdef MIDI pedal below 1-2: 1;2; endif
+bar
+
+score time=3/4
+staff 1 timeunit=8
+music
+
+1: c;e;4a;8d+;c+;
+2: e-;c;f&;
+P
+bar
+
+1: c+;b;4.e eph;8d ph;
+2: e;g;f;
+ifdef MIDI pedal below 1-2: 1;3.5; endif
+bar
+
+1: c;e;a;d+;8.c+;16a;
+2: a-;e;g;
+P
+bar
+
+midi all: 3 "tempo=76"; 3.5 "tempo=64"; 4 "tempo=84";
+1: e+;d+;f;a;d+;c+ eph;
+2: d-;a-;f;
+mussym above all: 3.9 "rr";
+P
+bar
+
+1: c&+ ph;a;e;a;8.d+;16c+;
+2: a-;e;c&+;
+P
+bar
+
+1: 2.b eph;
+1 2: r;e;f&;e;f;e;
+2: gn-;e;b;
+P
+bar
+
+1: 4.b&& ph;8;8.a;16g;
+1 2: r;e;2f&;
+2: g-;d;c&+;
+P
+bar
+
+1: 2.a eph;
+1 2: r;d;e;d;e;d;
+2: f&-;a-;c&;
+P
+bar
+
+1: [grace;slash1]8b&&;2.a ph;
+1 2: r;d;e;d;e;d;
+2: an-;en;an;
+P
+bar
+
+1: [grace;slash1]8a;2.g;
+1 2: r;d;e;d;e;d;
+2: e-;g;b&&-;
+P
+bar
+
+1: [grace;slash1]8e;2.g;
+1 2: r;c;e;c;e;c;
+2: f-;c;f;
+P
+bar
+
+1: [grace;slash1]8e;2.f;
+1 2: r;b-;c;b-;c;b-;
+2: f-;c;f;
+P
+bar
+
+1: 2.f;
+1 2: r;an-;c;a-;d;c;
+2: f-;c;e;
+P
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.c+;
+1 2: e;f;g;f;g;f;
+2: b--;f-;c;
+P
+bar
+
+midi all: 1 "tempo=84 to 64" til 1m+1;
+midi 1-2 1-2: 3 "onvelocity=48";
+1: 2b eph;8b ph;c+;
+1 2: e;d;e;f;4s;
+boldital between 1&2: 3 "pp";
+2: b--;f-;8d ph;e;
+ital below all: 3 "senza pedale";
+ifdef MIDI pedal below 1-2: 1;2.75*; endif
+bar
+
+1: 2.d+ eph;
+2: 2.f eph;
+endbar

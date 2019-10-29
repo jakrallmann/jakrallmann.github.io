@@ -1,0 +1,81 @@
+header
+	title (18) "Tone Poem (No. 42)"
+	title "" "John A. Krallmann (February 2008)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	key=4#
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	scoresep=10,26
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=42";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=70";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=70";
+
+rom above all: 1 "Largo";
+1: 16g+;f+;a+;g+;f+;b#;c+;d+;e+;f+;b+;a+;
+2: 8c-;8.gc+e+;16fad+ tie;8;egc+;dgb;
+bar
+
+1: 4.g+;16f+;e+;d+;c+;b#;d+;
+2: 8c-;8.gc+e+;16f-~;8;fad+;g-;
+bar
+
+1: 16g;e+;d+;c+;g;a;b;c+;d+;e+;b+;a+;
+2: 8c-;8.gc+e+;16fc+d+ tie;8;egc+;fad+;
+bar
+
+1: 8g+;[grace;slash 1];16e++;d++;c++;a+;g+;f+;e+;f+;b+;a+;
+2: 8c-;8.gc+e+;16fad+ tie;8;eac+;dab;
+bar
+
+1: 16g+;f+;g+;e+;c+;d+;e+;c+;a;g;f;g;
+2: 8c-;8.gc+e+;16fc+d+ tie;8;eac+;dac+;
+bar
+
+1: 16c+;g;c+;d+;e+;d+;c+;b;a;g;f;e;
+2: 8c-;8.eac+;16fad+ tie;8;dac+;g-dcn+;
+roll 2: 6;
+bar
+
+1: 8.d;16c;d;e;f;g;8b;g;
+1 2: 4.s;8;16f;e;d;e;
+2: 8c-;8.cea;16f-ca tie;8;g-e;c;
+2 2: 4.s;4;16f;g;
+bar
+
+1: 16f;e;f;e;c;e;f;g;b;a;g;f;
+1 2: 8c;b-;s;;c;d;
+2: 8a-e;8.g-e;16f-ca tie;8;a-e;b-a;
+bar
+
+1: 8g;a;16c+;d+;e+;f+;;c+;cn+;a;
+1 2: 16d;c;e;d;a;f;e;g;a;e;8;
+2: 8c-g-e;8.f-ca;16g-eb tie;8;a-ec+;a-fcn+;
+bar
+
+1: 8.gb;16g;f;e;b;a;b;g;f;e;
+1 2: 16f;b-;4e;4.s;
+2: 8e-b-~f;8.b-g;16cefa tie;8;b-eg;cea;
+bar
+
+1: 4.gb;;
+1 2: 16f;b-;4e;16f;b-;4e;
+2: 8e-b-~f;4b-g;8e-b-~f;4b-g;
+endbar

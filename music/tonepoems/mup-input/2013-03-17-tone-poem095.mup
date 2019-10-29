@@ -1,0 +1,86 @@
+header
+	title (16) "Tone Poem (No. 95)"
+	title (14) " "
+	title "" "John A. Krallmann (March 17, 2013)"
+
+footer
+	title (12) "\(copyright) Copyright 2013 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Tone Poem (No. 95) - \%"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=68";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=13"; 0 "program=0";
+midi 2 1: 0 "channel=14"; 0 "program=0";
+
+1: 2.s;{8g+;f+;e+;}3;
+2: 2.s;4r;
+bar
+
+1: f#d#+;ge+;d#b;ec+;
+2: c;egc+;g-;egc+;
+bar
+
+1: b-g#;ca;af+;{8f+;e+;d+;}3;
+1 2: 2.s;4g;
+2: f-;cf;d-;cg#d+;
+bar
+
+1: b-f#;b-g;ca;b-g;
+2: g-f;dg;g-f;dg;
+bar
+
+1: 4.f+;16e+;d+;4.g-g;8b&;
+1 2: 2a&;4d;e;
+2: c-;dfa&;c-;g-e;
+bar
+
+1: 4.a;8c+;4.b;8d+;
+1 2: 8e;16d;c#;4d;{4f;8c~;}3;4;
+2: f-;cfa;g-;dgb;
+bar
+
+1: {8c++;b+;a+;}3;{b;c+;e+;}3;2fa;
+1 2: e+;e;{8e;d;c;}3;{4d;8c;}3;
+2: a--;eac+;d-;cdf;
+bar
+
+1: 4.f;8d#;4.e;8g;
+1 2: {8b-;a-;g-;}3;4b-;{8b-;a-;g-;}3;4b-;
+2: g-;df;c-;g-ce;
+bar
+
+1: 4.e;8g;4c+~;{8;d+;e+;}3;
+1 2: {8b-;a-;g-;}3;4a-;{8a;g;f;}3;4a;
+2: c-;g-ce;f-;cfa;
+bar
+
+1: d+~;{8;e+;f+;}3;4e+~;{8;d+;c+;}3;
+1 2: {8f;g;b;}3;4f;{8b;c+;b;}3;4e;
+2: g-;dgb;a-;eac+;
+bar
+
+1: 2c+;g;
+1 2: {8a&;g;a;}3;{c;d;c;}3;{d;e;d;}3;4g-;
+2: f-;cfa&;c-;g-e;
+bar
+
+1: f;d;2e;
+1 2: {8a&-;b&-;a-;}3;{f-;a-;f-;}3;2g-;
+2: f-;c;2c-;
+endbar

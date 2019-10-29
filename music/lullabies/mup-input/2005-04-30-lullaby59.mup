@@ -1,0 +1,288 @@
+header
+	title (18) "Lullaby No. 59"
+	title "" "John A. Krallmann (Apr 30-May 1, 2005)"
+
+header2
+	title (12) "Lullaby No. 59 - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+	size=14
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=110";
+midi 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=76,64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1-2: 0 "channel=13"; 0 "program=1";
+
+1: s;;b-~;
+2: g-;d;g;
+bar
+
+1: b-;g;f~;
+2: f;e;d;
+bar
+
+1: f;e;g;
+2 : c;g;b-;
+bar
+
+1: c;d;e;
+2: a-;e;g;
+bar
+
+1: f;g;a;
+2: d-;a-;c+;
+bar
+
+1: a;b;c+;
+2: f-;d;e+;
+bar
+
+1: 2b;8d+;c+;
+2: g-;f+;e+;
+bar
+
+1: b;g;a;
+2: g-;2e&+;
+bar
+
+1: 2b;4g+;
+2: g-;f+;e+;
+bar
+
+1: g+;f+;e+;
+2: c-;<<staff clef=treble>>e;a;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2d+;4b;
+2: b-;g;d+;
+bar
+
+1: g;a;b;
+2: c#;b;e+;
+bar
+
+1: 2.b;
+2: d;c+;e+;
+bar
+
+1: 2d+;4a+;
+2: 2.f+;
+bar
+
+1: 2.g+~;
+2: g-;d;b;
+bar
+
+1: 2g+;4;
+2: 2.b;
+bar
+
+1: 2.g+~;
+2: e&;b&;g+;
+bar
+
+1: g+;fn+;e&+;
+2: 2.g+;
+bar
+
+1: 2.d+~;
+1 2: r;g;f;
+2: b-;2gd+;
+bar
+
+1: d+;c+;b;
+1 2: 2.g;
+2: b-;2gd+;
+bar
+
+1: 2.c+~;
+1 2: r;f;e;
+2: a-;2ec+;
+bar
+
+1: c+;b;a#;
+1 2: 2.f;
+2: d-;2fc+d+;
+bar
+
+1: 2.b~;
+1 2: f;e;d;
+2: g-;2db;
+bar
+
+1: b;a;g;
+1 2: 2.e;
+2: c-;2ec+;
+bar
+ 
+1: 2.fa;
+1 2: e;d;c;
+2: d-;2f;
+bar
+
+1: 2.g~;
+1 2: 2b-;4c;
+2: r;d;e;
+2 2: 2.g-~;
+bar
+
+1: 2.g;
+1 2: d;c;b-;
+2: fn;e;d;
+2 2: 2.g-;
+dblbar
+
+score key=0#
+music
+
+1: 2.c+e+;
+2: c-;<<staff clef=treble>>deg;ceg;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2gbe+;8b;c+;
+2: e-;2gbe+;
+bar
+
+1: 2.fa;
+1 2: e;d;c;
+2: f-;2fa;
+bar
+
+1: 2.b-d;
+1 2: a-;g-;f-;
+2: 2g--;4g-;
+bar
+
+1: 2.ce;
+1 2: b-;2a-;
+2: 2a--;4g-e;
+bar
+
+1: 2g;4e;
+1 2: r;2g-b-;
+2: e-;2b-e;
+bar
+
+1: d;c;d;
+1 2: 2.f-a-;
+2: 2.c;
+2 2: 2f-;4f#-;
+bar
+
+1: d;e;f;
+1 2: 2.g-b-;
+2: 2.d;
+2 2: 2g-;4f-;
+bar
+
+1: g;c+;b;
+1 2: 2.g-c;
+2: 2.e-c;
+bar
+
+1: gb;fa;8b;c+;
+1 2: 2.c;
+2: 2.c;
+2 2: 2f-;4e-;
+bar
+
+1: f+;e+;d+;
+1 2: 2.fc+;
+2: 2d-a-;4c+;
+bar
+
+1: 2d+;8e+;f+;
+1 2: a&c+;2gb;
+2: 2.f;
+2 2: 2g-;4f-;
+bar
+
+1: g+;c++;a+;
+1 2: 2.gc+;
+2: 2e-c;4f#-d;
+bar
+
+1: 2bb+;4d+b+;
+2: d;f;e;
+2 2: 2g-;4g#-;
+bar
+
+1: b+;a+;b+;
+1 2: 2c+;4a;
+2: 2.e;
+2 2: 2a-;4g-;
+bar
+
+1: c++;a+;f+;
+1 2: 2.a;
+2: 2.f-ca;
+bar
+
+1: b+;g+;a+;
+1 2: 2.ge+;
+2: 2.e-b-g;
+bar
+
+1: 2.be+b+;
+2: 2.e-b-g;
+bar
+
+1: a+;f+;g+;
+1 2: 2.ad+;
+2: 2.d-a-f;
+bar
+
+1: 2.aa+;
+2: 2.d-a-f;
+bar
+
+1: a+;f+;g+;
+1 2: 2.ad+;
+2: 2.d-a-f;
+ital between 1&2: 1 "rit. e dim.";
+bar
+
+1: a+;c++;d++;
+1 2: 2.a;
+2: 2.d-a-f;
+bar
+
+staff 2 clef=treble
+music
+
+1: 2.a+~;
+1 2: c+;b;c+;
+octave above 1: 1 "8va" til 1m+3;
+boldital between 1&2: 1 "pp";
+2: 2.ae+ tie;
+bar
+
+1: 2.a+;
+1 2: 2.a;
+2: 2.ae+;
+endbar

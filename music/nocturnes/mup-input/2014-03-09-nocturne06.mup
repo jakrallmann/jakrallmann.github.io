@@ -1,0 +1,130 @@
+header
+	title (18) "Nocturne"
+	title (10) "No. 6"
+	title "" "John A. Krallmann"
+	title " " "(Mar 9, 2014)"
+
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	timeunit=4
+	scoresep=10,26
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	vscheme=2f
+music
+
+midi all: 0 "tempo=90";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=98,70";
+midi 1 2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=64";
+
+1: 2.s;8c+;c&+;
+2: 2.s;4r;
+bar
+
+1: b;8g+;f+;en+;d+;c+;b;
+2: c-;gc+en+;g-;gc+e+;
+bar
+
+1: g#;a;8;b;a;gn;
+2: f-;ac+f+;en-;enac+;
+bar
+
+1: 8.g bm;32a;g ebm;8f bm;en ebm;d bm;en+;d+;a ebm;
+2: d-;cfa;b--;f#ae+;
+bar
+
+1: 8.c+ bm;32d+;c+ ebm;8b bm;a ebm;g bm;c++;b+;g+ ebm;
+2: g-;gbd+;e-;gc+e+;
+bar
+
+1: 8.g+ bm;32a+;g+ ebm;4f+;8. bm;32g+;f+ ebm;{8e+ bm;d+;c+ ebm;}3;
+2: f-;ac+f+;e-;ceg&b;
+bar
+
+1: 8f+;e++;d++;c++;4b+;a+;
+2: f-;fc+e+;2ac+e+g&+;
+octave below 2: 1 "8va";
+bar
+
+//
+1: a+;b+;2;
+2: g-;gbd+;f-;gbd+;
+bar
+
+1: a+;b+;;8d++;c++;
+2: e-;gc+e+;c-;gc+e+;
+bar
+
+1: 2.a+f#++;4f#+;
+2: d-;da;2af#+;
+octave above 1: 2.5 "8va" til 2m+2.9;
+bar
+
+1: 2.ge+g+;8a+;g+;
+2: c-;ge+;2be+g+;
+bar
+
+1: ad+f#+;gbe+;f#ad+;dfa;
+2: d-;d;a;a+;
+bar
+
+1: c+a+c++;bg+b+;af#+a+;bg+b+;
+2: g-;d;c+;d+;
+octave below 2: 1 "8va";
+bar
+
+1: af#+a+;ge+g+;f#e+f+;ge+g+;
+2: e-;g;c+;b;
+bar
+
+1: fc+f+;fbf+;faf+;f#af#+;
+2: d-;d;a;d+;
+bar
+
+//
+
+1: f#af#+;ge+g+;2gc+g+;
+2: e-;g;8e+;d+;c+;b;
+bar
+
+1: 2.e+a+;8g+;f+;
+1 2: 2g;4f;s;
+2: 8f-;c;a;b;2c+;
+bar
+
+1: 2.bg+b+;8d++;c++;
+2: 8g-;d;g;a;2b;
+bar
+
+1: 2.ge+b+;8c++;b+;
+roll 1: 1;
+2: 8c-;d;e;g;2c+;
+bar
+
+1: 2ge+a+;4.f#d+a+;8d+;
+2: 8d-;a-;d;e;2a;
+roll 1: 1;2;
+mussym above all: 2 "ferm";
+bar
+
+1: 1bng+bn+;
+2: 8g-;d;g;a;2bn;
+octave below 2: 1 "8va";
+endbar
+

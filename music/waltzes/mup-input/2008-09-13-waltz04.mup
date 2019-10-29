@@ -1,0 +1,172 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann (9/13/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=100";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 1: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+1: 2s;4g;
+2: 2s;4r;
+bar
+
+1: 2e+;8d#+;e+;
+2: c-;2gc+e+;
+bar
+
+1: 8d(n)+;c+;4d+;8g+;f+;
+2: g#-;2g#c+f+;
+bar
+
+1: 2e+;8f#;g;
+2: c-;2gc+e+;
+bar
+
+1: 8b;c+;4a;8d+;c+;
+2: f-;2ac+f+;
+bar
+
+1: 2e+;4g+;
+1 2: 8g;g#;a;g;4gn;
+2: c-;2gc+e+;
+bar
+
+1: f+;;;
+1 2: 8a;b;d+;c+;a;g#;
+2: f-;2ac+f+;
+bar
+
+1: d#+;e+;c+;
+1 2: 8f#;g;a;g;4e;
+2: c-;2gc+e+;
+bar
+
+1: 8d+;e+;f#+;e+;d+;c+;
+1 2: 2.a;
+2: f#-;2ad+f#+;
+bar
+
+1: gb;fa;eg;
+2: g-;2gbd+;
+bar
+
+1: df;b-d#;ce;
+2: g-;2c-;
+bar
+
+1: db;ca;af+;
+2: f-;2cfa;
+bar
+
+1: ge+;fd+;ge+;
+2: g-;2gbd+;
+bar
+
+1: fd+;ec+;da#;
+2: c-;2gc+;
+bar
+
+1: g#b;ac+;c+a+;
+2: f-;2fac+;
+bar 
+
+1: ba+;bg+;8d+;e+;
+2: g-;2bd+;
+bar
+
+1: af+;;c+e+;
+2: d-;2fad+;
+bar
+
+1: fae+;bd+;g;
+2: g-;2gd+;
+bar
+
+1: e+c++;;c+e+;
+2: a-;2gc+e+;
+bar
+
+1: ag+;af+;8d+;e+;
+2: d-;2ad+f+;
+bar
+
+1: af+;bg+;8c#+;d+;
+1 2: 2s;4f;
+2: g-;2gbd+;
+bar
+
+1: a&f+;ge+;c+;
+2: c-;2gc+e+;
+bar
+
+1: fa;ea;da;
+2: f-;2fa;
+bar
+
+1: 2b-d;8ce;df;
+2: g-;2dfg;
+bar
+
+1: eg;;fa;
+2: c-;2cb&;
+bar
+
+1: db&;eb;e+c++;
+2: c-;2cb&;
+bar
+
+1: af+;ge+;fd+;
+octave above 1: 1 "8va" til 3.5;
+2: d-;2ad+f+;
+bar
+
+1: 2.a+;
+1 2: c+d+;bd+;ac+;
+2: a-;2ae+;
+bar
+
+1: f+d++;e+c++;d+b&+;
+2: b&-;2fd+f+;
+bar
+
+1: 2c+a+;4af+;
+2: f-;2ac+f+;
+bar
+
+1: 2b&g+;4af+;
+2: g-;2gb&d+;
+bar
+
+1: 2ge+;4ec+;
+2: c-;2ec+;
+bar
+
+1: 2.fd+;
+2: 2.d-a-;
+bar
+
+1: 2.fd+;
+2: 2.d-a-;
+endbar
+

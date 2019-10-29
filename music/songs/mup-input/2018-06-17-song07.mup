@@ -1,0 +1,170 @@
+
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title " " "(June 17, 2018)"
+
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	scale=0.85
+staff 1
+	vscheme=2o
+voice 1 2
+	timeunit=4.
+staff 2
+	clef=bass
+	timeunit=4.
+music
+
+
+midi all: 0 "tempo=112";
+1: g;;d+;;;e+;
+1 2: g;f;
+2: g-;d;
+bar
+
+1: d+;c+;b;4c+;8d+;
+1 2: e;;
+2: a&-;e;
+bar
+
+1: c+;bn;a;4.b;
+1 2: d;;
+2: g-;d;
+bar
+
+1: c;a&;;;b;a;
+1 2: c;;
+2: a&-;e;
+bar
+
+1: a&;g;;4.;
+1 2: c;bn-;
+2: g-;d;
+bar
+
+1: f;;;;g;f;
+1 2: a&-;;
+2: f-;c;
+bar
+
+1: f;e;;4.;
+1 2: g-;;
+2: e-;b&-;
+bar
+
+1: d&;;;;e;d;
+1 2: f-;;
+2: d&-;a&-;
+bar
+
+1: d&;c;;;dn;en;
+1 2: f-;en-;
+2: c-;g-;
+bar 
+
+1: g;a&;;;b;a;
+1 2: a&-;c;
+2: f-;c;
+bar 
+
+1:a&;g;;4.;
+1 2: c;bn-;
+2: g-;d;
+bar
+
+1: d;;;;e;d;
+1 2: f-;;
+2: bn--;g-;
+bar
+
+1: d;c;;;f;g;
+1 2: f-;e-;
+2: c-;g-;
+bar
+
+1: a;c+;g;a;c+;g;
+1 2: c;;
+2: f-;c;
+bar
+
+1: a;b;;;g+;f+;
+1 2: c;d;
+2: g-;d;
+bar
+
+1: f+;en+;;;d+;c+;
+1 2: g;;
+2: c;g;
+bar
+
+1: b;a;;4.;
+1 2: d;c;
+2: f-;c;
+bar
+
+1: d;;;g;f;d;
+1 2: f-;g-;
+2: b-;bn-;
+bar
+
+1: f;en;;4.;
+1 2: g-;b-;
+2: c;c-;
+bar
+
+1: en;;;a;g;e;
+1 2: a-;c#;
+2: c#-;a-;
+bar
+
+1: g;f;;4.;
+1 2: a-;;
+2: d-;4d;8c-;
+bar
+
+1: en;d;;4.;
+1 2: f-;g-;
+2: b--;f-;
+bar
+
+1: d;c;;4;8b-;
+1 2: f-;en-;
+2: c-;g-;
+dblbar
+
+score key=2#
+music
+
+1: 4.a-;4d;8f;
+1 2: 8e-;f-;;4.;
+2: d-;a-;
+bar
+
+1: f;e;;4;8d;
+1 2: g#-;gn-;
+2: e-;b-;
+bar
+
+1: f;e;;;b-;c;
+1 2: g#-;gn-;
+2: e-;a-;
+bar
+
+1: 4d;16a;b;4.d+;
+1 2: f-;f;
+2: d-;d;
+endbar
+
+
