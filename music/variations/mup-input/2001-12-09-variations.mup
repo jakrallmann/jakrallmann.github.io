@@ -1,0 +1,569 @@
+header
+	title (18) "Theme and Variations"
+	title (12) "" "John A. Krallmann (12/9/01)"
+
+header2
+	title (12) "Theme and Variations - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define B 2 1: @
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.75
+	measnum=y
+staff 1
+	vscheme=2f
+	ifdef MIDI
+		transpose=down perfect 8
+	endif
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=24"; 0 "onvelocity=88"; 0 "param=10,84";
+midi 1 2: 0 "channel=12"; 0 "program=24"; 0 "onvelocity=72"; 0 "param=10,78";
+midi 2 1: 0 "channel=13"; 0 "program=42"; 0 "onvelocity=32"; 0 "param=10,46";
+
+S e+;d+;c+;d+;
+A g;f;e;f;
+B 1c;
+bar
+
+S e+;d+;c+;b;
+A g;f;e;g;
+B 1c-;
+bar
+
+S a;g;f;e;
+A c;b-;a-;c;
+B 1f-;
+bar
+
+S d;e;f;g;
+A b-;g-;d;b-;
+B 1g-;
+bar
+
+S c+;d+;e+;g+;
+A e;f;g;b;
+B 1c;
+bar
+
+S f+;e+;d+;c+;
+A a;g;f;d;
+B 1d;
+bar
+
+S c+;b;a;g;
+A f;d;b-;f;
+B 1g;
+bar
+
+S g;f;8e;g;a;b;
+A e;a-;2c;
+B 2.c;4b-;
+bar
+
+S 4.c+;8d+;4e+;f+;
+A 2e;a;
+B 2a-;f-;
+bar
+
+S 2d+;e+;
+A f;a;f;b;
+B 1g-;
+bar
+
+midi all: 3 "tempo=84"; 5 "tempo=96";
+S 2c+;;
+A 2e;;
+B 2c;;
+dblbar
+
+newscore
+///
+
+midi 2 1: 0 "onvelocity=36";
+S e+;d+;c+;d+;
+A 8e+;g;d+;g;c+;g;d+;g;
+B 1c;
+bar
+
+S e+;d+;c+;b;
+A 8e+;g;d+;g;c+;g;b;e;
+B 1c-;
+bar
+
+S a;g;f;e;
+A 8a;c;g;c;f;c;e;a-;
+B 1f-;
+bar
+
+S d;e;f;g;
+A 8d;g-;e;g-;f;a-;g;b-;
+B 1g-;
+bar
+
+S c+;d+;e+;g+;
+A 8c+;e;d+;f;e+;g;g+;b;
+B 1c;
+bar
+
+S f+;e+;d+;c+;
+A 8f+;a;e+;g;d+;f;c+;d;
+B 1d;
+bar
+
+S c+;b;a;g;
+A 8c+;f;b;d;a;b-;a-;b-;
+B 1g;
+bar
+
+S g;f;8e;g;a;b;
+A 8e;g-;a-;b-;2c;
+B 2.c;4b-;
+bar
+
+S 4.c+;8d+;4e+;f+;
+A 2e;a;
+B a-;g-;f-;d-;
+bar
+
+S 2d+;4e+;d+;
+A f;a;f;b;
+B 1g-;
+bar
+
+midi all: 3 "tempo=84"; 5 "tempo=96";
+S 2c+;;
+A 2e;;
+B 2c;;
+dblbar
+
+newscore
+//
+
+midi 2 1: 0 "onvelocity=40";
+S e+;d+;c+;d+;
+A 8e+;g;d+;g;c+;g;d+;g;
+B 2.c;4b-;
+bar
+
+S e+;d+;c+;b;
+A 8e+;g;d+;g;c+;g;b;e;
+B 2.c-;4e-;
+bar
+
+S a;g;f;e;
+A 8a;c;g;c;f;c;e;a-;
+B 2.f-;4f#-;
+bar
+
+S d;e;f;g;
+A 8d;g-;e;g-;f;a-;g;b-;
+B 2.g-;4b-;
+bar
+
+S c+;d+;e+;g+;
+A 8c+;e;d+;f;e+;g;g+;b;
+B 2.c;4e;
+bar
+
+S f+;e+;d+;c+;
+A 8f+;a;e+;g;d+;f;c+;d;
+B 2.d;4f;
+bar
+
+S c+;b;a;g;
+A 8c+;f;b;d;a;b-;a-;b-;
+B 2g;g-;
+bar
+
+S g;f;8e;g;a;b;
+A 8e;g-;a-;b-;2c;
+B 2.c;4b-;
+bar
+
+S 4.c+;8d+;4e+;8f+;g+;
+A 2e;a;
+B a-;g-;f-;d-;
+bar
+
+S 2d+;4e+;d+;
+A 8f;g;a;g;f;b;a;b;
+B g-;b-;2g-;
+bar
+
+midi all: 3 "tempo=84"; 5 "tempo=96";
+S 2c+;;
+A e;8f;g;2e;
+B c;g-;2c;
+dblbar
+
+newscore
+///
+midi 2 1: 0 "onvelocity=44";
+S e+;d+;c+;d+;
+A {8e+;g;e+;}3;{d+;g;d+;}3;{c+;g;c+;}3;{d+;g;d+;}3;
+B 2.c;4b-;
+bar
+
+S e+;d+;c+;b;
+A {8e+;g;e+;}3;{d+;g;d+;}3;{c+;g;c+;}3;{b;e;b;}3;
+B 2.c-;4e-;
+bar
+
+S a;g;f;e;
+A {8a;c;a;}3;{g;c;g;}3;{f;c;f;}3;{e;a-;e;}3;
+B 2.f-;4f#-;
+bar
+
+S d;e;f;g;
+A {8d;g-;d;}3;{e;g-;e;}3;{f;a-;f;}3;{g;b-;g;}3;
+B 2.g-;4b-;
+bar
+
+S c+;d+;e+;g+;
+A {8c+;e;c+;}3;{d+;f;d+;}3;{e+;g;e+;}3;{g+;b;g+;}3;
+B 2.c;4e;
+bar
+
+S f+;e+;d+;c+;
+A {8f+;a;f+;}3;{e+;g;e+;}3;{d+;f;d+;}3;{c+;d;c+;}3;
+B 2.d;4f;
+bar
+
+S c+;b;a;g;
+A {8c+;f;c+;}3;{b;d;b;}3;{a;b-;a;}3;{b-;a-;b-;}3;
+B 2g;g-;
+bar
+
+S g;f;{8e;f;g;}3;{a;b;d+;}3;
+A {8e;g-;e;}3;{a-;b-;a-;}3;2c;
+B 2.c;4b-;
+bar
+
+S 4c+;{8c+;d+;e+;}3;4e+;{8e+;f+;g+;}3;
+A 2e;a;
+B a-;g-;f-;d-;
+bar
+
+S 2d+;4e+;d+;
+A {8f;g;a;}3;{f;g;a;}3;4f;{8g;a;b;}3;
+B g-;b-;2g-;
+bar
+
+midi all: 3 "tempo=84";
+S 2c+;;
+A e;{8g;f;e;}3;2e;
+B c;g-;2c;
+dblbar
+
+newscore
+///
+midi all: 0 "tempo=80";
+midi 2 1: 0 "onvelocity=48";
+S e+;d+;c+;d+;
+A 16e+;g;c+;e+; d+;g;b;d+; c+;e;g;c+; d+;g;b;d+;
+B 2.c;4b-;
+bar
+
+S e+;d+;c+;b;
+A 16e+;g;c+;e+; d+;g;b;d+; c+;e;g;c+; b;e;g;b;
+B 2.c-;4e-;
+bar
+
+S a;g;f;e;
+A 16a;c;f;a; g;a-;c;g; f;a-;c;f; e;a-;c;e;
+B 2.f-;4f#-;
+bar
+
+S d;e;f;g;
+A 16d;g-;b-;d; e;g-;d;b-; f;a-;c;f; g;f;d;g-;
+B 2.g-;4b-;
+bar
+
+S c+;d+;e+;g+;
+A 16c+;e;g;c+; d+;f;a;d+; e+;g;c+;e+; g+;b;d+;c+;
+B 2.c;4e;
+bar
+
+S f+;e+;d+;c+;
+A 16f+;a;c+;f+; e+;g;c+;e+; d+;f;a;d+; c+;d;f;a;
+B 2.d;4f;
+bar
+
+S c+;b;a;g;
+A 16c+;d;f;a; b;d;f;a; a;b-;d;f; b-;g-;a-;b-;
+B 2g;g-;
+bar
+
+S g;f;8e;g;a;b;
+A 16e;g-;c;e; a-;c;b-;a-; 4c; 8d;16g;f;
+B 2.c;4b-;
+bar
+
+S 4.c+;8d+;4e+;8f+;g+;
+A 16e;c;e;g; e;c;e;g; a;c+;a;f; a;b;c+;d+;
+B a-;g-;f-;d-;
+bar
+
+S 2d+;4e+;d+;
+A 16c+;a;f;d; a;g;f;d; f;a;c+;a; b;a;g;d;
+B g-;b-;2g-;
+bar
+
+midi all: 1 "tempo=84"; 2 "tempo=76"; 3 "tempo=60"; 5 "tempo=96";
+S 2c+;;
+A 16e;d;c;g-; c;d;e;g; 2e;
+B c;g-;2c;
+dblbar
+
+/////
+
+midi 2 1: 0 "onvelocity=32";
+S 2.e+;8f+;g+;
+A r;gc+;2;
+B 1c;
+bar
+
+S 2.d+;8e+;f+;
+A r;fa;2gb;
+B 1b-;
+bar
+
+S 2.c+;8b;c+;
+A r;ea;2;
+B 1a-;
+bar
+
+S 1d+;
+A r;ac+;gb;fa;
+B 1g-;
+bar
+
+S 2.e+;8g+;e+;
+A r;gc+;2;
+B 1c;
+bar
+
+S 2.d+;8a;b;
+A r;fa;2gb;
+B 1b-;
+bar
+
+S 2.c+;8b;a;
+A r;ea;2fa;
+B 2a-;f-;
+bar
+
+S 1b;
+A r;fa;eg;df;
+B 1g-;
+bar
+
+S 2.a;8g;f;
+A r;cf;2;
+B 1f-;
+bar
+
+S 2.g;8c;e;
+A r;de;2ce;
+B 1e-;
+bar
+
+S 1f;
+A r;dc;b-d;a-c;
+B 1d-;
+bar
+
+S 1e;
+A r;a-b-;2g#-b-;
+B 1e-;
+bar
+
+S 2.d;8g;f;
+A r;f-a-;2g-b-;
+B 1f-;
+bar
+
+S 2.e;8c;e;
+A r;b-d;2a-c;
+B 1a-;
+bar
+
+S 2.f;4g;
+A r;a-c;2;
+B 1f-;
+bar
+
+S 1g;
+A r;g-b-;a-c;b-d;
+B 1g-;
+bar
+
+S 2.c+;8d+;e+;
+A r;eg;2;
+B 1c;
+bar
+
+S 2.d+;8e+;f+;
+A r;fa;2gb;
+B 1b-;
+bar
+
+S 2.e+;8d+;c+;
+A r;gc+;2;
+B 1b&-;
+bar
+
+S 1g+;
+A r;ac#+;bd+;c+e+;
+B 1a-;
+bar
+
+S 2.f+;4d+;
+A r;ac+;2ac+;
+B 2d;g-;
+bar
+
+S 2.e+;4c+;
+A r;bd+;2ac+;
+B 2c;f-;
+bar
+
+S 2.d+;4b;
+A r;ab;2g#b;
+B 2b-;e-;
+bar
+
+S 1c+;
+A r;ea;2;
+B 2.a-;4g-;
+bar
+
+S 2.c+;8d+;c+;
+A r;fa;2;
+B 2f-;d-;
+bar
+
+S 2.b;8a;g;
+A r;dg;2;
+B 2g-;d-;
+bar
+
+S 2.a;4f;
+A r;cf;2df;
+B 2f-;d-;
+bar
+
+S 1g;
+A r;g-b-;a-c;b-d;
+B 1g-;
+bar
+
+S 1g;
+A r;ce;;;
+B 1c;
+bar
+
+S 2.f;4g;
+A r;a-d;2b-d;
+B 2d;g-;
+bar
+
+S 2e;g;
+A r;g-c;r;ce;
+B 2c;b&-;
+bar
+
+S 2a;b;
+A r;cf;r;dg;
+B 2f-;g-;
+bar
+
+S 1c+;
+A r;eg;;;
+B 1c;
+bar
+
+S 2.c+;4d+;
+A r;eg;2;
+B 1b&-;
+bar
+
+S 1e+;
+A r;ac#+;;;
+B 2a-;g-;
+bar
+
+S 1f+;
+A r;ac+;;;
+B 1f-;
+bar
+
+S 1d+~;
+A r;ac+;gb;fa;
+B 1g-;
+bar
+
+S 1d+;
+A eg;df;ce;b-d;
+B 1g-;
+bar
+
+S 1e+;
+A r;gb;fa;gb;
+B 1g-;
+bar
+
+S 1d+;
+A r;gb;fa;gb;
+B 1g-;
+bar
+
+S 1c+;
+A r;ce;df;eg;
+B 1c;
+bar
+
+S 1c+;
+A gb;fa;eg;df;
+B 1c-;
+bar
+
+midi 2 1: 0 "onvelocity=12";
+S 1c+;
+A 1e;
+B 1cg;
+bar
+
+S 1c+;
+A 1e;
+B 1cg;
+bar
+
+S 1c+;
+ifdef MIDI
+  midi 2 1: 0 "onvelocity=22";
+  midi 1 1-2 & 2 1: 5 "param=10,63";
+  A 1eg-;
+  B 1c;
+else
+  A 1e;
+  B 1cg;
+endif
+endbar

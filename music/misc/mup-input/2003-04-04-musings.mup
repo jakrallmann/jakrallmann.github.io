@@ -1,0 +1,396 @@
+header
+	title (18) "Musings"
+	title "" "John A. Krallmann (April 4, 2003)"
+
+header2
+	title (12) "Musings - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	beamstyle=4,4,4,4
+	key=3&
+	staffs=2
+	brace=1-2
+	measnum=y
+	barstyle=1-2
+	staffscale=0.92
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	release=0
+
+music
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "channel=11"; 0 "onvelocity=96,82"; 0 "program=50";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=78"; 0 "program=50";
+midi 2 1: 0 "channel=13"; 0 "onvelocity=74"; 0 "program=50";
+
+1: r;8;g-e tie;;4.a-f;
+2: 8e-;b-;4e~;2;
+bar
+
+1: 4.ca;8b-g tie;2;
+2: 8e-;b-;4e~;;b-;
+bar
+
+1: 4.b-g;8ca tie;2;
+2: 8f-;c;g;f~;4;e;
+bar
+
+1: 4.ec+;8ab tie;2;
+1 2: 4.s;8c~;4;d;
+2: 8b-;f;a;b~;2;
+bar
+
+1: 4.ca;8b-g tie;2;
+2: 8e-;b-;4e~;8;f;e;b-;
+bar
+
+1:4.a-f;8g-e tie;2;
+2: 8c-;g-;d;e~;4;b--;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.ec+;8db tie;4;f;
+2: 8a--;e-;4b-~;2;
+bar
+
+1: 1g;
+1 2: 8d;e;d;g-~;2;
+2: 1c-;
+bar
+
+1: 1g~;
+1 2: 8d;e;d;g-~;2~;
+2: 1c-~;
+bar
+
+1: 2g;4e+;f+;
+1 2: 2g-;s;
+2: 2c-;r;
+bar
+
+staff 1 clef=treble
+music
+
+1: 8g;f;e;b-~;4;e;
+2: 8e-;b-;e;f~;4;g;
+bar
+
+1: 4.d;8c~;2;
+2: 8a-;e;4a~;;g-;
+bar
+
+score time=5/4 ; beamstyle=4,4,4,4,4
+music
+
+1: 4.a-e;8a-c tie;4;{e;f;g;}3;
+2:8f-;c;f;e~;2.;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.ab;8g;f;
+1 2: 4.e;8d~;2;
+2: 8b-;f;b;c+~;;b;4b--;
+bar
+
+1: 2.b-;4g;
+1 2: 4.a-;8g-~;2;
+2: 8e-;b-;2.e;
+bar
+
+1: 4.d&b;8ca tie;4;e;
+2: 8a-;e;b;a~;2;
+bar
+
+1: 2.f;4g;
+1 2:4.c;8d~;2;
+2: 8b-;f;a;b~;2;
+bar
+
+1: 4.a-f;8g-e tie;2;
+1 2: 1b-;
+2: 8e-;b-;2.e;
+bar
+
+1: 4.a-f;8g-e tie;2;
+2: 8c-;g-;d;c~;4;b-;
+bar
+
+1:4.g;8a~;4;8e;f;
+2: 8a-;e;b;c+~;2;
+bar
+
+1: 1e+;
+1 2: 4.f;8e~;2;
+2: 8e-;b-;e;f~;4;g;
+bar
+
+1: 2.b-g;8d;e;
+2: 8e-;b-;f;g~;2;
+bar
+
+1: 4.b-d;8c~;4;8g;a;
+2: 8a-;e;2.a;
+bar
+
+1: 2.f;8b;a;
+1 2: 4.c;8d~;2;
+2: 8b-;f;a;b~;2;
+bar
+
+1: 2.g;8e;f;
+1 2: 4.d;8e~;2;
+2: 8c;g;2.c+;
+bar
+
+1: 4.g;8f~;4;e;
+1 2: 1c;
+2: 8a-;e;f;g~;4;a;
+bar
+
+1: 4.c;8b-~;2;
+2: 8b-;f;2.a;
+bar
+
+1: 1c~;
+2:8c-;g-;d;en~;2;
+bar
+
+1: 1c;
+2:8c-;g-;d;en~;2;
+bar
+
+1: 4.f;8e~;4;c;
+2: 8f-;c;f;g~;4;a;
+bar
+
+1: 4.e;8d~;4;b;
+2: 8b-;f;a;b~;2;
+bar
+
+1: 1g~;
+2: 8c-;g-;d;en~;2;
+bar
+
+1: 1g;
+2: 8c-;g-;d;en~;2;
+dblbar
+
+score key=0&
+music
+
+1: 4.g;8a~;4;c+;
+2: 8f-;c;g;a~;2;
+bar
+
+1: 1g+;
+2: 8c-;g-;e;c+~;2;
+bar
+
+1: 4.a;8c+~;4;d+;
+2: 8f-;c;g;a~;2;
+bar
+
+1: 2.g;8b-;c;
+2: 8c-;g-;f;e~;2;
+bar
+
+1: 2.c;8f;e;
+2: 8f-;c;a;~;2;
+bar
+
+1: 2.d;8a-;b-;
+2: 8g-;d;b;~;2;
+bar
+
+1: 1c~;
+2: 8c-;g-;e;~;2;
+bar
+
+1: 1c;
+2: 8c-;g-;e;~;2;
+bar
+
+////
+
+1: 2e~;8;4.g;
+2: 8c-;g-;e;~;2;
+bar
+
+1: 2d+~;8;c+;a;f;
+2: 8f-;c;a;d+~;4;d;
+bar
+
+1: 4.a;8g~;4;8b-;c;
+2: 8c-;g-;d;e~;4;g-e;
+bar
+
+1: 4.g;8f~;4;8b-;c;
+2: 8d-;a-;e;f~;;g;4a;
+bar
+
+1: 4.f;8e~;4;g;
+2: 8g-;d;a;b~;2;
+bar pad 10 =b
+print (b.x - 5, b.y + 2) "\(smfclef)";
+
+ifdef MIDI
+1: 4.f-d;8e-c tie;4;c+;
+else
+1: 4.d+b+;8c+a+ tie;4;[pad 9]c+ =c;
+print (c.w - 6, c.y - 3) "\(smgclef)";
+endif
+2: 8c-;g-;d;c~;2;
+dblbar
+
+score key=5&
+music
+
+1: 4.ec+;8db tie;4;ca;
+2: 8a-;e;a;b~;4;g-;
+bar
+
+1: 4.bn-a;8b&-g tie;4;a-en;
+2: 8en-;bn-;2.en;
+bar
+
+1: 2.d;4g;
+1 2: 4.a-;8b-~;2;
+2: 8g-;d;2.g;
+bar
+
+1: 2.e;4a;
+1 2: 4.b-;8c~;2;
+2: 8a-;e;2.a;
+bar
+
+1: 2.f;4;
+1 2: 4.e;8dn~;2;
+2: 8b-;f;2.b;
+bar
+
+1: 2.eg;8d+;c+;
+1 2: 4.d;8c~;2;
+2: 8e-;b-;4g~;;b;
+bar
+
+1: 2.anc+;4f;
+2: 8f-;c;gn;an~;2;
+bar
+
+1: 4.fd+;8ec+ tie;4;ca;
+2: 8b-;f;d&+;c+~;4;f-;
+bar
+
+1: 4.ca;8db tie;2;
+2: 8g-;d;a;gb tie;4gb~;fb;
+bar
+
+1: 2.ge+;8b;a;
+2: 8a-;e;d+;c+~;4;g;
+bar
+
+1: 2.anf+;8e+;f+;
+2: 8f-;c;an;~;2;
+bar
+
+score time=5/4 ; beamstyle=4,4,4,4,4
+music
+
+1: 2.bg+;{4b+;c++;d++;}3;
+2: 8e-;b-;d+;c+~;4;2b;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 1an+f++ tie;
+2: 8f-;c;an;~;2;
+bar
+
+1: 1a+f++;
+2: 8f-;c;an;~;2;
+bar
+
+score time=5/4; beamstyle=4,4,4,4,4
+key=3&
+music
+
+1: 2.d;{4;e;f;}3;
+1 2: 4.c;8b-~;2.;
+2: 8b-;f;4a~;2.;
+bar
+
+score time=4/4; beamstyle=4,4,4,4
+music
+
+1: 2.b-;4;
+1 2: 4.a-f;8g-e tie;2;
+2: 8e-;b-;2.e;
+bar
+
+1: 2.c;8c~g;cf;
+1 2: 4.b-;8a-~;2;
+2: 8a--;e-;b-;c~;4;a;
+bar
+
+1: 1eng;
+1 2: 4.d;8c~;2;
+2: 8c-;g-;d;en~;2;
+bar
+
+//midi all: 1 "tempo=88";
+define P
+1: 4.an-d;8c~;4;d;
+2: 8f-;c;2.f;
+bar
+
+1: 4.d;8en~;2;
+1 2: 1g-;
+2: 8c-;g-;d;en~;2;
+bar
+
+1: 4.d;8c~;4;dc+;
+1 2: 1a&-;
+2: 8f-;c;2.f;
+bar
+
+1: 1enc+ ifdef TWO tie endif;
+2: 8c-;g-;d;en~;2;
+bar
+@
+
+P
+define TWO @
+P
+
+midi all: 1 "tempo=84";
+1: 1ec+ tie;
+2: 8c-;g-;d;en~;2;
+bar
+
+midi 2 1: 1 "onvelocity=68";
+midi all: 1 "tempo=76";
+1: 1ec+ tie;
+2: 8c-;g-;2.d;
+bar
+
+score release=300
+music
+
+midi all: 1 "tempo=60";
+1: 1ec+;
+2: 1en;
+endbar

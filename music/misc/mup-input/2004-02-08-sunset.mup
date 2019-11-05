@@ -1,0 +1,202 @@
+header
+	title (18) "Sunset"
+	title (10) ""
+	title "" "John A. Krallmann (2/8/04)"
+
+header2
+	title (12) "Sunset - page \%"
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=e&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffscale=0.85
+	scoresep=9,26
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=58";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=90, 76";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=76";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "onvelocity=76";
+midi 2 2: 0 "channel=14"; 0 "program=50"; 0 "onvelocity=86";
+
+1: 2g~;8;f;g;b;
+1 2: 8r;b-;c;d;2e;
+2 2: e;d;c;b-;
+boldital between 1&2: 1 "mf";
+bar
+
+1: 8d;4.e~;8;f;g;e;
+2: 8r;g;c+;b;2ac+;
+2 2: 2c;f;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: f~;8;c+;g;a;
+1 2: 8r;c;2d;
+2: r;a;f;
+2 2: 2.b-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4.b;8;4;a;
+1 2: 8r;d;4e;8r;4c;8;
+2: r;b;r;e;
+2 2: 2g-;f-;
+bar
+
+1: a;g;2f;
+1 2: 8r;c;4d;2a-;
+2: 8r;a;4b;c;d;
+2 2: 2b-;e-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: e;b;
+1 2: 2g-;
+2: 2e;
+2 2: 2e-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2g~;8;f;g;b;
+1 2: 8r;b-;c;d;2e;
+2 2: e-;d-;c-;b--;
+bar
+
+1: 4.c+;8d+;2b;
+1 2: 8r;f;4d;8f;e;4b-;
+2: r;a-;r;8f;e;
+2 2: 2a--;g-;
+bar
+
+1: 4.a;8g;a;g;a;b;
+1 2: 8r;c;4e;cd;;
+2: r;a;r;f;
+2 2: 2f-;b-;
+bar
+
+1: 4.a;16c+;b;8f;4g;8b;
+1 2: 2b-d;b-e;
+2 2: e;b-;e-;d-;
+bar
+
+1: c+;8;b;c+;b;c+;e+;
+1 2: 2eg;ea;
+2 2: c-;b--;a--;g--;
+ital between 1&2: 1 "cresc.";
+bar
+
+1: f+;8;e+;f+;e+;c+;e+;
+1 2: 2a;;
+2: r;e;a;e+;
+2 2: 2f-;b-;
+bar
+
+1: b+;;4.;8;
+1 2: be+;8f+;e+;4;;
+2: g;e+;8f+;e+;d+;e+;
+2 2: 1b-;
+bar
+
+1: 2c++;4.;8;
+1 2: c+f+;8f+;e+;4c+;e+;
+2: r;c+;8f+;e+;f+;e+;
+2 2: 1a-;
+bar
+
+1: b+;;4.;8c++;
+1 2: b;;;;
+2: 8f+;e+;d+;e+;f+;e+;d+;e+;
+2 2: 2g;;
+bar
+
+1: a+;g+;f+;e+;
+1 2: 2ae+;a;
+2: 2c+;;
+2 2: 2f;e;
+ital between 1&2: 1 "dim.";
+bar
+
+1: 2f+;e+;
+1 2: 2a;eab;
+2: 2b;;
+2 2: 2d;c;
+bar
+
+1: 1d+;
+1 2: 1dab;
+2: 1b;
+2 2: 1b-;
+bar
+
+midi all: 1 "tempo=64";
+1: 2g;a;
+1 2: 2b-e;b-f;
+2: 2b-;;
+2 2: 2e-;d-;
+boldital between 1&2: 1 "p";
+bar
+
+1: 2b;4a;g;
+1 2: 1d&eg;
+2: 1b-;
+2 2: 1d&-;
+bar
+
+1: 1cea;
+1 2: 2b-;a-;
+2 2: 1c-;
+bar
+
+1: 1f;
+1 2: 2a-c;b-d;
+2 2: 1b-;
+bar
+
+1: 1a;
+1 2: 1cf;
+2 2: 1f-;
+bar
+
+1: 2f;4e;d;
+1 2: 1a-c;
+2 2: 1b-;
+boldital between 1&2: 1 "pp";
+bar
+
+1: 1d;
+1 2: 1f-a-;
+2: 1b-;
+2 2: 1e-;
+roll 1 1 to 2 2: 1;
+bar
+
+midi all: 1 "tempo=46";
+1: 1e;
+1 2: 1g-b-;
+2: 1b-;
+2 2: 1e-;
+roll 1 1 to 2 2: 1;
+endbar
+

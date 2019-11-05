@@ -1,0 +1,380 @@
+header
+	title (18) "Safely Sheltered"
+	title (12) "" "John A. Krallmann (Aug 20-21, 2001)"
+
+header2
+	title (12) "Safely Sheltered - \%"
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define F 1 1: @
+define S 2 1: @
+define A 2 2: @
+define T 3 1: @
+define B 3 2: @
+
+score
+	staffs=3
+	key=1#
+	vscheme=2o
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	release=0
+	scoresep=8,28
+	staffscale=0.9
+	measnum=y
+
+define TU32
+score
+	time=3/2
+voice 2 1
+	timeunit = 1.
+voice 2 2
+	timeunit=4
+voice 3 1
+	timeunit=4
+voice 3 2
+	timeunit = 1.
+music
+@
+
+define TU22
+
+score
+	time=2/2
+voice 2 1
+	timeunit=1
+voice 2 2
+	timeunit=4
+voice 3 1
+	timeunit=4
+voice 3 2
+	timeunit=1
+music
+@
+
+
+staff 1
+	visible=n
+	defoct=5
+	vscheme=1
+staff 3
+	clef=bass
+
+
+TU32
+
+midi 1 1: 0 "channel=11"; 0 "program=73"; 0 "onvelocity=40"; 0 "param=10,54";
+midi 2 1: 0 "channel=12"; 0 "program=89"; 0 "onvelocity=100"; 0 "param=10,78";
+midi 2 2: 0 "channel=13"; 0 "program=50"; 0 "param=10,68";
+midi 3 1: 0 "channel=14"; 0 "program=50"; 0 "param=10,58";
+midi 3 2: 0 "channel=15"; 0 "program=60"; 0 "onvelocity=80"; 0 "param=10,48";
+
+define BODY
+
+midi all: 0 "tempo=100";
+F b-;g;4e;d;
+S g;
+A r;b-;c;d;c;b-;
+T r;d;e;f;e;d;
+B g-;
+bar
+
+F c;a;4g;a;
+S a;
+A r;c;d;e;d;a-;
+T r;a-;b-;c;e;f;
+B d-;
+bar
+
+F b;d;4g;f;
+S b;
+A r;a;g;f;d;f;
+T r;f;e;d;b-;d;
+B g-;
+bar
+
+F e;g;4a;b;
+S e+;
+A r;d+;c+;b;a;g;
+T r;g-;a-;b-;c;e;
+B c-;
+bar
+
+F a;f;4e;d;
+S d+;
+A r;e;f;b;a;d;
+T r;a-;c;e;f;c+;
+B d-;
+bar
+
+TU22
+
+F b;d+;
+S g~;
+A r;b-;d;c;
+T r;d;f;e;
+B g-~;
+bar
+
+F 4b;a;g;e;
+S 4g;a;b;c+;
+A 1b-;
+T 1g;
+B 1g-;
+bar
+
+define PARTA
+F a-;f;
+S a;
+A r;f;e;d;
+T r;a-;d;f;
+B d-;
+bar
+
+F 1g;
+S g~;
+A r;e;d;c;
+T r;c;b-;a-;
+B g-~;
+bar
+
+F 1g-;
+S 1g;
+A 1b-;
+T 1d;
+B 1g-;
+dblbar
+\@
+PARTA
+
+//
+
+TU32
+
+F e;c;4e;g;
+S e;
+A r;d;c;b-;a-;g-;
+T r;g-;a-;b-;c;e;
+B c-;
+bar
+
+F a;c;4b;c+;
+S f;
+A r;e;d;c;b-;a-;
+T r;a-;c;d;e;f;
+B d-;
+bar
+
+F b;g;4e;g;
+S g;
+A r;b-;c;d;e;c;
+T r;d;e;f;c;e;
+B g-;
+bar
+
+F a;d;4e;f;
+S d+;
+A r;f;g;a;c+;a;
+T r;a-;b-;c;e;f;
+B d-;
+bar
+
+F a-;d;4d;c;
+S a;
+A r;c;b-;c;d;f;
+T r;a;g;a;f;d;
+B d-;
+bar
+
+TU22
+
+F b-;d;
+S g~;
+A r;b-;d;c;
+T r;d;f;e;
+B g-~;
+bar
+
+F 4g;d;c;b-;
+S 4g;d;g;b;
+A 1b-;
+T 1d;
+B g-;
+bar
+
+PARTA
+
+/////
+
+TU32
+
+midi 1: 1 "onvelocity=40";
+F d;;4b-;g-;
+S d+;
+A r;c+;b;a;g;b;
+T r;f-;g-;a-;b-;g-;
+B d-;
+bar
+
+F g-;a-;4;e;
+S e+;
+A r;d+;c+;b;a;g;
+T r;g-;a-;b-;c;e;
+B c-;
+bar
+
+score key=2#
+music
+
+F d;a;4e;f;
+S a;
+A r;d;e;f;e;d;
+T r;b-;c;d;c;b-;
+B f-;
+bar
+
+F g;b-;4e;f;
+S b;
+A r;a;g;f;e;d;
+T r;d;e;f;g;b;
+B g-;
+bar
+
+F g;a;4f;e;
+S e+;
+A r;d+;c+;b;a;c+;
+T r;e;g;a;c+;a;
+B a-;
+bar
+
+TU22
+
+F d;e;
+S d+~;
+A r;f;g;a;
+T r;a-;b-;c;
+B d-~;
+bar
+
+F 4d;a-;d;b-;
+S 4d+;e+;f+;g+;
+A 1f;
+T 1d;
+B 1d-;
+bar
+
+F c;a;
+S a+;
+A r;c+;d+;e+;
+T r;e;f;g;
+B a-;
+bar
+
+F 1d;
+S d+~;
+A r;f;g;a;
+T r;a-;b-;c;
+B d-~;
+bar
+
+F 1d+;
+S d+;
+A 1f;
+T 1d;
+B d-;
+dblbar
+
+TU32
+
+F d+;b;4a;c+;
+S b;
+A r;f;g;f;e;g;
+T r; d;e;d;c;a-;
+B g-;
+bar
+
+F d+;f;4a;f;
+S a;
+A r;g;f;e;d;cn;
+T r;a-;d;e;f;a;
+B f-;
+bar
+
+F d;e;4g;b;
+S b;
+A r;a;g;f;e;d;
+T r;d;e;f;g;b;
+B g-;
+bar
+
+F c+;b;4g;a;
+S e+;
+A r;c+;b;a;g;e;
+T r;e;g;a;b;c+;
+B a-;
+bar
+
+F e;a;4e;a;
+S a;
+A r;g;f;e;b-;c;
+T r;e;f;g;a;g;
+B a-;
+bar
+
+TU22
+
+midi all: 0 "tempo=95";
+F f;d;
+S d+~;
+A r;f;g;a;
+T r;a-;b-;c;
+B d-~;
+bar
+
+midi all: 0 "tempo=88";
+F 4d;e;f;g;
+S 4d+;a;f;e;
+A 1f;
+T 1d;
+B 1d-;
+bar
+
+midi all: 1 "tempo=74"; 1.5 "tempo=71"; 2 "tempo=67"; 2.5 "tempo=58";
+F 1a~;
+S d~;
+A r;f-;g-;;
+T r;a-;b-;;
+B d-~; 
+bar
+
+midi all: 0 "tempo=44";
+F 1a;
+S 1d;
+A 1f-;
+T 1a-;
+B 1d-;
+@
+BODY
+dblbar
+
+staff 1 visible=y
+
+undef PARTA
+score key=1#
+TU32
+midi 1 1: 0 "onvelocity=30";
+BODY
+endbar
+
+ifdef MIDI
+score time=1/8
+music
+midi 1: 1 "param=10,63";
+midi 2-3 1-2: 1 "param=10,63";
+1: mr;
+bar
+endif

@@ -1,0 +1,344 @@
+header
+	title (18) "A Gentle Breeze"
+	title (12) "" "John A. Krallmann (Aug 23-24, 2001)"
+
+header2
+	title (12) "A Gentle Breeze - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (4) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	staffscale=0.9
+	scoresep=10,26
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=132";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=90";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=68";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=74";
+
+S 8c+;g;2e;
+B c;g;c+;
+bar
+
+S 8a;e;2c;
+B a-;e;a;
+bar
+
+S 8a-;b-;c;f;a;c+;
+B f-;c;f;
+bar
+
+S 8d+;b;2g;
+B g-;d;b;
+bar
+
+S 8c+;d+;4e+;g+;
+B c-;g-;e;
+bar
+
+S 8e+;d+;4c+;a;
+B f-;c;a;
+bar
+
+S 8g;a;b;d+;f+;g+;
+B g-;d;8a;b;
+bar
+
+S 8e+;d+;4c+;g;
+B c-;g-;e;
+bar
+
+S 8d;f;4a;c+;
+B f-;c;f;
+bar
+
+S 8b;a;g;f;e;d;
+B g-;d;b;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 8c;d;e;g;e+;d+;c+;g;
+B c-;g-;e;g;
+bar
+
+S 8f+;e+;d+;c+;4a;c+;
+B f-;c;a;c;
+bar
+
+S 8b;c+;d+;e+;f+;g+;a+;b+;
+B g-;d;g;d;
+bar
+
+S 8d++;c++;g+;e+;b;c+;e+;g+;
+B c-;g-;e;g;
+bar
+
+S 8a+;g+;f+;e+;4d+;c+;
+B f-;c;2a;
+bar
+
+S 8b;a;g;f;4e;d;
+B g-;d;2b;
+repeatstart
+
+score key=1&
+music
+
+S 1c;
+T r;gb;fa;eg;
+B 1c;
+bar
+
+S 2.f;4d;
+A r;a-c;2;
+T r;c;2;
+B 1f-;
+bar
+
+S 2.c;8d;f;
+A r;f-a-;2;
+T r;c;2;
+B 1f-;
+bar
+
+S 2.a;8g;c;
+A r;ce;2;
+T r;b;2;
+B 1c;
+bar
+
+S 1c+;
+A r;fa;2;
+T r;ca;2;
+B 1f-;
+bar
+
+S 2.d+;8c+;b;
+A r;fb;2;
+T r;d+;2;
+B 1b-;
+bar
+
+define P
+S c+;b;a;g;
+A eg;df;;e;
+B c;g;b;c+;
+bar
+
+S 2f~;8;c;f;a;
+A r;a-c;2;
+T r;c;2;
+B 1f-;
+bar
+
+S d+;c+;b;a;
+B f-;c;a;c+;
+bar
+
+S 4.g;8c;4g;8a;b;
+B c-;g-;e;b;
+bar
+
+S 4.a;8c;4a;8f+;e+;
+B f-;c;a;c;
+bar
+
+S d+;c+;b;a;
+B b-;f;d+;f+;
+bar
+
+S 8g;4c;8d;4e;8a;g;
+B c-;g-;b;8d;e;
+bar
+
+S 1f;
+A r;a-c;2;
+T r;c;2;
+B 1f-;
+bar
+@
+
+P
+
+S 2.f+;8e+;d+;
+A r;bd+;2;
+T r;f;2;
+B 1b-;
+bar
+
+P
+
+S 2.f+;8g+;a+;
+A r;bd+;2;
+T r;f;2;
+B 1b-;
+bar
+
+S 2.g+;8a+;b+;
+A r;c+e+;2;
+T r;g;2;
+B 1c;
+bar
+
+////
+
+S c++;b+;a+;g+;
+B f-;c;a;c+;
+bar
+
+S d+;2f+;8b+;a+;
+A b;2d+;4d+f+;
+T r;f;b;d+;
+B 1b-;
+bar
+
+S c++;b+;a+;g+;
+A e+g+;d+f+;bd+;bc+;
+B c-;g-;c;e;
+bar
+
+S 2f+~;8;c+;f+;a+;
+A r;ac+;2;
+T r;c;2;
+B 1f-;
+bar
+
+S g+;f+;e+;d+;
+A bnd+;ac+;fb;;
+B g-;d;g;bn;
+bar
+
+S 2c+;4d+;e+;
+A 2eg;4fb;gc+;
+B c+;b(&);a;g;
+bar
+
+S 2.f+;8e+;d+;
+A 1ac+;
+T r;ca;2;
+B 1f-;
+bar
+
+S 2.a;8b;c+;
+A r;ce;2;
+T r;e;2;
+B 1a-;
+bar
+
+S 2.d+;8c+;b;
+A r;fb;2;
+T r;fd+;2;
+B 1b-;
+bar
+
+S 2a;g;
+A 2ce;4d;e;
+T r;g;2b;
+B 1c;
+bar
+
+S 1c+;
+A r;fa;2;
+T r;ca;2;
+B 1f-;
+bar
+
+S 2.f+;8g+;a+;
+A r;ad+;2bd+;
+T r;fd+;2;
+B 1b-;
+bar
+
+S b+;a+;g+;f+;
+A d+;c+;b;a;
+T r;db;2;
+B 1g-;
+bar
+
+S 2e+;g+;
+A 2g;b;
+T r;ge+;gd+;ge+;
+B 1c;
+bar
+
+S 2.f+;4d+;
+A r;ad+;2ac+;
+T r;c+f+;2;
+B 1f;
+bar
+
+S 2.c+;4d+;
+A r;fa;2;
+T r;c+;2;
+B 1f;
+bar ending "1."
+
+S 2.c+;8d+;e+;
+A r;eb;2;
+T r;g;2;
+B 1c;
+bar
+
+S 1f+;
+A r;ad+;2ac+;
+T r;c+;2;
+B 1f;
+bar
+
+S 2.g+;8e+;c+;
+A r;bd+;2c+e+;
+T r;d+;2c+;
+B 1e;
+bar
+
+S 2.a+;8f+;d+;
+A r;ad+;2ac+;
+T r;c+;2;
+B 1f;
+bar
+
+S 2.c+;8a;g;
+A r;eb;2;
+T r;g;2;
+B 1c;
+bar
+
+S [with.]f;[];2;
+A [with.]a-c;[];2;
+B [with.]f;[];2;
+repeatend ending "2."
+
+S 2c+;4d+a+;e+g+;
+A r;eg;2b;
+T r;g;b;c+;
+B 1c;
+bar
+
+S 2f+;[with.]4f+;r;
+A 2ac+;[with.]4ac+;s;
+octave above 1 : 2.8 "8va" til 4;
+B 2f+;[with.]4f-;r;
+endbar

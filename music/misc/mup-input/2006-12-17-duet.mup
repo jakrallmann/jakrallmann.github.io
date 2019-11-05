@@ -1,0 +1,85 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Duet"
+	title "" "John A. Krallmann (12/17/06)"
+
+header2
+	title (12) "Song Without Words - \%"
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	time=4/4
+	beamstyle=4,4,4,4
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	measnum=y
+	staffsep=15
+	
+staff 1
+	defoct=5
+	staffscale=0.95
+staff 2
+	vscheme=2f
+staff 3
+	clef=bass
+
+music
+
+midi all: 1 "tempo=50";
+midi 1 1: 0 "channel=14"; 0 "program=71"; 0 "onvelocity=30";
+midi 2 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=100, 70";
+midi 2 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 3 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+
+1: 8.c+;16b;8a;g;16g;a;8c;16c;d;8e;
+2: 4.e+;16b;c+;8d+;e+;8.a;16e;
+3: 8c;g;4e+;8a-;e;b;c+;
+bar
+
+1: 16c;a-;f;e;d;c;;f;d;c;e;c;g;e;;g-;
+2: 8g;a;8.c;16d;8.f;16e;8c+;e;
+3: 8f-;c;a;a&;c-;g-;e;bc+;
+bar
+
+1: 16g-;d-;e-;a-;f-;g-;a-;c;d;c;d;e;;d;a-;f;
+2: 8.e;16d;8;16c;d;4.a;16b;c+;
+2 2: 2a-;8.e;16d;8;c;
+3: 8f-;c;4a;8f#-;d;a;d;
+bar
+
+1: 16g;f;g;a;b;a;g;d;c;f;g;;8;16e;g;
+2: 8.dfc+;16g+;8bg+;gf+;4.e+;8c+;
+2 2: 2s;8.b;16a;4g;
+3: 8g-;d;b;f+;c;g;4e+;
+bar
+
+1: 16d+;c+;b&;a;8g;16a;b;c+;b;a;g;f;8.c;
+2: 4.g+;16d+;c+;8.g+;16f+;8;16e+;d+;
+2 2: 8.d+;16c+;4;a;f;
+3: 8b&-;g;4e+;8f-;c;a;c;
+bar
+
+1: 16d-;c-;d-;e-;f-;e-;d-;c-;d-;g--;c;e-;b-;c;e;g;
+2: 8.f+;16e+;8d+;c+;8.f+;16e+;8db;ec+;
+2 2: a&;f;g;s;
+3: 8f-;d;4a&;8c-;g-;e;g-;
+bar
+
+1: 16a;e+;d+;c+;a;d;e;f;;g;a;a-;f;g;;g-;
+2: 8.e+;16d+;8;c+;8.b;16c+;8fd+;ge+;
+2 2: a;f;;s;
+3: 8f-;c;a;c;g-;d;a;b;
+bar
+
+1: 16g;f;e;g-;2.c;
+2: 1ec+;
+3: 8c-;g-;2.e;
+endbar
+
+

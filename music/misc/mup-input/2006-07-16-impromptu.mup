@@ -1,0 +1,241 @@
+
+header
+	title (18) "Impromptu"
+	title "" "John A. Krallmann (July 16, 2006)"
+
+header2
+	title (12) "Impromptu - \%"
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffsep=16
+	scoresep=10,24
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+
+midi all: 1 "tempo=120";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 4.a;4r;8a;
+2: f-;c+e+;
+bar
+
+1: a;b;c+;g+;f+;a;
+2: bd+;d-;
+bar
+
+1: 4.c+~;4;8b;
+2: g-;bd+;
+bar
+
+1: b;g;a;4.b~;
+2: f-;e-;
+bar
+
+1: {4b;g+~;}2,4.;4.;
+2: bd+;c-;
+bar
+
+1: f+;e+;d+;;aa+;d+;
+2: bc+g+;f-;
+bar
+
+1: 4.c+;{4c+;c#+;}2,4.;
+2: af+;f-;
+bar
+
+1: d+;gg+;d+;4.gg+;
+2: b-;bd+;
+bar 
+
+1: 4.ff+;8f+;e+;d+;
+2: bd+;c;
+bar
+
+1: f+;e+;d+;f+;e+;d+;
+1 2: 4.g;;
+2: be+;c-;
+bar
+
+1: a;g;a;4.af+;
+1 2: 4.c;s;
+2: f-;fc+;
+bar
+
+1: {4a;a+;}2,4.;8a+;g+;f+;
+1 2: 4.s;b;
+2: f#c+d+;gd+~;
+bar
+
+1: 4g+;8g;4;8;
+2: f(n)d+;ec+;
+bar
+
+1: 4g;8;4;8c+;
+2: db;ec+;
+bar
+
+1: c+;d+;e+;4f+;8;
+1 2: 4.s;a;
+2: cb;da;
+bar
+
+1: 4f+;8;a+;g+;f+;
+1 2: 4.f;a;
+2: ca;b-fd+;
+roll 2: 4;
+bar
+
+1: 4gg+;8c+;;d+;e+;
+2: c-;c+e+;
+bar
+
+1: 4af+;8d+;;e+;f+;
+2: d-;af+;
+bar
+
+1: 4af+;8d+;;e+;f+;
+2: c-;af+;
+bar
+
+1: 4f+;8d+;4;8;
+1 2: 4.g;f;
+2: b--;bd+;
+bar
+
+1: 4fbd+;8g;;a;b;
+2: g--;bd+;
+bar
+
+1: 4a;8;;bn;c#+;
+2: a--;ge+;
+bar
+
+1: 4fd+;8d+;;e+;f+;
+2: b--;bd+;
+bar
+
+1: aa+;gg+;aa+;;bnbn+;c#+c#++;
+2: a--a-;gae+;
+bar
+
+1: 4.d+d++ tie;4;8a;
+2: dd-;fd+;
+octave below 2: 1 "8va";
+bar
+
+1: c+;a;b;;g;a;
+2: g--g-;bd+;
+bar
+
+1: b;g;a;b;g;a;
+2: f-f;bd+;
+octave below 2: 1 "8va";
+bar
+
+1: 4b;8c;4;8c;
+2: e-e;db;
+octave below 2: 1 "8va";
+bar
+
+1: 4c;8b;4ea;8aa+;
+2: eb;c#a;
+bar
+
+1: g+;f+;e+;4f+;8;
+1 2: 4.g;f;
+2: c#a;da;
+bar
+
+1: e+;d+;c#+;4d+;8;
+1 2: 4.e;d;
+2: ea;fa;
+bar
+
+1: c(n)+;b;a;4b;8;
+1 2: 4.d;;
+2: f#a;gb;
+bar
+
+1: 4g;8;4f;8;
+1 2: 4.d;;
+2: gb;g#bn;
+bar
+
+1: g;f;g;4.e;
+1 2: 4.d;s;
+2: g#bn;ac#+;
+bar
+
+1: b-;c;b-;4.a-e;
+2: g-df;a-c#;
+boldital between 1&2: 1 "sfz";
+bar
+
+1: b;c+;b;4.ae+;
+2: d+f+;c#+e+;
+boldital between 1&2: 1 "sfz";
+bar
+
+1: g;a;g;4.f;
+2: bd+;ac+;
+boldital between 1&2: 1 "sfz";
+bar
+
+1: e&;f;e;4.d;
+2: gb;fa; 
+boldital between 1&2: 1 "sfz";
+bar
+
+1: c;d;c;4.b-f;
+2: e&g;df;
+boldital between 1&2: 1 "sfz";
+bar
+
+score time=9/8 ; beamstyle=4.,4.,4.
+music
+
+1: 4.b-g;2.ca;
+2: 4.d&f;2.cf;
+boldital between 1&2: 1 "f";
+bar
+
+score time=6/8
+music
+
+1: 2.dgd+;
+2: 2.b-fb;
+bar
+
+1: 2.gc+ tie;
+1 2: 2.d;
+2: 2.c~fb~;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 4.gc+;8c+;d+;c+;
+1 2: 2.e;
+2: 2.cgb;
+bar
+
+1: [pad 6]2.ac+ =c f+a+;
+print (c.x - 7, c.y) "\(acc_gt)"
+2: 2.f-ca;
+endbar

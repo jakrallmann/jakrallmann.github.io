@@ -1,0 +1,201 @@
+
+header
+	title (18) "Bass"
+	title "" "John A. Krallmann"
+	title " " "(March 4, 2018)"
+
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	scale=0.9
+	clef=bass
+music
+
+
+midi all: 0 "tempo=124";
+midi 1: 0 "channel=11"; 0 "onvelocity=52";
+midi 2: 0 "channel=12"; 0 "onvelocity=84";
+
+1: 2s;4r;
+2: 2s;4d-;
+bar
+
+1: r;dgb;;
+2: 4.g-;8a-;8.b-;16c;  
+bar
+
+1: r;gbd+;gbfn+;
+2: 2d;4b-;
+bar
+
+1: r;ad+fn+;gd+f+;
+2: 4.d;8c;8.b-;16a-;
+bar
+
+staff 1 clef=treble
+music
+
+1: r;g#-b-e;b-dg#;
+2: 2g#-;4e-;
+bar
+
+1: r;cea;;
+2: 4.a-;8b-;8.c;16g;
+bar
+
+1: r;cfna;;
+2: 2fn;4e;
+bar
+
+1: r;b-d#f#a;;
+2: 2d#;4b-;
+bar
+
+1: r;b-eg;;
+2: 2e;4d;
+bar
+
+1: r;a-c#eg;;
+2: 2c#;4a-;
+bar
+
+1: r;a-dfn;;
+2: 2d;4c;
+bar
+
+1: r;g-b-fn;;
+2: 2b-;4g-;
+bar
+
+1: r;g-ce;g-b&-e;
+2: 2.c;
+dblbar
+
+score key=2&
+staff 1 clef=bass
+music
+
+1: r;fbe+;fae+;
+2: 2.f-;
+bar
+
+1: r;fbd+;fa&d+;
+2: 2.b-;
+bar
+
+1: r;egc+;eac+;
+2: 2e-;4f-;
+bar
+
+1: r;2fbd+;
+2: 2.b-;
+bar
+
+1: r;gad+;gbd+;
+2: 2.g-;
+bar
+
+1: r;ad+;abd+;
+2: 2.g-;
+bar
+
+1: r;gbf+;gbe+;
+2: 2.e-;
+bar
+
+1: r;gbd+;gbe+;
+2: 2.c-;
+bar
+
+1: r;gbe+;f#ad+;
+2: 2.d-;
+bar
+
+1: r;f#ab;fac+;
+2: 2.d-;
+bar
+
+1: r;f#ac+;gbd+;
+2: 2.g-;
+bar
+
+1: r;bd+g+;gbd+;
+2: 2.g-;
+repeatstart
+
+staff 1 clef=treble
+music
+
+1: r;dga;dgb;
+2: 2.g;
+bar
+
+1: r;dga;dgb;
+2: 2.g-;
+bar
+
+1: r;cga;dgb;
+2: 2.g;
+bar
+
+1: r;cda;b-dg;
+2: 2.g-;
+bar
+
+1: r;b-ef;b-eg;
+2: 2.e;
+bar
+
+1: r;b-ef;b-eg;
+2: 2.e-;
+bar
+
+1: r;b-cf;b-df;
+2: 2.b-;
+bar
+
+1: r;b-cf;b-df;
+2: 2.b--;
+bar
+
+1: r;g-cd;g-ce;
+2: 2.c-;
+bar
+
+1: r;f#-ce;f-cd;
+2: 2.d-;
+bar
+
+1: r;cda;b-dg;
+2: 2.g-;
+bar
+
+1: r;egd+;egc+;
+2: 2.c;
+bar
+
+1: r;egc+;dgb;
+2: 2.d;
+bar
+
+1: r;ceg&b;cega;
+2: 2.d-;
+bar
+
+1: r;dgb;cfa;
+2: 2.g-~;
+bar
+
+1: 2.b-dg;
+2: 2.g-;
+repeatend

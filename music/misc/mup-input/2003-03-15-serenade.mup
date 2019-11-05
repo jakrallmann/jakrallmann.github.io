@@ -1,0 +1,152 @@
+header
+	title (18) "Starlight Serenade"
+	title "" "John A. Krallmann (3/15/03)"
+
+header2
+	title (12) "Starlight Serenade - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1#
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	packfact=1.2
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=100";
+
+define A
+1: r;8e;g;4.b;8;
+2: 8e;b;4r;;d;
+bar
+
+1: 8b;e;g;b;4.;8e;
+2:2.c;4b-;
+bar
+
+1: 8c+;e;g;c+;b;a;b;c+;
+2: 4.a-;8;2;
+bar
+
+1: 8e+;d+;c+;a;4e;e&;
+2: 4.d-;8;2;
+bar
+
+1: 8b-;a-;b-;d;4.e;8g;
+2: 2.g-;4d;
+bar
+
+1: 8g;c;d;e;4.c+;8d+;
+2: 2.a-;4e;
+bar
+
+1: 8e+;d+;c+;a;4.e;8f;
+2: d;2a;4c+;
+bar
+
+1: 8f;g;b-;c;2d;
+2: g-;d;a;b;
+bar
+
+1: 8d;e;a-;b-;c;d;e;f;
+2: c;g;d;d-;
+bar
+
+1: 8a;g;a-;b-;2d;
+2: g-;d;a;b;
+bar
+
+1: 8e;a-;b-;c;4d;8c+;b;
+2: c;g;2f;
+bar
+@
+A
+
+1: 8a;g~;2.;
+1 2: r;a-;2b-;
+2: r;e&;2d;
+2 2: 1g-;
+bar
+
+//////
+
+define B
+1: 2.e;8a;f;
+2: c;b;2a;
+bar
+
+1: 8c#;4.d~;4;8f;g;
+2: b-;a;2g;
+bar
+
+1: 2c~;8;b-;c;b;
+2: a-;e;2g;
+bar
+
+1: 8c+;b;a;g;4e;f;
+2: d;a;2c+;
+bar
+
+1: 4.f;8g;4.b-;8d;
+2: g-;d;a;g;
+bar
+
+1: 8d;e;4a-;;8b-;c;
+2: c;e;2e&;
+bar
+
+1: 2a;4.c+;8b;
+2: d;c+;e+;f+;
+bar
+
+1: 4.a;8b;2g;
+2: g-;d;a;b;
+bar
+
+1: 4.a;8b;4g;a;
+2: c;g;e+;e&+;
+bar
+
+1: 4.a;8b;e;4.d;
+2: g-;d;a;b;
+bar
+
+1: e;g;c+;g+;
+2: c;g;a;e+;
+bar
+@
+B
+
+1:1g+;
+1 2: r;a;2b;
+2: r;e&;2d;
+2 2: 1g-;
+bar
+
+A
+
+1: 8a;g~;2.;
+1 2: r;c;2b-;
+2: r;e;2d;
+2 2: 1g-;
+bar
+
+B
+
+1: 1g+;
+1 2: r;c+;2b;
+2: r;e;2d;
+2 2: 1g-;
+endbar

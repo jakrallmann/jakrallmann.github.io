@@ -1,0 +1,179 @@
+header
+	title (18) "Consolation"
+	title (12) "" "John A. Krallmann (4/7/02)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+define T24
+ score time=2/4 ; beamstyle=4,4
+ music
+@
+define T44
+ score time=4/4 ; beamstyle=4,4,4,4
+ music
+@
+
+score
+	staffs=2
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=0";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+S 2s;ee+;
+B 2s;r;
+bar
+
+S 1dd+;
+A g;a;f#;g;
+B g-~;g-d tie;2g-db;
+bar
+
+S 2e;4;g;
+A a-;g-;2a-;
+B 2c-e;f-c;
+bar
+
+S a;2c+;4d+;
+A d;2.e;
+B 2c-g-e;f-ca;
+bar
+
+S d+;2e+;4g+;
+A a;2.g;
+B 2c-g-e;f-ca;
+bar
+
+S a+;2e+;4d+;
+A e+;a;g;f;
+B 2c-g-e;f-ca;
+bar
+
+S 2.e+;8c+;d+;
+A g;b;2a;
+B 2c-g-e;f-ca;
+bar
+
+S a;g;a-;c;
+A d;e;a-;g-;
+B 1c-g-e;
+bar
+
+S d;f;e;d;
+A a-;c;2a-;
+B 1f-c;
+bar
+
+S d;e;a+;c++;
+A g-;c;d+;e+;
+B 1c-g-e;
+bar
+
+S d;f;a;c+;
+B 1f-ca;
+bar
+
+S g+;e+;d;e;
+A d+;c+;a-;g-;
+B 1c-g-e;
+bar
+
+S d+;f+;a+;d+;
+A a;d;c;a-;
+B 1f-ca;
+bar
+
+S d+;f+;g+;8a+;b+;
+A a;gb;f;8a-;g-;
+B 1g-db;
+bar
+
+S 2c++;a+;
+A 2e+;4d+;c+;
+B 1f-ca;
+bar
+
+S d+;2e+;4d+;
+A a;g;2f;
+B 2c-g-e;f-ca;
+bar
+
+S a;g;2e+;
+A c;b-;a-f;b-g;
+B 1g-d;
+bar
+
+S 2c+;;
+A 2e;;
+B 2c-g-e;;
+dblbar
+
+S 1e;
+A b-;c;a-;b-;
+B 1a-e;
+bar
+
+S e;d;c;d;
+A 1a-;
+B 1f-c;
+bar
+
+S 2a;g;
+A 2c;b-;
+B 1g-d;
+bar
+
+S 1e+;
+A c+;b;a;e;
+T 2s;4b;c+;
+B 1a-e;
+bar
+
+T24
+
+S g;e;
+A d;g-;
+B 2e-b-;
+bar
+
+T44
+
+S 2d;;
+A 2a-c;g-b-;
+B 2f-c;g-d;
+bar
+
+S 2e;;
+A 2a-b-;g#-b-;
+B 2e-b-;;
+bar
+
+S 1e;
+A 1a-c#;
+B 1a-e;
+bar
+
+S 1e;
+A 1a-c#;
+B 1a-e;
+endbar
+

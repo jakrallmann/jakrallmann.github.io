@@ -1,0 +1,386 @@
+header
+	title (18) "Prelude"
+	title (10) ""
+	title (12)  ""  "John A. Krallmann (12/85)"
+
+footer
+	title (12) "\(copyright) Copyright 1985 John A. Krallmann"
+	title (6) ""
+	title (12) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Prelude - \%"
+
+score
+	staffs=2
+	time=2/4
+	key=1&
+	beamstyle=4,4
+	barstyle=1-2
+	packfact=0.7
+	staffscale=0.75
+	scorepad=3
+	brace=1-2
+	measnum=y
+
+staff 1
+	vscheme=2o
+
+staff 2
+	clef=bass
+	vscheme=2f
+
+music
+
+midi all: 0 "tempo=108";
+ifdef PIANO
+	midi 1-2 1: 0 "channel=8"; 0 "onvelocity=76";
+	midi 1 2: 0 "channel=8"; 0 "onvelocity=76";
+	midi 2 2: 0 "channel=8"; 0 "onvelocity=76";
+else
+	midi 1 1: 0 "channel=11"; 0 "program=19"; 0 "onvel=96";
+	midi 1 2: 0 "channel=12"; 0 "program=69"; 0 "onvel=98";
+	midi 2 1: 0 "channel=12"; 0 "program=69"; 0 "onvel=98";
+	midi 2 2: 0 "channel=13"; 0 "program=57";
+endif
+
+1 1: 4.s; 8d;
+1 2: 2s;
+2 1: 4.s;8r;
+bar
+
+1 1: 8c;f;d;g;
+1 2: ms;
+2 1: mr;
+bar
+
+1 1: 8f;b;a;d+;
+1 2: ms;
+2 1: mr;
+bar
+
+1 1: 8c+;16b;a;8b;g;
+1 2: ms;
+2 1: mr;
+bar
+
+1 1: 8a;f;g;e;
+1 2: ms;
+2 1: mr;
+bar
+
+1 1: 2f~;
+1 2: ms;
+2 1: 8r;a;g;c+;
+bar
+
+1 1: 4f;8a;bn;
+1 2: 4s; 8c;f;
+2 1: 8a;d+;4s;
+bar
+
+1 1: 4c+;b;
+1 2:8e;a;g;16f;e;
+2 1: mr;
+bar
+
+1 1: 4a;g;
+1 2: 8f;d;e;c;
+2 1: mr;
+bar
+
+1 1: 4f;e;
+1 2: 8d;bn-;4c~;
+2 2: 4r;8;d;
+bar
+
+1 1: 8a;;f;b;
+1 2: 4c;8r;f~;
+2 2: 8c;f;d;g;
+bar
+
+1 1: 8a;d+;c+;f+;
+1 2: 8f;4a;8b;
+2 2: 8f;b;a;d+;
+bar
+
+1 1: 2g+;
+1 2: 8f+;e&+;d+;b;
+2 2: 8c+;16b;a;8b;g;
+bar
+
+1 1: 4.f+;8g+;
+1 2: 8c+;a;4b;
+2 2: 8a;f;g;e;
+bar
+
+1 1: 8a+;g+;a+;b+;
+1 2: 4.c+; 8d+;
+2 2: 2f;
+bar
+
+1 1: 8c++;b+;a+;g+;
+1 2: 4e&+;c+;
+2 2: 4r;c;
+bar
+
+1 1: 2f#+;
+1 2: 4a;8b;c+;
+2 2: 8d;c;d;e&;
+bar
+
+1 1: 4f#+;f+;
+1 2: 8d+;e&+;d+;c+;
+2 2: 8d;c;b-;a-;
+bar
+
+1 1: 2g+;
+1 2: 8d+;e&+;c+;d+;
+2 2: 4b-;c;
+bar
+
+1 1: mr;
+1 2: 8b;c+;a;b;
+2 2: 4d;e&;
+bar
+
+1 1: 8e&+;f+;d+;e+;
+1 2: 2a~;
+2 2: 4f;g;
+bar
+
+1 1: 8c+;d+;b;c+;
+1 2: 4a;g;
+2 2: 4a;b;
+bar ending "1."
+
+1 1: 2a;
+1 2: 8e&;f;d;e;
+2 2: 4f;g;
+bar
+
+1 1: 8a;c+;b;a;
+1 2: 2d;
+2 2: 4f#;f;
+bar
+
+1 1: 2b;
+1 2: 8d;f;e&;d;
+2 2: 4g;b;
+bar
+
+1 1: 8bn;d+;c+;b;
+1 2: 2en;
+2 2: 4g#;c+;
+bar
+
+1 1: 2c+;
+1 2: 8e;g;f;e;
+2 2: 4a; c#+;
+bar
+
+1 1: 8d+;f+;e+;d+;
+1 2: 4a&;a;
+2 2: 4bn;b&;
+bar
+
+1 1: 2a+~;
+1 2: 2an~;
+2 2: 2a~;
+bar
+
+1 1: 4a+;8r;s;
+1 2: 4a;8r;s;
+2 2: 4a;8r;s;
+repeatend ending "2."
+
+newscore
+
+midi 2 2: 1 "onvel=72";
+
+1 1: 2a;
+1 2: 8e&;f;d;e;
+2 2: 4f;f-;
+bar
+
+1 1: 8a;c+;b;a;
+1 2: 2d;
+2 2: 4f#;f#-;
+bar
+
+1 1: 2b;
+1 2: 8d;f;e&;d;
+2 2: 4g;g-;
+bar
+
+1 1: 8bn;d+;c+;b;
+1 2: 2en;
+2 2: 4g#;g#-;
+bar
+
+1 1: 2c+;
+1 2: 8e;g;f;e;
+2 2: 4a;a-;
+bar
+
+1 1: 8d+;f+;e+;d+;
+1 2: 2a&;
+2 2: 4bn;bn-;
+bar endending
+
+score
+	beamstyle=2
+music
+
+1 1: 2e+;
+1 2: 8g;b;an;g;
+2 1: 2a;
+2 2: 4a-;;
+bar
+
+1 1: 8d+;f+;e+;d+;
+1 2: 2a;
+2 1: 2f;
+2 2: 4a-;;
+bar
+
+1 1: 2d+;
+1 2: 8g;b;a;g;
+2 1: 2e;
+2 2: 4a-;;
+bar
+
+1 1: 8c#+;b;a;g;
+1 2: 2g;
+2 1: 2g;
+2 2: 4a-;;
+bar
+
+1 1: 2a;
+1 2: 8d;f;e;d;
+2 1: 2f;
+2 2: 4a-;;
+bar
+
+1 1: 8g;b;a;g;
+1 2: 2c#;
+2 1: 2e;
+2 2: 4a-;;
+bar
+
+1 1: 8e;g;f;e;
+1 2: 2c#;
+2 1: 2g;
+2 2: 4a-;;
+bar
+
+1 1: 8g;b;a;g;
+1 2: ms;
+2 1: 2e;
+2 2: 4a-;;
+bar
+
+1 1: 8c#+;e+;d+;c+;
+1 2: ms;
+2 1: 2g;
+2 2: 4a-;;
+bar
+
+1 1: 8g+;b+;a+;g+;
+1 2: ms;
+2 1: 2b;
+2 2: 4a-;;
+bar
+
+1 1: 2c#++~;
+1 2: ms;
+2 1: 2g~;
+2 2: 2a-~;
+bar
+
+1 1: 4c++;aec#a-;
+1 2: ms;
+2 1: 4g;s;
+ifdef ORGAN
+	2 2: 4a-;g;
+else
+	2 2: 4a-;g-;
+endif
+bar
+
+score beamstyle=4,4
+music
+
+1 1: 4aeda-; afda-;
+1 2: ms;
+2 1: ms;
+ifdef ORGAN
+	2 2: 4f;d;
+else
+	2 2: 4f-;d-;
+endif
+bar
+
+1 1: gedb-; fdb-;
+1 2: ms;
+2 1: ms;
+ifdef ORGAN
+	2 2: g;;
+else
+	2 2: g-;;
+endif
+bar
+
+1 1: 2c#e;
+1 2: ms;
+2 1: 4b;;
+ifdef ORGAN
+	2 2: 2a;
+else
+	2 2: 2a-;
+endif
+bar
+
+1 1:  2c#e;
+1 2: ms;
+2 1: 4a;g;
+ifdef ORGAN
+	2 2: 2a-;
+else
+	2 2: 2a--;
+endif
+bar
+
+midi all: 1 "tempo=50"; 2 "tempo=50";
+1 1: 2da- tie;
+1 2: ms;
+2 1: 4g;8f;e;
+ifdef ORGAN
+	2 2: 4d~; dd- tie;
+else
+	2 2: 4d-~; d-d-- tie;
+endif
+ital above all: 1 "Lento";
+bar
+
+1 1: 2da- tie;
+1 2: ms;
+2 1: 2f~;
+ifdef ORGAN
+	2 2: 2dd- tie;
+else
+	2 2: 2d-d-- tie;
+endif
+bar
+
+1 1: 2da-;
+mussym above 1: 1 "ferm";
+1 2: ms;
+2 1: 2f;
+ifdef ORGAN
+	2 2: 2dd-;
+else
+	2 2: 2d-d--;
+endif
+mussym below 2: 1 "uferm";
+endbar

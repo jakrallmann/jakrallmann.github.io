@@ -1,0 +1,110 @@
+header
+	title (18) "Sunshine"
+	title (12) "" "John A. Krallmann (11/25/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define B 2 1: @
+
+score
+	staffs=2
+	key=1&
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	release=0
+	measnum=y
+
+staff 1
+	vscheme=2o
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=70";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=78";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+S 2c+;b;
+A 1e;
+B 1cg;
+bar
+
+S a;;8;4.c+;
+A 8a;f;a;f;a;4.c+;
+B f;e;d;c;
+bar
+
+S b;;2;
+A 8b;g;b;g;b;c;e;g;
+B g;f;e;c;
+bar
+
+S a;8g;f;c+;b;f;g;
+A 8a;c;2.s;
+B f;e&;d;d&;
+bar
+
+S f+;8e+;d+;d;f;c+;b;
+A 8f+;a;2.s;
+B c;c&;b-;g-;
+bar
+
+S b;8a;g;g+;f+;d+;g;
+A 8b;e;2.s;
+B c;d&;dn;b-;
+bar
+
+S a;;8f+;g+;c++;b+;
+A 8a;c;f;e;4a;d+;
+B c;d&;dn;b-;
+bar
+
+S 8d+;c+;g;c+;2d+;
+A e;;2f;
+B c;;d-;;
+bar
+
+//
+
+S 2c+;b;
+A 1e;
+B 2cg;8c;d;e;g;
+bar
+
+S 16a;g;8f;16a;g;8f;16a;b;8c+;16e;g;d+;c+;
+B f;e;d;c;
+bar
+
+S 16b;a;8g;16b;a;8g;c;b;16e+;d+;c+;g;
+B g;f;e;c;
+bar
+
+S 16a;c;8f;16f;g;a;c+;b;c+;b;f;g;f;g;b;
+B f;e&;d;d&;
+bar
+
+S 8a;f+;16d+;e+;f+;g;f;e;8d;16c+;b;a;f;
+B c;c&;b-;g-;
+bar
+
+S 8e;b;16e;f;g;b;a;g;8f;g;d;
+B c;d&;dn;b-;
+bar
+
+S 8c;a;a;16f+;e+;8g+;f+;16g+;a+;b+;d++;
+A s;8f;g;4a;d+;
+B c;d&;dn;b-; 
+bar
+
+S 8d++;c++;16e+;f+;g+;a+;2f+;
+A e+;b;2a;
+B c;;f-;;
+endbar

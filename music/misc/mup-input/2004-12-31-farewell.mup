@@ -1,0 +1,195 @@
+header
+	title (18) "Farewell"
+	title (10) " "
+	title "" "John A. Krallmann (12/31/04)"
+
+header2
+	title (12) "Farewell - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.75
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=84";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84,70";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+1: 4.s;4;8a;
+2: 4.s;4;8r;
+bar
+
+1: 4.e~;8;d;e;
+2: a-;e;b;4.c+;
+bar
+
+1: e;f;c;4.d~;
+2: d-;4a-;8f;a;d;
+bar
+
+1: d;b-;d#;4.e~;
+1 2: 4.s;4c;8b-;
+2: 4.g-;8c-;g-;e;
+bar
+
+1: e;g;c;4.d~;
+1 2: 4.a-;8r;a-;a&-;
+2: f-;c;a;4.g-;
+bar
+
+1: d;c#;d;f;e;d;
+1 2: 4.f-g-;8a-;f-;b-;
+2: 4.g-;;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.e+;d+;
+1 2: b;a;g;a;d;a;
+2: c-;4g-;4f-;8c;
+bar
+
+staff 1 clef=treble
+music
+
+1: g;a;b;d+;c+;e;
+1 2: b- bm with staff below;a-; s ebm;4e;8c~;
+2: 4s bm with staff above;8g ebm;4.s;
+2 2: 4g-;8f;c-;4g-;
+bar
+
+1: 4.f~;8;g;f;
+1 2: c;b-;a-;4.b-;
+2: d-;4a-;8g-;4d;
+bar
+
+1:4.e~;8;d;c;
+1 2: d;c;b-;4.a-~;
+2: a-;4e;8f-;4c;
+bar
+
+1: 4d;8e;4.g;
+1 2: a-;b-;f-;d;e;c;
+2: g-;4d;8c-;g-;e;
+bar
+
+1: 4c+;8b;;a;f;
+1 2: 4.e;c;
+2: c-;g-;e;f-;c;a;
+bar
+
+1: 4.a;8;b;c+;
+1 2: g;f;a-;4.s;
+2: f-;c;f;e-;c;g;
+bar
+
+1: 4.f+;8;e+;d#+;
+1 2: c+;b;a;4.g;
+2: d-;a-;f;b--;g-;bf+;
+bar
+
+1: e+;d+;c+;d+;c+;b;
+1 2: 4.g;f;
+2: c-;g-;e;d-;a-;f;
+bar
+
+1: b;a;g#;4b;8c+;
+1 2: 4.d;de;
+2: e-;b-;d;4.g#;
+bar
+
+1: 4.db;4ca;8e;
+2: a--;e-;f;4.a-e;
+bar
+
+1: 4.g;4f;8a-;
+1 2: 2.a-;
+2: d-;a-;e;4.d;
+bar
+
+1: 4.c;4b-;8g-;
+2: g-;d;f~;4.;
+dblbar
+
+score key=1&
+music
+
+1: 4.e~;8;f;g;
+2: c-;g-;e;4.b;
+bar
+
+1: 4.a;d;
+1 2: g;f;e;a-;g-;f-;
+2: f-;c;a;4.b-;
+bar
+
+1: 4.g;4a;8g;
+1 2: b- bm with staff below; 4s ebm;8b- bm with staff below; 4s ebm;
+2: s bm with staff above;g;e ebm;s bm with staff above;g;e ebm;
+2 2: 4.c-;;
+bar
+
+1: 4.f;4a-f;8f+;
+1 2: r;a-;b-;4.s;
+2: f-;c;d;4.f-c;
+bar
+
+staff 2 clef=treble
+music
+
+1: 4.d+a+;4e+c++;8b+;
+2: 4.b-f;cg;
+bar
+
+1: 4.a+;e+;
+1 2: g+;f+;e+;c+;bn;a;
+2: 4.da;a-e;
+bar
+
+staff 2 clef=bass
+music
+
+1: g;a;f;bn-;c;a-;
+1 2: 4e;8d;4.a-;
+2: 4.da;a-e;
+bar
+
+staff 1 clef=bass
+music
+
+1: g;a;g;4.fa;
+2: 4.d-b-;d-a-;
+bar
+
+1: dg;d+;e+;dg;d+;e+;
+2: 4.d-b-;;
+bar
+
+staff 1 clef=treble
+music
+
+1: 4.a-f#;ad+e+f#+ tie;
+2: 4.d-a-;d+ tie;
+bar
+
+1: 2.ad+e+f+;
+2: 2.d+;
+endbar

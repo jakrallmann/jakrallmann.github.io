@@ -1,0 +1,417 @@
+header
+	title (18) "Aboriginal Lullaby"
+	title "" "John A. Krallmann (December 2002)"
+
+header2
+	title (12) "Aboriginal Lullaby - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	beamstyle=4,4,4,4
+	ifdef MIDI
+		staffs=3
+	else
+		staffs=2
+	endif
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	staffscale=0.9
+	//scoresep=12,28
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+define C
+  T g;a;g;a;
+  B 1c;
+@
+
+midi all: 1 "tempo=92";
+midi 1 1: 0 "channel=11"; 0 "program=74"; 0 "onvelocity=50";
+midi 1 2: 0 "channel=12"; 0 "program=73"; 0 "onvelocity=45";
+midi 2 1: 0 "channel=13"; 0 "program=11";
+midi 2 2: 0 "channel=14"; 0 "program=42";
+ifdef MIDI
+midi 3: 0 "channel=10";
+endif
+
+define PER
+ifdef MIDI
+midi 3: 1 "onvelocity=60"; 1.5 "onvelocity=32"; 3 "onvelocity=60"; 3.5 "onvelocity=32";
+3: 8e4;e&5;;;e4;e&5;;;
+endif
+@
+
+
+S 4.d+;8e+;2;
+A 2e;;
+C
+PER
+bar
+
+S 4.d+;8a;2c+;
+A 2e;;
+C
+PER
+bar
+
+S 4.a;8g;a;4.c+;
+A 2e;;
+C
+PER
+bar
+
+S 4.d+;8e+;2;
+A 2e;;
+T a;b;g;c+;
+B 1c;
+PER
+bar
+
+S mr;
+A 2e;;
+C
+PER
+bar
+
+S mr;
+A 2e;;
+C
+PER
+bar
+ 
+S 8g+;e+;d+;c+;a;4.c+;
+A 2e;;
+C
+PER
+bar
+
+S 8a;g;a;c+;2a;
+A 2e;;
+C
+PER
+bar
+
+S 8e;d;e;a;2;
+A 2c;e;
+C
+PER
+bar
+
+S 2c+;;
+A 2e;;
+C
+PER
+bar
+
+S 8d+;c+;d+;c+;4.d+;8e+;
+A 8f;e;f;e;4.f;8g;
+C
+PER
+bar
+
+S 2c+;;
+A 2e;;
+C
+PER
+bar
+
+S 2e;;
+A 2c;;
+C
+PER
+bar
+
+S 4.d;8e;2;
+A mr;
+C
+PER
+bar
+
+S 2c++;a+;
+A 2e+;c+;
+C
+PER
+bar
+
+S [grace]8c+;4.d+;8e+;2;
+A 2r;c+;
+C
+PER
+bar
+
+S 8a;g;a;g;d;4.e;
+A mr;
+C
+PER
+bar
+
+S 8d+;e+;d+;a;c+;d+;c+;a;
+A mr;
+C
+PER
+bar
+
+S 2a;;
+A 2e;;
+C
+PER
+bar
+
+S 2f;4.a;8b;
+A 2d;4.f;8g;
+T a;b;a;b;
+B 1c;
+PER
+bar
+
+S 2c+;4f+;e+;
+A 2e;4a;g;
+T c+;b&;a;g;
+B 1c;
+PER
+dblbar
+
+score key=1&
+music
+
+define F
+  T c;d;c;d;
+  B 1f-;
+@
+
+S 2a;4.b;8c+;
+A 2f;4.g;8a;
+F
+PER
+bar
+
+S 2c+;8b+;4.c++;
+A 2a;8g+;4.a+;
+F
+PER
+bar
+
+S 2a;4.b;8d+;
+A 2f;4.g;8b;
+F
+PER
+bar
+
+S 2c+;c++;
+A 2a;a+;
+F
+PER
+bar
+
+define MA
+ S 8a+;g+;f+;d+;c+;d+;f+;g+;
+ A c+;b;a;b;
+ F
+PER
+ bar
+@
+MA
+
+S 1c++;
+A 1a+;
+F
+PER
+bar
+
+MA
+
+S 1f+;
+A 1a;
+F
+PER
+repeatstart
+
+score key=2#
+music
+
+define D
+ T a-;b-;a-;b-;
+ B 1d-;
+@
+
+S 8f+;d+;e+;c+;d+;b;c+;a;
+A 2a;4f;e;
+D
+PER
+bar
+
+S 1f;
+A 1a-;
+D
+PER
+bar
+
+S 8f;e;d;e;f;a;f;e;
+A a-;b-;d;b-;
+D
+PER
+bar
+
+S 1b-;
+A 1f-;
+D
+PER
+repeatend
+
+define MB
+ S 8d+;b;c+;a;4.e;8f;
+ A f;e;2b-;
+ D
+ PER
+ bar
+
+ S 1f;
+ A 1d;
+ D
+ PER
+ bar
+@
+
+MB
+MB
+
+S 8e-;f-;a-;b-;d;e;f;a;
+D
+PER
+bar
+
+S 4.e;8f;2;
+D
+PER
+bar
+
+S 8b;f;a;e;f;d;c;d;
+D
+PER
+bar
+
+S 4.e;8d;e;4.f;
+D
+PER
+bar
+
+S 8d+;a;b;f;c;d;e;f;
+D
+PER
+bar
+
+S 8e+;4.f+;8b+;4.f+;
+D
+PER
+bar
+
+S 8e+;d+;a;b;4.f;8e;
+D
+PER
+bar
+
+S 1b-;
+D
+PER
+bar
+
+define P3
+ S 8b+;f+;g+;e+;f+;d+;e+;c+;
+ ifdef SECOND A c+;b;a;f; endif
+ D
+ PER
+ bar
+
+ S 2b;8f;4.a;
+ ifdef SECOND A f;e;8d;c;b-;a-; endif
+ D
+ PER
+ bar
+
+ S 4.e;8f;2;
+ ifdef SECOND A 8g-;f-;g-;b-;2a-; endif
+ D
+ PER
+ bar
+@
+
+P3
+define SECOND @
+P3
+
+S 1f;
+A 1f-;
+T a-;d;c;b-;
+B 1d-;
+PER
+bar
+
+define G
+ T d;e;d;e;
+ B 1g-;
+@
+
+S 8b-;c;d;e;2b;
+G
+PER
+bar
+
+S 1d+;
+A 1b;
+G
+PER
+bar
+
+S 1d+;
+A 1b&;
+G
+PER
+bar
+
+midi all: 1 "tempo=86"; 3 "tempo=80";
+S 1f;
+A 1f-;
+D
+PER
+ital above 1: 1 "molto rit. e dim.";
+bar
+
+midi all: 1 "tempo=60"; 2 "tempo=57"; 3 "tempo=52"; 4 "tempo=40";
+midi 1-2 1-2: 1 "param=7,86";
+S 8b&-;d;a;g;cn+;b&;g+;e+;
+2: d;e;d;e;
+2 2: 1g-;
+bar
+
+midi all: 1 "tempo=49"; 3 "tempo=44"; 4 "tempo=36"; 5 "tempo=60";
+S 1d++;
+A 1f+;
+T 8r;a-;d;e;f;a;d+;e+;
+B 1d-~;
+bar
+
+score release=400
+music
+
+midi 1 1-2: 1 "param=7,40";
+midi 2 1-2: 1 "param=7,68";
+midi 1-2 1-2: 5 "param=7,127";
+S 1d++;
+A 1a+;
+octave above 1: 0.5 "8va" til 4;
+T 1f+;
+B 1d-;
+endbar

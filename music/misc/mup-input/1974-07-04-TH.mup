@@ -1,0 +1,221 @@
+header
+	title (18) "T.H."
+	title (12) "" "John A. Krallmann"
+	title (12) "" "Op. 1 No. 7 (7/4/74)"
+
+footer
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "T. H.  -  \%"
+
+score
+	staffs=2
+	time=6/8
+	barstyle=1-2
+	beamstyle=4.,4.
+	brace=1-2
+	vscheme=2f
+	staffscale=0.75
+	measnum=y
+
+staff 1
+	defoct=5
+music
+
+midi all: 0 "tempo=100";
+midi 1-2 1-2: 1 "onvelocity=50"; 1 "channel=1"; 1 "program=0";
+1: 16g;a;g;f;e;g;f;g;a;e;f;g;
+2: 4.c+;d+;
+rom above 1: 1 "Playfully";
+boldital between 1&2: 1 "mp";
+bar
+
+1: 16c;d;e;d;e;f;e;f;g;d;e;f;
+2: 4.a;c+;
+bar
+
+1: 8e;f;g;f;g;a;
+2: 4.g;a;
+bar
+
+1: 8g;a;b;4e;8f;
+2: 4.b;c+;
+bar
+
+1: 4.g;d;
+2: 4.g;b;
+bar
+
+1: 2.c;
+2: 4c+;8e;f;d;g~;
+bar
+
+ifdef MIDI
+1: 32d;e;d;e;d;e;d;e;d;e;d;e;d;e;d;e;d;e;d;e;d;e;d;e;
+else
+1: 2.d;
+endif
+2: 2.g;
+mussym above 1: 1 "tr" til 6;
+bar
+
+1: [grace; slash 1] 8c;2.c;
+2: 2.c;
+mussym above 1: 1 "ferm";
+mussym below 2: 1 "uferm";
+dblbar
+
+score
+	time=3/4
+	beamstyle=4,4,4
+staff 2
+	clef=bass
+music
+midi 1-2 1-2: 1 "onvelocity=70";
+1: cegc+;;b&-dfb&;
+2: cegc+;c-e-g-c;8b&-b&--;bn-bn--;
+rom above 1: 1 "Maestoso";
+boldital between 1&2: 1 "ff";
+bar
+
+1: 2.cegc+;
+2: 2.c-e-g-c;
+bar
+
+1: cegc+;;b&-dfb&;
+2: cegc+;c-e-g-c;8b&-b&--;bn-bn--;
+bar
+
+1: 2.egc+;
+1 2: 2.e+g+c++e-g-c;
+2: 2.egc+;
+2 2: 2.c-e-g-c;
+roll 1 1 to 2 2: 1;
+dblbar
+
+score
+	time=4/4
+	beamstyle=4,4,4,4
+music
+midi all: 0 "tempo=112";
+midi 1-2 1-2: 1 "onvelocity=45";
+1: c+;b;a;g;
+1 2: e;g;f;e;
+2: ms;
+octave above 1: 1 "8va" til 8m;
+rom above 1: 1 "Playfully";
+boldital between 1&2: 1 "mp";
+bar
+
+1: f;a;g;f;
+1 2: d;c;b-;8a-;b-;
+2: ms;
+bar
+
+1: e;g;f;e;
+1 2: c;e;d;c;
+2: ms;
+bar
+
+1: g;f;d;e;
+1 2: b-;a-;f-;g-;
+2: ms;
+bar
+
+staff 1 defoct=4
+music
+1: c+;a;g;f;
+1 2: e;f;e;d;
+2: ms;
+bar
+
+1: 2.e;{8e;f;g;}3;
+1 2: 2.c;{8c;d;e;}3;
+2: ms;
+bar
+
+1: {8c;d;e;}3;{f;g;a;}3;{b;c+;d+;}3;{d+;e+;f+;}3;
+1 2: {8a-;b-;c;}3;{d;e;f;}3;{g;a;b;}3;{b;c+;d+;}3;
+2: ms;
+bar
+
+1: e+;c+;b;a;
+2: c+;e;d;c;
+bar
+
+ifdef MIDI
+score time=2/4n
+music
+midi 2 1-2: 1 "onvelocity=100";
+1: ms;
+2 1: 2defgabc+ tie;
+2 2: 2c-d-e-f-g-a-b-c tie;
+bar
+score time=4/4n
+music
+endif
+
+midi 1-2 1-2: 2 "onvelocity=80";
+1: 4s;r;e&gb&e&+;f#a#c#+f#+;
+2 1: defgabc+;2.s;
+2 2: c-d-e-f-g-a-b-c;ff-;2cc-;
+octave below 2: 2 "8va" til 1m+2;
+rom above 1: 1 "Agitato pesante";
+boldital between 1&2: 1 "sfz"; 2 "fff";
+bar
+
+1: 1fnancn+fn+;
+2: 1f#f#-;
+bar
+
+midi 1-2: 1 "onvelocity=65";
+1: 2.s;{8e&;g&;a;}3;
+2: {8c-;e&-;g&-;}3;{a-;c;e&;}3;{g&;a;c+;}3;4s;
+pedal below 2: 1;
+bar
+
+1: {8c+;e&+;g&+;}3;{a+;c++;e&++;}3;{g&;a;c+;}3;{e&+;g&+;a+;}3;
+2: ms;
+octave above 1: 3 "15va" til 1m+2;
+bar
+
+1: 1c++;
+2: ms;
+boldital between 1&2: 1 "sfz";
+mussym above 1: 1 "ferm";
+pedal below 2: 4*;
+bar
+
+midi 1-2: 1 "onvelocity=40";
+midi all: 1 "tempo=72";
+1: ms;
+2: 8c-;e-;g-;b&-;c;e;g;b&;
+rom above 1: 1 "Thoughtfully";
+rom between 1&2: 1 "largo";
+boldital between 1&2: 1 "p";
+ital between 1&2: 2 "dim. al fine";
+pedal below 2: 1;
+bar
+
+1: 8c;e;g;b&;c+;e+;g+;b&+;
+2: ms;
+bar
+
+1: 8c;e;g;b&;c+;e+;g+;b&+;
+2: ms;
+octave above 1: 1 "15va" til 2m+2;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 1c++~;
+2: ms;
+ital between 1&2: 1 "morendo";
+bar
+
+1: 1c++;
+2: ms;
+mussym above 1: 1 "ferm";
+pedal below 2: 4*;
+endbar
+

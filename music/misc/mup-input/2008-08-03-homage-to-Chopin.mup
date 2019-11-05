@@ -1,0 +1,175 @@
+header
+	title (18) "Homage to Chopin"
+	title "" "John A. Krallmann (8/3/08)"
+
+header2
+	title (12) "Homage to Chopin - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+footer2
+	title (12) " "
+
+score
+	staffs=2
+	key=5&
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	vscheme=2f
+	packfact=1.3
+
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+
+midi all: 1 "tempo=108";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=86, 70";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=70";
+
+1: 4.s;f+~;
+2: 4.s;f-;
+bar
+
+1: f+;e+;d+;c+;b;a+;
+2: ac+f+;bd+f+;
+bar
+
+1: gn+;4f+~;8;c+;a;
+2: f-;ac+f+;
+bar
+
+1: c+;4d+~;4.;
+2: b--;8gn+;f+;d+;
+2 2: s;bd+;
+bar
+
+1: f+;e+;d+;c+;b;c+;
+2: e-d;ad+f+;
+bar
+
+1: b;an;b;c+;b;c+;
+2: gnd+f+;ad+f+;
+bar
+
+1: 4.eb;bn;
+1 2: 4.s;8gn;f;e;
+2: gnd+;e-;
+bar
+
+1: 4bn;8c+;b+;a+;e+;
+1 2: 4.e;c+;
+2: a-;ae+;
+bar
+
+1: 4e+c++;8f+d++ tie;;e+c++;d+b+;
+2: d-;ad+f+;
+bar
+
+1: 4d+b+;8e+c++;4.c+a+;
+2: a-;ae+;
+bar
+
+1: 4c&+a+;8d+b+;4.bg+;
+2: g-;gd+;
+bar
+
+1: f+;e+;f+;4bn;8c+;
+2: f-;ane+;
+bar
+
+1: f+;e+;f+;4bn;8c+;
+2: f-;ane+;
+bar
+
+1: f+;e+;f+;4c+;8d+;
+2: g-;bd+g+;
+bar
+
+1: f+;e+;f+;4c+;8d+;
+2: g-;bd+g+;
+bar
+
+1: f+;e+;f+;4c+;8d+;
+2: gn-;bd+;
+bar
+
+1: f+;e+;f+;4c+;8d+;
+2: gn-;bd+;
+bar
+
+1: aa+;ana+;ba+;bna+;c+a+;d+b+;
+2: a--;ac+g+;
+bar
+
+1: e+d++;e&&+c++;d+b+;c+a+;af+;gen+;
+2: ac+g+;a--;
+bar
+
+1: gen+;af+;bg+;4.af+;
+2: d-;ad+f+;
+bar
+
+1: f+;e+;d+;e+;d+;e+;
+1 2: 2.an;
+2: g-;and+g+;
+bar
+
+1: e+;d+;c+;4.d+;
+1 2: 2.f;
+2: d-;ad+f+;
+bar
+
+1: e+;d+;c+;4.d+;
+1 2: 2.f;
+2: d-;ad+f+;
+bar
+
+1: c&+;b;c+;e+;d+;c+;
+1 2: 2.ef;
+2: d-;ad+f+;
+bar
+
+1: b;an;b;16a+;a&&+;g+;f+;en+;f+;
+2: dn-;abdn+f+;
+bar
+
+1: f+;g+;d+;e+;b;b&&;
+2: e-;bd+e+g+;
+bar
+
+1: ga;gan;gb;gc+;gd+;gdn+;
+2: a--;ae+;
+bar
+
+1: gf+;ge+;gb;gb&&;ga;gc+f+a+;
+2: a--;ae+;
+mussym above 1: 6 "ferm";
+mussym above 2: 4 "ferm";
+bar
+
+1: {a+;e+;f+;b;}4,4.;{e+;d+;f+;gn;}4,4.;
+octave above 1: 1 "8va" til 6.5;
+2: d-;ad+f+;
+ital between 1&2: 1 "molto adagio e";
+ital between 1&2: 1 "delicatissimo";
+bar
+
+1: {b+;a+;[grace;slash 1]e++;d++;f+;}4,4.;{g+;f+;[grace; slash 1]b+;a+;d+;}4,4.;
+2: d-;ad+f+;
+bar
+
+1: {e+;d+;gn;a;}4,4.;4.d+d++; 
+2: d-;ad+f+;
+octave below 2: 1 "8va";
+endbar

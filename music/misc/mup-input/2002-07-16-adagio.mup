@@ -1,0 +1,190 @@
+header
+	title (18) "Adagio"
+	title "" "John A. Krallmann (July 16, 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=2/2
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	staffscale=0.95
+	staffsep=16
+	timeunit=4
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=108";
+
+1: c+e+;bd+;2ac+;
+2: 2c;f;
+bar
+
+1: fd+;ac+;2b;
+1 2: 2s;4a;g#;
+2: 2d;e;
+bar
+
+1: c+;b;2a;
+1 2: 2e;4g;f;
+2: 2c;f;
+bar
+
+1: d;e;f;g;
+1 2: 2b-;4a-;g-;
+2: 1g-;
+bar
+
+1: 1e+;
+1 2: c+;a;2g;
+2: 1ce+;
+bar
+
+1: g+;f+;e+;f+;
+1 2: 1a;
+2 1: 2e+;g+;
+2 2: 1c#;
+bar
+
+1: 1ag+;
+1 2: c#+;d+;e+;g+;
+2 1: 2s;ag+;
+2 2: 1a-;
+bar
+
+1: f+;e+;d;e;
+1 2: 2a;s;
+2: 2d-;c-;
+bar
+
+1: 1d;
+1 2: s;a-;2g-;
+2: 1b&--;
+bar
+
+1: e;d;e;a;
+2 1: 2s;g~;
+2 2: 1a--~;
+bar
+
+1: 1e+;
+2 1: 1gc#+;
+2 2: 1a--;
+bar
+
+////
+
+1: f#+;d+;g#;a;
+2: 2d-;a-;
+bar
+
+1: a#;b;d#+;e+;
+2: 2g-;c;
+bar
+
+1: a;b;c+;d+;
+2: 2f#-;d;
+bar
+
+1: b;d+;a+;g+;
+2: 2g-;fn-;
+bar
+
+1: g+;c+;g+;c+;
+2: 2e-;e&-;
+bar
+
+1: c+;b;f#+;g+;
+2: 2d-;d&-;
+bar
+
+1: e++;d++;c++;a+;
+2: 1c-;
+bar
+
+1: 2d+;4e+;f+;
+2: 2f-;e-;
+bar
+
+1: g+;f+;e+;c+;
+1 2: 1a;
+2 1: 2s;f;
+2 2: 1d-;
+bar
+
+1: 2ca;b-g;
+2: 1g-d;
+bar
+
+1: 1ec+;
+2: 1c-g-;
+bar
+
+1: 1g;
+1 2: e;d;2c;
+2: 1cg;
+bar
+
+1: 1g;
+1 2: e;d;2c;
+2: 1b&-g;
+bar
+
+1:1a-~ down g~;
+1 2: c#;d;e;d;
+2: 1a-g tie;
+bar
+
+1: 1a-g;
+1 2: 1c#;
+2: 1a-g;
+bar
+
+1: f;e;f;g;
+1 2: 1d;
+2: 1a;
+2 2: 2d;c;
+bar
+
+1: a;d+;;e+;
+1 2: 1d;
+2: 2f;g;
+2 2: 1b&-;
+bar
+
+1: 1c#+e+ tie;
+1 2: 2a#;an;
+2 1: 2g;f;
+2 2: 1a-~;
+bar
+
+1: 1c+e+;
+1 2: 1g;
+2 1: 1e;
+2 2: 2a-;;
+bar
+
+1: d;ce;b&-f;ce;
+2: 1d-a-;
+bar
+
+2 1: 2ed+;ge+;
+2 2: 1c-g-;
+bar
+
+2 1: 1f#a tie;
+2 2: 1d-a- tie;
+bar
+
+2 1: 1fa;
+2 2: 1d-a-;
+endbar

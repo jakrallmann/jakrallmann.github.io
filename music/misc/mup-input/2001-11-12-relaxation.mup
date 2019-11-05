@@ -1,0 +1,273 @@
+header
+	title (18) "Restful Relaxation"
+	title " " "John A. Krallmann (11/12/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=1#
+	brace=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	staffscale=0.85
+	measnum=y
+
+staff 1
+	vscheme=3f
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 0 "tempo=108";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76,64";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 1 3: 0 "channel=12";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+S 2.g;
+A r;b-;c;
+T r;d;e;
+B 2.g-;
+bar
+
+S 2a;8b;c+;
+A 2.c;
+T f;e;d;
+B 2.g-;
+bar
+
+S 2.b;
+A r;d;8a;g;
+T r;a;b;
+B 2.g-;
+bar
+
+S 2.e+;
+A b;a;8e;g;
+T g;a;b;
+B 2.c;
+bar
+
+S 2d+;4ac+;
+A g;f;8e;f;
+T a;2c+;
+B 2d;4d-;
+bar
+
+S dab;bg+;g+;
+A s;;8a;b;
+B 2g-;4f-;
+bar
+
+S g+;e+;b;
+A 8b;a;g;f;d;e;
+B 2e-~;8;d-;
+bar 
+
+score key=0&
+music
+
+S 8b;c+;4;e+;
+A d;e;8a;g;
+B 2c-;8f-;e-;
+bar
+
+S f+;4.g+;8a+;
+A 2.ac+;
+B 2d-;4;
+bar
+
+S 2g+;8e+;f+;
+A ac+;2bd+;
+B 2g-;4g#-;
+bar
+
+S 2.c+e+;
+A b;a;8e;g;
+B 2a-;4g-;
+bar
+
+S ge+;2af+;
+A 2.c+;
+B 2d-;4;
+bar
+
+S ac+f+;4.g+;8;
+A s;2bd+;
+B 2g-;4;
+bar
+
+S 2.c+g+;
+A f+;e+;d+;
+B 2c-;4b--;
+bar
+
+S 2ec+;8d+;e+;
+A b;2a;
+B 2a--;4g-;
+bar
+
+S e+;d+;a+;
+A 2.a;
+B 2f-;4e-;
+bar
+
+S 2.a+;
+A g+;f+;8b;c+;
+B 2d-;4a-;
+bar
+
+//
+
+S 2.c+;
+A d;e;f;
+B 2.g-;
+bar
+
+S 2.b;
+A f;e;d;
+B 2.g#-;
+bar
+
+S 2.c+;
+A e;b;a;
+B 2a-;4e;
+bar
+
+S d+;c+;b;
+A 2f;4g#;
+B 2b-;4e;
+bar
+
+S f+;e+;c+;
+A 2.a;
+B 2d;4f+;
+bar
+
+S a+;g+;f+;
+A 2d+;4b&;
+B 2b&-;4g-;
+bar
+
+S 2.ge+;
+A d+;2c#+;
+B 2a-;4a--;
+bar
+
+S [with-]f+;2d+;
+A 2.a;
+B 2d-;4;
+bar
+
+S [with-]f+;2d+;
+A 2.a;
+B 2c-;4;
+bar
+
+S [with-]f+;2d+;
+A 2.a;
+B 2b&--;4;
+bar
+
+S [with-]f+;2d+;
+A 2.a;
+B 2a--;4;
+bar
+
+S f+;e+;d+;
+A 2.g#b;
+B 2.g#-;
+bar
+
+//
+
+S 2.e+;
+A 2a;4g;
+1 3: [down;ho-2.5]d+;2c#+;
+B 2.a-;
+bar
+
+S d+;f+;a+;
+A 2.f;
+B 2.b&-;
+ital between 1&2: 1 "rit.";
+bar
+
+S 2.e+a+;
+A d+;2c#+;
+B 2.a-;
+invisbar
+
+ifdef MIDI
+	1: r;2s;
+	bar
+endif
+
+staff 1 clef=bass
+music
+
+1: ms;
+repeatstart pad -4
+
+midi 1 1: 1 "onvelocity=48";
+boldital between 1&2: 1 "pp";
+1: r;dfa;;
+B 2.d-;
+bar
+
+1: r;dgc+;dgb&;
+B 2.d-;
+bar
+
+1: r;dfa;;
+B 2.d-;
+bar
+
+1: r;eae+;faf+;
+B 2.d-;
+invisbar
+
+staff 1 clef=treble
+music
+
+1: ms;
+bar
+
+1: r;b&-da;b-dg;
+B 2.g-;
+bar
+
+1: r;g-b&-d;a-c#e;
+B 2.a-;
+bar
+
+1: 2.a-df#;
+B 2.d-;
+bar ifdef MIDI ending "1." endif
+
+midi 1 1: 1 "onvelocity=30";
+1: 2.a-df#;
+B 2.d-;
+boldital between 1&2: 1 "ppp";
+repeatend ifdef MIDI ending "2."
+	midi 1 1: 1 "onvelocity=30";
+	midi all: 1 "tempo=60";
+	1: 2.a-df#;
+	B 2.d-;
+	endbar
+endif
+
+	

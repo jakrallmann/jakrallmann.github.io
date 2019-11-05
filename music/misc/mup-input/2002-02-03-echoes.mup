@@ -1,0 +1,203 @@
+header
+	title (18) "Woodland Echoes"
+	title (12) "" "John A. Krallmann (2/3/02)"
+
+header2
+	title (12) "Woodland Echoes - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	brace=1-3
+	barstyle=1-3
+	beamstyle=4,4,4,4
+	// Reduce size of staffs, so song will fit on 3 pages,
+	// but keep scale of headers and footers unchanged.
+	staffscale=0.77
+	packfact=1.1
+	// BASS chords sometimes have ties from notes with accidentals.
+	// Because of how the macros are defined, we get warnings that
+	// the second chord in the tie shouldn't have a accidental.
+	// This is harmless, so it's okay to ignore the warnings.
+	warn=n
+	measnum=y
+
+staff 1
+	defoct=5
+staff 3
+	clef=bass
+
+// Define chords for the bass line.
+// Use 'M' suffix for minor, 'N3' suffix for chord with no third
+define C 1c-g-e @
+define DM 1d-a-f @
+define D 1d-a-f# @
+define EM 1e-b-g @
+define F 1f-ca @
+define G 1g-db @
+define GM 1g-db& @
+define AM 1a-ec+ @
+define A 1a-ec#+ @
+define B 1b-f#d+ @
+define BN3 1b-f#b @
+
+// Staffs 1 and 2 echo each other.
+// The UL macro puts the Upper voice first, then lower,
+// whereas the LU macros puts the Lower voice first, then Upper.
+define UL(BASS,M)
+1: M
+2: mr;
+3: BASS tie;
+bar
+
+1: mr;
+2: M
+3: BASS;
+ifdef BARTYPE BARTYPE else bar endif
+@
+
+define LU(BASS,M)
+1: mr;
+2: M
+3: BASS tie;
+bar
+
+1: M
+2: mr;
+3: BASS;
+bar
+@
+music
+
+midi all: 1 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=79"; 0 "onvelocity=45"; 0 "param=10,114";
+midi 2 1: 0 "channel=12"; 0 "program=71"; 0 "onvelocity=56"; 0 "param=10,14";
+midi 3 1: 0 "channel=13"; 0 "program=49";
+
+UL(C, c;d;e;r;)
+
+UL(G, 8d;c;d;c;4b-;r;)
+
+UL(C, 8e;d;e;c;4g;r;)
+
+UL(DM, 8c+;b;a;g;4f;r;)
+
+UL(G, 8g;f;e;d;4f;r;)
+
+UL(G, 8f;e;d;a;4b;r;)
+
+UL(C, e;d;2e;)
+
+LU(EM, 8f#;e;f;g;4b;r;)
+
+LU(C, b;a;2e;)
+
+LU(F, a;f;c;r;)
+
+UL(G, d;8g-;d;a;4.b;)
+
+UL(G, 8a;a&;d;e;4f;r;)
+
+UL(AM, 8e;e&;d;c;4a-;r;)
+
+UL(D, 8a;a&;g;g&;4c;d;)
+
+UL(F, 8g;g&;f;e;b-;c;4a-;)
+
+UL(G, 8d;e;d;a-;4b-;r;)
+
+UL(F, 8d;e;d;g-;2a-;)
+
+UL(G, 8a;a&;g;d;e&;4.d;)
+
+UL(G, 8a-;b-;d;a;4b;r;)
+
+UL(F, 8b;a;d;4.a;4r;)
+
+UL(F, 8a;e;4d;2c;)
+
+UL(B, 8a-;b-;e;4.f#;4r;)
+
+UL(G, f#;e;b-;r;)
+
+UL(GM, f#;e;g-;8f;g;)
+
+LU(D, f#;a;e+;d+;)
+
+LU(G, 8c#+;b;d;4.g;4r;)
+
+UL(F, g;a;d;f;)
+
+UL(F, e;c;a-;r;)
+
+LU(G, e;d;g;r;)
+
+define BARTYPE dblbar @	// force doublebar 
+UL(AM, r;a;2a-;)
+undef BARTYPE
+
+ifdef MIDI
+	// Make 1 beat pause; the space will get squeezed out to take no time
+	1-3: r;2.s;
+	bar
+endif
+
+UL(A, 8d#+;e+;4a;8c+;4.c#+;)
+
+UL(C, d+;g;c+;r;)
+
+UL(DM, 8a;d;e;d;e;d;4a-;)
+
+UL(F, 8a;d;e;d;e;d;4a-;)
+
+UL(G, 8a;g;a;g;4a;d+;)
+
+LU(F, c+;f;8g#;4.a;)
+
+UL(C, a;d;2g;)
+
+LU(DM, 8g;f;e;d;4a-;d;)
+
+UL(EM, e+;b;2e;)
+
+UL(F, 8a;g;4f;8a;b;4c+;)
+
+UL(G, b;d;a;g;)
+
+LU(AM, 8e+;d+;c+;b;4a;e;)
+
+UL(BN3, 2e;d#;)
+
+midi all: 1 "tempo=61";	// ritard
+1: mr;
+2: 2r;8;e;f#;g;
+3: 1e-~;
+bar
+
+1: mr;
+2: 8a;b;c+;d+;2e+;
+3: 1e-~;
+bar
+
+midi all: 1 "tempo=55";
+midi 1: 1 "onvelocity=18";
+1: 2r;8;e;f#;g;
+2: mr;
+3: 1e-~;
+bar
+
+midi all: 2 "tempo=50";
+1: 8a;b;c+;d+;2e+g#+ tie;
+2: mr;
+3: 2e-;e--~;
+bar
+
+midi 1-2 1: 5 "param=10,63";	// reset stereo effects
+1: 2e+g+;r;
+2: mr;
+3: 2e--;r;
+endbar

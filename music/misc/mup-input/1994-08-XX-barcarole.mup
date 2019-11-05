@@ -1,0 +1,191 @@
+header
+	title (18) "Barcarole"
+	title (12) "" "John A. Krallmann (8/94)"
+
+footer
+	title (11) "\(copyright) Copyright 1994 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Barcarole - \%"
+
+score
+	time=6/8
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4.,4.
+	packfact=0.7
+	packexp=0.7
+	staffscale=0.85
+	measnum=y
+
+staff 2
+	clef=bass
+	vscheme=2f
+
+music
+
+midi all: 0 "tempo=85";
+ifdef PIANO
+	midi 1-2 1: 0 "channel=1"; 0 "program=0";
+	midi 2 2: 0 "channel=1"; 0 "program=0";
+else
+	midi 1 1: 0 "channel=11"; 0 "program=22";
+	midi 2 1-2: 0 "channel=12"; 0 "program=73";
+endif
+
+midi 1: 0 "onvelocity=35";
+midi 2: 0 "onvelocity=45"; 4 "onvelocity=40";
+1: r;ec+;;r;ec+;;
+2: 4.a;a-;
+rom above 1: 0 "Largo ( \(smup4n) \(dot) = 50 )";
+bar
+
+midi 2: 0 "onvelocity=45"; 4 "onvelocity=40";
+1: r;db;;r;db;;
+2: 4.e;e-;
+bar
+
+midi 1: 2 "onvelocity=50"; 3 "onvelocity=55"; 4 "onvelocity=60";
+midi 2 1: 5 "onvelocity=50";
+midi 2 2: 0 "onvelocity=40";
+1: r;c+e+;d+a&+;4.f+an+ tie;
+2 1: 4.s;8r;a;;
+2 2: 4.a-;d;
+bar
+
+midi 1: 2 "onvelocity=55"; 3 "onvelocity=50"; 4 "onvelocity=45";
+midi 2 1: 5 "onvelocity=50";
+midi 2 2: 1 "onvelocity=55"; 4 "onvelocity=40";
+1: f+a+;e+g+;d+f+;4.c#+e+ tie;
+2 1: 4.s;8r;e+;f+;
+2 2: 4.d+;a;
+bar
+
+midi 2 1: 0 "onvelocity=45";
+1: c+e+;ad+;cn+e+;4.d+f+ tie;
+2: 4.g+;8d;a;e+;
+bar
+
+midi 1: 4 "onvelocity=40";
+midi 2: 4 "onvelocity=40";
+1: d+f+;f+a+;e+g+;4.b&d+f+;
+2: 4.f+;8g;d+;f+;
+bar
+
+midi 1-2: 1 "onvelocity=35"; 4 "onvelocity=30";
+1: 4.ac#+e+;gb&e&+;
+2: g+;e+;a;e&;a;b&;
+bar
+
+midi 1-2: 1 "onvelocity=25"; 4 "onvelocity=30";
+1: 4.egac#+;fad+ tie;
+2: a-;e;a;d;a;e+;
+bar
+
+1:fad+;ad+;c+e+;4.d+f+ tie;
+2: 4.f+;8d;a;e+;
+bar
+
+1: d+f+;f+a+;d+f+;4.b&d+f+;
+2: 4.d+;8g;d+;f+;
+bar
+
+1: 4.ac#+e+;d+f+a+ tie;
+2: g+;e+;a;d-;a-;e;
+bar
+
+midi 1-2: 4 "onvelocity=40";
+1: d+f+a+;e+g+;d+f+;4ad+f+;8gc+e+;
+2:4.df;8c;g;c+;
+bar
+
+midi 1-2: 1 "onvelocity=45";
+1: 4gc+e+;8fb&d+;4;8;
+2: b&-;g;b&;b-;f;b;
+bar
+
+midi 1-2: 4 "onvelocity=35";
+1: 4.fb&d+;egc+;
+2: c;g;d+;c;g;c+;
+bar
+
+midi 1-2: 1 "onvelocity=40"; 4 "onvelocity=45";
+1: 4fad+;8;;gc+e+;ad+f+;
+2: b&-;f;b&;b-;f;b;
+bar
+
+midi 1-2: 1 "onvelocity=50"; 4 "onvelocity=45";
+1: 4.ad+f+;gc+e+;
+2: c;g;c+;c;g;c+;
+bar
+
+midi 1-2: 1 "onvelocity=50"; 4 "onvelocity=54";
+1: 4.fad+f+;fb&d+f+;
+2: d;a;d+;b&-;f;b&;
+bar
+
+midi 1-2: 1 "onvelocity=57"; 4 "onvelocity=60";
+1: 4.gb&d+g+;gbe&+g+;
+2: g-;d;g;e&-;b&-;e&;
+bar
+
+midi 1-2: 1 "onvelocity=63";
+1: 4ad+f#+a+;8;;gd+g+;ac+e+a+;
+2: d-;a-;f#;d-;a-;f#;
+bar
+
+midi 1-2: 1 "onvelocity=66";
+1: 4.b&d+g+b&+;8be&+g+b+;ae+g+a+;be+g+b+;
+2: g-;d;g;c;g;c+;
+bar
+
+midi 1-2: 1 "onvelocity=70"; 4 "onvelocity=66";
+1: d+g+b&+d++;c+g+c++;b&d+g+b+;4c+e&+g+c++;8;
+2: g-;d;g;c;g;c+;
+bar
+
+midi 1-2: 1 "onvelocity=63"; 2 "onvelocity=60"; 3 "onvelocity=56";
+1: 4b&e&+g+b&+;8aa+;4.bd+g+b+ tie;
+2: c;g;c+;g-;d;a;
+bar
+
+midi 1-2: 1 "onvelocity=53";
+1: bd+g+b+;gg+;dd+;4.e&a&c+ tie;
+2: 4.b&;8c;a&;c+;
+bar
+
+1: eac+;e&a&c+;efac+;4.dgbd+ tie;
+2: 4.f-;8g-;d;a;
+bar
+
+midi 1-2: 1 "onvelocity=50";
+1: dgbd+;cc+;dd+;4.gc+e+ tie;
+2: 4.bn;8c;g;d+;
+bar
+
+midi 1-2: 2 "onvelocity=45";
+1: gc+e+;c+e+g+;gc+e+;fac+d+;gb&d&+e+;adn+f+;
+2: 4.e+;8d;a;d+;
+bar
+
+1: 4ad+f+;8dfgb;4.egc+ tie;
+2: 8g-;d;g;c;g;c+;
+bar ending "1."
+
+score
+	time=3/8
+
+music
+1: 4.egc+;
+2: 4c+;8b;
+repeatend ending "2."
+
+score
+	time=6/8
+music
+
+1: 2.egc+;
+2: 2.c+;
+endbar

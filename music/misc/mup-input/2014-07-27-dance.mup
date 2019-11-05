@@ -1,0 +1,103 @@
+header
+	title (18) "Dance"
+	title "" "John A. Krallmann"
+	title " " "(July 27, 2014)"
+
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=86";
+
+1: 8a#;b;d+;c+;g#;an;
+2: mr;
+bar
+
+1: 2.b;
+1 2: 8d;e;g;f;e;e&;
+2: g-;dgb;;
+bar
+
+1: 8f;g;a;g;f;dd+;
+1 2: 2d;4s;
+2: b--;dgb;;
+bar
+
+1: 2e+~;8;d+;
+1 2: 8b;c+;b;a;g;e;
+2: a--;eac+;egc+;
+bar
+
+1: 2d+~;8;c+;
+1 2: 8f;g;a;g;f;e&;
+2: d-;a-df;dfc+;
+bar
+
+1: 2b~;8;d+;
+1 2: 8d;e;g;fn;e;d;
+2: g--;gdfn;dgb;
+bar
+
+1: 2c+~;8;b&;
+1 2: 8e;b&;a;g;fn;d;
+2: c-;eb&c+;ceb;
+bar
+
+1: 2a~;8;c+;
+1 2: 8c;d;fn;d;4c;
+2: fn--;dgb&;cfna;
+bar
+
+1: 2d+~;8;c+;
+1 2: 8b&;d;b;a;g;d;
+2: g--;dgb&;dfnb;
+bar
+
+1: 2c+~;8;b&;
+1 2: 8e;fn;g;f;e;d;
+2: c-;eb&c+;ceb;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8db&;ca;bg+;afn+;f#+;c++;b&+;a+;
+1 2: 2s;a;
+2: fn-;fnb&d+;8df#c+;with e&+ above;with f+ above; with c++ above;
+ital above all: 3 "rit.";
+mussym above 1: 4.5 "ferm";
+bar
+
+1: 8a+;g+;4;8fn+;e&+;16f+;e+;d+;c+;
+1 2: b&;;g;g&;
+2: g-;8gb&d+;fn;4e&-;c-;
+ital above all: 1 "a tempo";
+bar
+
+1: 4.e&fn;8e;2d;
+1 2: 8b&-;a-;g-;fn-;a-;bn-;4g-;
+2: fn--;c;2d;
+2 2: 2s;4.g-;8fn-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8ge&+;d+;e&c+;a;2gbd+;
+2: c-g-;c-c;2g--g-;
+endbar
+ 

@@ -1,0 +1,165 @@
+header
+	title (18) "Soaring"
+	title (10) " "
+	title "" "John A. Krallmann (May 11-16, 2004)"
+
+header2
+	title (12) "Soaring - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4#
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.95
+	staffsep=16
+	scoresep=10,24
+	measnum=y
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=80";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=86, 74";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=74";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=74";
+
+1: 2s;16e;f;g;a;b;c+;dn+;e+;
+2: 2s;r;
+bar
+
+define THEMEA
+1: 4.b;8c+;16e+;dn+;c+;b;a;g;a;e;
+2: a-;e;b;c+;
+bar
+
+1: 16g;a;g;e;2.f;
+2: dn-;a-;e;8g;a;
+bar
+
+1: 16g;f;e;dn;8e;f;g;a;b;e+;
+2: e-;dn;e+;dn+;
+bar
+
+1: 2e+;;
+1 2: 8b;a;e;a-;b;a;16e;d;e;f;
+2: 2c;cn;
+bar
+
+1: 2gb;4.c;8;
+1 2: 8f;e;a#-;b-;2s;
+2: 2s;8g;f;e;f;
+2 2: 2b-;a-;
+bar
+
+1: 8b-;c;a;g;f;g;e;;
+1 2: 2a-;4;g-;
+2: e;d;2s;
+2 2: 2b-;4e-;b-;
+bar
+
+1: 4.c+;16d+;e+;2b;
+1 2: 8g;f;e#;f;;en;4b-;
+2: a-;a;g-;8f;e;
+bar
+
+1: 4.a;8b;8f;g;16g;f;e;d;
+1 2: 8e;c;e;d;4cn;b-;
+2: f-;b-;e-;b-;
+bar
+
+1: 4.c;8f;4.b-;8e;
+2: 8g;f;4ef;8f;e;4;
+2 2: 2a-;g-;
+bar 
+@
+THEMEA
+
+1: 8b;a;;b;4.a-f;8g;
+1 2: 2e;s;
+2: 2a;4e;d;
+2 2: c;cn;2b-;
+bar
+
+1: 4.f-d;8g-e;8e;g;b;e+;
+1 2: 2s;g-;
+2: e-;b-;e;d;
+bar
+
+1: 8f+;e+;f+;e+;2c+;
+1 2: 2g;8g;f;c;e;
+2: c;b-;a-;g-;
+bar
+
+1: 8a;b;c+;b;f;g;g;16a;b;
+1 2: e;d;;b-e;
+2: f-;b-;e-;dn;
+bar
+
+1: 8b;a;;16g;f;8a;g;;16f;e;
+1 2: e;;;c;
+2: ca;cna;b-g;b&-fg;
+bar
+
+1: b;ee+;8f+;4e+;16g+;a+;
+1 2: 8f;e;16b;a;g;a;4a;;
+2: b(n)-g;ca;cna;;
+bar
+
+1: 4.g+;16f+;e+;4.g+;16d+;e+;
+1 2: 8f;e;a#-;b-;f;e;b#-;c;
+2: 2b-g;b&-g;
+bar
+
+1: 2f+;4;b+;
+1 2: 8f;g;16c;d;e;f;8e;d;c;d;
+2: 2a-f;b-a;
+bar
+
+1: f+;8e+;f+;2e+;
+1 2: 8e;d;c;b-;4g;8f;g;
+2: 2b-a;8e-;b-;a-;b-;
+bar
+
+1: a+;8g+;f+;2bg+ tie;
+1 2: 2cn+;s;
+2: 8f;g;a;cn+;2eb tie;
+2 2: 2a-;s;
+bar
+
+1: 2bg+;16e;f;g;a;b;c+;dn+;e+;
+2: 2eb;r;
+bar
+
+THEMEA
+
+1: 8b;a;b;a;4.a-f;8b-;
+1 2: 2e;s;
+2: 2a;4e;d;
+2 2: c;cn;2b-;
+bar
+
+1: 1b-g;
+2: 1e-b-;
+bar
+
+boldital between 1&2: 1 "ppp";
+1: ms;
+2: 1fcn+;
+2 2: 1e-~cn;
+bar
+
+1: ms;
+2: 1gb;
+2 2: 1e-b-;
+endbar

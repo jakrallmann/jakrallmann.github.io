@@ -1,0 +1,161 @@
+header
+	title (18) "Dance"
+	title "" "John A. Krallmann (6/17/07)"
+
+header2
+	title (12) "Dance - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=112";
+midi 1 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=90, 80";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+define D [with.] @
+
+1: 2s;8;g;a;g;
+2: 2s;8;r;4;
+bar
+
+1: D 4ge+;4 tie;8;8e+;d+;c+;
+2: c-;gc+e+;
+bar
+
+1: D 8ge+;4fd+;8ec+;4fd+;8e+;f+;
+2: d-;dac+;
+bar
+
+1: D 8bg+;4;8 tie;;af+;ge+;fd+;
+2: g-;abd+f+;
+bar
+
+1: D 8af+;4;8bg+;ge+;d+;c+;b&;
+2: c-;gc+e+;
+bar
+
+1: D 8efa;4;8dfac+ tie;;d+;e+;d+;
+2: f-;fa;
+bar
+
+1: D 8deg;4;8ec+ tie;4;ge+;
+2: c-;gc+;
+bar
+
+1: 8e+;d+;c+;d+~;4;c+;
+1 2: 4.a;8fa tie;2;
+2: f-;fad+;
+bar
+
+1: 8c+a+;bg+;c+a+;bg+ tie;;af+;ge+;fd+;
+2: g-;abd+f+;
+bar
+
+1: 8af+;bg+;af+;ge+ tie;;g;f#;g;
+2: c-;gc+e+;
+bar
+
+1: D 8efa;4;8dc+ tie;;d+;e+;d+;
+2: f-;fa;
+bar
+
+1: D 8deg;4;8ec+ tie;;d+;e+;g+;
+2: c-;gc+;
+bar
+
+1: 8g+;f+;e+;c+~;4;fac+;
+1 2: 4.a;8ga tie;4;s;
+2: f-;ac+;
+bar
+
+1: 8af+;ge+;fd+;ec+ tie;4;ge+;
+2: c-;gc+;
+bar
+
+1: 8ge+;fd+;ge+;ec+ tie;4;;
+2: b&--;eg;
+bar
+
+1: 8ec+;db;ec+;ca tie;2;
+2: a--;e;
+2 2: s;4a-;g-;
+bar
+
+1: 8ca;b-g;ca;a-f tie;4;a&-d;
+2: f-;c;
+bar
+
+define M1
+1: 8a&-f;g-e;f-d;g-e tie;4;c;
+2: c-;g-;
+bar
+@
+M1
+M1
+
+define M2
+1: 8f;e;d;f~;;e;4d;
+1 2: 4.a-;8~;2;
+2: f-;c;
+bar
+@
+M2
+M2
+
+define M3
+1: 8b;a;g;b~;;c+;4d+;
+1 2: 4.d;8f~;4;;
+2: g-;d;
+bar
+@
+M3
+M3
+
+define M4
+1: 8af+;ge+;fd+;ec+ tie;8;e;d;e;
+2: c-;g-;
+bar
+@
+M4
+M4
+
+1: 8eg;df;eg;ce tie;4;;
+ital between 1&2: 1 "dim.";
+2: c-;g-;
+bar
+
+1: 8eg;df;eg;ce tie;4;;
+2: c-;g-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8ge+;fd+;ge+;bg+ tie;;af+;ge+;fd+;
+2: c-;g-;
+ital between 1&2: 1 "molto rit.";
+bar
+
+1: 1ec+;
+2: 1c-;
+endbar
+

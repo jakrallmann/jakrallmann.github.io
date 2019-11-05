@@ -1,0 +1,198 @@
+header
+	title (18) "Lullaby"
+	title (12) "" "John A. Krallmann (12/4/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (9) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	release=10
+	staffsep=16
+	scorepad=5
+
+	measnum=y
+
+staff 2
+	clef=bass
+
+voice 2 2
+	timeunit=1
+
+music
+
+midi all: 0 "tempo=72";
+midi 1-2 1-2: 0 "param=7,127";
+midi 1 1: 0 "channel=11"; 0 "program=49"; 0 "onvelocity=70"; 0 "param=10,80";
+midi 1 2: 0 "channel=12"; 0 "program=44"; 0 "onvelocity=44"; 0 "param=10,70";
+midi 2 1: 0 "channel=13"; 0 "program=42"; 0 "onvelocity=40"; 0 "param=10,60";
+midi 2 2: 0 "channel=14"; 0 "program=42"; 0 "onvelocity=40"; 0 "param=10,50";
+
+S e;g;;;
+B c-g-;
+bar
+
+S e;g;4.;8f;
+B e-b-;
+bar
+
+S e;c;a-;f-;
+B f-c;
+bar
+
+S b-;a;4.g;8f;
+B g-d;
+bar
+
+S e;d+;c+;e;
+B cg;
+bar
+
+S a;d;2;
+A 2s;4a-;c;
+B f-c;
+bar
+
+score release=300
+music
+midi all: 1 "tempo=64"; 3 "tempo=50"; 5 "tempo=72";
+midi 1-2 1-2: 3 "param=7,100"; 5 "param=7,127";
+S 2g;;
+A 2d;e;
+B 2c-g-;;
+bar
+
+score release=10
+music
+S e+;g;;;
+B e-b-;
+bar
+
+S d+;a;4.;8c+;
+B f-c;
+bar
+
+S b;a;g;d;
+B g-d;
+bar
+
+S f;e;;d;
+T 1g;
+B 2.c;4b-;
+bar
+
+S c;c+;;b;
+A 2c;e;
+T 1e;
+B 2.a-;4g-;
+bar
+
+S b;a;c;d;
+B f-c;
+bar
+
+S g;e;d;c;
+B c-g-;
+bar
+
+S a-;2c;4d;
+B f-c;
+bar
+
+score release=300
+music
+midi all: 1 "tempo=56"; 3 "tempo=40"; 5 "tempo=72";
+midi 1-2 1-2: 3 "param=7,100"; 5 "param=7,127";
+ifdef MIDI
+	S 2c;;
+	A 2e-;;
+else
+	T 2ec+;;
+endif
+B 2c-g-;;
+repeatend
+
+score release=10
+music
+S e;g;;b-;
+B c-g-;
+bar
+
+S b-;a-;;c;
+B f-c;
+bar
+
+S 2g;;
+A 2e;;
+B 2c-g-;;
+bar
+
+S e;g;;b;
+B c-g-;
+bar
+
+S b;c+;f+;a+;
+B f-c;
+bar
+
+S 1g+;
+A 2d+;e+;
+B c-g-;
+bar
+
+S d+;c+;2;
+A 2.a;4d;
+B f-c;
+bar
+
+S d+;e+;2;
+A e;c+;2;
+B c-g-;
+bar
+
+S d+;c+;;d+;
+A 2.a;4f;
+B f-c;
+bar
+
+S 2e+;g+;
+A 2c+;e+;
+B cg;
+bar
+
+S g+;f+;c+;a;
+A 1a;
+B f-c;
+bar
+
+S 2e+;g+;
+A 2c+;e+;
+B c-g-;
+bar
+
+midi all: 1 "tempo=60";
+S g+;f+;e+;d+;
+A b;a;g;f;
+T f;g;a;b;
+B g-;
+bar
+
+score release=300
+music
+midi all: 1 "tempo=44"; 3 "tempo=24";
+midi 1-2 1-2: 3 "param=7,100"; 5 "param=10,63"; 5 "param=7,127";
+S 2c+;c++;
+A 2e;e+;
+B 2cg;c+g+;
+endbar

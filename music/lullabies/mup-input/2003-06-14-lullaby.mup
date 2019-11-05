@@ -1,0 +1,152 @@
+header
+	title (18) "Lullaby"
+	title "" "John A. Krallmann (June 14, 2003)"
+
+header2
+	title (12) "Lullaby - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	measnum=y
+	packfact=1.25
+	staffscale=0.85
+	key=5&
+	release=60
+
+staff 2
+	clef=bass
+
+music
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+midi all: 1 "tempo=52";
+midi 1 1: 0 "channel=11"; 0 "program=89"; 0 "onvelocity=100,80";
+midi 1 2: 0 "channel=12"; 0 "program=89"; 0 "onvelocity=88";
+midi 2 1: 0 "channel=13"; 0 "program=89"; 0 "onvelocity=100";
+midi 2 2: 0 "channel=14"; 0 "program=89"; 0 "onvelocity=88";
+
+1: mr;
+2: 8d-;a-;e;f;4a;8d+;c+;
+repeatstart
+
+1: 2.s;8e;d;
+2: 2a;4g;s;
+2 2: 8e-;b-;e;f;2g;
+bar
+
+midi 2: 1 "onvelocity=88";
+1: 4.b;8a;b;a;b;c+;
+2: 8a-;g;4c+;g+;a-;
+bar
+
+1: 4.f+;8c+;;4d+;8b;
+2: 8d-;a-;4f;8g-;e;b;g+;
+bar
+
+1: 4.e+;8a+;2f+;
+2: 8a-;g;d+;c+;b-;f;e+;d+;
+bar
+
+1:8f+;4e+;8d+;4.e+;8b;
+2: 8g-;e;4b;8gn-;e;4b;
+bar
+
+1: 2d+;4c+;a+;
+1 2: s;8b-;g;b;a;4s;
+2: 8a-;g;2s;8b;c+;
+bar
+
+1: 2f+;4.;8e+;
+2: 8d-;a;e+;f+;c-;f;4an;
+bar
+
+1: 8e+;c+;4d+;8c+;a;4b;
+2: 8b--;f-;b;a-;g-;e;b;d+;
+bar
+
+midi all: 3 "tempo=42"; 4 "tempo=34"; 5 "tempo=52";
+1: 4.b;8a;2b;
+1 2: s;8c;g;2s;
+2:8a-;g;4s;8b--;f-;4dn;
+bar 
+
+1: 4.gn;8f;g;f;g;b;
+2: 8e-;b-;4d;e;d+;
+bar
+
+1: 4.b;8c+;4.a;8gn;
+2: 8a-;en;4d+;8a-;e&;4c+;
+bar
+
+1: 2f;8d+;c+;b;a;
+2: 8d-;a-;c+;d+;b-;f;c+;d+;
+bar
+
+1: a;b;4.e+;8b;
+2: 8e-;f;gn;e+;c-;a-;4g;
+bar
+
+1: 8b;a;b;e+;;f+;4a+;
+1 2: c;g;2s;
+2: 2s;8d-;a-;e;f;
+bar
+
+midi all: 1 "tempo=50";3 "tempo=46";
+1: 2b+;a+;
+1 2: 4s;8a;g;2s;
+2: 8g-;d;4s;8a-;f;c+;d+;
+bar ending  "1."
+
+score time=2/4 ; beamstyle=4,4
+music
+
+midi all: 3 "tempo=52";
+1: 2a+;
+1 2: s;8c;e+;
+2: 8a-;g+;4s;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi 2: 0 "onvelocity=100";
+1: 2.d+;4r;
+2: 8d-;a-;e;f;4a;8d+;c+;
+repeatend ending "2."
+
+score
+	release=100
+music
+
+midi all: 1 "tempo=40";3 "tempo=36";
+1: 2a+;4d++;8e+;f+;
+1 2: s;8c;e+;4f+;8g;a;
+2: 8a-;g+;4s;8d-;a-;4s;
+bar
+
+score
+	release=450
+music
+
+1: 2fd+;s;
+2: 2s;fd+;
+2 2: 2d-a-;;
+bar
+
+1: ms;
+2: 1fd+;
+2 2: 1d-a-;
+endbar

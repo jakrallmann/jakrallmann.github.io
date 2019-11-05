@@ -1,0 +1,319 @@
+header
+	title (18) "A Happy Morning"
+	title (12) "" "John A. Krallmann (Aug 15-16, 2001)"
+
+header2
+	title (12) "A Happy Morning - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	vscheme=2o
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.9
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=128";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=98,84"; 0 "param=10,78";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=84"; 0 "param=10,68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=84"; 0 "param=10,58";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=84"; 0 "param=10,88";
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+S 2c+;4g;8d+;e+;
+T r;eg;2;
+B 1c-;
+bar
+
+S 2e+;8b;e+;g+;f+;
+T r;gb;2;
+B 1e-;
+bar
+
+S 2e+;4d+;8e+;f+;
+A r;ac+;2fa;
+T 2r;4b;a;
+B 1f-;
+bar
+
+S 2d+;4b;8a;g;
+A r;fa;g;f;
+T r;d;a;b;
+B 1g-;
+bar
+
+S 8c+;4a;8g;4e;g;
+T r;g-;e;g-;
+B 1c-;
+bar
+
+S 8c+;4a;8g;4e;g;
+T r;e-;b-;c;
+B 1a--;
+bar
+
+S 8c+;4a;8g;4f;g;
+T r;c;a;c+;
+B 1f-;
+bar
+
+S 8d+;4b;8a;d+;b;a;g;
+T r;d;b;d;
+B 1g-;
+bar
+
+S 8d+;4b;8a;d+;a;g;f;
+T r;d;b;g;
+B 1g-;
+bar
+
+//
+
+S 8g;4e;8d;g;e;d;c;
+T r;g-;e;g-;
+B 1c-;
+bar
+
+S 8f;4d;8c;2d;
+T r;a-;e;f;
+B 1d-;
+bar
+
+S 8g;d;e;f;g;4.f;
+T r;d;b;8a;g;
+B 1g-;
+bar
+
+S 8e;c;d;e~;2;
+T r;g;c+;b;
+B 1c;
+bar
+
+S 8e;c;d;e~;;g;c+;d+;
+B 2a;g;
+bar
+
+S 4.e+;16f+;e+;4;d+;
+A 2ac+;4;gb;
+B f-;c;g-;d;
+bar
+
+S 8c+;4b;8e;4a;g;
+A 2s;4ce;b-d;
+B a-;e;f-;g-;
+bar
+
+S 8e;a-;b-;c~;;a;;g;
+B a-;g-;f-;e-;
+bar
+
+//
+
+
+S 8a;d;e;f#~;;g;a;b;
+T r;a-;d;a-;
+B 1d-;
+bar
+
+S 2a;4e;f;
+A 2df#;4g-c;a-d;
+T r;a-;d-;a-;
+B 1d-;
+bar
+
+S 8a;d;e;f#~;;g;a;b;
+T r;a-;d;a-;
+B 1d-;
+bar
+
+score time=3/4
+music
+
+S 2c+;4d+;
+A 2fa;4gb;
+B f-;c;a;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 2e+;d+;
+A 2ac+;gb;
+B g-;d;b;d+;
+bar
+
+S 2e+;;
+A 2abc#+;;
+T r;e;b;c#+;
+B 1a-;
+bar
+
+S 8e+;c+;a;e~;;f;a;c+;
+B 8d-;a-;f;a;2c+;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+S 2gd+;
+A a;b;
+B 8g-;d;a;b;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 8d+;c+;a;e~;;f;a;c+;
+B 8f-;c;4a;f;c;
+bar
+
+////
+
+S 8b;a;g;d~;;e;f;g;
+A 2d;s;
+B 8g-;4d;8b~;;4.d;
+bar
+
+S 8e;f#;g#;b~;;g;f;e;
+B 8e-;4b-;8g#;2b;
+bar
+
+S 8d;e;f#;b~;;f;e;d;
+B 8g-;4.d;4b;d;
+bar
+
+S 8f;g;a;c+~;;f+;e+;c+;
+B f-;c;a;c;
+bar
+
+S 8d+;c+;b&;f~;2;
+B b&-;f;c+;d+;
+bar
+
+S 8c+;f;g;a~;2;
+B a-;f;c+;8d+;e&+;
+bar
+
+S 8d+;c+;b&;f;c+;b;a;f;
+B b&-;f;f-;c;
+bar
+
+//
+
+S 8b&;a;g;f;2c+;
+A 2s;8e;c;d;e;
+B d-;b(n)-;c-;b&--;
+bar
+
+S f;8c+;b&;4a;8;g;
+A c;d;c;8f;e;
+B a--;b&--;c-;c#-;
+bar
+
+S 8f;f+;;e+;2d+;
+A 2d;8c+;b&;;a;
+B d-;c-;b&--;a--;
+bar
+
+S 8d+;c+;;b;;a;;g#;
+A e;;8d;c;4b-;
+B g#--;a--;e-;;
+bar
+
+S 2a;8a;g;a;b;
+A 8c#;d;e;c;f;e;4f;
+B a-;g-;f-;d-;
+bar
+
+S 8c#+;d+;4;;c+;
+A e;f;2e;
+B a-;8b&-;a-;4g-;a-;
+bar
+
+score time=2/4
+music
+
+S 2d+;
+A 2f#;
+B 2d-;
+repeatstart
+
+//
+
+score key=1# ; time=4/4 ; beamstyle=4,4,4,4
+music
+
+S g+;8;f+;e+;d+;g;a;
+A b;c+;g;e;
+B g-;a-;b-;c;
+bar
+
+S d+;8e+;d+;2b;
+A b;f;2g;
+B g-;d-;g-;f-;
+bar
+
+S g;8;a;4b;8;c+;
+A e;8;f;4g;8;a;
+B e-;d-;g-;e-;
+bar
+
+S d+;8f+;e+;2d+;
+A g;a;8f;g;a;d;
+B b-;c#;d;cn;
+bar
+
+S d+;e+;8g+;4.f+;
+A g;;8a;4.c+;
+B b-;c;d;8d-;f-;
+bar
+
+S g+;a+;2g#+b+;
+A b;c+;8f+;e+;d+;b;
+B g-;f-;e-;g#-;
+bar
+
+S a;8;b;a;d;e;f;
+A c;;;8;a-;
+B a-;g-;f-;d-;
+bar
+
+//
+
+S g;8;a;2b;
+A 8b-;a-;4b-;8g#;f;e;d;
+B g-;f-;e-;b-;
+bar
+
+S 8c+;b;a;g;d+;c+;b;a;
+A ega;ce;ef;df;
+B a-;e;d;d-;
+bar
+
+S [with .]b-g;[]fd+;2bg+;
+B [with.]g-;[]d-;2g--;
+repeatend
+
+ifdef MIDI
+score time=1/4
+music
+
+midi 1-2 1-2: 1 "param=10,63";
+1: mr;
+bar
+endif

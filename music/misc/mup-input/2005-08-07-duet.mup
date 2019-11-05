@@ -1,0 +1,148 @@
+header
+	title (18) "Duet"
+	title "" "John A. Krallmann (8/7/05)"
+
+header2
+	title (12) "- \% -"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+footer2
+	title (12) " "
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	packfact=1.2
+	staffsep=16
+	staffscale=0.92
+	scoresep=10,26
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=56";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=78, 70";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=70";
+
+
+1: 16e+;c+;g;e;g;c+; e+;c+;g;e+;c+;g;
+2: 4.c~;8.;b;
+bar
+
+1: 16e+;c+;a;e;a;c+; e+;c+;a;e+;c+;a;
+2: 4.a~;8.;g;
+bar
+
+1: 16e+;a;f;d;f;a; d+;a;f;c+;a;f;
+2: 2.f;
+bar
+
+1: 16c+;d;f;b;d;f; a;d;f;a&;d;f;
+2: 2.g;
+bar
+
+1: 16g;c;d;g;c;d; c+;e;g;b;e;g;
+2: 2.e;
+bar
+
+1: 16b;c;f;a;c;f; a;c;f;a;c;f;
+2: 4.f~;8.;e;
+bar
+
+1: 16f+;c+;a;f;a;c+; f+;c+;a;f;a;e+;
+2: 4.d;c;
+bar
+
+1: 16e+;f;g;d+;f;g; c#+;f;g;d+;f;d#+;
+2: 2.b-;
+bar
+
+1: 16e+;b;c+;e;g;c+; e+;g;c+;e+;g;f+;
+2: 2.c;
+bar
+
+1: 16g+;c+;a;f+;c+;a; e+;c+;a;d+;d;a;
+2: 2.f-;
+bar
+
+1: 16c+;d;f;b;d;f; a;g-;f;a;b;d+;
+2: 2.g-;
+bar ending "1."
+
+1: 4.d+;c+;
+2: 16c-;g-;e;g;c+;d+;4.e+;
+repeatend ending "2."
+
+newpage
+
+// force flags for new phrase
+staff 1 beamstyle=
+music
+
+1: 4.d+;8.c+;;
+2: 16c-;g-;e;g;c+;d+;4.e+;
+repeatstart endending
+
+staff 1 beamstyle=4.,4.
+music
+
+1: 4.c+~;8.;16e&+;d+;c+;
+2: 16a&-;e&;a&;d+;e&+;f+;4.e+;
+bar
+
+1: 4.g~;8.;{8f;g;}2,8.;
+2: 16c-;g-;e&;d+;e&+;d+;4.c+;
+bar
+
+1: 4.a&~;8.;16d+;f+;e&+;
+2: 16f-;c;a&;d+;e&+;d+;4.c+;
+bar
+
+1: 4.d+~;8.;16g;c+;d+;
+2: 16g-;d;b(n);<<staff clef=treble>>d;g;a&;4.g;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.e+~;8.;16c++;b+;b&+;
+2: 16c-;g-;e;g;c+;d+;4.e+;
+bar
+
+1: 4.a+~;8.;16d+;f+;a&+;
+2: 16f-;c;a;d+;e+;g+;4.f+;
+bar
+
+1: 4.g+~;8.;g&+;
+2: 16e-;c;g;d+;e+;d+;4.c+;
+bar
+
+1: 4.f+~;8.;c+;
+2: 16d-;a-;f;c+;d+;c+;4.a;
+bar
+
+1: 4.e+~;8.;16b;g;d+;
+2: 16g-;f;b;e+;d+;e+;4.g+;
+bar ending "1."
+
+// force flags for new phrase
+staff 1 beamstyle=
+music
+
+1: 4.c+~;8.;;
+2: 16c-;g-;e;g;c+;d+;4.e+;
+repeatend ending "2."
+
+1: 2.c+;
+2: 16c-;g-;e;g;c+;d+;4.e+;
+endbar endending

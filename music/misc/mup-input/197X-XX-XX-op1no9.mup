@@ -1,0 +1,265 @@
+header
+	title (18) "Opus 1 No. 9"
+	title (12) "" "John A. Krallmann (circa 1975)"
+
+footer
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Op. 1 No. 9 - page \%"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.9
+	packfact=1
+	scoresep=12,28
+	measnum=y
+
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=176";
+midi 1-2: 0 "program=1";
+
+rom  above 1: 4 "Vivo (\(smup2n) = 88 )";
+1: 2.s;4g;
+2: 2.s;[with .]4g;
+boldital between 1&2: 3 "f";
+bar
+
+1: c+;8d+;4.e+;4d+;
+2: [with .]c;[]g-;[]c;[]g-;
+bar
+
+1: c+;8b;4.b&;4g;
+2: [with .]c;[]g-;[]d;[]g-;
+bar
+
+1: c+;8d+;4.e+;4f+;
+2: [with .]c;[]g-;[]c;[]g-;
+bar
+
+1: g+;8a+;4.d+;8e+;f+;
+2: [with .]d;[]g-;[]d;[]g-;
+bar
+
+1: g+;f+;e+;c+;
+2: [with .]c;[]g-;[]c;[]g-;
+bar
+
+1: f+;e+;d+;c+;
+2: [with .]d;[]g-;[]d;[]g-;
+bar
+
+1: f+;e+;d+;c+;
+2: [with .]d;[]g-;[]d;[]g-;
+bar
+
+1: g;8d+;b;2c+~;
+2: [with .]b-;[]g-;[]c;[]g-;
+bar
+
+1: 2.c+;4g;
+2: 2.c;4g;
+boldital between 1&2: 4 "mf";
+ital below 2: 2 "legato";
+bar
+
+1: c+;8d+;4.e+;4d+;
+2: a-;8b-;4.c;4d;
+bar
+
+1: c+;8b;4.b&;4g;
+2: e;8f;4.g;4e;
+bar
+
+1: c+;8d+;4.e+;4f+;
+2: a;8b;4.c+;4d+;
+bar
+
+1: g+;8a+;4.d+;8e+;f+;
+2: e+;8f+;4.b;8c+;d+;
+bar
+
+1: g+;f+;e+;c+;
+2: c;d;e;f;
+bar
+
+1: f+;e+;d+;c+;
+2: g;a;b;c+;
+bar
+
+1: f+;e+;d+;c+;
+2: d+;e+;f+;g+;
+bar
+
+1: g;8d+;b;2c+~;
+2: f+;;e+;g+;
+bar
+
+1: 2.c+;4g;
+2: 2.c+;4g-;
+boldital between 1&2: 4 "f";
+bar
+
+1: 4.c+;8d+;4e+;d+;
+2: 4.c-;8g-;4.c;8g-;
+bar
+
+1: 4.c+;8b;4b&;g;
+2: 4.c-;8g-;4.c;8g-;
+bar
+
+1: 4.c+;8d+;4e+;f+;
+2: 4.c-;8g-;4.c;8g-;
+bar
+
+// page 2 of original manuscript
+1: 8r;4g+;8a+;8d+;4e+;8f+;
+2: 4.c-;8g-;4.c;8g-;
+bar
+
+1: g+;f+;4.e+;8c+;
+2: 4.c-;8g-;4.c;8g-;
+bar
+
+1: 8r;4f+;8e+;4d+;c+;
+2: 4.d-;8g-;4.b-;8g-;
+bar
+
+1: 8r;4f+;8e+;4d+;c+;
+2: 4.d-;8g-;4.b-;8g-;
+bar
+
+1: 4.g;16d+;b;2ec+;
+2: f-;g-;2c-;
+bar
+
+1: 8r;cc+;2.g&b&&c+e&+g&+;
+2: 8r;c;2.ce&g&b&&;
+boldital between 1&2: 1 "f"; 2 "sfz";
+dblbar
+
+score vscheme=2o
+music
+midi 1-2 2: 0 "program=1";
+
+rom above 1: 1 "Cadenza";
+ital between 1&2: 1 "vivace brilliante";
+boldital between 1&2: 1 "ff";
+
+define CADENZA
+1: {8s;[cue]e;[]f;}3;{s;[cue]dn;[]e;}3;2s;
+1 2: {[cue]8d#;4s;}3n; {[cue]8c#;4s;}3n;2s;
+2 1: 2s;{8s;[cue]b;[cue]cn+;}3;{s;[cue]an;[cue]b;}3;
+2 2: 2s;{[cue]8a#;4s;}3n;{[cue]8g#;4s;}3n;
+invisbar
+
+
+1: ms;
+2 1: {8s;[cue]gn;[cue]a;}3;{8s;[cue]e;[cue]fn;}3;{s;[cue]d;[cue]en;}3;{s;[cue]b-;[cue]cn;}3;
+2 2: {[cue]8f#;4s;}3n;{[cue]8d#;4s;}3n;{[cue]8c#;4s;}3n;{[cue]8a#-;4s;}3n;
+invisbar
+
+1: ms;
+2 1:  {8s;[cue]an-;[cue]b-;}3;{s;[cue]gn-;[cue]a-;}3;{s;[cue]e-;[cue]fn-;}3;{s;[cue]dn-;[cue]e-;}3;
+2 2: {[cue]8g#-;4s;}3n;{[cue]8f#-;4s;}3n;{[cue]8d#-;4s;}3n;{[cue]8c#-;4s;}3n;
+invisbar
+
+1: ms;
+2: [cue]1a#--;
+invisbar
+@
+
+CADENZA
+CADENZA
+
+1: ms;
+2: [cue]8d#-;[]e-;[]f#-;[]g-;[]a#-;[]b-;[]d#;[]e;
+invisbar
+
+1: 2s;[cue]8d#;[]e;[]f#;[]g;
+2: [cue]8f#;[]g;[]a#;[]b;2s;
+invisbar
+
+1: [cue]8a#;[]b;[]d#+;[]e+;[]f#+;[]g+;[]a#+;[]b+~;
+2: ms;
+invisbar
+
+1: [cue]1b+;
+2: ms;
+dblbar
+
+midi all: 0 "tempo=100";
+
+1: 2b-d#f#ab;eg#be+;
+2: 2b-d#f#a;ee-;
+rom above 1: 1 "meno mosso ( \(smup4n) = 100 )";
+bar
+
+1: 2eac+e+;fac+f+;
+2: 2ee-;ff-;
+bar
+
+1: 4a+;g+;2gc+e+g+ tie;
+1 2: 2gbd+;s;
+2: 2gg-;cc- tie;
+bar
+
+1: 2.gc+e+g+;8gg-;;
+2: 2.cc-;4g-g--;
+rom above 1: 3 "Maestoso";
+boldital between 1&2: 3 "f";
+octave above 1: 3 "8va" til 11m+2;
+bar
+
+1: 8cegc+;;dfbd+;egc+e+;;;dfbd+;;
+2: 4cc-;8dd-;4.ee-;4dd-;
+bar
+
+1: 8cegc+;;b-dgb;b&-e&gb&;;;g-bn-dg;;
+2: 4cc-;8b-b--;4.b&-b&--;4g-g--;
+bar
+
+1: 8cegc+;;dfbd+;egc+e+;;;fac+f+;;
+2: 4cc-;8dd-;4.ee-;4ff-;
+bar
+
+1: 8gbd+g+;;ac+f+a+;dfbd+;;;egc+e+;fac+f+;
+2: 4gg-;8aa-;4.dd-;8ee-;ff-;
+bar
+
+1: 8gbd+g+;;fac+f+;;egc+e+;;cegc+;;
+2: 4gg-;ff-;ee-;cc-;
+bar
+
+1: 8fac+f+;;egc+e+;;dfbd+;;cegc+;;
+2: 4ff-;ee-;dd-;cc-;
+bar
+
+1: 8fac+f+;;egc+e+;;dfbd+;;cegc+;;
+2: 4ff-;ee-;dd-;cc-;
+bar
+
+1: 8g-b-dg;;dfbd+;b-dfb;4cegc+;{8;;;}3;
+2: 4g-g--;;c-c--;;
+bar
+
+1: cfac+;{8;;;}3;4;{8dfgbd+;;;}3;
+2: f-f--;;g-g--;g--g-b-;
+bar
+
+1: 4.fgf+;8ee+;2g+ tie;
+1 2: 2s;egc+e+ tie;
+rom above 1: 3 "L.H.";
+2: 2c-c--;tie;
+bar
+
+1: 2.g+;4s;
+1 2: 2.egc+e+;4r;
+2: 2.c-c--;4r;
+endbar

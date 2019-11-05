@@ -1,0 +1,336 @@
+score
+	staffs=3
+	key=3&
+	vscheme=2f
+	brace=1-3
+	beamstyle=4,4,4,4
+	staffscale=0.8
+	packfact=1.1
+	measnum=y
+
+header
+	title (18) "Teapot Tempest"
+	title (12) "" "John A. Krallmann (4/95)"
+
+header2
+	title (12) "Teapot Tempest - \%"
+
+footer
+	title (12) "\(copyright) Copyright 1995 John A. Krallmann"
+	title (12) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+staff 3
+	clef=bass
+
+music
+
+midi all: 0 "tempo=140";
+midi 1: 0 "channel=1"; 0 "program=1";
+midi 2: 0 "channel=1"; 0 "program=1";
+midi 3: 0 "channel=4"; 0 "onvelocity=55"; 0 "program=105";
+
+1: mr;
+2: 2gc+e+ tie;8;gbd+;egc+;dfb;
+3: 1c alt 3; 1c-;
+bar
+
+1: mr;
+2: 2ceg tie;8;b-df;g-ce;f-b-d;
+3: 1c alt 3; 1c-;
+bar
+
+1: mr;
+2: 1g-ce;
+3: 1c alt 3; 1c-;
+bar
+
+1: mr;
+2: 2gc+e+ tie;8;gbd+;egc+;dfb;
+3: 1c alt 3; 1c-;
+octave above 2: 1 "8va" til 2m+4.95;
+octave below 3: 1 "8va" til 2m+4.95;
+bar
+
+1: mr;
+2: 2ceg tie;8;a-ce;b-df;f-b-d;
+3: 1c alt 3; 1c-;
+bar
+
+1: mr;
+2: 1g-cen;
+3: 1c alt 3; 1c-;
+bar reh let
+
+define R {16e+;d+;c+;b;g;}5; @
+
+midi 1: 0 "channel=7"; 0 "program=11";
+midi 3: 0 "channel=1";
+midi 1 1: 1 " onvelocity=40"; 2 "onvelocity=45"; 3 "onvelocity=50"; 4 "onvelocity=55";
+midi 3 1: 0 " onvelocity=70";
+1: R R R R
+2: mr;
+3: 2r;4;8;c+gc;
+octave above 1: 1 "8va" til 5m+4.95;
+bar
+
+midi 1 1: 1 "onvelocity=50"; 2 "onvelocity=45"; 3 "onvelocity=40"; 4 "onvelocity=45";
+1: R R R R
+2: mr;
+3: bfb-;fcf-;4.gdg-;8fcf-;
+bar
+
+midi 1 1: 1 "onvelocity=50"; 2 "onvelocity=55"; 3 "onvelocity=50"; 4 "onvelocity=45";
+1: R R R R
+2: mr;
+3: eg-e-;8dg-d-;2cg-c-;8cgc+;
+bar
+
+midi 1 1: 1 " onvelocity=40"; 2 "onvelocity=45"; 3 "onvelocity=50"; 4 "onvelocity=55";
+1: R R R R
+2: mr;
+3: 8bgb-;4.aea-;gdg-;8fcf-;
+bar
+
+midi 1 1: 1 "onvelocity=50"; 2 "onvelocity=45"; 3 "onvelocity=40"; 4 "onvelocity=45";
+1: R R R R
+2: mr;
+3: 8eg-e-;dg-d-;4b-g-b--;2cg-c-;
+bar reh let
+
+staff 2 clef=bass
+music
+define GR [grace]16c-;[]g-;4c @
+midi 1 1: 0 " onvelocity=35";
+midi 3 1: 0 "onvelocity=45"; 0 "channel=1";
+
+midi 2 1: 0 "onvelocity=60"; 3 "onvelocity=65";
+1: R R R R
+2 1: c;e;g;c+;
+3 1: GR; GR; GR e; GR eg;
+bar
+
+midi 2 1: 0 "onvelocity=72"; 3 "onvelocity=66";
+1: R R R R
+2 1: f+;d+;c+;b;
+3 1: GR fb; GR fb; GR eg; GR dg;
+bar
+
+midi 2 1: 0 "onvelocity=63"; 3 "onvelocity=60";
+1: R R R R
+2 1: g;f;e;d;
+3 1: GR e; GR d; GR; GR;
+bar
+
+staff 2 clef=treble
+music
+
+midi 2: 0 "channel=1";
+midi 2: 0 "onvelocity=65"; 3.8 "onvelocity=72"; 4.5 "onvelocity=65";
+1: mr;
+2: [with.]8e+e++;[]d+d++;[]c+c++;[]bb+;r;[with.]gg+;4bb+;
+3: 2cc-;g-g--;
+bar
+
+midi 2-3 1-2: 3 "onvelocity=78";
+1: mr;
+2: 2c+c++;engc+en+;
+3: 2cc-;;
+octave above 2: 3 "8va" til 4.5;
+octave below 3: 3 "8va" til 4.5;
+bar reh let
+
+staff 2 clef = bass
+music
+
+midi 1: 0 "channel=7"; 0 "program=11";
+midi 1: 0 "onvelocity=40";
+midi 3 1: 0 "onvelocity=50";
+
+midi 2 1: 0 "onvelocity=56"; 4 "onvelocity=62";
+1: R R R R
+2 1: e;a;g;e+;
+3 1: GR;GR;GR;GR;
+bar
+
+midi 2 1: 0 "onvelocity=68"; 4 "onvelocity=75";
+1: R R R R
+2 1: d+;c+;g;a+;
+3 1: GR;GR;GR;GR;
+bar
+
+midi 2 1: 2 "onvelocity=70"; 3 "onvelocity=64";
+1: R R R R
+2 1: g+;d+;g;d;
+3 1: GR;GR;GR;GR;
+bar
+
+midi 1 1: 0 "onvelocity=35";
+midi 2 1: 1 "onvelocity=54";
+1: R R R R
+2 1: 1c;
+3 1: GR;GR;GR;GR;
+bar
+
+midi 2 1: 4 "onvelocity=66";
+1: R R R R
+2 1: e;a;g;e+;
+3 1: GR;GR;GR;GR;
+octave above 1: 1 "8va" til 3m+4.9;
+bar
+
+midi 2 1: 4 "onvelocity=72";
+1: R R R R
+2 1: d+;c+;g;a+;
+3 1: GR;GR;GR;GR;
+bar
+
+midi 2 1: 3 "onvelocity=66";
+1: R R R R
+2 1: g+;d+;g;d;
+3 1: GR;GR;GR;GR;
+bar
+
+1: R R R R
+2 1: 1en;
+3 1: GR;GR;GR;GR;
+bar reh let
+
+define GRE [grace]8en-;[]bn-;4en;[grace]8e-;[]b-;4e;[grace]8e-;[]b-;4e;[grace]8e-;[]b-;4e; @
+
+voice 1 1 defoct=5
+music
+midi 1 1: 0 "onvelocity=25";
+midi 2 1: 0 "onvelocity=60"; 0 "channel=1";
+midi 3 1: 0 "onvelocity=30";
+
+1 1: 16en+;f+;g+;f+;e+;f+;g+;f+;e+;f+;g+;f+;e+;f+;g+;f+;
+2 1: r;en;bn;en+;
+3: GRE
+bar
+
+staff 2 clef=treble
+music
+
+1 1: 16en+;f+;g+;f+;e+;f+;g+;f+;e+;f+;g+;f+;d+;e+;f+;e+;
+2: a;f+;en+;bn;
+3: GRE
+bar
+
+score time=3/4; beamstyle=4,4,4
+music
+
+midi 2 1: 0 " onvelocity=62";
+midi 2 2: 0 "onvelocity=44";
+midi 3: 0 " onvelocity=30";
+1 1:  16c+;d+;en+;d+;c+;d+;e+;d+;c+;d+;e+;d+;
+2 1: 2.c+;
+2 2: c;bn-;an-;
+3: [grace]8an-;[]en;4c+;[grace]8a-;[]e;4bn;[grace]8a-;[]e;4an;
+bar
+
+1 1:  16c+;d+;en+;d+;c+;d+;e+;d+;c+;d+;e+;d+;
+2: 2.c+;
+2 2: an-;g-;f-;
+3: [grace]8f-;[]c;4an;[grace]8f-;[]c;4g;[grace]8f-;[]c;4f;
+bar
+
+1 1: 16bn;c+;d+;c+;b;c+;d+;c+;b;c+;d+;c+;
+2: 2.bn;
+2 2: g-;an-;bn-;
+3: [grace]8g-;[]d;4g;[grace]8g-;[]d;4an;[grace]8g-;[]d;4bn;
+bar
+
+1 1: 16an;bn;c+;b;a;b;c+;b;a;b;c+;b;
+2: 2.an;
+2 2: c;bn-;an-;
+3: [grace]8an-;[]en;4c+;[grace]8a-;[]e;4bn;[grace]8a-;[]e;4an;
+bar
+
+1 1: 16an;bn;c+;b;a;b;c+;b;a;b;c+;b;
+2: 2.an;
+2 2: an-;g-;f-;
+3: [grace]8f-;[]c;4an;[grace]8f-;[]c;4g;[grace]8f-;[]c;4f;
+bar
+
+1 1: 16g;an;bn;a;g;a;b;a;g;a;b;a;
+2: 2.g;
+2 2: g-;an-;bn-;
+3: [grace]8g-;[]d;4g;[grace]8g-;[]d;4an;[grace]8g-;[]d;4bn;
+bar
+
+voice 1 1 defoct=4
+music
+
+midi 1 1: 0 "onvelocity=60"; 0 "channel=1";
+midi 2: 0 "onvelocity=42";
+1: 8c+;bn;2an tie;
+2: en;;;
+2 2: bn-;an-; tie;
+3: [grace]8an-;[]en;4bn;[grace]8a-;[]e;4an;[grace]8a-;[]e;4a;
+bar
+
+1: 2.a;
+2: en;;;
+2 2: 2.a-;
+3: [grace]8an-;[]en;4bn;[grace]8a-;[]e;4an;[grace]8a-;[]e;4a;
+bar
+
+midi 1 1: 0 "onvelocity=50";
+midi 1 2: 0 "onvelocity=30";
+midi 2 1: 0 "onvelocity=40";
+midi 2 2: 0 "onvelocity=25";
+1: 8c+;bn;2an tie;
+2: en;;;
+2 2: bn-;an-; tie;
+3: [grace]8an-;[]en;4bn;[grace]8a-;[]e;4an;[grace]8a-;[]e;4a;
+bar
+
+1: 2.a;
+2: en;;;
+2 2: 2.a-;
+3: [grace]8an-;[]en;4bn;[grace]8a-;[]e;4an;[grace]8a-;[]e;4a;
+bar
+
+midi 2-3 1-2: 0 "onvelocity=68";
+1: mr;
+2: 2.dfabnd+;
+3: ff-;8enen-;dd-;cc-;bn-bn--;
+bar
+
+1: mr;
+2: 2.enabnen+;
+3: en-en--;4.;8d-d--;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+1: mr;
+2: 1engbc+en+;
+3: c-c--;8;4;8;4;
+bar
+
+1: mr;
+2: df#and+;b-egb;8dfnand+;4.cfac+;
+3: d-d--;e-e--;8f-f--;4.;
+bar
+
+1: mr;
+2: 1dganbnd+;
+3: 1g-g--;
+bar
+
+midi all: 0 "tempo=92"; 3 "tempo=84"; 4 "tempo=72";
+midi 1 1: 0 "onvelocity=30";
+midi 2: 0 "onvelocity=72";
+midi 3 1-2: 0 "onvelocity=72";
+rom above all: 1 "Allargando";
+1: 32e++;f++;g++;a++;4.b++;32c++;d++;e++;f++;4.an++;
+2: 2e+g+b+;c+f+an+;
+3: 2e-e--;f-f--;
+bar
+
+midi 1 1: 0 "onvelocity=18";
+1 1: 1g++bn++d+++g+++;
+2: 1bnd+g+;
+3: 1g-g--;
+endbar

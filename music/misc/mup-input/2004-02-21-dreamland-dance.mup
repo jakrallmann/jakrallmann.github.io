@@ -1,0 +1,396 @@
+header
+	title (18) "Dreamland Dance"
+	title (10) " "
+	title "" "John A. Krallmann (February 21, 2004)"
+
+header2
+	title (12) "Dreamland Dance - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=e minor
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	scoresep=12,24
+	measnum=y
+
+staff 1
+	vscheme=3f
+
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 1 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=78, 64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 1 3: 0 "channel=13"; 0 "program=0";
+midi 2 1-2: 0 "channel=14"; 0 "program=1";
+
+1: 2.g;{8f;g;f;}3;
+1 2: r;g-b-;;r;
+2: r;e-b-;;r;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2f;4e;
+1 2: r;a-c;r;
+2: r;a-e;r;
+bar
+
+1: {16c;d;e;f;a;c+;}6;2f+;
+1 2: 2r;4gb;
+2: 2r;4e-b-;
+bar
+
+1: 2e+;16b-;c;e;f;
+1 2: r;ac+;r;
+2: r;a-e;r;
+bar
+
+1: 2g;4f;
+1 2: r;2a-c;
+2: r;2a-e;
+bar
+
+1: 2f;4g;
+1 2: r;2a-b-;
+2: r;2b-d#;
+bar
+
+1: 2f;4e;
+1 2: r;2g-b-;
+2: e-;2b-;
+bar
+
+ital above all: 1 "accel.";
+midi all: 1 "tempo=84";
+1: b-;c;e;
+2: a-;e;a;
+bar
+
+midi all: 1 "tempo=94";
+1: c+;b;a;
+1 2: 2.d;
+2: f-;d;c+;
+bar
+
+midi all: 1 "tempo=104";
+1: e&;d;a;
+2: d-;a-;f;
+bar
+
+1: a;g;a-;
+1 2: 2b-;4s;
+2: g-;d;g~;
+bar
+
+1: b-;d;g;
+2: g;f;e;
+bar
+
+1: c+;b;g;
+1 2: 2.e;
+2: a-;e;b;
+bar
+
+1: c+;b;g;
+1 2: 2.e;
+2: g-;e;b;
+bar
+
+1: c+;b;a;
+1 2: a;g;c;
+2: fn-;c;a;
+dblbar
+
+score key = f major
+music
+
+1: f+;e+;f+;
+1 2: 2.ac+;
+2: d-;a-;c-;
+bar
+
+1: 2.d+;
+1 2: 2.fa;
+2: b--;f-;db;
+bar
+
+1: 2.d+;
+1 2: 2.fg;
+2: c-;g-;b;
+bar
+
+1: c+;d+;e+;
+1 2: 2.eg;
+2: c-;g-;b;
+bar
+
+1: e+;f+;d+;
+1 2: 2.fa;
+2: d-;2a-;
+bar
+
+1: e+;f+;d+;
+1 2: 2.fa;
+2: c-;2a-;
+bar
+
+1: d+;e+;f+;
+1 2: f;g;a;
+2: b--;f-;d;
+bar
+
+1: 2.c+;
+1 2: g;f;e;
+2: 2r;4g;
+2 2: 2.a--;
+bar
+
+1: c+;b;a;
+1 2: 2.df;
+2: 2r;4f;
+2 2: 2.g--;
+bar
+
+1: db;ca;da&;
+1 2: 2.e;
+2: 2r;4b;
+2 2: 2.c-;
+bar
+
+1: da&;2can tie;
+2: f-;c;g;
+bar
+
+1: ca;b;c+;
+2: 2.f;
+bar
+
+1: 2.bd+;
+1 2: a;g;f;
+2: b--;f-;d;
+bar
+
+1: f+;e+;d+;
+1 2: 2.b;
+2: g-;d;b;
+bar
+
+1: c+;d+;c+;
+1 2: 2.e;
+2: a-;e;g;
+bar
+
+1: g;f;g;
+1 2: 2.c;
+2: 2da;4d&b;
+bar
+
+1: a;c+;a;
+1 2: 2.f;
+2: 2.ca;
+bar
+
+1: d+;e+;f+;
+1 2: 2.f;
+2: 2bn-g;4d-;
+bar
+
+1: a+;g+;f+;
+1 2: 2b;4g;
+2: 2c-;4d;
+bar
+
+1: 2g+;8bn;c+;
+1 2: 2be+;4r;
+2: 2c;4c-;
+bar
+
+1: a;b;a;
+1 2: 2.f;
+2: 2.fc+;
+bar
+
+1: b;c+;f+;
+1 2: 2.f;
+2: 2.db;
+bar
+
+1: 2c+;4;
+1 2: g;f;e~;
+2: 2a;4c+;
+2 2: 2.c;
+bar
+
+1: 2f;4;
+1 2: e;d;c;
+2: 2b-f;4a-g;
+bar
+
+1: 2b;4a;
+1 2: 2.df;
+2: 2.g-df;
+bar
+
+1: 2b;4c+;
+1 2: 2.df;
+2: 2.f-df;
+bar
+
+1: 2.g~;
+1 2: 2.g-b- tie;
+2: 2c;4d&;
+2 2: 2.e-~;
+bar
+
+1: g;a;b;
+1 2: g-b-;2c;
+2: c;e;b-;
+2 2: 2.e-;
+bar
+
+1: c+;bn;c+;
+1 2: 2.cf;
+2: 2.a-f;
+bar
+
+1: d+;e+;f+;
+1 2: 2.f;
+2: a;g;f;
+2 2: 2.b-;
+bar
+
+1:2c+;4;
+1 2: g;f;e~;
+2: 2.a-f;
+bar
+
+1: 2f;4;
+1 2: e;d;c;
+2: 2b-f;4a-f;
+bar
+
+1: 2b-d;4f;
+1 2: a-;2g-;
+2: 2g-d;4f-;
+bar
+
+1: 2g;4f;
+1 2: 2.g-c;
+2: 2.c;
+2 2: 2e-;4d-;
+bar
+
+1: g;a;b;
+1 2: 2.b-;
+2: d;e;f;
+2 2: 2.c-;
+bar
+
+1: 2c+;8a;b;
+1 2: 2.e;
+2: g;a;b;
+2 2: 2.c;
+bar
+
+1: 2c+;4f+;
+1 2: g;2f;
+2: f;g;a;
+2 2: 2.a-;
+bar
+
+1: 2d+;4;
+1 2: a;g;d;
+2: f;g;f;
+2 2: 2.b-;
+bar
+
+1: g;a;b;
+1 2: 2d;8f;e;
+2: 2.cb;
+bar
+
+1: 2a;4;
+1 2: g;f;e;
+2: 2da;4ca;
+bar
+
+1: 2d;4f;
+1 2: a-;2g-;
+2: 2.b-f;
+bar
+
+1: 8c;c#;4d;e;
+1 2: 2.b-;
+2: e;f;g;
+2 2: 2.c;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.ce;
+bar
+
+1: 2.a;
+1 2: 2.d;
+1 3: 2s;4c+?;
+2: 2.cb;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+1 3: 2s;4c+?;
+2: 2.f-c;
+bar
+
+1: 2.f;
+1 2: 2.a-;
+1 3: 2s;4c+?;
+2: 2.f-c;
+bar
+
+staff 2 clef=treble
+music
+
+1: 8c+;c#+;4d+;e+;
+1 2: 2.b;
+2: e;f;g;
+2 2: 2.c;
+bar
+
+1: 2.g+;
+1 2: 2.b;
+2: 2.ce;
+bar
+
+1: 2.a+;
+1 2: 2.d+;
+2: 2.cb;
+bar
+
+staff 2 clef=bass
+music
+
+midi all: 1 "tempo=76";
+1: 2.f+;
+1 2: 2.a;
+2: 2.fc+;
+bar
+
+midi all: 1 "tempo=60";
+1: 2.f+;
+1 2: 2.a;
+2: 2.fc+;
+endbar

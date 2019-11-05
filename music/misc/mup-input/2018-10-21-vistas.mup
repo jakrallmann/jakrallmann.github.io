@@ -1,0 +1,226 @@
+header
+	title (18) "Vistas"
+	title "" "John A. Krallmann"
+	title " " "(Oct 21, 2018)"
+
+header2
+	title "Vistas - \%"
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=2&
+	time=4/4
+	beamstyle=2,2
+	measnum=y
+	scale=0.9
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi 1: 0 "channel=11"; 0 "onvelocity=76";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=80";
+midi 2 1: 0 "channel=13"; 0 "onvelocity=72";
+define P ifdef MIDI pedal below 1-2: 1;3; endif @
+
+define TH
+midi all: 0 "tempo=80";
+1: 8r;e+c++e++;d+b+d++;c+a+c++;ae+f#+a+;4.c+e+c++;
+2: g-;gbd+;d-;ac+d+;
+boldital between 1&2: 1 "f";
+P
+bar
+
+1: 8r;a-ca;b-db;cec+;a-ca;b-db;4g-b-g;
+2: f#-;d;g-;d;
+P
+bar
+
+1: 8r;ge+g+;fd+f+;ec+e+;cdac+;dbd+;4;
+2: e-;c-;g--;g-;
+P
+bar
+
+1: 8r;dbd+;cac+;a-da;a-ca;b-gb;4;
+2: e-;f-;g-;g--;
+P
+bar
+
+1: 8r;b-gb;a-fa;a-da;;b-db;4b-gb;
+2: e-;f-;g-;g--;
+P
+repeatboth
+
+1: 8r;d+b+d++;;e+c++e++;2d+b+d++;
+2: g-;gbd+;g-;gbd+;
+P
+bar
+
+1: 8r;c+a+c++;;d+b+d++;2c+a+c++;
+2: f#-;ac+d+;f-;ac+d+;
+P
+bar
+
+1: 8r;f#c+f#+;fd+f+;fe+f+;2fd+f+;
+2: d-;ac+d+;d-;ac+d+;
+P
+bar ending "1."
+
+1: 8r;ec+e+;dc+d+;cac+;;dbd+;4;
+2: a--;f#;g--;gb;
+P
+repeatend ending "2."
+
+1: 8r;ec+e+;dc+d+;cac+;;b-gb;g-b-g;a-ca; 
+2: a--;f#;g--;8g-;f-;
+P
+bar endending
+
+1: 8b;;a;g;a;;g;f;
+1 2: 2b-dg;a-cf;
+roll 1 1 to 1 2: 1;3;
+2: 2e-;d-;
+P
+bar
+@
+TH
+
+rom above all: 3 "a bit slower";
+midi all: 3 "tempo=72";
+1: 2g-ceng;8r;g+;b+;c++;
+roll 1: 1;
+2: 2c-;r;
+boldital between 1&2: 3.5 "pp";
+P
+bar
+
+staff 2 clef=treble
+music
+
+1: 4.b+d++;16f++;e++;4.a+d++;16f++;e++;
+2: 8g;b;4d+;8f#;a;4d+;
+P
+bar
+
+1: 8d++;c++;8.b+;16c++;4g+b+;f#+a+;
+2: 8e;g;d+;c+;d;g;a;c;
+P
+bar
+
+1: g+~;16;bn;c+;d+;4e+~;16;c+;d+;e+;
+2: 8bn-;d;4g;8c;e;4g;
+P
+bar
+
+1: f+~;16;e+;d+;c+;4.d+;8b;
+2: 8a-;c;4f;8b-;d;4g;
+P
+bar
+
+1: e+~;16;d+;c+;b;4.a;16g;a;
+2: 8g-;b-;4e;<<staff clef=bass>>8f#;a;4d+;
+P
+bar
+
+1: c+~;16;b;a;g;8.b;16c+;4d;
+2: 8e;g;c+;c#+;d;a;cn+;f#;
+P
+bar
+
+1: d;16;en;f;g;8f;4.e;
+2: 8bn-;d;g;bn;c;g;b&;c;
+P
+bar
+
+1: en~;16;f;a;g;8g;f;16;g;f;e;
+2: 8c#;g;a;a-;d;a;cn;a;
+P
+bar
+
+1: 8en;4.d;8d;8.c;16d;e;c;
+2: 8b-;f;g;f;a-;en;g;a-;
+P
+bar
+
+1: 1d;
+1 2: 4.s;8bn-~;4.b-g;8g-;
+2: 8g-~;g-d tie;2.g-dg;
+P
+dblbar
+
+score
+	key=0&
+	time=6/8
+	beamstyle=4.,4.
+music
+
+undef P
+define P ifdef MIDI pedal below 1-2: 1;4; endif @
+midi all: 1 "tempo=40";
+rom above all: 1 "Adagio";
+1: 8.e;16ec+;;db;8;8.ca;16;
+2: 8c-;g-;e;f-;c;a;
+P
+bar
+
+1: 8.ca;16b-g;a-g;b-f;4.e;
+1 2: 4.s;8.c;16d;c;g-;
+2: 8g-;d;g;c-;g-;e;
+P
+bar
+
+1: 8.df;16ef;df;a-f;8.b-d;16b-g;;df;
+2: 8d-;a-;e;g-;d;g;
+P
+bar
+
+1: 16ce;b-d;ce;df;eg;fa;gb&;fa;gb;ac+;bd+;c+e+;
+2: 8c-;g-;e;g;b&;c;
+P
+bar
+
+1: 8.fd+f+;16fe+;8fad+;8.fb&d+f+;16fc+e+;8fbd+;
+2: 8d-;a-;f;b&-;f;b&;
+P
+bar
+
+1: 8.gc+e+;16fd+;8ec+;4.d+;
+1 2: 4.s;8.fa;16eg;8df;
+2: 8c;g;c+;d-;a-;f;
+P
+bar
+
+1: 8.ege+;16dfd+;8cec+;4.fd+;
+1 2: 4.s;8.d;16e;8d;
+2: 8c-;g-;e;d-;a-;f;
+P
+bar
+
+1: 8.e;16d;8c;4.f-d;
+1 2: 4.g-;s;
+2: 8c-;g-;e;4.d-a-;
+P
+repeatstart
+
+undef P
+define P ifdef MIDI pedal below 1-2: 1;3; endif @
+score
+	key=2&
+	transpose=down perfect 4
+	time=4/4
+music
+rom above all: 1 "Tempo I";
+TH
+
+1: 1g-ceng;
+roll 1: 1;
+2: 1c-;
+P
+endbar

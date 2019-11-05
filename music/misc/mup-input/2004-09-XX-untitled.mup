@@ -1,0 +1,182 @@
+header
+	title (18) "Untitled"
+	title (10) " "
+	title "" "John A. Krallmann (9/04)"
+
+header2
+	title (12) "Needs a title - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,26
+	staffscale=0.8
+	release=0
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=84,70";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=70";
+midi 2 2: 0 "channel=14"; 0 "program=1"; 0 "onvelocity=70";
+
+1: 8r;gb;f#a;eg;f;g;f;d#;
+1 2: 2s;b-;
+2: r;a;r;a;
+2 2: 2d;d#;
+bar
+
+1: 4.f#;8fn;4e;8f#;g;
+1 2: 2b-;;
+2: a;a&;2g;
+2 2: 2e;4d;d&;
+bar
+
+1: b;8a;g;4a;8g;f#;
+1 2: 2e;ce;
+2: 2gb;eg;
+2 2: c;b-;a-;b-;
+bar
+
+1: e;;;8;d;
+1 2: 2b-;c;
+2: 2eg;f#a;
+2 2: c;b-;2a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.b;8a;b;
+1 2: 2f#a;eg;
+2: c;8d;c;2b-;
+2 2: 1e-;
+bar
+
+1: c+;8f+;e+;f+;g+;e+;d+;
+1 2: 2f(n)a;g#b;
+2: 2d-a-;e-d;
+bar
+
+1: 2c+e+;4fac+d+;<<staff clef=treble>> 8c+;b;
+1 2: 8b;a;b;g;2s;
+2: 2a-e;d-a-d;
+bar
+
+staff 1 clef=treble
+music
+
+1: 8f;e;a-;b-;4.d;8e;
+1 2: 2.s;4f-a-;
+2: 2r;4;d-a-;
+bar
+
+midi 1: 4 "onvelocity=70";
+midi 2: 4 "onvelocity=84,70";
+1: 2.e;4r;
+1 2: s;f-a-;e-g#-;s;
+2: r;c;b-;8f;g;
+2 2: s;2e-;4s;
+bar
+
+1: r;be+;c+d+f+;r;
+1 2: s;eg;dfa;s;
+2: 2.e;8f;g;
+bar
+
+1: r;gb;gac+;r;
+1 2: s;b-e;a-e;s;
+2: 2.e;8f;g;
+bar
+
+1: r;fa;fb;r;
+1 2: s;a-d;a&-d;s;
+2: 2.d;8;c;
+bar
+
+2: 2.e;8;b-;
+2 2: s;d-a-;;s;
+bar
+
+1: s;with fab below;;s;
+2: 2.d;8;a;
+bar
+
+midi 1: 4 "onvelocity=84,70";
+midi 2: 4 "onvelocity=70";
+1: r;d+;2d&+;
+1 2: s;2.fa&;
+2: 2.b;4d&;
+dblbar
+
+score key= 6&
+music
+
+1: 2b;8a;g;f;g;
+1 2: 8f;e;dn;e;2d;
+2: 2g;c;
+bar
+
+1: 2d(&);8;c;b-;c;
+2: 8a;g;f;g;2s;
+2 2: 2b-;ceg;
+bar
+
+1: 8c;b-;c;a;;d;f;e;
+1 2: 2s;cd;
+2: 2a-e;f-d;
+bar
+
+1: 2b-d;4.g-c;8d;
+2: 8a;g;f;g;2s;
+2 2: 2g-d;a-e;
+bar
+
+1: 8c;b-;c;b-;4.c;8d;
+2: 2f;4g;f;
+2 2: 1d-a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: cdna;d&b;2b;
+2: 1g-;
+octave below 2: 1 "8va" til 4;
+bar
+
+staff 1 clef=treble
+music
+
+1: 2b-g;8c;d&;e;16a;g;
+1 2: 8f;e;dn;e;2g-;
+2: 2e-;a-e;
+bar
+
+1: 8f;e;d;an;4.b;8;
+2: 2dac+;8a;g;4en;
+2 2: 2s;g-d-;
+bar
+
+1: 8d+;c+;g;;c+;b;d;;
+1 2: e;dn;d&;b-;
+2: 2cg;g-d;
+bar
+
+1: 8b;a;g;;2;
+1 2: 2e;b-;
+2: 2cg;g-d;
+endbar

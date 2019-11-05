@@ -1,0 +1,112 @@
+header
+	title (18) "Lament"
+	title "" "John A. Krallmann (3/29/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffsep=14
+	scoresep=10,22
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=50";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=100";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=85";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=85";
+
+1: 4.s;4;8e;
+2: 4.s;4;8r;
+bar
+
+1: 4.b~;4;8e;
+2: 4e-;8fad+;4.eg#b;
+bar
+
+1: 4.b~;8;e;d;
+2: 4e-;8fad+;4.eg#b;
+bar
+
+1: e;c+;b;a;f;d; 
+2: c-;4eac+;8d-;4b-dfa;
+bar
+
+1: 4.g#~;8;f+;e+;
+2: e-;4eg#b;8e-;4egb;
+bar
+
+1: ed+;c+;b;cad+;c+;a;
+2: a-;4eac+;8f-;4fad+;
+bar
+
+1: dg;e;d;c;e;a;
+2: e-;4egb;8a-;4aec+;
+bar
+
+1: 4.fa;8d+;c+;b;
+1 2: e bm with staff below;4s ebm;4efa;8d;
+2: s bm with staff above;fad+;fac+ ebm; d- bm;fac+;fab ebm;
+2 2: [up]8d-;4s;4.;
+bar
+
+1: 4.g#b tie;4;8e;
+1 2: b-e bm with staff below;4s ebm;4.s;
+2: 8s bm with staff above;eg#f+;ege+ ebm;d+ bm;c+;b ebm;
+2 2: [up]e-;4s;eg;8;
+bar
+
+1: c+;d+;e+;;d+;a+;
+1 2: 4e;8ega;4.fa;
+2: a--;4eac+;8d-;4fad+;
+bar
+
+1: 4.c+e+;4df;8b;
+1 2: b;a;e;c;b-;a-;
+2: a--;4eac+;8d-;4df;
+bar
+
+1: e;e+d+;c+e+;dbe+;cde;b-deb;
+2: e-;4eg#d+;8e-;4eg;
+bar
+
+1: b;a;c+;4ef+;8fe+;
+1 2: 4.cf;8c+;4b;
+2: f-;4cfa;8d-;4fac+;
+bar
+
+1: abd+;g;f#d#+;e+;d++;c++;
+1 2: 4.s;8g;4e+;
+2: g-;4dgb;8c-;4gc+e+;
+bar
+
+1: 4bb+;8ed+;4e+c++;8e+;
+1 2: f+;e+;b;;a;e;
+2: g#-;4eg#b;8a--;4eac+;
+bar
+
+1: 4ad+;8e;4;8g#;
+1 2: g;f;e;4.s;
+2: d-;4fad+;8e-;4deg#;
+bar
+
+1: c+;b;c+;4.a;
+2: e-;4deg#;8a--;eac+;fad+;
+bar
+
+1: 2.a+;
+2: 2.eac+;
+endbar
+

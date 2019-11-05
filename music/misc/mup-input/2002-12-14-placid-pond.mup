@@ -1,0 +1,213 @@
+header
+	title (18) "Blissful Rest Beside the Placid Pond"
+	title (5) " "
+	title "" "John A. Krallmann (12/14/02)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1#
+	beamstyle=2,2
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.85
+	scoresep=12,28
+	vscheme=2f
+	release=0
+	measnum=y
+
+staff 2
+	clef=bass
+
+
+music
+
+midi all: 0 "tempo=60";
+//midi 1 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=82,56";
+//midi 1 2: 0 "channel=12"; 0 "program=41";
+//midi 2 1: 0 "channel=13"; 0 "program=89"; 0 "onvelocity=110";
+//midi 2 2: 0 "channel=14"; 0 "program=89"; 0 "onvelocity=120";
+midi 1 1: 0 "channel=11"; 0 "program=4"; 0 "onvelocity=76,64";
+midi 1 2: 0 "channel=12"; 0 "program=4";
+midi 2 1: 0 "channel=13"; 0 "program=4";
+midi 2 2: 0 "channel=14"; 0 "program=4"; 0 "onvelocity=70";
+
+1: 8b;a;g;a;4.b;8g;
+1 2: 1d;
+2 2: g-;2d;4f;
+bar
+
+1: 8b;a;g;a;2b;
+1 2: b;e;g;f;
+2 1: 1b;
+2 2: 2.e;4d;
+bar
+
+1: 8b;a;g;e;2g;
+1 2: 1e;
+2 1: 2.a;4g;
+2 2: 1c;
+bar 
+
+1: 2g;4f;{16d;e;f;g;a;}5;
+1 2: 2.d;4s;
+2 1: a;b;c;r;
+2 2: 2.d;4s;
+bar
+
+1: 4.b;16c+;d+;8a;g;a;b;
+1 2: 2d;;
+2 2: g-;d;fn;g-;
+bar
+
+1: 8d+;e+;4c+;8b;c+;a;e;
+1 2: fn;e;2;
+2 1: r;g;a;g;
+2 2: 1c;
+bar
+
+1:8d;e;4c;~;{16;d;e;f;g;a;}6;
+1 2: c;a-;2;
+2 1: e;f;g;f;
+2 2: 1a-;
+bar
+
+1: 2b~;8;a;b;d+;
+2 1: r;a;g;f;
+2 2: 1g-;
+bar
+
+1: 2..a;16e;f;
+1 2: 8e;d~;2.;
+2 1: r;d;e;f;
+2 2: 1f-;
+bar
+
+1: 4.g;8f;g;e+;d;e;
+1 2: 1b-;
+2 1: r;d;c#;b-;
+2 2: 1e-;
+bar
+
+score time=2/4 ; beamstyle=2
+music
+
+1: 8e;f;g;b;
+1 2: 2b-;
+2 1: g;e;
+2 2: 2a-;
+bar
+
+score time=4/4 ; beamstyle=2,2
+music
+
+midi all: 1 "tempo=54"; 3 "tempo=48"; 4 "tempo=42"; 5 "tempo=60";
+1: b;b&;2a;
+1 2: 1e;
+2 1: 1g;
+2 2:2.c#;4a-;
+repeatstart
+
+1: 1f;
+1 2: 8a-;b-;a-;b-;2a-;
+2 1: r;2a-;8d;b-;
+2 2: 1d-;
+bar
+
+1: 1f;
+1 2: 8a-;b-;a-;b-;2a-;
+2 1: r;2a-;8d;c#;
+2 2: 1d-;
+bar
+
+1: 8f;g;f;g;2e;
+1 2: 2.b-;8g-;a-;
+2 1: d;2.e;
+2 2: 1g-;
+bar
+
+1: 8e;f;d;e;2b-;
+1 2: 1a-;
+2 1: a-;2b-;8d;e;
+2 2: 1d-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8b;a;b;d+;2b;
+1 2: 1f;
+2 1: a-;2b-;4a-;
+2 2: 1d-;
+bar
+
+1: 8e;f;a;b;2d+;
+1 2: 1d;
+2 1: b-;a-;b-;f;
+2 2: 1d-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 8f;g;e;d;2e;
+1 2: 1b-;
+2 1: d;e;f;g;
+2 2: 1g-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8e+;d+;2.d+;
+1 2: a;e;2f;
+2 1:2.a-;4b-;
+2 2:1d-;
+bar
+
+1: 8b;a;b;a;4b;d+;
+2 1: 2a-;4b-;a-;
+2 2: 1d-;
+bar
+
+1: 8b;a;b;a;4b;8d+;e+;
+1 2: 2f;;
+2 1: 1a-;
+2 2: 1d-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 1a-df;
+2 1: r;a-;b-;a-;
+2 2: 1d-;
+repeatend
+
+ital between 1&2: 1 "rit.";
+1: 1a-df;
+2 2: 1d-;
+dblbar
+
+staff 2 clef=treble
+music
+
+midi all: 0 "tempo=46"; 3 "tempo=36"; 4.5 "tempo=30";
+midi 1: 0 "onvelocity=22";
+midi 2 1-2: 0 "onvelocity=34";
+1: 8b+;a+;b+;a+;4b+;8d++;e++;
+2 1: 1d+;
+2 2: 1g;
+boldital between 1&2: 1 "pp";
+bar
+
+midi all: 1 "tempo=40";
+1: 1d++;
+1 2: 1f+;
+2 1: 1a;
+2 2: 1d;
+endbar

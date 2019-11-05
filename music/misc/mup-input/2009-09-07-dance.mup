@@ -1,0 +1,130 @@
+header
+	title (16) "Dance"
+	title "" "John A. Krallmann (9/7/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	key=1#
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	beamstyle=4.,4.
+	staffscale=0.95
+staff 2
+	clef=bass
+	timeunit=4.
+music
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+
+1: 4.s;4;16f+;e+;
+2: 4.s;4;8r;
+bar
+
+1: 4a#;8b;4;16e+;d+;
+2: g-;dgb;
+bar
+
+1: 4g#;8a;4;16e;f;
+2: f-;dfc+;
+bar
+
+1: 4a;8g;4;16f;g;
+2: e-;dfb;
+bar
+
+1: 4f;8e;4e+;16f+;g+;
+2: c-;eac+;
+bar
+
+1: 4b+;8a+;4c+;16c#+;d+;
+2: d-;dfc+;
+bar
+
+1: 4f+;8e+;4g;16a;b;
+2: g-;dgb;
+bar
+
+1: 4d+;8c+;4e;16g;a;
+2: c-;eac+;
+bar
+
+1:4b;8a;d+;d&+;c+;
+2: d-;dfc+;
+bar
+
+1: 4b;8d;4b;16c#;d;
+2: g-;dgb;
+bar
+
+1: 4b;8d;4b;16d#;e;
+2: g-;dgb;
+bar
+
+1: 4c+;8e;c+;d+;e+;
+2: a-;eac+;
+bar
+
+1: 4g+;8f+;g#;a;e+;
+2: d-;dfc+;
+bar
+
+1: 4c#+;8d+;{8b+;a+;g+;fn+;}4,4.;
+2: g-;dgb;
+bar
+
+1: 4e+;8g;e+;f+;g+;
+2: c-;gc+e+;
+bar
+
+1: 4g+;8a+~;;e&+;d+;
+2: d-;dfc+;
+bar 
+
+1: 4b+;8;{8c++;b+;a+;g+;fn+;}5,4.;
+2: g-;gbfn+;
+bar
+
+1: 4.e+~;4;8e&+;
+2: c-;gc+e+;
+bar
+
+1: 4d+;8g;4d+;16f;g;
+2: g-;dgb;
+bar
+
+1: 4d+;8g;4d+;16f;g;
+2: g-;dgb;
+bar
+
+1: 4e&+;8c+;fn+;e+;c+;
+2: c-;gc+e&+;
+bar
+
+1: 8c++;b+;g+;4d+;16c#+;d+;
+2: g-;gbd+;
+bar
+
+1: e+;d#+;e+;a+;g+;e+;
+2: c;gc+e+;
+bar
+
+1:8c#+;d+;g+;c+;d+;g+;
+2: g-;gbd+;
+bar
+
+1: 4a+;[grace;slash 1]8g#+;8a+~;;c+;d+;
+2: d-;fad+;
+bar
+
+1: 2.g+;
+2: g-;gbd+;
+endbar

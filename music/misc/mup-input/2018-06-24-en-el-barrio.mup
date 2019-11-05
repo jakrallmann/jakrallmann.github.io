@@ -1,0 +1,388 @@
+
+header
+	title (18) "En el Barrio"
+	title "" "John A. Krallmann"
+	title " " "(June 24, 2018)"
+
+header2
+	title (12) "En el Barrio - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	key=2&
+	time=4/4
+	beamstyle=2,2
+	measnum=y
+	scoresep=7,28
+	ifdef PIANO_ONLY
+		scale=0.9
+	else
+		scale=0.97
+	endif
+staff 1
+	emptymeas="mr;"
+staff 2
+	vscheme=2f
+staff 3
+	clef=bass
+ifdef MIDI
+  staff 1
+	defoct=5
+else
+  staff 1
+	staffscale=0.75
+  staff 4 visible=n
+endif
+ifdef PIANO_ONLY
+	staff 2,3 visible=n
+endif
+
+music
+
+midi 1: 0 "channel=14"; 0 "program=50"; 0 "onvelocity=56"; 0 "parameter=10,84";
+midi 2: 0 "channel=11"; 0 "program=25"; 0 "onvelocity=86";
+midi 2 2: 0 "channel=12"; 0 "program=25"; 0 "onvelocity=78";
+midi 3 1: 0 "channel=13"; 0 "program=34"; 0 "parameter=10,44";
+midi 4: 0 "channel=10";  0 "onvelocity=80";
+
+define P 4: 8e&5;f#3en4en5;f#3e&4;e&5;e&4;a&3e&5;e&4;f#3e&4e&5; @
+
+// 1
+1: 4g;8r;4g;8;a;b;
+2: 8b;;;a~;4;g;
+2 2: 1d;
+3: 4.g-;8d~;4;b;
+P
+bar
+
+// 2
+1: 4a;8r;4a;8;b;c+;
+2: 1a;
+2 2: 8c;;;e~;4;d;
+3: 4.d;8g~;4;f#;
+P
+bar
+
+// 3
+1: 4f#;8r;4f;8;g;a;
+2: 8ce;;;b-d tie;4;a-c;
+3: 4.a-;8d~;4;f#;
+P
+bar
+
+// 4
+1: 8g;;a;4b;8d+;c+;b;
+2: 8a-c;g-b-;a-c;b-d tie;2;
+3: 2g-;4d;f-;
+P
+bar
+
+// 5
+1: 4g;8r;4g;8;a;b;
+2: 8b-d;a-c;b-d;g-b- tie;2;
+3: 2.e-;4d-;
+P
+bar
+
+// 6
+1: 4g;8r;4g;8;a;b;
+2: 8eg;df;eg;ce tie;2;
+3: c-;8g--;c-~;4;b--;
+P
+bar
+
+// 7
+1: 4c+;8r;4c+;8d+;e+;f+;
+2: 8ca&;b-g;ca;a&-f tie;2;
+3: 2a&--;4d&-;c-;
+P
+bar
+
+// 8
+1: 4g+;8r;4g+;8f+;e+;d+;
+2: 8bn-g;a-f;b-g;g-e tie;4;f-d;
+3: 2g--;4a-;bn-;
+P
+bar
+
+staff 2 clef=bass
+music
+
+// 9
+1: 4c+;8r;4c+;8d+;e+;f+;
+2: 8fd+;ec+;;fd+ tie;2;
+3: 2c-;4;b--;
+P
+bar
+
+// 10
+1: 4c+;8r;4c+;8d+;e+;f+;
+2: 8fd+;ec+;;fd+ tie;2;
+3: 2a&--;4;g--;
+P
+bar
+
+// 11
+1: 4d+;8r;4d+;8e+;f+;g+;
+2: 8a&f+;ge+;;fd+ tie;;4.ec+;
+3: 4.f--;8;4;;
+P
+bar
+
+// 12
+1: 4bn;d+;8g+;;c++;b&+;
+2: 1dbn;
+3: 8g--;4g-;8f-;4e-;d-;
+P
+repeatstart
+
+score key=3&
+staff 2 clef=treble
+music
+
+define MT
+// 13
+mussym above all: 0 "sign";
+1: c++;g+;8c+;;d+;e+;
+2: 8eg;ec+;;tie;4;;
+3: 4.c-;8f-;4.g-;8;
+boldital between 2&3: 1 "f";
+P
+bar
+
+// 14
+1: f+;c+;8f;;g;a;
+2: 8gc+;ac+;;tie;4;;
+3: 4.f-;8c;4.d;8c;
+P
+bar
+
+// 15
+1: g+;d+;8g;;an;bn;
+2: 8bn-f;b-e;;b-d tie;4;;
+3: 2g--;8g-;f-;g-;a-;
+P
+bar
+
+staff 2 clef=bass
+music
+
+// 16
+1: 8c+;d+;e+;f+;g+;an+;bn+;c++;
+2: 8fd+;ec+;;tie;2;
+3: 2c-;8g-;f-;e-an-;d-bn-;
+P
+bar
+
+staff 2 clef=treble
+music
+
+// 17
+1: c++;g+;8c+;;d+;e+;
+2: 8eg;ec+;;tie;4;;
+3: 4.c-c;8f-;g-;f-;g-;a-;
+P
+bar
+
+// 18
+1: f+;c+;8f;;g;a;
+2: 8gc+;ac+;;tie;4;;
+3: 2f-;8f-;e-;d-;c-;
+P
+bar
+
+// 19
+1: g+;d+;8g;;an;bn;
+2: 8bn-f;b-e;;b-d tie;4;;
+3: 2g--;8g-;f-;g-;a-;
+P
+bar
+
+staff 2 clef=bass
+music
+
+// 20
+1: 8c+;d+;e+;f+;g+;an+;bn+;c++;
+2: 8fd+;ec+;;tie;2;
+3: 2c-;8g-;f-;e-an-;d-bn-;
+P
+bar
+
+staff 2 clef=treble
+music
+
+undef ACC2
+define ACC2 midi 2: 3 "onvelocity=108"; 4 "onvelocity=86"; \@
+undef T
+define T
+// 21
+1: c++;g+;8c+;;d+;e+;
+2: 8df;eg;;;[with>]2;
+ACC2
+3: 4. ifndef SEC c- endif c;8g;g;f;g;a;
+P
+bar
+
+// 22
+1: g+;d+;8bn;;c+;d+;
+2: 8eg;df;;;[with>]2;
+ACC2
+3: 4.bn-;8g;;f;g;a;
+P
+bar
+
+// 23
+1: e+;c+;8f;g;a;b;
+2: 8df;ce;;;[with>]2;
+ACC2
+3: 4.a-;8e;f;e;f;g;
+P
+\@
+T
+bar
+
+1: g;8g+;a+;g+;f+;e+;d+;
+2: 8ce;cd;;;[with>]2bn-d;
+ACC2
+3: 4.g-;8d;g;f;e;d;
+P
+bar
+undef SEC
+define SEC \@
+T
+bar ending "1."
+
+1: g;8g+;a+;g+;f+;e+;d+;
+2: 8ce;cd;;;[with>]2bn-d;
+ACC2
+3: 4.g-;8d;8g;f;e;d;
+P
+repeatend ending "2."
+
+1: g;8g+;a+;g+;f+;e+;d+;
+2: 8ce;cd;;;[with>]2bn-d;
+ACC2
+3: 4.g-;8d;g;f;e;d;
+P
+@
+MT
+mussym above all: 5 "coda";
+repeatstart endending
+
+staff 2,3 clef=treble
+music
+
+midi 1:  0 "onvelocity=28";
+midi 2:  0 "onvelocity=68";
+midi 2 2: 0 "onvelocity=60";
+midi 3 1:  0 "onvelocity=40";
+midi 4:  0 "onvelocity=56";
+// 31
+1: 2c+;r;
+2: 8d+f+;e+g+;;;4.;8;
+3: 4.c;8g;;f;g;a;
+boldital between 2&3: 1 "p";
+P
+bar
+
+// 32
+2: 8e+g+;d+f+;;;4.;8;
+3: 4.bn-;8g;;f;g;a;
+P
+bar
+
+// 33
+2: 8d+f+;c+e+;;;4.;8;
+3: 4.a-;8e;f;e;f;g;
+P
+bar ending "1."
+
+2: 8c+e+;c+d+;;;2bnd+;
+3: 4.g-;8d;g;f;e;d;
+P
+repeatend ending "2."
+
+rom above all: 3.5 "D.S. al coda";
+2: 8c+e+;c+d+;;;2bnd+;
+3: 4.g-;8d;g;f;e;d;
+P
+ifdef MIDI repeatstart else dblbar endif endending
+
+ifdef MIDI
+ staff 2 clef=treble
+ staff 3 clef=bass
+ music
+
+ midi 1: 0 "onvelocity=58";
+ midi 2: 0 "onvelocity=92";
+ midi 2 2: 0 "onvelocity=84";
+ midi 3 1: 0 "onvelocity=70";
+ midi 4: 0 "onvelocity=86";
+ MT
+ bar endending
+endif
+
+staff 3 clef=bass
+music
+
+restart
+
+define ACC midi 3: 1 "onvelocity=54"; 2 "onvelocity=68"; 3 "onvelocity=54"; 4 "onvelocity=68"; @
+
+midi all: 1 "tempo=116";
+ midi 1: 0 "onvelocity=48";
+ midi 2: 0 "onvelocity=82";
+ midi 2 2: 0 "onvelocity=74";
+ midi 3 1: 0 "onvelocity=60";
+ midi 4: 0 "onvelocity=76";
+define M
+2: 8d+;c+;;;2;
+2 2: 2fa;8f;e;;;
+3: c;[with>]f;c;[with>]g;
+P
+ACC
+@
+rom above all: 0.8 "Coda";
+ital between 2&3: 1 "rit.";
+1: 2c+;r;
+M
+bar 
+M
+bar 
+
+staff 2 clef=bass
+music
+
+define N
+2: 2d+;e+;
+2 2: 8a;f;;;g;e;;;
+3: f-;[with>]c;c-;[with>]c;
+P
+ACC
+@
+midi all: 1 "tempo=112";
+N
+bar
+
+midi all: 1 "tempo=108";
+N
+bar
+
+midi all: 1 "tempo=102";
+N
+bar
+
+midi all: 1 "tempo=68"; 3 "tempo=36";
+2: d+;8c+;b;2ec+;
+2 2: [dist0]8r;4.a;2s;
+3: f-;[with>]c;2c-;
+midi 3: 1 "onvelocity=54"; 2 "onvelocity=68"; 3 "onvelocity=54";
+endbar

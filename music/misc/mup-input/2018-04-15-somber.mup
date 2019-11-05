@@ -1,0 +1,254 @@
+
+header
+	title (18) "Somber"
+	title ""
+	title "" "John A. Krallmann"
+	title " " "(Apr 15, 2018)"
+
+header2
+	title "Somber - \%"
+footer
+	title (12) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+//	scale=0.95
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+
+midi all: 0 "tempo=80";
+midi 1: 0 "channel=11"; 0 "onvelocity=72";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=50";
+midi 2 1: 0 "channel=13"; 0 "onvelocity=48";
+
+1: 2s;8r;e;
+2: 2s;4c;
+bar
+
+1: 8e+;d+;c+;b;a;e;
+2: g;a-;e;
+bar
+
+1: 8b;d+;4.;8;
+2: g-;d;b;
+bar
+
+1: 8d+;c+;4.;8;
+2: a-;e;c+;
+bar
+
+1: 8c+;bn;4.d+;8g;
+2: g-;d;bn;
+bar
+
+1: 8e+;d+;c+;b;g;e;
+2: c-;d;e;
+bar
+
+1: 8g;f;4.;8;
+2: a-;e;c+;
+bar
+
+1: 8g;f;4.;8c+;
+2: an-;f;c+;
+bar
+
+1: 8c+;c&+;4.b;8f#;
+2: b-;a;d+;
+bar
+
+1: 8f#;g;4.;8;
+2: e-;b-;g;
+bar
+
+1: 8g;a;4.c;8e;
+2: f-;c;a;
+bar
+
+1: 8e;d;4.;8c+;
+2: b-;f;a;
+bar
+
+1: 8an;b;4.g+;8b+;
+2: e-;b-;g;
+bar
+
+1: 8b+;a+;4.;8f+;
+2: a-;e;c+;
+bar
+
+1: 8a+;g+;4.;8e+;
+2: e-;b-;g;
+bar
+
+1: 8g+;f+;;e+;d+;c+;
+2: f-;c;an;
+bar
+
+1: 8d+;c+;b;a;g;f#;
+2: b-;a;d+;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 8f#;g;4.;8;
+1 2: d;8c;c&;4b-;
+ital between 1&2: 1 "a tempo";
+2: e-;b-;g;
+bar
+
+1: 8g;a;4.;8f;
+1 2: a-;8d;e;4c;
+2: f-;c;a;
+bar
+
+1: 4.d+;8b;a;f;
+1 2: 8en;f;c+;d;c;d;
+2: b-;f;b;
+bar
+
+1: 2.g;
+1 2: 8d;e;g-;b-;d;e;
+2: e-;b-;e;
+bar
+
+1: 2.f;
+1 2: 8a-;b-;c;b-;a-;g-;
+2: f-;c;f;
+bar
+
+1: 4.d;8e;f;g;
+1 2: 8bn-;an-;2b-;
+2: g-;d;g;
+bar
+
+1: 8en;f;4.g;8b;
+1 2: 2.c;
+2: c-;en;b;
+bar
+
+1: 8b;a;4.;8f;
+1 2: c;8e;f;4c;
+2: f-;c;a;
+bar
+
+1: 8a;g;4.;8e;
+1 2: c&;8b-;cn;4b-;
+2: e-;b-;g;
+bar
+
+1: 8g;f;4.;8e;
+1 2:a-;8;b-;4a-;
+2: f-;c;f;
+bar
+
+1: 8e;d;4.;8b-;
+1 2: a-;8f-;g-;4a-;
+2: b--;f-;d;
+bar
+
+define M
+1: 8d;e;4.;8c;
+1 2: g-;2;
+2: c-;g-;c;
+bar
+@
+M
+M
+
+1: 8e;d;4.;8f;
+1 2: 2.a-;
+2: f-;c;f;
+bar
+
+1: 8d;c;4.;8bn-;
+1 2: 2.f-;
+2: g--;d-;g-;
+bar
+
+1: 2.c~;
+2: 8c-;g-;e;d;4c~;
+bar
+
+1: 2.c;
+2: 2.c;
+dblbar
+
+score
+	time=4/4
+	beamstyle=4,4,4,4
+	key=0&
+music
+
+midi all: 0 "tempo=56";
+rom above all: 1 "Slower";
+1: 2s;8;g;c+;d+;
+2: 2s;r;
+bar
+
+1: 4.e+;8c+;4.e+;8c+;
+2: 8c;g;4e+;8a-;e;4c+;
+bar
+
+1: 8e+;d+;8.c+;16d+;4e+;g+;
+2: 8f-;c;4a;8c;g;4e+;
+bar
+
+1: 4.a+;8e+;4.a+;8e+;
+2: 8a-;e;4c+;8a-;e;4c+;
+bar
+
+1: 8c++;b+;8.a+;16g+;2a+;
+2: 8f-;c;4a;8a-;e;4c+;
+bar
+
+1: 4.a;8e;4.a;8e;
+2: 8a-;e;4c+;8a-;e;4c+;
+bar
+
+1: 8c+;b;8.a;16g;4b;a;
+2: 8f-;c;4a;8a-;e;4c+;
+bar
+
+1: 4.aa+;8gg+;4.aa+;8gg+;
+roll 1: 1;2.5;3;4.5;
+2: 8a-;e;4c+;8a-;e;4c+;
+bar
+
+1: 8c+c++;bb+;8.aa+;16gg+;4bb+;aa+;
+roll 1: 1;1.5;2;2.75;3;4;
+2: 8f-;c;4a;8a-;e;4c+;
+bar
+
+define MM
+1: 2a;;
+1 2: 8d;e;4c;8d;e;4c;
+2: 8a-;e;4a;8a-;e;4a;
+bar
+
+1: 8c+;b;4a;2;
+1 2: 4e;8d;c;d;e;4c;
+2: 8f-;c;4a;8a-;e;4a;
+bar
+@
+MM
+MM
+1: 8b-;c;4a-;8b-;c;4a-;
+2: 2a-e;;
+bar
+
+1: 1a-b-c;
+2: 1a-e;
+endbar
+

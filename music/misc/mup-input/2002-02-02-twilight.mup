@@ -1,0 +1,244 @@
+header
+	title (18) "Twilight"
+	title (12) "" "John A. Krallmann (2/2/02)"
+
+header2
+	title (12) "Twilight - \%"
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	vscheme=2f
+	measnum=y
+	packfact=1.8
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=68";
+midi 1 1: 0 "channel=11"; 0 "program=49"; 0 "param=10,40";
+midi 1 2: 0 "channel=12"; 0 "program=49"; 0 "param=10,72";
+midi 2 1: 0 "channel=13"; 0 "program=49"; 0 "param=10,56";
+midi 2 2: 0 "channel=14"; 0 "program=49"; 0 "param=10,80";
+
+S c+;b;a;b;
+A ee+;;;;
+B 1a-;
+bar
+
+S e;d;2c;
+A a-a;;2;
+B 2.f-;4;
+bar
+
+S f;e;2d;
+T fb;gb;ab;gb;
+B 2.g-;4g--;
+bar
+
+S 1g;
+A a-f;g-e;2;
+B 2c-;4c;b-;
+bar
+
+S dfd+;cec+;2;
+T f;e;2;
+B 2.a-;4g-;
+bar
+
+S ee+;dd+;2a-a;
+A 2a;4d;c;
+T e;d;2c;
+B 1f-;
+bar
+
+S d;f;f+;g+;
+A 2s;ac+;
+T 2fa;s;
+B 2.g-;4g--;
+bar
+
+S ege+;a-a;2g-g;
+A s;[ho-1]2.e;
+B 2.c;4;
+bar
+
+S d;f;a;c+;
+T 1dac+;
+B 1f-;
+bar
+
+S d+;e+;ee+;dd+;
+A 2eg;a;
+B 2c-;f-;
+bar
+
+S b-;c;d;a;
+A 1g-f;
+B 1g-;
+bar
+
+S 1g-g;
+A d;c;b-;a-;
+B 2e-;e&-;
+bar
+
+S d;e;f;a;
+T 2fa;4b;a;
+B 1g-;
+bar
+
+S ac+f+;gbe+;ad+a+;c+f+c++;
+A a-;b-;f;a;
+B 1g-d tie;
+bar
+
+score release=400
+music
+
+S 1a+c++g++;
+A 1f+;
+B 1g-d;
+bar 
+
+score release=20
+music
+
+////
+S ms;
+T faf+;ege+;b-b;cc+;
+B 2c-;a--e;
+bar
+
+S g-g;a-a;2cc+;
+A 2c;4g;f;
+B 1f-;
+bar
+
+S 1gg+;
+A d+;c+;d;c;
+B 1e-;
+bar
+
+S 1g;
+A d;c;g-;a-;
+B 1e&-;
+bar
+
+S 1b-d;
+T a;g;d;b-;
+B 1d-;
+bar
+
+S b-;a-;g-;a-;
+T 1e;
+B 1d&-;
+bar
+
+S 1g;
+A a-;b-;e;b-;
+B 1c-;
+bar
+
+S 1a-a;
+A g;f#;e;d;
+B 1d-;
+bar
+
+S a-c;g-b-;f-a-;g-b-;
+T 1d;
+B 2g-;g--;
+bar
+
+S a-c;b-d;ce;df;
+T 2f;a;
+B 2g-;f-;
+bar
+
+S 2g-g;cc+;
+A d;c;f;a;
+B 2e-;d-;
+bar
+
+S 2dd+;4g+;e+;
+A ac+;gb;2gc+;
+B 2g-;e-;
+bar
+
+S ee+;dd+;2a-a;
+A 2ac+;4d;cf;
+B 1f-;
+bar ending "1."
+
+S a-cfa;cfac+;c+a+;bb+;
+A 2s;f;
+B 2g-;g--;
+bar
+
+S 1d+e+g+c++;
+B 1c-;
+ifdef MIDI
+	bar
+	1: r;2.s;
+endif
+repeatend ending "2."
+
+S a-cfa;cfac+;f+;e+;
+A 2s;fac+;
+B 2g-;4;g--;
+bar
+
+S 2ge+;a-a;
+A d;c;d;f;
+B 2c-;f-;
+bar
+
+S 2g-g;4g;f;
+A d;e;2a-c;
+B 2c-;f-;
+bar
+
+score time=2/4
+music
+
+S 2gc+;
+A d;e;
+B 2c-;
+bar
+
+score time=4/4
+music
+
+midi all: 1 "tempo=62"; 4 "tempo=58";
+midi 1-2 1-2: 1 "onvelocity=60";
+S 1ac+;
+A e;d;2s;
+T 2s;4a;d;
+B 1f-;
+bar
+
+score release=400
+music
+
+S 1g-cde;
+B 1c-g-e;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=48";
+midi all: 1 "tempo=40";
+S 1g-ce;
+B 1c-g-e;
+endbar

@@ -1,0 +1,125 @@
+header
+	title (18) "Bittersweet"
+	title "" "John A. Krallmann (2/3/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=2#
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=50";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+rom above all: 1 "Largo ( \(smup4n) = 50 )";
+
+1: {8f;e;d;}3;{f;d;a;}3;4db;8da;cg;
+2: da;cna;{8f;e;b-;}3;4a-e;
+2 2: s;;g-;s;
+bar
+
+1: {8f;d+;c+;}3;{b;e+;c+;}3;4a;8d;e;
+1 2: d;s;;b-;
+2: da;ge+;{8e+;d+;c+;}3;4eg;
+2 2: s;;f;s;
+bar
+
+1: {8f;g;f;}3;{g;d+;f;}3;4da;g;
+1 2: d;;s;8d;e;
+2: da;cna;{8a;g;d;}3;4b&-g;
+2 2: s;;b-;s;
+bar
+
+1: {8f;g;a;}3;{b;g;f;}3;4df;8.ca;32db;ec+;
+1 2: d;;2s;
+2: a-f;g-e;{8f;g;f;}3;4a-g;
+2 2: s;;a-;s;
+bar
+
+1: {8e+;d+;a;}3;{b;a;g;}3;4a;8;g;
+1 2: f;d;{8e;d;c;}3;4b-;
+2: b-f;g-e;a-f;g-d;
+bar
+
+1: {8f;g;a;}3;{c+;d+;b;}3;8.a;16g;4f;
+1 2: d;e;8d;c;e;d;
+2: a-f;b-f;{8e;f;g;}3;4b-f;
+2 2: s;;a-;s;
+bar
+
+1: {8b-;g;f;}3;{e;a;g;}3;4f;8b;d+;
+1 2: s;c;{8e;d;c;}3;4g;
+2: 4g-d;a-g;b-f;ed+;
+bar
+
+1: {8f+;g+;f+;}3;{e+;d+;e+;}3;4d+;8e+;e#+;
+1 2: a;b;a;c+;
+2: fd+;g#d+;{8g+;f+;d+;}3;4ag+;
+2 2: s;;b;s;
+bar
+
+1: {8f+;g+;f+;}3;{g+;a+;d+;}3;4aa+;8.d+;16e+;
+1 2: d+;a;s;{8a;g;d;}3;
+2: da;cna;{8a;g;d;}3;4b&-g;
+2 2: s;;b-;s;
+bar
+
+midi all: 4 "tempo=42"; 4.3 "tempo=36"; 4.5 "tempo=20";
+mussym above 1: 4.66 "ferm";
+1: {8f+;d+;f+;}3;{b;d+;e+;}3;4b;cc+;
+1 2: a;f;{8g;f;d;}3;{b;b&;a;}3;
+ital between 1&2: 4 "rit.";
+2:a-f;g-d;a-g;;
+bar
+
+midi all: 0 "tempo=50";
+rom above all: 1 "agitato";
+1: {8b;f;b;}3;{c+;f;c+;}3;4d+;c+;
+1 2: d;;{8g;f;d;}3;{e;f;g;}3;
+ital between 1&2: 1 "a tempo";
+< between 1&2: 1 til 2m+3.8;
+2: b-f;a-f;e-g;{8g;f;e;}3;
+2 2: 2.s;4a-;
+bar
+
+1: c+;{8e+;d+;c+;}3;4c+;{8b-;c;d;}3;
+1 2: {8f;c;f;}3;{g;c;e;}3;{d;e;f;}3;4g-;
+2: a#-f;;b-f;g-d;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: {8c;d;e;}3;{df;eg;fa;}3;{gb;ac+;bd+;}3;
+1 2: g-;2s;
+2: e-b-;a-f;{8b;a;g;}3;
+2 2: s;;g-;
+bar
+
+score time=4/4
+music
+
+midi all: 1 "tempo=42"; 2 "tempo=32"; 2.3 "tempo=28"; 2.5 "tempo=22"; 3 "tempo=15";
+1: {8fc+f+;ge+;fd+;}3;{ec+;db;ca#;}3;2db;
+ital between 1&2: 1 "rit";
+> between 1&2: 1 til 4;
+2: f-ca#;f-f;2b--b-;
+octave below 2: 2 "8va" til 4;
+endbar

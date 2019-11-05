@@ -1,0 +1,493 @@
+header
+	title (18) "An Afternoon With a Good Friend"
+	title (12) "" "John A. Krallmann (Aug. 18-19, 2001)"
+
+header2
+	title (12) "An Afternoon With a Good Friend - \%"
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	bracket=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	vscheme=2f
+	staffscale=0.89
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=80,64"; 0 "param=10,33";
+midi 1 2: 0 "channel=12"; 0 "program=73"; 0 "onvelocity=64";
+midi 2 1: 0 "channel=13"; 0 "program=71"; 0 "onvelocity=84"; 0 "param=10,93";
+midi 2 2: 0 "channel=13";
+
+1: 2g;8d;g;
+2: 8g;a;2b;
+bar
+
+1: a;b;c+;
+1 2: s;g;e;
+2: 8c+;d+;2g;
+bar
+
+1: 2d+;4b;
+1 2: 2f;4s;
+2: 8d;f;2g;
+bar
+
+1: 2a;8d+;c+;
+2: 8c+;d+;4e+;f+;
+bar
+
+1: 2b;8a;g;
+2: 8g+;g;a;b;4c#+;
+bar
+
+1: a;e;f;
+2: d+;r;c(n)+;
+bar
+
+1: 2g;4e;
+1 2: 2d;8g-;a-;
+2: b;d;c;
+bar
+
+1: d;g;8d+;c+;
+1 2: 2g-;4e;
+2: 2b-;4c;
+bar
+
+1: b;a;g;
+1 2: c;d;b-;
+2: 2d;4e;
+bar
+
+1: 2e;8fb;a;
+1 2: 8g-;a-;b-;c;4;
+2: c;a-;d;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g;
+bar
+
+//
+
+1: 2b;8;a;
+2: r;g;f;
+bar
+
+1: 2g;4e;
+2: e;b;c+;
+bar
+
+1: d;g;a;
+2: 2b;4d;
+bar
+
+1: 2b;8a;g;
+1 2: 2.d;
+2: g;a;b;
+bar
+
+1: a;d+;c+;
+1 2: 2f;8e;f;
+2: 2d+;4r;
+bar
+
+1: 2b;8d+;c+;
+1 2: 2g;4f;
+2: r;g;d;
+bar
+
+1: b;a;d;
+1 2: 2.d;
+2: g;2a;
+bar
+
+1: g;a;b;
+1 2: 2.d;
+2: b;a;g;
+bar
+
+1: e;2f;
+2: 2c+;4d;
+bar
+
+1: g;a;b;
+2: b;a;g;
+bar
+
+1: d+;2a;
+1 2: 8f;e;4d;c;
+2: 2d;4f;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g;
+repeatstart
+
+//
+
+1: r;;8g;b;
+2: d+;c+;b;
+bar
+
+1: 2d+;4c+;
+1 2: 2.d;
+2: d;e;f;
+bar
+
+1: b;a;g;
+1 2: 2.d;
+2: 2g;4e+;
+bar
+
+1: 8a;b;c+;d+;e+;f+;
+2: 2d+;4c+;
+bar
+
+1: g+;2d+;
+1 2: 2.g;
+2: 2b;4d;
+bar
+
+1: c+;e;f;
+2: a;2d;
+bar
+
+1: 2g;4r;
+1 2: 2b-;4c;
+2: g;d;c;
+bar
+
+1: g;d;c;
+1 2: d;g-;a-;
+2: 2b-;4a-;
+bar
+
+1: b-;d;g;
+1 2: 2.g-;
+2: 2g-;4b-;
+bar
+
+1: c+;b;a;
+1 2: 2e;4f;
+2: 2a-;4d;
+bar
+
+1: 2b;4e+;
+1 2: 2.g;
+2: g;d;c;
+bar
+
+1: d+;g;e;
+1 2: 2d;4c;
+2: 2b-;4c;
+bar
+
+1: d;2a;
+1 2: 2.c;
+2: 2d;4f;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g;
+bar
+
+//
+
+1: g;;e;
+1 2: 2d;4e;
+2: 2b;4c+;
+bar
+
+1: g;;a;
+1 2: 2.d;
+2: 2b;4c+;
+bar
+
+1: b;;a;
+1 2: 2g;4f;
+2: 2d+;4d;
+bar
+
+1: 2g;4e;
+1 2: b-;2c;
+2: e;;c;
+bar
+
+1: d;g;a;
+2: 2b-;4c;
+bar
+
+1: 2d+;4g;
+1 2: g-;2d;
+2: b-;2;
+bar
+
+1: c+;e;f;
+1 2: 2.a-;
+2: 2a-;4;
+bar
+
+1: b;d;g;
+1 2: 2.g-;
+2: g-;a-;b-;
+bar
+
+1: a;c;d;
+2: c;d;f;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g;
+bar
+
+1: 2.g;
+1 2: 2.b-;
+2: 2.g;
+bar
+
+1: b;;a;
+1 2: 2g;4d;
+2: 2e;4f;
+bar
+
+1: b;d;;
+2: 2g;4f;
+bar
+
+1: g;b-;c;
+2: 2e;4a-;
+bar
+
+1: a;c;f;
+2: 2d;4c;
+bar
+
+1: 2g;4b-;
+2: b-;d;g;
+bar
+
+1: c;d;f;
+2: a;f;d;
+bar
+
+1: 2g;4e;
+1 2: 2s;4c;
+2: e;2c;
+bar
+
+1: a;2d;
+1 2: 2.c;
+2: 2d;4f;
+bar
+
+1: b;a;g;
+2: g;b;c#+;
+bar
+
+1: 8f;g;a;d;c+;f;
+2: d+;c(n)+;a;
+bar
+
+1: 8b;c+;4d+;8b;a;
+2: g;8d;f;g;a;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 8g;f;4e;f;8b;a;
+2: b;2c+;4d+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2.g;
+2: 2.g;
+repeatend
+
+////
+
+midi 2 1-2: 0 "channel=13"; 0 "program=71"; 0 "onvelocity=64";
+1: bg+;;af+;
+2: 2g;4b;
+repeatstart
+
+1: 2ge+;4fd+;
+1 2: d+;c+;s;
+2: 2c+;4d+;
+bar
+
+1: gb;a;eg;
+2: 2e+;4ac+;
+bar
+
+1: 2a;8b;a;
+1 2: g;f;c;
+2: 2da;4d#f;
+bar
+
+1: 8a;g;4f;8b-;d;
+1 2: 2.b-;
+2: 2eg;4dg;
+bar
+
+1: 8f;g;2e;
+1 2: 2.c;
+2: 2.g;
+2 2: 2c;4b-;
+bar
+
+1: a;g;e;
+1 2: 2.c;
+2: a;b;g;
+2 2: 2.a-;
+bar
+
+midi all: 1 "tempo=110"; 3 "tempo=120";
+1: 2f;8g#;a;
+1 2: c#;2d#;
+2: 2.a;
+2 2: 2b-;4a-;
+bar
+
+1: b;a;g;
+1 2: 2.d;
+2: g;a;b;
+2 2: 2.g-;
+bar
+
+1: 2g;8a;b;
+1 2: d;2e;
+2: 2.g;
+2 2: 2c;4b-;
+bar
+
+1: 2ec+;8d+;e+;
+1 2: b;2a;
+2: 2g;4e;
+2 2: 2.a-;
+bar
+
+midi all: 1 "tempo=110"; 3 "tempo=120";
+1: 2.af+;
+1 2: e+;c#+d#+;8b;a;
+2: c#+;2d#+;
+2 2: 2.b-f;
+bar
+
+1: g;f;ce;
+1 2: 2e;4s;
+2: 2cg;4a-g;
+bar
+
+midi all: 1 "tempo=110"; 3 "tempo=120";
+1: 2b;8b;a;
+1 2: c#;2d#;
+2: 2.b-f;
+bar
+
+1: e+;;b;
+1 2: 2.g;
+2: 2.b;
+2 2: 2e;4d;
+bar
+
+1: c+;;b;
+1 2: 2.e;
+2: g;a;g;
+2 2: 2.a-;
+bar
+
+1: a;g;ce;
+1 2: 2e;4s;
+2: 2dc+;4a-g;
+bar
+
+midi all: 1 "tempo=104"; 4 "tempo=120";
+1: 2.b-g;
+2: 2.g-g;
+dblbar
+
+define PART
+1: g-b-e;;a-df;
+2: 2e-;4b--;
+bar
+
+1: b-eg;;a-df;
+2: 2e-;4b--;
+bar
+
+1: g-de;g-ce;g-ef;
+2: 2c-;4a--;
+@
+PART
+bar ending "1."
+
+1: f;g;a;
+1 2: 2.a-d#;
+2: 2.b--;
+bar
+
+1: egb;;cea;
+2: 2e-b-;4a-e;
+bar
+
+1: egb;;cea;
+2: 2e-b-;4a-e;
+bar
+
+1: ceg;;dga;
+2: 2cg;4da;
+bar
+
+1: 2.dfa;
+2: 2.da;
+bar
+
+1: bg+;;af+;
+2: 2e;4b;
+repeatend ending "2."
+
+midi all: 1 "tempo=104";
+1: f;g#;a;
+1 2: 2.a-d#;
+2: 2.b--;
+bar
+
+midi all: 1 "tempo=80";
+1: 2b-eg#b;4r;
+2: 2e-b-;4r;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=40";
+1: 2g#+b+e++;4r;
+1 2: 2eb;4r;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=20"; 4 "param=10,63";
+midi all: 1 "tempo=50";
+1: 2g#-b-e;4r;
+2: 2e-b-;4r;
+endbar

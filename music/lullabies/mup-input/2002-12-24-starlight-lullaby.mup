@@ -1,0 +1,401 @@
+header
+	title (18) "Starlight Lullaby"
+	title (8) " "
+	title "" "John A. Krallmann (December 24, 2002)"
+
+header2
+	title (12) "Starlight Lullaby - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=3/4
+	beamstyle=4,4,4
+	key=4&
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	staffscale=0.9
+	scoresep=10,26
+	release=0
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+midi all: 1 "tempo=60";
+midi 1 1: 0 "channel=11"; 0 "program=40"; 0 "onvelocity=54"; 0 "param=10,40";
+midi 1 2: 0 "channel=12"; 0 "program=41"; 0 "onvelocity=48"; 0 "param=10,56";
+midi 2 1: 0 "channel=13"; 0 "program=42"; 0 "onvelocity=48"; 0 "param=10,72";
+midi 2 2: 0 "channel=14"; 0 "program=43"; 0 "onvelocity=60"; 0 "param=10,88";
+
+S {8en;dn;en;}3;2c+;
+A 2s;4e;
+T 2g;4;
+B 2c;4;
+bar
+
+S {8e(&);dn;e;}3;2c+;
+A 2s;8f;e;
+T 2a;4;
+B 2c;4;
+bar 
+
+S {8dn;c;d;}3;4g;a;
+A 2s;8c;d;
+T 2a;4f;
+B 2b-;4;
+bar
+
+S 2b;{8bn;e;b;}3;
+A 2d&;4s;
+T f;e;f;
+B 2.g-;
+bar
+
+S 2c+;{8c+;b;a;}3;
+A e;d&;e;
+T e;f;g&;
+B 2.a-;
+bar
+
+S 2f;{8;g;an;}3;
+A e;d&;c;
+T 2a;4an;
+B 2d&;4c;
+bar
+
+S 2b;{8e;f;e;}3;
+A d&;{8e;d;e;}3;4b-;
+T 2f;4e;
+B b-;a-;g-;
+bar
+
+S 2c;{8d;c;b-;}3;
+A b-;2a-;
+T 2e;4en;
+B 2.a-;
+bar
+
+S e;{8e;f;g;}3;{a;g;a;}3;
+A 8b-;c;4b-;c;
+T e;;;
+Ba-;g-;f-;
+bar
+
+S {8c+;b;a;}3;2g~;
+A dn;{8;e;d;}3;8d&;dn~;
+T f;2g~;
+B b-;2bn-;
+bar
+
+S 2g;{8b;dn+;c+;}3;
+A 8d;e;f;e;4dn;
+T g;8a;g;4f;
+B 2c;4b-;
+bar
+
+S 2.g;
+A f;2e;
+T 2.g;
+B 2c;4b-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S {8c;dn;e;}3;2c;4b-;
+T 1e;
+B 2a-;g-;
+bar
+
+score release=500
+music
+
+midi all: 3 "tempo=48"; 5 "tempo=60";
+S 1c;
+A 1an-;
+T 1c;
+B 2f-;f--;
+dblbar
+
+score key=3&
+	release=0
+music
+
+midi 1-2 1-2: 1 "param=7,104";
+S {8e;d;c;}3;2f;4e;
+T 2a;g~;
+B 1c;
+bar
+
+S {8g;f;e;}3;2.c;
+T 2.g;4f~;
+B 2b-;a-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+S {8d;c;d;}3;2bn-;
+T 2f;8e;d;
+B 2.g-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 8en;f;4g;a;g;
+T 2b;4c+;b;
+B 1c;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+S {8an;g;a;}3;4f;8c+;c#+;
+T 2f;4an;
+B 2.e;
+bar
+
+S {8d+;c+;d+;}3;c+;b;c+;d+;
+A 2.a;
+T r;f;8e+;d+;
+B 2.b-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S {8d+;e+;d+;}3;2c+;8b;g;
+A f;2.e;
+T 1g;
+B 2c;b-;
+bar
+
+S {8g;f;g;}3;2e;4c~;
+A 2c;b-~;
+T 1e~;
+B 2a-;g-;
+bar
+
+S 2.c;4d;
+A b-;2.a-;
+T 1e;
+B 2a-;f-;
+bar
+
+score release=500
+music
+
+midi all: 1 "tempo=56"; 5 "tempo=60";
+midi 1-2 1-2:1 "param=7,86";
+S 1d;
+A 1bn-;
+T 1d;
+B 1g-;
+dblbar
+
+score key=0&
+release=0
+time=3/4 ; beamstyle=4,4,4
+music
+
+S {8e;f;e;}3;d;c;d;e;
+A 4d;2s;
+T 2.b&;
+B 2.c;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 8g;f;2c;{8e&;d;c;}3;
+A 4c;2.s;
+T 1f;
+B 2a-;a&-;
+bar
+
+S 1g;
+A 8e(n);d;4c;b-;c;
+T 1e;
+B 1g-;
+bar
+
+S 2.d;8a;b;
+A 2c;b-;
+T d;e;2f~;
+B 1g-;
+bar
+
+S b;c+;2a;
+A d;e;2c;
+T f;2.e;
+B 2.a-;4g-;
+bar
+
+S {8e;d;c;}3;2d;{8c+;b;a;}3;
+A a-;2;4;
+T 1c;
+B 2.f-;4d-;
+bar
+
+score time=3/4
+release=500
+music
+
+midi all: 2 "tempo=40"; 3 "tempo=60";
+S 2.e;
+A a-;2g#-;
+T c;2b-;
+B 2.e-;
+dblbar
+
+score
+	time=4/4
+	beamstyle=4,4,4,4
+	key=3#
+	release=0
+music
+
+S {8c;b-;c;}3;2a;4b-;
+A s;2d;4s;
+T e;2.f;
+B 1a-;
+bar
+
+S 2.c;{8d;c;d;}3;
+A 1a-;
+T 2.e;4f;
+B 2.a-;4;
+bar
+
+score time=2/4
+music
+
+S 2b-;
+A 2a-;
+T 2f;
+B 2d;
+bar
+
+score time=3/4; beamstyle=4,4,4
+	release=250
+music
+
+S 2.a;
+A 2.c;
+T 2.e;
+B 2.a-;
+bar
+
+score release=0
+music
+
+S {8c+;b;a;}3;2f;
+ifdef MIDI
+  A b-;a-;g-;
+  T 2.c;
+  B 2.f-;
+else
+  T b;a;g;
+  B 2.f-c;
+endif
+bar
+
+S {8d;e;f;}3;2b;
+ifdef MIDI
+  A f-;g-;d;
+  T 2.b-;
+  B 2.e-;
+else
+  T f;g;d+;
+  B 2.e-b-;
+endif
+bar
+
+S {8b;a;f;}3;2d;
+ifdef MIDI
+  A f-;b-;a-;
+  T 2.a-;
+  B 2.d-;
+else
+  T f;b;a;
+  B 2.d-a-;
+endif
+bar
+
+S {8d;e;f;}3;4b;b#;
+ifdef MIDI
+  A f-;g-;e-;
+  T 2.b-;
+  B 2.e-;
+else
+  T f;g;e;
+  B 2.e-b-;
+endif
+bar
+
+S 2.c+;
+A 2.e;
+T b;a;gn;
+B 2.a-;
+bar
+
+S 8e+;d+;2a;
+A a;e;d;
+T 2.a;
+B 2f-;4fn-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi 1-2 1-2:1 "param=7,76";
+midi all: 1 "tempo=50";
+S 8d+;c+;4b;2e+;
+ifdef MIDI
+  A f-a-;2.e-g-;
+  T 1d;
+  B 1e-;
+else
+  T fa;2.eg;
+  B 1e-d;
+endif
+bar
+
+ital between 1&2: 1 "rit. e dim.";
+midi all: 1 "tempo=44"; 3 "tempo=38"; 4 "tempo=31"; 5 "tempo=40";
+midi 1 1: 1 "onvelocity=34";
+midi 1 2: 1 "onvelocity=30";
+midi 2 1: 1 "onvelocity=30";
+midi 2 2: 1 "onvelocity=38";
+S 8c+;b;2a;4b;
+T 2e;fn;
+B 1a-;
+bar
+
+score release=400
+music
+
+midi 1-2 1-2: 5 "param=7,127";
+midi 1 1: 1 "onvelocity=22";
+midi 1 2: 1 "onvelocity=18";
+midi 2 1: 1 "onvelocity=18";
+midi 2 2: 1 "onvelocity=24";
+S 1a+;
+A 1c+;
+T 1e;
+B 1a-;
+endbar

@@ -1,0 +1,192 @@
+header
+	title (18) "Despair"
+	title (12) "" "John A. Krallmann (1990)"
+
+footer
+	title (11) "\(copyright) Copyright 1990 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	brace=1-2
+	staffscale=0.88
+	release=0
+	measnum=y
+	scoresep=10,26
+
+staff 2
+	clef=bass
+	vscheme=2f
+
+music
+
+midi all: 0 "tempo=66";
+midi 1-2: 0 "program=69"; 0 "onvelocity=40";
+midi 2 2: 0 "program=69"; 0 "onvelocity=40";
+
+1: 2r;4e;c;
+2: 8f-;c;g;a;2r;
+rom (14) above 1: 0 "( \(smup4n) = 68 )";
+boldital between 1&2: 1 "mp";
+bar
+
+1: 2r;2a-;
+2: 8d-;a-;e;f;2r;
+bar
+
+1: 2r;4b-;a&-;
+2: 8g-;d;f;g;2r;
+bar
+
+1: ms;
+2 1: 1g;
+2 2: 8c-;g-;4d;2ce&;
+bar
+
+1: ms;
+2 1: 1fa&;
+2 2: 8f-;c-;f-;g-;4a&-;f-;
+bar
+
+1: ms;
+2 1: 1dgb;
+2 2: 8g-;d-;g-;an-;4b-;g-;
+bar
+
+1: ms;
+2 1: 1e&gb&;
+2 2: 8e&-;b&--;e-;f-;4g-;e-;
+bar
+
+voice 2 2 defoct=2
+music
+
+1: ms;
+2 1: 1df#a;
+2 2: 8d;a-;d;e;4f#;d;
+bar
+
+1: ms;
+2 1: 1ce&gb&;
+2 2: 8c;g-;c;d;4e&;c;
+bar
+
+1: ms;
+2 1: 2cdf#a;dfna&;
+2 2: 8d;a-;d;e;4f~c+;fb;
+bar
+
+1: ms;
+2 1: 2c~dfg~;ce&g;
+2 2: 1c;
+bar
+
+midi 2 1-2: 0 "onvelocity=35";
+1: ms;
+2 1: a&-cf;a-ce&;2b-dg;
+2 2: f;c;g;g-;
+bar
+
+midi all: 0 "tempo=58";
+1: ms;
+2 1: 2dfg~;ce&g;
+2 2: 1c;
+dblbar
+
+score key=3&
+time=3/8
+beamstyle=4.
+voice 2 2 defoct=3
+music
+
+midi all: 0 "tempo=72";
+midi 1: 1 "onvelocity=48";
+midi 2: 1 "onvelocity=48";
+1: r;c;e;
+2: r;c-;g-;
+boldital between 1&2: 1 "f";
+bar
+
+1: a;g;c;
+2: e;c;a;
+bar
+
+1: a;g;c;
+2: d;g;a;
+bar
+
+1: a;g;c;
+2: d;g;a;
+bar
+
+1: e;4d~;
+2: f;4g~;
+bar
+
+1: d;c;e;
+2: g;c-;g-;
+bar
+
+1: a;g;c;
+2: e;c;a;
+bar
+
+1: a;g;c;
+2: d;g;a;
+bar
+
+1: a;g;c;
+2: d;g;a;
+bar
+
+1: e;4d~;
+2: f;4g~;
+bar
+
+1: 4.d;
+2: 4.g;
+dblbar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi all: 0 "tempo=66";
+midi 2 1-2: 1 "onvelocity=50"; 3 "onvelocity=25";
+1: ms;
+2 1: gc+e+;;ac+e+;;
+2 2: 8c-;g-;c;g-;f-;c;f;c;
+boldital between 1&2: 1 "mf"; 3 "mp";
+rom above 1: 1 "rubato";
+bar
+
+midi 2 1-2: 1 "onvelocity=45"; 3 "onvelocity=20";
+1: ms;
+2 1: gc+e+;;ac+e+;;
+2 2: 8c-;g-;c;g-;f-;c;f;c;
+boldital between 1&2: 1 "mf"; 3 "mp";
+bar
+
+midi 1: 1 "onvelocity=48";
+midi 2 1-2: 1 "onvelocity=48";
+1: cdg;;bn-dg;;
+2: 8g-;d;g;d;g-;d;g;d;
+boldital between 1&2: 1 "mf";
+bar
+
+midi 1: 1 "onvelocity=44";
+midi 2 1-2: 1 "onvelocity=44";
+1: a-cdf;;g-cdf;g-bn-df;
+2: 8d-;g-;4c;8g-;d;4f;
+bar
+
+midi all: 0 "tempo=60";
+midi 1: 1 "onvelocity=37";
+midi 2 1-2: 1 "onvelocity=37";
+1: 2de~g~;ceg tie;
+2: c-;g-;2c~;
+bar
+
+1: 2.ceg;4r;
+2: 2.c;4r;
+endbar

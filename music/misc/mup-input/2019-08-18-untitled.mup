@@ -1,0 +1,211 @@
+header
+	title "" "John A. Krallmann"
+	title "" "(8/18/19)"
+footer
+        title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.75
+
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=114";
+midi 1 1: 0 "onvelocity=92,64";
+
+1: 4.e+ ph;4~;16;f+;
+2: c;e;g;c;e;g;
+bar
+
+1: 4.g+;eph;
+2: bn-;d;g;b-;d;g;
+bar
+
+1: 4.d+ ph;4~;16;e+;
+2: b(&)-;d;g;b-;d;g;
+bar
+
+1: 4.f+;eph;
+2: a-;c;f;a-;c;f;
+bar
+
+1: 4.c+ ph;4~;16;d+;
+2: a-;c;e;a-;c;e;
+bar
+
+1: 4.e+;;
+2: g-;c;e;g-;c;e;
+bar
+
+1: 4.d+;16f+;e+;d+;c+;8bn;
+2: g-;d;f;g-;d;f;
+bar
+
+1: 4.c+~;4 eph;16e+ ph; f+;
+2: c-;g-;c;e;f;g;
+bar
+
+staff 2 clef=treble
+music
+
+1: 4.g+; eph;
+2: c;e;g;c;e;g;
+bar
+
+1: g+ ph;a+;g+;f+;e+;d+;
+2: b-;d;g;b-;d;g;
+bar
+
+1: 4.f+;c+ eph;
+2: a-;c;f;a-;c;f;
+bar
+
+1: 4.e+ ph;c+ eph;
+2: g-;c;e;g-;c;e;
+bar
+
+staff 2 clef=bass
+music
+
+1: [grace;slash 1]8e+;4.d+ ph;8d+;8.e+;16d+;
+2: g;d+;f+;g;d+;f+;
+bar
+
+1: 4.d+;c+ eph;
+2: c;g;d+;e+;f+;g+;
+bar
+
+midi all: 0 "tempo=102";
+rom above all: 1 "A bit slower";
+1: 4.e+ ph;8f+;e+;c+;
+2: a-;e;a;c+;e+;f+;
+bar
+
+1: b;c+;b;4.g eph;
+2: g-;d;f;b;c+;d+;
+bar
+
+1: 4.c+ ph;8e+;d+;c+;
+2: a-;e;a;c+;d+;e+;
+bar
+
+1: 4.c+;[grace]8d+;[]c+;4.b eph;
+2: g-;d;g;b;d+;g+;
+bar
+
+1: 4.b ph;a eph;
+2: f-;c;e;f;a;c+;
+bar
+
+1: 4.a ph;g eph;
+2: g-;d;f;g;bn;d+;
+bar
+
+1: 4.f ph;e;
+2: c-;g-;c;e;f;g;
+bar
+
+1: 2.d;
+2: f-;c;d;f;g;a;
+bar
+
+1: 2.d eph;
+2: g-;d;g;an;bn;g;
+dblbar
+
+score key=0&
+music
+
+midi all: 0 "tempo=94";
+rom above all: 0 "A bit slower";
+1: 4.e ph;8;f;g;
+2: c-;g-;e;g;a;b;
+bar
+
+1: 4.a-g;f eph;
+2: d-;a-;e;f;a;c+;
+bar
+
+1: 4.d~ ph;8;e;f;
+1 2: {4a-;b-~;}2,4.;4.;
+2: g--;d-;b-;d;f;g;
+bar
+
+1: 4.a-f;g-e eph;
+2: c-;g-;d;e;c;g-;
+bar
+
+score time=3/8+4/8 ; beamstyle=4.,2
+music
+
+1: 4.a ph;8.fc+;fb;8fa;
+1 2: {4e;f;}2,4.;2s;
+2: f-;c;a;8.a;g;8f;
+bar
+
+score time=6/8
+music
+
+1: 4.dg;{4b-d;ce;}2,4.;
+2: c-;g-;e;a-;e;a;
+bar
+
+1: 2.a-c;
+2: f-;c;f;g;f;c;
+bar
+
+1: 4.ec+ tie;{4 eph;fd+ ph;}2,4.;
+2: c-;g-;d;e;g;d+;
+dblbar 
+
+score key=3&
+music
+
+rom above all: 0 "accel to Tempo I";
+midi all: 0 "tempo=96 to 114" til 2m;
+1: 4.ge+;4 tie;16;f+;
+2: c;e;g;c;e;g;
+bar
+
+1: 4.bng+; eph;
+2: bn-;d;g;b-;d;g;
+bar
+
+1: 4.bd+ ph;4 tie;16;e+;
+2: b(&)-;d;g;b-;d;g;
+bar
+
+1:4.af+;eph;
+2: a-;c;f;a-;c;f;
+bar
+
+1: 4.ac+;4 tie;16;d+;
+2: a-;c;e;a-;c;e;
+bar
+
+1: 4.ge+;;
+2: g-;c;e;g-;c;e;
+bar
+
+1: 16f+;e+;d+;c+;a;g;4.ec+;
+2: g-;d;f;4.c-g-;
+bar
+
+1: e+c++;4r;4.;
+boldital between 1&2: 1 "sfz";
+2: c+g+;4r;4.;
+endbar

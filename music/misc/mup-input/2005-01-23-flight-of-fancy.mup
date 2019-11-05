@@ -1,0 +1,169 @@
+header
+	title (18) "Flight of Fancy"
+	title (10) " "
+	title "" "John A. Krallmann (1/23/05)"
+
+header2
+	title (12) "Flight of Fancy - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffsep=16
+	scoresep=12,24
+	staffscale=0.87
+	release=0
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=50";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=84,74";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=74";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=74";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=80";
+
+1: 2s;4c++;b+;
+bar
+
+1: 16a+;g+;f+;c+; a;b;c+;f; a;g;f;g; 4d+;
+2: f-;c;b-;f;
+bar
+
+1: 16b+;a+;g+;f+; a;b;d+;f+; ;e+;d+;e+; 8;16bn;c+;
+1 2: 2s;g;
+2: g-;d;c;b;
+bar
+
+1: 16a+;g+;f+;c+; a;c;f++;e++; e++;d++;c++;d++; 4;
+1 2: 2s;4f+;16a+;g+;f+;g+;
+2: f-;c;b-;f;
+bar
+
+1: 16d+;a;g;a; b;c+;d+;f+; b+;a+;g+;f+;d+;a;b;d+;
+octave above 1: 3 "8va" til 1m+1.85;
+2: d+;g-;c-;b;
+bar
+
+1: 16e+;bn;d+;c+; f#+;g+;c++;b+; g#+;a+;bn;c+; 4d+;
+1 2: 2.s;16a;g;f;g;
+2: c-;<<staff clef=treble>>cb;<<staff clef=bass>>f-;b-;
+bar
+
+1: 16a;g;f;g; b+;a+;g+;f+; d+;a;b;d+; e+;d+;c+;b;
+octave above 1: 2 "8va" til 4.85;
+2: f;g-;<<staff clef=treble>>fd+;<<staff clef=bass>>c;
+bar
+
+score time=2/4 ; beamstyle=4,4
+staff 2 clef=treble
+music
+
+1: 16f#+;g+;c++;b+; g#+;a+;d+;d&+;
+2: cb;<<staff clef=bass>> f-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+staff 2 clef=treble
+music
+
+1: 16c+;f+;;; ;d+;c+;b;8a;g;
+octave above 1: 1.15 "8va" til 1m+1.85;
+2: a;8;b;4d&b;
+2 2: 8c;c#;4d;s;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 16f+;d+;c+;a;g+;a+;d+;f+;
+2: ca;bn-g;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 16g+;a+;f+;g+; 4; 16;a+;f+;g+; 4;
+1 2: d+;;;;
+2: b(&)-f;bn-fg;cfa;b-fg;
+bar
+
+1: 2g+; 16;f+;;; 8;d&+;
+1 2: 16d+;c+;;;4;;s;
+2: 2b(&)-eg;a-e&f;
+bar
+
+staff 2 clef=bass
+music
+
+//1: 2d(n)+;4.g;8c+;
+//1 2: 16a;g;;f; 8g;d; 16f;e;;d; 8e;c;
+1: 2d(n)+;4g;8a;b;
+1 2: 16a;g;;f; 8g;d; 16f;e;;d; 4s;
+2: b-;f;c;b;
+bar
+
+//1: 1f+;
+//1 2: 1a;
+//octave above 1: 1 "8va" til 4;
+//2: 16f-;c;a;c+; <<staff clef=treble>> 2.af+;
+//endbar
+
+1: c+; 16f+;e+;;f+; 4d+; 16b;c+;d+;f+;
+1 2: 16g;f;;g; 4c+; 16a;g;;d; 4f;
+2: f-;a-;b-;g-;
+bar
+
+1: 16b+;a+;;g+; f#+;g+;b+;d++; bn+;c++;;; 8;;
+1 2: e+;;8d+;g#+; 16a+;gn+;fn+;e+;
+2: c;b;f-;c;
+bar
+
+1: 16c++;b+;;a+; b+;g+;a+;b+; ;a+;;g+; 8c++;16a+;g+;
+1 2: d+;f+;8;e+;16g+;f+;8d+;
+2: 8b-;f;d+;d&+;c+;b;a;bn;
+bar
+
+1: 16e+;f+;g+;a+; 8.af+;16f#+; 8.gc+g+;16g#+; 8.gc#+g+;16b+;
+1 2: b; 16e+;d+;8c+; 2s;
+2: 8c+;c#+;d+;d#+; 16e+;g-;8; 16e+;g-;8;
+bar
+
+1: 8bnd+bn+;16ad+~a+;gd+;g+; [grace]... 32f#+;g+;a+;b+;c++;d++; \
+		[-]8.e+c++e++;32d+d++;c+c++; 64bb+;aa+;gg+;aa+;8.aa+; \
+		[grace]... 32a;;b;c+;d+;e+;fn+;g+;a+; \
+		[-]16.aa+;32g+;64f+;d+;e+;f+;
+2: 16gd+f+;g-;8fbnd+;cc-;gd+e+g+;f-ca;e-;4d-a-f;
+octave below 2: 2 "8va";
+bar
+
+1: 8.f+;16e+;4;dgd+;8.eg#e+;16c+;
+1 2: 2fb;s;
+2: 2g-db;cb;
+bar
+
+1: 2a-a;8.a;16g;4g;
+1 2: 8.e;16d;4c;2b-d;
+2: 2f-c;g-f;
+bar
+
+1: dfb;cea;2cf tie;
+1 2: 2s;b-;
+2: 2cgb;f-~d;
+bar
+
+1: 1cf;
+1 2: 1a-;
+2: 1f-c;
+endbar

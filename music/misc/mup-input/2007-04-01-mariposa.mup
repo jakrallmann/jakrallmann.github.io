@@ -1,0 +1,248 @@
+header
+	title (18) "La Mariposa Primaveral"
+	title "" "John A. Krallmann (4/1/07)"
+
+header2
+	title (12) "La Mariposa Primiveral - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	packfact=1.1
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=80";
+midi 1 1: 0 "channel=11"; 0 "program=2"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=2"; 0 "onvelocity=68";
+midi 2 1: 0 "channel=13"; 0 "program=2"; 0 "onvelocity=68";
+
+1: 2s;4c+;b;
+2: 2s;r;
+bar
+
+1: 8g;a;c;4f;8c+;f+;a;
+2: f-;c;a;8d;d&;
+bar
+
+1: 8a;b;d;4g+;8f+;en+;d+;
+2: g-;d;b;f+;
+bar
+
+1: 8d+;en+;f;4en;8c+;c++;g#+;
+2: c-;g-;b;en+;
+bar
+
+1: 8g#+;a+;c+;4f+;8e+;d+;c+;
+2: f-;c;a;e+;
+bar
+
+1: 8c+;d+;g;4f;8b;b+;c++;
+2: b-;f;d+;f#+;
+bar
+
+1: 8d++;c++;b+;4d+;8c+;b;a;
+2: g-;d;b;d+;
+bar
+
+1:8f#;c;d+;4e+;8d+;c+;a;
+2: d-;a-;f#;d+;
+bar
+
+1: 8a;c;b;4g+;8a+;b+;c++;
+2: g-;d;b;d+;
+bar
+
+1: 8d++;b+;a+;4g+;8a;b;g;
+2: g-;d;b;d+;
+bar
+
+1: 8f;e;d;4e;8c+;d+;e+;
+2: c-;g-;c+;b;
+bar
+
+1: 8f+;a;b;4c+;8d+;e+;f+;
+2: f-;c;e+;a;
+bar
+
+1: 8c+;d+;g;4f;8b-;f;f#;
+2: b--;f-;d;8d+;c+;
+bar
+
+1:8g;b;e+;4a+;8g+;e+;g;
+2: e-;b-;g;c+;
+bar
+
+1: 8f;b;a;4c+;8d+;a;b;
+2: d-;b-;f;d+;
+bar
+
+1: 8g;c;d;4e;8f;g;b;
+2: e-;c;g;c+;
+bar
+
+1: 8c+;d+;e+;f+;g+;a+;b+;c++;
+2: f-;c;a;e+;
+bar
+
+1: 8d++;e++;d++;c++;a+;b+;c++;d+;
+2: f#-;d;c+;a;
+bar
+
+1: 8a+;g+;a+;b+;g+;a+;b+;c++;
+octave above 1: 3 "8va" til 2m+4.8;
+2: g-;d;b;g+;
+bar
+
+1: 8d+d++;c+c++;bb+;aa+;2g+;
+1 2: 2s;8g;b;a;g;
+2: g-;d;b;d;
+bar
+
+1: 8c+c++;bb+;aa+;gg+;2f#+;
+1 2: 2s;8f#;e+;d+;c+;
+2: d-;a-;f#;a-;
+bar
+
+1: 8c+;b;a;g;f#;e;d;a;
+2: d-;a-;f#;a-;
+ital between 1&2: 2 "dim. poco a poco";
+bar
+
+define M
+1: 8a;g;a;b;4g+;r;
+phrase above 1: 1 til 2.5;
+2: g-;d;b;d;
+bar
+@
+
+M
+M
+M
+
+define N
+1: 8a;g;a;b;4g+;r;
+phrase above 1: 1 til 2.5;
+2: e-;b-;g;b-;
+bar
+@
+
+N
+N
+
+define NN
+1: 8a;g;a;b;4c+;r;
+phrase above 1: 1 til 3;
+2: d-;a-;f#;a-;
+bar
+@
+
+NN
+NN
+
+1: 8a;g;a;b;4c+;r;
+phrase above 1: 1 til 3;
+2: d;a;f#+;a;
+bar
+
+staff 2 clef=treble
+music
+
+define T
+1: 8a+;g+;a+;b+;2c++;
+phrase above 1: 1 til 3;
+2: e;b;a;g;
+bar
+@
+
+T
+T
+
+1: 8d++;c++;b+;a+;4g+;f#+;
+2: d;a;b;c+;
+ital between 1&2: 2 "molto rit.";
+dblbar
+
+score
+	key=1#
+staff 2
+	clef=bass
+music
+
+define A [with>]@
+
+1: A 8b;d+;g+;4a+;8b+;a+;g+;
+ital between 1&2: 1 "a tempo";
+2: g-;d;b;<<staff clef=treble>>b;
+bar
+
+staff 2 clef=bass
+music
+
+1: A 8c++;b+;c++;4a+;8g+;f+;e+;
+2: a-;e;c+;g+;
+bar
+
+1: A 8f+;d+;c#+;4b;8c+;d+;f+;
+2: b-;f;d+;f;
+bar
+
+1: A 8e+;d+;e+;4c+;8d+;e+;g+;
+2: c;g;e+;g;
+bar
+
+1: A 8f+;d#+;c#+;4b;8c+;d+;f+;
+2: b-;f;d#+;f;
+bar
+
+1: A 8e+;d+;e+;4c+;8d+;e+;g+;
+2: c;g;e+;g;
+bar
+
+1: A 8f+;e+;f+;4d+;8e+;f+;a+;
+2: b-;f;d+;f;
+bar
+
+1: A 8c++;b+;c++;4a+;8g;f;e;
+2: a-;e;c+;e;
+bar
+
+1: 8f+;e+;f+;4d+;8e+;f+;a+;
+1 2: 1f;
+2: d-;a-;f;a-;
+bar
+
+1: 1b+;
+1 2: 8g+;f+;g+;e+~;2;
+2: e-;b-;g;b-;
+bar
+
+1: 1e+;
+1 2: 8g;f;g;e~;2;
+2: c-;g-;e;g-;
+bar
+
+1: 8c+;b;c+;4a;8b;c+;d+;
+1 2: 1e;
+2: a-;e;c+;f;
+bar
+
+1: 4.e+;8e~;2;
+1 2: 8g#;f;g;g#-~;2;
+2: 4.eb;8e-b- tie;2;
+endbar

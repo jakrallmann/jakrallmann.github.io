@@ -1,0 +1,242 @@
+header
+	title (18) "Caressed in Kindness"
+	title (10) ""
+	title (12) "" "John A. Krallmann (July 2001)"
+
+header2
+	title (10) "Caressed in Kindness - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	vscheme=2f
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	beamstyle=4,4,4,4
+	staffscale=0.95
+	scoresep=8,30
+	measnum=y
+
+staff 1
+	staffscale=0.7
+	visible=n
+	defoct=5
+staff 2
+	vscheme=2f
+staff 3
+	clef=bass
+
+music
+
+define F 1: @
+define M 2: @
+define A 2 2: @
+define B 3: @
+
+midi all: 0 "tempo=92";
+midi F 0 "channel=14"; 0 "program=73"; 0 "onvelocity=40"; 0 "param=10,75";
+midi M 0 "channel=11"; 0 "program=89"; 0 "onvelocity=95,79";
+midi A 0 "channel=12"; 0 "program=89"; 0 "onvelocity=79";
+midi B 0 "channel=13"; 0 "program=42"; 0 "onvelocity=40";
+
+rom above all: 1 "Andante";
+
+define WHOLE
+
+F 2.e;8f;g; 
+M 4.c+;8b;4c+;8d+;e+;
+B c;g;e+;g;
+phrase above M 1 til 3m+1;
+phrase above F 1 til 3m+1;
+//phrase above M 1 til 1m+4;
+bar
+
+F 2.f;8b;a;
+M 8f;g;4a;8b;c+;4d+;
+B d;a;g-;f;
+bar
+
+F 2.g;8b;c+;
+M 4.g+;8e+;c+;d+;e+;f+;
+B e-;c;a;g;
+//phrase above M 1 til 1m+1;
+bar
+
+F 2.d;8g;f;
+phrase above F 4 til 5m+1;
+M 1fd+;
+A 2c+;4b;8a;g;
+B g-;d;a;g;
+bar
+
+F 1e;
+//M 4.e+;8f+;4e+;c+;
+M 4.e+;8f+;e+;d+;4c+;
+A 1g;
+B c;g;e+;g;
+phrase above M 1 til 4m+1;
+//phrase above M 1 til 1m+3;
+bar
+
+F 1f;
+M 4.d+;8e+;2d+;
+A 2f;4a;g;
+B d;a;2b;
+bar
+
+F 1g;
+M 4.e+;8a+;4g+;8b;c+;
+A 1g;
+B c;g;e+;g;
+//phrase above M 1 til 2m+1;
+bar
+
+F 1f;
+M 4.d+;8e+;2d+;
+A 2f;ga;
+B d;a;b;8a;b;
+bar
+
+F 1e;
+M 1e+;
+A 1gc+;
+B 2c+;c-;
+bar
+
+F 1c;
+M 4.e+;8f+;4g+;8a;g;
+A 2c+;s;
+B c;g;e+;g;
+phrase above M 1 til 5m+1;
+phrase above F 1 til 2m+1;
+//phrase above M 1 til 1m+3;
+bar
+
+F 2.d;4f;
+M 4.f;8g;2f;
+A d;c;b-;8a-;b-;
+B d;a;g;g-;
+bar
+
+F 1e;
+M 4.e;8f;4g;8d+;c+;
+A c;2.s;
+B c;g;8c+;b;a;g;
+//phrase above M 1 til 3m+1;
+bar
+
+F 2.f;4a;
+phrase above F 1 til 2m+3;
+M 4.f+;8e+;4d+;c+;
+//A 2a;s;
+A 2ad+;s;
+B f;c+;2a+;
+bar
+
+F 2.g;8a;b;
+M 2b;bd+;
+B g;d+;a+;g+;
+bar
+
+F 2c+;c;
+M 1e+;
+A 1gc+;
+B c-~;c-g- tie;2c-g-e;
+bar
+
+F 4.c;8d;2;
+M 2e+;d+;
+A 1a;
+B f-;c;a;c;
+phrase above M 1 til 3m+1;
+phrase above F 1 til 3m+1;
+//phrase above M 1 til 3;
+bar
+
+F f;8g;f;4e;8c;d;
+M 2d+;c+;
+A 8f;a;g;f;2e;
+B c-;g-;c;b-;
+//phrase above M 1 til 3;
+bar
+
+F 2.e;8b;a;
+M 4.c+e+;8d+;4e+;f+;
+A 2s;a;
+B a-;g-;f-;d-;
+//phrase above M 1 til 1m+1;
+bar
+
+F 2.g;4c;
+phrase above F 4 til 3m+1;
+M 1g+;
+//A 2bd+;c+e+;
+A bd+;8a;b;2c+e+;
+B c-;g-;2c;
+bar
+
+F 2.a;4c+;
+M 2f+a+;4g+;f+;
+A 1c+;
+B f-;c;a;c;
+phrase above M 1 til 2m+1;
+bar
+
+F b;a;g;f;
+M 2d+g+;g;
+A b;a;f;d;
+B g-;d;a;g;
+ifdef EXTRA
+	ifdef MIDI
+		bar ending "1.";
+
+		F 1e;
+		M 1g;
+		A 1e;
+		B 1cg;
+		repeatend ending "2."
+
+		F 1e~;
+		M 1g~;
+		A 1e~;
+		B 1cg~;
+	endif
+endif
+bar
+
+F 1e;
+M 1g;
+A 1e;
+B 1cg;
+ifndef EXTRA
+	//repeatboth
+	dblbar
+else
+	ifdef MIDI
+		endbar
+	else
+		repeatend
+	endif
+endif
+@
+
+WHOLE
+
+staff 1
+	visible=y
+define EXTRA @
+music
+WHOLE
+
+ifdef MIDI
+score time=1/8
+music
+midi F 1 "param=10,63";
+1: mr;
+bar
+endif

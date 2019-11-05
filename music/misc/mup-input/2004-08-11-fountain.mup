@@ -1,0 +1,186 @@
+header
+	title (18) "Fountain"
+	title (10) " "
+	title "" "John A. Krallmann (8/11/04)"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=2.
+	brace=1-2
+	barstyle=1-2
+	key=4&
+	measnum=y
+	scoresep=10,26
+	staffscale=0.75
+	release=0
+
+staff 2
+	vscheme=2f
+
+music
+
+midi all: 1 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 54";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=54";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=54";
+
+define RUN 1: c+;e+;f+;a+;f+;e+; @
+
+RUN
+2: 2.a;
+bar
+
+RUN
+2: 2.g;
+bar
+
+RUN
+2: 4.f~;4;8c;
+bar
+
+RUN
+2: 2.e;
+bar
+
+define RUN2 1: d+;e+;f+;b+;f+;e+; @
+RUN2
+2: 2.b-;
+bar
+
+RUN2
+2: 2.f;
+bar
+
+RUN2
+2: 2.g;
+bar
+
+staff 2 clef=bass
+music
+
+1: d+;e+;f+;b+;en+;g+;
+2: 2.e;
+bar
+
+1: c++;e(&)+;f+;a+;c+;e+;
+2: 2.a-~;
+bar
+
+1: f+;e;b;c+;c;g;
+2: 2.a-~;
+bar
+
+1: a;b-;c;f;f-;a-;
+2: 2.a-;
+bar
+
+1: with b- below ;with f- below;with d below;with b- below;with f below;with d below;
+2: 2.d-~;
+bar
+
+1: 8b;f;d+;a;f+;g+;
+2: 2.d-;
+bar
+
+1: e+;g;a;c;e;g-;
+2: 2.c-~;
+bar
+
+1: a-;e;g;a;c+;e+;
+2: 2.c-;
+bar
+
+1: f+;g;a;f;c;d;
+2: 2.d-;
+bar
+
+1: e+;d;a;g;f+;g+;
+2: 2.e-;
+bar
+
+1: a+;b;c+;g;a;e;
+2: 2.a--;
+bar
+
+1: with e below;with f- below;with a- below;with d below;with f- below;with a- below;
+2: 2.b--;
+bar
+
+1: with d below;with f- below;with a- below;with e below;with g- below;with b- below;
+2: 2.e-~;
+bar
+
+1: f;a-;d;g;d;b;
+2: 2.e-;
+bar
+
+1: b;c;e;c+;e;g;
+2: 2.a-~;
+bar
+
+1: a;c;e;g;c;e;
+2: 2.a-;
+bar
+
+1: g;a-;d;f;a-;d;
+2: 2.d~;
+bar
+
+1: f;g;a;;b;c+;
+2: 2.d;
+bar
+
+1: d+;a-;f;d;e;f;
+2: 2.b-~;
+bar
+
+1: d+;f;a;d+;e+;f+;
+2: 2.b-;
+bar
+
+1: g+;g;c+;g+;f+;g+;
+2: 2.c;
+bar
+
+1: a+;c+;f+;a+;g+;a+;
+2: 2.f;
+bar
+
+1: b+;c+;g+;b+;a+;b+;
+2: 2.f&;
+bar
+
+1: c++;c+;e+;a+;g+;a+;
+2: 2.e;
+bar
+
+1: f+;c+;b;f;g;a;
+2: 2.d~;
+bar
+
+1: b-;f;b;d+;f+;d++;
+2: 2.d;
+bar
+
+1: c++;c+;e+;g+;a+;c++;
+2: 2.e;
+bar
+
+1: b+;d+;e+;a+;d+;g+;
+2: 2.e-;
+bar
+
+1: a+;c+;e+;a+;c++;e++;
+2: 2.a-;
+bar
+
+1: 2.a+;
+octave above 1: 1 "8va" til 5;
+2: 2.a--;
+endbar

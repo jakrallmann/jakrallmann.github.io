@@ -1,0 +1,333 @@
+header
+	title (18) "Musings at Sunset"
+	title (12) "" "John A. Krallmann (Sep 7-8, 2001)"
+
+header2
+	title (12) "Musings at Sunset - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 2 1: @
+define B 3 1: @
+define P ifdef MIDI pedal below 2: 1;4; endif
+@
+
+define PAUSE(DUR)
+	ifdef MIDI
+
+		score time=DUR/4
+		music
+		1: mr;
+		pedal below 2: 1*;
+		bar
+		score time=6/4
+		staff 3 timeunit=1.
+		music
+	endif
+@
+
+score
+	staffs=3
+	key=1&
+	bracket=1-3
+	time=6/4
+	staffscale=0.85
+	staffsep=12
+	scoresep=6,28
+	measnum=y
+
+staff 3
+	clef=bass
+	timeunit=1.
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=74";  0 "onvelocity=68"; 0 "param=10,50";
+midi 2 1: 0 "channel=12"; 0 "program=71"; 0 "onvelocity=36"; 0 "param=10,78";
+midi 3 1: 0 "channel=13"; 0 "program=43"; 0 "onvelocity=48";
+
+S 1g~;4;e;
+A g;e;d;bn-;c;e;
+B c-;
+P
+bar 
+
+S 1.g;
+ifdef MIDI
+	A g;d;b-;f-;e-;d-;
+else
+	A g;d;b-;[pad 6]d+ =c;c+;b;
+	print (c.x - 6, c.y) "\(smfclef)";
+endif
+B b--;
+P
+bar pad 6 =b
+
+ifndef MIDI print (b.x - 6, c.y - 4) "\(smgclef)"; endif
+S 1.a;
+ifdef MIDI
+	A a;e;c;c-;d-;f-;
+else
+	A a;e;c;[pad 6]a =a;b;d+;
+	print (a.x - 6, a.y + 3) "\(smfclef)";
+endif
+B f--;
+P
+bar pad 6 =d
+
+ifndef MIDI print (d.x - 6, a.y - 1) "\(smgclef)"; endif
+S 1.g-;
+A g-;d;f;g;b;d+;
+B b--;
+P
+bar
+
+S 1.e+;
+A e+;d+;c#+;b;a;e;
+B a--;
+P
+bar
+
+S 1.g+;
+A g+;f+;d+;b;g;d;
+B d-;
+P
+bar
+
+S 1.a-;
+A a-;b-;d;f;a;g;
+B d-;
+P
+bar
+
+S 1e;4f#;g;
+A e;d;g-;a-;f#;g;
+B a--;
+P
+bar
+
+S 1a~;4;d+;
+A a;e;f#;a-;d;d+;
+B d-;
+P
+bar
+
+S 1.d+;
+A d+;c+;b;d;a;g;
+B b--;
+P
+bar
+
+S 2.f;4e;g;c+;
+A f;a-;b-;d;c;b-;
+B c-;
+P
+bar
+
+S 2.c+;4g+;f+;c+;
+A c+;e;f;g+;f+;c+;
+B a--;
+P
+bar
+
+S a+;g+;f+;2.d+;
+A a+;g+;f+;d+;a;d;
+B b--;
+P
+bar
+
+define MAIN
+mussym above all: 0 "sign";
+S 1.c+;
+A c+;e;f;a-;c;e;
+B f--;
+P
+bar
+
+S 2.f;2g;4a;
+A f;c;d;g;b-;a;
+B b--;
+P
+bar
+
+S 1.b;
+A b;a;g;a-;b-;d;
+B g--;
+P
+bar
+
+S 1.e+;
+A e+;d+;b;d;a;g;
+B c-;
+P
+bar
+
+midi all: 2 "tempo=110"; 4 "tempo=96"; 7 "tempo=120";
+S 1.f+;
+A f+;a-;g-;2.a-;
+B f-;
+P
+bar  
+
+PAUSE(1)
+
+///
+
+S 1a;4c+;e+;
+A a;c;bn-;c;c+;e+;
+B a--;
+P
+bar
+
+S 1f+~;4;g+;
+A f+;a;g;a;d;g+;
+B d-;
+P
+bar
+
+S 1.g+;
+A g+;d+;b;d;a;g;
+B c-;
+P
+bar
+
+S 1.a+;
+A a+;g+;f+;g;f;c;
+B f--;
+P
+bar
+
+S 1g-;4d+;f+;
+A g-;d;a;g;d+;f+;
+B b--;
+P
+bar
+
+S 2.f+;2e+;4c+;
+A f+;g;b;e+;c;c+;
+B c-;
+P
+bar
+
+S 1a+;4e+;d+;
+A a+;g+;f+;a;e+;d+;
+B f-;
+P
+bar
+
+S 2.c+;2b;4a;
+A c+;d;f;b;d;a;
+B g-;
+P
+bar
+
+S 2.a;2g;4e+;
+A a;b-;d;g;c;e+;
+B c;
+P
+bar
+
+S 2.e+;2f+;4g+;
+A e+;d;a;f+;a;g+;
+B d-;
+P
+bar
+
+S 1d++~;4;f+;
+A d++;a+;d+;a;d;f+;
+B b--;
+P
+bar
+
+midi all: 1 "tempo=117"; 4 "tempo=114";
+S 2.g+;a+;
+A g+;b;d+;a+;c+;e;
+B c-;
+P
+bar
+
+midi all: 1 "tempo=112"; 2 "tempo=108"; 3 "tempo=104"; 4 "tempo=100"; \
+	5 "tempo=95"; 6 "tempo=90";
+S 1.c++~;
+A c++;e+;a;d;a-;c;
+B f--~;
+P
+bar
+
+midi all: 1 "tempo=78"; 6 "tempo=120";
+rom above all: 3 "Fine";
+S 1.c++;
+A 1.fa;
+B f--;
+P
+dblbar
+@
+
+MAIN
+PAUSE(1)
+
+S 2.g;f;
+A g;d;b-;f;a-;d;
+B d-;
+P
+bar
+
+S 2.b;2d+;4e+;
+A b;d;f;d+;f;e+;
+B g-;
+P
+bar
+
+S 1e+;2f+;
+A e+;g;b;d;f+;g-;
+B a-;
+P
+bar
+
+S 2.g+;a+;
+A g+;d+;a;a+;d+;a;
+B d-;
+P
+bar
+
+S 2.f+;2e+;4d+;
+A f+;a;b;e+;g;d+;
+B b--;
+P
+bar
+
+S 1a~;4;f;
+A a;e;f;g-;a-;f;
+B d-;
+P
+bar
+
+S 1.e;
+A e;g-;a-;a;e+;a+;
+B a--;
+P
+bar
+
+midi all: 2 "tempo=110"; 4 "tempo=96"; 7 "tempo=120";
+rom above all: 2 "D.S. al fine";
+S 1.d++;
+A d++;g;f;2.d;
+B d-;
+octave below 3: 0.5 "8va" til 5;
+P
+dblbar
+
+PAUSE(2)
+ifdef MIDI
+MAIN
+
+score time=1/8
+music
+midi 1-2 1: 1 "param=10,63";
+1: mr;
+bar
+endif

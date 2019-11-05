@@ -1,0 +1,314 @@
+
+header
+	title (18) "Largo"
+	title (10) " "
+	title "" "John A. Krallmann (January 24-31, 2004)"
+	title (12) " "
+
+header2
+	title (12) "Largo - page \%"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (10) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=3/2
+	beamstyle=2,2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scale=0.9
+
+staff 2
+	clef=bass
+
+define T1
+	score time=1/2 ;  beamstyle=2
+	music
+@
+define T2
+	score time=2/2 ;  beamstyle=2,2
+	music
+@
+
+define T3
+	score time=3/2 ;  beamstyle=2,2,2
+	music
+@
+
+define T34
+	score time=3/4 ;  beamstyle=4,4,4
+	music
+@
+
+define T5
+	score time=5/4 ; beamstyle=4,4,4,4,4
+	music
+@
+
+music
+
+midi all: 1 "tempo=90";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=70";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+
+1: 1g;16a;g;f#;g;a;b;d+;c+;
+2: r;b;g;
+2 2: 1.c;
+bar
+
+1: 2..b;16c+;b;8a;f;g;a;
+2: d+;d&+;c+;
+2 2: 1.f;
+bar
+
+1: 4a;g;g;8a;g;{f#;g;a;b;d+;fn;}6;
+2: g;1f;
+2 2: 1.b-;
+bar
+
+T2
+
+1: 4f;2e;4c;
+2: 1cb;
+bar
+
+T3
+
+1: 1a;{8g;a;b;a;g;a;}6;
+2: c+;1d&+;
+2 2: 1.f;
+bar
+
+T2
+
+1: 4.g;8f+;4af+;c+;
+2: d&+;c+;
+2 2: 1f;
+bar
+
+1: 4c+;b;4.f;8g;
+1 2: 2d;d&;
+2: f;g;
+2 2: 1b-;
+bar
+
+T3
+
+1: {8g;a;g;f;g;f~;}6;4;{8f;g;f;}3;e;f;g;a;
+1 2: 1c;2b-;
+2: 1a-f;2g-;
+bar
+
+T2
+
+1: 4da;eg tie;;c~;
+2: 2.bc;4r;
+bar
+
+1: 4c;8d;c;{bn-;c;d;e;f;g;}6;
+2: mr;
+bar
+
+1: a;16g;a;b;a;g;a;b;a;
+2: c+;d&+;
+2 2: 1f;
+bar 
+
+1: g;fa;
+2: d&+;c+;
+2 2: 1f;
+bar
+
+T5
+
+1: 2d;{8c;d;e&;}3;{c;d;e;}3;d;c;
+2: 2f;2.g&;
+2 2: 2b-;2.;
+bar
+
+T2
+
+1: c;b-d;
+2: g&;f;
+2 2: 1b-;
+bar
+
+T34
+
+1: {8d&;e&;c;}3;{d;e;c;}3;{d;g&;f;}3;
+2: 2.b-g&;
+bar
+
+T2
+
+1: {8g&;f;e;}3;4f;{8e&;d;c;}3;4d;
+2: 2a-f;a&-f;
+bar
+
+1: {8d;c;d;}3;4bn-;a&;g;
+2: 2g-f;r;
+bar
+
+T34
+
+1: {8f;e;f;}3;c;d;e;f;
+2: 2.ca&;
+bar
+
+T1
+
+1: cg;
+2: g-e;
+bar
+
+T2
+
+1: {8e+;d+;c+;}3;d+;e+;2a;
+2: 1f-d;
+bar
+
+T34
+
+1: {8g;a;g;}3;f#;g;c+;e+;
+2: 2.e-c;
+bar
+
+T2
+
+1: 8g+;f+;{;e+;d+;}3;f+;e+;8.a;16bn;
+1 2: 4a;g#;2a;
+2: 4c;f;f;{8bn;a;g;}3;
+2 2: 2d-;g-;
+bar
+
+T34
+
+1: 2.d+;
+1 2: 4.f;8a;a&;g;
+2: c-;g-;f;
+bar
+
+T2
+
+1: 2.ec+;4g;
+2: 2.c-g-;4r;
+bar 
+
+staff 2 clef=treble
+music
+
+1: 4.e+;32f+;e+;d+;e+;8c+;d+;e+;g+;
+2: 1cb;
+bar
+
+T34
+
+1: {16g+;a+;g+;}3;f+;g+;2f+;
+2: bd&+;2ac+;
+2 2: 2.f;
+bar
+
+1: {8f+;g+;f+;}3;c++;a+;g+;f+;
+2: 2.e&ac+;
+bar
+
+1: {8f+;g+;f+;}3;e+;f+;4b+;
+2: 2.b~;
+2 2: 2.d;
+bar
+
+T1
+
+1: {8e+;f+;e+;}3;d#+;e+;
+2: 2b;
+2 2: 2d&;
+bar
+
+T34
+
+1: {8a+;g+;f#+;}3;g+;a+;b+;d++;
+1 2: 2.e+;
+2: 2.cb;
+bar
+
+T1
+
+1: 8a+;g+;f+;e+;
+octave above 1: 1 "8va" til 1m+3.7;
+2: 2gbd&+e+;
+bar
+
+T34
+
+1: {8e+;f+;e+;}3;d+;e+;f+;a;
+2: 2.ad+f+;
+bar
+
+1: {8g+;a+;g+;}3;f#+;g+;4d++;
+1 2: 2.d+;
+2: 2.b-f;
+bar
+
+1: {8f+;g+;f+;}3;e+;f+;4c++;
+1 2: 2.c+;
+2: 2.a-f;
+bar
+
+1: {8e+;f+;e+;}3;d#+;e+;bn+;en+;
+1 2: 2.bn;
+2: 2.a&-e;
+bar
+
+T1
+
+staff 2 clef=bass
+music
+
+1: {8c+;bn;c+;}3;{e+;a+;c++;}3;
+2: 2ge+;
+bar
+
+T34
+
+1: 2.ad+a+;
+2: 2.fc+;
+bar
+
+1: {8d+;e+;d+;}3;c#+;d+;g+;bn;
+2: 2.gf+;
+bar
+
+1: 2.fbn;
+2: 2.a&;
+2 2: 2.c~;
+bar
+
+1: 2.ec+;
+2: 2.g;
+2 2: 2.c;
+bar
+
+staff 2 clef=treble
+music
+
+1: {8d+;e+;d+;}3;c#+;d+;f+;e+; 
+octave above 1: 1 "8va" til 2m+3;
+2: 2.gf+;
+bar
+
+1: 2.fd+;
+2: 2.gbn;
+bar
+
+1: 2.ec+;
+2: 2.cg;
+endbar

@@ -1,0 +1,467 @@
+// You can run this file several ways:
+//	mup prelude.mup			# condensed score (suitable for piano)
+//	mup -D ORCHESTRA prelude.mup		# full score
+//	mup -c2 -D PART_ENGLISH prelude.mup	# English horn part
+//	mup -c2 -D PART_FRENCH prelude.mup	# French horn part
+//	mup -c2 -D PART_ORGAN prelude.mup	# Organ part
+//	mup -c2 -D PART_VIOLIN prelude.mup	# Violin part
+//	mup -c2 -D PART_VIOLA prelude.mup	# Viola part
+//	mup -c2 -D PART_CONTINUO prelude.mup	# Continuo part
+//	mup -m prelude.mid prelude.mup		# MIDI file
+
+ifdef ORCHESTRA define SZ 14 @ else define SZ 12 @ endif
+ifdef ORCHESTRA define SZ1 14 @ else define SZ1 10 @ endif
+ifdef ORCHESTRA define SZ2 24 @ else define SZ2 18 @ endif
+
+header
+	title (SZ2) "Prelude"
+	title (SZ) "" "John A. Krallmann (2/16/97)"
+
+footer
+	title (SZ) "Inspired by the dedication of the new building for Bethany Lutheran church and school, Naperville, IL"
+	title (SZ) "with special thanks to my friend Kristina, whose insights were instrumental in unlocking the inspiration."
+	title (3) " "
+	title (SZ1) "\(copyright) Copyright 1997 by John A. Krallmann"
+	title (SZ1) "Published by Arkkra Enterprises" \
+		"http://www.arkkra.com"
+
+header2
+	title (SZ) "Prelude - \%"
+
+ifdef MIDI undef ORCHESTRA endif
+
+ifdef PART_ENGLISH
+	define ORCHESTRA @
+endif
+ifdef PART_FRENCH
+	define ORCHESTRA @
+endif
+ifdef PART_ORGAN
+	define ORCHESTRA @
+endif
+ifdef PART_VIOLIN
+	define ORCHESTRA @
+endif
+ifdef PART_VIOLA
+	define ORCHESTRA @
+endif
+ifdef PART_CONTINUO
+	define ORCHESTRA @
+endif
+
+ifdef ORCHESTRA
+	score
+		staffs=7
+		key=2&
+		beamstyle=4,4,4,4
+		scale=0.7
+		brace=3-4 ("Organ")
+		barstyle=3-4
+		measnum=y
+		scoresep=10,36
+
+	staff 1 label="Cor Inglais" ;
+	staff 2 label="Corni in F" ; ifndef MIDI transpose = up perfect 5 endif
+	staff 5 label="Violino";
+	staff 6 label="Viola"; clef=alto
+	staff 7 label="Continuo"; clef=bass
+	define ENGHORN 1: @
+	define FRENCHHORN 2: @
+	define ORGAN1 3: @
+	define ORGAN2 4: @
+	define VIOLIN 5: @
+	define VIOLA 6: @
+	define CONTINUO 7: @
+else
+	score
+		topmargin=0.3
+		staffs=2
+		key=2&
+		beamstyle=4,4,4,4
+		scale=0.85
+		brace=1-2
+		barstyle=1-2
+		measnum=y
+
+	staff 1
+		vscheme=2f
+
+	staff 2
+		clef=bass
+		ifdef MIDI
+			vscheme=2f
+		endif
+
+	define ENGHORN 1 1: @
+	define FRENCHHORN 1 2: @
+	define ORGAN1 1 1: @
+	define ORGAN2 1 2: @
+	define VIOLIN 1 1: @
+	define VIOLA 1 2: @
+	define CONTINUO ifdef MIDI 2 1-2: else 2: endif @
+endif
+
+define REST1
+	ifdef ORCHESTRA
+	FRENCHHORN mr;
+	VIOLIN mr;
+	ORGAN1 mr;
+	ORGAN2 mr;
+	endif
+@
+
+define REST2
+	ifdef ORCHESTRA
+	ENGHORN mr;
+	VIOLA mr;
+	ORGAN1 mr;
+	ORGAN2 mr;
+	endif
+@
+
+define REST3
+	ifdef ORCHESTRA
+	ENGHORN mr;
+	FRENCHHORN mr;
+	VIOLIN mr;
+	VIOLA mr;
+	endif
+@
+
+ifdef PART_ENGLISH
+	score
+		scoresep=28
+		packfact=2
+		visible=n
+	staff 1
+		visible=y
+endif
+
+ifdef PART_FRENCH
+	score
+		scoresep=30
+		packfact=4
+		visible=n
+	staff 2
+		visible=y
+endif
+
+ifdef PART_ORGAN
+	score
+		staffsep=24
+		scoresep=30
+		packfact=2.7
+		visible=n
+	staff 3
+		visible=y
+	staff 4
+		visible=y
+endif
+
+ifdef PART_VIOLIN
+	score
+		scoresep=28
+		packfact=3.6
+		visible=n
+	staff 5
+		visible=y
+endif
+
+ifdef PART_VIOLA
+	score
+		scoresep=33
+		packfact=3.6
+		visible=n
+	staff 6
+		visible=y
+endif
+
+ifdef PART_CONTINUO
+	score
+		scoresep=24
+		packfact=3
+		visible=n
+	staff 7
+		visible=y
+endif
+
+//------------------ music starts here----------
+music
+
+ifdef MIDI
+1: mr;
+midi 1-2 1-2: 1 "par=7,127";
+midi 1 1: 0 "onvel=80";
+repeatstart
+endif
+
+define THEME_A
+
+midi 1 1: 0 "chan=11"; 0 "prog=69";
+midi 1 2: 0 "chan=12"; 0 "prog=41";
+midi 2: 0 "chan=13"; 0 "prog=42";
+ifdef MIDI midi 2 2: 0 "chan=14"; 0 "prog=6"; endif
+
+midi all: 0 "tempo=140";
+ENGHORN 8.g+;16d+;8.c+;16d+;8.b&;16c+;8.a;16b;
+VIOLA b;a;d;e;
+CONTINUO g-;a-;b-;c;
+REST1
+ifdef LAST
+	ifdef ORCHESTRA
+		boldital below 1,6,7: 1 "p";
+	else
+		boldital below 1: 1 "p";
+	endif
+else
+	rom above all: 1 "Allegro molto ( \(smup4n) = 140 )";
+	ifdef ORCHESTRA
+		boldital below 1,6,7: 1 "f / mp";
+	else
+		boldital below 1: 1 "f / mp";
+	endif
+endif
+bar
+
+ENGHORN 8.d;16f#;8.g;16a;8.b;16g;4d+;
+VIOLA a-;d;;f#;
+CONTINUO d;8.en;16f#;4g;d;
+REST1
+bar
+
+ENGHORN 8.g+;16e+;8.d+;16e+;8.c+;16d+;8.b;16c+;
+VIOLA b;a;;d;
+CONTINUO g-;f#-;a-;g-;
+REST1
+bar
+
+ENGHORN 8.d;16f#;8.g;16a;8.b;16d+;4g+;
+VIOLA a-;c;d;b;
+CONTINUO f#-;d-;8.b-;16a-;4g-;
+REST1
+bar
+
+ENGHORN 8.b+;16a+;8.g+;16d+;8.b;16a;8.g;16d;
+VIOLA d+;;d;;
+CONTINUO g-;a-;b-;a-;
+REST1
+bar
+
+ENGHORN 8.g-;16a-;8.b-;16c;8.d;16en;8.f#;16d;
+VIOLA g-;f#-;a-;c;
+CONTINUO g-;d;c;8.b-;16a-;
+REST1
+bar
+
+ENGHORN 8.b;16a;8.g;16d;8.a;16g;8.f#;16d;
+VIOLA d;;c;;
+CONTINUO g-;a-;f#-;d-;
+REST1
+bar
+
+ENGHORN 8.c;16f#;8.b;16a;4g;a;
+VIOLA a-;d;b-;f#;
+CONTINUO f#-;d-;g-;d-;
+REST1
+@
+
+THEME_A
+ifdef MIDI
+	midi all: 4 "tempo=100";
+	midi 1-2 1-2: 4.99 "par=7,95";
+endif
+repeatend
+
+midi all: 4 "tempo=140";
+ENGHORN 2b;f#a;
+VIOLA 2eg;4d;c;
+CONTINUO 2c#-;d-;
+bar
+
+ENGHORN 1g;
+VIOLA 1b-d;
+CONTINUO 1g-;
+REST1
+ifdef MIDI
+	octave below 2: 1 "8va" til 4;
+else
+	octave below CONTINUO 1 "8va" til 4;
+endif
+ifdef MIDI midi 1-2 1-2: 4.99 "par=7,127"; endif
+repeatstart
+
+midi 1 1: 1 "prog=40";
+midi 1 2: 1 "prog=60";
+VIOLIN {8g;a;b;}3;{c+;b;c+;}3;{a;g;a;}3;{d;f#;a;}3;
+CONTINUO mr;
+ifdef ORCHESTRA
+	boldital below VIOLIN 1 "f";
+	FRENCHHORN mr;
+else
+	boldital between 1&2: 1 "f";
+endif
+REST2
+bar
+
+VIOLIN {8c+;b;c+;}3;{e+;d+;c+;}3;{b;g;a;}3;{d;c+;b;}3;
+CONTINUO mr;
+ifdef ORCHESTRA
+FRENCHHORN mr;
+endif
+REST2
+bar
+
+VIOLIN {8c+;e+;d+;}3;4e+~;{8;d+;c+;}3;4d+~;
+FRENCHHORN 4r;{8r;a;g;}3;4a;{8r;g;f#;}3;
+ifdef ORCHESTRA boldital below FRENCHHORN 1 "f"; endif
+CONTINUO mr;
+REST2
+bar
+
+VIOLIN {8d+;c+;b;}3;4c+~;{8;b;a;}3;{b;c+;d+;}3;
+FRENCHHORN 4g;{8r;f#;en;}3;4f;g;
+CONTINUO mr;
+REST2
+bar
+
+VIOLIN 4e+~;{8;c+;f+;}3;4d+~;{8;b;e+;}3;
+FRENCHHORN {8r;c+;b;}3;4a;{8r;f(n);b;}3;4g;
+CONTINUO mr;
+REST2
+bar
+
+VIOLIN 4c+~;{8;d+;e+;}3;{d+;f+;en+;}3;{f+;a+;g+;}3;
+FRENCHHORN {8r;a;b;}3;4a;b;a;
+CONTINUO mr;
+bar
+
+VIOLIN {8a+;f#+;d+;}3;{b+;d++;c++;}3;{d++;b+;g+;}3;{f#+;g+;a+;}3;
+FRENCHHORN f#;g;b;d+;
+CONTINUO mr;
+REST2
+bar
+
+VIOLIN {4d+;8c+;}3; {b;c+;d+;}3; {4d;8f#;}3; 4g~;
+FRENCHHORN f#;g;c;{8b-;a-;b-;}3;
+CONTINUO mr;
+REST2
+bar
+
+midi 1 1-2: 3 "prog=19";
+ifdef ORCHESTRA
+	ENGHORN mr;
+	VIOLIN 2g;2r;
+	VIOLA mr;
+	FRENCHHORN 2g-;r;
+	ORGAN1 2r;4bd+;d+f#+;
+	ORGAN2 2r;4g;a;
+	boldital between 3&4: 3 "f";
+	boldital below CONTINUO 1 "f";
+else
+	ORGAN1 2g;4gbd+;ad+f#+;
+	ORGAN2 2g-;s;
+	boldital below 2: 2 "ff";
+endif
+CONTINUO 2r;{8g;f#;g;}3;{d;c;d;}3;
+midi 2: 2 "onvel=80";
+bar
+
+ifdef ORCHESTRA
+	ORGAN1  d+g+;f#+a+;g+b+;{4a+;8g+;}3;
+	ORGAN2 b;d+;;c+e+;
+else
+	ORGAN1  bd+g+;d+f#+a+;d+g+b+;{4a+;8g+;}3;
+	ORGAN2 2.s;4c+e+;
+endif
+CONTINUO {8b-;a-;b-;}3;{f#-;en-;f-;}3;{g-;a-;b-;}3;4c;
+REST3
+bar
+
+ifdef ORCHESTRA
+	ORGAN1 d+f#+;c+e+f+;{8g+;a+;b+;}3;{c++;b+;c++;}3;
+	ORGAN2 4a;;bd+;e+g+;
+else
+	ORGAN1 ad+f#+;ac+e+f+;{8g+;a+;b+;}3;{c++;b+;c++;}3;
+	ORGAN2 2s;4bd+;e+g+;
+endif
+CONTINUO {8d;e;d;}3;{c;b-;a-;}3;{b-;a-;g-;}3;{c;d;e;}3;
+REST3
+bar ending "1."
+
+ORGAN1 b+d++;f#+a+;2d+g+;
+ORGAN2 {8g+;a+;g+;}3;{e+;d+;c+;}3;2b;
+CONTINUO d;d-;2g-;
+REST3
+repeatend ending "2."
+
+midi all: 1 "tempo=135";
+ORGAN1 b+d++;a+c++;g+b+;f#+a+;
+ORGAN2 {8g+;a+;g+;}3;{f#+;en+;d+;}3;{;e&+;d+;}3;{c+;d+;e+;}3;
+CONTINUO d;d-;;;
+REST3
+ifdef ORCHESTRA
+	ital below 1-3,5-7: 1 "allargando";
+else
+	ital between 1&2: 1 "allargando";
+endif
+bar
+
+midi all: 1 "tempo=130"; 3 "tempo=60";
+ORGAN1 d+g+;c+e+f#+;2c+e+;
+ORGAN2 {8b;a;b;}3;{4a;8g;}3;2f#a;
+CONTINUO d-;;2;
+REST3
+mussym above 1,2: 3 "ferm";
+dblbar endending
+
+define LAST @
+
+midi all: 0 "tempo=140";
+ifdef ORCHESTRA
+	1-7: mr;
+	rom above 1-3,5-7: 1 "Tempo primo";
+else
+
+	1-2: mr;
+	rom above 1: 1 "Tempo primo";
+endif
+bar
+
+midi 1 1: 1 "onvel=56";
+midi 1 2: 1 "onvel=40";
+ifdef MIDI midi 2 1-2: 1 "onvel=40"; endif
+THEME_A
+bar
+
+midi all: 1 "tempo=110"; 3 "tempo=100";
+ENGHORN 2b;f#a;
+VIOLA 2eg;4d;c;
+CONTINUO 2c#-;d-;
+REST1
+ifdef ORCHESTRA
+	ital below 1-3,5-7: 1 "rit.";
+else
+	ital between 1&2: 1 "rit.";
+endif
+bar
+
+midi all: 1 "tempo=60";
+ifndef MIDI
+	ifndef ORCHESTRA
+		ENGHORN 1dagbn;
+	else
+		ENGHORN 1bng;
+		VIOLA 1da;
+	endif
+else
+	ENGHORN 1bn;
+	VIOLA 1dga;
+endif
+CONTINUO 1g-;
+REST1
+ifdef MIDI
+	octave below 2: 1 "8va" til 4;
+else
+	octave below CONTINUO 1 "8va" til 4;
+endif
+endbar

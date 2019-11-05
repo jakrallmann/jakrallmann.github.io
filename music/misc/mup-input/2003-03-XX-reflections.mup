@@ -1,0 +1,344 @@
+header
+	title (18) "Reflections"
+	title "" "John A. Krallmann (March 2003)"
+
+header2
+	title (12) "Reflections - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	packfact=1.2
+	scoresep=12,24
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=116";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=78,64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+midi 2 2: 0 "channel=14"; 0 "program=1";
+
+1: 2.c+;4;
+1 2: r;2.e;
+2:2r;g;
+2 2: 1c;
+bar
+
+1: gb;2.fa;
+2 1: 1c+;
+2 2: 2f;d;
+bar
+
+1: 2d;4e;f;
+1 2: 2s;c;
+2: 2gb;fa;
+bar
+
+1: 1g;
+1 2: 2d;c;
+2: 1eg;
+bar
+
+1: c;d;e;f;
+1 2: 1a-;
+2 1: 1f;
+2 2: 2d;c;
+bar
+
+1: 1d;
+1 2: 2a-;g-;
+2: 1b&-f;
+dblbar
+
+score key=2&
+music
+
+1: c;d;e;f;
+1 2: 1b-;
+2: 1eg;
+bar
+
+1: 1c;
+1 2: 2b-;a-;
+2: 1f;
+bar
+
+rom above all: 1 "A little slower";
+midi all: 0 "tempo=100";
+1: 2g-b-;;
+2: 2g-d;f-d;
+bar
+
+1: 2b-g;f;
+1 2: 2s;4c;b-;
+2: 2e-c;d-b-;
+bar
+
+1: e;d;c;b-;
+1 2: 2g-;;
+2: 2e-b-;f-e;
+bar
+
+1: 1c;
+1 2: 2b-;a-;
+2: 1f-c;
+bar
+
+1: 2db;4a;f;
+1 2: 2s;c;
+2 1:a;g;2s;
+2 2:2g-;d-f;
+bar
+
+1: f;g;2c;
+1 2: 1g-;
+2: 1e-b-;
+bar
+
+1: c;f;g;a;
+1 2: 1a-;
+2: 1f-c;
+bar
+
+1: g;d+;2;
+1 2: 1b-;
+2 1: 1d;
+2 2: 2.g-;4f-;
+bar
+
+1: g;d+;2;
+1 2: 1d;
+2 1: 1b-;
+2 2: 2.e-;4d-;
+bar
+
+1: e;c+;;d+;
+1 2: 1c;
+2: 1c-g-;
+bar
+
+1: 1a;
+1 2: r;en;2f#;
+2 1: r;a-;2d;
+2 2: 1d-;
+dblbar
+
+score key=1#
+music
+
+midi 1 1: 1 "onvelocity=86,72";
+midi 1 2: 1 "onvelocity=72";
+midi 2 1-2: 1 "onvelocity=72";
+1: 2.b;8a;g;
+1 2: r;e;2d;
+2: r;d;2e;
+2 2: 1g-;
+bar
+
+1: 2.b;8a;g;
+1 2: r;e;2d;
+2: r;d;2e;
+2 2: 1g-;
+bar
+
+1: 1e;
+1 2: r;a-;b-;c;
+2 1: r;2.g;
+2 2: 1c;
+bar
+
+1: 2e;f;
+2: r;2a;4c+;
+2 2: 1d;
+bar
+
+1: 2f;g;
+2: r;2.b;
+2 2: 2.e;4d;
+bar
+
+1: 2.b;4g;
+2 1:r;g~ down;2ge+;
+2 2: 1c;
+bar
+
+1: 2.a;4e;
+2: r;a~ down;2ac+;
+2 2: 1d;
+bar
+
+1: 1e~;
+2: e-;b-;e;f;
+bar
+
+1: 2.e;4e+;
+2: 1g#;
+dblbar
+
+score key=3#
+music
+
+1: 2b;c+;
+1 2: 1a;
+2: a-;e;b;a;
+bar
+
+1: b;a;b;c+;
+1 2: 1d;
+2: 2f;fn;
+bar
+
+1: 2.e;4d;
+1 2: a-;b-;2g-;
+2: 2c;b-;
+bar
+
+1: d;2c;8a;g;
+2: f;2.e;
+2 2: 1a-;
+bar
+
+1: 2.f;4a;
+1 2: e;2.d;
+2: 1a;
+2 2: 2d;b-;
+bar
+
+1: d+;;c+;cn+;
+1 2: 1g;
+2: f+;fn+;e+;e&+;
+2 2: 1e;
+bar
+
+1: e&cn+;2.enc#+;
+2: a-;e;b;c+;
+bar
+
+1: 2.f;4a;
+1 2: e;d;2c;
+2: 1d;
+bar
+
+1: f;g;a;c+;
+1 2: 1b-;
+2: 1a;
+2 2: 2d#;b-;
+bar
+
+1: 2.b;4b#;
+1 2: 1d;
+2: 1g-e;
+bar
+
+1: 2c+;4d+;e+;
+1 2: 2e;d;
+2: b;a;f;g;
+2 2: 1a-;
+bar
+ 
+score time=2/4 ; beamstyle=4,4
+music
+
+1: b;8c+;d+;
+1 2: 2e;
+2: a;g;
+2 2: 2e;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.e+;4d+;
+1 2: b;a;gn;f;
+2: 1a;
+2 2: 2c;d;
+bar
+
+1: 2.b;8d+;c+;
+1 2: 1d;
+2: 2r;g;
+2 2: 1e;
+bar
+
+midi all: 3 "tempo=50"; 5 "tempo=100";
+mussym above all: 3 "ferm";
+1: 2b;fa;
+1 2: 2d;s;
+2: 2s;fc+;
+2 2: 2e;s;
+bar
+
+1: b-;f;;8a;g;
+2 1: 2f;b;
+2 2: 1d;
+bar
+
+1: 2e;d;
+2 1: b;2a;4g;
+2 2: 2c;b-;
+bar
+
+1: c;e;a;e+;
+1 2: 1a-;
+2 1: 1e;
+2 2:2a-;gn-;
+bar
+
+1: e+;8f+;e+;4d+;8a;b;
+1 2: 1a;
+2 1: 2e;d;
+2 2: 1f-;
+bar
+
+1: a+;fn+;d+;a;
+2: 1fn-d;
+bar
+
+1: 2e+;e;
+1 2: b;a;b-;c;
+2: 1e-c;
+bar
+
+1: g;f;e;d;
+1 2: 1a-;
+2: 1d-a-;
+bar
+
+midi all: 1 "tempo=88";
+1: e;a;2e+;
+1 2: 1a-;
+2: 1c-a-;
+bar
+
+rom above all: 1 "Slower";
+midi all: 0 "tempo=78";
+1: ge+;fd+;df;ca;
+2: 1d-a-;
+bar
+
+1: 2da;ee+;
+2: 2f;g;
+2 2: 1e-;
+bar
+
+midi all: 0 "tempo=68";
+1: 1c+e+ tie;
+2: a--;e-;c;a;
+bar
+
+1: 1c+e+;
+2: 1a;
+endbar

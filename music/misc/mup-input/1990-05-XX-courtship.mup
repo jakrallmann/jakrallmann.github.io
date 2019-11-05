@@ -1,0 +1,741 @@
+//!Mup-Arkkra
+
+top
+	title (18) "The Courtship"
+	title (9)  "" "John A. Krallmann"
+	title (9)  "" "5/90"
+
+top2
+	title (9) "The Courtship - \%"
+
+bottom
+	title (11) "\(copyright) Copyright 1990 John A. Krallmann"
+	title (11) "Published by Arkkra Enterprises" \
+		"http://www.arkkra.com"
+
+score
+	staffs=2
+	topmargin=0.8
+	bottommargin=0.8
+	time=2/4
+	beamstyle=4,4
+	barstyle=1-2
+	brace=1-2
+	vscheme=2f
+	packfact=0.8
+	packexp=0.8
+	scoresep=6,24
+	staffscale=0.92
+
+staff 2
+	clef = bass
+
+music
+
+midi all: 0 "tempo=120";
+midi 1 1: 0 "channel=1";
+midi 1 2: 0 "channel=2";
+midi 2 1: 0 "channel=3";
+midi 2 2: 0 "channel=4";
+midi 1-2 1-2: 0 "program=21";
+midi 1-2 1-2: 0 "onvelocity=55";
+
+1 1: r; [=b] 8d;e;
+// empty string is kludge to make room for manual curve
+rom above 1: 0 "Giocoso (\(smup4n) = 120)"; 0 " ";
+1 2: [=a] 8r;4.g-~;
+2: 2c~;
+boldital between 1&2: 0 "mf";
+pedal below 2: 1;
+bar
+
+1 1: [=c] 8b;g;a;b;
+1 2: 2g-;
+2: 2c;
+bar
+
+1 1: [=d] 8a;f;g;a;
+2: 2d;
+pedal below 2: 1;
+bar
+
+1 1: [=e] 8g;f;d;a-;
+2: 2g-~;
+pedal below 2: 1;
+bar
+
+1 1: b-; [=f] f;
+2: 2g-;
+pedal below 2: 1;
+medium curve (a.x, a.n + 4) to (b.x, b.n + 2) to (c.x, c.n + 3) \
+		to (d.x, d.n + 5) to (e.x, e.n + 5) to (f.x, f.n + 1)
+bar
+
+1 1: 8e;c;e;g;
+phrase above 1: 1 til 1m+2;
+2: 2c;
+pedal below 2: 1;
+bar
+
+1 1: c+;b;
+2: 2e;
+pedal below 2: 1;
+bar
+
+1 1: 8a;f;d;c;
+phrase above 1: 1 til 1m+2;
+2: 2f;
+pedal below 2: 1;
+bar
+
+1 1: b;a;
+2: 2d;
+pedal below 2: 1;
+bar
+
+1 1: 8g#;f;e;d;
+phrase above 1: 1 til 6m+1;
+2: 2e;
+pedal below 2: 1;
+bar
+
+1 1: e;b-;
+2: 2g#-;
+pedal below 2: 1;
+bar
+
+1 1: c;g#-;
+2: 2a-;
+pedal below 2: 1;
+bar
+
+1 1: a-;b-;
+2: 2d-;
+pedal below 2: 1;
+bar
+
+1 1: 2e-;
+2: e-;d-;
+pedal below 2: 1;
+bar
+
+1 1: 2g#-;
+2: c-;b--;
+pedal below 2: 1;
+bar
+
+1 1: a-;e;
+phrase above 1: 2 til 2m+2;
+2: 2a--~;
+pedal below 2: 1;
+bar
+
+1 1: 2a;
+1 2: 8r;b-;c;b-;
+2: 2a--;
+bar
+
+1 1: 2a;
+1 2: c;a-;
+2: 2c-;
+pedal below 2: 1;
+bar
+
+1 1: e;;
+phrase above 1: 1 til 6m+1;
+1 2: 2g#-;
+2: 2e-;
+pedal below 2: 1;
+bar
+
+1 1: 8e;f;e;d;
+2: 2d-;
+pedal below 2: 1;
+bar
+
+1 1: a;e;
+1 2: 2c;
+2: 2c-;
+pedal below 2: 1;
+bar
+
+1 1: d;f;
+2: 2b--;
+pedal below 2: 1;
+bar
+
+1 1: [with -] e; [] d;
+2: [with -] e-; [] f-;
+pedal below 2: 1;2;
+bar
+
+1 1: [with -] c; [] b-;
+2: [with -] f#-; [] g#-;
+pedal below 2: 1;2;
+bar
+
+1 1: [with -] a-;e;
+2: [with -] 2a-~;
+pedal below 2: 1;
+bar
+
+1 1: 2a;
+2: a-;b-;
+bar
+
+1 1: 2a;
+1 2: c;b-;
+2: 2c;
+pedal below 2: 1;
+bar
+
+1 1: 2a;
+1 2: c;a-;
+2: 2a-;
+pedal below 2: 1;
+bar
+
+1 1: eg#-;;
+2: 8e;f;e;d;
+pedal below 2: 1;2;
+bar
+
+1 1: a;b;
+1 2: 2e;
+2: c;b-;
+pedal below 2: 1;
+bar
+
+1 1: c+;a;
+1 2: 2e;
+2: a-;g-;
+pedal below 2: 1;
+bar
+
+1 1: d+;c+;
+1 2: 2a;
+2: 2f-;
+pedal below 2: 1;
+bar
+
+1 1: b;a;
+1 2: f;c;
+2: 2d-;
+pedal below 2: 1;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+1 1: 2.g#;
+1 2: f;e;8b-;d;
+2: 2e-;4g#-;
+pedal below 2: 1;3;
+bar
+
+1 1: c;e;8g#-;b-;
+2: 2a-;4b-;
+pedal below 2: 1;3;
+bar
+
+score time=2/4
+music
+1 1: a-;e;
+2: 2c;
+pedal below 2: 1;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+1 1: d+;b;8c+;e+;
+1 2: 2f;4e;
+2: 2g#-;4a-;
+pedal below 2: 1;3;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+1 1: a+d++;d+b+;
+2: 2f-;
+pedal below 2: 1;
+bar
+
+1 1: 2a+;
+1 2: e+;c+;
+2: 2e-;
+pedal below 2: 1;
+bar
+
+1 1: 2g#+;
+1 2: d+;b;
+2: 2e-;
+pedal below 2: 1;
+bar
+
+1 1: 2c+e+a+ tie;
+2: 2a-~;
+pedal below 2: 1;
+bar
+
+1 1: 2c+e+a+;
+2:2a-;
+mussym above 1: 3 "ferm";
+dblbar
+
+newpage
+
+// second section
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi all: 0 "tempo=92";
+midi 1-2 1-2: 0 "program=11";
+midi 1-2 1-2: 1 "onvelocity=40";
+
+1 1: 8r;f-;a-;c;4f;e;
+phrase above 1: 1 til 4;
+rom above 1: 0 "un poco adagio (\(smup4n) = 92)";
+boldital between 1&2: 1 "mp";
+ital between 1&2: 1 "dolce";
+2: 1f-a-c;
+pedal below 2: 1;
+bar
+
+1: 8d;a-;d;f;4b;a;
+phrase above 1: 1 til 4;
+2: 1d-a-d;
+pedal below 2: 1;
+bar
+
+1 1: 8g#;d;e;g;4d+;b;
+phrase above 1: 1 til 1m+4;
+2: e-;b-;e;g#;
+pedal below 2: 1;
+bar
+
+1 1: 1c+;
+2: 8a-;e;a;b;4c+e+;a;
+pedal below 2: 1;
+bar
+
+1 1: 1ac+f+;
+phrase above 1: 1 til 1m+4;
+2: 8f-;c;f;a;4c+;a;
+pedal below 2: 1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=32";
+1 1: 1 ac#+e+;
+boldital between 1&2: 1 "p";
+2: 8a-;e;a;c#+;4e+;c+;
+pedal below 2: 1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=20";
+1 1: 1acn+f+;
+phrase above 1: 1 til 1m+4;
+boldital between 1&2: 1 "pp";
+2: 8f-;c;f;g;4acn+;f+;
+pedal below 2: 1;
+bar
+
+1 1: 1ac#+e+;
+2: 8a-;e;a;b;2c#+e+;
+pedal below 2: 1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=40";
+1: 2.cn+e+a+;4c+f+a+;
+phrase above 1: 1 til 2m+ 3;
+boldital between 1&2: 1 "mp";
+2: 8f-;c;f;g;4a;cn+;
+pedal below 2: 1;
+bar
+
+1: 2.bd+g+;4bd+f+;
+2: 8g-;d;g;a;4b;gd+;
+pedal below 2: 1;
+bar
+
+midi all: 1 "tempo=84"; 3 "tempo=78";
+1 1: 1e+;
+1 2: 2b;c+;
+mussym above 1: 3 "ferm";
+ital above 1: 1 "rit.";
+> between 1&2: 2 til 3;
+2 1: 2d+;e+;
+2 2: 1a;
+pedal below 2: 1;3;
+bar
+
+midi all: 1 "tempo=88";
+ital above 1: 1 "a tempo";
+boldital between 1&2: 1 "mp";
+1 1: 2s; 8a-;c;4f;
+phrase below 1: 3 til 4;
+2 1: 8f-;c;f;g;2s;
+phrase above 2: 1 til 2.5;
+pedal 2: 1;
+bar
+
+1: 2s;8b-;d;4g;
+phrase below 1: 3 til 4;
+2: 8g-;d;g;a;2s;
+phrase above 2: 1 til 2.5;
+pedal 2: 1;
+bar
+
+1: 2s;[=o] 8c#;b-;c; [=p] e;
+2: [=m] 8a-;e; [=n] a;b;2s;
+ital above 1: 2.2 "rit.";
+pedal 2: 1;
+bar
+
+1: [=q] 1a;
+2: ms;
+medium curve (m.x, m.n + 6) to (q.x, q.n + 2) bulge 11,13
+bar
+
+midi 1-2 1-2: 1 "onvelocity=50";
+1 1: 2cea;dg;
+1 2: 2s;4c;b-;
+2 1: 2.s;4d;
+2 2: 8f-;c;4f;2g-;
+pedal 2: 1;3;
+boldital between 1&2: 1 "mf";
+ital above 1: 1 "a tempo";
+bar
+
+1 1: 2a-cf;4e;d;
+1 2: 2s;g-b-;
+2: 8d-;a-;4d;g-;f-;
+pedal 2: 1;3;
+bar
+
+1 1: ceg;;b-fg#;dfg;
+2: e-;c-;d;b--;
+pedal 2: 1;3;
+bar
+
+1 1: cea;egc+;d;e;
+2 1: 2s;fac+;
+2 2: c-;a--;4.d;8;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: fabd+;fgbd+;fac+e+;fg#bd+;
+2 2: 4.g-;8;4.;8;
+pedal 2: 1;3;
+bar
+
+1: gn-ceg;a-ceg;2g#-cdf;
+2: c-;e-;f-;d-;
+pedal 2: 1;2;3;
+bar
+
+1: gn-ce;a-ceg;2s;
+2 1: 2s;4fac+d+;fgbd+;
+2 2: 4.g-;8;4d-;8g-;g#-;
+pedal 2: 1;3;4;
+bar
+
+1: 2s;a-cfa;
+2 1: 2eac+;2s;
+2 2: 4a-;8;gn-;4d-;8;f-;
+pedal 2: 1;3;
+bar
+
+1 1: 2g-ce;f-d;
+1 2:  2s;8a-;c;4b-;
+2: g-;;;;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: 1egac+;
+2 2: 1c-;
+pedal 2: 1;
+dblbar
+
+midi all: 0 "tempo=120";
+midi 1 1-2: 0 "program=69";
+midi 2 1-2: 0 "program=70";
+
+midi 1-2 1-2: 1 "onvelocity=80";
+1: 2c+e+g+;4ac+e+;fac+;
+2: mr;
+ital above 1: 1 "tempo I";
+rom above 1: 1 "maestoso"; 1 "marcato";
+boldital between 1&2: 1 "f";
+pedal 2: 1;3;4;
+bar
+
+1: 4.fac+;8bgd+ tie;2;
+2: mr;
+pedal 2: 2.5;
+bar
+
+1: mr;
+2: 2ceg;4a-ce;f-a-c;
+pedal 2: 1;3;4;
+bar
+
+1: mr;
+2 1: 4.e;8d~;2;
+2 2: 1g-b-;
+pedal 2: 1;2.5;
+bar
+
+1: 2c+e+g+;4ac+e+;fac+;
+2: 2ac+e+;4fac+;dfa;
+pedal 2: 1;3;4;
+bar
+
+1: fac+;8ac+e+;gbd+ tie;2;
+2: fac+;8dfa;gbd+ tie;2;
+pedal 2: 1;2;2.5;
+bar
+
+1: 1ac#+e+;
+2: 1ac#+e+;
+pedal 2: 1;
+dblbar
+
+midi all: 0 "tempo=96";
+midi 1-2 1-2: 0 "program=73";
+midi 1-2 1-2: 1 "onvelocity=45";
+
+1: 2s;[=t]8c#; [=u]e; [=v]4c;
+2: [=r]8a-;e;a; [=s]b;2s;
+pedal 2: 1;
+ital above 1: 1 "tempo II";
+rom above 1: 1 "dolce legato";
+boldital between 1&2: 1 "mp";
+medium curve (r.x, r.n + 8) to (v.x, v.n + 3) bulge 4,5
+bar
+
+1: 4s;[=h]8d;e;f#;[=i]a;[=j]4f;
+2: [=g]8d;a;2.s;
+pedal 2: 1;
+medium curve (g.w, g.n + 8) to (j.x + 1, j.n + 2) bulge 8,9
+bar
+
+1: 4s;8d;e;4g#;f#;
+2: 8e;b;2.s;
+pedal 2: 1;
+bar
+
+1: 1e;
+2: 8a-;e;a;b;2c#+;
+pedal 2: 1;
+bar
+
+1: 2.f#;4d;
+2: 8d-;a-;d;e;2f#;
+phrase above 1: 1 til 3m+1;
+pedal 2: 1;
+bar
+
+1: 2.g#;4e;
+2: 8e-;b-;e;f#;2g#;
+pedal 2: 1;
+bar
+
+1: 2.c#+;4b;
+2: 8c#;g#-;c;d#;2f;
+pedal 2: 1;
+bar
+
+1: 1a;
+2: 8f#-;c#;f#;g#;2a;
+pedal 2: 1;
+bar
+
+1: 2.b-;4f#;
+2: 8d-;a-;b-;c#;2d;
+pedal 2: 1;
+phrase above 1: 1 til 3m+1;
+bar
+
+1: 2.e;8b;e;
+2: 8e-;b-;e;f#;4g#;d;
+< between 1&2: 1 til 4.5;
+pedal 2: 1;4;
+bar
+
+1: 2.c#+;4b;
+2: 8c#-;g#-;c#;d#;2f;
+boldital between 1&2: 1 "mf";
+pedal 2: 1;
+bar
+
+1: 1a#;
+2: 8f#-;c#;f#;g#;2a#;
+pedal 2: 1;
+bar
+
+1: 1an;
+2: 8d-;a-;d;e;4f#;a;
+phrase above 1: 1 til 3m+1;
+boldital between 1&2: 1 "subito p";
+pedal 2: 1;
+bar
+
+1:1b-;
+2: 8e-;b-;d;e;f#;a;4g#;
+pedal 2: 1;
+bar
+
+1: 1a-;
+2: 8a--;e-;a-;b-;c#;b-;c;e;
+pedal 2: 1;
+bar
+
+1: 1a-;
+2: 1s;
+dblbar
+
+newpage
+
+score
+	packfact=1
+music
+
+midi all: 0 "tempo=104";
+midi 1-2 1-2: 0 "program=69";
+midi 1-2 1-2: 1 "onvelocity=64";
+
+1: ms;
+2 1: abc#+e+;;acn+d+f+;;
+2 2: 4.a-;8e-;4.d-;8;
+ital above 1: 1 "( \(smup4n) = 104)";
+boldital between 1&2: 1 "f";
+phrase above 2: 1 til 1m+4;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: gad+;gbd+;8gbd+;e+;4gc+e+;
+2 2: 4.g-;8;4.c-;8;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: fac+;;8;d+;4fad+;
+2 2: 4.f-;8;4d-;;
+phrase above 2: 1 til 1m+4;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: dfac+;dfb;dg~c+~;egc+;
+2 2: 4.g-;8;2c-;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: gac#+e+;;8;ad+f+;4acn+d+f+;
+2 2: 4.a-;8;4.d-;8;
+phrase above 2: 1 til 1m+4;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: gad+;gbd+;;gc+e+;
+2 2: 4.g-;8;2c-;
+pedal 2: 1;3;4;
+bar
+
+1: ms;
+2 1: fac+;;8;d+;4fad+;
+2 2: 4.f-;8;4.d-;8;
+phrase above 2: 1 til 1m+4;
+pedal 2: 1;3;
+bar
+
+1: ms;
+2 1: dfac+;dfab;dfc+~;egc+;
+2 2: g-;;2c-;
+pedal 2: 1;3;4;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=55";
+1: 4a-cf;;g-ce;;
+2: 4.d-;8;4.g-;8;
+phrase above 1: 1 til 1m+3;
+boldital between 1&2: 1 "mf";
+pedal 2: 1;3;
+bar
+
+1: 2df-;cg-e-;
+1 2: 8a-;c;4b-;2s;
+2: g-;;2c-;
+pedal 2: 1;2;3;
+bar
+
+1: cea;;cdg;b-dg;
+2: 4.f-;8;4.g-;8;
+phrase above 1: 1 til 1m+4;
+pedal 2: 1;3;
+bar
+
+midi 1-2 1-2: 3 "onvelocity=58";
+1: 2cf;4deg#b;;
+1 2: 8b-;a-;4;2s;
+2: a-;f-;8e;b-;4e-;
+ital between 1&2: 3 "cresc.";
+pedal 2: 1;2;3;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=62"; 3 "onvelocity=66";
+1: dfac+;;fac+e+;;
+2: 8d-;a-;4d;8;a-;4d-;
+phrase above 1: 1 til 1m+3;
+pedal 2: 1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=72"; 3 "onvelocity=76";
+1: fgbe+;fgbd+;2egc+d+e+;
+2: 4.g-;8;2c-;
+boldital between 1&2: 3 "ff";
+pedal 2: 1;3;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=64";
+1: 2.s;8f;[=_c]a;
+2: [=_a]8f-;c;f;[=_b]g;a;c+;4s;
+boldital between 1&2: 1 "f";
+ital between 1&2: 2.5 "rall.";
+pedal 2: 1;
+medium curve (_a.x, _a.n + 12) to (_b.x, _b.n + 23) to (_c.x, _c.n + 1)
+bar
+
+1: 2.s;8g;[=_j]b;
+2: [=_h]8g-;d;g;[=_i]a;b;d+;4s;
+pedal 2: 1;
+medium curve (_h.x, _h.n + 4) to (_j.x, _j.n + 1) bulge 6
+bar
+
+midi 1-2 1-2: 1 "onvelocity=60"; 2 "onvelocity=57"; 3 "onvelocity=54"; 4 "onvelocity=51";
+1: 2s;[=_o]8c#;e;[=_p]a;b;
+2: [=_m]8a-;e;[=_n]a;b;2s;
+ital above 1: 1 "dolce";
+ital between 1&2: 2 "dim.";
+pedal 2: 1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=48"; 2 "onvelocity=45"; 3 "onvelocity=41"; 4 "onvelocity=36";
+midi all: 1 "tempo=96"; 2 "tempo=88"; 3 "tempo=80"; 4 "tempo=72";
+1: [=_q]8c#+;e+;a+ bm; b+ ebm; 2a+c#++e++ tie;
+2: ms;
+ital between 1&2: 1.5 "rit.";
+medium curve (_m.x, _m.n + 3) to (_q.x, _q.n + 1) bulge 11,12
+phrase 1: 1.5 til 1m+1;
+bar
+
+1: 1a+c++e++;
+2: 1a--;
+boldital between 1&2: 1 "mp";
+pedal 2: 4.5*;
+endbar

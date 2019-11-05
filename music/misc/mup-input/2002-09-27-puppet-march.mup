@@ -1,0 +1,172 @@
+header
+	title (18) "Puppet's March"
+	title "" "John A. Krallmann (9/27/02)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1#
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.85
+	scoresep=12,28
+	measnum=y
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+
+music
+
+midi all: 0 "tempo=108";
+midi 1: 0 "onvelocity=76,68";
+
+define XX
+1: 2b-d;g-c;
+2: g-d;;g-e&;;
+bar
+
+1: 2b-d;4g-c;8d;c;
+1 2: 2.s;4g-;
+2: g-d;;g-e&;;
+bar
+
+1:  2b-g;4ca;8b;a;
+1 2: 2.s;4c;
+2: g-d;;g-e&;;
+bar
+
+1: 2b-g;bd+;
+2: g-d;;;;
+bar
+
+1: 2b-d;g-c;
+2: g-d;;g-e;;
+bar
+
+1: 2b-d;4g-c;8d;c;
+1 2: 2.s;4g-;
+2: g-d;;g-e;;
+bar
+
+1:  2b-g;4ca;8b;a;
+1 2: 2.s;4c;
+2: g-d;;g-e;;
+bar
+
+1: 2b-g;bd+;
+2: g-d;;;;
+bar
+@
+XX
+
+////
+
+1: 2gb;ge+;
+2: e-b-;;;;
+bar
+
+1:  fa;8eg;fa;2gb;
+2: d-a-;;e-b-;;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8af+;bg+;af+;ge+;
+2: 4e-b-;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2ga;gb;
+2: g-d;;;;
+bar
+
+1: 2de;eg;
+2: cg;;;;
+bar
+
+1: 2ga;gb;
+2: g-d;;;;
+bar
+
+////
+
+1: 2g-e;b-g;
+2: e-b-;;;;
+bar
+
+1: a-f;b-g;a-f;g-e;
+2: e-b-;;;;
+bar
+
+1: 2g-b-;b-d;
+2: g-d;;;;
+bar
+
+1: 2.cg;4a-c;
+2: g-e;;;;
+bar
+
+1: 2b-d;db;
+2: g-d;;;;
+bar
+
+1: 2.ca;4b-g;
+2: d-a-;;;;
+bar
+
+1: 2a-f;4b-g;ca;
+2: d-a-;;;;
+bar
+
+1: ca;db;2;
+2: g-d;;;;
+bar
+
+1: 2ce;ec+;
+2: cg;;;;
+bar
+
+1: 1bg+;
+2: g-d;;;;
+bar   // repeatend
+
+XX
+
+1: 2af+;ge+;
+2: e-b-;;;;
+bar
+
+1: 2fa;eg;
+2: e-b-;;;;
+bar
+
+1: 2g-e;a-g;
+2: c-g-;;;;
+bar
+
+1: 2a-f;eg#;
+2: e-b-;;;;
+bar
+
+1: 2fa;fd+;
+2: d-a-;;;;
+bar
+
+1: 2ge+;ec+;
+2: c-g-;;;;
+bar
+
+1: 1df;
+2: d-a-;;2;
+endbar

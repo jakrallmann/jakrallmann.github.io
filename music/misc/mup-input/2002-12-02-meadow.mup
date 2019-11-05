@@ -1,0 +1,294 @@
+header
+	title (18) "Skipping Through the Meadow"
+	title (5) ""
+	title "" "John A. Krallmann (December 2-7, 2002)"
+
+header2
+	title (12) "Skipping Through the Meadow - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=1&
+	beamstyle=2,2
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	measnum=y
+
+staff 2
+	clef=bass
+
+
+music
+
+midi all: 0 "tempo=108";
+midi 1 1-2: 0 "channel=11"; 0 "program=1";
+midi 2 1-2: 0 "channel=12"; 0 "program=1";
+
+define ACC(C) mussym above 1: C "acc_gt"; @
+define AON "onvelocity=84"; @
+define AOFF "onvelocity=70"; @
+
+define M
+ACC(1)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF
+1: 8a;c;d;a~;;d;e;f;
+2: f-;c;f-;c;
+bar
+@
+M
+M
+
+ACC(1)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF
+1: 8b;d;e;b~;;d;e;f;
+2: g-;d;g-;d;
+bar
+
+ACC(1)
+ACC(2)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2 AON 3 AOFF
+1: 8b;g;f;e~;;g;a;b;
+2: g-;d;c;g;
+bar
+
+ACC(1)
+ACC(2)
+ACC(4.5)
+midi 1: 1 AON 1.5 AOFF 2 AON 2.5 AOFF 4.5 AON
+1: 8b;e;d+;c+~;;d#;e;b;
+2: c;g;c;g;
+bar
+
+ACC(1)
+ACC(2)
+ACC(2.5)
+midi 1: 1.5 AOFF 2 AON 3 AOFF
+1: 8b;d;b;a~;;g;f;e;
+2: f-;c;f-;c;
+bar
+
+ACC(1)
+ACC(3.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 4 AOFF
+1: 8d;c#;d;a~;;4g;8f;
+2: b-;f;b-;f;
+bar
+
+ACC(2.5)
+midi 1: 2.5 AON 3 AOFF
+1: 8c;d;f;c+~;;d+;c+;d+;
+2: a-;f;a&-;f;
+bar
+
+ACC(1)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF
+1: 8e+;g;c+;f+~;;e+;d+;c+;
+2: g-;e;g-;e;
+bar
+
+ACC(1)
+ACC(2)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2 AON 3 AOFF
+1: 8e+;c+;a+;f+~;;bn;c+;d+;
+2: f-;c;a;c;
+bar
+
+ACC(1)
+ACC(2.5)
+ACC(4.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF 4.5 AON 5 AOFF
+1: 8g+;bn;c+;g+~;;b;c+;g+~;
+2: g-;d;g-;d;
+bar
+
+1: 8g+;f+;e+;d+;4c+;bn;
+2: a;bn;2gf+;
+bar
+
+1: 1ec+;
+2: 1cg;
+repeatend
+
+score key=4&
+music
+
+ACC(2)
+ACC(2.5)
+midi 1: 2 AON 3 AOFF
+1: 8c+;e;b;a~;;e;e+;g;
+2: a-;e;b;c+;
+bar
+
+ACC(2)
+ACC(2.5)
+midi 1: 2 AON 3 AOFF
+1: 8f;f&;e+;d+~;;a;f;a;
+2: d;a;b;d+;
+bar
+
+ACC(2.5)
+midi 1: 2.5 AON 3 AOFF
+1: 8a;e;a;b~;;a;f&;a;
+2: c+;e;d;d+;
+bar
+
+ACC(1)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF
+1: 8e+;a;b;a+~;;b+;f+;a+;
+2: a-;e;c+;d+;
+bar
+
+ACC(1)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF
+1: 8a+;c;d;a~;;b;g;a;
+2: a-;e;f-;c;
+bar
+
+ACC(2.5)
+midi 1: 2.5 AON 3 AOFF
+1: 8f;a-;b-;f~;;g;a;b;
+2: d-;a-;d;a-;
+bar
+
+ACC(2)
+ACC(2.5)
+midi 1: 2 AON 3 AOFF
+1: 8dn+;e+;g;a~;;e;bn-;c;
+2: a--;e-;c;a;
+bar
+
+ACC(2)
+ACC(2.5)
+midi 1: 2 AON 3 AOFF
+1: 8f;a;e+;d+~;;f;a;b;
+2: d-;a-;f;d+;
+bar
+
+1: 8g+;a+;bn;c+;g;a;dn;e;
+2: a--;e-;c;a;
+bar
+
+1: 8f;e;d;c;b-;c;d;f;
+2: d-;a-;f;a;
+bar
+
+1: 2g;4.c+;8b;
+2: e-;b-;f;g;
+bar
+
+1: 8a;c;b-;a-;b-;c;d;e;
+2: a-;e;g&;a-;
+bar
+
+ACC(1)
+ACC(2.5)
+midi 1: 1 AON 1.5 AOFF 2.5 AON 3 AOFF
+1: 8f;a-;b-;f~;;a;f;e;
+2: d-;a-;b-;c;
+bar
+
+ACC(2.5)
+midi 1: 2.5 AON 3 AOFF
+1: 8f;a;b;d~;;a-;b-;d;
+2: d-;a-;b-;f;
+bar
+
+ACC(2.5)
+midi 1: 2.5 AON 3 AOFF
+1: 8f;e;d;g-~;;a-;b-;d;
+2: d-;a-;f;g&;
+bar
+
+1: 8g;a;en;f;c;d;a-;an-;
+2: d-;a-;d;f;
+dblbar 
+
+score key=5&
+music
+
+ACC(2.5)
+midi 1: 2.5 AON 3 AOFF
+1: 8b-;d;e;b~;2;
+2: g-;d;e;g;
+bar
+
+1: 8c+;b;a;g;4b-f;ce;
+2: a-;e;g;a-;
+bar
+
+1: 8d;e;f;a;f+;e+;g+;e+;
+1 2: 2.s;4b;
+2: b-;a-;g-;e-;
+bar
+
+1: 8d+;c+;b;a;b;c+;d+;e+;
+1 2: 1e;
+2: a-;g;c+;a-;
+bar
+
+ACC(1)
+midi 1: 1 AON 1.5 AOFF
+1: 1f+;
+1 2: 1an;
+2: f-;c;gn;an;
+bar
+
+ACC(1)
+midi 1: 1 AON 1.5 AOFF
+1: 8g+;f+;e+;d+;b;c+;d+;e+;
+1 2: 1b;
+2: e-;b-;e;b-;
+bar
+
+midi all: 1 "tempo=100"; 3 "tempo=92"; 4 "tempo=80";
+ACC(1)
+midi 1: 1 AON 1.5 AOFF
+1: 1f+;
+1 2: r;an;b;c+;
+2 1: r;e;d;c;
+2 2: 1f-;
+dblbar
+
+score key=2&
+music
+
+rom between 1&2: 1 "Slower";
+midi all: 1 "tempo=94";
+1: 8d+;c+;b;a;g;a;b;c+;
+2: b-;f;e-;b-;
+bar
+
+1: 8g;f~;2.;
+2 1: e;d;c;d;
+2 2: 1b-;
+bar
+
+midi all: 3 "tempo=84";
+1: 8e;d;c;d;4e;f;
+2 1: g;a;g;a;
+2 2: 1c;
+bar
+
+1: d;en;2f#;
+2: 1da;
+ital between 1&2: 1 "rit.";
+midi all: 2 "tempo=76"; 3 "tempo=70";
+bar
+
+midi all: 1 "tempo=58"; 3 "tempo=30";
+1: 2g#-bn-en;;
+2: 2en-;;
+endbar

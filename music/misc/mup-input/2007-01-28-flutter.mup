@@ -1,0 +1,121 @@
+header
+	title (18) "Flutter"
+	title "" "John A. Krallmann (1/28/07)"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=.8
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=108";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+
+define G [grace;slash 1]8 @
+
+1: 2..s;8e+;
+1 2: 2..s;8r;
+bar
+
+1: G e+; d+;b;c+;a;b;g;a;f;
+2: g-;d;b;d+;
+bar
+
+1: G a; g;e;f;d;e;c;d;b-;
+2: e-;b-;g;c;
+bar
+
+1: G d; c;d;e;f;g;a;f+;d&+;
+2: f-;c;a;e+;
+bar
+
+1: G f+; e+;d+;c+;b;f;b-;f;f#;
+2: b--;f-;d;8d+;c+;
+bar
+
+1: G f#; g;b;c+;b;d+;c+;e+;g;
+2: e-;b-;g;c+;
+bar
+
+1: G f#; fn;b;c+;b;d+;f;G f;e;d;
+2: d-;b-;f;b;
+bar
+
+1: G a; g;c;b;e;c+;e;d+;e+;
+2: e-;b-;g;c+;
+bar
+
+1: G e+; d+;f;c+;d+;G f+;e+;d+;en;f;
+2: f-;c;a;e(&)+;
+bar
+
+1: G c+; b;d;a&;c;g;a&-;f;b-;
+2: b--;f-;c;d;
+bar
+
+1: G a; g;e;a&;c;b;e;bn;e;
+2: e-;b-;g;f;
+bar
+
+1: G d+; c+;g;d+;g;e+;g;c+;e;
+2: a&--;e-;c;a&;
+bar
+
+1: G  c+; b;d;g;f;c;d;e;a&;
+2: g-;d;a&-;e;
+bar
+
+1: G c+; b;d;b;g;b;c+;d+;f+;
+2: g-;d;g;b;
+bar
+
+1: G a+; g+;e+;f+;d+;e+;b;c+;g;
+2: c-;g-;d;e;
+bar
+
+1: G b; a&;c;b;a&-;c+;e;d+;e+;
+2: f-;c;f;a&;
+bar
+
+1: G e+; d+;b;c+;a(n);b;g;a;d;
+2: g-;d;a;b;
+bar
+
+1: G a; g;e;a;e;b;c;a;e;
+2: c-;g-;e;g;
+bar
+
+1: G b; a;d;b;c;c+;d;d+;f#;
+2: d-;a-;f#;a;
+bar
+
+1: G d+; c+;b;a;g;G a+;g+;g;a;b;
+2: g-;d;b;d+;
+bar
+
+1: G d+; c+;e;d;b;G b;a;c;f+;e+;
+2: c-;g-;e;a;
+bar
+
+1: 1d+;
+1 2: G b; bn;a;b;a;2d;
+2: g-;d;2bn;
+endbar

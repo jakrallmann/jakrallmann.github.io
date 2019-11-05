@@ -1,0 +1,160 @@
+header
+	title (18) "Rhapsody"
+	title (12) "" "John A. Krallmann"
+	title (12) "" "Op. 1 No. 1 (circa 1973)"
+
+footer
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "- \% -"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=12,24
+	staffsep=16
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=120";
+ifdef PIANO
+	midi 1-2: 0 "channel=1"; 0 "onvelocity=45";
+else
+	midi 1: 0 "channel=11"; 0 "program=11";
+	midi 2: 0 "channel=12"; 0 "program=69";
+endif
+
+1: mr;
+2: e-g-b-e;;;;
+bar
+
+1: 2.gbe+;4fad+;
+2: e-g-b-e;;;;
+bar
+
+1: 1gbe+;
+2: 1e-g-b-e;
+bar
+
+1: 2gc#+f+;gbe+;
+2: e-g-b-e;;2;
+bar
+
+midi all: 0 "tempo=132";
+1: 2r;4fb&d&+;fac+;
+2: ee-;2.ff-;
+bar
+
+1: 2r;4f#bd+;fa#c#+;
+2: ff-;2.f#f#-;
+bar
+
+1: 2r;4gc+e&+;gbd+;
+2: f#f#-;2.gg-;
+bar
+
+1: 2r;4a&d&+f&+;ac+e&+;
+2: gg-;2.a&a&-;
+bar
+
+1: 2r;4ad+f+;ac#+e+;
+2: a&a&-;2.anan-;
+bar
+
+1: 2r;4b&e&+g&+;bd+f+;
+2: aa-;2.b&b&-;
+bar
+
+1: 2r;4be+g+;bd#+f#+;
+2: b&b&-;2.bnbn-;
+bar
+
+1: 2r;4c+f+a&+;c+e+g+ tie;
+2: bb-;2.cc+ tie;
+bar
+
+1: 1c+e+g+;
+2: 1cc+;
+dblbar
+
+score key=3& ; time=3/4
+music
+midi 1-2: 0 "onvelocity=35";
+1: c+c++;bb+;aa+;
+2: mr;
+bar
+
+1: gg+;ff+;ee+;
+2: 2.ee-;
+bar
+
+1: dd+;bb+;aa+;
+2: 2.dd- tie;
+bar
+
+1: gg+;dd+;ee+ tie;
+2: 2dd-;4ee- tie;
+bar
+
+1: 2ee+;4e++ tie;
+2: ee-;2e-e-- tie;
+bar
+
+1: 2.e++;
+2: 2.e-e--;
+bar
+
+score time=4/4
+music
+midi 1-2: 0 "onvelocity=50";
+1: e+e++;d&+d&++;2c+c++ tie;
+2: mr;
+bar
+
+score time=3/4
+music
+1: 2.c+c++ tie;
+2: dfgbn;2cegc+;
+bar
+
+1: 2.c+c++;
+2: d-f-g-bn-;2c-e-g-c;
+dblbar
+
+score time=4/4
+music
+midi 1-2: 0 "onvelocity=70";
+1: mr;
+2: cc-;b-b--;a-a--;f-f--;
+bar
+
+1: 2r;gg-;
+2: 1g-g--;
+bar
+
+1: mr;
+2: a-a--;g-g--;f-f--;d-d--;
+bar
+
+1: 2r;ee-;
+2: 1e-e--;
+bar
+
+midi all: 0 "tempo=108";
+1: mr;
+2: f-f--;e-e--;d-d--;b--b---;
+bar
+
+1: 2r; cengc+ tie;
+2: 1c-c-- tie;
+bar
+
+1: 1cegc+;
+2: 1c-c--;
+endbar

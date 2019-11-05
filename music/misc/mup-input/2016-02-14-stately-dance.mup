@@ -1,0 +1,183 @@
+header
+	title (18) "Stately Dance"
+	title "" "John A. Krallmann"
+	title " " "(Feb 14, 2016)"
+
+
+footer
+	title (12) "\(copyright) Copyright 2016 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	key=1#
+	measnum=y
+	transpose=up minor 3
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=2
+music
+
+midi all: 0 "tempo=150";
+midi 1 1-2: 0 "program=6";
+midi 2: 0 "program=6";
+
+1: [with.]b;4.e;8a;g;f;
+2: e;4b;d;
+bar
+
+1: [with.]a;4.e;8f;g;a;
+2: c;a-;
+bar
+
+1: [with.]f;b-;b;a;
+2: b-;d#;
+bar
+
+1: 8g;f;[with.]4e;e+;d+;
+2: e;g;
+bar
+
+1: 8c+;b;[with.]4a;d+;c+;
+2: a;f;
+bar
+
+1: 8b;a;[with.]4g;c+;b;
+2: g;e;
+bar
+
+1: a;[with.]f;8c+;b;[with.]4a;
+2: f;d#;
+bar
+
+1: 8g;f;[with.]4e;e+<>;d+;
+2: e;e-;
+bar
+
+1: c+<>;a;d+<>;a;
+2: a-;f-;
+bar
+
+1: b<>;g;c+<>;b;
+2: g-;e-;
+bar
+
+1: a<>;f;b<>;f;
+2: f-;d#-;
+bar
+
+1: 8g ph;f;[with.]4e eph;c#+;e+;
+2: e-;a-;
+bar
+
+1: 2.d#+;8c#+;d+;
+1 2: 2s;f;
+2: b-;b--;
+bar 
+
+1: 1e+;
+1 2: g;a;g;f;
+2: e-;b-;
+bar
+
+1: 1c+;
+1 2: a;b;a;g;
+2: a-;c;
+bar
+
+1: d+;e+;d+;c+;
+1 2: 1f;
+2: d;d-;
+bar
+
+1: 1b;
+1 2: g;a;g;f;
+2: g-;b-;
+bar
+
+1: 1a;
+1 2: e;g;f;e;
+2: c#;a-;
+bar
+
+1: d+;c+;b;a;
+1 2: 1f;
+2: d;d-;
+bar
+
+1: g+;f+;e+;d+;
+1 2: 1b;
+2: g-;b-;
+bar
+
+1: c+;d+;e+;g+;
+1 2: 1b;
+2: a-;c;
+bar
+
+1: f+;e+;d+;c+;
+1 2: 1a;
+2: d;f-;
+bar
+
+1:1b;
+1 2:a;g;f;d;
+2:g-;b-;
+bar
+
+1: 2.a;4c#+;
+1 2: e;f;g;e;
+2: c#;a-;
+bar
+
+1: d+;c+;b;a;
+1 2: 2d;4e;f;
+2: d;d-;
+bar
+
+1: g+;a+;g+;f+;
+1 2: 2b;d+;
+2: g-;b-;
+bar
+
+1: 1e+;
+1 2: c+;d+;c+;b;
+2: c;e;
+bar
+
+1: f+;g+;f+;e+;
+1 2: 1a;
+2: d;d-;
+bar
+
+1: 1d+;
+1 2: c+;b;g;d;
+2: g-;b-;
+bar
+
+1: 1e+;
+1 2: c+;b;a;g;
+2: a-;c;
+bar
+
+1: f+;g+;a+;f+;
+1 2: 2a;c+;
+2: d;d-;
+bar
+
+1: 1g+~;
+1 2: 1b~;
+2: g-~;g-d tie;
+bar
+
+1: 1g+;
+1 2: 1b;
+2: 1g-dg;
+endbar

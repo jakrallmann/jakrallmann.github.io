@@ -1,0 +1,143 @@
+header
+	title "" "John A. Krallmann"
+	title "" "(9/1/19)"
+footer
+        title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	time=4/4
+	beamstyle=2,2
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.75
+
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "onvelocity=86,64";
+
+1: 8en;f;f#;g~;;b;an;g;
+2: c;g;c#;an;
+bar
+
+1: 8en;f;g;f~;;an;g;f~;
+2: d;an;bn-;g;
+bar
+
+1: 8f;en;d;e~;;d;c;g;
+2: c;g;b-;en;
+bar
+
+1: 8b;an;g;a~;4;f;
+1 2: 4.en;8~;;f;g-;an-;
+2: g-;d;d-;an-;
+bar
+
+1: 8g;f;e;f~;;e;4d;
+1 2: 4.b-;8an-~;4;{8f-;g-;a-;}3;
+2: e-;b-;d-;an-;
+bar
+
+1: 8e;d;c;d~;2;
+1 2: 4.g-;8an-~;;b-;g-;f-;
+2: c-;g-;g--;g-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8c+;b;c+;an~;2;
+1 2: 4.e;8g&~;;e;d;c;
+2: c-;e-;d-;an-;
+bar
+
+1: 8bn-;d;g;<<staff clef=treble>>bn-dbn tie;;4cenc+;8dfd+;
+2: g-;d-;bn-;d-;
+bar
+
+1: 8dfd+;cenc+;bn-dbn;cec+ tie;;b-db;an-can;g-eg;
+2: c-;g-;an--;en-;
+bar
+
+1: 4.g&-g&;8an-an tie;;4bn-bn;8cenc+;
+1 2: 8c;bn-;c;s;2;
+2: d-;an-;en;d;
+bar
+
+1: 8cenc+;bn-dbn;an-can;b-db tie;2;
+2: g-;d;g-;d-;
+bar
+
+1: 8b-db;an-can;g-b-g;a-ca tie;;4b-b;8cc+;
+2: e-;b-;e-;b-;
+bar
+
+1: 8egane+;egad+;cgac+;dgad+ tie; 2;
+2: d-;an-;g&;d-;
+bar
+
+1: 8faf+;4ee+;8dd+;cec+;4b-b;8cec+;
+2: c-;g-;e;g-;
+bar
+
+1: 2..an-an;8b;
+1 2: 8e;4d;8c;e;d;4c;
+2: d-;an-;g&;d;
+bar
+
+1: 1bn;
+1 2: 8d;e;f;a~;;4g;8f;
+2: g-;d;g;g--;
+bar
+
+1: 4.bn;8c+~;;4fd+;8f+;
+1 2: 8d;e;f;e~;2;
+2: c-;g-;e;g-;
+bar
+
+1: 8e+;d+;c+;ebd+ tie;;4eae+;8c+;
+1 2: 4.ea;8s;2;
+2: a--a-;e-e;a-a;f-f;
+bar
+
+1: 8b;g;an;b-db tie;;cec+;4dfbd+;
+1 2: 4.b-d;8s;2;
+2: g--g-;b--b-;d-d;f--f-;
+bar
+
+1: 8c+;a;b;eac+ tie;;4ead+;8eac+;
+1 2: 4.ea;8s;2;
+2: a--a-;e-e;a-a;f-f;
+bar
+
+1: 4.dgbn;8g;b;g;an;b;
+2: g-g;f-f;e-e;d-d;
+bar
+
+1: 8ed+;4.ec+;8fd+;4.ec+;
+2: c-c;g--g-;a--a-;e-e;
+bar
+
+midi all: 1 "tempo=92 to 76" til 2m+1;
+1: 8ed+;4.ec+;8fd+;4.ec+;
+2: c-c;g-g;a-a;e-e;
+bar
+
+1: 8ed+;4.ec+;8;4.dbn;
+2: f-f;f#-f#;g-g;g--g-;
+bar
+
+1: 1cec+;
+2: 1c-c;
+endbar

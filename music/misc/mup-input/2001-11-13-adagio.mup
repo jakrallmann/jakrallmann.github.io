@@ -1,0 +1,249 @@
+header
+	title (18) "Adagio"
+	title (12) "" "John A. Krallmann (Nov 13-14, 2001)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (5) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=4&
+	vscheme=2o
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.75
+	measnum=y
+
+voice 1 1
+	release=0
+staff 2
+	clef=bass
+	vscheme=3f
+
+voice 2 1
+	release=40
+voice 2 3
+	release=40
+music
+
+midi all: 0 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=73"; 0 "onvelocity=50,30"; 0 "param=10,45";
+midi 1 2: 0 "channel=12"; 0 "program=73"; 0 "onvelocity=30"; 0 "param=10,86";
+midi 2 1: 0 "channel=13"; 0 "program=60"; 0 "onvelocity=50"; 0 "param=10,38";
+midi 2 2: 0 "channel=14"; 0 "program=89"; 0 "onvelocity=110"; 0 "param=10,76";
+midi 2 3: 0 "channel=13"; 0 "onvelocity=50";
+
+rom above all: 1 "( \(smup4n) = 64 )";
+S 2ca;8b;a;g;a;
+T a;;;;
+B 1a-e;
+bar
+
+S 4df;16b;a;g;f;2e;
+A 2s;4d;c;
+T a;;;;
+B 2a-f;a-e;
+bar
+
+S 2.e;4d;
+A 1g-b-;
+T e;;;;
+B 1e-;
+bar
+
+S 1c;
+A b-;g-;2a-;
+T c;;f;e;
+B 1f-;
+bar
+
+S 2.f;8g;a;
+A 1a-;
+T d;;;;
+B 1d-;
+bar
+
+S 2.d+;8a;c+;
+A 1f;
+T d;;a;f;
+B 1d-;
+bar
+
+S 1db;
+A 2a;g;
+T e;;8g;f;e;d;
+B 1e-;
+bar
+
+S 2ec+;8c+;b;a;e;
+T e;;;;
+B 1aa-;
+bar
+
+S 4.f;8g;b;a;8.f;16d;
+A b-;2.a-;
+T d;;;;
+B 1d-a-;
+bar
+
+//
+
+S 4.e;8a;e+;d+;en;f;
+A 1a-;
+T c;;d;;
+B 2c-a-;d-a-;
+bar
+
+S 4..c+;32d+;e+;2b;
+A 2s;4d;e;
+T e;;;;
+B 2e-a-;e-g-;
+bar
+
+S 2c;f;
+A b-;a-;b-;a-;
+T f;;d;;
+B 2f-c;d-a-;
+bar
+
+S 1g;
+A 8f;4en;8d;c;b-;a-;g-;
+T c;;;;
+B 1c-g-;
+bar
+
+S 2a;4..f;32a;b;
+A 1c;
+T f;;;;
+B 1f-c;
+bar
+ 
+S 2c+;8f+;e+;8.c+;16a;
+T a;;;;
+B 1a-e;
+bar
+
+S 1f;
+A 2e;4..d;32a-;c;
+T d;;;;
+B 1d-a-;
+bar
+
+S 2.b-;16b-;e;f;g;
+A 2a-;g-;
+T e;;;;
+B 1e-b-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+S 4..a;32b;c+;
+A 2c;
+T f;;
+B 2f-c;
+bar
+
+//
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 2.af+;8g+;a+;
+A 2e+;d+;
+T d;;;;
+B 1d-a-;
+bar
+
+S 1e+e++;
+A 2d++;8c++;4a+;8e+;
+T a;;;;
+B 1a-e;
+bar
+
+S 1ff+;
+A 8e+;4d+;8c+~;4;a;
+T d;;;;
+B 1d-a-;
+bar
+
+S 4.a-f;8b-g tie;4;8c+;b;
+A 2.s;4d;
+T e;;;;
+B 1e-;
+2 3: [ho+1]2a-;[ho+1]b-;
+bar
+
+S 1an;
+A 4.g;8f~;4.;16c;f;
+T f;;;;
+B 1f-c;
+bar
+
+S 2.f+;8g+;a+;
+A 1a(&);
+T d;;;;
+B 1d-a-;
+bar
+
+S 1e+a+e++;
+A 2b+;c++;
+T a;;;;
+B 1a-e;
+bar
+
+S 2f;a;
+A 1a-e;
+T d;;;;
+B 1d-a-;
+bar
+
+S 1ea;
+A 2d;c;
+T a;;;;
+B 1a-e;
+bar
+
+S 4.f;8g;4.a;8b;
+A 1a-e;
+T d;;;;
+B 1d-a-;
+bar
+
+S 1ee+;
+A [ho-1]4.b;8c+~;2;
+T a;;;;
+B 1a-e;
+bar
+
+//
+
+S 4.b-e;8a-d tie;4;b-e;
+A 1f-;
+T d;;;;
+B 1d-a-;
+bar
+
+S 2dfb;eac+;
+T a;;;;
+B 1a-e;
+bar
+
+S 2fad+;fae+;
+T d;;;;
+B 1d-a-;
+bar
+
+midi all: 1 "tempo=58"; 3 "tempo=28";
+midi 1-2 1-2: 5 "param=10,63";
+S 1eac+e+;
+B a-a--;;2;
+endbar

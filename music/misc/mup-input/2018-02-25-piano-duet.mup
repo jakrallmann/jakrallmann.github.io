@@ -1,0 +1,208 @@
+
+
+define HEADINGS(TITLE,AUTHOR)
+header
+	title (18) `TITLE`
+header2
+	title (18) `TITLE`
+top leftpage
+	title "Secondo"
+	title "" `AUTHOR`
+top2 rightpage
+	title "Primo"
+	title "" `AUTHOR`
+@
+HEADINGS(Piano Duet, John A. Krallmann (Feb 25\, 2018\))
+
+footer
+	title (11) "\(copyright) Copyright 2018 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+	
+score
+	staffs=4
+	key=3&
+	barstyle=1-2,3-4
+	time=4/4
+	beamstyle=4,4,4,4
+	vscheme=2f
+	firstpage=1 leftpage
+	rehstyle=plain
+	staffscale=0.97
+	scoresep=10,28
+staff 1,2
+staff 3,4
+	clef=bass
+music
+define EASIER @
+
+define SECONDO
+	ifndef DIDFIRSTSECONDO
+		score
+			brace=1-2,3-4("       ")
+			define DIDFIRSTSECONDO \@
+	endif
+	staff 1-2 visible=n
+	staff 3-4 visible=y
+	music
+@
+
+define PRIMO
+	ifndef DIDFIRSTPRIMO
+		score
+			brace=1-2("       "),3-4
+			define DIDFIRSTPRIMO \@
+	endif
+	staff 1-2 visible=y
+	staff 3-4 visible=n
+	music
+@
+
+define DUETPAGE(P)
+	ifdef MIDI
+		P
+	else
+		SECONDO
+		P
+		newpage
+		PRIMO
+		P
+		newpage
+	endif
+@
+
+define BAR bar reh mnum @
+
+define PAGE1
+
+midi all: 0 "tempo=54";
+midi 1: 0 "onvelocity=78";
+
+// bar for resetting measure number for primo
+1-4: ms;
+invisbar mnum=1
+
+bold above all: 1 "Maestoso";
+1: 4r;d+g+;r;e+g+;
+2: 8.r;32g;an;4gb;8.r;32a;b;4gc+;
+3: r;dg;r;gc+;
+ifdef EASIER
+4: 2g-;c-;
+else
+4: 2g--g-;c--c-;
+endif
+BAR
+
+1: r;8f+;e+;;d+;4;
+2: r;ac+;dfa;gbn;
+3: r;fc+;g;8;f;
+ifdef EASIER
+4: 2f-;4g-;8;f-;
+else
+4: 2f--f-;4g--g-;8;f--f-;
+endif
+BAR
+
+1: 8d+;c+;4;8d+;c+;4;
+2: dg;g;a;8g;a;
+2 2: s;8d;e;c;d;4d;
+3: 8e;f;;g;a;g;f;e;
+4: e-;c-c;a--a-;f--f-;
+BAR
+
+1: 8d+;c+;4;d+;g+;
+2: 8f#;g;4an;8a;b;4;
+2 2: 2d;;
+3: 8f#;g;an;d;a;b;g;d;
+4: 2d-d;g--g-;
+BAR
+
+1: 8g+;e+;8.;16g+;8f+;e+;4d+;
+2: gb;;2an;
+2 2: 8e;d;c;e;f;e;d;c;
+3: 8e;f;g;c;f;f#;an;d;
+4: 2e--e-;d--d-;
+BAR
+
+1: 8c+;g+;4;8c+;g+;4;
+2: 8eg;dgb;4;8eg;dgb;4;
+3: 8an;b;a;g;a;b;a;g;
+4: 2g--g-;;
+BAR 
+
+1: 8b+;an+;8.g+;16b+;8a+;g+;4f+;
+1 2: e+;;2d+;
+2: eg;cg;8d;en;f;an;
+3: 8e;f;g;c;f;en;d;an-;
+4: 2e--e-;d--d-;
+BAR
+
+1: 8g+;f+;8.e+;16b;2c+;
+1 2: 2b;s;
+2: 8e;d;c;g;;an;d;e;
+3: 8e;f;g;b;an;g;e;c;
+4: 2e--e-;f--f-;
+BAR
+
+1: 2f+;8e+;d+;4c+;
+2: 2a;eg;
+2 2: 8f;e;d;f;2s;
+3: 8d;f;a;b-;f;g;c+;b-;
+4: 2b--b-;c-c;
+BAR
+
+1: 8e+;d+;4c+;2g+d++;
+2: 2eg;4.bnd+;8f;
+3: 8e;f;c+;f;g;an;bn;d+;
+4: 2a--a-;g--g-;
+BAR
+
+1: 2r;4e+g+;;
+2: eg;;2r;
+3: 8g;c;d;e;g;c;d;e;
+4: 2c--c-;;
+BAR
+
+1: 2r;4f+a+;;
+2: fa;;2r;
+3: 8a;c;f;g;a;c;g;a;
+4: 2f--f-;;
+BAR
+
+1: b;;;8c+;d+;
+2: d;;;;
+3: 8b;d;g;an;b;d;a;b;
+4: 2g--g-;;
+BAR
+
+1: 8.b;16c+;4a;2;
+2: d;8e;d;c;d;e;f;
+3: 8a-;e;c+;e;f-;c;a;c;
+4: 2a--;f--;
+BAR
+
+1: 4.a;8f+;4.f+;8d+;
+2: 8bn-;c;d;g;2da;
+3: 8g-;d;g;bn;c;d;f;a;
+4: 2g--;c-;
+BAR
+
+1: 4.e+;8c+;2c+e+;
+2: 2gc+;8a;g;f;e;
+3: 8c;d;e;g;a-;e;a;c+;
+4: 2c-;a--;
+BAR
+
+1: 2d+;;
+2: 8f;e;4d;2f;
+3: 8g-;d;f;g;c;f;a;d;
+4: 2g--;c-;
+BAR
+
+1: 1c+;
+2: 1en;
+3: 1cg;
+4: 1c-;
+endbar
+
+@
+DUETPAGE(PAGE1)

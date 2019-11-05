@@ -1,0 +1,218 @@
+header
+	title (18) "Compassion"
+	title (12) "" "John A. Krallmann (2/20/02)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=1&
+	beamstyle=4,4,4,4
+	staffscale=0.9
+	vscheme=2f
+	measnum=y
+
+staff 2
+	clef=bass
+music
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+midi all: 0 "tempo=70";
+midi 1 1-2: 0 "channel=11"; 0 "program=89"; 0 "onvelocity=102"; 0 "param=10,78";
+midi 2 1-2: 0 "channel=12"; 0 "program=42";  0 "onvelocity=46"; 0 "param=10,50";
+
+S 2fa;a;
+A 2s;4d;c;
+B 2da;a-e;
+bar
+
+S 8d;e;4f;2g;
+A 2b-;4d;e;
+B 2b-f;cg;
+bar
+
+S 2f#a;;
+B 2da;;
+bar
+
+S 2db;4bn;c#+;
+A 2s;e;
+T 8f;e;4d;g;a;
+B 2g-;a-;
+bar
+
+S 8d+;c+;b;a;g;f;e;d;
+A 2d;4;bn-;
+T f;g;;a&;
+B 2b-;bn-;
+bar
+
+midi all: 1 "tempo=65"; 3 "tempo=60"; 4 "tempo=50"; 5 "tempo=72";
+S b-e;bn-f;2cg;
+T 2s;e;
+B cg;c#f;cn;c-;
+bar
+
+S 2.a;4f;
+A r;ce;2b-d;
+T r;g;2f;
+B 1f-;
+bar
+
+S 2.a;4f;
+A r;ce;2b-d;
+T r;g;2f;
+B 1f-;
+bar
+
+S 2.c+;4b;
+A r;eg;2df;
+T r;a;c+;b;
+B 2.a-;4g-;
+bar
+
+S 1g;
+A r;b-d;df;ce;
+T r;2g;4b;
+B 1c;
+bar
+
+S 1a;
+A r;df;ce;df;
+T r;a;g;a;
+B 1d;
+bar
+
+S a;g;f;d;
+A 1d;
+T f;g;a;b;
+B 1b-;
+bar
+
+S 1e;
+A r;bn-;2c#;
+T 2r;4b(&);a;
+B 1a-;
+bar
+
+S 1f;
+T r;a;g;a;
+B 1d-;
+bar
+
+S 1fa;
+T r;a;g;a;
+B 1d-;
+bar
+
+S 1af+;
+A r;e;d;a-;
+B 1d-;
+bar
+
+S e+;d+;a;g;
+A 2f;d;
+T f;g;a;b;
+B 1b-;
+bar
+
+S e;d~ down;2df#;
+A 1a-;
+B 1d-a-;
+bar
+
+S df(n);ce;2b-d;
+B 1b--f-;
+bar
+
+S ce;g-c;2ce;
+B 1c-g-;
+bar
+
+midi all: 1 "tempo=68"; 3 "tempo=54"; 4 "tempo=72";
+S 2a-df#;;
+B 2d-a-;;
+bar
+
+S df;ce;2b-d;
+B 1b-f;
+bar
+
+S eg;df;2ce;
+B 1cg;
+bar
+
+S fa;eg;2f#a;
+B 1da;
+bar
+
+S ec+;fd+;ca;db;
+B 1b-f;
+bar
+
+S 2.g;4g#;
+A d;e;2;
+B 1cg;
+bar
+
+S 1a;
+A c;c#;d;e;
+T 1a;
+B 2f;e;
+bar
+
+S 1a;
+A g;f;e;c;
+T 1a;
+B 2d;c;
+bar
+
+S 1f;
+A d;c;d;f;
+T 1f;
+B 2b-;a-;
+bar
+
+S g;f;g;a;
+A 1b-;
+T 1d;
+B 2g-;f-;
+bar
+
+S gb;fa;2g;
+A 2s;4b-;c;
+B 1e-&b-;
+bar
+
+S 2d;c;
+A 1a-;
+T 2c;f;
+B 1f-;
+bar
+
+midi all: 1 "tempo=68";
+S 2a-d;bn-d;
+B 2g-d;;
+bar
+
+ital between 1&2: 1 "rit.";
+midi all: 0 "tempo=64"; 3 "tempo=58";
+S 2g-b-;b-d;
+B 1e&-b-;
+bar
+
+midi all: 0 "tempo=40";
+midi 1-2 1: 5 "param=10,63";
+S 1f#-a-d;
+B 1d-a-;
+endbar

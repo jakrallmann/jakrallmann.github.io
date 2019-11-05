@@ -1,0 +1,131 @@
+header
+	title (18) "Silver Springs"
+	title "" "John A. Krallmann (November 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define O 1 1: @
+define M 2 1: @
+define B 3 1: @
+
+score
+	time=4/4
+	key=1#
+	beamstyle=2,2
+	staffs=3
+	staffscale=0.8
+	measnum=y
+
+staff 1
+	defoct=5
+staff 3
+	clef=bass
+
+music
+
+midi all:0 "tempo=68";
+midi O 0 "channel=11"; 0 "program=73";
+midi M 0 "channel=12"; 0 "program=71";
+midi B 0 "channel=13"; 0 "program=33"; 0 "onvelocity=72";
+
+O 1d;
+M 8g;b-;c;g~;;a;g;d;
+B g-;d;a;b;
+bar
+
+O 1e;
+M 8d;e;d+;c+~;;g;a;c+;
+B c;g;d+;e+;
+bar
+
+O 1g;
+M 8c+;g;b-;g~;;d;e+;b;
+B g-;d;a;b;
+bar
+
+O 1a;
+M 8b;a;e;a~;;g;a;c+;
+B c;g;d+;c+;
+bar
+
+O 1b;
+M 8b;d;e+;d+~;;a;g;a;
+B g-;d;a;b;
+bar
+
+O 1c+;
+M 8a;g;a;e~;;f;g;a;
+B c;g;c+;g;
+bar
+
+O 2.b;4c;
+M 8a+;g+;a;b~;;g;e;g;
+B g-;d;b;c+;
+repeatend
+
+O 2d;e;
+M 8g;b-;c;g~;;a;e;g;
+B g-;d;c;g;
+bar
+
+O 1g~;
+M 8g;b-;c;d~;;b;e;g;
+B g-;d;c-;g-;
+bar
+
+O 2.g;4c+;
+M 8d+;g;a;g+~;;f+;e+;g+;
+B g-;d;b;c+;
+bar
+
+score key=3&
+music
+
+O 2b;e;
+M 8g+;f+;e+;b~;;f;f#;g;
+B e-;b-;g;b-;
+bar
+
+O 2c;d;
+M 8g;f;en;f~;;g;a;g+;
+B a-;f;bn;f;
+bar
+
+O 1a;
+M 8f+;e+;d+;c+;bn;b&;f;f#;
+B b--;f-;b-;d;
+bar
+
+O 1bn;
+M 8g;f;e;d;bn-;c;a;g;
+B  g-;d;g;d;
+bar
+
+O 1c+;
+M 8en+;d+;c+;g;f#;g;an;d;
+B c-;g-;en;f;
+bar
+
+O 2c+;a;
+M 8c+;e;d;c;a;c;d;f+;
+B c-;g-;f-;c;
+bar
+
+O 2g;a~;
+M 8g+;c+;d+;e+;f+;g;a;c+;
+B c-;g-;f-;c;
+bar
+
+O 2a;f;
+M 8d+;c+;b;a;c;d;g;f;
+B b--;f-;b-;d;
+bar
+
+O 1e;
+M 8e;g-;a-;b-;2g-e;
+B e-;b-;2e-;
+endbar
+

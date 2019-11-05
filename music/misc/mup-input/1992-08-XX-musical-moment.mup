@@ -1,0 +1,108 @@
+header
+	title (18) "Musical Moment"
+	title (12)   ""   "John A. Krallmann (8/92)"
+
+footer
+	title (11) "\(copyright) Copyright 1992 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=4/4
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	staffsep=16
+	packfact=1.3
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=52";
+ifdef PIANO
+	midi 1-2 1-2: 0 "channel=1";
+else
+	midi 1-2 1-2: 0 "program=1";
+endif
+
+1 1: g;f;8b;a;4g;
+2 1: 4s;8g;a;4s;8d+;e+;
+2 2: c-g-de;cf-;bdg-;gc;
+rom above 1: 1 "( \(smup4n) = 52 )";
+bar
+
+1 1: a;fg;e;ac#;
+1 2: 8f;16e;f;8c;b-;d;b-;4s;
+2 1: 2s;ae;
+2 2:4acf-;adg-;4.a-;8g-;
+bar
+
+1 1: agfc;bagd;2e+c+ae;
+2 1: 2s;4b;a;
+2 2: gcf-;gdg-;2ea-;
+bar
+
+1 1: a+e+c+a;g+d+g;2e+c+ae;
+1 2: 4s;8c+;b;2s;
+2 1: 2s;4b;a;
+2 2: gfcf-;adg-;2ea-;
+bar
+
+1 1: agfc;bagd;2ae;
+1 2: 2s;4d;c#;
+2 1: 2s;4d;e;
+2 2: gcf-;gdg-;2aa-;
+bar
+
+midi all: 0 "tempo=76";
+midi 1-2 1-2: 0 "onvelocity=50";
+1 1: 4r;8;a;e++;a+;b+;c++;
+phrase 1: 3 til 1m+1;
+2 1: 8a-;e;c+;8r;2r;
+rom above 1: 1 "( \(smup4n) = 76 )";
+bar
+
+1 1: 1f+;
+1 2: 2s;8e;c;d;e;
+phrase below 1: 3 til 1m+1;
+2 1: 8d-;a-;e;f;2r;
+bar
+
+1 1: 2s;8r;d;g;g+;
+phrase above 1: 3.5 til 1m+1;
+1 2: 2d;s;
+2 1: 8g-;d;a;c+;2b;
+bar
+
+1 1: 1e+c+;
+2 1: 8c;g;d+;e+;2;
+bar
+
+1 1: 2a+f+c+;8r;c+;f+;a+;
+phrase above 1: 3.5 til 1m+1;
+1 2: 4.s;8g;2f;
+2 1:8f-;c;a;s;2;
+bar
+
+1 1: 2g+f+d+;8r;g;d;b;
+phrase above 1: 3.5 til 1m+1;
+2 1: 8g-;d;a;c+;2b;
+bar
+
+1 1: 1c+ge;
+2 1: 8c;g;d+;f+;2e+;
+bar
+
+midi all: 0 "tempo=70"; 3 "tempo=66"; 5 "tempo=58";
+1 1: 2afc;gbd;
+2 1: g;f;2s;
+2 2: 2cf-;dg-;
+bar
+
+1 1: 1c#ea;
+2 1: 1aea-;
+endbar

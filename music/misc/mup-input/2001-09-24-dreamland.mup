@@ -1,0 +1,305 @@
+header
+	title (18) "Dreamland"
+	title (8) ""
+	title (12) "" "John A. Krallmann (Sep 24-25, 2001)"
+
+header2
+	title (12) "Dreamland - \%"
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=1&
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	release=40
+	staffscale=0.95
+	staffsep=15
+	scoresep=12,22
+	packfact=1.2
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=46";
+midi 1 1: 0 "channel=11"; 0 "program=89"; 0 "onvelocity=70,64";
+midi 1 2: 0 "channel=12"; 0 "program=89";
+midi 2 1: 0 "channel=13"; 0 "program=89";
+midi 2 2: 0 "channel=14"; 0 "program=89";
+
+S 2.s;4g;
+T 2.s;4r;
+bar
+
+S 4.e+;8d+;c+;e;g;c+;
+T 1cg;
+bar
+
+S c+;b;a;d;
+A 1d;
+T 2f;a;
+B 1b-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+midi all: 3 "tempo=36";
+S 2g~;{16g;c;d;e;f;g;}6;
+A 2.b-;
+T 2f;4e;
+B 2.c;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+S 4.a;16b;c+;
+A 2c;
+T 2f;
+B f-;e-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 8g+;f+;e+;c+;b;d+;a+;g+;
+A 2a;4d;ad+;
+T f;8a;c+;2f;
+B 2d-;8g-;f-;4b--;
+bar
+
+S bg+;8d+;c+;4;8f+;e+;
+A 8d+f+;c+e+;4e;8g;a;4s;
+T 2s;8g;f;a;c+;
+B 2c-;f-;
+bar
+
+S fd+;8e+;d+;f+;e+;a+;g+;
+A 8c+;b;4g;b;c#+;
+T f;8g;f;g;c+;a;e+;
+B b-;bn-;c;c#;
+bar
+
+S bg+;af+;8c+a+;bg+;f+;e+;
+A s;8e+;d+;4s;g;
+T 8e+;d+;4a;d+;g;
+B d;8;c(n);4b-f;c;
+bar
+
+S 8fd+;ec+;4c+;8;b;db;ca;
+A s;8g;f;4d;s;
+T b;8f;a;f;g;d;e;
+B c;a-;b-;c;
+bar
+
+score time=3/4
+music
+
+S a-f;4.;8r;
+T f-f;4.;8r;
+bar
+
+//
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi all: 0 "tempo=40";
+S ca;4.;8e;a;c+;
+T a-e;2.;
+bar
+
+S fad+;2.gc+;
+A s;f;2e;
+T f;2g;4b;
+B b-;2.c;
+bar
+
+S ega;4.a;8f+;a+;c++;
+A s;2df;4d+;
+T a;2;4f;
+B d;;c;b-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+S 8c++;b+;a+;c+a+;4bg+;
+A 4.d+;s;
+T 4b;8d+;e+;d+;c+;
+B 4.g-;c;
+bar
+
+S 2af+;4r;
+B 2fc+;4r;
+bar
+
+midi all: 0 "tempo=46";
+S f+;8e+;d+;c+;b;
+A 2.a;
+T s;d+;e+;
+B 2.da;
+bar
+
+S a;2g;
+A 2d;8a-;b-;
+T f;2g;
+B 2b-;4g-;
+bar
+
+S e;f;{8g;a;b;}3;
+A 2.c;
+T 2.g;
+B 2c;4b-;
+bar
+
+S 2c+;4f+;
+A g;2f;
+T f;2c+;
+B 2a-;4bn-;
+bar
+
+S f+;e+;d+;
+A 2.fbn;
+T bn;d+;f+;
+B 2.g-d;
+bar
+
+S 2gg+;8d++;c++;
+A f+;e+;s;
+T 2.cb;
+bar
+
+S e+c#++;d+bn+;c#+a+;
+T a;bn;c#+;
+B 2.a-;
+bar
+
+S cn+a+;bg+;af+;
+T r;d~;da;
+B 2.f-;
+bar
+
+S af+;ge+;fd+;
+T r;f~;fd+;
+B 2.b-;
+bar
+
+S c+d+;bd+;ad+;
+T r;f~;fd+;
+B 2.g-;
+bar
+
+S 2g;4c;
+A d;2e;
+T r;2g;
+B 2.c;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 8ca;b-g;2.ca;
+B f-;;;;
+bar
+
+S 8db;ca;2.db;
+B f-;;;;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+S 4.ca;8b-g;a-f;b-g;
+B f-;;;
+bar
+
+S 8db;ca tie;2;
+B f-;;;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+S 4.fd+;4ec+;4.db;
+B f-;;;;
+bar
+ 
+score time=3/4 ; beamstyle=4,4,4
+music
+
+S 4.ca;8a-f;4ca;
+B f-;;;
+bar
+
+////
+
+S 4.b-g;8a-f;4b-g;
+B f-;;;
+bar
+
+S dgb;2cac+;
+B f-;;;
+bar
+
+S 4.f+a+;8e+g+;d+f+a+;e+g+;
+B d-;;;
+bar
+
+S f+a+;d+;8g-e;a-f;
+A s;8g;a;4s;
+B d-;;;
+bar
+
+S cg;4.cc+;8g+;
+B e&-;;;
+bar
+
+S 2c+f#+a+;8bn;c+;
+T e;d;8e;f#;
+B d-;;;
+bar
+
+S 4.dgbn;8a;g;b;
+T 2g;4;
+B g-;;f-;
+bar
+
+S d+;4.c+;8bn;
+A 2.g;
+T 2.g;
+B e-;;;
+bar
+
+S d+;4.c+;8g;
+A 2.g;
+T b-;2c;
+B e&-;;;
+bar
+
+S a;2bn;
+A 2c;4d;
+T e;2f#;
+B 2.d-;
+bar
+
+S 2gbnd+;4r;
+B 2g-dg;4r;
+bar
+
+S 2.gbnd+;
+B 2.g-dg;
+endbar

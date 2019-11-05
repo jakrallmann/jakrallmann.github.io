@@ -1,0 +1,353 @@
+header
+	title (18) "Yearning"
+	title "" "John A. Krallmann (Feb 2003)"
+
+header2
+	title (12) "Yearning - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=2&
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.9
+	scoresep=10,27
+	release=0
+	measnum=y
+
+staff 1
+	vscheme=3f
+staff 2
+	clef=bass
+	vscheme=2f
+
+music
+
+
+midi all: 0 "tempo=66";
+midi 1 1: 0 "channel=11"; 0 "program=50"; 0 "onvelocity=84,74"; 0 "param=10,80";
+midi 1 2: 0 "channel=12"; 0 "program=50"; 0 "onvelocity=74"; 0 "param=10,56";
+midi 2 1: 0 "channel=13"; 0 "program=51"; 0 "onvelocity=74"; 0 "param=10,40";
+midi 2 2: 0 "channel=14"; 0 "program=51"; 0 "onvelocity=82";
+midi 1 3: 0 "channel=11"; 0 "onvelocity=65"; 0 "param=10,26";	// for left hand over right
+
+
+1: 2..g;16b;a;
+1 2: 8r;b-;c;b-;d&;b-;dn;c;
+2: r;d;e;en;
+2 2: 1g-;
+bar
+
+1: 2.g;{8d&+;c+;b;}3;
+1 2: 8r;b-;c;b-;d&;b-;4c;
+2: r;d;e;en;
+2 2: 1g-;
+bar
+
+1: 2g;8a;4g;8f;
+1 2: b-;c;;b-;
+2: f;en;2e&;
+2 2: 1g-;
+bar
+
+1: 1d;
+1 2: 1b-;
+2: a;g;a;g;
+2 2: 1g-d;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8b;4a;8g;
+1 2: 2c;
+2: e;en;
+2 2: 2g-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2d+;g+;
+1 2: 2g;;
+2: f;en;e&;d;
+2 2: 1g-;
+bar
+
+1: 1gg+;
+1 2: d+;c+;2b;
+2: 2b-;8c;d;e;f#;
+2 2: 1e-;
+bar
+
+midi all: 1 "tempo=62";
+1: e;f;g;a;
+1 2: g-;2a-;4e;
+2: 2c;4e;f#;
+2 2: 1f-;
+bar
+
+score release=400
+music
+
+1: 1b;
+1 2: 1d;
+2: 1f(n);
+2 2: 1b-;
+repeatstart
+
+score release=0
+music
+
+midi all: 0 "tempo=78";
+1: g+;f+;2d+;
+1 2: b;a;f#;g;
+2: g-;d;a;b;
+bar
+
+1:d+;c+;d+;8b+;a+;
+1 2: 2g;4;c+;
+2: c+;b;8a;g;4f#;
+2 2: 2e;d;
+bar
+
+1: 1d+;
+1 2: b;c+;b;g;
+2: d+;e+;d+;8a;b;
+2 2: 1g;
+bar
+
+1: 1d+;
+1 2: a;b;2a;
+2: 8c+;4d+;8f+~;;d+;a;f;
+2 2: 1f;
+bar
+
+1: 1c+;
+1 2: 1g;
+2: c+;d+;8c+;b;a;g;
+2 2: 1e;
+bar
+
+midi all:1 "tempo=72"; 3 "tempo=60"; 4 "tempo=40"; 5 "tempo=78";
+1: 2b;a;
+1 2: d;en;g;f#;
+2: b;8c+;b;2a;
+2 2: 1d;
+dblbar
+
+score key=1#
+music
+
+1: b;d+;8a;g;a;b;
+1 2: 1d;
+2: g;f;e;e&;
+2 2: 1g-;
+bar
+
+1: 1d;
+2: a;b;f;g;
+2 2: 1g-;
+bar
+
+1: 4.e;8f;4.g;8a;
+1 2: 1a-;
+2: e;f;e;e&;
+2 2: 1c-;
+bar
+
+midi all: 1 "tempo=72"; 3 "tempo=62"; 5 "tempo=78";
+1: 2a;a#;
+1 2: 2f;;
+2: 2c+;;
+2 2: 2d;;
+repeatend
+
+1: b;g+;d+;b;
+1 2: 1g;
+2: d+;e+;f+;g+;
+2 2: 1g;
+bar
+
+1: b;g;2a;
+1 2: 2e;4g;f;
+2: 2g;c+;
+2 2: 2c;d;
+bar
+
+1: 2g;4;8a;b;
+1 2: f;e;2;
+2: 2b;4a;g;
+2 2: e;d;2c;
+bar
+
+1: 2b;4;8e+;f+;
+1 2: 2e;d#;
+2: g;8a;g;4f#;8g+;f+;
+2 2: 2b-;;
+bar
+
+1: g+;8e+;f+;4g+;8e+;d+;
+1 2: 2b;;
+2: b;8e+;d+;4b;8g+;f+;
+2 2: 2e;d;
+bar
+
+1: e+;8d+;c+;2d+;
+1 2: g;f;8a;g;f;g;
+2: 8d+;c+;4a;g;d+;
+2 2: 2c;b-;
+bar
+
+midi all: 1 "tempo=70"; 3 "tempo=61"; 4 "tempo=54";
+1: 8c+;b;a;g;a;g;8.e;16d;
+1 2: 2e;4ce;s;
+2: g;2e;8g;f;
+2 2: 2a-;d-a-;
+bar
+
+score release=400
+music
+
+midi all: 1 "tempo=54"; 3 "tempo=44"; 5 "tempo=78";
+1: 1e;
+1 2: 2a-;g#-;
+2: 1b-;
+2 2: 1e-;
+dblbar
+
+score key=3#
+	release=0
+music
+
+music
+
+1: 2.c;8d;e;
+1 2: b-;a-;2b-;
+2: 2.s;8f;g;
+2 2: 1a--e-;
+bar
+
+1: 1c;
+2: b;a;g;e;
+2 2: 1a--e-;
+1 3: 2s;[up]4b+?;c++?;
+rom above 1: 3 "L.H.";
+bar
+
+1: f-;a-;4.d;8e;
+2: 2s;4f;g;
+2 2: 1d-a-;
+bar
+
+1: 4.b-;8c;4d;8c+;d+;
+2: a;g;f;8e;d;
+2 2: 1e-b-;
+bar
+
+1: 2e+;4g+;a+;
+1 2: b;2.a;
+2: 2a;e+;
+2 2: 1c;
+bar
+
+1: 2e+;4g+;a+;
+1 2: b;2.a;
+2: 2a;e+;
+2 2: 1cn;
+bar
+
+1: 1e+;
+1 2: b;g;f;g;
+2: 1g;
+2 2: 1b-;
+bar
+
+1: 1c+;
+1 2: g;f;e;f;
+2: 1c+;
+2 2: 1a#-;
+bar
+
+1: 2.fc+;4c++;
+1 2: c;d#;2e;
+2: 1e;
+2 2: 1a(n)-;
+bar
+
+midi all: 1 "tempo=68"; 5 "tempo=78";
+1: 1d#++;
+1 2: 1cn+g+;
+1 3: s;[down]a;g;f;
+2: 1cn+;
+2 2: 1g-d#;
+dblbar 
+
+score key=4&
+music
+
+1: 2a;4e;f;
+1 2: 2f;s;
+2: d-;a-;2f;
+repeatstart
+
+1: 1f+;
+1 2: b;a;g;f;
+2:f-;c;2a;
+bar
+
+1: ce;b-d;c;d;
+1 3: 2s;[up;ho-1]4b?;[]f+?;
+rom above 1: 3 "L.H.";
+2: b-;f;2s;
+bar 
+
+1: 1c;
+1 2: b-;a-;g-;a-;
+1 3: 2s;4g+?;f+?;
+rom above 1: 3 "L.H.";
+2: f-;c;2s;
+bar
+
+1: e+;2.d+;
+1 2: 2f;4en;f;
+2: b-;f;2d+;
+bar
+
+1: bn;c+;en;f;
+2: f-;c;2a;
+bar
+
+1: c+;b;f;g;
+1 2: 1d;
+2: b-;f;8d+;e+;d+;g;
+bar
+
+1: 1f+;
+1 2: 8g;a;g;e;2f;
+2: f-;c;g;a;
+bar ending "1."
+
+1: g+;2f+;4g+;
+1 2: 2d+;b;
+2: b-;f;c+;d+;
+repeatend ending "2."
+
+ital between 1&2: 1 "rit.";
+midi all: 0 "tempo=66"; 3 "tempo=53"; 4 "tempo=38";
+1: g+;2f+;4g+;
+1 2: 2d+;b;
+2: b-;f;c+;d+;
+bar
+
+1: 1c++;
+1 2: 1anf+;
+2: 1an;
+2 2: 1f-c;
+endbar

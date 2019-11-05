@@ -1,0 +1,163 @@
+header
+	title (18) "Gigue"
+	title (12) "(for recorder trio)"
+	title (12)  ""  "John A. Krallmann"
+
+header2
+	title "- \% -"
+
+footer
+	title (12) "\(copyright) Copyright 1988 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	key=1&
+	time=6/8
+	beamstyle=4.,4.
+	barstyle=1-3
+	brace=1-3
+	staffscale=0.9
+	measnum=y
+
+staff 1
+	label="S"
+staff 2
+	label="A"
+	clef=treble8
+staff 3
+	label="T"
+	clef=treble8
+
+music
+
+ifdef PIANO
+	midi 1-3: 0 "channel=4";
+else
+	midi 1-3: 0 "program=74";
+endif
+midi all: 0 "tempo=160";
+
+
+1: 4.s; 4s; 8d;
+boldital above 1: 1 "Allegro";
+2-3: 4.s; 4s; 8r;
+bar
+
+
+1: 4a; 8f; 4b; 8g;
+2-3: mr;
+bar
+
+1: 4c+; 8b; 8a; b; a;
+2-3: mr;
+bar
+
+1: 8g; a; g; f; g; f;
+2-3: mr;
+bar
+
+1: 4e; 16f; e; 4d; 8a;
+2: 4.r; d+;
+3: mr;
+bar
+
+staff 1
+	defoct=5
+staff 2
+	defoct=4
+
+music
+1: 4e; 8c; 4f; 8d;
+2: 4.a-; 4a; 8b;
+3: mr;
+bar
+
+1: 4g; 8f; e; f; e;
+2: 4g; 8d; c; a; g;
+3: mr;
+bar
+
+1: 8d; e; d; c; d; c;
+2: 8f; g; f; e; f; e;
+3: mr;
+bar
+
+1: 4bn-; 16c; b-; 4.a-;
+2: 4.g#; a;
+3: 4.r; 4r; 8d;
+bar
+
+1: 8e; d; c; g; f; g;
+2: 8c+; bn; a; 4.d+;
+3: 4a; 8f; 4b; 8g;
+bar
+
+1: 8e; a; g; f; g; f;
+2: 4.c+; ;
+3: 4c+; 8b; a; b; a;
+bar
+
+1: 8e;f;e;d;e;d;
+2: 4.b;a;
+3: 8g;a;g;f;g;f;
+bar
+
+1: 4.c;4d;8f;
+2: 4.g;f;
+3: 4e;16f;e;4.d;
+bar
+
+1: 4.e;c#;
+2: 8b;c+;b;;a;g;
+3: 8g;a;g;4.a;
+bar
+
+1: 4.d;e;
+2: 8f;b;a;g;c+;b;
+3: 4.b;c+;
+bar
+
+1: 4.c#;4d;8g;
+2: 8b;a;g;4f;8b;
+3: 4.a;8b;a;g;
+bar
+
+1: 4.e;c#;
+2: 8c#+;g;a;b;a;g;
+3: 8a;b;a;g;f;e;
+bar
+
+1: 2.d;
+2: 8f;g;f;4e;16f;e;
+3: 4.d;a;
+bar
+
+staff 1 defoct=4
+music
+1: 4.g;8g;f;g;
+2: 8d;e;f;e;d;e;
+3: 4.b;c+;
+bar
+
+1: 8a;c+;b;a;b;a;
+2: 8f;a;g;f;g;f;
+3: 4.f;b;
+bar
+
+ifdef MIDI
+	1: 16g;a;g;a;g;a;4g;16f;g;
+else
+	1: 4.g;4;16f;g;
+	mussym above 1: 1 "tr" til 3.7;
+endif
+2: 4.f;4g;16f;g;
+3: 4.c+;;
+bar
+
+midi all: 0 "tempo=50";
+1: 4.f;4r;8s;
+2: 4.f;4r;8s;
+3: 4.f;4r;8s;
+mussym above 1-3: 1 "ferm";
+repeatend

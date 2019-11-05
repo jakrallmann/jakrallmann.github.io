@@ -1,0 +1,328 @@
+header
+	title (18) "Renaissance"
+	title (12) "" "John A. Krallmann (March 10, 2002)"
+
+header2
+	title (12) "Renaissance - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	key=2&
+	packfact=1.3
+	scoresep=12,22
+	measnum=y
+	release=0
+
+staff 1
+	vscheme=3f
+staff 2
+	vscheme=2f
+	clef=bass
+
+define PAUSE
+ifdef MIDI
+	1: 8.r;16s;2.;
+	bar
+endif
+@
+
+define NORMAL	"78" @
+define SLOW	"68" @
+define SLOWER	"58" @
+define RITARD
+	midi all: 1 "tempo="+SLOW; 3 "tempo="+SLOWER; 5 "tempo="+NORMAL;
+@
+define PHRASE_END(M)
+	score release=350
+	music
+	RITARD
+	midi 1 1-3 & 2 1-2: 3 "onvelocity=42"; 5 "onvelocity=64";
+	M
+	PAUSE
+	score release=0
+	music
+@
+
+music
+
+midi all: 0 "tempo=82";
+midi 1 1: 0 "channel=11"; 0 "program=79"; 0 "onvelocity=40"; 0 "param=10,40";
+midi 1 2-3: 0 "channel=12"; 0 "program=50"; 0 "param=10,56";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "param=10,72";
+midi 2 2: 0 "channel=14"; 0 "program=49"; 0 "onvelocity=70"; 0 "param=10,88";
+
+S 2.b;4c+;
+A g;f;2g~;
+T 1b~;
+B 1e~;
+bar
+
+S 2.b;8c+;d+;
+A 1g;
+T b;c+;2b;
+B 1e;
+bar
+
+S 1e+;
+A d+;c+;g;a~;
+T 2g;f;
+B 1c;
+bar
+
+S 1d+;
+A 1a;
+1 3: [down]g;en;2f#;
+T 1a;
+B 1d;
+bar
+
+S 1b;
+A 1g;
+T 1d+;
+B 2g;4a;g;
+bar
+
+S 4.a;16b;a;2g;
+A 2f;e;
+T 1b;
+B 1e;
+bar
+
+S d+;c+;b;a;
+A 2.g;4f;
+T 2e+;c+;
+B 1f;
+bar
+
+S 4.c+;16d+;c+;2b;
+A 1f;
+T 2e+;d+;
+B 2.g;8f;e;
+bar
+
+S 1a;
+A 2g;f#;
+T 8a;b;c+;b;4a;d+~;
+B 1d;
+bar
+
+PHRASE_END(
+S 2bn;;
+A 2g;;
+T 2d+;;
+B 2g;g-;
+dblbar
+)
+
+S 2e+;d+;
+A 2.c+;4bn;
+T 2g+;8d+;e+;4f+;
+B 2c+;g;
+bar
+
+S 2c+;g+;
+A 8g;f;4e;c+;bn;
+T 2c+;d+;
+B 2a&;g;
+bar
+
+S 8a&+;g+;4f+;2g+;
+A 2c+;8d+;c+;4g;
+T g+;a&+;c+;8d+;e+;
+B 2f;e;
+bar
+
+S 8g+;f+;4c+;e+;d+;
+A 2a;8g;a;4bn;
+T 2c+;4e+;d+;
+B 2f;g;
+bar
+
+PHRASE_END(
+S 2en+;;
+A 2c+;;
+T 2g+;;
+B 2c+;c;
+bar
+)
+
+PAUSE
+
+S 2c+;;
+A 2a&;4f;e;
+T 2c+;g;
+B 2f;c;
+bar
+
+S 2d+;4c+;bn;
+A 2.a&;4g;
+T 2c+;d+;
+B 2f;g;
+bar
+
+PHRASE_END(
+S 2c+;;
+A 2en;;
+T 2g;;
+B 2c;;
+dblbar
+)
+
+score key=4&
+music
+
+newscore
+
+S 2a;4g;f;
+A 2.f;4;
+T 2c+;4b;a;
+B 1f;
+bar
+
+S 2f;g;
+A e;d;f;e;
+T 2a;b;
+B 2d;e;
+bar
+
+S 2a;4.d+;8c+;
+A g;2.f;
+T 2c+;4b;a;
+B 2f;d;
+bar
+
+S 1b;
+A a;f;2g;
+T 1b;
+B 1e;
+bar
+
+S 2e+;4d+;c+;
+A 2c+;4b;a;
+T 2e+;4c+;dn+;
+B 1a;
+bar
+
+S 1b;
+A 2a;g;
+T 1e+;
+B 2.e;4en;
+bar
+
+S a;b;2c+;
+A [ho+1.5]f;g;b;a;
+1 3: [ho-1.5]1f;
+T 1c+~;
+B 1f~;
+bar
+
+midi all: 1 "tempo="+SLOW; 3 "tempo="+SLOWER; 5 "tempo="+NORMAL;
+S 2c+;b;
+A a;g;2f;
+T 2c+;dn+;
+B 2f;b;
+bar
+
+PAUSE
+
+S 2e+;4dn+;c+;
+A 2g;4b;a;
+T 2b;e+~;
+B 2e;a;
+bar
+
+S b;a;2g;
+A 2.f;4en;
+T e+;dn+;2c+;
+B 2b;c+;
+bar
+
+S 2a;4b;a;
+A 2f;d;
+T 2c+;f;
+B 2f;b-;
+bar
+
+RITARD
+S 2g;an;
+A f;en;2f;
+T 8g;a;4b;2c+;
+B 2c;f;
+dblbar
+
+PAUSE
+PAUSE
+
+score key=2&
+music
+
+S 2c+;;
+A 2e;a&;
+T 2g;c+;
+B 2c;f;
+bar
+
+S e+;d+;2c+;
+A 2g;4b;a;
+T 2b;c+;
+B 2e;f;
+bar
+
+S 2a&;g;
+A f;e;f;e;
+T 2a&;b;
+B 2d&;e;
+bar
+
+PHRASE_END(
+S 2f;a;
+A 2f;;
+T 2c+;;
+B 2f;f-;
+bar
+)
+
+S 2b;g;
+A 2g;e;
+T 2d+;c+;
+B 2g;;
+bar
+
+S b;c+;2d+;
+A 2.g;4f#;
+T d+;en+;2a;
+B 2g;d;
+bar
+
+S 2g+;4f+;e&+;
+A 2b;c+;
+T 2d+;4a&+;g+~;
+B 2g;c+;
+bar
+
+midi all: 1 "tempo="+SLOW; 2 "tempo="+SLOWER;
+S 2d+;2en+~;
+A c+;bn;2c+~;
+T 2g+;~;
+B 2d+;c+~;
+bar
+
+midi 1-2 1-2: 4 "param=10,63";
+S 2e+;s;
+A 2c+;s;
+T 2g+;s;
+B 2c+;s;
+endbar

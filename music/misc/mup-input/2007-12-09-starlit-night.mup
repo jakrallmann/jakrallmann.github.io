@@ -1,0 +1,100 @@
+header
+	title (18) "Starlit Night"
+	title "" "John A. Krallmann (12/9/07)"
+
+header2
+	title (14) "Starlit Night - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	release=0
+	staffscale=0.8
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=40";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 2 1: 0 "channel=12"; 0 "program=1";
+
+rom above all: 1 "Slow and peaceful (\(smup4n) = 40)";
+rom above all: 1 "   ";
+1: 16g+;f+;e+;d+; {8c+;;;}3;a;c;4g;
+2: 8c;g;a-;e;{f-;c;g;}3;16c-;g-;d;e;
+bar
+
+1: 16a-;c;d;f;{8d+;c+;a;}3;d;a-;4b-;
+2: 8f-;c;a;c;{g-;d;f;}3;16a;g;f;g-;
+bar
+
+1: 16b-;with e- below;d;b;{8d+;c+;b;}3;b;c+;4a;
+2: [down]8g#-;[]e;b;e;{a-;e;c+;}3;16f-;a;b;d+;
+bar
+
+1: 16g;c;b-;c;{8a;b;c+;}3;;d+;4;
+2: 8e-;c;f-;c;{g-;d;a;}3;16f+;b;a;g;
+bar
+
+1: 16d+;c+;b;e;{8f++;e++;b+;}3;;e+;4a+;
+2: 8g#-;e;b;d+;{a-;e;c+;}3;16f-;c;d+;a;
+bar
+
+1: 16g+;b;a;g;{8g+;f+;c+;}3;f+;e+;4c+;
+2: 8e-;b-;f-;a;{c-;e+;g;}3;16f+;e+;c+;g;
+bar
+
+//score
+	//scoresep=20,26
+//music
+//newpage
+
+1: 16f;a;b;c+;{8d+;e+;f+;}3;;b;4;
+2: 8d;a;f+;a;{g;d+;f+;}3;16g#;f+;e+;d+;
+bar
+
+1: 16b;c+;b+;a+;{8d++;c++;a+;}3;g+;e+;4g+;
+2: 8a;e+;<<staff clef=treble>>a;e+;{c#;a;e;}3;<<staff clef=bass>>16d;a;e+;f+;
+bar
+
+1: 16f+;e+;d+;c+;{8e+;;d+;}3;c+;b;4;
+2: 8a+;c;b-;f+;{e-;g#+;d+;}3;16f-;c;b;c+;
+bar
+
+1: 16a;b;c+;e+;{8f+;g+;a+;}3;f++;e++;4;
+2: 8f+;a;d-;a-;{f;c+;a+;}3;<<staff clef=treble>>16b-;g;e+;f+;
+bar
+
+1: 16d++;g;a;b;{8d+;c+;g;}3;a;d;4;
+2: 8b;<<staff clef=bass>>g-;e-;c;{f-;c;a;}3;<<staff clef=treble>>16d+;e+;f+;a+;
+bar
+
+staff 2 clef=bass
+music
+
+1: 16f;e;d;c;{8d;e;f;}3;f;c;4e;
+2: 8g-;f;b;d;{c;a;f;}3;16c-;g-;e;g;
+bar
+
+1: 16c+;b;a;g;{8a;f+;e+;}3;d+;g;4e+;
+2: 8f-;c;a;c+;{g-;d;b;}3;16a-;e;d+;c+;
+bar
+
+1: 16a;;b;a;{8c+;;;}3;d+;c+;4e+~;
+2: 8f-;c;a;a&;{f;a;c+;}3;16c-;g-;e;g;
+bar
+
+1: 1e+;
+2: 1c+e+;
+endbar

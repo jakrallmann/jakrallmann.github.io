@@ -1,0 +1,333 @@
+header
+	title (18) "Contentment"
+	title (12) "" "John A. Krallmann (Jan. 25, 2002)"
+
+header2
+	title (12) "Contentment - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (6) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define B 2 2: @
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	key=3&
+	time=6/8
+	beamstyle=4.,4.
+	staffscale=0.9
+	packfact=1.2
+	release=10
+	measnum=y
+
+staff 1
+	vscheme=3f
+
+staff 2
+	vscheme=2f
+	clef=bass
+	timeunit=4.
+
+music
+
+define NORMTEMPO "52" @
+define RITTEMPO "28" @
+define RIT3
+	midi all: 3 "tempo="+RITTEMPO; 4 "tempo="+NORMTEMPO;
+	mussym above all: 3 "ferm";
+@
+define RIT6
+	midi all: 6 "tempo="+RITTEMPO; 7 "tempo="+NORMTEMPO;
+	mussym above all: 6 "ferm";
+@
+define ECHO
+	midi 1 1: 4 "onvelocity=68"; 7 "onvelocity=76,64";
+	midi 1 2 & 2 1: 4 "onvelocity=56"; 7 "onvelocity=64";
+	midi 2 2: 4 "onvelocity=66"; 7 "onvelocity=78";
+@
+define ECHO1
+	midi 1 1: 1 "onvelocity=68"; 4 "onvelocity=76,64";
+	midi 1 2 & 2 1: 1 "onvelocity=54"; 4 "onvelocity=64";
+	midi 2 2: 1 "onvelocity=66"; 4 "onvelocity=78";
+@
+
+midi all: 1 "tempo="+NORMTEMPO;
+midi 1 1: 0 "channel=11"; 0 "program=73"; 0 "onvelocity=76,64"; 0 "param=10,84";
+midi 1 2: 0 "channel=12"; 0 "program=73"; 0 "param=10,44";
+midi 1 3: 0 "channel=12";
+midi 2 1: 0 "channel=12";
+midi 2 2: 0 "channel=13"; 0 "program=73"; 0 "onvelocity=78";
+
+S 4.e;4f;8e;
+A r;4b-;8r;4c;
+B 4g-;8b-;4an-;8f-;
+bar
+
+S 4.g;c+;
+A r;an-;b-;r;en;f;
+B b-;a-;
+bar
+
+S 4.b;a;
+A r;d;e;r;bn-;c;
+B g-;f-;
+bar
+
+S 4.e+;fn;
+A r;f#;g;r;c;e;
+B b-;a-;
+bar
+
+S 4.f;;
+A r;c;d;r;a-;g-;
+B b-;bn-;
+bar
+
+RIT6
+S 4e;8c+;4f;8b;
+A r;g-;d;[ho-1]4.a-;
+1 3: 4.s;[ho+4;down]8e;4d;
+B 4c;8a-;4b-;8b--;
+bar
+
+//
+
+S 4.g;;
+A e;b-;d;r;c;e;
+B e-;a-;
+bar
+
+S 4.e+;8d+;4c+;
+A r;f;g;4.e;
+B e-;4a-;8an-;
+bar
+
+S 4.b;d;
+A a-;c;e;c;b-;a-;
+B b-;b--;
+bar
+
+ECHO
+S 4.e;;
+A 4.g-;;
+B e-;4;8d-;
+bar
+
+S e;g;c+;4.ec+;
+A 4.g-;8b;a;g;
+B c-;a-;
+bar
+
+RIT3
+S 4a-f;8b;4.g;
+A e;4d;8r;b-;d;
+B 4b-;8b--;4.e-;
+bar
+
+S 4.g;e+;
+A r;c;e;r;g;f;
+B a-;e-;
+bar
+
+S 8d+;4c+;4.b;
+A 4e;8c;d;e;d;
+B a-;b-;
+bar
+
+S 4.b;e;
+A 8c;d;a-;g-;a-;b-;
+B b--;e-;
+bar
+
+ECHO1
+S 4.e;8f;;e;
+A 4.g-;a-;
+B e-;4d;8c;
+bar
+
+S 8f;;e;f;;g;
+A 4.d;c;
+B 4b-;8c;4a-;8g-;
+bar
+
+S 8b;4a;8g;4;
+A 4e;8d;f;e;d;
+B 4f-;8b-;bn-;c;d;
+bar
+
+S 8d+;c+;b;4.an;
+A 4.g;8c;d;e;
+B 4e;8en;4.f;
+dblbar
+
+score
+	key=2&
+music
+
+S 4.b;c;
+A 4.d;g-;
+B g;8e;d;c;
+bar
+
+S 4.cf;8b;a;b;
+A 8b-;4a-;4.b-f;
+B 4f;8e;4.d;
+bar
+
+S 8f+;4e+;8d+;c+;g;
+A 4.g;e;
+B e;f;
+bar
+
+score time=3/8
+music
+
+S 8c+;4f+;
+A 4.e;
+B 4.f;
+bar
+
+score time=6/8 ; beamstyle=4.,4.
+staff 2 timeunit=4.
+music
+ 
+ECHO
+S 4.d+b+;;
+B 4.b-;;
+bar
+
+S 8g;b;g;b;g;b;
+A 4.b-;d;
+B g-;f-;
+bar
+
+S 8g;c+;b;a;bn;c+;
+A 4.c;f#;
+B en-;dn;
+bar
+
+S 8c#+;a;c+;d#+;a;d+;
+A 4.f#;;
+B 4.c#-;cn-;
+bar
+
+S 8c#+;a;c+;d#+;a;d+;
+A 4.f#;;
+B 4.c#-;cn-;
+dblbar
+
+score key=4#
+music
+
+S 8e+;d+;b;c+;b;g;
+A 4.g;e;
+B c-;a--;
+bar
+
+RIT3
+S 4f;8b;g;e;f;
+A [ho-1]4.a-;b-;
+1 3: [ho+4]8e;4d;4.s;
+B b--;e-;
+bar
+
+S 8e+;d+;b;;4c+;
+A 4.g;e;
+B c-;4a-;8g-;
+bar
+
+S 4.a+;8g+;f+;c+;
+A 4.c+;a;
+B f-;b-;
+bar
+
+RIT3
+S 8ec+;db;ag+;4.ge+;
+B b-;e;
+bar
+
+ECHO1
+S 4.ge+;g;
+A 4.s;8r;e;b-;
+B e-;e;
+bar
+
+S 4.fb;e+;
+A r;c;b-;r;a;e;
+B d;c;
+bar
+
+S 8a;4g;4a;8c;
+2 1: 4.be+;4c+;8e;
+B b-;f-;
+bar
+
+S 4b-;8a;4b-g;8ca;
+2 1: 4.da;s;
+B b-;4e;8b-;
+bar
+
+score time=3/8 ; beamstyle=4.
+music
+
+S 4.b;
+A 8g;f;e;
+B 4.e-;
+bar
+
+score time=6/8 ; beamstyle=4.,4.
+staff 2 timeunit=4.
+music
+
+S 4.fc+;b-d;
+A 8e;d;c;a-;g-;f-;
+B a-;b-;
+bar
+
+ECHO
+S 4.g-e;;
+B e-b-;;
+bar
+
+S 8f;g;a;f;g;a;
+A 4a-;8c;4a-;8d;
+B 4b-;8;4;8a-;
+bar
+
+S 8b;c+;dn+;fd+;4ec+;
+A 4e;8g;4.s;
+B 4g-;8e-;4a-;8gn-;
+bar
+
+score key=3#
+music
+
+S 8e+;d+;a;4aa+;8gg+;
+A 4a;8d;d+;c+;b;
+B 4f-;8fn-;4e-;8d-;
+bar
+
+S 4ee+;8fabd+;4.ec+;
+A 8b;a;s;b;4a;
+B 4c-;8e-;4a-;8c;
+bar
+
+S 4.fb;8d+;4e+;
+A 8b-;c;d;f;g;d;
+1 3: 4.s;[ho-1]b;
+B d;e;
+bar
+
+ECHO
+midi all: 4 "tempo=26";
+midi 1 1-2: 7 "param=10,63";
+S 4.abe+;ac+e+a+;
+2 1: 4.b;c+;
+B a-;a--;
+endbar

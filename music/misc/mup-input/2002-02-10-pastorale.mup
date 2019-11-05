@@ -1,0 +1,280 @@
+header
+	title (18) "Pastorale"
+	title (12) "" "John A. Krallmann (2/10/02)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (4) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define D 1 1: @
+define S 2 1: @
+define A 2 2: @
+define T 3 1: @
+define B 3 2: @
+
+score
+	staffs=3
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	beamstyle=4,4,4,4
+	vscheme=2o
+	staffscale=0.8
+	packfact=1.1
+	release=10
+	measnum=y
+
+staff 1
+	ifdef MIDI
+		visible=n
+	endif
+	vscheme=1
+	defoct=5
+	label="(2nd time\nonly)"
+staff 3
+	clef=bass
+
+music
+
+midi all: 1 "tempo=96";
+midi 1 1: 0 "channel=14"; 0 "program=79"; 0 "onvelocity=42"; 0 "param=10,86";
+midi 2 1: 0 "channel=11"; 0 "program=73";
+midi 2 2: 0 "channel=12"; 0 "program=73"; 0 "param=10,36";
+midi 3 1: 0 "channel=12";
+midi 3 2: 0 "channel=13"; 0 "program=60"; 0 "onvelocity=56";
+
+define THEME
+D 2g;4a;b; 
+S 1g~;
+A 1e~;
+T r;b-;a-;e-;
+B 1c-~;
+bar
+
+D d+;c+;b;g;
+S g;a;b;c+~;
+A 1e;
+T 1g-;
+B 1c-;
+bar
+
+D 2f;4g;a;
+S c+;2.b~;
+A 1f~;
+T 2r;4g-;a-;
+B 1d-~;
+bar
+
+D d+;g;a;b;
+S 2b;4a;g;
+A 1f;
+T c;2.b-;
+B 1d-;
+bar
+
+D 2c+;4b;e;
+S 1e+~;
+A r;c+;b;g;
+B 1c-~;
+bar 
+
+D 2.g;4e;
+S 1e+;
+A 1e;
+T r;a-;b-;c;
+B 1c-;
+bar
+
+D 2.d+;4g;
+S 1d+;
+A 1a;
+T r;d+;e+;f+;
+B 1f-;
+bar
+
+D e;g;c+;f;
+S c+;b;a;b;
+A 1g;
+T e+;d+;c+;d+;
+B 1g-;
+bar
+
+D 2e;f;
+S 2e+;d+;
+A 2a;b;
+T 1f+;
+B 1g-;
+bar
+
+D 1g;
+S 1c+;
+A 1e;
+T 1g-;
+B 1c-;
+bar
+
+D 2.g;4f;
+S 1e;
+T r;g;a;b;
+B 1c;
+bar
+
+D 2.e;4a;
+S 1e;
+T r;a;b;c#+;
+B 1a-;
+bar
+
+D 2f;g;
+S 1f;
+T r;c(n)+;b;g;
+B 1d;
+bar
+
+D 2.g;4a;
+S 1g;
+A r;c;d&;e;
+B 1e;
+bar
+
+D f;e;d;a-;
+S 1a;
+A r;g;f;c;
+B 1f;
+bar
+
+D 2d;4f;g;
+S r;a;2b;
+A 1d;
+B 1g;
+bar
+
+D c+;b;a;g;
+S e+;d+;2c#+e+;
+A 1e;
+B 1a;
+bar
+
+D f;2g;4b&;
+S f+;e+;2d+;
+A 1b&;
+T 2.f+;4d+;
+B 1g;
+bar
+
+D g;a;c+;f;
+S g+;f+;2c+;
+A 2c+;4g;a;
+T 1f+;
+B 1a;
+bar
+
+D 2.d+;4g;
+S 1d+;
+A a;g;2a;
+T 1f+~;
+B 2.b&;4bn;
+bar
+
+D 2c+;4b&;a&;
+S 2c+;4g+;g#+;
+A 1g;
+T f+;d+;2e+;
+B 1c+;
+bar
+
+D 1f;
+S 1c+a+;
+A r;f;g;a;
+B 1f;
+bar
+
+D f;2.g;
+S a+;2.g+;
+A 2.d+;4c+;
+T 2f+;4d+;e+;
+B 1b&;
+bar
+
+D g;2.a;
+S g+;2.f+;
+A 1c+;
+T 2.f+;4d+;
+B 2a;a&;
+bar
+
+D c;e;d;c;
+S f+;e+;b+;c++;
+A 2.c+;4e+;
+T 2.e+;4a+;
+B 2g;g&;
+bar
+
+D c+;e;f;d+;
+S 1c++;
+A d+;e+;2a+;
+T 1a+;
+B 1f;
+bar
+
+D 2.d+;4r;
+S 1b+;
+A d+;e+;f+;g+;
+T 1f+;
+B 1g;
+bar
+
+D d;e;f;g;
+S d++;c++;b;c+;
+A f+;e+;2a;
+T 1e+;
+B 2.a;4g;
+bar
+
+D 2a;4c+;a;
+S d+;e+;2a+;
+A 2a;c+;
+T 2s;4g+;f+~;
+B 1fc+;
+bar
+
+ifdef SECOND
+  midi all: 1 "tempo=86";
+else
+  midi all: 1 "tempo=90";
+endif
+D 2.d+;4a;
+S d+;e+;2g+;
+A 2a;4c+;b;
+T 1f+;
+B 1g;
+bar
+
+ifdef SECOND
+  midi all: 1 "tempo=54";
+else
+  midi all: 1 "tempo=80"; 5 "tempo=96";
+endif
+D 1c+;
+S 1g+;
+A 1c+;
+T 1e+;
+B 1c;
+ifdef MIDI bar else repeatend endif
+@
+
+ifdef MIDI
+	THEME
+	staff 1 visible=y
+	music
+endif
+
+define SECOND @
+THEME
+
+ifdef MIDI
+midi 1 1 & 2 2: 0 "param=10,63";
+1: r;2.;
+bar
+endif

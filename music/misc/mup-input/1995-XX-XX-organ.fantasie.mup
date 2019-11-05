@@ -1,0 +1,368 @@
+header
+	title (18) "Fantasie for Organ"
+	title (12) "" "John A. Krallmann"
+
+footer
+	title (12) "\(copyright) Copyright 1995 by John A. Krallmann"
+	title (6) ""
+	title (12) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Fantasie - \%"
+
+score
+	staffs=3
+	key=2&
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.95
+	packfact=1.1
+	scorepad=10
+	measnum=y
+
+staff 3
+	clef=bass
+music
+
+midi all: 0 "tempo=150";
+ifdef PIANO
+midi 1: 0 "channel=4";
+midi 2: 0 "channel=8";
+midi 3: 0 "channel=8";
+midi 1: 0 "onvelocity=60";
+midi 2: 0 "onvelocity=70";
+else
+midi 1-2 1-2: 0 "channel=11"; 0 "program=19";
+midi 3: 0 "channel=12"; 0 "program=70";
+endif
+
+define RUN 1: {[with.]16g;[]a;[]b;[]c+;[]d+;[]c+;[]b;[]a;}8,4.;{[]16;[]a;[]b;[]c+;[]d+;[]c+;[]b;[]a;}8,4.; @
+
+ifdef PIANO
+midi 2: 0 "onvelocity=60";
+endif
+
+1-2: mr;
+3: 2.g-~;
+bar
+
+1: mr;
+2: 16g;f#;4g;8fn;e;[with.]d;
+3: 2.g-~;
+bar
+
+1: mr;
+2: 8e;d;c;b-;a-;[with.]b-;
+3: 2.g-~;
+bar
+
+staff 2 clef=bass
+music
+
+1: mr;
+2: 8c+;b;a;g;f#;[with.]g;
+3: 2.g-~;
+bar
+
+1: mr;
+2: 4d;g;f#;
+3: 2.g-~;
+bar
+
+1: mr;
+2: 16g;f#;8g~;2~;
+3: 2.g-~;
+bar
+
+1: mr;
+2: 2g;4r;
+3: 2g-;4r;
+ifdef MIDI pedal below 3: 1; 3.9*; endif
+dblbar
+
+staff 1
+	defoct=5
+	beamstyle=4.,4.
+staff 2
+	clef=treble
+
+music
+
+midi all: 0 "tempo=132";
+ifdef PIANO
+midi 2: 0 "onvelocity=24";
+midi 3: 0 "onvelocity=100"; 0.4 "onvelocity=110"; 2 "onvelocity=100";
+endif
+RUN
+2: 2.gd+g+ tie;
+3: 16g;f#;4g;8fn;e;[with"\(wedge)"]d;
+octave above 1: 1 "8va" til 6m+2.7;
+bar
+
+RUN
+2: 2.gd+g+ tie;
+3: 8e;d;c;b-;a-;[with"\(wedge)"]b-;
+bar
+
+staff 3 defoct=2
+music
+RUN
+2: 2.gd+g+ tie;
+3: 8c+;b;a;g;f#;[with"\(wedge)"]g;
+bar
+
+RUN
+2: 2.gd+g+ tie;
+3: 8f#;g;a;g;f;[with"\(wedge)"]en;
+bar
+
+RUN
+2: 2.gd+g+ tie;
+3: 8d;e&;fn;e;d;[with"\(wedge)"]c;
+bar
+
+RUN
+2: 2.gd+g+ tie;
+3: 8b;a;2g~;
+bar
+
+1: {[with.]16g;[]a;[]b;[]c+;[]d+;[]c+;[]b;[]a;}8,4.;4.r;
+2: 2.gd+g+;
+3: 2.g;
+dblbar
+
+//
+
+staff 1
+	defoct=5
+	beamstyle=4,4,4
+
+music
+
+staff 3
+ifdef MIDI defoct=2 else defoct=3 endif
+
+music
+
+ifdef PIANO
+midi 1: 0 "channel=7"; 0 "onvelocity=50";
+midi 2: 0 "channel=8"; 0 "onvelocity=100";
+midi 3: 0 "channel=8"; 0 "onvelocity=95";
+endif
+1: 2b;4g;
+2: 16g;f#;4g;8fn;e;d;
+3: 2.g-;
+bar
+
+1: 2c+;4f+;
+2: 8e;d;c;b-;a-;b-;
+3: 2c;4a-;
+bar
+
+staff 2 clef=bass
+music
+1: 4e+;8f#;g;a;b;
+2: 8c+;b;a;g;f#;g;
+3: 2.c;
+bar
+
+1: c+;d;r;
+2: 8f#;g;a;g;f;en;
+3: 2.a-;
+bar
+
+1: 2r;8b;c+;
+2: 8d;e&;fn;e;d;c;
+3: 2.g-~;
+bar
+
+1: 4d+;8g;a;c+;d+;
+2: 8b-;a-;g-;f#-;e-;d-;
+3: 2.g-~;
+bar
+
+staff 1 vscheme=2f
+music
+ifdef PIANO
+midi 1 2: 0 "channel=7"; 0 "onvelocity=50";
+endif
+
+1: 8e+;d+;;c+;b;a;
+2: 8c-;d-;4e-;fn-;
+3: 2g-;4f-;
+bar
+
+1: 2.g+~;
+1 2: 8r;d+;b;c+;4d+~;
+2: 2.g-~;
+3: 2.g-~;
+bar
+
+1: 2g+;4r;
+1 2: 2d+;4r;
+2: 2g-;4r;
+3: 2g-;4r;
+ifdef MIDI pedal below 3: 1; 3.9*; endif
+dblbar
+
+//
+
+staff 3
+	defoct=3
+music
+
+ifdef PIANO
+midi 3: 0 "channel=8"; 0 "onvelocity=65";
+endif
+
+1: 2b;4g;
+2: 16g;f#;4g;8fn;e;d;
+3: 8g-;a-;4b-;c;
+bar
+
+1: 2c+;4f+;
+2: 8e;d;c;b-;a-;b-;
+3: 8a-;b-;4c;d;
+bar
+
+staff 2 clef=bass
+music
+1: 4e+;8f#;g;a;b;
+2: 8c+;b;a;g;f#;g;
+3: 8a-;b-;c;b-;a-;g-;
+bar
+
+1: c+;d;r;
+2: 8f#;g;a;g;f;en;
+3: 8a-;g-;f#-;g-;4a-;
+bar
+
+1: 2r;8b;c+;
+2: 8d;e&;fn;e;d;c;
+3: b-;8a-;g-;4f#-;
+bar
+
+1: 4d+;8g;a;c+;d+;
+2: 8b-;a-;g-;f#-;e-;d-;
+3: 8g-;a-;b-;c;4g-;
+bar
+
+1: 8e+;d+;;c+;b;a;
+2: 8c-;d-;4e-;fn-;
+3: 4g-;;8;a-;
+bar
+
+1: 2.g+~;
+1 2: 8r;d+;b;c+;4d+~;
+2: 2.g-~;
+3: 2.b-~;
+bar
+
+1: 2g+;4r;
+1 2: 2d+;4r;
+2: 2g-;4r;
+3: 2b-;4r;
+ifdef MIDI pedal below 3: 1; 3.9*; endif
+dblbar
+
+//
+
+midi all: 0 "tempo=120";
+
+1: [grace]16b;[]c+;2b;[grace]16g;[]a;4g;
+2: 16g;f#;4g;8fn;{e;;d;}3;
+3: {8g-;;a-;}3;4b-;c;
+bar
+
+1: [grace]16c+;[]d+;2c+;[grace]16f+;[]g+;4f+;
+2: {8e;e;d;}3;{c;;b-;}3;{a-;;b-;}3;
+3: {8a-;;b-;}3;4c;d;
+bar
+
+staff 2 clef=bass
+music
+1: [grace]16e+;[]f#+;4e+;{[grace]16f#;[]g;8f#;;g;}3;{[grace]16a;[]b;8a;;b;}3;
+2: {8c+;;b;}3;{a;;g;}3;{f#;;g;}3;
+3: {8a-;;b-;}3;{c;;b-;}3;{a-;;g-;}3;
+bar
+
+1: [grace]16c+;[]d+;4c+;[grace]16d;[]e;4d;r;
+2: {8f#;;g;}3;{8a;;g;}3;{8f;;en;}3;
+3: {8a-;;g-;}3;{f#-;;g-;}3;4a-;
+bar
+
+1: 2r;{[grace]16b;[]c+;8b;;c+;}3;
+2: {8d;;e&;}3;{fn;f;e;}3;{d;;c;}3;
+3: b-;8a-;g-;4f#-;
+bar
+
+1: [grace]16d+;[]e+;4d+;{[grace]16g;[]a;8g;;a;}3;{[grace]16c+;[]d+;8c+;;d+;}3;
+2: {8b-;;a-;}3;{g-;;f#-;}3;{e-;;d-;}3;
+3: {8g-;;a-;}3;{b-;;c;}3;4g-;
+bar
+
+1: {8e+;;d+;}3;{;;c+;}3;{b;;a;}3;
+2: {8c-;;d-;}3;{e-;d-;e-;}3;{fn-;e-;f-;}3;
+3: 4g-;;{8;;a-;}3;
+bar
+
+1: 2.g+~;
+1 2: {8r;d+;;}3;{b;;c+;}3;4d+g tie;
+2: 2.g-~;
+3: 2.b-~;
+bar
+
+1: 2g+;4r;
+1 2: 2d+g;4r;
+2: 2g-;4r;
+3: 2b-;4r;
+ifdef MIDI pedal below 3: 1; 3.9*; endif
+dblbar
+
+staff 1 defoct=4
+music
+
+ifdef PIANO
+midi 1: 0 "channel=8";
+midi 1-3: 0 "onvelocity=100";
+endif
+
+1: 2.be+g+b+ tie;
+2: 2.ee+ tie;
+3: 2.e- tie;
+bar
+
+1: 2.be+g+b+;
+2: 2.ee+;
+3: 2.e-;
+bar
+
+1: 2.ac+f+a+ tie;
+2: 2.ff+ tie;
+3: 2.f- tie;
+bar
+
+1: 2.ac+f+a+;
+2: 2.ff+;
+3: 2.f-;
+bar
+
+1: 2.bnd+g+bn+ tie;
+2: 2.gg+ tie;
+3: 2.g- tie;
+bar
+
+1: 2.bd+g+b+;
+2: 2.gg+;
+3: 2.g-;
+ifdef PIANO
+pedal 3: 1;
+bar
+1-3: mr;
+ifdef PIANO
+pedal 3: 3*;
+endif
+endif
+endbar

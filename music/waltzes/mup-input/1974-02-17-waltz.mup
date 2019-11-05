@@ -1,0 +1,199 @@
+header
+	title (18) "Waltz"
+	title (12) ""  "John A. Krallmann"
+	title (12) " " "Op. 1 No. 5 (2/17/74)"
+
+footer
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	packfact=.75
+	staffscale=0.95
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+ifdef PIANO
+	midi 1-2: 0 "channel=1";
+	midi 1: 0 "onvelocity=78,64";
+else
+	midi 1: 0 "channel=11"; 0 "program=42";
+	midi 2: 0 "channel=12"; 0 "program=21";
+endif
+midi all: 0 "tempo=156";
+midi 2: 0 "onvelocity=44";
+
+1: 2.e+~;
+2: c;eg;;
+bar
+
+1: e+;4.d+;8c+;
+2: c;eg;;
+bar
+
+1: e+;2d+~;
+2: g-;fg;;
+bar
+
+1: d+;4.c+;8b;
+2: g-;fg;;
+bar
+
+1: d+;4.c+;8a;
+2: c;eg;;
+bar
+
+1: 4.e;8f;4g;
+2: c;eg;;
+bar
+
+1: a;4.b;8c+;
+2: c;eg;;
+bar
+
+1: e+;4.d+;8b;
+2: g-;fg;;
+bar
+
+1: 8c+;a;b;g;a;e;
+2: c;eg;;
+bar
+
+1: 8f;g;a;b;c+;d+;
+2: g-;fg;;
+bar
+
+1: 2e+;4a+;
+2: c;eg;;
+bar
+
+1: 4.g+;8f+;4e+;
+2: c;eg;;
+bar
+
+1: 4.d+;8e+;d+;a;
+2: g-;fg;;
+bar
+
+1: c+;e+;g+;
+2: c;eg;;
+bar
+
+1: 8d++;c++;4.;8b+;
+2: g-;fg;;
+bar
+
+1: c++;a+;g+;
+2: c;eg;;
+bar
+
+1: 8g+;f+;e+;d+;c+;b;
+2: g-;fg;;
+bar
+
+1: 2c+;4e+;
+2: c;eg;;
+bar
+
+1: 2d+;4f+;
+2: g-;fg;;
+bar
+
+1: 2.c+;
+2: c;eg;;
+bar
+
+1: c+;f+;a+;
+2: c;fa;;
+bar
+
+1: g+;f+;e+;
+2: c;eg;;
+bar
+
+1: d+;4.e+;8b;
+2: g-;fg;;
+bar
+
+1: 2.c+;
+2: c;eg;;
+bar
+
+1: 8d+;e+;f+;g+;a+;b+;
+2: g-;fg;;
+bar
+
+1: c++;c+;;
+2: c;eg;;
+bar
+
+1: d+;4.e+;8d+;
+2: g-;fg;;
+bar
+
+1: 2.c+;
+2: c;eg;;
+dblbar
+
+1: 2.egc+ tie;
+2: c;eg;;
+bar
+
+1: egc+;2fad+;
+2: g-;fg;;
+bar
+
+1: gc+e+;2c+e+g+;
+2: c;eg;;
+bar
+
+1: bd+f+;gc+e+;fbd+;
+2: g-;fg;;
+bar
+
+1: 2egc+;4gc+e+;
+2: c;eg;;
+bar
+
+1: 2c+e+g+;4e+g+c++;
+2: c;eg;;
+bar
+
+1: 2.e+g+c++;
+2: c;eg;;
+bar
+
+1: 8d+f+g+b+;;4;;
+2: g-;fg;;
+bar
+
+1: [with -]c+e+g+c++;[];[];
+2: [with -]cegc+;[];[];
+bar
+
+1: r;gbd+g+;;
+2: g-;8fg;;4;
+bar
+
+1: r;2egc+;
+2: c;8eg;;4 tie;
+bar
+
+1: 2.egc+ tie;
+2: 2.egc-c-- tie;
+bar
+
+1: 2.egc+;
+2: 2.egc-c--;
+endbar

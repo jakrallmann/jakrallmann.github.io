@@ -1,0 +1,298 @@
+header
+	title (18) "Pastorale"
+	title "" "John A. Krallmann (August 3, 2003)"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=2#
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	packfact=0.95
+	staffscale=0.75
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=84";
+midi 1: 0 "channel=11"; 0 "onvelocity=80,64";
+midi 1 2: 0 "channel=12";
+midi 2 1: 0 "channel=13";
+midi 2 2: 0 "channel=14";
+midi 1 1-2: 0 "program=50";
+midi 2 1-2: 0 "program=50";
+midi 1 1: 0 "param=10,80";
+midi 1 2: 0 "param=10,72";
+midi 2 1: 0 "param=10,56";
+midi 2 2: 0 "param=10,48";
+
+1: 2.defa;
+2: d-;a-;e;
+bar
+
+1: e;d;e;
+1 2: 2.f-a-;
+2: 2b-;4a-;
+bar
+
+1: f;4.g;8a;
+1 2: 2.b-d;
+2: 2g-;4f-;
+bar
+
+1: 2g-b-e;8g;f;
+1 2: d;c;f-c;
+2: 2a-;4a#-;
+bar
+
+1: e;d;8;e;
+1 2: 2.f-b-;
+2: 2b-;4a-;
+bar
+
+1: f;4.e;8b-;
+1 2: 2b-;4g-;
+2: 2e;4d;
+2 2: 2.g-;
+bar
+
+1: 2.g;
+1 2:d;e;8g-;a-;
+2: 2.a-e;
+bar
+
+1: 2a;4;
+1 2: b-;c;g;
+2: 2g;8b;c+;
+2 2: 2.a-;
+bar
+
+1: 2a;4d+;
+1 2: e;2f;
+2: 2a;8d+;c+;
+2 2: 2.d;
+bar
+
+1: d+;4.c+;8d+;
+1 2: 2a;4f;
+2:2.d+;
+2 2: 2f;4b-;
+bar
+
+1: 2b;4;
+1 2: f;e;8d;e;
+2: 2g-;4;
+bar
+
+1: 2a;4g;
+1 2: b-;2c;
+2: 2g;4e;
+2 2: 2.a-;
+bar
+
+1: 2f;4d+;
+1 2: e;2d;
+2: 2.f;
+2 2: 2b-;4a-;
+bar
+
+1: f+;4.e+;8d+;
+1 2: 2.b;
+2:e;b-;g;
+2 2: 2.g-;
+bar
+
+1:e+;d+;e+;
+1 2: 2.g;
+2: b;a;8b;c+;
+2 2: 2.a-;
+bar
+
+1: e+;4.a+;8;
+1 2: 2g;4;
+2: 2b;4c+;
+2 2: 2.d;
+bar
+
+1: 2.fa+;
+1 2:e+;d+;a;
+2: 2.da;
+bar
+
+1: e;b;;
+1 2:2.b-;
+2: 2d;4e;
+2 2: 2.g-;
+bar
+
+1: a;4.g+;8f+;
+1 2: 2.c;
+2: 8g;a;4b;c+;
+2 2: 2.a-;
+bar
+
+midi all: 1 "tempo=76";
+1: e+;d+;e+;
+1 2: 2.g;
+2: b;8e+;d+;4c+;
+2 2: 2.a-;
+bar
+
+midi all: 1 "tempo=65"; 2 "tempo=50";
+1: 2.d+;
+1 2: g;2f;
+2: 2.da;
+repeatstart
+
+midi all: 0 "tempo=78";
+midi 1 1: 0 "onvelocity=80,64";
+1: 2.ff+;
+2 1: a;e+;d+;
+2 2: 2.d;
+bar
+
+1: 2ee+;4ca;
+2 1: b;a;g;
+2 2: 2c;4a-;
+bar
+
+1: d+;4.c+;8d+;
+1 2: 2.d;
+2 1: 2f;4g#;
+2 2: 2.b-;
+bar
+
+1: 2e+;4a;
+1 2: 2.g;
+2 1:b;a;g;
+2 2: 2.c;
+bar
+
+1: 2f;4a;
+1 2: e;2d;
+2: 2.da;
+bar
+
+1: 2a;8e;f;
+1 2: e;2d;
+2: 2.cna;
+bar
+
+1: 2a;4g;
+1 2:2.d;
+2: a;2g;
+2 2: 2.b-;
+bar
+
+1: g;d;e;
+1 2: 2.d;
+2: 2.b&-g;
+bar
+
+1: g#;a;;
+1 2: 2.df;
+2: 2.a-f;
+bar
+
+1: a#;b;f+;
+1 2: 2.df;
+2: 2.g#-f;
+bar
+
+midi all: 1 "tempo=75";
+1: f+;e+;b;
+1 2: 2.eb;
+2: 2.g(n)-d;
+bar
+
+midi all: 1 "tempo=60"; 2 "tempo=48"; 3 "tempo=72"; 4 "tempo=76";
+1: db&;ca;a-;
+2: 2.a-e;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2f;8g#;a;
+1 2: e;2d;
+2: 2.d-a-;
+bar
+
+1: 2g#;8a;b;
+1 2: f;2e;
+2: 2.e-b-;
+bar
+
+staff 1 clef=treble
+music
+
+1: d;4.a;8b;
+1 2: 2.a-;
+2: 2f;4fn;
+2 2:2.a-;
+bar
+
+1: 2a;4e;
+1 2: d;2c;
+2: 2.a-e;
+bar
+
+1: e+;d+;8a;b;
+1 2:2fa;4fn;
+2: 2.d-a-;
+bar
+
+1: 2ec+;8d#+;e+;
+1 2: g#;2a;
+2: 2.e-c;
+bar ifdef MIDI ending "1." endif
+
+define ENDING
+midi all: 1 ifdef SECOND "tempo=68"; else "tempo=74"; endif
+1: e+;d(n)+;8a;b;
+1 2: 2.f;
+2: 2.d-a-;
+bar
+
+midi all: 1 ifdef SECOND "tempo=62"; else "tempo=70"; endif
+1: b;4.a;8g#;
+1 2: 2.d;
+2: f;fn;e;
+2 2: 2.e-;
+bar
+
+midi all: 1 ifdef SECOND "tempo=52"; 3 "tempo=46"; else "tempo=65"; endif
+1: 2.a;
+1 2: 2.d;
+2: 2f;4fn;
+2 2: 2.a-;
+bar
+
+ifdef SECOND
+  score
+    release=200
+  music
+endif
+midi all: 1 ifdef SECOND "tempo=24"; else "tempo=60"; endif
+midi 1: 1 "onvelocity=52";
+1: 2.a+;
+1 2: 2.c;
+2: 2.e;
+2 2: 2.a-;
+@
+ENDING
+repeatend ifdef MIDI ending "2."
+  define SECOND @
+  ENDING
+  endbar
+endif

@@ -1,0 +1,192 @@
+header
+	title (18) "Little Fugue"
+	title (12)  "" "John A. Krallmann (9/90)"
+
+footer
+	title (12) "\(copyright) Copyright 1990 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Little Fugue - \%"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	scale=0.9
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=150";
+ifdef PIANO
+	midi 1-2 1-2: 0 "channel=8";
+else
+	midi 1-2 1-2: 0 "program=70";
+endif
+
+1 1: a;8c+;b;4c+;a;
+2 1: mr;
+rom 1: 0 "(\(smup4n) = 120)";
+bar
+
+1 1: b;g#;2e;
+2 1: mr;
+bar
+
+1 1: b;8d+;c+;4d+;b;
+2 1: mr;
+bar
+
+1 1: c+;e+;2a;
+2 1: mr;
+bar
+
+1 1: d+;8f+;e+;4f+;d+;
+2 1: mr;
+bar
+
+1 1: e+;c+;g#;a;
+2 1: mr;
+bar
+
+1 1: e;8d+;c+;4d+;b;
+2 1: mr;
+bar
+
+1 1: 1a;
+2 1: mr;
+bar
+
+1 1: b;e+;;g+;
+1 2: e;8g;f#;4g;e;
+2 1: mr;
+bar
+
+1 1: a;f#+;d#+;a;
+1 2: f#;d#;2b-;
+2 1: mr;
+bar
+
+1 1: a;d#+;f#+;a+;
+1 2: f#;8a;g;4a;f;
+2 1: mr;
+bar
+
+1 1: b;d#+;f#+;e+;
+1 2: g;b;2e;
+2 1: mr;
+bar
+
+1 1: c+;a+;;;
+1 2: a;8c+;b;4c+;a;
+2 1: mr;
+bar
+
+1 1: d#+;b;a;g;
+1 2: b;g;d#;e;
+2 1: mr;
+bar
+
+1 1: f#;d#+;;;
+1 2: b-;8a;g;4a;f#;
+2 1: mr;
+bar
+
+1 1: 1e+;
+1 2: 1e;
+2 1: mr;
+bar
+
+1 1: c+;a;e+;a+;
+1 2: e;;a;c+;
+2 1: a;8c+;b;4c+;a;
+bar
+
+1 1: d+;e+;;g#+;
+1 2: g#;b;8d+;c+;4b;
+2 1: b;g#;2e;
+bar
+
+1 1: e+;g#+;;;
+1 2: g#;f+;e+;d+;
+2 1: b;8d+;c+;4d+;b;
+bar
+
+1 1: e+;a+;;e+;
+1 2: a;8c+;d+;4c+;a;
+2 1: c+;e+;2a;
+bar
+
+1 1: f+;;a+;;
+1 2: a;d+;;b;
+2 1: d+;8f+;e+;4f+;d+;
+bar
+
+1 1: c+;e+;;c+;
+1 2: a;;b;e;
+2 1: e+;c+;g#;a;
+bar
+
+1 1: d+;f+;e+;g#+;
+1 2: g#;;;b;
+2 1: e;8d+;c+;4d+;b;
+bar
+
+1 1: 1a+;
+1 2: 1c+;
+2 1: 1a;
+bar
+
+1 1: e+;;;g+;
+1 2: g;8b;a;4b;;
+2 1: b;e+;;g+;
+2 2: e;8g;f#;4g;e;
+bar
+
+1 1: d#+;f#+;2;
+1 2: a;c+;b;a;
+2 1: a;f#+;2;
+2 2: f#;d#;2b-;
+bar
+
+1 1: b;d#+;;f#+;
+1 2: a;8c+;b;4f#;a;
+2 1: d#+;b;b;d#+;
+2 2: f#;8a;g;4a;f;
+bar
+
+1 1: b;d#+;f#+;e+;
+1 2: g;a;2b;
+2 1: e+;d#+;a+;g+;
+2 2: g;b;2e;
+bar
+
+1 1: e+;a+;e+;a+;
+1 2: c+;8e+;d+;4a;c+;
+2 1: e+;a+;e+;;
+2 2: a;8c+;b;4c+;a;
+bar
+
+1 1: d#+;e+;f#+;e+;
+1 2: a;b;a;g;
+2 1: f#+;b;;e+;
+2 2: b;g;d#;e;
+bar
+
+1 1: d#+;;f#+;d+;
+1 2: a;c+;;8b;a;
+2 1: f#+;a+;f+;;
+2 2: b-;8a;g;4a;f#;
+bar
+
+1 1: 1e+;
+1 2: 1b;
+2 1: 1g+;
+2 2: 1e;
+endbar

@@ -1,0 +1,172 @@
+header
+	title (18) "Moonbeams"
+	title (12) "" "John A. Krallmann (January 13, 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+define PAUSE
+	ifdef MIDI
+		score time=1/32
+		music
+		1:mr;
+		bar
+		score time=4/4
+		music
+	endif
+@
+
+score
+	staffs=2
+	vscheme=2o
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.75
+	pedstyle=pedstar
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi 1-2 1-2: 0 "channel=11"; 0 "program=4"; 0 "onvelocity=78";
+
+S 2.c;4g;
+B c-;g-;2e;
+bar
+
+S 4.g;16a;g;4.f;16c;e;
+B f-;c;2a;
+bar
+
+S 4.d;8e;f;4.g;
+B g-;d;a;8c+;b;
+bar
+
+S 8fd+;4ec+;8eg tie;2;
+B 2.c;4b-;
+bar
+
+S 8fd+;4ec+;8ce tie;;f;4g;
+B 2.a-;4g-;
+bar
+
+S 8b;4a;8d~;4;f;
+A 4.c;8a-~;2;
+B 1f-;
+bar
+
+S 8a;4g;8d~;4;c;
+A 4.c;8g-~;2;
+B 1e-;
+bar
+
+S 2a-cd;cdfa;
+B 2.f-;4;
+bar
+
+S 1def#g#b tie;
+B 2e-;b-;
+bar
+
+S 1defgb;
+B e;d;8c;4.b-;
+bar
+
+S 4.ec+;8ca tie;;db;4ec+ tie;
+B 1a-e;
+bar
+
+S 4.ec+;8ca tie;;db;4ec+ tie;
+B 1g-e;
+bar
+
+S 4.ec+;8fd+ tie;4;ec+;
+T 1a~;
+B 1f-;
+bar
+
+S 1dab;
+T 4.a;8g~;4;d;
+B 1g-;
+bar
+
+S 2.e;4a;
+A 4.d;8c~;2;
+T 1e;
+B 2.a-;4g-;
+bar
+
+S 2.a;4e;
+A 1c;
+T 2g;f;
+B 1f-;
+bar
+
+S 1d;
+A 2c;b-;
+T 2a;g;
+B 1g-;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=69";
+S 8a-;d;e;g;a;d+;e+;g+;
+B 1a--~;
+pedal below 2: 1;
+bar
+
+S 1a+;
+B 1a--;
+bar 
+
+define M 16d;e;a;e; @
+
+midi 1 1-2: 1 "onvelocity=52";
+S M M M M
+B mr;
+bar
+
+S M M M M
+B 2g-;a-;
+bar
+
+S M M M M
+B 1d;
+bar
+
+S M M M M
+B 1g-;
+bar
+
+S M M M M
+B mr;
+bar
+
+S M M M M
+B 1f#;
+bar
+
+S M M 8d;e;a;e;
+B mr;
+bar
+
+S 8d;e;a;e;d;e;a;e;
+B mr;
+bar
+
+S 1def#a tie;
+B 1d-~;
+bar
+
+S 1defa;
+B 1d-;
+endbar

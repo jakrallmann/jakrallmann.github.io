@@ -1,0 +1,125 @@
+header
+	title (18) "Raindrop Lullaby"
+	title "" "John A. Krallmann (2/4/06)"
+
+footer
+	title (12) "\(copyright) Copyright 2006 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.95
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=64";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2s;8;g;a;c+;
+2: 2s;8;4.r;
+bar
+
+1: 2d+~;8d+;16en+;f+;e+;d+;c+;g;
+1 2: 8r;a;g;f;2en;
+2: b-;f;c;g;
+bar
+
+1: 2a~;8a;;b;f;
+1 2: 8r;g;f;en;4.d;8f~;
+2: d;a;b-;g;
+bar
+
+1: 4.g;8g#;2a~;
+1 2: 8f;;en;d;8c;c#;d;c;
+2: c;g;f-;c;
+bar
+
+1: 8a;;2~;8;c+;
+1 2: c(n);8;d;e;d;4a-;
+2: a;f#-;d;f#;
+bar
+
+1: 8b;a;4.g;8d;;e;
+1 2: 1d;
+2: g-;d;b;g#-;
+bar
+
+1: 4.f;8a&;4.g;8;
+1 2: 2c;8bn-;c;4d;
+2: 8d;e;4f;g-;d;
+bar
+
+1: 8g;;;a;4.b;8d+;
+1 2: bn-;2.c;
+2: f-;en-;c;g;
+bar
+
+1: 8c+;b;g#;a;4.;8;
+1 2: 8d;en;4d;2c;
+2: c-;f-;c;f;
+bar
+
+score time=5/4 ; beamstyle=2,4,2
+music
+
+1: 8a;b;c+;d+;e+;d+;c+;b;a;g;
+1 2: c;2d;;
+2: f#-;d;a;g-;b;
+bar
+
+score time=4/4
+music
+
+1: 8f;e;d;c;b-;a-;b-;g;
+1 2: 1g-;
+2: e-;c;d;c;
+2 2: 2s;en-;
+bar
+
+1: 8b<>down bm;a ebm; a<>down bm; g ebm; g<>down bm;g& ebm; g<>down bm;f ebm;
+//phrase above 1: 1 til 1.5; 2 til 2.5; 3 til 3.5; 4 til 4.5;
+1 2: 1c;
+2: 1f-e;
+ital between 1&2: 1 "rit. e dim.";
+bar
+
+staff 1 clef=bass
+music
+
+1: 2d+~;8;;f+;b;
+1 2: 8a;g;;f;2g;
+2: 2b-;e-;
+ital between 1&2: 1 "a tempo";
+boldital between 1&2: 1 "pp";
+bar
+
+score time=5/4 ; beamstyle=2,2,4
+music
+
+1: d+;8c+;;;;;;f+;a;
+1 2: 8a;f;4e~;2~;4;
+2: 1f-~;4;
+ital between 1&2: 2 "rit";
+bar
+
+score time=4/4
+music
+
+1: 2c+;b;
+1 2: 2e;d;
+2: 8r;a-;g-;f-;2f-;
+2 2: 2b--;;
+endbar

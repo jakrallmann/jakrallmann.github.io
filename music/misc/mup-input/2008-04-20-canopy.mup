@@ -1,0 +1,195 @@
+header
+	title (18) "Canopy"
+	title "" "John A. Krallmann (4/20/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+
+midi all: 1 "tempo=98";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+
+1: d+;e+;d+;g;a;b;
+2: g-;d;
+bar
+
+1: c+;d+;c+;e;f;g;
+2: e-;c;
+bar
+
+1: a;b;a;bn-;c;f;
+2: f-;c;
+bar
+
+1: c#;d;f;c#+;d+;f+;
+2: b-;f;
+bar
+
+1: f+;g+;d+;f#;g;e+;
+2: e;b;
+bar
+
+1: en+;f+;c+;en;f;c+;
+2: d;a;
+bar
+
+1: c+;d+;b;d;g;a;
+2: g-;d;
+bar
+
+1: a;b;d;c;g-;g;
+2: e-;b-;
+bar
+
+1: g;f;e+;;d+;c+;
+2: f-;a;
+bar
+
+1: d+;g;d+;a+;g+;d+;
+2: g-;b;
+bar
+
+1: f+;e+;d+;g;d++;c++;
+2: c;e+;
+bar
+
+1: b+;a+;g+;a+;d+;a+;
+2: d;f#+;
+bar
+
+1: bn+;d+;b+;c++;b+;c++;
+2: g-;d;
+bar
+
+1: d++;g+;d++;e+;g+;e+;
+octave above 1: 4 "8va" til 6.5;
+2: bn;c+;
+bar
+
+1: d++;g+;d++;c++;d+;c++;
+2: b(&);a;
+bar
+
+1: b+;d+;b+;a+;d+;a+;
+2: g;f;
+bar
+
+1: g+;b;f#+;g+;b;a+;
+2: en;c;
+bar
+
+1: g+;f+;e+;g;g&;f;
+2: f-;a;
+ital between 1&2: 4 "rit.";
+bar
+
+1: d+;f+;g+;a+;g+;d+;
+2:b-;f;
+ital between 1&2: 1 "a tempo";
+bar
+
+1: e+;g;d+;e+;e++;b+;
+2: c;g;
+bar
+
+1: c++;b+;a+;g+;f+;e+;
+2: f-;c;
+bar
+
+1: g;g&;f;f+;gn;e+;
+2: a; e+;
+bar
+
+1: d+;d;a;g;d;g;
+2: b-;f;
+bar
+
+1: f;en;f;;b-;a;
+2: d;d-;
+bar
+
+1: g;b-;f+;e+;g;g&;
+2: e-;b-;
+bar
+
+1: f;a-;e+;d+;f;c+;
+2: d-;a-;
+bar
+
+1: c+;b;d;a;g;d;
+2: g-;d;
+bar
+
+1: f;g-;e;f+;e+;g;
+2: e-;b-;
+bar
+
+1: d+;e;c+;f+;e;a+;
+2: f-;a;
+bar
+
+1: b+;a+;g+;a;g;d;
+2: g-;b;
+bar
+
+1: a+;g+;d+;a;g;d;
+2: f-;b;
+bar
+
+1: g+;d+;b;g;d;e;
+2: e-;b;
+bar
+
+1: f+;c+;b;b+;c++;d++;
+2: d-;f;
+bar
+
+1: d++;c++;b+;e+;b+;c++;
+2: e-;g+;
+bar
+
+1: d++;c++;b+;e+;b+;c++;
+2: e-;c+;
+bar
+
+1: c++;d+;f+;b+;c++;d++;
+2: b--;d+;
+bar
+
+1: c++;d+;b+;;c++;d++;
+2: b--;f;
+bar
+
+1: c++;b+;g&+;e+;g+;b+;
+2: e-;g&;
+bar
+
+1: c++;b+;g&+;e+;g+;b+;
+2: c+;g&+;
+bar
+
+1: 4.c++;d++~;
+2: 8b--;f-;d;with a above; with f+ above; with a+ above;
+bar
+
+1: 2.d++;
+2: [ho+1.5] 2.with d++ above;
+endbar

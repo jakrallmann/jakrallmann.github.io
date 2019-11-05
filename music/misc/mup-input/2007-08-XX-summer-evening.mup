@@ -1,0 +1,274 @@
+header
+	title (18) "Summer Evening"
+	title "" "John A. Krallmann (Aug 2007)"
+
+header2
+	title (12) "Summer Evening - \%"
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=5/4
+	beamstyle=4,4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	staffsep=15
+	staffscale=0.95
+	scoresep=10,28
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=76";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 4.a;8c;d;f;a;en+;d+;a;
+2: f-;a;c;d-;en;
+bar
+
+1: 4.b;8c+;4.a;8b;c+;16e+;d+;
+1 2: 8f;en;4d;8e;d;2f#;
+2: g-;d;d-;a-;f#;
+bar
+
+1: c+;b;a;g;8a;b;
+1 2: 8r;4e;d;c;4.b-;
+2: g-;d;b;e-;b-;
+bar
+
+1: a;8f;a;4g;8e;f;g;b;
+1 2: 8r;4.a-;8r;b-~;2;
+2: d-;a-;e-;b-;g;
+bar
+
+1: f+;d+;a+;8b+;a+;g+;f+;
+1 2: 8r;4a;f;4.d+;4r;
+2: d-;a-;f;a;f+;
+bar
+
+1: en+;f+;g+;8b+;a+;f+;d+;
+1 2: 8r;4g;f;8en;2d;
+2: a-;en;c#+;d-;g;
+bar
+
+1: a;f+;8g+;f+;e+;d+;4b;
+1 2: a;8f;g;b;a;g;e;4d;
+2: a;8d;c;4e-;b-;g;
+bar
+
+1: 4.ec+;8f+;c+;f;d;e;b;c+;
+1 2: 8g;g&;4f;2.s;
+2: f-;a;e+;c+;8g;f;
+bar
+
+1: 8d+;c+;4b;a;8;g;4;
+1 2: 8f;e;4d;;b-f;b-e;
+2: b--;8a;g;4f;e;c;
+bar
+
+1: 8f;g;a;b;c+;e+;a+;g+;f+;c#+;
+1 2: a-e;e;g;8c+;a;g;a;
+2: f-;8c+;b;a;f;e;f;a;f+;
+bar
+
+1: 8d+;f+;4;d+;8;c+;4;
+1 2: 8f;c+;b;a;4f;8g;e;4;
+2: b--;d;a;e-;g;
+bar
+
+1: f;g;a;8b;c+;d+;e+;
+1 2: 8a-;b-;4a-;2e;4f;
+2: f-;c;f;a;c+;
+dblbar
+
+score key=3&
+music
+
+1: 2f+~;8;e+;d+;f+;c++;b+;
+1 2: 8c+;d+;4b;2a;4d+;
+2: b--;d+;c+;b;a;
+bar
+
+1: b+;g+;e+;8a+;g+;f+;e+;
+1 2: 8d+;f+;e+;d+;c+;g;f+;e+;g;a;
+2: g-;c;b;f-;c;
+bar
+
+1: 2.d+;8e+;f+;g+;e+;
+1 2: 8a;c+;b;a;g;f;2g;
+2: b-;f;d+;c-;c+;
+bar
+
+1: 2c+~;8;a;g;a;b;c+;
+1 2: 8e;f;g;e;2.c;
+2: a--;f;a;e;c;
+bar
+
+1: 8c+;b;4.c+;8b;c+;d+;e+;f+;
+1 2: 2d;a;4f;
+2: b--;a;f;d;b-;
+dblbar
+
+score key=4&
+music
+
+1: 8g+;f+;e+;d+;c+;a;f;g;a;b;
+1 2: 8b;a;g;f;d;c;;b-;a-;g-;
+2: e-;b-;f;d-;b-;
+bar
+
+1: 4.e;8c;b-;c;<<staff clef=bass>> 4.a;<<staff clef=treble>> 8a;
+1 2: 8g-;b-;2a-;4f;e;
+2: c-;f-;e-;d-;c-;
+bar
+
+1: 8d+;c+;b;a;4.g;8a;b;c+;
+1 2: 8f;e;c;d;f;b-;2e;
+2: b--;f-;e-;b-;g;
+bar
+
+1: 4.c+;8dn+;en+;f+;g+;a+;b+;c++;
+1 2: 8g;a;4f;c+;b;c+;
+2: f-;c;a;c;f-;
+bar
+
+1: 4.f+;8d+;c+;b;c+;d+;f;a;
+1 2: 8ac+;b;4a;f;e;d;
+octave above 1: 1 "8va" til 5.8;
+2: d-;a-;f;a-;d-;
+bar
+
+1: 4.b+;8c++;d++;e++;d++;c++;b+;a+;
+1 2: 8f+;g+;4e+;8f+;g+;f+;e+;d+;c+;
+2: e-;b-;g;a-;f;
+bar
+
+1: c++;a;8g;f;g;f;g;f;
+1 2: e+;c;8e;d;e;d;e;d;
+2: a-;e;d-;a-;f;
+bar
+
+1: 4.f;8g;4a;8b;a;b;d+;
+1 2: 4.d;8e;4f;8g;f;g;e;
+2: d-;a-;f;e-;b-;
+bar
+
+1: 2c+~;8;d+;e+;f+;d++;c++;
+1 2: 4.an;8g;4a;f;8f+;e+;
+2: f-;c;an;c;f-;
+bar
+
+1: 4.c++;8b+;2.f+;
+1 2: 2d+~;8;d;e;f;b;a;
+2: b--;f-;d;b;f-;
+dblbar
+
+score key=5&
+music
+
+1: 4.a;8g;4g+;a+;8b+;e++;
+1 2: 2b-;2.s;
+2: 2s;8d+;b;c+;d+;4e+;
+2 2: e-;b-;e;d;c;
+bar
+
+1: 4.g+;8f+;2;8d+;c+;
+1 2: 2an;8e;f;g;c;f;e;
+octave above 1: 1 "8va" til 5.8;
+2: f-;c;an;c;e+;
+bar
+
+1: 4.c++;8b+;a+;g+;d+;e+;f+;g+;
+1 2: 8d+;f;4b;2g;4e;
+2: b-;f;e-;b-;g;
+bar
+
+1: 4.f+;8c+;4e+;8c+;d+;e+;f;
+1 2: 8an;e;4g&;f;e;c;
+2: f-;c;an;c;f-;
+bar
+
+1: 4.c+;8d+;2b;8f;g;
+1 2: 8e;f;4g;8d;b-;c;d;;e;
+2: b--;f-;d;f-;e-;
+bar
+
+1: 4.e+;8a;a+;g+;f+;e+;d+;e+;
+1 2: g;c;8c+;a;b;g;4e;
+2: a--;e-;a;c+;a-;
+bar
+
+1: 4.f+;8c+;4.b;8c+;d+;e+;
+1 2: a;c;8a;d;4g;e;
+2: d-;a-;g-;b;d;
+bar
+
+1: 8e+;d+;c+;d+;4e+;8;d+;c+;d+;
+1 2: g;e;8a;g;4;e;
+2: a-;e;c+;an-;f;
+bar
+
+1: 4.c+;8bn;4b&;8a;g;d;e&;
+1 2: e;e&&;d;b-;;
+2: b-;f;b;g-;d;
+bar
+
+1: 4.g;8f;4;d+;c+;
+1 2: 2an-~;8;c;4f;e;
+2: f-;c;f;8an;gn;f;c;
+bar
+
+1: 4.c+;8b;4;a;g;
+1 2: e;e&&;d;c;b-;
+2: b-;f;b;g-;d;
+bar
+
+1: 4.an;8b;4c+;d+;f+;
+1 2: c;g;f;8;gn;4an;
+2: f-;c;e+;d+;c+;
+bar
+
+1: 4.g+;8f+;4g+;b+;g+;
+1 2: b;a;8b;e+;g+;f+;b;c+;
+2: e-;b-;d+;e+;c+;
+bar
+
+1: 4.f+;8e+;4d+;e+;8g;a;
+1 2: 8d+;c+;4b;8f;d;4g;a-;
+2: b--;f-;b-;e-;c;
+bar
+
+1: 4.f;8g;4a;b;e+;
+1 2: a-;c;8e;d;a;d;f;g;
+2: d;e;f;g;b;
+bar
+
+1: a+;g+;e+;d+;;
+1 2: b;;g;;;
+2: e+;d+;a;b;an;
+bar
+
+1: c+;d+;2f+;4c+;
+1 2: g;;2a;4g;
+2: a;b;2c+;4a;
+bar
+
+1: 2f;4;8b;c+;d+;e+;
+1 2: 2a-d;b-d;4e;
+2: 2d;g-;4;
+bar
+
+1: 2.g+;2f+;
+1 2: 2.a~;2;
+2: 2.d-~;2;
+endbar

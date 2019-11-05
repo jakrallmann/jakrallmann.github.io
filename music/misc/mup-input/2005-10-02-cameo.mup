@@ -1,0 +1,169 @@
+header
+	title (18) "Cameo"
+	title "" "John A. Krallmann (10/2/05)"
+
+header2
+	title (12) "- \% -"
+
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	key=1&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=80, 60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=60";
+
+1: 2.g;8f;e;
+1 2: r;8d;c;2d;
+2: r;b;2;
+2 2: 1c;
+bar
+
+1: c;8c+;d+;4f+;e+;
+2: a-;f;2c+;
+bar
+
+1: 8e+;d+;g;a;4.b;8a;
+2: b-;f;2d+;
+bar
+
+1: 2.g;8a;b;
+1 2: f;8e;d;2e;
+2: c;g;2b;
+bar
+
+1: 2c+;4.f+;8e+;
+1 2: 8g;4.f;2a;
+2: a-;f;c+;c#+;
+bar
+
+1: 1d+;
+1 2: 8a;4g;8f;4d;f;
+2: b-;f;2b;
+bar
+
+1: 8d+;4c+;8b;4g;g#;
+1 2: 2e;d;
+2: c;g;2b;
+bar
+
+1: 8g#;a~;2.;
+1 2: 2c;4d;c;
+2:f-;c;g#;a;
+bar
+
+1: 8a;g~;2;4f+;
+1 2: 2d;b-;
+2: b-;f;2g;
+bar
+
+1: 8g;f~;2.;
+1 2: 2a-;4b-;a-;
+2: f-;c;d;c;
+bar
+
+1: 2d;8;c;d;e;
+2: 8a;g;4f;2e;
+2 2: 2b-;c-;
+bar
+
+1: 1f;
+1 2: a-;b-;bn-;c;
+2: f-;g-;g#-;a-;
+bar
+
+1: 8fd+;e&c+;db;enc+;4fd+;db;
+2: b-;f;b;f;
+bar
+
+1: 8ec+;db;ca;db;4ec+;e&c+;
+2: a-;e;a;g;
+dblbar
+
+score key=2&
+music
+
+1: 8c+;b;a;b;c+;b;a;b;
+1 2: 2d;4e;c;
+2: f#-;d;f#;d;
+bar
+
+1: a;2.g;
+1 2: 2b-;4a-;b-;
+2: g-;d;c;d;
+bar
+
+1: c;2c;4;
+1 2: 1g-;
+2: e-;b-;2g+;
+bar
+
+1: 2.c;4;
+1 2: 1g-;
+2: e-;b-;2g+;
+bar
+
+1: c;2b-;4;
+1 2: 1f-;
+2: d-;b-;2f+;
+bar
+
+1: 2.b-;4f-;
+1 2: 1f-;
+2: d-;b-;2f+;
+bar
+
+1: 2.g-;4d;
+2: e-;b-;2e+;
+bar
+
+1: 2.c;4a;
+2: f-;c;2f+;
+bar
+
+1: 1g~;
+2: g-;d;b;a;
+bar
+
+1: 1g;
+2: 1g;
+bar
+
+midi all: 1 "tempo=88";
+1: 2.g-;4d;
+2: e-;b-;2e+;
+bar
+
+midi all: 3 "tempo=60";
+1: 2.c;4a+;
+2: f-;c;2f+;
+bar
+
+1: 1d+bn+;
+2: 1g+;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1dbn;
+2: 1g-;
+endbar

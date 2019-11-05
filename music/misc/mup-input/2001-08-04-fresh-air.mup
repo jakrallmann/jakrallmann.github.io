@@ -1,0 +1,213 @@
+header
+	title (18) "A Breath of Fresh Air"
+	title (12) "" "John A. Krallmann (8/4/01)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	bracket=1
+	brace=2-3
+	barstyle=2-3
+	time=2/4
+	beamstyle=4,4
+	timeunit=8
+	staffscale=0.75
+	measnum=y
+
+staff 1
+	defoct=5
+staff 2
+	vscheme=2f
+staff 3
+	clef=bass
+
+music
+
+midi all: 0 "tempo=58";
+midi 1 1: 0 "channel=11"; 0 "program=73"; 0 "onvelocity=80"; 0 "param=10,40";
+midi 2 1: 0 "channel=12"; 0 "program=71"; 0 "onvelocity=68,54"; 0 "param=10,90";
+midi 2 2: 0 "channel=12"; 0 "onvelocity=54";
+midi 3 1: 0 "channel=13"; 0 "program=42"; 0 "onvelocity=76"; 0 "param=10,63";
+
+1: c;e;c;g-;
+2: 8c+;a;g;e;
+3: 8c;e;g;c+;
+bar
+
+1: 4a-;8g-;a-;
+2: c+;a;g;f;
+3: a-;c;f;a;
+bar
+
+1: d;g-;a-;b-;
+2: d+;b;a;16b;g;
+3: g-;d;b;f+;
+bar
+
+1: e;d;4e;
+2: 16c+;a;g;e;g;c;d;e;
+3: c;e;b&;c-;
+bar
+
+1: f;g;a;c+;
+2: 16f;c;g;b&;a;f;g;a;
+3: f-;c;e&+;f-;
+bar
+
+1: b&;d+;c+;f;
+2: 16b&;f;b;d+;c+;b;c+;f+;
+ifdef MIDI
+	3: b&--;a&;b--;a&+;
+else
+	2 2: 4s;8s bm with staff below; a& ebm;
+	3: b&-- bm;a& ebm;b-- bm with staff above;s ebm;
+endif
+bar
+
+1: 4.g;8d;
+2: 4.g+;16a+;b+;
+ifdef MIDI
+	3: 16g-;d;b;a+;8g+;d+;
+else
+	2 2: 8.s bm with staff below; 16a ebm;8g bm;d ebm;
+	3: 16g- bm with staff above;d;b;s ebm;4s;
+endif
+bar
+
+1: 2e;
+2: 2e+c++;
+ifdef MIDI
+	3: 16c;g;d+;e+;4c++;
+else
+	2 2: 4s;c+;
+	3: 16c;g;d+;e+;4s;
+endif
+dblbar
+
+1: e;a-;e;a-;
+2: 2a+;
+2 2: e+;d+;e+;c+;
+3: a-;e;c+;e;
+bar
+
+1: b-;c;d;16g;f;
+2: 2a+;
+2 2: f+;e+;f+;b;
+3: d-;a-;f;d+;
+bar
+
+1: e;a-;e;b-;
+2: 2e+;
+2 2: c+;b;c+;e;
+3: a--;e-;a;b;
+bar
+
+1: b-;c;;16d;e;
+2: 4b;a;
+2 2: f;e;c;d;
+3: d-;a-;f;a-;
+bar
+
+1: a;b;a;d;
+2: 8c+a+;d+b+;e+c++;f+d++;
+3: a--;e-;c;a;
+bar
+
+1: d;e;f;a;
+2: a+f++;g+e++;f+d++;d+c++;
+3: d;a;f+;a+;
+bar
+
+1: g;a;b;d+;
+2: 4.b+;16a;g;
+2 2: f+;e+;d+;s;
+3: g-;d;b;f+;
+bar
+
+1: c+;c+;g;16a;b&;
+2: 2c++;
+2 2: 8.e+;16f+;8g+;c+;
+3: c;g;4e+;
+bar
+
+1: f;g;a;b;
+2: 8.d+;16c+;4fd+;
+2 2: f;e;c+;b;
+3: d-;a-;g-;16a;g;
+bar
+
+1: c+;d+;e+;c+;
+2: 8.e+;16d+;c+;d+;e+;g+;
+2 2: 4gc+;s;
+3: c;g;e+;g;
+bar
+
+1: a;g;4f;
+2: 8.a+;16b+;d++;c++;b+;a+;
+2 2: 4c+f+;8f+;c+;
+3: f-;c;a;f+;
+bar
+
+1: b;c+;d+;f+;
+2: 2g+;
+2 2: 8.b;16a;8b;g;
+3: g-;d;b;f+;
+bar
+
+1: e+;d+;4c+;
+2: 8.e+c++;16f+d++;a+f++;g+e++;f+d++;e+c++;
+3: c;g;e+;g;
+bar
+
+1: e;d;f;g;
+2: 8.c+a+;16bg+;8af+;bg+;
+3: g-;d;b;g--;
+bar
+
+1: 4c+;;
+2: 8.c++e++;16e+c++;8.c++e++;16e+c++;
+3: c-;g-;e;g-;
+bar
+
+1: 4f;8a;c+;
+2: 8.a+c++;16f+a+;8a+c++;a+f++;
+3: f--;c-;a-;f;
+bar
+
+1: 2c+;
+2: 2g+c++e++;
+3: c-;g-;4e;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+midi 2 1: 0 "onvelocity=58";
+1: mr;
+2: 16g++;c++;d++;g+;a+;c+;d+;a;g;g-;a-;b-;
+3: mr;
+bar
+
+score release=400
+music
+
+midi 1: 0 "onvelocity=50";
+midi 2 1-2: 0 "onvelocity=50";
+midi 3: 0 "onvelocity=40";
+1: 2.c+;
+2: 2.ce;
+3: 2.c-;
+octave below 3: 1 "8va" til 1m+4;
+bar
+
+midi 1-3: 4 "param=10,63";
+midi 1: 0 "onvelocity=15";
+midi 2 1-2: 0 "onvelocity=20";
+midi 3: 0 "onvelocity=15";
+boldital below 1,2: 1 "pp";
+1: 2.c;
+2: 2.c+e+;
+3: 2.c-;
+endbar

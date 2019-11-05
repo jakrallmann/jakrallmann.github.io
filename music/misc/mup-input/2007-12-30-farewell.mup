@@ -1,0 +1,131 @@
+header
+	title (18) "Farewell"
+	title "" "John A. Krallmann (12/30/07)"
+
+header2
+	title (14) "Farewell - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2007 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=3&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	release=0
+	staffscale=0.86
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=70";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=84";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2 1: 0 "channel=13"; 0 "program=1";
+
+1: 4.g+;8f+;e+;4g;8d+;
+1 2: 8g;d+;c+;g;e;d;c;d~;
+2: c;e+;g;b-;
+bar
+
+1: 4.d+;8c+;4.b;8g;
+1 2: 8d;f;4d~;8;f;4e;
+2: a-;f;g-;c;
+bar
+
+1: 4.a+;8g+;4.f+;8b;
+1 2: 8g;f;4c;8e;d;c;d;
+2: f-;a;b-;a;
+bar
+
+1: 4.g+;8d+;4;c+;
+1 2: 8f;e;d;f;e;d~;;e;
+2: bn-;g;8c;g;b&-;g;
+bar
+
+1: 4.c+;8a;2b;
+1 2: 8g;f;4c;8f;e;4b-;
+2: a-;f;g-;8f;e;
+bar
+
+1: 4.a+;8g+;4.f+;8f#+;
+1 2: 8bn;c+;e;a;;c;d;b;
+2: f-;c;b-;a;
+bar
+
+1: 4.g+;8e+;f+;e+;d&+;c+;
+1 2: 8b;b-;4g;8a;g;f;e;
+octave above 1: 3 "8va" til 4.8;
+2: e-;d&;g;e+;
+bar
+
+1: 4.b+;8d&++;c++;d(&)+;4c+;
+1 2: 8c+;d&+;e+;b;e+;f;4e;
+2: a-;en;a-;8e&;g-;
+bar
+
+1: 4.a;8g;4.f;8a;
+1 2: 8c;b-;4a-~;8;f-;4b-;
+2: f-;8c;e-;4d&-;a-;
+bar
+
+1: 4.g;8e;4.f;8b;
+1 2: 8e;d;c;g-;a-;e;d;c;
+2: c-;<<staff clef=treble>>8e+;g+;<<staff clef=bass>>4f-;<<staff clef=treble>>8g+;a+;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.b;8g;4.e;8a;
+1 2: 8d;f;e;b-;d;c;4a-;
+2: g-;<<staff clef=treble>>8b+;c++;<<staff clef=bass>>4a-;<<staff clef=treble>>8e+;f+;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.f;8g;a;b;c+;d+;
+1 2: 8c;f-;4b-;e;f;
+2: b-;a;c+;d+;
+bar
+
+1: 4.g+;8f+;4e+;8;f+;
+1 2: 8e+;g;e+;e;c+;g;c+;g;
+2: c;g;b-;g;
+bar
+
+1: g+;c+;4.;8d+;
+1 2: 8f;c+;g;c;a;c;a;c;
+2: a-;f;f-;a;
+bar
+
+1: 4.c+e+;8f+;4.d+;8e+;
+1 2: 8b;a;g;e;f;g;4b;
+2: a-;f;b-;a;
+bar
+
+1: 1c+;
+1 2: 8d;e;4g;2;
+2: c;g;2;
+ital between 1&2: 1 "rit. e dim.";
+bar
+
+1: 1c+;
+1 2: 8d;e;4g;2f;
+2: a-;f;2c+;
+bar
+
+1: 1c+;
+1 2: 8d;e;4g;2;
+2: 1c-;
+endbar

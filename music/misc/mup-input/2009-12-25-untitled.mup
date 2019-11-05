@@ -1,0 +1,106 @@
+header
+	title (16) "Untitled"
+	title "" "John A. Krallmann (12/25/09)"
+
+footer
+	title (12) "\(copyright) Copyright 2009 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=2/2
+	key=1&
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,24
+	staffsep=14
+	timeunit=4
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+midi 1 1-2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=86";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 " onvelocity=78";
+
+1: 4.dgbn;8 tie;4;8c+;b;
+1 2: 2.s;4dg;
+2: g-;8d;g~;4;d;
+bar
+
+1: 4.cga;8cfa tie;4;4cea;
+2: f-;8c;f~;4;e;
+bar
+
+1: 4.a-df;8g-dg tie;4;b-df;
+2: b--;8f-;b-~;4;d;
+bar
+
+1: 4.g-df;8g-ceg tie;4;dgb;
+2: c-;8g-;e~;4;cb;
+bar
+
+1: 4.dgb;8cfa tie;4;e&ac+;
+2: f-;8c;a~;4;f;
+bar
+
+1: 4.dfc+;8dfb tie;4;dfa;
+2: b--;8f-;d~;4;b;
+bar
+
+1: 4.dfc+;8dfb tie;4;dfa;
+2: g--;8d-;f~;4;b;
+bar
+
+//
+ 1: 4.dfc+;8eac+ tie;4;;
+2: c-;8g-;b~;4;c;
+bar
+
+1: 4.gac+;8fac+ tie;4;eac+;
+2: f-;8c;a~;4;c;
+bar
+
+1: 4.gad+;8fad+ tie;4;ead+;
+2: d-;8a-;f~;4;a-;
+bar
+
+1: 4.fgb;8egb tie;4;dgb;
+2: g-;8d;a~;4;b;
+bar
+
+1: 4.dfb;8cfa tie;4;b-eg;
+2: c-;8g-;d~;4;e;
+bar
+
+1: 4.a-eg;8df tie;4;;
+2: d-;8a-;f~;4;e;
+bar
+
+1: 4.a-eg;8df tie;4;;
+2: d-;8a-;f~;4;e;
+bar
+
+1: 4.a-df;8f-a-d tie;4;f-b-d;
+2: b--;8f-;b-~;4;g-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.fbd+;8ebc+ tie;2;
+2: c-;8g-;c~;4;g-;
+bar
+
+1: 1fad+ tie;
+2: d-;8a-;d~;4;a-;
+bar
+
+1: 1fad+;
+2: 1d-;
+endbar

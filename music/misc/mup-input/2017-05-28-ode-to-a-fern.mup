@@ -1,0 +1,105 @@
+header
+	title (18) "Ode to a Fern"
+	title "" "John A. Krallmann"
+	title " " "(May 28, 2017)"
+
+footer
+	title (12) "\(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	measnum=y
+	scale=0.95
+	scoresep=10,26
+staff 2
+	vscheme=2f
+	clef=bass
+music
+
+midi all: 1 "tempo=80";
+
+1: g+;8b&+;a&+;g+;f+;4c+;
+2: e&;gb&e&+;a&-;8en+;f+;
+2 2: 2.s;4a&c+;
+bar
+
+1: f+;8e&+;d+;4c+;[grace]8d+;[]c+;4b&;
+2: b&--;b&d+f+a&+;e&-;gbe&+;
+bar
+
+1: g;8;a;4b;8;c+;
+2: c-;gc+e&+;g--;bd+g+;
+bar
+
+1: 8f+;e&+;8.d+;16e+;4d+;8a&;g;
+2: a&--;a&c+f#+;g--;gbfn+;
+bar
+
+1: 8e;f;8.g;16a;8;4g;8e+;
+2: c-;gbe+;e-;gbe+;
+bar
+
+1: 8e+;d+;c+;a&;fd+;4.ee+;
+2: f-;a&c+f+;c-;egc+;
+bar
+
+1: 8a;b;c+;d+;a;4.g;
+2: f-;ac+f+;e-;gbe+;
+bar
+
+1: 8f;g;a;c+;e;4d;8g+;
+2: d-;fac+d+;g-;fgb;
+bar
+
+1:8a&+;g+;8.f+;16c+;8d+;4e+;8g;
+2: f-;a&c+f+;c-;gc+e+;
+bar
+
+1: 8b&;a&;g;f;c;4d;16c;d;
+2: f-;dfa&c+;g--;dfgb;
+bar
+
+1: 8e;g;b;c+;;a;8.d;16c;
+2: c-;egbc+;f-;cfa;
+bar
+
+1: 8b-;d;f;g;f;4.e;
+2: g-;fgb;c-;egc+;
+bar
+
+1: 8a-;;;;8.g-;16a-;4g-;
+2: f-;cdf;e-;b-de;
+bar
+
+1: 8f-;g-;8.a-;16c;8;4.d;
+2: d-;a-cdf;g--;dfgb;
+bar
+
+1: [grace]8f;[]e;8c;;;d;e;a;4g;
+2: a--;cea;e-;8d+;c+;
+2 2: 2.s;4egb;
+mussym above 1: 4 "ferm";
+mussym above 2: 4.5 "ferm";
+bar
+
+1: 8f;;;e;8.;32f;e;8d;b;
+2: d-;dfac+;g-;dfgb;
+bar
+
+1: 8b;c+;;e+;;a;8.;16f+;
+2: a-;eac+;f-;fac+d+;
+mussym above 1: 4 "ferm";
+bar
+
+1: 8e+;;8.;16d+;2c+~;
+2: g-;bd+f+a&+;c-;fa&d+;
+bar
+
+1: 1c+;
+2: 1gc+e+;
+endbar

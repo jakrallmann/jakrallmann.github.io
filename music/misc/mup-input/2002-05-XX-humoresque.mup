@@ -1,0 +1,124 @@
+header
+	title (18) "Humoresque"
+	title (12) "" "John A. Krallmann (May 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.85
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=0";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+define M1
+1: 8.b-d;16;8.ce;16;8.dg;16;8.ce;16;
+2 1: d;e;f;e;
+2 2: 1g-;
+bar
+@
+
+define C
+M1
+M1
+
+1: 8.ce;16;8.eg;16;8.ec+;16;8.a;16b&;
+1 2: 2.s;4e;
+2 1: b&;a;g;c+;
+2 2: 1c;
+bar
+
+1: 8.ad+;16;8.c+f+;16;8.f+a+;16;8.e&+g+;16;
+2 1: 1fc+;
+bar
+
+1: e&+g+;8d+f+;c+e+;4b&d+;8e&g;df;
+2: 2.b&-f;4bn-g;
+bar
+@
+C
+
+1: ce&;;2a-df#;
+2: cg;a&-e&;2d-an-;
+repeatboth
+
+////
+
+1: r;b&-d;;8.a-;16b-;
+2: 1g-;
+bar
+
+2 1: r;ad+;;8.g;16a;
+2 2: 1f-;
+bar
+
+2: r;gd+;2gc+;
+2 2: 1e&-;
+bar ending  "1."
+
+2:  2f#d+;;
+2 2: 2d-a-;;
+repeatend ending "2."
+
+1: 2g;f#a;
+2: 2d-a-;;
+bar endending
+
+1: 8bd+;c+;b;a;gb&;a;g;f;
+2: 2g-d;e&-b&-;
+bar
+
+1: 8ce;d;e;f;e&g;a;b&;c+;
+2: 2c-g-;e&-b&-;
+bar
+
+1: 2gb(n)d+;;
+2: 2g-d-;;
+bar
+
+1: 8b&;a;b;c+;4d+;8e&+;f+;
+1 2: 2gd+;gb;
+2: 2e&-b&-;;
+bar
+
+1: 2c+e+g+;;
+2: 2c-g-;;
+bar
+
+1: 8g+;a+;g+;f+;4g+;8a+;b+;
+1 2: 1e&+b&+;
+2: 2e&b&;;
+bar
+
+1: 2e+g+c++;;
+2: 2cg;;
+bar
+
+1: 2g+b+d++;;
+2: 2g-d;;
+bar
+
+C
+
+1: ce&;;4.a-df#;16g#;f;
+2: cg;a&-e&;2d-an-;
+bar
+
+1: [with .]4b-eg#;2.r;
+2: [with .]4e-;2.r;
+endbar

@@ -1,0 +1,286 @@
+header
+	title (18) "Renewal"
+	title (12) "" "John A. Krallmann (Oct 4-5, 2001)"
+
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (4) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define B 2 1: @
+define M midi 1: 1 "onvelocity=86"; 1.25 "onvelocity=76"; \
+			1.75 "onvelocity=92"; 2 "onvelocity=76"; @
+define MA midi 1 2: 1 "onvelocity=86"; 1.25 "onvelocity=76"; \
+			1.75 "onvelocity=92"; 2 "onvelocity=76"; @
+define P
+3: 4b&4;e&5;f#3;8b&4;;
+midi 3: 1 "onvelocity=64"; 1.5 "onvelocity=42";
+@
+
+score
+	staffs=3
+	brace=1-2
+	barstyle=1-2
+	time=2/2
+	beamstyle=2,2
+	packfact=0.9
+	staffscale=0.8
+	measnum=y
+
+staff 1
+	vscheme=2f
+	timeunit=8
+staff 2
+	clef=bass
+
+staff 3
+	ifndef MIDI visible=n endif
+
+music
+
+midi all: 0 "tempo=110";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "param=10,78";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "param=10,78";
+midi 2 1: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=70"; 0 "param=10,48";
+midi 3: 0 "channel=10";
+
+M
+S e;g;c+;d+~;;c+;g;e;
+B c;b-;
+P
+bar
+
+M
+S c;e;a;a~;;e;c;g-;
+B a-;g-;
+P
+bar
+
+M
+S a-;d;a;d+~;;a;e+;a+;
+B f-;;
+P
+bar
+
+M
+S f;d+;a+;c++~;;b+;a+;g+;
+B g-;;
+P
+bar
+
+M
+S e+;g;c+;d+~;;f;b&;d+;
+B c-;b&--;
+P
+bar
+
+score key=3&
+music
+
+M
+S c+;e;a;c+~;;b;e;b;
+B a--;g--;
+P
+bar
+
+M
+S b;c;f;a~;;d+;c+;g+;
+B f-;b-;
+P
+bar
+
+M
+S g+;b;d+;c+~;;g;b-;c;
+B e-;en-;
+P
+bar
+
+score key=2&
+music
+
+M
+S g;f;e;g-~;;4.a-;
+B f-;;
+P
+bar
+
+M
+S d;c;b-;b~;2;
+B b-;;
+P
+bar
+
+M
+S d+;c+;b;d~;;a;;g;
+B g-;f-;
+P
+bar
+
+M
+S g;b-;f;e~;;c+;d+;e+;
+B e-;c-;
+P
+bar
+
+M
+S f+;a;b;c+~;;f;c+;e+;
+B f-;a-;
+P
+bar
+
+M
+S d+;f;b;f+~;;4e+;8d+;
+B a&-;g-;
+P
+bar
+
+M
+S e+;b;c+;e+~;;d+;b;f;
+B g&-;f-;
+P
+bar
+
+M
+S f;b;d+;~;;4e+;8d+;
+B d-;c-;
+P
+bar
+
+midi 1: 1 "onvelocity=86"; 1.25 "onvelocity=76"; 2 "onvelocity=82";
+S e;f;d+;c+;2b;
+B f-;b-;
+P
+bar
+
+//
+M
+S b+;a+;g+;d+~;;b+;;a+;
+B g-;f-;
+P
+bar
+
+M
+S a+;g+;d+;g~;;c+;d+;e+;
+B e-;c-;
+P
+bar
+
+M
+S d++;c++;a+;f#+~;;bn;c+;d+;
+B d-;a-;
+P
+bar
+
+score key=0&
+music
+
+M
+S b;g;a;b~;;a+;;g+;
+B g-;f-;
+P
+bar
+
+M
+S g+;c+;d+;e+~;;f+;a;c+;
+B e-;d-;
+P
+bar
+
+M
+S d+;f;c;b-~;4;8a;b;
+B g-;;
+P
+bar
+
+M
+S d+;c+;d;e~;2;
+B c-;;
+P
+repeatend
+
+score key=1&
+music
+
+M
+S a;c;f;b~;;a;f;c;
+B f-;;
+P
+bar
+
+M
+S a;c;a;b~;;4a;8f;
+B e&-;d-;
+P
+bar
+
+M
+S f;b;f+;~;;g+;a+;b+;
+B d&-;c-;
+P
+bar
+
+midi 1 1: 1 "onvelocity=90";
+MA
+S 1c++;
+A c++;f+;g+;a+~;2;
+B 2.f-;4;
+P
+bar
+
+MA
+S 1c++;
+A c++;f+;g+;a+~;2;
+B 2.e&-;4;
+P
+bar
+
+MA
+S 1c++;
+A c++;f+;g+;a+~;2;
+B 2.d-;4;
+P
+bar
+
+MA
+S 1f++;
+A f+;;g+;a+~;4;b+;
+B 2.d&-;4;
+P
+bar
+
+MA
+S 1c++;
+A c++;f+;g+;a+~;2;
+B 1f-;
+octave below 2: 0.5 "8va" til 4m+2.5;
+P
+bar
+
+MA
+S 1c++;
+A c++;f+;g+;a+~;2;
+B 1f-;
+P
+bar
+
+S 1c++;
+A 1a+;
+B 1f-;
+midi 3: 1 "onvelocity=64";
+3: 4b&4;;;;
+bar
+
+S 1c++~;
+A 1a+~;
+B 1f-~;
+bar
+
+midi all: 0 "tempo=70";
+midi 1 1-2: 3 "param=10,63";
+midi 2 1: 3 "param=10,63";
+S 1c++;
+A 1a+;
+B 1f-;
+endbar

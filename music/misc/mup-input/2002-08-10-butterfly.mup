@@ -1,0 +1,285 @@
+header
+	title (18) "The Butterfly"
+	title "" "John A. Krallmann (Aug 10, 2002)"
+
+header2
+	title (12) "The Butterfly - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=2&
+	beamstyle=2,2
+	staffs=3
+	brace=2-3
+	barstyle=2-3
+	vscheme=2f
+	measnum=y
+	staffscale=0.75
+	scoresep=12,28
+	release=10
+
+staff 1
+	visible=n
+staff 3
+	clef=bass
+
+music
+
+midi all: 1 "tempo=96";
+midi 1: 0 "channel=11"; 0 "program=79"; 0 "onvelocity=38"; 0 "param=10,89";
+midi 2 1: 0 "channel=12"; 0 "program=71"; 0 "onvelocity=56,20"; 0 "param=10,41";
+midi 2 2: 0 "channel=12"; 0 "onvelocity=20";
+midi 3 1-2: 0 "channel=13"; 0 "program=42"; 0 "onvelocity=44"; 0 "param=10,70";
+
+2: bn;a;g;d;
+3: g-;d;a;bn;
+bar
+
+2: b(&);a;f;g;
+3: e-;b-;f;e;
+bar 
+
+2: a;e;f;8d+;c+;
+3: f-;c;g;a;
+bar
+
+2: 8e+;d+;c+;b;d&;dn;f;a;
+3: b-;d;f;b;
+bar
+
+2: 8c;e;g;b;c+;g;f;a;
+3: 8e;g;bn;b&;4f;f-;
+bar
+
+2: 4.db;16d+;c+;2db;
+3: b-;f;2b-;
+repeatstart
+
+2: 8d+;4c+;8b;d&;4dn;8a;
+3: b-;f;b;f;
+bar
+
+2: 8g;e;g;4f;c+;8a;
+3: c;b;a;f;
+bar
+
+2: 8d&;dn;e+;4d+;8c+;b;a&;
+3: b-;f;c+;d+;
+bar
+
+2: 8g;f#;g;4c+;g;8f;
+3: e;b;e+;c+;
+bar
+
+2: 8fn;g;a;d+~;;a;g;f;
+3: d;8a;c;4b-;f;
+bar
+
+2: 8g;f;en;c~;;d;e;16a;g;
+3: c;g;b;g;
+bar
+
+2: 4.a-f;16a;g;2a-f;
+3: f-;c;f-;c;
+repeatend
+
+score key=5&
+music
+
+define BB
+ifdef FIRST
+	1: a-;d;a-;d;  
+endif
+ifdef SECOND
+	1: a-;d;a-;d;
+endif
+2: 8f;e;d;4f-;g-;8d;
+3: d-;a-;e;f;
+bar
+
+ifdef FIRST
+	1: b-;d;2e;
+endif
+ifdef SECOND
+	1: b-;d;2e;
+endif
+2: 8a;g;f;e~;;f;g;b;
+3: g-;d;b;d;
+bar
+
+ifdef FIRST
+	1: g;c;8b-;g;e;g;
+endif
+ifdef SECOND
+	1: e;;f;8;g;
+endif
+2: 8c+;b;a;g;a;b;4c+;
+3: a-;e;b;a;
+bar
+
+ifdef FIRST
+	1: a;f;8a;f;e;d;
+endif
+ifdef SECOND
+	1: a;f;2a;
+endif
+2: 8f+;e+;b;d+~;2;
+3: d;a;e+;f+;
+bar
+
+ifdef FIRST
+	1: 2b-;e;
+endif
+ifdef SECOND
+	1: a;d;2e;
+endif
+2: 8e+;d+;a;4b;8d+;4e+;
+3: g;b;e+;8f+;g+;
+bar
+
+ifdef FIRST
+	1: 8f;e;d;a-~;;b-;d;f;
+endif
+ifdef SECOND
+	1: 8f;g;4a;f;8e;d;
+endif
+2: 8b;a;e;f~;2;
+3: d;a;b;d+;
+bar
+
+ifdef FIRST
+	1: e;d;8b-;a-;4g-;
+endif
+ifdef SECOND
+	1: b-;d;8b;a;g;f;
+endif
+2: 8f;g;a;g+~;2;
+3: e;b;d+;e+;
+bar
+
+ifdef FIRST
+	1: 8g;f;e;d;4b-;g;
+endif
+ifdef SECOND
+	1: c+;b;a;8f;e;
+endif
+2: 2.a+;8b+;c++;
+2 2: 2b;4d+;c+;
+3: a;d+;g+;a-;
+bar
+
+ifdef FIRST
+	1: c;d;e;g;
+endif
+ifdef SECOND
+	1: c;d;2e;
+endif
+2: 2f+d++;b+;
+2 2: c++;b+;a+;g+;
+3: b-;f;f+;e+;
+3 2: 2s;e;
+bar
+
+ifdef FIRST
+	1: 8f;e;4d;8e;f;g;a;
+endif
+ifdef SECOND
+	1: g;a;2;
+endif
+2: b;e+;2ge+;
+2 2: f;d;d+;c+;
+3: 2g;a;
+bar
+
+score time=2/4
+music
+
+ifdef FIRST
+	1: b;a;
+endif
+ifdef SECOND
+	1: b;a;
+endif
+2: 2ga;
+2 2:b-;c;
+3: a-;a--;
+bar
+
+score time=4/4; beamstyle=2,2
+music
+
+ifdef FIRST
+	1: f;d;4.a;8c;
+endif
+ifdef SECOND
+	1: 2f;a;
+endif
+2: 8f;g;a;4g+;f+;8a;
+3: d;a;d+;a;
+bar
+
+ifdef FIRST
+	1: 8f;e;d;4b-;f-;8c;
+endif
+ifdef SECOND
+	1: b;2.f;
+endif
+2: 8d;f;b;4e+;d+;8f;
+3:b-;f;c+;a-;
+bar
+
+ifdef FIRST
+	1: 2b-;{4e;f;g;}3;
+endif
+ifdef SECOND
+	1: 4.d;e;8f;g;
+endif
+2: 8f;e;d;e~;2;
+3: g-;e;an;e;
+bar
+
+ifdef FIRST
+	ifdef LAST
+		midi all: 1 "tempo=86"; 3 "tempo=80";
+		1: 2a;4b;c+;
+	else
+		1: 2a;4b-;a-;
+	endif
+endif
+ifdef SECOND
+	1:2e;a-;
+endif
+2: 1ega;
+2 2: 2d;c;
+3: a-;e;b;a-;
+bar
+@
+
+BB
+
+score packfact=1.2
+staff 1 visible=y ; defoct=5
+define FIRST @
+music
+midi all: 0 "tempo=92";
+BB
+
+undef FIRST
+define SECOND @
+BB
+
+undef SECOND
+define FIRST @
+define LAST @
+BB
+
+midi all: 1 "tempo=70"; 3 "tempo=30";
+1: 1d+f+;
+2: 1a-da;
+2 2: 2e;f;
+3: d-;a-;2d;
+endbar

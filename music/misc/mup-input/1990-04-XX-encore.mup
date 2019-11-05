@@ -1,0 +1,200 @@
+header
+	title (18) "Encore"
+	title (12) ""  "John A. Krallmann (4/90)"
+
+footer
+	title (11) "\(copyright) Copyright 1989 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Encore - \%"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	time=4/4
+	key=3&
+	vscheme=2f
+	packfact=1.4
+	staffsep=16
+	scoresep=12,22
+	beamstyle=4,4,4,4
+	size=12
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=64";
+midi 1-2 1-2: 0 "channel=1"; 0 "program=1";
+
+1 1: ms;
+boldital above 1: 0 "Adagio (\(smup4n) = 72)";
+boldital between 1&2: 0 "mp";
+2 1: 4c+eg;;;;
+2 2: 4cc-;;;;
+< between 1&2: 1 til 4;
+midi 2 1-2: 1 "onvelocity=30"; 2 "onvelocity=40"; 3 "onvelocity=54"; 4 "onvelocity=68";
+boldital between 1&2: 4.2 "f";
+bar
+
+midi all: 0 "tempo=72";
+midi 1 1-2: 0 "onvelocity=64";
+midi 2 1-2: 0 "onvelocity=50";
+1 1: 4ceg-;8cdg-;ceg-;4cfa-;8a-ce;cda-;
+2 1: 8c-;g-;4c;8f-;c;4f;
+phrase above 1: 1 til 1m+4.5;
+boldital between 1&2: 1 "mf";
+bar
+
+1 1: 4ceg-;8cdg-;ceg-;g;f;e;d;
+1 2: 2s;ca-;
+2 1: 8c-;g-;4c;8f-;c;4f;
+bar
+
+midi 1 1-2: 3 "onvelocity=70";
+midi 2 1-2: 3 "onvelocity=56";
+1 1: ceg-;8cdg-;ceg-;bfc;afc;cfg;cf;
+2 1: 8c-;g-;4c;8f-;c;f;a;
+phrase above 1: 1 til 4m+1;
+bar
+
+score time=3/4; beamstyle=4,4,4
+music
+
+midi 1 1-2: 3 "onvelocity=76";
+midi 2 1-2: 3 "onvelocity=62";
+1 1: fd&+;f+ tie;16f+;d&+;c+;b;
+1 2: 8c+;b;2s;
+2 1: 8b--;f-;b-;c;4d&;
+bar
+
+midi 1 1-2: 3 "onvelocity=70";
+midi 2 1-2: 3 "onvelocity=56";
+1 1: 2a tie;16a;f;c;a;
+2 1: 8bn-;f;a;d&+;4c+;
+bar
+
+midi 1 1-2: 3 "onvelocity=64";
+midi 2 1-2: 3 "onvelocity=50";
+1 1: 2g tie;16g;d&;c;en;
+2 1: 8c;g;b;d&+;4c;
+bar
+
+score time=4/4; beamstyle=4,4,4,4
+music
+
+1 1: 1f;
+2 1: 8f-;c;f;g;ac+;g;f;f-;
+bar
+
+midi 1 1-2: 2 "onvelocity=58"; 3 "onvelocity=70"; 3.5 "onvelocity=62";
+midi 2 1-2: 2 "onvelocity=44"; 3 "onvelocity=56"; 3.5 "onvelocity=48";
+1 1: c+e+g;8f+c+g;g+c+g; [with -] g+c+b;f+c+a tie;4;
+phrase above 1: 1 til 4;
+< below 1: 1 til 2.5;
+> below 1: 3 til 4.2;
+2 1: 8c;g;4c+;f;8;f-;
+bar
+
+midi 1 1-2: 2 "onvelocity=66"; 3 "onvelocity=72";
+midi 2 1-2: 2 "onvelocity=50"; 3 "onvelocity=56";
+1 1: e+c+g;8f+c+g;g+c+g; [with -] b+f+d+c+;a+f+d+c+;g+d+c+;f+d+c+;
+phrase above 1: 1 til 2m+2;
+< below 1: 1 til 2.5;
+boldital below 1: 3 "f";
+2 1: 8c;f;4c+;8f-;c;f;a;
+bar
+
+score time=2/4; beamstyle=4,4
+music
+
+1 1: [with -] 8b+f+d+c+;a+f+d+c+;g+d+c+;f+d+c+;
+2 1: 8f-;c;f;a;
+bar
+
+score time=4/4; beamstyle=4,4,4,4
+music
+
+1 1: 8f+d+c+;g+d+bn tie; 2.;
+2 1: 8f-;d;g;an;bn;g;f;d;
+> between 1&2: 1 til 4.5;
+boldital above 2: 4.7 "mp";
+bar
+
+midi 1 1-2: 2 "onvelocity=58"; 3 "onvelocity=70"; 3.5 "onvelocity=62";
+midi 2 1-2: 2 "onvelocity=44"; 3 "onvelocity=56"; 3.5 "onvelocity=48";
+1 1: c+e+g;8f+c+g;g+c+g;g+;f+ tie;4;
+phrase above 1: 1 til 4;
+< between 1&2: 1 til 2.5;
+> between 1&2: 3 til 4.5;
+1 2: 2s;ac+;
+2 1: 8c-;g-;4c;8f-;c;f;c;
+bar
+
+midi 1 1-2: 1 "onvelocity=50";
+midi 2 1-2: 1 "onvelocity=36";
+1 1: e+c+g; 8f+c+g;g+c+g;b+f+d+c+;a+f+d+c+;8.g+f+d+c+;16f+d+c+;
+phrase above 1: 1 til 1m+2;
+boldital between 1&2: 1 "pp";
+< between 1&2: 2 til 3;
+> between 1&2: 3.5 til 4.5;
+2 1: 8c-;g-;4c;8f-;c;f;c;
+bar
+
+1 1: 8c+d+f+;g+d+bn tie; 2.;
+2 1: 4g-;8;d-;2g-;
+< below 1: 1 til 1.5;
+> above 2: 2 til 3.5;
+bar
+
+midi all: 0 "tempo=60";
+
+rom above 1: 0 "meno mosso ( \(smup4n) = 60 )";
+midi 1-2 1: 0 "onvelocity=45"; 2 "onvelocity=80"; 3 "onvelocity=70";
+1 1: g; [grace]8f;[grace]e;[grace]d;4c; 8a-ce;ca-f-;[with -] 4dbn-g-;
+2 1: g; [grace]8f;[grace]e;[grace]d;4c; 8a-ce;ca-f-;[with -] 4dbn-g-;
+boldital between 1&2: 1 "mp"; 2 "sfz"; 3 "f";
+//  < above 2: 2(-2) til 2;
+bar
+
+midi 1-2 1: 0 "onvelocity=45"; 2 "onvelocity=80"; 3 "onvelocity=70";
+1 1: g; [grace]8a;[]b;4c+;[with -]ac+e+;[with -]g+d+bng;
+2 1: g; [grace]8a;[]b;4c+;[with -]ac+e+;[with -]d+bng;
+boldital between 1&2: 1 "mp"; 2 "sfz"; 3 "f";
+//   < above 2: 2(-2) til 2;
+bar
+
+midi 1-2 1: 0 "onvelocity=55"; 2 "onvelocity=80"; 3 "onvelocity=70";
+1 1: g; [grace]8f;[]e;[]d;4c;[with -]cea-;[with -]dbn-g-;
+2 1: g; [grace]8f;[]e;[]d;4c;[with -]cea-;[with -]dbn-g-;
+boldital between 1&2: 1 "mf"; 2 "sfz"; 3 "f";
+// should be a cres on grace notes : add when mup supports this
+bar
+
+midi 1-2 1: 0 "onvelocity=45"; 2 "onvelocity=80"; 3 "onvelocity=70";
+1 1: g; [grace]8a;[]b;4c+;8ac+e+;bd+f+;[with-]4gbnd+g+;
+2 1: g; [grace]8a;[]b;4c+;8ac+e+;bd+f+;[with-]4gbnd+;
+boldital between 1&2: 1 "mp"; 1.8 "sfz"; 3.1 "f";
+// should be a cres on grace notes : add when mup supports this
+bar
+
+1 1: g; [grace]8f;[]e;[]d;4c;8g;g#;an;bn;
+2 1: g;[grace]8f;[]e;[]d;4c;8g;f;e;d;
+boldital between 1&2: 1 "mp"; 1.8 "sfz"; 3.1 "f";
+// should be a cres on grace notes : add when mup supports this
+bar
+
+midi 1-2 1: 1 "onvelocity=60"; 3 "onvelocity=80";
+1 1: 2c+;[grace]8g+;[]g#+;[]an+;[]bn+;[with -]2c++;
+2 1: 2c;[grace]8g-;[]f-;[]e-;[]d-;[with -]2c-;
+bar
+
+midi 1-2 1: 0 "onvelocity=72";
+1 1: [with-]2.eanc+;4r;
+2 1: [with-]2.cgd+;4r;
+boldital between 1&2: 1 "sfz";
+endbar

@@ -1,0 +1,196 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Yearning"
+	title "" "John A. Krallmann (10/22-23/05)"
+
+header2
+	title (12) "Yearning - \%"
+footer
+	title (12) "\(copyright) Copyright 2005 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=9/8
+	beamstyle=4.,4.,4.
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.8
+	packfact=1.1
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=58";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76, 46";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=46";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=46";
+
+rom above all: 1 "Rubato, molto passionato";
+define THEME
+1: 4.b~;8;a;g;a;g;f;
+ifdef MAJOR
+	2: e-;b-;f;4.g;cn+;
+else
+	2: e-;b-;g;4.a;c+;
+endif
+bar
+
+score time=6/8 ; beamstyle=4., 4.
+music
+
+1: [grace]16g;[]f;4.e~;8;f;g;
+ifdef MAJOR
+	2: e-;b-;f;4.g;
+else
+	2: e-;b-;g;4.a;
+endif
+bar
+
+score time=9/8
+music
+
+1: 4.e+~;8;f+;g+;a+;b+;a+;
+2: a-;e;b;4.c+;8a-;e;c+;
+bar
+
+score time=6/8
+music
+
+1: [grace]16g+;[]f+;4.e+~;8;a;b;
+2: e-;b-;g;4.b;
+bar
+
+1: b;4c+~;8;d+;e+;
+2: a-;e;<<staff clef=treble>>g;f;e;c;
+bar
+
+staff 2 clef=bass
+music
+
+1: 4.b+~;8;;e+;
+2: e-;b-;f;4.g;
+bar
+
+1: b+;4c++~;8;f+; ifdef MAJOR e+; else d+; endif
+2: a-;e;d+;4.c+;
+bar
+
+1: [grace]16g+;[]f+;4.e+~;8;b;;
+2: e-;b-;f;4.g;
+bar
+
+1: 4a;8c+~;;a+;c++;
+2: a-;e;c+;f+;e+;f;
+bar
+
+1: 4.g+b+ tie;4;8c++;
+1 2: 4.f+;e+;
+2: e-;b-;f;4.g;
+bar
+
+1: 4.d+b+;4c+a+;8b+;
+1 2: 2.e+;
+2: a-;e;b;4.c+;
+bar
+
+score time=9/8
+music
+
+midi all: 1 "tempo=" + ifdef MAJOR "56" else "54" endif ;
+1: g+;f+;b;a;8.c;16f; 8 ifdef LAST a;8.b;16c+; else c+;b;a; endif
+2: e-;b-;g;a-;e;a;a-;e;c+;
+bar
+
+score time=6/8
+music
+
+@
+THEME
+
+1: [grace]16g;[]f;4.e~;8;;b;
+2: e-;b-;g;4.;
+bar
+
+midi all: 0 "tempo=60";
+1: 16b;c+;d+;c+;b;g;4a;8d;
+2: a-;e;c+;f-;d;c+;
+bar
+
+1: 16b;c+;d+;c+;b;g;8.e;16f;8g;
+2: g-;d;b;c;g;b-;
+bar
+
+1: 16a;b;c+;b;a;e;g;f;8e;16c;d;
+2: a-;e;c+;d-;a-;f;
+bar
+
+score time=4/8 ; beamstyle=4,4
+music
+
+1: 16b-;c;8d;16;e;f;a;
+2: g-;d;f-;d;
+bar
+
+score time=3/8 ; beamstyle=4.
+music
+
+midi all: 0 "tempo=52";
+1: 16g;a+;8g+;16b;c+;
+2: e-;b-;g;
+bar
+
+score time=6/8
+music
+
+1: 4.d+;16;e+;4c+;
+2: b-;a;g;c;e+;e&+;
+bar
+
+midi all: 0 "tempo=46"; 5 "tempo=38";
+1: 16c#+;d+;8a;g;16b;a;8g+;;
+2: b-;g;d+;c;a;e&+;
+bar
+
+1: 2.bg+;
+2: g-;d;a;4.b;
+dblbar
+
+newscore
+
+score key=4#
+	transpose=up minor 3
+	time=9/8
+music
+
+define MAJOR @
+midi all: 0 "tempo=60";
+THEME
+
+1: [grace]16g;[]f;2.e;
+2: e-;b-;g;4.;
+dblbar
+
+undef MAJOR
+define LAST @
+
+score time=9/8
+	key=1#
+music
+
+midi all: 0 "tempo=58";
+THEME
+
+midi all: 1 "tempo=40";
+1: 4.f+;e+b;
+2: e-;b-;f;4.g#;
+endbar
+

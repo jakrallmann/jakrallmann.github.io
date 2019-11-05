@@ -1,0 +1,119 @@
+header
+	title (18) "Dance of the Pixies"
+	title "" "John A. Krallmann (9/22/02)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	beamstyle=2,2
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	packfact=0.7
+	staffscale=0.85
+	scoresep=12,28
+	measnum=y
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=92";
+midi 1-2 1-2: 0 "channel=11"; 0 "program=1";
+
+1:8g;e;a;e;b;e;c+;e;
+2:1c;
+bar
+
+1:8e;f;a;e;f;a;e;f;
+2:1d;
+bar
+
+1: 8f;a-;b-;f~;;a-;a&-;g-;
+2: 1g-;
+bar
+
+1: 8g-;e;b-;a-~;;d;f;a;
+2: 2c;f-;
+bar
+
+1: 8g;c;d;c+~;;g;f;e&;
+2:2c;a&-;
+bar
+
+1: 8d+;c+;b;g;a&;c+;d+;f+;
+2: 2g-;f-;
+bar
+
+1: 8c+;g;f#;g;b&-;fn;b&;a;
+2: 2e&-;d-;
+bar
+
+1:8b&;f;e+;f+;f+;d&+;b;g;
+2: 2d&-;c-~;
+bar
+
+1: 1c+;
+1 2: 8c+;b&-;4f;e~a&;eg;
+2: 1c-;
+repeatstart
+
+newscore 
+
+define PARTA
+1: 8a;c;e;d~;;c;d;f;
+2: 2f-;c;
+bar
+
+1: 8f;b&-;a-;b-~;;f#;4g;
+2: 2g-;c;
+bar
+
+1: 8g#;a;d;c~;2;
+2: 2f-;4a-;a&-;
+bar
+
+1:8b&;f;e;d~;;c;b-;b&-e;
+2: 2g-;c;
+bar
+
+1: 2a-f;;
+1 2: 8r;d;c;d;2s;
+2: 2f-;;
+@
+PARTA
+repeatboth
+
+1: 8g#;a;4c;8a;b&;4d;
+2:4.f-;8f#-;4.g-;8b-;
+bar
+
+1: 8e;g;b&;d+;[grace;slash1]8d#+;e+;f+;g#;a;
+2: 2c;f-;
+bar
+
+1: 8a;g;f#;g;b&;e;d;c;
+2: 2b&-;c;
+bar
+
+1: 8a;f;b-;c;;d;f;d;
+2: 2f-;b&-;
+bar
+
+1: 2a-f;;
+1 2:8r;c;b-;c;2s;
+2: 2f-;;
+repeatboth
+
+PARTA
+repeatend
+
+1: 1ac+d+f+;
+2: 1f--;
+endbar

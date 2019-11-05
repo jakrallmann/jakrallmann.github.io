@@ -1,0 +1,320 @@
+header
+	title (18) "Prelude"
+	title (12) "" "John A. Krallmann"
+	title (12) "" "Op. 1 No. 8 (circa 1975)"
+
+footer
+	title (11) "Original written for violin and piano"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Prelude - \%"
+
+score
+	time=4/4
+	staffs=2
+	vscheme=1
+	beamstyle=4,4,4,4
+	barstyle=1-2
+	brace=1-2
+	size=12
+	staffscale=0.9
+	scoresep=12,28
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi 1-2 1: 0 "program=0";
+
+1 1: 16c+;a;e+;c+;a+;e+;c++;a+;e+;c+;a+;e+;4c++;
+rom above all: 0 "Vivace";
+octave above 1: 3 "8va" til 4.5;
+mussym 1: 4 "ferm";
+boldital below 1: 0 "f";
+2 1: mr;
+mussym 2: 1 "ferm";
+dblbar
+
+1 1: a+;e+;f+;d+;
+rom above 1: 0 "Animato";
+phrase below 1: 1 til 4;
+phrase above 1: 1 til 2m+4;
+boldital below 1: 1 "mf";
+2 1: mr;
+bar
+
+1 1: c+;d+;e+;g#;
+phrase below 1: 1 til 4;
+2 1: mr;
+bar
+
+1: 8c+;b;2.a;
+phrase below 1: 1 til 4;
+2: mr;
+mussym 1: 5 "ferm";
+dblbar
+
+score beamstyle=2,2
+music
+
+1: c+;a;b;g#;
+rom above 1: 0 "Cantabile";
+phrase 1: 1 til 2m+3;
+boldital below 1: 1 "mp";
+2: mr;
+bar
+
+1: a;f;8g#;e;f;d;
+2: mr;
+bar
+
+1: 2e;4a-;c+;
+phrase 1: 4 til 2m+4;
+2: mr;
+bar
+
+1: b;f+;e+;b;
+2: mr;
+bar
+
+1: 8d+;c+;b;a;4;g#;
+2: mr;
+bar
+
+1: b;d+;f+;e+;
+phrase 1: 1 til 2m+1;
+2: mr;
+bar
+
+1: a+;d+;2g#+;
+2: mr;
+bar
+
+1: 2a+;4a<>;g#;
+phrase above 1: 3 til 4m+1;
+2: mr;
+bar
+
+1: f<>;e;a<>;[up]b;
+2: mr;
+bar
+
+1: f+<>;e+;8d+;c+;b;a;
+phrase below 1: 3 til 4.5;
+2: mr;
+bar
+
+1: e;b;e+;g#<>;
+phrase below 1: 1 til 3;
+2: mr;
+bar
+
+1: 1a;
+2: mr;
+dblbar
+
+1:c+;a;b;g#;
+phrase 1: 1 til 2m+3;
+2: 2a-;e-;
+boldital between 1&2: 1 "f";
+bar
+
+1: a;f;8g#;e;f;d;
+2: 2f-;b-;
+bar
+
+1: 2e;4a-;c+;
+phrase 1: 4 til 2m+4;
+2: 2e-;4a-;;
+bar
+
+1: b;f+;e+;b;
+2: b-;d;e;d;
+bar
+
+1: 8d+;c+;b;a;4a;g#;
+2: 2f;4;e;
+bar
+
+1: b;d+;f+;e+;
+phrase 1: 1 til 2m+1;
+2: d;g#-;a-;c;
+bar
+
+1: a+;d+;2g#+;
+2: c;d;2b-;
+bar
+
+1: 2a+;4a<>;g#;
+phrase above 1: 3 til 5m+1;
+2: 2a-;;
+bar
+
+1: f<>;e;a<>;[up]b;
+2: 2b-;c;
+bar
+
+1: f+<>;e+;8d+;c+;b;a;
+phrase below 1: 3 til 4.5;
+2: 2d;f;
+bar
+
+1: e;b;e+;g#;
+phrase below 1: 1 til 1m+1;
+2: 2e;e-;
+bar
+
+1: 1a;
+2: 1a-;
+bar
+
+1: 1g;
+mussym above 1: 1 "ferm";
+2: 1gn-;
+mussym below 2: 1 "uferm";
+boldital between 1&2: 1 "mf";
+bar
+
+newscore 
+
+// page 2 of original manuscript
+midi all: 0 "tempo=96";
+ital above all: 1 "memo mosso";
+1: 4.g;8f;e;g;4b&;
+phrase 1: 1 til 1m+1;
+boldital between 1&2: 1 "mp";
+ital between 1&2: 1 "espressivo";
+2: 8c;e;g;c+;g;e;a-;c#;
+bar
+
+1: a;;2e+;
+phrase 1: 2 til 2m+1;
+2: 8e;a;e;c#;a-;c;e;c;
+bar
+
+1: f+;8e+;d+;c#+;b&;4;
+2: 8d;f;a;f;4g-;8c#;e;
+bar
+
+1: a;;8d+;e+;f+;g+;
+phrase 1: 2 til 2m+1;
+2: 8a;e;c#;e;4b&-;a-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+1: 8a+;c#++;4d++;d+;
+2: 8g-;e-;d-;f-;a-;d;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+1: d+;r;;{8d+;c+;b&;}3;
+boldital between 1&2: 2 "mf";
+ital between 1&2: 2 "piu mosso";
+midi all: 2 "tempo=112";
+2: 8a-;f-;{8d-;f-;a-;}3;{8d-;f-;a-;}3;{8d-;f-;a-;}3;
+bar
+
+1: a;{8d+;c+;b&;}3;4a;{8c+;bn;a;}3;
+phrase 1: 2 til 3; 4 til 3m+1;
+2: {8d-;f-;a-;}3;{d-;f-;a-;}3;{a--;c-;e-;}3;{a--;c-;e-;}3;
+bar
+
+1: {8c+;b;a;}3;{e+;d+;c+;}3;{e+;d+;c+;}3;{a+;g+;f+;}3;
+2: {8a--;c-;e-;}3;{8a--;c-;e-;}3;{8a--;c-;e-;}3;{f-;a-;c;}3;
+bar
+
+1: {8a+;g+;f+;}3;4c++;g+;;
+2: {8f-;a-;c;}3;{e-;g-;c;}3;{e-;g-;c;}3;{e-;g-;c;}3;
+bar
+
+1: c+; {8d+;e+;f+;}3;{g+;a+;b+;}3;4c++;
+phrase 1: 2 til 1m+1;
+2: {8e-;g-;c;}3;{d-;f-;g-;}3;{b-;a-;g-;}3;{c-;e-;g-;}3;
+bar
+
+1: c+;;;{8;b;a;}3;
+phrase 1: 2 til 3m+1;
+2: {8c-;e-;g-;}3;{c-;e-;g-;}3;{a--;c-;e-;}3;{a--;c-;e-;}3;
+bar
+
+1: {8c+;b;a;}3;{e+;d+;c+;}3;{a+;e+;c+;}3;{c++;b+;a+;}3;
+< below 1: 3 til 1m+3.5;
+2: {8a--;c-;e-;}3;2.a--;
+bar
+
+1: 16e+;c+;a+;e+;c++;a+;e++;c++;a+;e+;4.c++~;
+octave above 1: 1 "8va" til 2.8; 3 "15va" til 1m+4;
+2: mr;
+bar
+
+1: 1c++;
+2: mr;
+bar
+
+// page 3 of original manuscript
+
+midi 1-2 1-2: 1 "onvelocity=90";
+1: c+c++;aa+;bb+;g#g#+;
+boldital between 1&2: 1 "ff";
+2: 1a-a-- tie;
+bar
+
+1: aa+;ff+;8g#g#+;ee+;ff+;dd+;
+2: 1a-a--;
+bar
+
+
+staff 1 vscheme=2f
+music
+midi 1 2: 0 "program=0";
+1: c+;b;2aa- tie;
+1 2: 2ee+;s;
+2: 2e-e--;a-a-- tie;
+bar
+
+1: 1aa-;
+2: 1a-a--;
+bar
+
+1: 1eg#b;
+boldital between 1&2: 1 "f";
+midi 1-2 1-2: 1 "onvelocity=80";
+2: 1e;
+bar
+
+1: 1e~g#b;
+2: 1a-~;
+bar
+
+1: 1eac+;
+boldital between 1&2: 1 "mp";
+midi 1-2 1-2: 1 "onvelocity=64";
+2: 1a-;
+bar
+
+1: [grace]8d#+;1e+;
+ital above 1: 1 "dolce";
+boldital between 1&2: 1 "p";
+midi 1-2 1-2: 1 "onvelocity=50";
+2: mr;
+bar
+
+1: mr;
+2: [grace]8g#-;1a-~;
+bar
+
+1: 1a+c++ tie;
+ital between 1&2: 1 "morendo";
+2: 1a-~;
+bar
+
+1: 1a+c++;
+2: 1a-;
+mussym above 1: 1 "ferm";
+mussym below 2: 1 "uferm";
+endbar

@@ -1,0 +1,462 @@
+header
+	title (18) "The Dream Weaver's Magic Carpet"
+	title (8) ""
+	title (12) "" "John A. Krallmann (January 3-6, 2002)"
+
+header2
+	title (12) "The Dream Weaver's Magic Carpet - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	packfact=1.1
+	scoresep=12,24
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=76,64"; 0 "param=10,80";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "param=10,68";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "param=10,56";
+midi 2 2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=67"; 0 "param=10,44";
+
+define THEME
+S 2.c+;
+A 2.e;
+T 2.g;
+B 2.c;
+bar
+
+S 2.c+;
+A 2.e;
+T 2.e;
+B 2.a-;
+bar
+
+S d+;c+;f;
+A 2.a;
+T 2c;4a~;
+B 2.f-;
+bar
+
+S 2.b;
+A a;g;f;
+T a;b;d+;
+B 2.g-;
+bar
+
+S 2.e;
+A d;c;b-;
+T 2g;4e~;
+B 2.c-;
+bar
+
+S g;f;e;
+A 2.a-;
+T e;d;c;
+B 2.f-;
+bar
+
+S 2d;8e;d;
+A c;b-;~;
+T a;g;e~;
+B 2g-;4g#-;
+bar
+
+S 2c;4g;
+A b-;2a-;
+T 2e;4f;
+B 2a-;4d-;
+bar
+
+S 2d;8;e;
+A c;2b-;
+T a;g;e;
+B 2g-;4g#-;
+bar
+
+S 2c;8f;g;
+A b-;2a-;
+T 2.e;
+B a-;g-;d-;
+bar
+
+S g;a;8b;d+;
+A 2f;4d;
+T a;2g;
+B 2g-;4f-;
+bar
+
+S d+;c+;g;
+A 2g;4b-;
+T 2.c;
+B 2.e-;
+bar
+
+S 8g;a;2f;
+A 2a-;4g#-;
+T 2.c;
+B 2.f-;
+bar
+
+S 2.d;
+A c;2b-;
+T a;g;f;
+B 2.g-d;
+bar
+
+S 2.e;
+A 2.c;
+T 2.g;
+B 2.c-;
+bar
+
+midi 1 1: 1 "onvelocity=76"; 4 "onvelocity=80,64";
+midi 2 1-2: 1 "onvelocity=60"; 4 "onvelocity=64";
+S 2.e;
+A 2.c;
+T 2.g;
+B 2.c-;
+bar
+
+/////
+
+S 2c+;4e;
+A 2e;4c;
+T b;a;g;
+B 2.a-;
+bar
+
+S e;2f;
+A 2.c;
+T 2f;4a;
+B 2.d-;
+bar
+
+S 2.b;
+A 2.d;
+T b;a;f;
+B 2.g-;
+bar
+
+S g;c+;d+;
+A b-d;2ce;
+T g;2a;
+B e-;a-;g-;
+bar
+
+S a+;g+;c+;
+A c+;b;a;
+T 2a;4e+;
+B 2.f-c;
+bar
+
+S 2.b;
+A a;g;f;
+T a;b;d+;
+B 2.g-;
+bar
+
+S 2e;4a;
+A d;2c;
+T b;a;g;
+B 2a-e;4f-;
+bar
+
+S b;c#+;d+;
+A da;g#;e;
+T 2.b-;
+B 2e-;4d-;
+bar
+
+S 2.e+;
+A g;a;e;
+T 2a-;4g;
+B 2.c#-;
+bar
+
+S 2.f+;
+A a;c+;f;
+T 2c;4a;
+B 2.c(n)-;
+bar
+
+S 2g+;4f+;
+A 2g;4d+;
+T d;e;g;
+B 2.b--;
+bar
+
+mussym above 1: 3 "ferm";
+midi all: 3 "tempo=40"; 4 "tempo=104";
+S 2e+;4a+;
+A a;b;c#+;
+T c#+;b;g;
+B 2.a-;
+bar
+
+midi all: 1 "tempo=86";
+S 2.f#+;
+A 2.d+;
+T 2.a;
+B 2.d;
+bar
+
+midi all: 1 "tempo=96";
+midi 1 1: 1 "onvelocity=68"; 4 "onvelocity=80,64";
+midi 2 1-2: 1 "onvelocity=54"; 4 "onvelocity=64";
+S 2.f#+~;
+A 2.d+~;
+T 2.a-~;
+B 2.d-~;
+bar
+
+S 2.f+;
+A 2.d+;
+T 2.a-;
+B 2.d-;
+@
+THEME
+repeatstart
+
+////
+
+score
+	key=2#
+	time=4/4
+	beamstyle=4,4,4,4
+music
+
+//midi all: 0 "tempo=96";
+S 1d+f+;
+A r;a;;;
+T 1a;
+B 2.d;4c;
+bar
+
+S 1d+f+;
+A r;b;;;
+T 1f;
+B 2.b-;4a-;
+bar
+
+S f+;e+;d+;e+;
+A 2d+;4b;g;
+T 1b;
+B 2.g-;4e-;
+bar
+
+S 1ge+;
+A b;d+;2c+;
+T 1e;
+B 2.a-;4a--;
+bar
+
+S f+;a+;d++;f+;
+A 1d+;
+T 2r;4b;a;
+B 1d-a-;
+bar
+
+S f+;g+;2;
+A 2b;4f+;e+;
+T a;g;b;d+;
+B 2g-;e-;
+bar
+
+S a+;g+;f+;g+;
+A c+;b;a;8b;c+;
+T r;c+;g+;a;
+B 1a-;
+bar
+
+S 8f+;g+;a+;g+;2f#+;
+A d+;c+;e+;d+;
+T a;e;2a;
+B d;a-;2d;
+repeatend
+
+S 2f+;g+;
+A e+;d+;2;
+T 2a;4;g;
+B 2cn;b-;
+bar 
+
+score time=2/4
+music
+S 2b+;
+A 2d+;
+T f;e;
+B 2g-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+S 1a+;
+A 1f+;
+T 1a-;
+B 1d-;
+bar
+
+midi 1 1: 1 "onvelocity=70"; 4 "onvelocity=80,64";
+midi 2 1-2: 1 "onvelocity=54"; 4 "onvelocity=64";
+S 1a+;
+A 1f+;
+T 1a-;
+B 1d-;
+dblbar
+
+////
+score
+	key=0&
+music
+
+S a;e;4.;8g;
+A 1c;
+T 2e;4b;a;
+B 1a-;
+bar
+
+S g;f#;;8g;a;
+A e;d;2;
+T 1a;
+B 1d;
+bar
+ 
+S a;e;4.;8g;
+A 1c;
+T 2e;4b;a;
+B 1a-;
+bar
+
+S g;a;;8b;c+;
+A e;f(n);2;
+T 2a;c+;
+B 2d;f;
+bar
+
+S c+;a;c+;a;
+A 2e;f;
+T 2e;a;
+B 2a-;f;
+bar
+
+S c+;a;c+;a;
+A 2e;f;
+T 2e;a;
+B 2a-;f;
+bar
+
+S 2c+;;
+A f;e;d;f;
+T 2g;a;
+B 2c;f;
+bar
+
+score time=2/4
+music
+
+S 2e+;
+A 2gc+;
+T 2g;
+B 2c;
+bar
+
+score time=4/4 
+music
+
+S 1e+;
+A 1gc+;
+T 1g-;
+B 1 c-;
+bar
+
+midi 1 1: 1 "onvelocity=68";
+midi 2 1-2: 1 "onvelocity=54";
+S 1g;
+A 2b-;4a-;g-;
+T 1d;
+B 1g-;
+bar
+
+score time=2/4
+music
+
+S 2e;
+A 2d;
+T 2g;
+B 2c;
+bar
+
+score time=4/4
+music
+
+midi all: 1 "tempo=64"; 5 "tempo=96";
+midi 1 1: 1 "onvelocity=58";
+midi 2 1-2: 1 "onvelocity=44";
+S 1e;
+A 1c;
+T 1g;
+B 1c;
+dblbar
+
+newscore
+
+score
+	time=3/4
+	beamstyle=4,4,4
+	packfact=1
+music
+
+midi 1 1: 1 "onvelocity=80,64";
+midi 2 1-2: 1 "onvelocity=64";
+THEME
+bar
+
+midi all: 0 "tempo=88";
+midi 1 1: 1 "onvelocity=70";
+midi 2 1-2: 1 "onvelocity=54";
+S e;f#;a-;
+T mr;
+bar
+
+midi all: 0 "tempo=60";
+S 2.d;
+T 2.f#;
+B 2.d-a-;
+bar
+
+midi all: 0 "tempo=50";
+midi 1 1: 1 "onvelocity=60";
+midi 2 1-2: 1 "onvelocity=44";
+S 2.d;
+T 2.f#;
+B 2.d-a-;
+bar
+
+midi all: 0 "tempo=24";
+midi 1 1: 1 "onvelocity=50";
+midi 2 1-2: 1 "onvelocity=34";
+midi 1-2 1-2: 3 "param=10,63";
+S 2.d;
+T 2.f#;
+B 2.d-a-;
+endbar

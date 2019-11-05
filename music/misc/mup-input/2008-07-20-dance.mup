@@ -1,0 +1,151 @@
+header
+	title (18) "Dance"
+	title (12) "" "John A. Krallmann (7/20/08)"
+
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	staffscale=0.9
+	beamstyle=4.,4.
+	vscheme=2f
+
+staff 2
+	clef=bass
+	timeunit=4.
+music
+
+midi all: 0 "tempo=100";
+
+1: c+;b;c+;4.a;
+2: 2.f#c+e+;
+bar
+
+1: e+;d+;e+;4.c+;
+2: 2.gc+e+;
+bar
+
+1: g+;f+;e+;d+;c+;a&;
+2: 2.a&c+d+f+;
+bar
+
+1: 4.d+;g+;
+1 2: b;a;g;4.b;
+2: g-f;8f+;e+;e&+;
+bar
+
+1: 4.e+;;
+1 2: g;g#;a;c+;b;b&;
+2: c;e+;
+bar
+
+1: 4.f+;;
+1 2: a;b;c+;d+;d&+;c+;
+2: f;af+;
+bar
+
+1: 4.g+;;
+1 2: b;c+;d+;f+;e+;e&+;
+2: g+;bg+;
+bar
+
+1: 4.e(n)+;g+;
+1 2: c+;b;b&;a;a&;g;
+2: c;ge+;
+bar
+
+1: 4.a+;;
+1 2: c+;c#+;d+;f+;e+;e&+;
+2: f-;af+;
+bar
+
+1: d++;c++;b+;a+;g+;d+;
+1 2: 4.f+;b;
+2: g-;gf+;
+bar
+
+1: 4.f+;e+;
+1 2: a;d;a&;g;c+;b;
+2: c;ge+;
+bar
+
+1: 4.e+;d+;
+1 2: a;d;c;d;e;f;
+2: f-;fa;
+bar
+
+1: 4.c+;b;
+1 2: d;e;f;a;g;f;
+2: g-;gb;
+bar
+
+1: 4.b;a;
+1 2: c;d;e;c;d;e;
+2: a-;ea;
+bar
+
+1: 4.g;f;
+1 2: a-;c;f-;a-;b-;g-;
+2: d-;g-;
+bar
+
+1: f;e;d;d+;c+;b;
+1 2: 4.b-;8f;e;d;
+2: g#-f;e-b-g#;
+roll 2: 4;
+bar
+
+1: g#;a;b;a;a+;e+;
+1 2: b-;c;d;c;c+;g;
+2: a-e;ea;
+bar
+
+1: g+;f+;e+;;d+;b;
+1 2: 4.a;g;
+2: d-a-f;e-b-gn;
+bar
+
+1: b;a;;4.;
+1 2: 4.f;8c;d;e;
+2: 2.f-ca;
+bar
+
+1: a;g;;;a;b;
+1 2: 2.d;
+2: a;b;
+2 2: 2.g-d;
+bar
+
+1: 4b;8c+;;d+;e+;
+1 2: 2.d;
+2: 8b;a;e;4.e+;
+2 2: 2.a-;
+bar
+
+1: a+;g+;f+;4.c+;
+1 2: c+;b;a;4.;
+2: f-;8f+;e+;c+;
+2 2: 4.s;a;
+bar
+
+1: f+;e+;d+;4.g;
+1 2: a;g;f;4.b-;
+2: g-;fg;
+bar
+
+1: 2.d+;
+1 2: 2.f;
+2: 8c-;g-;f;a;d+;a+;
+bar
+
+1: 2.e+;
+1 2: 2.c+;
+2: 2.c+g+;
+endbar

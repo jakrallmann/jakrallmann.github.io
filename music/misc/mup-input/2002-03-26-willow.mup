@@ -1,0 +1,158 @@
+header
+	title (18) "The Willow Tree"
+	title (8) ""
+	title (12) "" "John A. Krallmann (March 26, 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	vscheme=2o
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.95
+	packfact=1.3
+	scorepad=6
+	measnum=y
+	beamstyle=4,4,4,4
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=92";
+midi 1 1: 0 "channel=11"; 0 "program=48"; 0 "onvelocity=54,48"; 0 "param=10,24";
+midi 1 2: 0 "channel=12"; 0 "program=49"; 0 "onvelocity=84"; 0 "param=10,69";
+midi 2 1: 0 "channel=13"; 0 "program=50"; 0 "onvelocity=78"; 0 "param=10,49";
+midi 2 2: 0 "channel=14"; 0 "program=43"; 0 "onvelocity=50"; 0 "param=10,104";
+
+S 2.c+;4b;
+A r;e;2;
+T 2r;g;
+B 1c;
+bar
+
+S 1a;
+A r;c;g;f;
+T 2r;4b;a;
+B 1f;
+bar
+
+S 2.d;8e;f;
+A r;a-;2b-;
+T 2f;4g;f;
+B 1g-;
+bar
+
+S 1g;
+A f;d;2e;
+T 2a;g;
+B 1c;
+bar
+
+S 2.a;8g;a;
+A r;e;2;
+T r;a;b&;a;
+B 1c#;
+bar
+
+S 1f;
+A r;a-;e;d;
+T 2r;4g;f;
+B 1d;
+bar
+
+S b&-;d;4.e;8f;
+A mr;
+T 2f;4e;d;
+B 1g-;
+bar
+
+S 2.e;4a;
+A r;b&-;2a-;
+T c#;d;c;8f;e;
+B 1a-;
+dblbar
+
+score key=2&
+music
+
+S 2.c+;8g;a;
+A r;e;2d;
+T r;2a;4d;
+B 1f#-;
+bar
+
+S a;b;;d;
+A c;2d;8a-;b-~;
+T e;2d;4f;
+B 2g-;f-;
+bar
+
+S a;g;c;b-;
+A b-;c;2f-;
+T f;e;c;d;
+B 2e-;d-;
+bar
+
+S e;g;e+;f+;
+A g-;b-;g;a;
+T e;d;g;8f;e;
+B 2c-;f-;
+bar
+
+S f+;a+;c++;b+;
+A c+;2f+;4d+;
+T a;d;a;b;
+B 2d-;g-;
+bar
+
+S g+;f+;c+;b;
+A 2be+;f;
+T e+;d+;c+;f;
+B 2c-;d-;
+bar
+
+S 2gc+;4d+;e+;
+A c;d;2fa;
+T b-;g;f;e;
+B 2e-;f-;
+bar
+
+S 1dd+;
+A r;a;b;g;
+T b;a;g;b;
+B 2.g-;4f-;
+bar
+
+S 2g;4d+;c+;
+A e;d;2c;
+T 2g;4d;e;
+B 1c-;
+bar
+
+S 1d+;
+A a;bn;2g;
+T 2d;bn;
+B 2.g-;4f-;
+bar
+
+S e;r;d;r;
+A g-;r;f#-;r;
+T c;r;a-;r;
+B c-;r;d-;r;
+bar
+
+midi all: 1 "tempo=76";
+A 1g-;
+T 1g-;
+endbar

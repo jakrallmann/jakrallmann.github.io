@@ -1,0 +1,181 @@
+header
+	title (18) "Wind Through the Willows"
+	title "" "John A. Krallmann (April 2003)"
+
+header2
+	title (12) "Wind Through the Willows - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffsep=15
+	scoresep=10,32
+	packfact=0.97
+	staffscale=0.95
+	measnum=y
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+define T(A,B,C,D) {8A}3;{B}3;{C}3;{D}3; @
+
+define P  pedal below 2: 1;3; @
+music
+
+midi all: 0 "tempo=76";
+midi 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=90,64";
+midi 1 2: 0 "channel=12"; 0 "program=1";
+midi 2: 0 "channel=13"; 0 "program=1";
+
+1: 2.s;{8e+;d+;c+;}3;
+2: 2.s;4r;
+repeatstart
+
+define THEME
+1: a;2;8c;d;
+2: T(a-;e;c+;, a-;e;c+;, a-;e;c+;, a-;e;b;)
+P
+bar
+
+1: 2.e;{8f;e;d;}3;
+1 2: 2a-;4g#-;s;
+2: T(e-;b-;e;, e-;b-;e;, e-;b-;e;, e-;b-;g#;)
+P
+bar
+
+1: a-d;c;b-~;{;8a-;}3;
+2: T(a-;e;c+;, a-;e;c+;, d-;a-;f;, d-;a-;f;)
+P
+bar
+
+1: 2f;e;
+2: T(a-;e;b;, a-;e;b;, a-;e;c+;, a-;e;c+;)
+P
+bar
+
+1: 1d;
+2: T(f-;d;a;, b;a;b;, f-;d;a;, b;a;b;)
+P
+bar
+
+1: 1b;
+2: T(e-;b-;e;, g#;b;d+;, f+;e+;d+;,b;f;e;)
+P
+bar
+
+1: 2c+;;
+1 2: 4s;{8c;e;a;}3;4s;{8c;f;a;}3;
+2: {8a-;e;b;}3;4s;{8f-;c;a;}3;4s;
+P
+bar
+
+1: 2c+;f+;
+1 2: s;{8c;e;a;}3;4s;{8e;f;d;}3;
+2: {8a-;e;b;}3;4s;{8d-;a-;f;}3;4s;
+P
+bar
+
+1: 2.e+;{8f+;e+;d+;}3;
+1 2: 4s;{8b-;e;f#;}3;2g#;
+2: {8e-;b-;g#;}3;2.s;
+P
+ifdef TWO bar else repeatend endif
+
+1: 2.a+;{8a;g;f;}3;
+2: {8a-;e;c+;}3;{d+;e+;d+;}3;2a;
+P
+bar
+
+1: e;b;c+~;{;8b;}3;
+2: T(e;g#;b;, d+;b;g;, e;g;b;, d+;b;g;)
+P
+bar
+
+1: b;a;2f;
+2: T(c;e;a;, c+;a;e;, d;a;d+;, e+;d+;a;)
+P
+bar
+
+1: e;f+;8;e+;d+;b;
+2: T(e;g#;b;,d+;b;g;, e;g;b;, d+;b;g;)
+P
+bar
+
+1: 2d+;c+;
+1 2: s;{8c;e;a;}3;4s;{8c;f;a;}3;
+2: {8a-;e;b;}3;4s;{8f-;c;a;}3;4s;
+P
+bar
+
+1: 2c+;b;
+1 2: 4s;{8d;f;a;}3;4s;{8f;e;d;}3;
+2: {8d-;a-;f;}3;4s;{8e-;b-;g#;}3;4s;
+P
+bar
+@
+THEME
+
+1: 2.a;{8a;b;c+;}3;
+1 2: s;{8c;d;e;}3;2a;
+2: {8a-;e;a;}3;2.s;
+P
+bar
+
+1: 2f+;4.;[up]8;
+1 2: 4s;{8e;f;a;}3;{f;e;d;}3;4s;
+2: {8d;a;d+;}3;2s;{8a;f;d;}3;
+P
+bar
+
+1: [up]f+;g+;a+;[up]8;[]b+;
+1 2: 4s;{8b-;a;g;}3;{f;d;a-;}3;4s;
+2: {8g-;d;a;}3;2s;{8b;f;g-;}3;
+P
+bar
+
+1: [up]b+;c++;2a+;
+1 2: 4s;{8c;b;a;}3;4s;a;
+2: {8a-;e;b;}3;4s;{8f;c+;g+;}3;4s;
+P
+bar
+
+1: b+;c++;a+;{8b;c+;a;}3;
+2: {8a-;e;b;}3;{a;e+;g-;}3;{f-;c;a;}3;4e+;
+P
+bar
+
+1: a;g;b;a;
+2: {8e-;b-;g;}3;4b;{8a-;e;b;}3;4c+;
+P
+bar
+
+1: b;a;;g;
+2: {8f-;c;a;}3;4c+;{8e-;b-;a;}3;4b;
+P
+bar
+
+1: 2.e;{8b-;c;e;}3;
+2: 8a-;e;4b;2c+;
+mussym above 1: 1 "ferm";
+mussym above 2: 3 "ferm";
+P
+bar
+
+define TWO @
+THEME
+
+midi all: 0 "tempo=70"; 3 "tempo=60";
+1: 1a;
+1 2: s;{8c;d;e;}3;2a;
+2: {8a-;e;a;}3;2.s;
+pedal below 2: 1;5*;
+endbar

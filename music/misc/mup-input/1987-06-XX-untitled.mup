@@ -1,0 +1,116 @@
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+header
+	title (18) "Untitled"
+	title (12) "" "John A. Krallmann (06/87)"
+
+footer
+	title (11) "\(copyright) Copyright 1987 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "- \% -"
+
+score
+	staffs=2
+	key=2#
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	packfact=1.2
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=120";
+ifdef PIANO
+	midi 1-2 1-2: 0 "channel=1";
+	midi 1-2 1-2: 0 "onvelocity=80";
+else 
+	midi 1-2 1-2: 0 "channel=11"; 0 "program=70";
+endif
+
+S f+;c+;d+;8c+;b;
+T r;a#;b;e;
+bar
+
+S 4.a#;8b;;an;g;f;
+T f;f-;g-;d#-;
+bar
+
+S 4.g;8f;4e;d;
+T e;f;g;g-;
+bar
+
+S 4.c;8b-;4a-;g;
+T a-;b-;c;a-;
+bar
+
+S 4.f;8e;4d;cn+;
+T d;e;f;f-;
+bar
+
+S 4.b;8a;4g;fn+;
+T g-;a-;b-;b;
+bar
+
+S 4.e+;8d+;4cn+;b;
+T cn+;d+;e+;g#;
+bar
+
+S 4.cn+;8a;2g#;
+A 2s;8;fn;e;d;
+T 2.s;4g#;
+B a;d#;2e;
+bar
+
+S eacn+;eg#bd+;eac+e+;a#c#+e+f#+;
+T a;e;a-;f#-f#;
+bar
+
+S 2.fbd#+f+;4ff+;
+T 2.bb-;4ff-;
+bar
+
+S 4.aa+;8gg+;4ff+;ee+;
+T 4.aa-;8gg-;4ff-;ee-;
+bar
+
+S 2.d#d#+;4dfacn+d+;
+T d#d#-;cncn-;b-b--;a-a--;
+bar
+
+S 2.d#g#c+d#+;4dgcn+d+;
+T g#-g#--;ff-;ee-;d#d#-;
+bar
+
+S 2.eg#c+e+;4egc+e+;
+T cc-;b-b--;a-a--;g#-g#--;
+bar
+
+S 2.egna#c+e+;4ee+;
+T 2.gn-gn--;4ee-;
+bar
+
+S 4.g+g;8f+f;4e+e;d+d;
+T 4.gg-;8ff-;4ee-;dd-;
+bar
+
+S cc+;bb-;aa-;gg-;
+T cc-;b-b--;a-a--;g-g--;
+bar
+
+S 2ff-;4.;8;
+T f-f--;e-e--;d-d--;c-c--;
+bar
+
+S 1fb-f-;
+T 1b--b---;
+endbar

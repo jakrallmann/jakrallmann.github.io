@@ -1,0 +1,174 @@
+header
+	title (18) "Summer Breeze"
+	title "" "John A. Krallmann (June 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=3/4
+	beamstyle=4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.85
+	scoresep=12,28
+	measnum=y
+
+staff 1
+	vscheme=3f
+staff 2
+	vscheme=2f
+	clef=bass
+
+music
+
+1: 8e;f;g;a;b;c+;
+2: c;g;e+;
+bar
+
+1: 8e+;f+;d+;e+;c+;d+;
+2: f-;c;a;
+bar
+
+1: 8f;g;b;f+;a+;g+;
+2: g-;d;8c+;b;
+bar
+
+1: 8e++;c++;d+;e+;a;g;
+2: c-;g-;e;
+bar
+
+1: 8g#;a;d+;e+;g+;f+;
+2:f-;c;a;
+bar
+
+1: 8b-;d;f;g;a;b;
+2: g-;d;8b;g;
+bar
+
+1: 8d+;c+;d;e;a;g;
+2: c;g;c+;
+bar
+
+score time=4/4
+	beamstyle=4,4,4,4
+music
+
+1: 8g;f;c#;d;f;a-;4b-;
+2: d;a;g-;d;
+bar
+
+1: r;eg;2;
+2 1: 2.c+;8g;g#;
+2 2: 1c;
+bar
+
+1: r;gb;2fa;
+2 1: 2.a;8b;c+;
+2 2: 1f-;
+bar
+
+1: r;dg;2;
+2 1: 8c+;b~;2;8g;d+;
+2 2: 1g-;
+bar
+
+1: r;gd+;2ge+;
+1 2: 2.e;8f;g;
+2: 1c-;
+bar
+
+1: r;ac+;2af+;
+1 2: 8g;f~;2;8f;a-;
+2: 1f-;
+bar
+
+1: 1d;
+2 1: r;a;2b;
+2 2: 1g-;
+bar
+
+1: 2c;;
+2: 2c;;
+bar
+
+1: r;ea;2;
+1 2: 2.c;8b-;c;
+2: 1a-;
+bar
+
+1: 8e;d;4a-;c;a;
+2: 1f-ca;
+bar
+
+1: ca;b-g;af+;bg+;
+2: 1g-d;
+bar
+
+1: ge+;fd+;2ec+;
+2: 1cb&;
+bar
+
+1: 1a;
+1 2: r;cf;2;
+2: 2.f;8e;d;
+bar
+
+1: 1e;
+2 1: r;gb&;2ea;
+2 2: 2.c#;8b&-;a-;
+bar
+
+1: 2.f;4g;
+2 1: r;ad+;2;
+2 2: 2.d;4e;
+bar
+
+1: 1a;
+1 2: r;cf;2;
+2: 1f;
+bar
+
+1: 2.a;8g;a;
+1 2: r;a-e&;2a-d;
+2: 1f#;
+bar
+
+1: c+;b&;2be&+g+;
+1 2: 2d;s;
+2:  g;f(n);2c;
+bar
+
+1: g+;f+;e+;d+;
+1 2: 2b&e&+;gb&;
+2: c;d;d#;e;
+bar
+
+1: 1c+;
+1 2: f;e;2e&a;
+1 3: [down;ho-2]2b&;s;
+2: 1f;
+bar
+
+1: 1ad+;
+1 2: r;d;e&;d;
+2 1: r;c+;;;
+2 2: 1f#;
+bar
+
+1: 2.b&;4g;
+1 2: r;dg;2;
+2: 1g;
+bar
+
+1: 2e&;d;
+2 1: r;gc+;r;f#a;
+2 2: 2c;d;
+bar
+
+2 1: g;r;g;r;
+2 2: g;s;g;s;
+endbar 

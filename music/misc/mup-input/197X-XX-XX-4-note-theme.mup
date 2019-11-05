@@ -1,0 +1,233 @@
+header
+	title (18) "On a 4-Note Theme"
+	title (12)  ""  "John A. Krallmann"
+	title (12)  ""  "Op. 1 No. 4 (circa 1973)"
+
+footer
+	title (8) ""
+	title (11) "Published by Arkkra Enterprises" \
+		"http://www.arkkra.com"
+
+score
+	staffs=2
+	barstyle=1-2
+	brace=1-2
+	staffsep=14
+	scorepad=8
+	staffscale=0.8
+
+staff 2
+	clef=bass
+
+score time=5/8n
+music
+
+midi all: 0 "tempo=125";
+midi 1-2: 0 "program=0";
+
+1: 2r;8;
+2: 4ff-;ee-;8cc-;
+boldital between 1&2: 1 "f";
+invisbar
+
+score time=5/4n
+music
+1: 2r;2egbe+;4dfad+;
+2: 1dd- tie;4dd-;
+invisbar
+
+score time=5/8n
+music
+1: 2r;8;
+2: 4ff-;ee-;8cc-;
+invisbar
+
+score time=5/4n
+music
+1: 2r;egbe+;4dfad+;
+2: 1dd- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 4fac+f+;egbe+;8cegc+;
+2: 4ff-;ee-;8cc-;
+invisbar
+
+score time=5/4n
+music
+1: 1dfad+ tie;4;
+2: 1dd- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 4fac+f+;gc+e+g+;8b&d+f+b&+;
+2: 4ff-;ee-;8cc-;
+invisbar
+
+score time=5/4n
+music
+1: 1ad+f#+a+ tie;4;
+2: 1dd- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 2r;8;
+2: 4ff-;ee-;8cc-;
+invisbar
+
+score time=5/4n
+music
+1: 2r;dgb&c+d+;4egbc+e+;
+2: 1dd- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 2r;8;
+2: 4ff-;ee-;8cc-;
+invisbar
+
+score time=5/4n
+music
+1: 2r;fgb&c+f+;4egbc+e+;
+2:1dd- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 2r;8;
+2: 4ff-;ee-;8cc-;
+invisbar
+
+score time=5/4n
+music
+1: 2r;eg#bnd+e+;4fgbd+f+;
+2: 1d&d&- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 2r;8;
+2: 4ff-;ee-;8cncn-;
+invisbar
+
+score time=4/4n
+music
+1: 2r;eg#bd+e+;
+2: 1d&d&- tie;
+invisbar
+
+1: 2.fg#bd+f+;4g&ad&+e&+g&+;
+2: 2.dd-;4cc-;
+invisbar
+
+1: a&be&+a&+;g&and&+g&+;ea&c+en+;e&ac+e&+;
+2: b-b--;a-a--;a&-a&--;;
+invisbar
+
+1: 2.ena&d&+en+;4eb&d+;
+2: d&-d&--;a&-a&--;d&d&-;b&-d&g&b&;
+invisbar
+
+1: g&b&d&+g&+;gnbd+gn+;a&c+f+a&+;c+f+a+c++;
+2: b&-d&g&b&;b-dfb;fa&c+f+;dnfbd+;
+invisbar
+
+score time=5/4n
+music
+1: 4f+a&+bn+dn++f++;1g+b+d++g++;
+2: 4cfa&c+;bn-dgbn;gg-;dd-;b-b--;
+invisbar
+
+score time=7/8n
+music
+1: 4r;f+an+c++f++;e+g+b+e++;8c+e+g+c++;
+2: 2..g-g-- tie;
+invisbar
+
+score time=4/4n
+music
+1: 1dn+f+a+d++;
+2: 1g-g--;
+invisbar
+
+score time=5/8n
+music
+midi 1-2: 0 "onvelocity=40";
+1: 2r;8;
+2: 4ff-;ee-;8cc-;
+boldital between 1&2: 1 "mp";
+invisbar
+
+newscore
+
+score time=5/4n
+music
+1: 1r;4;
+2: 1dd- tie;4;
+invisbar
+
+score time=5/8n
+music
+1: 2r;8;
+2: 4f-f--;e-e--;8c-c--;
+invisbar
+
+score time=7/8n
+music
+
+midi all: 1 "tempo=100";
+1: 2r;4.ad+f#+a+;
+2: 2..d-d-- tie;
+boldital between 1&2: 3 "p";
+ital between 1&2: 1 "meno mosso";
+invisbar
+
+score time=4/4n
+music
+1: 1d+f#+a+d++;
+2: 1d-d-- tie;
+invisbar
+
+score time=11/8n
+music
+
+midi 1: 1 "onvel=50";
+
+1: 4r;f;2e~;8;4c;
+2: 1d-d-- tie;4. tie;
+ital between 1&2: 3 "morendo";
+invisbar
+
+score time=4/4n
+music
+
+midi 1: 1 "onvel=45";
+
+1: 2d;a;
+2: 1d-d-- tie;
+invisbar
+
+1: 2d+;a+;
+2: 1d-d-- tie;
+invisbar
+
+1: 2d+;f#+;
+octave above 1: 1 "8va" til 2m+4.5;
+2: 1d-d-- tie;
+invisbar
+
+midi 1: 1 "onvel=35";
+
+1: 2a+;c#++;
+2: 1d-d-- tie;
+invisbar
+
+1: 1d++;
+2: 1d-d--;
+mussym above 1: 1 "ferm";
+mussym below 2: 1 "uferm";
+endbar

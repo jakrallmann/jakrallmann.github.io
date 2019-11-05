@@ -1,0 +1,164 @@
+header
+	title (18) "Sweet Dreams"
+	title "" "John A. Krallmann (November 24, 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (4) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	staffscale=0.82
+	packfact=1.1
+	key=4#
+	beamstyle=4,4,4,4
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=62";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=78";
+midi 1 2: 0 "channel=12"; 0 "program=0";
+midi 2 1: 0 "channel=13"; 0 "program=0";
+midi 2 2: 0 "channel=14"; 0 "program=0";
+
+1: 2..e;16e;f;
+2 1: 8g;b;a;g;f;g;4a;
+2 2: e-;b-;e;b-;
+bar
+
+1: 2..g;16f;g;
+1 2: 8g bm with staff below;s ebm;2.s;
+2 1: 8s bm with staff above;b ebm;a bm;g ebm;f bm;g ebm;4a;
+2 2: e-;b-;e;b-;
+bar
+
+1: 2..e+;16f;g;
+1 2: 8e+;g;f;e;2s;
+2 1: 2s;8f;g;4a;
+2 2: e-;b-;e;b-;
+bar
+
+1: 1g+;
+1 2: 8g+;b;a#;b;gn;g#;d#;e;
+2 2: e-;b-;e;b-;
+dblbar
+
+score key=1#
+music
+
+1: 2..e;16f;g;
+1 2: 8e bm with staff below;s ebm;2.s;
+2 1: 8s bm with staff above;g ebm;a bm;g ebm;f bm;g ebm;4a;
+2 2: c-;g-;e;g-;
+bar
+
+1: 2d;4.e;16f;g;
+2 1: 8a;b;f;g;b;c+;4a;
+2 2: g--;d-;c-;g-;
+bar
+
+1: 2d;8;e;fn;g;
+2 1: 8a;b;e;d;4fn;b&;
+2 2: 2g--;4b&--;d;
+dblbar
+
+score key=3&
+music
+
+1: c;f;8c+;b;a;b;
+1 2: 2s;e~;
+2 1: 8g;f;g;an;2s;
+2 2: 2an--;4a&--;c+;
+bar
+
+1: 8c+;d+;e+;f+;a+;g+;f+;e+;
+1 2: e;a;d+;a;
+2 2: a--;c+;b--;b;
+bar
+
+1: 8d+;c+;a;b;g;e;f;16g;a;
+1 2: f;8c;d;4b-;a-;
+2 2: b--;b-;e-;d&-;
+bar
+
+1: 4.e;16g;a;8f+;e+;4d+;
+1 2: 2s;4.a;16g;f;
+2 1: 8b;4.a;2s;
+2 2: c-;bn--;4.b&--;8bn--;
+bar
+
+1: 2e+;f;
+1 2: 8d+;c+;g;a;4e;d;
+2 1: 2s;8a;g;4f;
+2 2: c-;f-;2b-;
+bar
+
+1: 4.e;16f;g;8c;e;;16f;e;
+1 2: 8d;c;4;2s;
+2 1: 2g;4b;a;
+2 2: c;b-;2a-e;
+bar
+
+1: b-;b;[grace;slash 1]8g;8f;e;8.f;16c+;
+1 2: 2s;c;
+2 1: 8f;e;f;e;2s;
+2 2: 2g-;a-e;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 4.b;16g+;a+;
+1 2: 4e;d;
+2 1: 8fb;g;4a;
+2 2: 4.b-;8b--;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+rom above all: 1 "Slower";
+midi all: 1 "tempo=58";
+1: 2bg+b+;ge+g+;
+2 1: f+;e+;d+;c+;
+2 2: 2e-b-g;2cg;
+roll 2 1 to 2 2: 1;3;
+bar
+
+1: 4.c+e+;8f+;2b;
+1 2: 2s;4f;e;
+2 1: b;a;2b;
+2 2: 2a-e;g-;
+bar
+
+midi 1: 3 "onvelocity=68";
+midi all: 1 "tempo=54";
+1: 2ce;4ec+;db;
+2 1: g;a;2s;
+2 2: 2f-c;b-a tie;
+bar
+
+midi 1: 3 "onvelocity=62";
+midi all: 1 "tempo=50";
+1: 2ag+;4c;b-d;
+2 2: b-a;2.b--;
+bar
+
+midi all: 1 "tempo=44"; 4 "tempo=34";
+1: mr;
+2: e-~;e-b- tie;e-b-g tie; e-b-ge+ tie;
+bar
+
+midi 1: 1 "onvelocity=54";
+1: 1g+e++;
+2: 1e-b-ge+;
+endbar
+

@@ -1,0 +1,239 @@
+header
+	title (18) "Melancholy"
+	title "" "John A. Krallmann (July 7, 2002)"
+
+footer
+	title (12) "\(copyright) Copyright 2002 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	time=4/4
+	key=2&
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	staffscale=0.8
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=100";
+midi 1-2 1-2: 0 "channel=12"; 0 "program=1";
+
+
+1: s;c;d;f;
+2: s;r;b;gb;
+bar
+
+1: 2g;4;f;
+1 2: d;en;2d;
+2: 2cg;b-f;
+bar
+
+1: 2d;4c;b&-;
+1 2: c;bn-;2g-;
+2: 2g-d;e-b-;
+bar
+
+2 1: 1c-g-g;
+2 2: d;2.en;
+bar
+
+score time=2/4
+music
+
+1: g-;b-;
+2: 2e-b-e;
+bar
+
+score time=4/4
+music
+
+1: 1c;
+1 2: g-;2.a-;
+2: 1f-c;
+bar
+
+score time=2/4
+music
+
+1: c+;bd+;
+1 2: 2g;
+2: 2e-b-;
+bar
+
+score time=4/4
+music
+
+1: 2fbc+;ec+f+;
+2 1: 2c+;4g;a;
+2 2: 1f-c;
+bar
+
+1: f+;d+;c+;b;
+1 2: 2fc+;eg;
+2: 2d-c;e-b-;
+bar
+
+score time=2/4
+music
+
+1: 2g;
+1 2: d;cen;
+2: 2c-g-;
+bar
+
+score time=4/4
+music
+
+1: 2d;c;
+1 2: 1g-;
+2: 1e-b-;
+bar
+
+1: 1a-f#;
+1 2: 2e;d;
+2: 1d-a-;
+bar 
+
+1: dg;cb;b-eg;g-db;
+2: 1e-b-;
+bar
+
+score time=2/4
+music
+
+1: 2g-en;
+1 2: d;c;
+2 1: d;en;
+2 2: 2c-;
+bar
+
+score time=4/4
+music
+
+1: 2egbc+;a-f;
+2: 2e-cg;f-c;
+bar
+
+1: 2ec+;gc+~;
+2: 2c-g-b;f-ca tie;
+bar
+
+1: c+;d+;e+;en+;
+1 2: 1a;
+2: 1f-ca;
+bar
+
+1: 1dbf+;
+2: 1b--f-d;
+bar
+
+1: 1ge+b+;
+2: 1e-b-g;
+bar
+
+1: 1bd&+e+b+;
+2: 1g&-d&b;
+bar
+
+1: 1g&e+;
+1 2: 2b;a&;
+2: 1a&-ec+;
+bar
+
+1: 1b-fb;
+2: 1b--f-d;
+bar
+
+////
+score beamstyle=2,2
+music
+
+1: 8b+;g+;d+;b;g;d;b-;g-;
+2: mr;
+bar
+
+1: 8b+;g+;d+;b;g;d;b-;g-;
+2: mr;
+bar
+
+1: 8b+;g+;e+;b;d;e;g;b;
+2: 1cc-;
+octave below 2: 1 "8va" til 1m+4.5;
+bar
+
+1: 8b+;g+;e+;b;d;e;g;b;
+2: 1cc-;
+bar
+
+score key=5&
+music
+
+1: c+;dn+;e+;f+;
+1 2: 2eb;can;
+2: 1f-;
+bar
+
+1: g+;a+;2bf+b+;
+1 2: 2eb;s;
+2: 2e-b-e;b--f-dn;
+bar
+
+1: fbf+;ee+;dnadn+;ebe+;
+2 1: dn+;c+;b;gnb;
+2 2: 2.b-a;4s;
+bar
+
+1: fbf+;gnbe+gn+;be+b+;aa+ tie;
+1 2: 2s;e+~;
+2: dnb;d&b;2ce+ tie;
+bar
+
+1: 2aa+;4abng+;aa+;
+1 2: 2e+;s;
+2: 2ce+;bn-gdn+;
+bar
+
+1: d+f+d++;bb+;abd+a+;gbd+g+;
+2: 2b-fd+;ebe+;
+bar
+
+score time=2/4
+music
+
+1: b;c+;
+1 2: 2eg;
+2 1: b;a;
+2 2: 2a-e;
+bar
+
+score time=4/4
+music
+
+1: c+;f+;;c+;
+1 2: 1f;
+2 1: d+;c+;b;a;
+2 2: 1b-f;
+bar
+
+1: a;g;c+;d+;
+1 2: 1b-;
+2: 1e-b-g;
+bar
+
+1: 1ec+;
+2 1: an;g;f;e;
+2 2: 2.f-;4f--;
+bar
+
+1: 2db;d+b+;
+2: 2b-f;bf+;
+endbar
+

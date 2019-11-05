@@ -1,0 +1,418 @@
+header
+	title (18) "Fantasie"
+	title (12) "" "John A. Krallmann (8/89)"
+
+footer
+	title (11) "\(copyright) Copyright 1989 John A. Krallmann"
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Fantasie -\%"
+
+score
+	staffs=2
+	key=3&
+	time=cut
+	timeunit=4
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	packfact=1.2
+	staffscale=0.92
+	scoresep=9,27
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+midi all: 0 "tempo=120";
+midi 1-2 1-2: 0 "channel=1"; 0 "program=0";
+1: 2.s;4c;
+2: 2.s;4c;
+boldital above 1: 0 "un poco allegro ( \(smup4n) = 120)";
+boldital  between 1&2: 0 "mf";
+bar
+
+1: f;8;en;f;4.a;
+1 2: 2ca-;c;
+2: 2f-;a-;
+bar
+
+1: 2.c#;4b-;
+1 2: 2a-;b-;
+2: 4.b-;8a-;2g-;
+bar
+
+1: 4e;8;d;e;4.g;
+2: 1gb;
+2 2: 2r;c;
+bar
+
+1: 2.c;4e;
+2: 2a;a-;
+bar
+
+1: fa;df;8eg;4.ce;
+2: fc+;db;8de;4.cg;
+bar
+
+1: 2.fb;4a;
+1 2: 4e;8d;c;2d;
+2: b-;f-;2b--;
+bar
+
+1: ceg;;8cdg;4.ceg;
+2: 2c-;e-;
+bar
+
+1: 2.cea;4g;
+2: 4.f-;8g-;4.a-;8;
+bar
+
+1: f;;8ce;4.cdf;
+1 2: 2d;s;
+2: 2b;a;
+2 2: 2b-;4.;8a-;
+bar
+
+1: 2.dg;4df;
+1 2: 4c;8bn-;an-;2b-;
+2: 2.g-;4;
+bar
+
+1: 2a-ce;cda;
+2: 4.a-;8g-;2f-;
+bar
+
+1: 2cdg;bn-dg;
+2: 2.g-;4f-;
+bar
+
+1: cengb;;cfa;cdfa;
+2: en-;c-;4.f-;8;
+bar
+
+1: 2.dg;4df;
+1 2: c;8bn-;an-;4b-;;
+2: 2.g-;4;
+bar
+
+1: 2a-ce;a-cf;
+2: 4.a-;8g-;2f-;
+bar
+
+1: 2ce;d;
+1 2: 2s;4c;bn-;
+2: 2gg-;;
+bar
+
+midi all: 1 "tempo=116"; 2 "tempo=110";
+1: 2.cb-;4s;
+2 1: 4gen;8fa;eg;4fa;bn-d;
+2 2: 4en-;c-;2f-;
+bar
+
+midi all: 1 "tempo=104"; 2 "tempo=100";
+1: 1cg-;
+2 1: 4f;8e;d;2e;
+2 2: 1c-;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=72";
+1: 2.s;4b&-df;
+2 1: eac+;gbnd+;gc+e+;s;
+2 2: a-;g-;c;b-;
+boldital between 1&2: 1 "f";
+bar
+
+1: b-eg;dfgbn;2cegc+;
+2: e;d;2c;
+bar
+
+midi all: 0 "tempo=108";
+1: eac+e+;fac+f+;egc+e+;dgbnd+;
+2: 4.a-;8f-;4.g-;8;
+ital above 1: 1 "rubato";
+bar
+
+1: 2.bc+;4d+f+;
+1 2: eng;8fa;eg;4fa;gbn;
+2: en-;c-;f-;d-g-;
+bar
+
+midi all: 2 "tempo=120";
+midi 1-2 1-2: 2 "onvelocity=30";
+1: 2gc+en+g+;8r;c;d&;c;
+2: 2c-g-c;8r;c;d&;c;
+ital above 1: 2 "a tempo";
+boldital between 1&2: 2 "pp";
+bar
+
+1-2: [with .]f;[]c;[]d&;[]c;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=80"; 2 "onvelocity=30";
+1: 2c+f+a+;8r;c;d&;c;
+2: 2cf-;8r;c;d&;c;
+boldital between 1&2: 1 "sfz"; 2 "pp";
+bar
+
+1-2: [with .]f;[]c;[]d&;[]c;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=80"; 2 "onvelocity=45";
+1: 2en+g+b+;8r;c;d&;c;
+2: 2c-;8r;c;d&;c;
+boldital between 1&2: 1 "sfz"; 2 "mp";
+ital above 1: 2 "non-legato";
+bar
+
+midi all: 2 "tempo=112"; 2.5 "tempo=104";
+1-2: 8f;c;g;c;a;c;bn;c;
+< between 1&2: 1 til 2.8;
+ital above 1: 2 "rit.";
+bar
+
+midi all: 0 "tempo=120";
+midi 1-2 1-2: 1 "onvelocity=80"; 2 "onvelocity=45";
+1: 2engc+;s;
+2 1: 2s;8;c+;bn;c+;
+2 2: 2c-;8r;c;bn-;c;
+boldital between 1&2: 1 "sfz";
+ital above 1: 2 "a tempo";
+bar
+
+1: ms;
+2 1: a;f;g;en;
+2 2: a-;f-;g-;en-;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=80"; 2 "onvelocity=45";
+1: ms;
+2 1: 2engc+;8s;c+;bn;c+;
+2 2: 2c-;8r;c;bn-;c;
+boldital between 1&2: 1 "sfz";
+bar
+
+1: ms;
+2 1: a;f;g;e&;
+2 2: a-;f-;g-;e&-;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=80"; 2 "onvelocity=45"; 2.5 "onvelocity=50";
+1: 2df#anc+;s;
+2 1: 2s;8;c+ bm;bn;c+ ebm;
+2 2: 2d-;8r;c bm;bn-;c ebm;
+boldital between 1&2: 1 "sfz";
+ital between 1&2: 2 "cresc.";
+phrase 2: 2.25 til 1m+1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=54"; 1.5 "onvelocity=58"; 2 "onvelocity=62"; 2.5 "onvelocity=66";
+1: ms;
+2 1: 8f;c+ bm; bn;c+;f# ebm;c+ bm;b;c+ ebm;
+2 2: 8f-;c bm;bn-;c;f#- ebm;c bm;b-;c ebm;
+phrase 2: 1.25 til 2; 2.25 til 1m+1;
+bar
+
+1: 2s;8;c;bn-;c;
+2 1: 8g;c+ bm;bn;c+;a ebm;4.s;
+2 2: 8g-;c bm;bn-;c;a- ebm; c bm;b-;c ebm;
+phrase above 1: 2.25 til 1m+1;
+phrase above 2: 1.25 til 2;
+phrase below 2: 1.25 til 2;  2.25 til 1m+1;
+bar
+
+midi 1-2 1-2: 1 "onvelocity=80"; 2.5 "onvelocity=65";
+1: 2.d&fac&+;8r;d&;
+2 1: 2.s;8r;d&;
+2 2: 2.d&fac&+;4s;
+boldital between 1&2: 1 "sfz"; 2.5 "f";
+phrase below 1: 2.75 til 1m+1.5;
+phrase above 2: 2.75 til 1m+1.5;
+bar
+
+1-2: 8c;d&;4.dnfac&+;8d;c#;d;
+phrase 1-2: 2.25 til 1m+1;
+bar
+
+1: 2eg&b;8r;e+;d+;e+;
+2: 2eg&b;r;
+bar
+
+1: 8f#+;e+;d+;e+;fn+;e+;d+;e+;
+2: mr;
+bar
+
+1: bn~;ab tie;2fab tie;
+1 2: 2.s;4e;
+2: mr;
+bar
+
+1: 1dfab;
+2: 8r;f;e;f;4d;bn-;
+bar
+
+1: 8r;f;e;f;2eg&b;
+2: 2d-;e-;
+bar
+
+1: a;g&;2df tie;
+1 2: 2bn-f;4b-;;
+2: 2a-;b&-;
+bar
+
+1: 2df;e~b-~a-;
+1 2: 4b&-;a-;2s;
+2 1: ms;
+2 2: 2b-;e-~;
+bar
+
+1: 1eb-;
+2 1: g&;f;2g;
+2 2: 1e-;
+dblbar
+
+midi 1 1: 0 "onvelocity=60";
+midi 1 2: 0 "onvelocity=30";
+midi 2 1-2: 0 "onvelocity=30";
+midi all: 0 "tempo=100";
+1: mr;
+2: 8e-;b-;e;f;g&;f;e;b-;
+boldital between 1&2: 1 "";
+ital above 1: 1 "legato";
+bar
+
+1: mr;
+2: 8e-;b-;e;f;g&;f;e;b-;
+bar
+
+1: mr;
+2: 8e-;b-;e;f;gn;f;e;b-;
+bar
+
+1: mr;
+2: 8e-;b-;e;f;g;f;e;b-;
+bar
+
+1: 2g+;a+;
+2: 8e-;b-;e;f;g;f;e;b-;
+ital above 1: 1 "cantabile";
+boldital below 1: 1 "mf";
+boldital above 2: 1 "p";
+bar
+
+1: 1b+;
+2: 8e-;b-;e;f;g;f;e;b-;
+bar
+
+1: 1e++;
+2: 8e-;b-;e;f;g;f;e;b-;
+bar
+
+1: 1b+~;
+1 2: 2.s;8e;f;
+2: 8e-;b-;e;f;g;b;4s;
+bar
+
+1: 1b+;
+1 2: 8g;f;e;b-;2s;
+2: 2s;8g;e;b-;e-;
+bar
+
+1: 1g+~;
+2: 8bn--;d-;g-;bn-;d;g;bn;d+;
+bar
+
+1: 1g+;
+1 2: 8f;d;2.s;
+2: 4s;8bn;g;f;d;bn-;g-;
+bar
+
+1: 1a+~;
+1 2: 2s;8c;f;a;c+;
+2: 8f-;c;f;a;2s;
+bar
+
+1: 1a+;
+1 2: 8e+;c+;a;f;2s;
+2: 2s;8c+;a;f;c;
+bar
+
+1: 1g+;
+1 2: 2s;8e;g;b;e+;
+2: 8b-;e;g;b;2s;
+bar
+
+1: 1f+;
+1 2: 2s;8f;a;b;d+;
+2: 8b-;f;b;d+;2s;
+bar
+
+1: 1e+~;
+1 2: 2.s;8e;g;
+2: 8c-;g-;c;e;g;c+;4s;
+bar
+
+midi 1 1: 0 "onvelocity=55";
+midi 1 2: 0 "onvelocity=25";
+midi 2 1-2: 0 "onvelocity=25";
+1: 2.e+;4d+;
+1 2: 2.c+;4s;
+2: 2.s;4r;
+boldital between 1&2: 2.5 "mp";
+bar
+
+midi all: 0 "tempo=106";
+1: 1c+;
+1 2: 2.s;4e;
+2: 8a--;a-;e;a;4c+;s;
+ital above 1: 1 "rubato";
+ital between 1&2: 1 "meno mosso";
+bar
+
+1: 1d+;
+2: 8b--;f-;b-;f;4b;d+;
+bar
+
+1: 1e+~;
+2: 8c-;g-;c;g;4c+;d+;
+bar
+
+midi 1 1: 0 "onvelocity=35";
+midi 1 2: 0 "onvelocity=20";
+midi 2 1-2: 0 "onvelocity=20";
+1: 2.e+;4d+;
+2: 2.e+;4r;
+boldital below 1: 2.5 "pp";
+bar
+
+1: 1c+;
+2: 8a--;a-;e;a;4c+;e+;
+boldital above 2: 1 "pp";
+bar
+
+midi all: 1 "tempo=100";
+1: 1d+;
+2: 8b--;f-;b-;f;b;c+;4d+;
+ital above 1: 1 "rit.";
+bar
+
+midi all: 1 "tempo=92";
+1: 1c+e+ tie;
+1 2: 2.s;8c;d;
+2: 8c-;g-;c;d;e;g;4s;
+bar
+
+midi all: 1 "tempo=94";
+1: 1c+e+ tie;
+1 2: 1ce;
+2: ms;
+bar
+
+1: 1c+e+;
+2: 1cc-;
+octave below 2: 1 "8va" til 2;
+endbar

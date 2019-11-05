@@ -1,0 +1,177 @@
+header
+	title (18) "Sighing Pines"
+	title "" "John A. Krallmann (4/18-20/04)"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=d minor
+	time=2/2
+	timeunit=4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	vscheme=2f
+	scoresep=12,24
+
+staff 2
+	clef=bass
+
+music
+
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=90";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 1: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=76";
+midi 2 2: 0 "channel=14"; 0 "program=1"; 0 "onvelocity=82";
+
+1: 2.a;4;
+1 2: r;e;2f;
+2: 2r;a;
+2 2: 1d;
+bar
+
+1: 2.a;8g#;a;
+1 2: r;e;2g;
+2: 2r;a;
+2 2: 1c#;
+bar
+
+1: 2.d+;8e+;d+;
+1 2: r;f;2g;
+2: 2r;f;
+2 2: 1b-;
+bar
+
+1: 1c+;
+1 2: r;e;g;f;
+2: 2r;f;
+2 2: 1a-;
+bar
+
+1: 1b~;
+1 2: r;d;e;f;
+2 2: 2g-;f-;
+bar
+
+1: b;;;;
+1 2: 2g;f;
+2 2: 2e-;d-;
+bar
+
+1: 1g+~;
+1 2: b;e+;d+;c+;
+2 2: 2c-;d-;
+bar
+
+1: g+;c+;b;c+;
+1 2: b;e;d;e;
+2 2: 2e-;c-;
+bar
+
+1: 2.b;4c+;
+1 2: d;c#;d;e;
+2 2: 2.f-;4;
+bar
+
+1: a;2f;8g;a;
+1 2: 1c;
+2 2: 2f-;e-;
+bar
+
+1: 2.f;8g;a;
+1 2: e;2.d;
+2: 2d-;c-;
+bar
+
+1: f+;e+;d+;e+;
+1 2: a;g;f;g;
+2: 2b--;f-;
+bar
+
+1: 1c+;
+1 2: g;f;e;f;
+2: 2f;c+;
+2 2: 1a-;
+bar
+
+1: c+;2b;4a;
+1 2: e;2d;4c;
+2: 1f;
+2 2: 2b-;g-;
+bar
+
+1: g;f;e;f;
+1 2: 1c;
+2: 1f;
+2 2: 1a-;
+bar
+
+1: 2.d;8g;f;
+1 2: 2c;b-;
+2: 1f;
+2 2: 1b-;
+bar
+
+1: 1c;
+2: 2g;f;
+2 2: 1a-;
+bar
+
+1: c+;b;c+;d+;
+1 2: 1f;
+2: 2b;d;
+2 2: 1g-;
+bar
+
+1: b;a;b;c+;
+1 2: 1e;
+2: 2b;g;
+2 2: 1c;
+bar
+
+1: 2.a;4;
+1 2: e;f;2;
+2: g;a;2;
+2 2: 2.d;4c;
+bar
+
+1: e;f;2;
+1 2: c;d;2;
+2: 1f;
+2 2: 2.b-;4a-;
+bar
+
+1: 2.d;4f;
+1 2: a-;b-;2;
+2: 1d;
+2 2: 1g-;
+bar
+
+1: 2d;c;
+1 2: 1b-;
+2: 2f;e;
+2 2: 1c;
+bar
+
+1: 1d~;
+1 2: r;f-;;g-;
+2: r;a-;;b-;
+2 2: 1d-~;
+bar
+
+1: 1d;
+1 2: 2g-;e-;
+2: 2b-;g-;
+2 2: 1d-;
+bar
+
+1: 1d+;
+1 2: 1f#;
+2: 1a-;
+2 2: 1d-;
+endbar

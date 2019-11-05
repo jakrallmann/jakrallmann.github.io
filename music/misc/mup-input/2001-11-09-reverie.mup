@@ -1,0 +1,384 @@
+header
+	title (18) "Reverie"
+	title (9) " "
+	title (12) "" "John A. Krallmann (Nov 9-10, 2001)"
+
+header2
+	title (12) "Reverie - \%"
+footer
+	title (12) "\(copyright) Copyright 2001 John A. Krallmann"
+	title (9) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+ifdef MIDI
+	define S 1 1 & 3 1: @
+	define A 1 2: @
+	define T 2 1: @
+	define B 2 2 & 4 1: @
+else
+	define S 1 1: @
+	define A 1 2: @
+	define T 2 1: @
+	define B 2 2: @
+endif
+
+score
+	ifdef MIDI
+		staffs=4
+	else
+		staffs=2
+	endif
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	time=3/4
+	beamstyle=4,4,4
+	packfact=1.25
+	measnum=y
+
+staff 1
+	vscheme=3o
+staff 2
+	vscheme=2f
+	clef=bass
+
+ifdef MIDI
+staff 3
+	defoct=5
+staff 4
+	clef=bass
+endif
+
+music
+
+midi all: 0 "tempo=98";
+midi 1 1: 0 "channel=11"; 0 "program=4"; 0 "onvelocity=98"; 0 "param=10,80";
+midi 1 2: 0 "channel=12"; 0 "program=4"; 0 "onvelocity=78";
+midi 1 3: 0 "channel=12"; 0 "onvelocity=78";
+midi 2 1: 0 "channel=12"; 0 "onvelocity=78";
+midi 2 2: 0 "channel=13"; 0 "program=4"; 0 "onvelocity=84"; 0 "param=10,50";
+ifdef MIDI
+midi 3 1: 0 "channel=14"; 0 "program=79"; 0 "onvelocity=15";
+midi 4 1: 0 "channel=15"; 0 "program=43"; 0 "onvelocity=10";
+endif
+
+rom above 1: 1 "Andante moderato";
+S 2.g;
+A r;a-;b-;
+T 2r;4g;
+B 2.e-;
+bar
+
+S 2.f;
+A r;c;b-;
+T 2r;4f;
+B 2.d-;
+bar
+
+S 2.e;
+A r;f#-;g-;
+T 2r;4b-;
+B 2.c-;
+bar
+
+S 2d;4c;
+A r;s;c~;
+1 3: s;[down]2a-;
+T 2e;4f;
+B 2.f-;
+bar
+
+S 2.f;
+A c;b-;a-;
+B 2.d-;
+bar
+
+S 2.b;
+A c;d;c#~;
+B 2en-;4en;
+bar
+
+S 2.a;
+A c;c(n);f;
+B 2f-;4f;
+bar
+
+S 2.a;
+A e;d;c~;
+B 2f#-;4f#;
+bar
+
+S 2.c+;
+A c;g;e;
+B 2g;4g-;
+bar
+
+S b;c+;d+;
+A d;2g~;
+B 2g-;4f-;
+bar
+
+S 2.e+;
+A g;c+;b;
+T 2r;4g;
+B 2.c-;
+bar
+
+S g+;f+;e+;
+A b;a;f;
+T 2r;4a;
+B 2.f-;
+bar
+
+S e+;d+;c+;
+A 2b;4d;
+B 2f#-;4d-;
+bar
+
+S 2b;4bn;
+A a;2g;
+B 2g-;4f-;
+bar
+
+S 2.c+;
+A b(&);d;en;
+T r;b;g;
+B 2.c-;
+bar
+
+S f+;en+;c+;
+A 2.a;
+T 2r;4fen+;
+B 2.d-;
+bar
+
+S 2.d+;
+A a;g;f;
+T 2r;4gd+;
+B 2.b--;
+bar
+
+S 2.g;
+A r;b-;en;
+T f;2en;
+B 2.c;
+bar
+
+S 2.g;
+A s;f;en;
+1 3: 2.a-;
+T 2r;4g;
+B 2.c#;
+bar
+
+S 2.en+;
+A r;g;fa;
+T r;b;a;
+B 2.d;
+bar
+
+S 2.d+;
+A r;dn;g~b;
+T r;2g;
+B 2.b-;
+bar
+
+S 2.c+;
+A g;e;f~;
+T 2r;4c+;
+B 2.a-;
+bar
+
+S 2f+;4b;
+A f;d;c;
+B 2.a&-;
+bar
+
+S 2.e+;
+A b-;g;bn-;
+B 2.g-;
+bar
+
+S 2.c+;
+A b;a&;en;
+1 3: [ho+1]2.e;
+B 2.a&-;
+bar
+
+S c+;d+;en+;
+A en;f;g;
+B 2g-;4g;
+bar
+
+S en+;f+;g+;
+A g;a;bn;
+B 2g;4f;
+bar
+
+S a+;g+;f+;
+A c#+;b;a;
+B 2en;4a-;
+bar
+
+midi all: 1 "tempo=90"; 2 "tempo=76"; 3 "tempo=50";
+S en+;d+;c#+;
+A g;b;a;
+B 2a-;4a--;
+ital between 1&2: 1 "rit." til 3.8;
+bar
+
+midi all: 1 "tempo=96";
+rom above 1: 1 "Rubato";
+S d+;f+;a+;
+A 2f;4c+;
+T b;a;g;
+B 2.g-;
+bar
+
+S a+;2g+;
+A 2b;4c+;
+T 2g;4g+;
+B 2.e-;
+bar
+
+S g+;f+;b+;
+A 2.b;
+B 2d-;4d&-;
+bar
+
+midi all: 3 "tempo=40"; 4 "tempo=90";
+S b+;2a&+;
+A 2.a&e+;
+B 2.c-;
+mussym above 1: 2 "ferm";
+mussym below 1: 1 "uferm";
+mussym above 2: 1 "ferm";
+dblbar
+
+score key=3&
+music
+
+S a+;2g+;
+A 2.be+;
+T r;e;g;
+B 2.b--;
+bar
+
+S g+;2f+;
+A 2f;4c+;
+1 3: 2.e+;
+T 2r;4e+;
+B 2.a--;
+bar
+
+S 2f+;4g+;
+A a;c;b-d;
+B 2.b--;
+bar
+
+S 2.b+;
+A 2.gd+;
+B 2.e-;
+octave below 2: 0.5 "8va" til 3;
+dblbar
+
+midi all: 1 "tempo=100";
+rom above 1: 1 "Tempo I";
+S 2.c++;
+A e+;d+;c+;
+T 2r;4d+;
+B 2.a-;
+bar
+
+S 2.b+;
+A f+;e+;b;
+T 2r;4d+;
+B 2.g-;
+bar
+
+S a+;f+;e+;
+A 2.c+;
+1 3: 2s;4a;
+T 2r;4c+;
+B 2.f-;
+bar
+
+S 2.g+;
+A 2.d+;
+1 3: [ho+2]...c+;2bn;
+T 2r;4bn;
+B 2g-;4f-;
+dblbar
+
+score key=4#
+music
+
+S g+;f+;e+;
+A 2gb;4;
+T 2r;4dn+;
+B 2.e-~;
+bar
+
+S e+;d+;c+;
+A 2.a;
+T c+;b;ad+f+;
+B 2.e-;
+bar
+
+S 2e+;4f+;
+A 2.b;
+1 3: [ho-2.5]...a;2g;
+T 2.b;
+B 2e;4d;
+bar
+
+midi all: 1 "tempo=88";
+rom above 1: 1 "Rubato";
+S b+;2a+;
+A 2.e+;
+1 3: [ho+1]...2b;4b#;
+T 2.a;
+B 2c;4b#-;
+bar
+
+midi all: 1 "tempo=84";
+S a+;2g+;
+A 2.be+;
+T 2r;4c+;
+B 2.e-b-;
+bar
+
+midi all: 1 "tempo=80";
+S g+;f+;b+~;
+A 2.ab tie;
+T 2.bd+ tie;
+B 2s;4b--~;
+bar
+
+S 2.b+;
+A 2.ab;
+T 2.bd+;
+B 2.b--;
+bar
+
+midi 1 1: 1 "onvelocity=60";
+S {2r;b~;}2,2.;
+B 2.e-~;
+octave below 2: 0.5 "8va" til 3m+3.5;
+bar
+
+S {2be+ tie;be+g+ tie;}2,2.;
+B 2.e-~;
+bar
+
+S 2.be+g+b+ tie;
+B 2.e-~;
+bar
+
+midi 1 1 & 2 2: 4 "param=10,63";
+S 2.be+g+b+;
+B 2.e-;
+endbar
+
+
+

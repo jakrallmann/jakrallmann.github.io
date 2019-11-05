@@ -1,0 +1,153 @@
+header
+	title (18) "Momentos de la Vida"
+	title "" "John A. Krallmann (2/24/08)"
+
+header2
+	title (12) "Momentos de la Vida - \%"
+footer
+	title (12) "\(copyright) Copyright 2008 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	key=2&
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,26
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=78";
+midi 1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=70";
+midi 2 1-2: 0 "channel=13"; 0 "program=1"; 0 "onvelocity=70";
+
+define A [with>]@
+
+1: 16g;;;f;g;c;d;e~;;g;;f;g;a;b;g;
+2: c;g;c;g;
+bar
+
+1: 16b;;;g&;b;c+;d&+;c+;b;g;b;c+;A e+;d+;c+;b;
+2: e;b;c+;b;
+bar
+
+1: A 16a;d;f#;A a~;;b;c+;d+;A c+;b;a;A g~;;a;b;c+;
+2: d;a;e;b;
+bar
+
+1: A 16e+;d+;c+;A d~;;c+;b;a;A c+;b;d;A a~;;g;a-;b-;
+2: d;a;g-;d;
+bar
+
+1: 16g;f;A b;a~;;g;f;e;A f;c;b-;A a-~;;b-;c;d;
+2: e-;b-;d-;a-;
+bar
+
+1: 16a;g;A b;a~;;g;f;e;d;en;f#;g;a;b;c+;d+;
+2: e-;b-;d-;a-;
+bar
+
+1: A 16e+;g;e+;A d+~;;c+;b;c+;d+;e;d+;A c+~;;d;b;a;
+2: c-;g-;d-;a-;
+bar
+
+1: A 16g;d&;g;A b~;;a;8g;16d+;e;d+;A e+~;;d+;c+;a;
+2: e-;b-;d-;a-;
+bar
+
+1: A 16a;b-;a;A g~;;c;d;e;A g;b-;e;A f~;;a;b;c+;
+2: e-;b-;f-;a;
+bar
+
+1: A 16d+;g;A e+;d+~;;c+;b;d;A g+;f+;e+;g;A d+;c+;b;g;
+2: g-;b;c-;e+;
+bar
+
+1: A 16g;b-;g;f~;8;a;16;b;a;g~;4gg+;
+2: f-;a;g-;d;
+bar
+
+1: 16a;b;a;g~;4gg+;16a;b;a;g~;4gg+;
+2: f-;d;e-;c;
+bar
+
+1: 16a;b;a;g;2.f#+;
+2: d-;2.d;
+dblbar
+
+score key=1#
+music
+
+rom above 1: 1 "Tranquilo";
+1: 2b-d;4e;f;
+1 2: 2s;a-;
+2: 2g-d;f-d;
+bar
+
+1: 8a;g;f;d;2d;
+1 2: 2b-;4a-;g-;
+2: 2e-d;d-b-;
+bar
+
+1: 4.e;8f;4g;b-;
+1 2: b-;2a-;4b-;
+2: 2c-g-;e;
+bar
+
+1: a-;b-;c;d;
+1 2: 1f-;
+2: c;d;e;f;
+2 2: 1d-;
+bar
+
+1: 4.b-;8d;4;8e;f;
+1 2: a-;g-;2a-;
+2: 2g-d;f-d;
+bar
+
+1: a;g;4.b-;8d+;
+1 2: 2b-;4a-;g-;
+2: 2e-b-;d-b-;
+bar
+
+1: d+;c+;g;a;
+1 2: 2eg;g-a-c;
+2: 2c-g-;e-a-e;
+bar
+
+1: 2fa;8r;d+;e+;f+;
+1 2: e;d;2s;
+2: 2d-a-;fc+;
+bar
+
+1: a+;g+;2b;
+1 2: 2b;4f;g;
+2: f;g;d;e;
+2 2: 2e-b-;c-g-;
+bar
+
+1: d+;g;2db;
+1 2: 2e;4a;g;
+2: 2c-g-e;4a;b;
+2 2: 2s;g-;
+bar
+
+1: 4.e;8g;4ca;ac+e+;
+1 2: d;c;2s;
+2: 2cg;a-e;
+mussym above 1: 4 "ferm";
+boldital below 1: 4 "sfz";
+bar
+
+1: 1gbe+;
+2: 1e-b-;
+boldital between 1&2: 1 "p";
+endbar

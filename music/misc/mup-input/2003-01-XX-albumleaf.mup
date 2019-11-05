@@ -1,0 +1,353 @@
+header
+	title (18) "Albumleaf"
+	title "" "John A. Krallmann (January 2003)"
+
+header2
+	title (12) "Albumleaf - \%"
+
+footer
+	title (12) "\(copyright) Copyright 2003 John A. Krallmann"
+	title (8) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	key=5&
+	beamstyle=4,4,4,4
+	staffs=2
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+	scoresep=12,28
+	measnum=y
+	release=0
+
+staff 1
+	vscheme=3f
+staff 2
+	vscheme=2f
+	clef=bass
+
+
+music
+
+define REGTEMP "52" @
+midi all: 0 "tempo="+REGTEMP;
+midi 1 1 & 1 3: 0 "channel=11"; 0 "program=89"; 0 "onvelocity=126,110";
+midi 1 2: 0 "channel=12"; 0 "program=75"; 0 "onvelocity=72"; 0 "param=10,48";
+midi 2 1-2: 0 "channel=13"; 0 "program=48"; 0 "onvelocity=62"; 0 "param=10,78";
+midi 1-2 1-2: 0 "param=7,117";
+
+
+define T1
+1: f+;b;c+;d+;
+1 2: 8f+;f;b;f;c+;f;d+;f;
+2: d-;a-;b-;a-;
+bar
+
+1: d+;c+;b;f+;
+1 2: 8d+;g;c+;g;b;g;f+;g;
+2: e-;b-;e;d;
+bar
+
+1: e+;d+;c+;b;
+1 2: 8e+;g;d+;g;c+;g;b;c;
+2: c;b-;a-;g;
+bar
+
+1: a;g;f;8;e;
+1 2: 8a;d;b-;c;;d;4c;
+2: ff-;ee-;dd-;a-a--;
+bar
+
+midi all: 3 "tempo=42"; 4.5 "tempo=20"; 5 "tempo=" +REGTEMP ;
+1: 8e;d;;a;;g;d;c;
+mussym above 1: 4.5 "ferm";
+1 2: b-;a-;b-;g-;
+2: gg-;ff-;ee-;aa-;
+ital between 1&2: 3 "rit";
+octave below 2: 0.5 "8va" til 4.5;
+bar
+@
+T1
+
+1: f;g;f;e;
+1 2: 8f;d;g;d;f;d;e;d;
+2: a;b;a;g;
+2 2: 1d;
+bar
+
+1: 8a;b;f;g;2a;
+1 2:8c;d;b-;c;e;f;e;a-;
+2: g;e;2a;
+2 2: 2a-;4d;c;
+bar
+
+1: 8a;g;d;e;4f;e;
+1 2: 2d;4c;g-c;
+2: g;;2;
+2 2: b-;b&&-;a-;a--;
+bar
+
+ifdef MIDI
+  1: 2d;4.;8r;
+  1 2: f-;g-;4.f-;8r;
+  2 1: a-;b-;4.a-;8r;
+  2 2: 2d-;4.;8r;
+else
+  1: 2d;;
+  1 2: f-;g-;2f-;
+  2 1: a-;b-;2a-;
+  2 2: 2d-;;
+endif
+dblbar
+
+1: 8d+;b;f;g;4a;b;
+1 2: 2s;4d;;
+2 1: d;e;f;e;
+2 2: 2g-b;4a-;g-;
+bar
+
+midi all: 3 "tempo=46"; 4 "tempo=38"; 5 "tempo=52";
+1: 8e+;d+;c+;d+;4e+;en+;
+1 2: 2a;;
+2: 8c+;d+;e+;f+;2g+;
+2 2: 2..a-e;8a--;
+bar
+
+define T2
+1: 2f+~;8;16e+;d+;8.c+;16d+;
+1 2: 1a;
+2: 8d-;a-;e;f;2;
+bar
+
+1: 8c+;b~;4.;16b;a;g;f;e;d;
+1 2: 1d;
+2 1: b;8f;g;2e;
+2 2: 1g-;
+bar
+
+1: e;8.f;16g;4a;8.c+;16d+;
+1 2: 8b-;c~;4;2d;
+2: 2e~;8;4.d;
+2 2: 4.a-;8g-;2f-;
+bar
+
+1: b;8.c+;16d+;4a;8c;d;
+1 2: 8a;g;4e;8;d;4a-;
+2: d;8a;g;2d;
+2 2: g-;;2f-;
+bar
+
+1: 8g;f;8.e;16d;4e;{8a;b;c+;}3;
+1 2: 2b-;8;c~;4;
+2 1: 8b-;d;f;g;2e;
+2 2: 2e-;4a-;g-;
+bar
+
+1: 8e+;d+;4a;8c+;b;8e;16f;g;
+1 2: a;8e;d;4;b&&-;
+2: d;8e;f;a;g;4d;
+2 2: 2f-;4g-;;
+bar
+
+1: 4.a;16b;a;2d;
+1 2: 8c;d;4e;2f-;
+2: 8e;f;4g;2a-;
+2 2: 2a-;d-;
+dblbar
+
+ifdef MIDI
+ score time=1/4
+ music
+  1: mr;
+  bar
+ score time=4/4
+ music
+endif
+
+@
+T2
+
+T1
+T2
+
+midi 1-2 1-2: 0 "param=7,127";
+1: d+;8.c+;16b;2f;
+1 2: f;d;c;d;
+2 1: f;g;f;gn;
+2 2: 2b-;;
+bar
+
+1: 4.e;16f;g;8e;a;4;
+1 2: 2b-;4.d;8c;
+2 1: e;d;e;g;
+2 2: 2g-;a-;
+repeatstart
+
+1: 8f;b;4;8f;b;4;
+1 2: d;b-e;d;b-e;
+2 1: f;gn;a;g(n);
+2 2: 2b-;;
+bar
+
+define M1
+1: 8f;b;4;8c+;b;4;
+1 2: d;b-e;df;b-e;
+2 1: f;gn;a;g&;
+2 2: 2b-;;
+bar
+@
+M1
+
+define M2
+1: 8d;c;b-;c;;f;4;
+1 2: b-;g-;b-;an-;
+ifdef TWO
+1 3: 2.s;[up;ho-1]16f+;e+;d+;c+;
+endif
+2 1: d;e;c;f;
+2 2: 2g-;f-;
+bar
+@
+M2
+
+midi 1-2 1-2: 0 "param=7,94";
+M1
+
+1: 8f;b;4;16e+;d+;c+;b;4;
+1 2: d;b-e;df;b-e;
+2 1: f;gn;a;g(n);
+2 2: 2b-;;
+bar
+
+define TWO @
+M2
+
+midi 2 1: 1 "onvelocity=98";
+1: 2.b;16f+;e+;d+;c+;
+1 2: 8r;b-;d;b-;2e;
+2 1: r;[with-]f;[]2gn;
+2 2: 1b-;
+bar
+
+1: 2b~;8;c+;d+;e+;
+1 2: 8r;b-;d;b-;e;g;f;e;
+2 1: r;[with-]f;[]2gn;
+2 2: 1b-;
+bar
+
+midi 2 1: 5 "onvelocity=62";
+1: 2.f+;8e+;16d+;c+;
+1 2: 8r;b-;d;f;2e;
+2 1: r;[with-]f;[]2gn;
+2 2: 1b-;
+bar
+
+midi 1-2 1-2: 5 "param=7,120";
+1: 2.f;8;c+;
+1 2: s;8c;b-;2an-;
+2 1: r;d;2c;
+2 2: 1f-;
+repeatend
+
+score key=2&
+music
+
+1: 1d+;
+1 2: 8r;f;g;16b;c+;4g;8f;g;
+2 1: r;f;g;b;
+2 2: 1b-;
+bar
+
+1: 2f+;d+;
+1 2: 8r;b;a;b;d+;4g;8f;
+2 1: r;f;g;b;
+2 2: 1b-;
+bar
+
+1: 8g;4d;8c;d;4f;8g;
+2: r;f;g;b;
+2 2: 1b-;
+bar
+
+1: 1d;
+1 2: 4.c;8b-~;2;
+2: r;f;g;f;
+2 2: 1b-;
+bar
+
+1: 8d+;4g;8g&;f;d;f;g(&);
+2 1: r;f;g(n);f;
+2 2: 1b-;
+bar
+
+1: 8f+;d+;c+;b;2g;
+2 1: r;f;g;8b;c+;
+2 2:1b-;
+bar
+
+1: 8f;b-;a;b;4.e;8a;
+1 2: 2s;8r;b-;4a-;
+2 1: d;a;c;f;
+bar
+
+1: 8d;d+;e+;d+;c+;b;a;b;
+1 2: s;f#;d;;
+2 1: b-;a-;g-;f-;
+bar
+
+1: 4.g;16c+;b;2a;
+1 2: 8d;c;4b-~;8;en;4f#;
+2: 2e-;d-;
+dblbar
+
+score key=1#
+music
+
+1: 1b;
+1 2: 8r;g;f;g;2e;
+2 1: r;d;e;8f;g;
+2 2: 1g-;
+bar
+
+1: 8b;4a;8g;4a;8b;c+;
+1 2: 2e;c;
+2 1: c-;g-;e;g-;
+bar
+
+1: 2..a;8;
+1 2: r;8e;e&;d;c#;4d;
+2 1: d-;a-;f;c+;
+bar
+
+define M3
+1: 2.gb;8g;a;
+1 2: r;8e;e&;2d;
+2 1: r;d;2g;
+2 2: 1g-;
+bar
+@
+M3
+
+1: 8b;4a;8g;4a;8b;c+;
+1 2: 2e;c;
+2 1: c-;g-;e&;g-;
+bar
+
+M3
+
+midi all: 1 "tempo=40"; 4 "tempo=28";
+1: b;a;g;a;
+1 2: 2e;4c;e&;
+midi 1 1,3: 4 "onvelocity=80";
+1 3: 2.s;[ho-1]4g+?;
+2 1: c-;g-;e&;c;
+bar
+
+1: 1d+;
+1 2: 1dgab;
+1 3: [ho0]1g+?;
+2 1: 1g-;
+octave below 2: 0.5 "8va" til 4;
+midi 1-2 1-2: 5 "param=7,127";
+endbar

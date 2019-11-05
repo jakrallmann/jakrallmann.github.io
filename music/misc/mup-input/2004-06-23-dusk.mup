@@ -1,0 +1,139 @@
+header
+	title (18) "Dusk "
+	title (10) ""
+	title "" "John A. Krallmann (6/23/04)"
+
+footer
+	title (12) "\(copyright) Copyright 2004 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scoresep=10,26
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+
+midi all: 1 "tempo=86";
+midi 1 1: 0 "channel=11"; 0 "program=0"; 0 "onvelocity=60";
+midi 1 2: 0 "channel=12"; 0 "program=0"; 0 "onvelocity=60";
+midi 2 1: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=78";
+
+1: ce;;;;
+2: mr;
+bar
+
+1: ce;;;;
+2: 2..g;8e;
+bar
+
+1: cd;;b-d;;
+2: 1f;
+bar
+
+staff 1 clef=bass
+music
+
+1: bd+;;ad+;;
+2: 1f#;
+bar
+
+1: c+d+;8;a;4bd+;;
+2: 2..g;8b-;
+bar
+
+1: gbc+;;gac+;;
+2: 1e;
+bar
+
+1: gac+d+;;f#ac+d+;;
+2: 2..d;8a-;
+bar
+
+1: f#ac+d+;;gbd+;;
+2: 2a-;b-~;
+bar
+
+1: abd+;;gbd+;;
+2: 2..b-;8d-;
+bar
+
+1: gbd+;;gbc+;;
+2: 1e-;
+bar
+
+1: gbc+;;gbd+;;
+2: 1en-;
+bar
+
+1: gbe+;;gbf+;;
+2: 1f-;
+bar
+
+staff 1 clef=treble
+music
+
+1: a-cg;;ceb;cea;
+2: 1f-;
+bar
+
+1: cea;;dgb;;
+2: 2f#-;g-;
+bar
+
+1: egb;;cea;ceg;
+2: 2c-;;
+bar
+
+1: cdf;;b-df;a-df;
+2: 1d-;
+bar
+
+1: b-fg;;b-eg;b-ea;
+2: 1e-;
+bar
+
+1: b-cf;; <<staff clef=bass>>fbc+;fbd+;
+2: 1d-;
+bar
+
+1: gd+e+;;gc+e+;gbe+;
+2: 1c-;
+bar
+
+staff 1 clef=treble
+music
+
+1: a-cg;;ceb;cea;
+2: 1f-;
+bar
+
+1: cea;;b-db;;
+2: 1g-;
+bar
+
+1: egd+;;egc+;egb;
+2: 1e-;
+bar
+
+1: gbe+;gbf+;egd+;fad+;
+2: 1f-;
+bar
+
+1: dfb;;egc+;egb;
+2: 2b-;e-;
+bar
+
+1: 1dfb;
+2: 1b--;
+endbar
