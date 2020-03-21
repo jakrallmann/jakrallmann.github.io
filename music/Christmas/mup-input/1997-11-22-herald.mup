@@ -1,0 +1,224 @@
+header
+	title (18) "Hark, the Herald Angels Sing"
+	title (12) "" "Tune: Felix Mendelssohn"
+	title (12) "" "arr: John A. Krallmann (11/22/97)"
+
+header2
+	title (12) "Hark, the Herald Angels Sing - \%"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1997 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	staffscale=0.9
+	scoresep=10,18
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=70";
+ifdef BETHANY
+	midi 1 1-2: 0 "channel=2";
+	midi 2 1-2: 0 "channel=4";
+	//%%g 0 = 8'principal 4'octave 2'fifteenth 16'gemshorn greattogreat4' swelltogreat8' \
+		%s 8'opendiapason 4'clarion 8'oboe cymbalIII \
+		%p 16'subbass swelltopedal8' 8'principal
+else
+	midi 1-2 1-2: 0 "channel=11"; 0 "program=19"; 0 "onvelocity=74";
+	// midi 1-2 1-2: 0 "parameter=91,80"; 0 "parameter=93,45";
+endif
+
+rom above all: 1 "( \(smup4n) = 76 )";
+1: c;f;4.;8e;
+2: 8c+;b;a;16g;a;8g;c;c+;16;b;
+bar
+
+1: f;fa;fa<g>;eg;
+2: 16a;b;a;g;f;e;f;d;c;a-;b-;bn-;c;d;e;c;
+bar
+
+1: fc+;gc+;4.c+;8b;
+1 2: 2s;4a;c;
+2: 16a-;g-;a-;f-;e-;d-;e-;c-;f-;g-;a-;g-;a-;f-;32e-;d-;16c-;
+bar
+
+1: fa;eg;a~;16;32g;a;16b;g;
+1 2: 2s;16c;g;f;e;4d;
+2: 16f-;32f;e;16a-;b-;c;32c-;d-;e-;d-;16c-;8f-;a-;b-;g-;
+bar
+
+1: 16e;f;g;e;b-;g;a;b;a;g;4f;8e&c+;
+2: 4c-;e-;f-;a-;
+bar
+
+1: 8e&c+;4db;8bd+;;4ac+;8fa;
+2: b-;g-;e&-;f-;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 4ac+;gbnd+;
+2: 2g-;
+dblbar
+
+score time=4/4 ; beamstyle=4,4,4,4 ; key=1#
+music
+
+1: 4d+;g+;4.;8f+;
+1 2: 8d+;c+;b;a;g;a;b;d+;
+2: ms;
+bar
+
+1: g+;b+;;a+;
+1 2: 8b;a;g;b;4c#+;d+f+;
+2: ms;
+bar
+
+score time=5/4 ; beamstyle=4,4,4,4,4
+music
+
+1: 8d;16;c;4g;4g~;4.;8f#;
+2: 4r;8b&;16;a;8g;16;a;8b;16;c+;d+;c+;d+;c+;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: g;gb&;egb;f#a;
+2: 16b&;c+;b;a;g;a;b;c+;4c#+;d+;
+bar
+
+staff 1 clef=bass
+music
+
+1: d;g;;f;
+2: 8d;c;bn-;16a-;b-;8a-;d-;d;c;
+bar
+
+1: g;b;8.;32c+;b;4dfa;
+1 2: 2s;4eg;4s;
+2: 16b-;c;b-;a-;g-;a-;g-;f-;8e-;c-;4d-;
+bar
+
+staff 1 clef=treble
+music
+
+1: d+;a;4.;8f;
+2: 8r;16d;e;f;e;f;d;c#;a-;b-;c;8d;16;a-;
+bar
+
+1: f;e;d;8e;f;
+2: 16d-;e-;f-;g-;a-;b-;c#;e;8d;cn;b-;a-;
+bar
+
+1: b-dg;;ceg;e-g-c;
+2: g-;fn-;8e-;d-;c-;e-;
+bar
+
+1: a-cfn;g-ce;a-ce;g-b-d;
+2: d-;e-;fn-;g-;
+dblbar
+
+score key=1&
+music
+
+1: egc+;egbc+;fac+;a-cf;
+2: c;b-;a-;8f-;e&-;
+bar
+
+score time=5/4 ; beamstyle=4,4,4,4,4
+music
+
+1: e&gb;cfa;cf#a;2b-eg;
+2: c-;d-;e&-~;8;16;f-;g-;f-;g-;a-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: fbd+;;gbd+;e&ac+;
+2: 16b-;c;d;c;b-;c;b-;a-;g-;a-;b-;g-;f-;g-;a-;f-;
+bar
+
+1: dgb;df#a;2dgb;
+2: 16g-;a-;b&-;c;d;e;f#;a;8g;fn;e;d;
+bar
+
+1: ceg;16a;g;a;b;4fac+;16d+;c+;d+;e&+;
+2: 8c;b-;a-;g-;f-;e&-;d-;c-;
+bar
+
+1: bd+f+;be(n)+g+;2c+f+a+ tie;
+2: 8b-;a-;g-;c;f-;e&;d;c;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2.c+f+a+;
+2: 16f;e&;f;g;8a;f;e;c;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 4.fbd+;8;4;fac+;
+2: 4.b-;8;4;f;
+bar
+
+1: dfb;ce&fa;4.dgb;8r;
+2: 8d;e&;c;f;4.gg-;8r;
+bar
+
+1: 4.ge&+;8;4;fbd+;
+2: 4.c;8;4;d;
+bar
+
+1: e&gc+;dgbn;4.engc+;8r;
+2: e&;g;4.c;8r;
+bar
+
+1: 4.bd+f+;8;4;gc+e&+;
+2: 4.b-;8;4;c;
+bar
+
+1: fbd+;fac+;4.gbnd+;8r;
+2: 8d;e&;4f;4.g;8r;
+bar
+
+score time=6/4 ; beamstyle=4,4,4,4,4,4
+music
+
+rom above all: 1 "Allargando";
+1: c+;8d+;e&+;2.f+;4b;
+1 2: 2s;4r;a;b;;
+2: c;8d;e&;2.f;4r;
+2 2: 2s;4r;e&-;d-;s;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+midi all: 0 "tempo=58"; 3 "tempo=52"; 
+1: 2e&gb;e&c+;
+1 2: 2s;4g;a;
+2: 2b-;c-g-c;
+2 2: e&-;d-;2s;
+bar
+
+midi all: 0 "tempo=44";
+1: 1gabnd+;
+2: 1g-dg;
+endbar

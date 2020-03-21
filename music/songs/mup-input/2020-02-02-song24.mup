@@ -1,0 +1,157 @@
+
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(February 2, 2020)"
+footer
+        title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+ 
+define P ifdef MIDI pedal below 1,2: 1;4; endif  @
+
+midi all: 0 "tempo=102";
+midi 1: 0 "onvelocity=88";
+midi 2: 0 "onvelocity=44";
+
+1: 4.c+~ ph;4;16g;a;
+2: f-;c;a;g;a;f;
+P
+bar
+
+1: 2.b eph;
+2: d-;a-;f;e;f;d;
+P
+bar
+
+1: 4.c+~ ph;4;16a+;g+;
+2: f-;c;a;g;a;f;
+P
+bar
+
+1: 2.f+;
+2: b-;f;d+;c+;d+;b;
+P
+bar
+
+1: 4.en+~;4;16a+;g+;
+2: c-;g-;en;dn;e;c;
+P
+bar
+
+1:2.f+ eph;
+2: f-;c;a;g;a;f;
+P
+bar
+
+1: 2.f+ ph;
+2: d-;a-;f;e;f;d;
+P
+bar
+
+1: 2.e+;
+2: c-;g-;e;dn;e;c;
+P
+bar
+
+1: 4.d+~;4;16a;b;
+2: b--;f-;d;c;d;b-;
+P
+bar
+
+1: 2.c+ eph;
+2: c-;g-;en;dn;e;c;
+P
+bar
+
+1: 2.an ph above;
+2: f-;c;an;g;a;f;
+P
+bar
+
+1: 2.a;
+2: d-;a-;f;e;f;d;
+P
+bar
+
+1: 2.an;
+2: f-;c;an;g;a;c+;
+P
+bar
+
+1: 4.d+;c+;
+2: b-;f;c+;d+;f+;d+;
+P
+bar
+
+1: 4.b~;8;a;g;
+2: e;b;f+;g+;f+;e+;
+P
+bar
+
+1: 2.a~;
+2: a-;e;c+;b;c+;e;
+P
+bar
+
+1: 2.a eph;
+2: 2.a-;
+P
+bar
+
+1: 2.c+ ph above;
+2: f-;c;a;g;a;f;
+P
+bar
+
+1: 2.f+;
+2: d-;a-;f;g;a;b;
+P
+bar
+
+1: 2.e+;
+2: a-;e;a;d+;c+;a;
+P
+bar
+
+1: 2.c+ eph;
+2: f-;c;g;a;g;a;
+P
+bar
+
+1: 2.a ph above;
+2: d-;a-;f;b;a;f;
+P
+bar
+
+1: 4.f~;4;16b;a;
+2: e-;b-;f;g;f;e;
+P
+bar
+
+1: 2.f~;
+2: f-;c;a;g;a;f;
+P
+bar
+
+1: 2.f eph;
+2: 2.f-;
+ifdef MIDI pedal below 1,2: 1;7*; endif
+endbar

@@ -1,0 +1,172 @@
+header
+	title (18) "O Little Town of Bethlehem"
+	title (12) "" "Tune: Lewis H. Redner"
+	title (12) "" "arr: John A. Krallmann (10/98)"
+
+header2
+	title (12) "O Little Town of Bethlehem - \%"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1998 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	ifdef VIDEO
+		pageheight=9
+		pagewidth=16
+		staffscale=0.95
+	else
+		staffsep=16
+		scoresep=10,28
+		packfact=0.8
+	endif
+	staffs=4
+	key=1&
+	bracket=1 ("Flute"), 2 ("Clarinet")
+	brace=3-4 ("Piano")
+	barstyle=3-4
+	beamstyle=4,4,4,4
+	measnum=y
+
+staff 1
+	defoct=5
+
+staff 3
+	vscheme=2f
+	clef=bass
+
+staff 4
+	vscheme=2f
+	clef=bass
+
+music
+
+midi all: 0 "tempo=72";
+midi 1 1: 0 "channel=11"; 0 "program=73"; 0 "onvelocity=50";
+midi 2 1: 0 "channel=12"; 0 "program=71"; 0 "onvelocity=70";
+//midi 2 1: 0 "channel=12"; 0 "program=68";
+midi 3 1-2: 0 "channel=13"; 0 "program=0"; 0 "onvelocity=100";
+midi 4 1-2: 0 "channel=14"; 0 "program=0"; 0 "onvelocity=100";
+
+rom above all: 4 "Andante";
+boldital below 1: 4 "pp";
+boldital below 2: 4 "mp";
+boldital between3&4: 4 "p";
+1: 2.s;4c+;
+2: 2.s;4a;
+3: 2.s;4r;
+4: 2.s;4r;
+bar
+
+1: c+;f;bn;c+;
+2: a;;4.g#;8a;
+3: 2a;4bn;c+;
+4: 2f-c;4d&;c;
+4 2: 2s;f-;
+bar
+
+1: a;c+;8b;g;f;e;
+2: c+;b;8d;e;f;g;
+3: e+;d+;c+;b;
+4: 1b-f;
+bar
+
+1: 8a;c;g;a;e;g;c+;b;
+2: f;8e;f;g;e;c;g;
+3: 2c+;e;
+4: 2a-f;c-g-;
+bar
+
+1: 8.g;16a;8b;c+;4.;8r;
+2: 8b;a;g;f;4a;8r;a;
+3: b;bd+;g;a;
+3 2: 8d;f;2.s;
+4: g-;c;2f-c;
+bar
+
+1: a;f#;d;a;
+2: a;;4.d+;8c+;
+3: f#;c+;8a;b;4c+;
+4: 2d-a-;f#-d;
+bar
+
+1: c+;d;b-;8d;e;
+2: c+;b;8d;e;f;g;
+3: a;g;e;8d;b-;
+4: 2g-d;b--g-;
+bar
+
+1: 8a;f;e;a;c+;d+;d;e;
+2: f;8e;f;a;b;g;e;
+3: f;8e;d;e;g;b;c+;
+4: 2d-a-;c-g-;
+bar
+
+1: 8f;a;b;c+;4;r;
+2: 8f;c;b;g;4f;8r;a;
+3: 8a;f;d;e;a;4.c+;
+4: 2.f-c;4e-;
+bar
+
+1: 8a;d+;a;d+;g;d+;f;d+;
+2: 4.a;8;4g;f;
+3: f;g;b;bn;
+4: 2d-a-;4g-d;g#-d;
+bar
+
+1: 8e;d&+;e;b;4.e;8a;
+2: 4.e;8;;d;c#;e;
+3: bn;c#+;b;8a;g;
+4: 1a-e;
+bar
+
+1: b;a;d+;8f;d;
+2: 8d;c#;d;e;f;e;f;g;
+3: b;a;f;d;
+4: g-d;f-c;d-a-;b--f-;
+bar
+
+1: 8e;f;b-;d;4c;f;
+2: 8b;a;g;f;4a;8r;a;
+3: f;g;;a;
+4: d-a-;e&-b-;2f-c;
+bar
+
+1: 8d;e;f;g;4bn;c+;
+2: a;;4.g#;8a;
+3: e;f;bn;c+;
+4: 2d-a-;4d&;c;
+4 2: 2s;f-;
+bar
+
+1: d+;f;8a;g;e;a-;
+2: 8d+;c+;b;f;d;e;e+;d+;
+3: 2d;8f;e;a;c+;
+4: 2b--f-;4d-a-;f#-d;
+bar
+
+1: r;8d;e;f;g;a;b;
+2: 8c+;a;f;g;4.a;8g;
+3: 2b;4d;f;
+4: 2g-d;b--f-;
+bar
+
+midi all: 1 "tempo=68 to 48" til 1m;
+1: c+;c;2a;
+2: 8b;a;g;c;2f;
+3: 8e;f;g;b;2a;
+4: 2c-g-;f-c;
+bar
+
+staff 3 clef=treble
+music
+
+midi 3-4 1-2: 1 "onvelocity=80";
+1: mr;
+2: mr;
+3: 2.f+a+;4s;
+octave above 3: 1 "8va" til 3;
+4: 2.f-;4s;
+octave below 4: 1 "8va" til 3;
+endbar

@@ -1,0 +1,132 @@
+header
+	title (18) "Lo, How a Rose Is Growing"
+	title (12) " "
+	title (12) "" "Tune: Alte Catholische Geistliche Kirchenges\(a:)ng"
+	title (12) "" "arr: John A. Krallmann (11/19/93)"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1993 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=1&
+	barstyle=1-2
+	beamstyle=4,4,4,4
+	brace=1-2
+	vscheme=2o
+	ifdef VIDEO
+		pagewidth=16
+		pageheight=9
+		packfact=1.25
+		scale=1.1
+	else
+		staffscale=0.95
+		staffsep=17
+	endif
+	measnum=y
+	release=0
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "channel=11"; 0 "program=71"; 0 "onvelocity=72";
+midi 1 2: 0 "channel=12"; 0 "program=14"; 0 "onvelocity=70";
+midi 2 1-2: 0 "channel=13"; 0 "program=1";
+
+1: 2s;c+;
+2: 2s;8a-;e;bn;c+;
+bar
+
+1: c+;;d+;c+;
+1 2: 2s;4a;4s;
+2: 8d;a;e+;f+;b-;f;d+;e+;
+bar
+
+score time=6/4 ; beamstyle=4,4,4,4,4,4
+music
+
+1: 2c+;a;b;
+1 2: 1s;2g;
+2: 8c;g;d+;f+;d;a;e+;f+;g-;d;a;g;
+bar
+
+1: a;2g;f;4e;
+2: 8c;f;b;e;d;c;a;d;b-;g-;c;b~;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2f;c+;
+2: 8b;g;4a;8a-;e;bn;c+;
+2 2: 2f;s;
+bar
+
+1: c+;;d+;c+;
+1 2: 2s;4a;4s;
+2: 8d;a;e+;f+;b-;f;d+;e+;
+bar
+
+score time=6/4 ; beamstyle=4,4,4,4,4,4
+music
+
+1: 2c+;a;b;
+1 2: 1s;2g;
+2: 8c;g;d+;f+;d;a;e+;f+;g-;d;a;g;
+bar
+
+1: a;2g;f;4e;
+2: 8c;f;b;e;d;c;a;d;b-;g-;c;b~;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 2.f;4a;
+1 2: 2.s;4f;
+2: 8b;g;2a;8f;c+;
+2 2: 2f;s;
+bar
+
+1: g;e;f;d;
+1 2: e;s;d;s;
+2: 8e;c+;c;g;d;a;b-;16a;b;
+bar
+
+1: 2.c;4c+;
+1 2: 2.s;4a;
+2: 8c;g;b;g-d;4cg;8a-;e;
+bar
+
+1: c+;;d+;c+;
+1 2: a;;;;
+2: 8c+;d+;e+;f+;b-;f;d+;f+;
+bar
+
+score time=6/4 ; beamstyle=4,4,4,4,4,4
+music
+
+1: 2c+;a;b;
+1 2: 2s;f;g;
+2: 8c;g;d+;f+;d;a;e+;f+;g-;d;a;g;
+bar
+
+midi all: 4 "tempo=92 to 86" til 1m+3;
+1: a;2g;f;4e;
+2: 8c;f;b;e;d;c;a;d;b-;g-;c;b;
+bar
+
+1: 1.f;
+2: 8r;d;c;g;1ac+;
+2 2: 1.f-;
+endbar

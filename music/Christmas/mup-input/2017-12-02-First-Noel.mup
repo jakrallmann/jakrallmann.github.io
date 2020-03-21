@@ -1,0 +1,114 @@
+header
+	title (18) "The First Noel"
+	title "" "Tune: Traditional carol"
+	title "" "arr: John A. Krallmann (12/2/17)"
+
+footer
+	title (12) "Arrangement \(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=80";
+midi 1 1: 0 "onvelocity=88,72";
+midi 1 2: 0 "onvelocity=72";
+midi 2 1-2: 0 "onvelocity=72";
+midi 1-2 1-2: 0 "program=48";
+
+1: 2s;8e;d;
+1 2: 2s;4b-;
+2: 2s;4g-f;
+bar
+
+define P1
+1: 4.c;8d;e;f;
+1 2: b-;a-;;
+2: 2a-e;4f-d;
+bar
+@
+
+define P2
+1: 2g;8a;b;
+1 2: 8b-;d;4c;;
+2: d;c;f-ca;
+2 2: 2e-;4s;
+bar
+
+1: c+;b;ca;
+1 2: 2dg;8g;f;
+2: 2e-cg;4f-ca;
+bar
+
+1: 2eg;8a;b;
+1 2: d;c;;
+2: cg;c-;f-ca;
+bar
+@
+
+define P3
+1: c+;b;a;
+1 2: 2dg;4cf;
+2: 2e-cg;4f-ca;
+bar
+
+1: g;a;b;
+1 2: 2ce;4d;
+2: 2e-cg;4d-g-f;
+bar
+
+ifdef LAST midi all: 1 "tempo=78 to 60" til 1m; endif
+1: c+;g;f;
+1 2: 2e;8a-;b-;
+2: 2c-g-e;4g-f;
+bar
+@
+
+define P4
+1: 2e;8;d;
+1 2: d;c;b-;
+2: 2cg;4g-f;
+bar
+@
+
+P1
+P2
+P3
+P4
+P1
+P2
+P3
+P4
+P1
+
+1: 2g;8c+;b;
+1 2: d;c;de;
+2: 2e-cg;4;
+bar
+
+1: 2a;4fa;
+1 2: 8e;f;a-;b-;c;d;
+2: g;f;f--;
+2 2: 2f-c;4s;
+bar
+
+1: 2.g;
+1 2: 8d;e;2g-;
+2: 2.c-g-e;
+bar
+
+define LAST @
+P3
+
+1: 2.g-ce;
+2: 2.c-g-e;
+endbar

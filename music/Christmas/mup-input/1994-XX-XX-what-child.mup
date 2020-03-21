@@ -1,0 +1,103 @@
+header
+	title (18) "What Child is This?"
+	title (12) "" "Tune: English"
+	title (12) "" "arr: John A. Krallmann"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1994 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+define S 1 1: @
+define A 1 2: @
+define T 2 1: @
+define B 2 2: @
+
+score
+	staffs=2
+	key=1#
+	vscheme=2f
+	time=6/8
+	beamstyle=4.,4.
+	barstyle=1-2
+	brace=1-2
+	staffsep=16
+	packfact=1.6
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=70";
+midi 1 1: 0 "channel=11"; 0 "program=40"; 0 "onvelocity=78";
+midi 1 2: 0 "channel=12"; 0 "program=41";
+midi 2 1: 0 "channel=13"; 0 "program=42";
+midi 2 2: 0 "channel=14"; 0 "program=42"; 0 "onvelocity=69";
+
+S 4.s;4s;8e;
+T 4.s;4;8b;
+B 4.s;4;8e;
+repeatstart
+
+S 4g;8a;8.b;16c+;8b;
+T 2.b;
+B 4e;8f;4g;8;
+bar
+
+S 4a;8f;8.d;16e;8f;
+T 4.a~;4;8b;
+B 4d;8;4;8b-;
+bar ending "1."
+
+S 4g;8e;8.;16d#;8e;
+T 4.b;a;
+B 4e;8;4c;8;
+bar
+
+S 4.f;4b-;8e;
+T 4.b;4;8;
+B 4.b-;4;8e;
+repeatend ending "2."
+
+S 8.g;16f;8e;8.d#;16c#;8d;
+T 2.b;
+B 4e;8;4b-;8;
+bar
+
+S 4.e;;
+T 2.b;
+B 4.e;;
+repeatstart endending
+
+S 4.d+;8.;16c#+;8b;
+A 4.f;g;
+T 4.b;4g;8;
+bar
+
+S 4a;8f;8.d;16e;8f;
+A 4.d;b-;
+T 4d;8;4;8b-;
+bar ending "1."
+
+S 4g;8e;8.e;16d#;8e;
+T 4.b;a;
+B 4e;8;4c;8;
+bar
+
+S 4f;8d#;4.b-;
+T 4.b;;
+B 4b-;8;4.;
+repeatend ending "2."
+
+midi all: 2 "tempo=68 to 46" til 1m+4;
+S 8.g;16f;8e;8.d#;16c#;8d;
+T 2.b;
+B 4e;8;4b-;8;
+bar
+
+S 4.e;;
+T 2.b;
+B 4.e;;
+endbar endending

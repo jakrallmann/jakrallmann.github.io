@@ -1,0 +1,95 @@
+header
+	title (18) "Gentle Mary Laid Her Child"
+	title (12) ""
+	title (12) "" "Tune: Swedish"
+	title (12) "" "arr: John A. Krallmann (12/9/89)"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1989 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	clef=bass
+	barstyle=1-2
+	brace=1-2
+	packfact=2
+	staffsep=14
+	scoresep=12,22
+	measnum=y
+	release=0
+
+staff 1
+	vscheme=2f
+
+music
+
+midi all: 0 "tempo=102";
+midi 1 1: 0 "channel=11"; 0 "program=54"; 0 "onvelocity=70";
+midi 1 2: 0 "channel=12"; 0 "program=54"; 0 "onvelocity=70";
+midi 2 1: 0 "channel=13"; 0 "program=43"; 0 "onvelocity=90";
+
+define AA
+1: b-dg;ceg;b-dg;dfa;
+2: g-;;;a-;
+bar
+
+1: b-dg;ceg;2fda;
+2: g-;;2d-;
+bar
+
+1: b-eg;a-df;ceg;dfa;
+2: e-;d-;e-;f-;
+bar
+
+1 1: 2dg;b-dg;
+1 2: c;a-;2s;
+2: 2g-;;
+bar
+@
+
+AA
+AA
+
+newscore
+
+1: fad+;fac+;dfb;dfa;
+2: d;c;b-;a-;
+bar
+
+1: egb;dfac+;2dgb;
+2: b-;a-;2g-;
+bar
+
+1: egb;fad+;egc+;dfa;
+2: e-;d-;e-;f-;
+bar
+
+1 1: c+;a;2dgb;
+1 2: 2dg;s;
+2: 2g-;;
+bar
+
+1: dfa;fac+;egc+;dfac+;
+2: d-;;e-;f-;
+bar
+
+1: dgb;egc+;2dfa;
+2: g-;;2a-;
+bar
+
+1: gbd+;egc+;dgb;fac+;
+2: d;c;b-;a-;
+bar
+
+1 1: 2gbd+;4c+;a;
+1 2: 2s;eg;
+2: 2g-;c;
+bar
+
+1: 1dgb;
+2: 1g-;
+endbar
+

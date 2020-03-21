@@ -1,0 +1,193 @@
+header
+	title "" "John A. Krallmann"
+	title "" "(12/24/19)"
+footer
+        title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1#
+	time=12/8
+	beamstyle=4.,4.,4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	staffscale=0.9
+
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+
+define P ifdef MIDI pedal below 1-2: 1;7; endif @
+
+midi all: 0 "tempo=114";
+midi 1 1: 0 "onvelocity=90";
+
+1: 4.r;;;4;16g;a;
+2: e-;b-;g;e-;b-;g;e-;b-;g;e-;b-;g;
+P
+bar
+
+define T1
+1: 4.b;;;4r;16g;a;
+2: e-;b-;g;e-;b-;g;e-;b-;g;e-;b-;g;
+P
+bar
+
+1: 4.b;;;4r;16g;a;
+2: d-;b-;f;d-;b-;f;d-;b-;f;d-;b-;f;
+P
+bar
+
+1: 4.b;;;4r;16g;a;
+2: c-;g-;e;c-;g-;e;c-;g-;e;c-;g-;e;
+P
+bar
+@
+T1
+
+1: 4.b;;;4r;16g;a;
+2: b--;f-;d#;c#;d;c;4.d;8g-;a-;f-;
+P
+bar
+
+T1
+
+1: 4.b;;;r;
+2: b--;f-;d#;c#;d;c;4.d;8f;c+;b;
+P
+bar
+
+1: 4.g+;;b+;;
+2: e;b;g+;e;b;g+;d;b;f+;d;b;f+;
+P
+bar
+
+1: 4.e+;;2.g+;
+2: c;g;e+;c;g;e+;b-;g;d+;b-;g;d+;
+P
+bar
+
+1: 4.f+;c#+;;f+;
+2: a#-;f;c#+;a-;f;c+;a-;f;c+;a-;f;c+;
+P
+bar
+
+1: 2.e+;d#+;
+2: a-;f;c+;a-;f;c+;g#-;f;c+;g-;f;c+;
+P
+bar
+
+1:  4.e+;b;;d+;
+2: g-;e;b;g-;e;b;g-;e;b;g-;e;b;
+P
+bar
+
+1: 2.c#+~;4.;8g;f;e;
+2: f#-;c#;a#;c;a;c;2.a;
+P
+bar
+
+1: 4.f;;;8;g;a;
+2: d-;a-;f;d-;a-;f;d-;a-;f;d-;a-;f;
+P
+bar
+
+1: 2.a;4.g~;4;8f;
+2: e-;b-;g;e-;b-;g;e-;b-;g;e-;b-;g;
+P
+bar
+
+1: 2.e~;4.;8;f;g;
+2: a-;e;c#+;a-;e;c+;a-;e;c+;a-;e;c+;
+P
+bar
+
+1: 2.g;f;
+2: d;a;e+;d;a;e+;d;a;d+;d;a;d+;
+P
+bar
+
+1: 2.f;e;
+2: g-;d;b;g-;d;b;g-;d;b;g-;d;b;
+P
+bar
+
+1: 2.e;d;
+2: f-;d;a;f-;d;a;f-;d;a;f-;d;a;
+P
+bar
+
+1: 2.d;c;
+2: fn-;c;a;f-;c;a;f-;c;a;f-;c;a;
+P
+bar
+
+1: 1.b-;
+2: e-;b-;g#;b-;g;b-;4.g;8e;d;e;
+P
+bar
+
+midi 1: 1 "onvelocity=64";
+midi 2: 1 "onvelocity=90";
+define T2
+1: c+;e+;a+;c+;e+;a+;c+;e+;a+;c+;e+;a+;
+2: 4.a-;;2.;
+P
+bar
+
+1: c+;e+;a+;c+;e+;a+;c+;e+;a+;c+;e+;a+;
+2: 4.g-;;2.;
+P
+bar
+
+1: c+;e+;a+;c+;e+;a+;c+;e+;a+;c+;e+;a+;
+2: 4.fn-;;~;4;8;
+P
+bar
+
+1: b;e+;a+;b;e+;a+;b;e+;g#+;b;e+;g+;
+2: 4.e-;;;8e;d;e;
+P
+bar
+@
+
+T2
+T2
+
+1: c+;e+;a+;c+;e+;a+;c+;e+;a+;c+;e+;a+;
+2: 4.ae+;;2.;
+P
+bar
+
+1: c+;e+;a+;c+;e+;a+;c+;e+;a+;c+;e+;a+;
+2: 4.ge+;;2.;
+P
+bar
+
+1: c+;e+;a+;c+;e+;a+;c+;d+;a+;c+;d+;a+;
+2: 4.fe+;;2.fd+;
+P
+bar
+
+1: c+;d+;a+;c+;d+;a+;4.bg+ tie;4;8fn+;
+2: 4.fnd+;;2.gd+;
+P
+bar
+
+midi 1: 1 "onvelocity=90";
+1: 2.c+e+;ac+;
+2: 2.ae+;fnc+;
+P
+bar
+
+1: 2.g#b;ac#+;
+2: 2.eb;ae+;
+ifdef MIDI pedal below 1-2: 1;7;12*; endif
+endbar

@@ -1,0 +1,153 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(February 16, 2020)"
+footer
+        title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+
+staff 2
+	clef=bass
+	timeunit=8
+
+music
+ 
+define P ifdef MIDI pedal below 1,2: 1; endif  @
+
+midi all: 0 "tempo=102";
+midi 1: 0 "onvelocity=84";
+
+1: 2.c+;
+2: a-;e;b;a;d+;c+;
+bar
+
+1: 2.c+;
+2: f;c+;<<staff clef=treble>>g;f;b;a;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2.c+;
+2: d-;a-;g;f;d+;c+;
+bar
+
+1: 2.b;
+2: e-;b-;f;e;a;g;
+bar
+
+1: [grace]...8e;f;g;a;b;[-]2.c+;
+2: a-;e;b;a;d+;c+;
+bar
+
+1: 2.f+;
+2: d-;a-;g;f;b;a;
+bar
+
+score time=2/4 ; beamstyle=4,4
+staff 2 timeunit=8
+music
+
+1: 2e+; 
+2: a-;e;d+;c+;
+bar
+
+1: 2c+;
+2: f-;c;b;a;
+bar
+
+1: 2a;
+2: d-;a-;g;f;
+bar
+
+1: 2g;
+2: e-;b-;g;e;
+bar
+
+1: 2f~;
+2: f-;c;b;g;
+bar
+
+1: 2f;
+2: 2an;
+bar 
+
+score time=3/4
+music
+
+1: 2.c;
+2: a-;e;b;a;g;e;
+bar
+
+1: [grace]8c;[]e;2.d;
+2: b--;f-;d;c;b-;a-;
+bar
+
+1: [grace]8d;[]c;2.b-;
+2: e-;b-;f;g;f;e;
+bar
+
+1: [grace]8a-;[]b-;2.c;
+2: a-;e;b;a;e;g-;
+bar
+
+1: 2.c;
+2: f-;c;g;a;g;e;
+bar
+
+1: 2.f;
+2: d-;a-;f;g;a;b;
+bar
+
+1: 2.e;
+2: a-;e;d+;c+;a;e;
+bar
+
+1: 2.c;
+2: f-;c;g;f;a;e-;
+bar
+
+define T
+1: 2.a-;
+2: d-;a-;e;d;f;c;
+bar
+
+1: 2.g-;
+2: e-;b-;e;f;e;b-;
+bar
+@
+T
+
+1: 2.f-~;
+2: f-;c;f;g;4a~;
+bar
+
+score time=2/4
+music
+
+1: 2f-;
+2: 2a;
+bar
+
+score time=3/4
+music
+
+T
+
+1: 2.f-~;
+2: f-;c;f;g;4an~;
+bar
+
+1: 2.f-;
+2: 2.a;
+endbar

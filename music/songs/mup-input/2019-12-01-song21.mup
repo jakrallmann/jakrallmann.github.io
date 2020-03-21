@@ -1,0 +1,296 @@
+header
+	title (16) "Song"
+	title "" "John A. Krallmann"
+	title " " "(November 24 and December 1, 2019)"
+
+header2
+	title "- \% -"
+
+footer
+	title (12) "\(copyright) Copyright 2019 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=3
+	time=2/2
+	key=1&
+	beamstyle=2,2
+	bracket=1-2 ("RH")
+	barstyle=1-3
+	measnum=y
+	scoresep=10,29
+
+staff 1
+	label="Melody"
+staff 2
+	clef=bass
+staff 3
+	clef=bass
+	label="LH"
+
+music
+midi 1: 0 "onvelocity=104,54";
+midi 2-3: 0 "onvelocity=54";
+
+define I
+1: mr;
+2: r;e&c+;
+3: 4c-;g-;2c;
+bar
+
+1: mr;
+2: r;a&c+;
+3: 4f-;c;2f;
+bar
+@
+I
+I
+
+1: [grace]8g+;[]a&+;1g+;
+2: r;e&c+;
+3: 4c-;g-;2c;
+bar
+
+1: 1f+;
+2: r;a&c+d+;
+3: 4f-;c;2f;
+bar
+
+1: [grace]8g+;[]a&+;1g+;
+2: r;e&c+;
+3: 4c-;g-;2c;
+bar
+
+1: 4f+;e&+;2d+;
+2: mr;
+3: 4f-;c;2a&;
+bar
+
+1: 2.d+;4d#+;
+2: r;bnd+;
+3: 4g-;d;2g;
+bar
+
+1: 2.e+;4c+;
+2: r;c+e+;
+3: 4c-;g-;2c;
+bar
+
+1: 2.a+;4f+;
+2: r;ac+f+;
+3: 4f-;c;2d;
+bar
+
+1: 2.d+;8f#;g;
+2: r;bnd+;
+3: 4g-;d;2f;
+bar
+
+1: 2.e+;4c+;
+2: r;ec+;
+3: 4c-;g-;2d;
+bar
+
+1: 1a;
+2: r;ac+f+;
+3: 4f-;c;2d;
+bar
+
+1: 1a;
+2: r;c+f+;
+3: 4g-;d;2g;
+bar
+
+1: 1g;
+2: r;bnf+;
+3: 4g-;d;2g;
+bar
+
+1: 1a~;
+2: r;c+e+;
+3: 4a-;e;2a;
+bar
+
+1: 1a;
+2: r;ad+;
+3: 4d-;a-;2f#;
+bar
+
+1: mr;
+2: r;ac+e+;
+3: 4a-;e;2g;
+bar
+
+1: 2r;4;g;
+2: r;f#ad+;
+3: 4d-;a-;2d;
+bar
+
+1: 1a~;
+2: r;ac+e+;
+3: 4a-;e;2g;
+bar
+
+1: 2.a;4g;
+2: r;f#ad+;
+3: 4d-;a-;2d;
+bar
+
+1: 1a;
+2: r;ac+e+;
+3: 4a-;e;2g;
+bar
+
+1: 2.e+;4d+;
+2: r;f#ad+;
+3: 4d-;a-;2d;
+bar
+
+1: 8c+;bn;2.a;
+2: r;ac+e+;
+3: 4a-;e;2g;
+bar
+
+1: 1a;
+2: r;f#ad+;
+3: 4d-;a-;2d;
+bar
+
+1: 1a;
+2: r;ac+e+;
+3: 4a-;e;2g;
+bar
+
+1: mr;
+2: r;f#ad+;
+3: 4d-;a-;2d;
+bar
+
+1: 1e+;
+2: r;c+e+;
+3: 4a-;e;2a;
+bar
+
+1: 4f+;e+;2d+;
+2: mr;
+3: 4d-;a-;2fgabnd+;
+bar
+
+1: 1e+;
+2: r;c+e+;
+3: 4a-;e;2bn;
+bar
+
+1: mr;
+2: r;c+e+;
+3:4a-;e;2bn;
+bar
+
+1: 1f;
+2: r;ac+;
+3: 4d-;a-;2f;
+bar
+
+1: 2.f;4e;
+2: r;a&;
+3: 4e-;bn-;2e;
+bar
+
+1: 1a-~;
+2: r;c+;
+3: 4a-;e;2g;
+bar
+
+1: 2.a-;4d;
+2: r;ac+;
+3: 4a-;e;2g;
+bar
+
+staff 2 clef=treble
+music
+
+1: 1e;
+2: r;ac+;
+3: 4a-;e;2c+;
+bar
+
+1: 4f;e;2d;
+2: mr;
+3: 4b-;f;2b;
+bar
+
+1: 1e;
+2: r;ac+;
+3: 4a-;e;2c+;
+bar
+
+1: 1d;
+2: r;b;
+3: 4b-;f;2b;
+bar
+
+1: 4e;d;2c;
+2: mr;
+3: 4a-;e;2g;
+bar
+
+1: 4d;c;2b-;
+2: mr;
+3: 4b-;f;2d;
+bar
+
+1: 1c;
+2: r;c+e+;
+3: 4a-;e;2g;
+bar
+
+1: 1b-;
+2: r;bd+;
+3: 4g-;d;2f;
+bar
+
+1: 1a;
+2: r;f+;
+3: 4c;a;2f+;
+bar
+
+1: 1g;
+2: r;e+;
+3: 4c;g;2e+;
+bar 
+
+1: 1f;
+2: r;d+;
+3: 4d;a;e+;d+;
+bar
+
+1: 1e;
+2: r;4g;a;
+3: 4a-;e;2c+;
+bar
+
+1: 1d;
+2: r;4c+;b;
+3: 4b-;f;2b;
+bar
+
+1: 4d;2.c;
+2: r;4a;g;
+3: 4c;e;2b;
+bar
+
+1: 1d~;
+2: 1a~;
+3: 4d-;a-;f#;e;
+bar
+
+1: 4d;<<staff clef=bass>>a;f#;e;
+2: 1a~;
+3: 1f#;
+bar
+
+1: 1df#;
+2: 1a;
+3: 1d-a-;
+endbar

@@ -1,0 +1,144 @@
+header
+	title (18) "Silent Night"
+	title (8) "  "
+	title (12) "" "Tune: Franz Gruber"
+	title (12) "" "arr: John A. Krallmann (12/19/92)"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1992 John A. Krallmann"
+	title (5) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Silent Night - \%"
+
+score
+	ifdef VIDEO
+		pagewidth=16
+		pageheight=9
+		packfact=1.25
+	else
+		packfact=0.8
+		staffscale=0.9
+		topmargin=0.8
+		botmargin=0.85
+	endif
+	staffs=2
+	key=1#
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2 ("Piano")
+	barstyle=1-2
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=96";
+midi  1 1: 0 "channel=11"; 0 "program=1"; 0 "onvelocity=92";
+midi  2 1: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=92";
+
+1: 2s;4b-;d;
+2: 8g-;d;4a;2s;
+pedal 2: 1;
+bar
+
+1: 2s;4d;c;
+2: 8c-;g-;4e;2s;
+pedal 2: 1;
+bar
+
+1: 2s;4df-;ca-;
+2: 8d-;a-;e;a;2s;
+pedal 2: 1;
+bar
+
+1: 1b-;
+2: 8g-;d;4a;2g;
+pedal 2: 1;
+repeatstart
+
+score time=6/4; beamstyle=4,4,4,4,4,4 ; vscheme=2o
+voice 1 1 defoct=5
+
+music
+
+midi 1 1: 0 "program=73"; 0 "onvelocity=72";
+midi 1 2: 0 "channel=12"; 0 "program=1"; 0 "onvelocity=90";
+midi 2 1-2: 0 "channel=12"; 0 "onvelocity=90";
+
+1 1: 4.d;8e;4d;2.b-;
+2 1: 8g-;d;4a;b;r;d+g;e+e;
+pedal 2: 1;3.5*;5;6;
+bar
+
+1 1: 4.d;8e;4d;2.b-;
+2 1: 8g-;d;4a;b;r;d+g;e+e;
+pedal 2: 1;3.5*;5;6;
+bar
+
+1 1: 2a;4;2.f;
+2 1: 8d-;a-;e;f~;4;c+;e+;d+;
+2 2: 2.s;d;
+pedal 2: 1;4;
+bar
+
+1 1: 2g;4;2.d;
+2 1: 8g-;d;a;b~;4b;8b-;g;4d+;fn+;
+pedal 2: 1;4;
+bar
+
+1 1: 2e;4;4.g;8f;4e;
+1 2: 4s;8e;f;4g;4s;e;8a;g;
+2 1: 8c;g;2s;8c#;a;2s;
+pedal 2: 1;4;
+bar
+
+1 1: 4.d;8e;4d;2.b-;
+1 2: 4s;4c+f;1s;
+2 1: 8d;a;4s;8e+;d+;g-;d;4ae;bd;
+pedal 2: 1;3;4;6;
+bar
+
+1 1: 2e;4;4.g;8f;4e;
+1 2: 4s;8e;f;4g;4s;e;8a;g;
+2 1: 8c;g;2s;8c#;a;2s;
+pedal 2: 1;4;
+bar
+
+1 1: 4.d;8e;4d;2.b-;
+1 2: 4s;4c+f;1s;
+2 1: 8d;a;4s;8e+;d+;g-;d;4ae;bd;
+pedal 2: 1;3;4;6;
+bar
+
+1 1: 2a;4;4.c+;8a;4f;
+1 2: 4s;8e;f;4a;4s;4a;c+;
+2 1: 8d;a;2s;8f;d+;4s;d;
+pedal 2: 1;4;6;
+bar
+
+1 1: 2.g;b;
+1 2: 4s;8f;g;4b;4s;8e;f;4g;
+2 1: 8e;b;2s;8c#;g;2s;
+pedal 2:1;4;
+bar
+
+// force the first g to have stem up to look consistent
+//with the other melody line stems nearby
+staff 1 vscheme=2o
+
+music
+1 1: 4g;d;b-;4.d;8c;4a-;
+1 2: 4s;8e;f;4g;4s;f;8e;f;
+2 1: 8d;b;2s;8d;a;2s;
+pedal 2: 1;4;6;
+bar
+
+1 1: 1.g-;
+2 1: 8r;8d~;a~d~;ba~d~;4d+~a~d~;2.d+bad;
+pedal 2: 1; 6.9*;
+2 2: 1.g-;
+repeatend

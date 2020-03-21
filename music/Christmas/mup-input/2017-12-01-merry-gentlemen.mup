@@ -1,0 +1,138 @@
+header
+	title (18) "God Rest Ye, Merry Gentlemen"
+	title ""
+	title "" "Tune: Traditional English carol"
+	title "" "arr: John A. Krallmann (12/1/17)"
+
+footer
+	title (12) "Arrangement \(copyright) Copyright 2017 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=4/4
+	beamstyle=4,4,4,4
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	packfact=1.5
+	scoresep=12,20
+ifdef MIDI
+	transpose=up perfect 4
+endif
+staff 2
+	clef=bass
+music
+
+ifndef INST
+	define INST "52" @
+endif
+midi all: 0 "tempo=112";
+midi 1 1: 0 "channel=11"; 0 "onvelocity=100,90"; 0 "program=" + INST;
+midi 1 2: 0 "channel=12"; 0 "onvelocity=90"; 0 "program=" + INST;
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=90"; 0 "program=" + INST;
+1: 2.s;4d;
+2: 2.s;4r;
+bar
+
+1: d;a;;g;
+2: 2fa;egc#+;
+bar
+
+1: bn-f;c#e;d;cn;
+2: 2a-c#g;df;
+bar
+
+1: d;e;f;g;
+1 2: 2b-;;
+2: 2g-d;g-e;
+bar
+
+1: 2.a;4d;
+1 2: d;bn-;c#;s;
+2: 1e;
+2 2: 2a-;g-;
+bar
+
+1: d;a;;g;
+1 2: 2a-;4bn-;c#;
+2: 2f-d;e-c#e;
+bar
+
+1: f;e;d;c;
+1 2: 2a-d;f-b-;
+2: d-;c-;b--;a--;
+bar
+
+1: d;e;f;g;
+1 2: 2f-b-;b-;
+2: 2g--;de;
+bar
+
+midi all: 1 "tempo=102"; 2 "tempo=94"; 3 "tempo=86"; 4 "tempo=112";
+1: 2.a;4;
+1 2: c#;d;2e;
+2: e;f;g;a;
+2 2: 1a-;
+bar
+
+1: b;g;a;b;
+1 2: 2b-d;d;
+2: 2g-df;b-df;
+bar
+
+1: c+;d+;a;g;
+1 2: 2e;d;
+2: 2a-eg;df;
+bar
+
+1: f;d;e;f;
+1 2: 2b-;bn-;
+2: 2g-d;g#-e;
+bar
+
+midi all: 1 "tempo=86"; 2 "tempo=62"; 3 "tempo=112";
+1: 2g;4f;g;
+1 2: b-d;a-c#;2s;
+2: 2a-e;r;
+mussym above all: 2 "ferm";
+bar
+ 
+1: 2da;4b;a;
+1 2: 2s;b-d;
+2: 2f;g-f;
+2 2: d;c;2s;
+bar
+
+1: c#a;a-g;bn-f;ce;
+2: 2a-e;a--;
+bar
+
+1: 2f-b-d;8f;e;4d;
+2: b--b-;c;d;fb;
+bar
+
+1: 2g;4cf;cg;
+1 2: d;e;2s;
+2: 2cg;4a-f;g-e;
+bar
+
+midi all: 4 "tempo=86";
+1: a;b;c+;d+;
+1 2: 2.c;4df;
+2: f;e;e&;b--b-;
+2 2: 2.f-;4s;
+rom above all: 4 "allargando";
+bar
+
+1: a;g;f;e;
+1 2: 1b-d;
+2: e;c;d;c;
+2 2: 1c-g-;
+bar
+
+1: 1f#-a-d;
+2: 1d-a-d;
+endbar 

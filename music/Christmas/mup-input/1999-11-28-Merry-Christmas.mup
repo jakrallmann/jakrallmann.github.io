@@ -1,0 +1,92 @@
+header
+	title (18) "We Wish You a Merry Christmas"
+	title ital "(Piano duet)"
+	title "" "Tune: Traditional English carol"
+	title "" "arr: John A. Krallmann (11/28/99)"
+
+footer
+	title (12) "Arrangement \(copyright) Copyright 1999 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	key=3#
+	time=3/4
+	beamstyle=4,4,4
+	brace=1-2("PRIMO"),3-4("SECONDO")
+	barstyle=1-2,3-4
+	staffsep=16
+	scoresep=14,26
+
+staff 1
+	vscheme=2f
+staff 3
+	clef=bass
+staff 4
+	clef=bass
+music
+
+midi 1 1-2: 0 "onvelocity=60";
+midi 2: 0 "onvelocity=80";
+midi 3: 0 "onvelocity=100";
+midi 4: 0 "onvelocity=82";
+
+1: 2s;8e+;d+;
+2: 2s;4g;
+3: 2s;4e;
+4: 2s;4e-;
+boldital below 1: 3 "mp";
+boldital above 2: 3 "mf";
+boldital below 3: 3 "ff";
+boldital above 4: 3 "mf";
+bar
+
+1: 8c+;d+;c+;d+;c+;e+;
+2: 2e;4;
+3: a;8;b;a;g;
+4: 2a--;4c-;
+bar
+
+1: 8a+;b+;a+;c+;b;a;
+2: c;a;c;
+3: f;;;
+4: 2f-;4e-;
+bar
+
+1: 8d+;f+;d+;e+;d+;f+;
+2: f;;;
+3: b;8;c+;b;a;
+4: 8d-;c-;b--;c-;4d-;
+bar
+
+1: 8b+;e+;d++;c++;b+;d+;
+2: e;d;e;
+3: 8g;f;4e;;
+4: 2e-;4;
+bar
+
+1: 8a;e+;a;b;e+;g+;
+2: e;;;
+3: c+;8;d+;c+;b;
+4: a-;;g-;
+bar
+
+1: 8c++;b+;a+;c+;g+;c+;
+2: 2f;4g;
+3: a;f;8e;;
+4: f-;;c-;
+bar
+
+1: 8d+;a+;4d++;8e+;b+;
+1 2: s;8g+;f+;4s;
+2: a;e;d;
+3: f;b;g;
+4: 8f-;d-;4e;;
+bar
+
+1: 2e+c++;4s;
+2: 2a;4s;
+3: 2a;4s;
+4: 2a--;4s;
+repeatend

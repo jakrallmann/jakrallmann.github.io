@@ -1,0 +1,98 @@
+header
+	title (18) "It Came Upon the Midnight Clear"
+	title (12) "" "Tune: Richard S. Willis"
+	title (12) "" "arr: John A. Krallmann (11/9/98)"
+
+footer
+	title (12) "arrangement \(copyright) Copyright 1998 John A. Krallmann"
+	title (8) ""
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	brace=1-2
+	barstyle=1-2
+	time=6/4
+	beamstyle=4,4,4,4,4,4
+	ifdef VIDEO
+		pagewidth=16
+		pageheight=9
+	else
+		staffscale=0.9
+	endif
+	measnum=y
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=76";
+midi 1 1: 0 "channel=11"; 0 "program=40"; 0 "onvelocity=92";
+midi 2 1: 0 "channel=13"; 0 "program=46";
+
+rom above all: 6 "( \(smup4n) = 80 )";
+1: 2.s;2;4f;
+2: 2.s;2;4r;
+boldital between 1&2: 6 "pp";
+bar
+
+define A
+1: 2d+;4a;c+;b;g;
+2: 8b--;f-;a;b;d+;f+;e-;b-;f;g;e+;c;
+bar
+
+1: 2f;4g;2f;4;
+2: 8d-;a;en+;d+;e-;b-;f-;c;g;e&+;d-;b;
+bar
+@
+A
+
+1: g;a;b;;c+;d+;
+2: 8e-;b-;f;g;d+;e+;c-;g-;d;en;b;c;
+bar
+
+1: 2.c+~;2;4f;
+2: 8f-;e;g;c+;4f+~;2;4r;
+bar
+
+A
+
+1: 2g;4;a;g;f;
+2: 8e-;b-;d+;e+;f+;e+;f-;g;e+;a;e+;f-;
+bar
+
+1: 2.b~;2;4d+;
+2: 8b--;d;a;g;4f~;2;4r;
+bar
+
+1: 2d+;4d;;en;f#;
+2: 8d-;f#;e+;d+;c+;b;a;g;b-;a-;d-;c-;
+bar
+
+1: 2g;4a;2b;4d+;
+2: 8b--;g;e+;d+;f#;c-;g-;d;f#+;g+;e-;b-;
+octave below 2: 3.8 "8va" til 4.4; 5.8 "8va" til 6.4;
+bar
+
+1: c+;b;a;g;a;g;
+2: 8f-;e;g;c+;e+;f;f-;a;e;f-;a;c+;
+octave below 2: 0.5 "8va" til 1.4;
+bar
+
+1: 2.f~;2;4f;
+2: 8b--;d;a;b;4d+~;2;4r;
+bar
+
+A
+
+midi all: 1 "tempo=74 to 60" til 1m;
+1: 2g;4;a;g;f;
+2: 8e-;b-;d+;e+;f+;e+;f-;g;e+;a;e+;f-;
+bar
+
+midi 1: 1 "onvelocity=58";
+1: 2.b~;2;4s;
+2: 8b--;d;a;g;4f~;2;4s;
+endbar
