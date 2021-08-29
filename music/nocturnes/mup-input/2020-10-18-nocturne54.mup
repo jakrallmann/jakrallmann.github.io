@@ -1,0 +1,206 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(October 18, 2020)"
+footer
+        title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	packfact=1.4
+
+staff 2
+	clef=bass
+	vscheme=2f
+
+music
+ 
+midi 1 1: 0 "onvelocity=84,64";
+midi all: 0 "tempo=64";
+
+rom above all: 1 "( \(smup4n) = 64 )";
+define TH
+1: 2e~;16;g;a;b;e+;d+;b;g;
+2: r;eb;2db;
+bar
+
+1: 4.a;8e;16g;a;f#;d;f;g;8e~;
+2: 2cge+;a-ec+ tie;
+bar
+
+1: 2e;8a;c+;4f+~;
+2: a-ec+;g-;2f-ca tie;
+bar
+
+score
+	time=2/4
+	beamstyle=4,4
+music
+1: 16f+;e+;d+;c+;a;f;c;d;
+2: 2f-ca;
+bar
+
+score
+	time=3/4
+	beamstyle=4,4,4
+music
+
+1: 16e;f#;a;c+;8e+;d+;c+;a;
+2: 2.d-a-f#;
+bar
+
+1: 16a;b;d+;e+;2d+;
+2: 2.g-db;
+bar
+
+score
+	time=4/4
+music
+
+1: 16d+;e+;d+;g;a;c;e;d;;e;f#;a;e+;d+;c+;a;
+2: 2f-ca;d-a-f#;
+bar
+
+score
+	time=3/4
+music
+
+1: 16a;b&;g;f;2g;
+2: 2.e&-b&-g;
+bar
+
+1: 16g;a;f;c;2d;
+2: 2.d-a-f;
+bar
+
+score
+	time=4/4
+music
+
+1: 16f;g;e;c;8d;a-;2b-;
+2: 2b&--f-d;g--d-b-;
+bar
+
+score
+	time=3/4
+music
+
+1: 16e;g;a;c+;2e+;
+2: 2.c-g-e;
+bar
+
+1: 16e+;d+;c+;a;2;
+2: 2.d-a-f;
+bar
+
+score
+	time=4/4
+music
+
+1: 16a;g;;a;;c+;;b;2a;
+2: e-b-g;f-ca;2a-ec+;
+rom between 1&2: 3 "Fine";
+@
+TH
+repeatend
+
+1: 8a+;b+;c++;b+;2a+;
+2: <<staff clef=treble>>2.fc+;4e;
+bar
+
+1: 8f#+;g+;a+;f+;2d+;
+2: 2.da;4c;
+bar
+
+1: 8d+;e+;f+;d+;4;c+;
+2: 2.b&-f;4a-;
+bar
+
+1: 1bd+;
+2: 1g-d;
+bar
+
+staff 2 clef=bass
+music
+
+1: 8d;e;f;e;4d;c;
+2: 2a&;f;
+2 2: 1c;
+bar
+
+1: 8d;e;f;e;d;c;<<staff clef=bass>>a&;f;
+2: 2a&;4f;c;
+2 2: 1c;
+bar
+
+1: 1eg;
+2: 1c-g-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 8a&-;b&-;c;d;e&;f;g;a&;
+2: 1f-c;
+bar
+
+1: 8g;f;g;a&;2g;
+2: 1g-db;
+bar
+
+1: 8e;g;c+;d+;e+;d+;c+;g;
+2: d+;c+;b;b&;
+2 2: 1cg;
+bar
+
+1: 8g;f;g;f;g;f;c;d;
+2: 2a;a&;
+2 2: 1f-c;
+bar
+
+1: 8f;e;c;d;2e;
+2: 1c-g-e;
+bar
+
+1: 8e;d;c;a&-;c;d;f;a&;
+2: 1f-c;
+bar
+
+1: 8c+;d+;e+;g+;2c++;
+2: 1c-g-e;
+bar
+
+1: 8g+;f+;g+;f+;g+;f+;c+;d+;
+2: a&+;g+;f+;d+;
+2 2: 1fc+;
+bar
+
+1: 1c+e+;
+2: 1c+g+;
+bar
+
+staff 1 clef=bass
+music
+
+1: 1eg;
+2: 1c-g-;
+rom between 1&2: 2 "D.C. al Fine";
+invisbar
+
+staff 1 clef=treble
+music
+dblbar
+
+ifdef MIDI
+TH
+bar
+endif

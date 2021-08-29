@@ -1,0 +1,272 @@
+header
+	title (18) "Theme and Variations"
+	title (12) "" "John A. Krallmann (June, 2014)"
+
+header2
+	title (12) "Theme and Variations - \%"
+footer
+	title (12) "\(copyright) Copyright 2014 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=4
+	key=1#
+	time=2/2
+	beamstyle=2,2
+	release=0
+	emptymeas="mr;"
+	scoresep=10,36
+
+define D 1 @
+define M 2 @
+define T 3 @
+define B 4 @
+
+staff M
+	timeunit=8
+staff T
+	clef=bass
+	timeunit=8
+staff B
+	clef=bass
+
+music
+
+midi D: 0 "channel=1"; 0 "program=40";
+midi M: 0 "channel=2"; 0 "program=40";
+midi T: 0 "channel=3"; 0 "program=41"; 0 "onvelocity=54";
+midi B: 0 "channel=4"; 0 "program=42";
+
+// Start with just melody and bass
+M: 2s;8r;d;a;b;
+B: s;g-;
+bar
+
+define TH
+ifdef DA
+ D: 4.g+;8d+;4.c+;8b+;
+endif
+M: r;d+;c+;b;r;b;c+;e+;
+ifdef TA
+ T: f;e;f;g;a;g;f;e;
+endif
+ifdef FB
+ B: 4.d;16g;d;4.a-;16f-;e-;
+else ifdef B4
+ B: 4g;d;a-;e-;
+else
+ B: d;a-;
+endif
+endif
+bar 
+
+ifdef DA
+ D: 4.a+;8f+;4.d+;8b+;
+endif
+M: r;e+;f;c+;r;b;c+;d+;
+ifdef TA
+ T: d;e;f;e;d;;e;f;
+endif
+ifdef FB
+ B: 4.d-;16e-;f-;4.g-;16a-;b-;
+else ifdef B4
+ B: 4d-;a-;g-;d;
+else
+ B: d-;g-;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.a+;8g+;4.a+;8g+;
+endif
+M: r;e+;c+;b;r;a;b;c+;
+ifdef TA
+ T: g;a;b;c+;d+;c+;b;a;
+endif
+ifdef FB
+ B: 4.c;16a-;g-;4.f-;16g-;a-;
+else ifdef B4
+ B: 4c;a-;f-;d-;
+else
+ B: c;f-;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.f+;8g+;4.;8f+;
+endif
+M: r;d+;b;f;r;g;a;b;
+ifdef TA
+ T: g;f;g;a;b;;a;g;
+endif
+ifdef FB
+ B: 4.b-;16d;f-;4.e-;16f-;g-;
+else ifdef B4
+ B: 4b-;g-;e-;c;
+else
+ B: b-;e-;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.e+;8;4.d+;8c+;
+endif
+M: r;c+;a;g;r;f;g;a;
+ifdef TA
+ T: f;e;f;g;a;;b;c+;
+endif
+ifdef FB
+ B: 4.a-;16c;e-;4.d-;16e-;f-;
+else ifdef B4
+ B: 4a-;c-;d-;f-;
+else
+ B: a-;d-;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.b;8f;4.e;8b;
+endif
+M: r;a;b;d+;r;d+;e+;g+;
+ifdef TA
+ T: d+;c+;b;a;g;f;e;d;
+endif
+ifdef FB
+ B: 4.g-;16b-;g-;4.c;16e;b-;
+else ifdef B4
+ B: 4g-;d;c;e;
+else
+ B: g-;c;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.c+;8b;4.e+;8c+;
+endif
+M: r;b+;a+;g+;r;f+;g+;a+;
+ifdef TA
+ T: c;;d;e;f;;g;a;
+endif
+ifdef FB
+ B: 4.a-;16b-;e;4.d;16f-;e-;
+else ifdef B4
+ B: 4a-;c;d;f-;
+else
+ B: a-;d;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.f;8f+;4.d+;8g;
+endif
+M: r;d+;c+;a;r;fn;e;d;
+ifdef TA
+ T: b;;c+;d+;;;c+;b;
+endif
+ifdef FB
+ B: 4.d-;16d;a-;4.b-;16a-;b-;
+else ifdef B4
+ B: 4d-;f-;g-;b-;
+else
+ B: d-;b-;
+endif
+endif
+bar
+
+ifdef DA
+ D: 4.g;8e+;4.f;8c;
+endif
+M: r;e;f;g;r;a;g;f;
+ifdef TA
+ T: a;g;f;e;f;;g;a;
+endif
+ifdef FB
+ B: 4.c;16b-;c;4.d;16;d-;
+else ifdef B4
+ B: 4c;e;d;d-;
+else
+ B: c;d;
+endif
+endif
+bar
+@ 
+
+TH
+
+// Add descant
+define DA @
+D: 2r;4.b;8d+;
+M: 2g;8r;d;a;b;
+B: 2g-;;
+bar reh num
+
+TH
+
+// Do fancier bass
+D: 2b-;4.b;8d+;
+M: 2g;8r;d;a;b;
+B: 2g-;4.g-;16b-;c;
+bar reh num
+
+define FB @
+TH
+
+// Add tenor, remove descant, go back to plain bass
+define TA @
+undef FB
+
+D: 2b-;r;
+M: 2g;8r;d;a;b;
+T: 2r;8b;;a;g;
+B: g-;;
+bar reh num
+
+undef DA
+
+TH
+
+// Put descant back
+D: r;4.b;8d+;
+M: 2g;8r;d;a;b;
+T: b;c+;d+;c+;b;;a;g;
+B: 2g-;;
+bar reh num
+
+define DA @
+TH
+
+// Put fancier bass back
+D: r;4.b;8d+;
+M: 2g;8r;d;a;b;
+T: b;c+;d+;c+;b;;a;g;
+B: 2g-;4.g-;16b-;c;
+bar reh num
+
+define FB @
+TH
+
+D: 2b-;4.b;8d+;
+M: 2g;8r;d;a;b;
+T: 8f;g;a;b~;2;
+B: g-;4;d;
+bar
+
+// Remove the tenor, replace bass with 1 quarter notes version
+undef TA
+undef FB
+define B4 @
+
+TH
+
+D: 1b-;
+M: 1g;
+//T: b;c+;d+;c+;2b;
+B: 1g-;
+endbar

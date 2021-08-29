@@ -1,0 +1,921 @@
+
+ifndef NOHEADER
+header
+	title (18) "Theme and Variations"
+	title (12) "" "John A. Krallmann (December 2020)"
+
+header2
+	title (12) "Theme and Variations - \%"
+footer
+	title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+endif
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=2.
+	vscheme=2f
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.82
+	ifdef NOHEADER label="" endif
+
+staff 2
+	clef=bass
+
+music
+
+midi all: 0 "tempo=144";
+midi 1 1: 1 "onvelocity=96,64";
+
+define THEME
+1: 2a ph;8c+;d+;
+2: 2r;4;
+bar
+
+ifdef ONE 1: 2.ac+e+; endif
+ifdef TWO 1: 2ac+e+;8f+;e+; endif
+2: 2.a--a-;
+bar
+
+ifdef ONE 1: 2.gbe+; endif
+ifdef TWO 1: 2gbe+; 8f+;e+; endif
+2: 2.e--e-;
+bar
+
+ifdef ONE 1: d+;c+;d+; endif
+ifdef TWO 1: 4.d+;8c+;4d+; endif
+1 2: 2.fa;
+2: 2.f--f-;
+bar
+
+ifdef ONE 1: f+;e+ eph;b ph; endif
+ifdef TWO 1: f+;e+ eph;8a ph;b; endif
+1 2: 2.g#b;
+2: 2.e--e-;
+bar
+
+ifdef ONE 1: 2.eac+; endif
+ifdef TWO
+ 1: 2.ec+;
+ 1 2: a;b;a;
+endif
+2: 2.a--a-;
+bar
+
+ifdef ONE 1: 2.dfb; endif
+ifdef TWO
+ 1: 2.db;
+ 1 2: f;g;f;
+endif
+2: 2.d-d;
+bar
+
+1: a;8b;a;4g#;
+ifdef ONE 1 2: 2.ce; endif
+ifdef TWO 1 2: 2ce;4b-; endif
+2: 2.e-e;
+bar
+
+1: 2.cea eph;
+2: 2.a--a-;
+bar
+
+ifdef ONE 1: 2.a-df ph; endif
+ifdef TWO
+ 1: 2.a-f ph;
+ 1 2: d;c;d;
+endif
+2: 2.d-d;
+bar
+
+ifdef ONE 1: 2.g#-b-e; endif
+ifdef TWO
+ 1: 2.g#-e;
+ 1 2: b-;a-;b-; 
+endif
+2: 2.e-e;
+bar
+
+1: d;8e;d;c;d;
+1 2: 2.a-;
+ifdef ONE 2: 2.f-cf; endif
+ifdef TWO 2: 2f-cf;4d-; endif
+bar
+
+ifdef ONE
+ 1: 2.g#-b- eph;
+ 2: 2.e-b-e;
+endif
+ifdef TWO
+ 1: 2.b- eph;
+ 1 2: a-;2g#-;
+ 2: 2e-b-e;4d-;
+endif
+bar
+
+1: 2.a-c#e ph;
+ifdef ONE 2: 2.a-e; endif
+ifdef TWO
+ 2: e;f;e;
+ 2 2: 2.a-;
+endif
+bar
+
+1: 2.cfa;
+ifdef ONE 2: 2.f-ca; endif
+ifdef TWO
+ 2: a;g;f;
+ 2 2: 2.f-c;
+endif
+bar
+
+1: g;8a;g;f;g;
+1 2: 2.b-d;
+ifdef ONE 2: 2.g-da; endif
+ifdef TWO
+ 2: 2a;4g;
+ 2 2: 2.g-d;
+endif
+bar
+
+ifdef ONE
+ 1: 2.a-ce eph;
+ 2: 2.a-e;
+endif
+ifdef TWO
+ 1: 2.ce eph;
+ 1 2: b-;2a-;
+ 2: 2.e;
+ 2 2: 2a-;4g-;
+endif
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.fac+ ph;
+ifdef ONE 2: 2.f-c; endif
+ifdef TWO
+ 2: c;d;c;
+ 2 2: 2.f-;
+endif
+bar
+
+ifdef ONE
+ 1: b;8g;a;4b;
+ 1 2: 2.d;
+ 2: 2.g-;
+endif
+ifdef TWO
+ 1: b;8g;a;b;g;
+ 1 2: 2.d;
+ 2: 2g-;4g--;
+endif
+bar
+
+ifdef ONE 1: 2.df#a; endif
+ifdef TWO 1: 2.ef#a; endif
+2: 2.d-a-;
+bar
+
+1: 2.df#a eph;
+2: 2.d-a-;
+dblbar
+
+newscore
+
+staff 1 clef=treble
+music
+@
+
+define ONE @
+THEME
+
+undef ONE
+define TWO @
+THEME
+
+midi all: 0 "tempo=116";
+
+1: a ph;;8c+;d+;
+2: 2r;4;
+bar
+
+1: ac+e+;;;
+2: 8a-;e;a;b;a;b;
+bar
+
+1: gbe+;;;
+2: 8e-;b-;g;a;g;e;
+bar
+
+1: d+;c+;8d+;e+;
+1 2: 2.fa;
+2: 8f-;c;a;c+;a;d-;
+bar
+
+1: 8e+;f+;g#e+;fd+;ec+;db;
+1 2: ab;2s;
+2: 8e-;b-;g#;e;f#;g#;
+bar
+
+1: 4.c+;8d+;4c+;
+1 2: 2.ea;
+2: 8a-;e;c+;b;a;g-;
+bar
+
+1: 4.b;8c+;4b;
+1 2: 2.df;
+2: 8d-;a-;f;e;f;d;
+bar
+
+1: 4.a;8b;4g#;
+1 2: 2b-d;4;
+2: 8e-;b-;e;f;16e;d;c;b-;
+bar
+
+1: 2.ca eph;
+2: 2.a-e;
+bar
+
+1: a-df ph;;;
+2: 8d-;a-;d;e;d;a-;
+bar
+
+1: g#-b-e;a-b-e;g-b-e;
+2: 8e-;b-;e;f;e;b-;
+bar
+
+1: d;8e;d;c;d;
+1 2: 2a-;4f-;
+2: 8f-;c;f;c;d-;a-;
+bar
+
+1: 2.g#-b- eph;
+2: 8e-;b-;e;f;e;b-;
+bar
+
+1: c#f ph;ce;;
+2: 8a-;e;a;b&;a;e;
+bar
+
+1: efa;dfa;cfa;
+2: 8f-;c;a;c;a;c;
+bar
+
+1: g;8a;g;f;g;
+1 2: b-d;;;
+2: 8g-;d;g;a;g;g-;
+bar
+
+1: 2.ce eph;
+1 2: b-;a-;;
+2: 8a-;e;a-;e;g-;e;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2c+ ph;4;
+1 2: 2.a;
+2: 8f-;c;d;c;d;c;
+bar
+
+1: b;8g;a;d+;b;
+2: 8g-;d;g-;d;g-;d;
+bar
+
+1: 2.a;
+1 2: 2g;8f#;e;
+2: 8d-;a-;d-;a-;d-;a-;
+bar
+
+1: 2.df#a eph;
+2: 2.d-a-;
+dblbar
+
+newscore
+
+score time=6/8 ; beamstyle=4.,4.
+staff 1 clef=treble
+music
+
+1: 4.a ph;8;c+;d+;
+2: 4.r;;
+bar
+
+1: 4.ac+e+;;
+2: a-;e;a;a-;e;a;
+bar
+
+1: 4.gbe+;;
+2: e-;b-;e;e-;b-;e;
+bar
+
+1: 4d+;8c+;4d+;8e+;
+2: f-;c;f;f-;c;f;
+bar
+
+1: 4.f+;4e+ eph;8b ph;
+2: e-;b-;e;e-;b-;e;
+bar
+
+1: 4.eac+;;
+2: a-;e;a;a-;e;a;
+bar
+
+1: 4.dfb;;
+2: d-;a-;d;d-;a-;d;
+bar
+
+1: 4a;8b;a;4g#;
+1 2: 2.ce;
+2: e-;b-;e;e-;b-;e;
+bar
+
+1: 2.cea eph;
+2: a--;e-;a-;a--;e-;a-;
+bar
+
+1: 4.a-df ph;;
+2: d-;a-;d;d-;a-;d;
+bar
+
+1: 4.g#-b-e;;
+2: e-;b-;e;e-;b-;e;
+bar
+
+1: 4d;8e;d;c;d;
+1 2: 2.a-;
+2: f-;c;f;f-;c;f;
+bar
+
+1: 2.g#-b- eph;
+2: e-;b-;e;e-;b-;e;
+bar
+
+1: 4.c#e ph;;
+2: a-;e;a;a-;e;a;
+bar
+
+1: 4.cfa;;
+2: f-;c;f;f-;c;f;
+bar
+
+1: 4g;8a;g;f;g;
+2: g-;d;a;g-;d;g;
+bar
+
+1: 2.ce eph;
+2: a-;e;a;a-;e;a;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.ac+;;
+2: f-;c;f;f-;c;f;
+bar
+
+1: 4.b;8g;a;b;
+2: g-;d;g;g-;d;g;
+bar
+
+1: 2.f#a;
+2: d-;a-;d;d-;a-;d;
+bar
+
+1: 2.f#a;
+2: 2.d-a-;
+dblbar
+
+newscore
+
+score time=3/4
+staff 1 clef=treble
+music
+
+1: 8a;g#;a;b;c+;d+;
+2: mr;
+bar
+
+1: 2ac+e+;4;
+2: 8a-;e;a;b;c+;e+;
+bar
+
+1: 2gbe+;4;
+2: 8e-;b-;e;g;a;b;
+bar
+
+1: d+;c+;d+;
+1 2: 2.fa;
+2: 8f-;c;a;b;c+;d+;
+bar
+ 
+1: 4.f+;8e+;d+;b;
+1 2: 2.g#b;
+2: 8e-;b-;e;f#;g#;b;
+bar
+
+1: 2egc+;4eac+;
+2: 8a-;e;a;b;c+;e+;
+bar
+
+1: 2dfb;4;
+2: 8d-;a-;d;e;f;a;
+bar
+
+1: 4.a;8b;a;g#;
+1 2: 2.ce;
+2: 8e-;b-;f;e;c+;b;
+bar
+
+1: 2.cea;
+2: 8a--;e-;a-;b-;c;a-;
+bar
+
+1: 2a-df;4a-cf;
+2: 8d-;a-;d;e;f;d;
+bar
+
+1: 2g#-b-e;4;
+2: 8e-;b-;e;f;e;b-;
+bar
+
+1: d;8e;d;c;d;
+1 2:2.a-;
+2: 8f-;c;d;e;f;a;
+bar
+
+1: 2.b-;
+1 2:  a-;8g#-;f#-;4g-;
+2: 8e-;b-;e;d;c;b-;
+bar
+
+1: 2a-c#e;4g-ce;
+2: 8a-;e;f;e;a-;g-;
+bar
+
+1: 2cfa;4;
+2: 8f-;c;g;f;g;f;
+bar
+
+1: g;8a;g;f;g;
+1 2: 2.b-d;
+2: 8g-;d;g;a;b;d;
+bar
+
+1: 2.ce;
+1 2: b-;a-;;
+2: 8a-;e;a-;e;g-;e;
+bar
+
+staff 1 clef=bass 
+music
+
+1: 2fac+;4;
+2: 8f-;g-;a-;c;b-;a-;
+bar
+
+1: 2gb;4;
+2: 8g-;a-;b-;g-;a-;b-;
+bar
+
+1: 2.a;
+1 2: g;f#;e;
+2: 8r;a-;r;a-;r;a-;
+2 2: 2.d-;
+bar
+
+1: 2.df#a;
+2: 2.d-;
+dblbar
+
+newscore
+
+/////
+staff 1 clef=treble
+music
+
+1: 8a;b;c+;d+;e+;f+;
+2: mr;
+bar
+
+1: 2.e+;
+1 2: 8a;b;c+;a;b;c+;
+2: 2a--a-;4;
+bar
+
+1: 2.e+;
+1 2: 8g;a;b;g;a;b;
+2: 2e--e-;4;
+bar
+
+1: 8d+;c+;d+;c+;d+;e+;
+1 2: 2.fa;
+2: 2f--f-;4;
+bar
+
+1: 8f+;g+;f+;e+;d+;b;
+1 2: 2.g#b;
+2: 2e--e-;4;
+bar
+
+1: 2.c+;
+1 2: 8e;f;e;d;e;c;
+2: 2a--a-;4;
+bar
+
+1: 2.b;
+1 2: 8d;e;d;c;d;b-;
+2: 2d-d;4;
+bar
+
+1: a;8b;a;4g#;
+1 2: 8c;4.d;8e;d;
+2: 2e-e;4;
+bar
+
+1: 2.a;
+1 2: 8c;d;e;d;c;b-;
+2: 2a--a-;4;
+bar
+
+1: 2.f;
+1 2: 8a-;b-;c;a-;b-;c;
+2: 2d-d;4;
+bar
+
+1: 2.e;
+1 2: 8g#-;a-;b-;g-;a-;b-;
+2: 2e-e;4;
+bar
+
+1: 8d;c;d;c;d;f;
+1 2: 2.a-;
+2: 2f-cf;4;
+bar
+
+1: 8e;d;c;b-;a-;b-;
+1 2: 2.g#-;
+2: 2e-b-e;4;
+bar
+
+1: 4.e;8f;g;a;
+1 2: 8c#;b-;2c;
+2: 2a-ea;4;
+bar
+
+1: 2.a;
+1 2: 8e;f;e;d;e;c;
+2: 2f-ca;4;
+bar
+
+1: g;8a;g;f;g;
+1 2: 8b-;4.c;4b-;
+2: 2a;4g;
+2 2: 2.g-d;
+bar
+
+1: 2.e;
+1 2: 8b-;c;b-;a-;b-;g-;
+2: 2a-e;4;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.c+;
+1 2: 8a;g;f;g;a;f;
+2: 2f-c;4;
+bar
+
+1: 8b;a;g;a;b;g;
+2: 2g-d;4;
+bar
+
+1: 2.df#a;
+2: 2.d-a-;
+bar
+
+1: 2.df#a;
+2: 2.d-a-;
+dblbar
+
+newscore
+
+staff 1 clef=treble
+music
+
+midi 1: 0 "onvelocity=54";
+midi 2 1: 0 "onvelocity=96,64";
+midi 2 2: 0 "onvelocity=64";
+1: mr;
+2: 2a;8c+;d+;
+bar
+
+1: 8r;c+;b;c+;b;a;
+2: 2.ac+e+;
+bar
+
+1: 8r;c+;b;c+;b;a;
+2: 2.gbe+;
+bar
+
+1: 8r;c+;b;c+;b;a;
+2: d+;4.c+;8d+;
+2 2: 2.fa;
+bar
+
+1: 8r;d+;c+;b;c+;d+;
+2: f+;e+;8a;b;
+2 2: 2.g#b;
+bar
+
+1: 8r;c+;b;c+;b;a;
+2: 2.eac+;
+bar
+
+1: 8r;c+;b;c+;b;a;
+2: 2.dfb;
+bar
+
+1: 8r;e;d;e;f;d;
+2: a;8b;a;4g#;
+2 2: 2.ce;
+bar
+
+1: 8r;e;d;e;d;c;
+2: 2.cea;
+bar
+
+1: 8r;d;c;d;c;b-;
+2: 2.a-df;
+bar
+
+1: 8r;b-;a-;b-;c;d;
+2: 2.g#-b-e;
+bar
+
+1: 8r;d;c;b-;a-;b-;
+2: d;8e;d;c;d;
+2 2: 2.f-a-;
+bar
+
+1: 8r;e;f#;g#;a;b;
+2: 2.e-g#-b-;
+bar
+
+1: 8r;c#+;b;c+;b;a;
+2: 2.a-c#e;
+bar
+
+1: 8r;c+;b;c+;b;a;
+2: 2.cfa;
+bar
+
+1: 8r;b;c+;b;c+;d+;
+2: g;8a;g;f;g;
+2 2: 2.b-d;
+bar
+
+1: 8r;e+;d+;e+;d+;c+;
+2: 2.a-ce;
+bar
+
+1: 8r;e+;d+;e+;d+;c+;
+2: 2.f-a-c;
+bar
+
+1: 8r;g;f;e;d;g-;
+2: b-;8g-;a-;4b-;
+2 2: 2.d-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8r;g;f#;e;f;a;
+2: 2.d-a-;
+bar
+
+1: 2.df#a;
+2: 2.d-a-;
+dblbar
+
+newscore
+
+staff 1 clef=treble
+score beamstyle=4,4,4
+music
+
+midi 1: 0 "onvelocity=96,64";
+midi 2 1: 0 "onvelocity=54";
+midi all: 0 "tempo=100";
+1: 2a;8c+;d+;
+2: {8a;c+;e+;}3;{a;c+;e+;}3;{a;c+;e+;}3;
+bar
+
+1: 2.e+;
+1 2: c+;8b;c+;b;a;
+2: {8a;c+;e+;}3;{a;c+;e+;}3;{a;c+;e+;}3;
+bar
+
+1: 2.e+;
+1 2: b;8b;c+;b;g;
+2: {8g;b;e+;}3;{g;b;e+;}3;{g;b;e+;}3;
+bar
+
+1: 8d+;c+;d+;c+;d+;e+;
+1 2: 2.a;
+2: {8f;a;d+;}3;{f;a;d+;}3;{f;a;d+;}3;
+bar
+
+1: 8f+;g+;f+;e+;d+;b;
+1 2: 2.g#;
+2: {8e;g#;b;}3;{e;g;b;}3;{e;g;b;}3;
+bar
+
+1: 2.c+;
+1 2: 8e;f;e;d;e;c;
+2: {8a-;c;e;}3;{a-;c;e;}3;{a-;c;e;}3;
+bar
+
+1: 2.b;
+1 2: 8f;g;f;e;f;d;
+2: {8d-;a-;d;}3;{d-;a-;d;}3;{d-;a-;d;}3;
+bar
+
+1: a;8b;a;4g#;
+1 2: 8b-;c;4d;8e;b-;
+2: {8e-;b-;e;}3;{e-;b-;d;}3;{e-;b-;e;}3;
+bar
+
+1: 2.a;
+1 2: 8c;d;c;b-;4a-;
+2: {8a--;e-;a-;}3;{a--;e-;a-;}3;{a--;e-;a-;}3;
+bar
+
+1: 2.f;
+1 2: 8c;d;c;b-;4a-;
+2: {8d-;a-;d;}3;{d-;a-;d;}3;{d-;a-;c;}3;
+bar
+
+1: 2.e;
+1 2: 8a-;b-;a-;g#-;f#-;g-;
+2: {8e-;b-;e;}3;{e-;b-;d;}3;{e-;b-;d;}3;
+bar
+
+1: 8d;e;d;c;b-;a-;
+1 2: 2a-;4s;
+2: {8f-;c;d;}3;{f-;c;d;}3;{f-;c;d;}3;
+bar
+
+1: 2.b-;
+1 2: 8a-;g#-;f#-;g-;a-;b-;
+2: {8e-;b-;e;}3;{e-;b-;d;}3;{e-;b-;e;}3;
+bar
+
+1: 2.e;
+1 2: 8c#;d;c;b-;e-;b-;
+2: {8a--;e-;a-;}3;{a--;e-;b-;}3;{a--;e-;b-;}3;
+bar
+
+1: 2.a;
+1 2: 8e;f;e;d;a-;d;
+2: {8d-;a-;d;}3;{d-;a-;e;}3;{d-;a-;f;}3;
+bar
+
+1: 8g;a;g;f;g;d;
+1 2:2b-d;4s;
+2: {8g-;d;g;}3;{g-;d;a;}3;{g-;d;b;}3;
+bar
+
+1: 2.e;
+1 2: 8b-;c;b-;a-;e-;a-;
+2: {8a--;e-;a-;}3;{a--;e-;a-;}3;{a--;e-;a-;}3;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.c+;
+1 2: 8b;a;g;f;e;d;
+2: {8f--;c-;a-;}3;{f--;c-;a-;}3;{f--;c-;a-;}3;
+bar
+
+1: 8b;a;g;a;b;g;
+1 2: 2.d;
+2: {8g--;d-;b-;}3;{g--;d-;a-;}3;{g--;d-;g-;}3;
+bar
+
+1: 2.a;
+1 2: 8g;f#;4.e;8f;
+2: {8d-;a-;d;}3;{d-;a-;d;}3;{d-;a-;d;}3;
+bar
+
+1: 2.f#a;
+2: 2.d-a-;
+dblbar
+
+newscore
+
+staff 1 clef=treble
+music
+
+1: 2a;8c+;d+;
+2: a--a-;g--g-;f--f-;
+bar
+
+1: 2.ac+e+;
+2: a--a-;g--g-;f--f-;
+bar
+
+1: 2.gbe+;
+2: e--e-;d--d-;e--e-;
+bar
+
+1: d+;c+;d+;
+1 2: 2.fa;
+2: f--f-;g--g-;f--f-;
+bar
+
+1: f+;8e+;d+;c+;b;
+1 2: 2.g#b;
+2: e--e-;f#--f#-;g#--g#-;
+bar
+
+1: 2.eac+;
+2: a--a-;b--b-;c-c;
+bar
+
+1: 2.dfb;
+2: d-d;c-c;d-d;
+bar
+
+1: a;8b;a;4g#;
+1 2: 2.ce;
+2: e-e;d-d;e-e;
+bar
+
+1: 2.cea;
+2: a--a-;b--b-;c-c;
+bar
+
+1: 2.a-df;
+2: d-d;c-c;d-d;
+bar
+
+1: 2.g#-b-e;
+2: e-e;d-d;e-e;
+bar
+
+1: d;8e;d;c;d;
+1 2: 2.a-;
+2: f-f;c-c;d-d;
+bar
+
+1: 2.g#-b-;
+2: e-e;f#--f#-;g#--g#-;
+bar
+
+1: 2.a-c#e;
+2: a--a-;8b&--b&-;a--a-;g--g-;e--e-;
+bar
+
+1: 2.cfa;
+2: f--f-;g--g-;a--a-;
+bar
+
+1: g;8a;g;f;g;
+1 2: 2.b-d;
+2: g--g-;f--f-;g--g-;
+bar
+
+1: 2.a-ce;
+2: a--a-;g--g-;8d--d-;e--e-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.fac+;
+2: f--f-;e--e-;f--f-;
+bar
+
+1: b;8g;a;b;g;
+1 2: 2.d;
+2: g--g-;f--f-;e--e-;
+bar
+
+1: 2.df#a;
+2: 2.d--d-;
+bar
+
+1: 2.df#a;
+2: 2.d--d-;
+endbar

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 by John A. Krallmann
+ * Copyright (C) 2019, 2020 by John A. Krallmann
  *
  * Permission to use, copy, modify, and/or distribute this software
  * for any purpose with or without fee is hereby granted.
@@ -19,12 +19,12 @@
  * If given just a file name, it prints the grid with numbers.
  * If there is second argument of "answer" it prints the answer key.
  * If there is second argument of "clues" it prints a template for clues,
- *  having lines starting with the numbers that will needed for across and down.
+ * having lines starting with the numbers that will needed for across and down.
  *
  * If there is second argument of "blank" it prints a completely empty grid
  * that is the size implied by the input file. The original idea was that
  * that could be used to try words with pencil and eraser while creating
- * a puzzle, but then I wrote cwm program to do that on screen,
+ * a puzzle, but then I wrote the cwm program to do that on screen,
  * so it's probably not very useful, and it would be better to have an option
  * to specify rows and columns rather than deduce from some file whose content
  * is ignored other then the length and number of lines.
@@ -34,6 +34,7 @@
  * To be compatible with the cwm program,
  * it is recommended to use upper case letters, and dots for black squares.
  * There can optionally be a title line, starting with a tab.
+ * If the title contains _xxx_ the xxx will be printed in iatlics.
  */
 
 #include <stdio.h>
@@ -42,6 +43,7 @@
 #include <string.h>
 #include <ctype.h>
 
+/* Use US paper size */
 #define PAPERHEIGHT 11.0
 #define PAPERWIDTH 8.5
 #define TOPMARGIN 1.5
@@ -95,11 +97,19 @@ print_grid(int width, int height, double cellsize)
  */
 
 void
-print_data(int width, int height, double cellsize, char *letters, short *numbers, int answer)
+print_data(int width, int height, double cellsize, char *letters, short *numbers, int answer, int nsize)
 {
 	int row, col;
 	int letter_index;
 	int number_index;
+	int vpad;
+
+	if (nsize >= SIZE) {
+		vpad = VPAD;
+	}
+	else {
+		vpad = 0;
+	}
 
 	for (row = 0; row < height; row++) {
 		for (col = 0; col < width; col++) {
@@ -107,7 +117,7 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
 			letter_index = arr_index(row+1, col+1, width + 2);
 			if (letters[letter_index] == '\0') {
 				/* Fill in black square */
-				printf("newpath %f %f moveto %f %f lineto %f %f lineto %f %f lineto closepath fill stroke\n",
+				printf("gsave 0.45 setgray newpath %f %f moveto %f %f lineto %f %f lineto %f %f lineto closepath fill stroke grestore\n",
 				PPI * (LEFTMARGIN + cellsize * col),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row),
 				PPI * (LEFTMARGIN + cellsize * (col+1)),
@@ -121,8 +131,8 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
 				/* Print letter in square */
 				int xoff, yoff;
 				if (cellsize < 0.45) {
-					xoff = 10;
-					yoff = 19;
+					xoff = 8;
+					yoff = 17;
 				}
 				else {
 					xoff = 12;
@@ -139,7 +149,7 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
 				/* Print number */
 				printf("%f %f moveto (%d) show\n",
 				PPI * (LEFTMARGIN + cellsize * col) + HPAD,
-				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row) - VPAD - SIZE,
+				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row) - vpad - nsize,
 				numbers[number_index]);
 			}
 		}
@@ -202,6 +212,112 @@ usage(char * pname)
 	exit(1);
 }
 
+struct Title_segment {
+	const char * start;
+	int length;
+};
+
+const char * const Tfont[] = {
+	"TimesBold",
+	"TimesBoldItalic"
+};
+
+/* Output length bytes from str as a PostScript string */
+
+void
+pr_segment(const char *str, int length)
+{
+	int c;
+
+	putchar('(');
+	for (c = 0; c < length; c++) {
+		putchar(*(str + c));
+	}
+	putchar(')');
+}
+
+
+void
+print_title(const char *title)
+{
+	int count;
+	const char *t;
+	struct Title_segment *list;
+	int i;
+	int starts_ital;
+
+	printf("%f 2.0 div %f mul %f %f mul moveto\n", PAPERWIDTH, PPI, PAPERHEIGHT - TITLELOC, PPI);
+
+	for (count = 0, t = title; *t != '\0'; t++) {
+		if (*t == '_') {
+			count++;
+		}
+	}
+	if (count > 0) {
+		/* Has italics segments. Need to split */
+		if (count & 1) {
+			fprintf(stderr, "odd number of underscores for italics\n");
+			exit(4);
+		}
+		/* Each ital segment could be followed by a non-ital.
+		 * Add 1 for a non-ital that could be at the beginning.
+		 * That gives us the max list length needed. If the string
+		 * begins or ends with ital, some of the list may be unused. */
+		count++;
+		list = (struct Title_segment *)
+				calloc(count, sizeof(struct Title_segment));
+
+		/* Break up into segments */
+		if (title[0] == '_') {
+			list[0].start = title + 1;
+			starts_ital = 1;
+		}
+		else {
+			list[0].start = title;
+			starts_ital = 0;
+		}
+		for (i = 0, t = list[0].start; *t != '\0'; t++) {
+			if (*t != '_') {
+				(list[i].length)++;
+				continue;
+			}
+			i++;
+			if (i < count) {
+				list[i].start = t+1;
+			}
+		}
+		/* Arrange for PostScript to calculate the sum of the widths
+		 * of the segments */
+		printf("/fullwidthx 0 def\n");
+		printf("/fullwidthy 0 def\n");
+		for (i = 0; i < count; i++) {
+			if (list[i].start == 0) {
+				break;
+			}
+			printf("/%s findfont %d scalefont setfont\n",
+					Tfont[(i+starts_ital)&1], TITLESIZE);
+			pr_segment(list[i].start, list[i].length);
+			printf(" stringwidth fullwidthy add /fullwidthy exch def fullwidthx add /fullwidthx exch def\n");
+		}
+		/* Go the right place to start printing. */
+		printf("fullwidthx -2.0 div fullwidthy rmoveto\n", title);
+		/* Print the segments */
+		for (i = 0; i < count; i++ ) {
+			if (list[i].start == 0) {
+				break;
+			}
+			printf("/%s findfont %d scalefont setfont\n",
+					Tfont[(i+starts_ital)&1], TITLESIZE);
+			pr_segment(list[i].start, list[i].length);
+			printf(" show\n");
+		}
+	}
+	else {
+		printf("/TimesBold findfont %d scalefont setfont\n", TITLESIZE);
+		printf("(%s) dup stringwidth exch -2.0 div exch rmoveto show\n", title);
+	}
+}
+
 
 int
 main(int argc, char **argv)
@@ -218,6 +334,7 @@ main(int argc, char **argv)
 	short *numbers;
 	int num;
 	double cellsize;
+	int nsize;
 	int answer = 0;
 	int blank = 0;
 	int clues = 0;
@@ -328,7 +445,11 @@ main(int argc, char **argv)
 		cellsize = 7.5 / width;
 	}
 	if (height > 20) {
-		cellsize = 9.0 / height;
+		double tentative_cellsize;
+		tentative_cellsize = 9.0 / height;
+		if (tentative_cellsize < cellsize) {
+			cellsize = tentative_cellsize;
+		}
 	}
 
 	/* Output a PostScript header. */
@@ -342,7 +463,7 @@ main(int argc, char **argv)
 	printf("%%%%Orientation: Portrait\n");
 	printf("%%%%EndComments\n");
 	printf("1 setlinewidth\n");
-	printf("0.25 setgray\n");
+	printf("0.1 setgray\n");
 
 	if (answer) {
 		int asize;
@@ -355,21 +476,25 @@ main(int argc, char **argv)
 		}
 		printf("/CourierBold findfont %d scalefont setfont\n", asize);
 		print_grid(width, height, cellsize);
-		print_data(width, height, cellsize, letters, numbers, answer);
+		print_data(width, height, cellsize, letters, numbers, answer, SIZE);
 	}
 	else if (blank) {
 		print_grid(width, height, cellsize);
 	}
 	else {
 		if (title != 0) {
-			printf("/TimesBold findfont %d scalefont setfont\n", TITLESIZE);
-			printf("%f 2.0 div %f mul %f %f mul moveto\n", PAPERWIDTH, PPI, PAPERHEIGHT - TITLELOC, PPI);
-			printf("(%s) dup stringwidth exch -2.0 div exch rmoveto show\n", title);
-	
+			print_title(title);
 		}
-		printf("/TimesRoman findfont %d scalefont setfont\n", SIZE);
+		nsize = SIZE;
+		if (cellsize < 0.425) {
+			nsize--;
+		}
+		if (cellsize < 0.375) {
+			nsize--;
+		}
+		printf("/TimesRoman findfont %d scalefont setfont\n", nsize);
 		print_grid(width, height, cellsize);
-		print_data(width, height, cellsize, letters, numbers, answer);
+		print_data(width, height, cellsize, letters, numbers, answer, nsize);
 	}
 
 	/* Finish up the PostScript. */

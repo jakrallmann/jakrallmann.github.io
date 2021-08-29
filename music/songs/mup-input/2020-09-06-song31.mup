@@ -1,0 +1,91 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(September 6, 2020)"
+footer
+        title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	beamstyle=4,4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	packfact=1.2
+
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "onvelocity=84,64";
+midi all: 0 "tempo=68";
+
+1: 8g;a;b;c+;2;
+1 2: 2s;8g;a;g;e;
+2: a;g;r;g;
+2 2: 2f-;e-;
+bar
+
+1: 2.c+;4e;
+1 2: 8f;g;a;f;4;s;
+2: d&-;f;a;c-;
+bar
+
+1: 8d;f;a;b;c+;d+;e+;f+;
+2: b--;d;a;b;
+bar
+
+1: 8a+;g+;f+;e+;2b;
+1 2: c+;a;2g;
+2: e-;b-;8g;a;b;d&+;
+bar
+
+1: 8c+;d+;e+;d+;8.c+;16e+;8f+;e+;
+2: 8a-;e;c+;g-;f-;c;a;c+;
+bar
+
+1: 8.e+;16d+;8b;8a;8.fa;16eg;4;
+2: 8b-;f;4d+;8e-;b-;g;b-;
+bar
+
+1: 8.df;16ce;4;8.eg;16df;4;
+2: 8c-;g-;e;b--;a--;e-;c;a;
+dblbar
+
+score key=0&
+music
+
+1: 2db;8.;16ec+;4;
+2: 8g--;d;a;b;c-;g-;e;c+;
+bar
+
+1: 8.a;16b;4db;8.a;16g;8e;f#;
+1 2: d;s;2b-;
+2: 8g-;d;a;b;e-;b-;g;b-;
+bar
+
+1: 4.d;16g-;a-;4b-;g;
+1 2: g-;8f#-;s;2;
+2: 8d-;a-;4d;8g-;d;4g;
+bar
+
+1: g;f;8e;d;c;b-;
+2: 8f-;c;4a;8c-;g-;e;g;
+bar
+
+1: 2a-;;
+2: 8f-;c;g;f;g-;d;f;d;
+bar
+
+1: 2b-;2d;
+2: 8g-;d;a;g;c-;g-;e;g;
+bar
+
+1: 1c;
+2: 1 ifdef MIDI r else (c+) endif;
+endbar

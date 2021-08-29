@@ -436,7 +436,7 @@ write_puzzle(char *filename)
 		error("cannot open file for writing");
 	}
 	if (Title != 0){
-		fprintf(f, "\t%s\n", Title);
+		fprintf(f, "\t%s", Title);
 	}
 	for (row = 0; row < Rows; row++) {
 		for (col = 0; col < Cols; col++) {

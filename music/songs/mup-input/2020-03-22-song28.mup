@@ -1,0 +1,119 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(March 22, 2020)"
+footer
+        title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	packfact=1.8
+	transpose=up perfect 4
+	scoresep=10,24
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "onvelocity=80,64";
+
+1: g-b-d ph above;g-b-c;g-b-d;
+2: 2.g-;
+bar
+
+1: g-b-e;g-b-d;g-b-c;
+2: 2.e;
+bar
+
+1: g-b-d;g-b-c;g-b-;
+2: 2.d;
+bar
+
+1: 2.a- eph;
+1 2: g-;2f#-;
+2: 2d;4c;
+bar
+
+1: g-b-d ph above;g-b-c;g-b-d;
+2: 2.g-;
+bar
+
+1: b-dg;b-df;a-ce;
+2: a-;b-;c;
+bar
+
+1: 2.a-d tie;
+1 2: g-;f#-;en-;
+2: 2.d;
+bar
+
+1: a-d eph;b- ph above;c;
+1 2: f#-;2s;
+2: 2.d-;
+bar
+
+1: d;g;f;
+1 2: 2.b-;
+2: 2.g-;
+bar
+
+1: 2e;4;
+1 2: c;b-;c;
+2: 2.c;
+bar
+
+1: a-;d;a-;
+1 2: 2.f#-;
+2: 2d;4d-;
+bar
+
+1: 2.g-b- eph;
+2: 2g-;4f-;
+bar
+
+1: b- ph above;a-;b-;
+1 2: 2.g-;
+2: 2.e-;
+bar
+
+1: e;d;a-;
+1 2: 2.f#-a-;
+2: 2.d-;
+bar
+
+1: 2g-;4a-;
+2: 2g-;4f-;
+bar
+
+1: 2g-b- eph;4f#-c ph above;
+2: 2e-;4d-;
+bar
+
+1: e;d;e;
+1 2: 2.g-b-;
+2: 2.c-;
+bar
+
+1: 2a-d;4a-f#;
+1 2: g-;f#-;s;
+2: 2d-;4d;
+bar
+
+1: 2.b-g;
+2: 2.g-d;
+bar
+
+1: 2.b-g eph;
+2: 2.g-d;
+endbar

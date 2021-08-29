@@ -1,0 +1,196 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title " " "(October 31 - November 1, 2020)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2020 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=4&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	scale=0.8
+	measnum=y
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+midi 1 1-2: 0 "onvelocity=86,72";
+midi 2 1-2: 0 "onvelocity=68";
+
+1: 8c+;dn+;2e+~;
+2: c-;gc+e+;;
+bar
+
+1: 8e+;f+;e+;dn+;8.;16c+;
+2: f-;ac+f+;c+f+a+;
+bar
+
+1: 8fa;eg;dnf;eg;fdn+;fbn;
+2: g--;dngbn;gbdn+;
+bar
+
+1: 8af+;ge+;fdn+;ge+;dnbn;ec+;
+2: c-;dnabn;egc+;
+bar
+
+1: 8ec+;ca;4;8dn;e;
+2: a--;cdna;cea;
+bar
+
+1: 8d;f;b;a;f;d;
+2: b--;b-da;fab;
+bar
+
+1: 2b~;8;bn;
+1 2: 8a;g;;f;;e;
+2: e-;egc+;egd+;
+bar
+
+1: 2.ec+;
+1 2: 8b;a;;g;dn;e;
+2: a--;eac+;ea;
+bar
+
+1: 2.f;
+1 2: 8c;b-;;a-;;b-;
+2: d-;b-df;a-df;
+bar
+
+1: 2f;8g;a;
+1 2: 8c;b-;c;dn;c;b-;
+2: dn-;b-fa;;
+bar
+
+1: 8b;a;g;f;e;bn;
+1 2: 2.d;
+2: e-;b-eg;egd+;
+bar
+
+1: 2.e+;
+1 2: 8d+;c+;b;a;g&;e;
+2: a-;eac+;;
+bar
+
+1: 2.f+;
+1 2: 8e+;d+;c+;b;a;f;
+2: d-;fad+;fbd+;
+bar
+
+1: 8f;e;4.f;8g;
+1 2: 2.d;
+2: e-;b-eg;;
+bar
+
+1: 2.a;
+1 2: d;c;b-;
+2: a--;cea;;
+bar
+
+1: cen;4.c+;8b;
+1 2: 8g-;a-;e;f;4g;
+2: c-;engc+;;
+bar
+
+1: b;4.a;8eg;
+1 2: 2f;4s;
+2: f-;fac+;eac+;
+bar
+
+1: 8f;g;4.a;8f;
+1 2: d;c;b-;
+2: d-;dfb;dfa;
+bar
+
+1: 2g~;8;;
+1 2: 8b-;c;e;d;c;b-;
+2: e-;b-eg;;
+bar
+
+1: 8b-g;ca tie;2;
+2: f-;cfb;cfa;
+bar
+
+1: 8ca;b-g& tie;2;
+2: g&-;b-ef;b-eg&;
+bar
+
+1: 8g&;f;e;dn;e;en~;
+1 2: 2.c;
+2: a-;cg&a;;
+bar
+
+1: 8e;g&;4.f;8c&~;
+2: d-;a-df;;
+bar
+
+1: 8c;b-;4.f&+;8b;
+2: g&-;b-ea;b-eg;
+bar
+
+1: 8d+;c+;4.c&+;8b;
+2: a-;eab;eabn;
+bar
+
+1: 8an;f;c;4g&;8d;
+2: f-;cfan;;
+bar
+
+1: 8c;b-;c;4d;8e;
+2: b--;b-df;a-df;
+bar
+
+1: 2.d;
+2: g&--;b-cg&;b-dg;
+bar
+
+1: 8c;b-;2c;
+2: a--;a-b-e;a-ce;
+bar
+
+1: 8b-;a-;4.b-;8d;
+2: e-;b-eg;;
+bar
+
+1: 8c;g;[with>]2an;
+2: f-;cfan;;
+bar
+
+1: 8b;a;4.g&;8d;
+2: g&-;dg&b;;
+bar
+
+1: 2g~;8;d;
+2: e-;b-eg;;
+bar
+
+1: 2.c;
+2: f-;cfa;;
+bar
+
+1: 8b-;a-;4.b-;8d;
+2: b--;b-df;;
+bar
+
+1: 4.c;c+~;
+2: f-;cfan;;
+bar
+
+1: 4.c+;c++~;
+2: f-;cfan;;
+bar
+
+1: 2.c++;
+2: 2.f--;
+endbar
