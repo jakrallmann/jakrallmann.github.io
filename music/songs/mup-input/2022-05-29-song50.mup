@@ -1,0 +1,139 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(May 29, 2022)"
+footer
+        title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	beamstyle=4,4,4,4
+	key=2#
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scale=0.9
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=98,72";
+midi 1 2: 0 "channel=12";
+midi 2 1: 0 "channel=13";
+midi all: 0 "tempo=100";
+
+1: 8r;4.eg;8fa;4.gb;
+2: e;b;e;b;
+bar
+
+1: 8gb;acn+;gb;fa tie;2;
+2: d#;8b;b-~;;c;4d;
+bar
+
+1: 8r;4.eg;8;4.;
+2: e;b;d;b;
+bar
+
+1: 4.df;8cne tie;2;
+2: cn;8g;a-~;;b-;4c;
+bar
+
+1: 1d#f;
+2: 8b-;4d#;8b~;;a;g;f;
+bar
+
+1: 8g#;4;8~;;f;4e;
+1 2: 4.d;8~;2;
+2: e;;4.;8b-;
+bar
+
+1: 4.db;8ca tie;;4.cg;
+2: a-;e;a;e;
+bar
+
+1: 8cf;4;8 tie;;4.ce;
+2: a#-;f;a-;f;
+bar
+
+1: 8ce;df;ce;b-d tie;2;
+2: b-;f;a-;f;
+bar
+
+1: 8b;4a;8g~;;f;4e;
+1 2: 4.d;8~;2;
+2: g-;d;b;d;
+bar
+
+1: 8c+;4b;8a~;;g;f;e;
+1 2: 4.e;8c~;2;
+2: a-;e;b;c+;
+bar
+
+1: 8d+;4c+;8d+~;2;
+1 2: 4.f;8~;2;
+2: b-;f;d+;a-;
+bar
+
+1: 4.d+;8~;2;
+1 2: 8g;4f;8g~;2;
+2: g-;d;b;f-;
+bar
+
+1: 8e+;d+;c+;e+~;;d+;c+;b;
+1 2: 4.g;8g#~;2;
+2: e-;b-;g#;d+;
+bar
+
+1: 8f+;e+;d+;c+~;;4.;
+1 2: 4.g;8~;;4.;
+2: a-;e;b;c+;
+bar
+
+1: 8c+;d+;c+;b~;2;
+1 2: 4.f;8~;2;
+2: b-;f;d+;a-;
+bar
+
+1: 8c+;d+;c+;b~;2;
+1 2: 4.f;8g~;2;
+2: g-;d;b;f-;
+bar
+
+1: 8c+;d+;c+;b~;2;
+1 2: 4.g;8e~;2;
+2:e-;b-;g;d-;
+bar
+
+1: 8cn+;b;a;g~;;e;f;g;
+1 2: 4.e;8cn~;2;
+2: cn-;g-;e;g-;
+bar
+
+1: 8f;a;b;cn+~;;b;4a;
+2: d-;a-;f;cn+;
+bar
+
+1: 2..b;8f;
+2: 8e-;b-;g;f~;;4.d;
+bar
+
+1: 2..g;8e;
+2: 8cn-;g-;d;e~;;4.cn;
+bar
+
+1: 1f;
+2: 8d-;a-;e;f~;;e;4d;
+bar
+
+1: 1e~;
+2: 8e-;b-;g;f~;4;d;
+bar
+
+1: 1e;
+2: 1e;
+endbar

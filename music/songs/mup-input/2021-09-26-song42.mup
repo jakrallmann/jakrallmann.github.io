@@ -1,0 +1,117 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(September 26, 2021)"
+footer
+        title (12) "\(copyright) Copyright 2021 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=10,26
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+ 
+midi 1 1: 0 "onvelocity=98,64";
+midi all: 0 "tempo=92";
+
+1: e;c;[with> above]e~;;;f;
+2: c-;g-;
+bar
+
+1: 4.g;e;
+1 2: g;b-;d;e;g-;b-;
+2: e-;b-;
+bar
+
+1: 4.a;8;g;f;
+1 2: a;c;f;4.s;
+2: f-;c;
+bar
+
+1: 4.g;e;
+1 2: g;b-;d;e;b-;c#;
+2: e-;a-;
+bar
+
+1: 4f;8~;;g;a;
+1 2: f;a-;f;4.s;
+2: d-;a-;
+bar
+
+1: 4c+;8b~;;a;g;
+1 2: c+;d;b;4.s;
+2: g-;d;
+bar
+
+1: 4.a;g;
+1 2: a;c;[grace;slash1]d#;e;g;d(#);e;
+2: c-;g-;
+bar
+
+1: 4.d+;c+;
+1 2: d+;g#;a;c+;g;a;
+2: f-;c;
+bar
+
+1: 4.d+;c+;
+1 2: d+;f#;g;c+;f;g;
+2: e-;c;
+bar
+
+1: 4f;8~;;g;a;
+1 2: f;c;f;4.s;
+2: d-;a-;
+bar
+
+1: 4c+;8;b;a;g;
+1 2: c+;d;c+;4.s;
+2: g-;d;
+bar
+
+1: [grace;slash1]d#;e;c;e;g;e;g;
+2: c-;g-;
+bar
+
+1: c+;g;c+;e+;d+;c+;
+2: e;b&;
+bar
+
+1: e+;d+;c+;a;f;e;
+2: 4f-;8c;4a;8f#-;
+bar
+
+1: 4.d~;8;e;d;
+2: 8g-;d;a;4.b;
+bar
+
+1: 4c;8~;;d;e;
+2: 8a-;e;a;g-;e;a;
+bar
+
+1: d+;c+;a;f;e;d;
+2: 8f-;c;a;4.a&;
+bar
+
+1: 4.e~;8;d;c;
+2: 8c-;g-;e;4.c;
+bar
+
+1: 4.a-~;8;c;b-;
+2: 8f-;c;e;4.d;
+bar
+
+1: 2.a-;
+2: 8a--;e-;c#;4.a-;
+endbar

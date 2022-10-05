@@ -103,13 +103,13 @@ roll 2: 4;
 bar
 
 1: g#;a;b;a;a+;e+;
-1 2: b-;c;d;c;c+;g;
+1 2: b-;c;d;c;c+;gn;
 2: a-e;ea;
 bar
 
 1: g+;f+;e+;;d+;b;
 1 2: 4.a;g;
-2: d-a-f;e-b-gn;
+2: d-a-f;e-b-g;
 bar
 
 1: b;a;;4.;

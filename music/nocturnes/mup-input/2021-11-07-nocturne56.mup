@@ -1,0 +1,116 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(November 7, 2021)"
+footer
+        title (12) "\(copyright) Copyright 2021 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=8,26
+	scale=0.95
+
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "onvelocity=84,64";
+midi all: 0 "tempo=60";
+
+define A
+1: 4.r;4;32g;a;b;c+;
+2: c-;g-;e;d;e;c;
+bar
+
+1: 8.d+;16e+;8d+;16c+;d+;c+;b;a;b;
+2: g-;d;b;c;g;c+;
+bar
+
+1: 8.e+;d+;16c+;d+;c+;b;a;b;
+2: g-;d;b;c;g;e+;
+bar
+
+1: 8.a;16g;8a;8.bn;16c+;8b;
+2: d-;a-;f#;g-;d;bn;
+bar
+
+1: 8.b;16c+;8b;16a;b;c+;d+;f+;e+;
+2: e-;b-;g;d-;a-;f#;
+bar
+
+1: 8.d+;16c+;8d+;16c+;b;a;g;f;e;
+2: g-;d;b;c-;g-;e;
+bar
+
+1: 4.d;16c+;d+;e+;f+;g+;a+;
+2: g-;d;b;c-;g-;e;
+bar
+
+1: 8.b+;16a+;8g+;16e+;d+;c+;b;a;b;
+2: g-;d;b;c-;g-;e;
+bar
+
+rom between 1&2: 5 "Fine";
+1: 2.g;
+2: g-;d;b;4.g;
+dblbar
+@
+A
+
+score key=0&
+music
+
+1: 4.g~;16;a;c+;b;a;g;
+2: c;g;c+;b;a;g;
+bar
+
+1: 4.g;8.c;16d;8e;
+2: e-;b-;g;a-;e;a;
+bar
+
+1: 4.f;16e;8d;8.c;
+2: d-;a-;f;f#-;d;a;
+bar
+
+1: 4.d;8.g;16a;8b;
+2: g-;d;a;b;a;g;
+bar
+
+1: 8.c+;16d+;8c+;8.;16d+;8c+;
+2: a-;e;c+;g-;e;c+;
+bar
+
+1: 4.c+;cd;
+2: f-;c;a;4.fa;
+bar
+
+1: 4.f;eg;
+2: g-;d;a;4.b;
+bar
+
+rom between 1&2: 2 "D.C. al fine";
+1: 4.fd+;ec+;
+2: c-;g-;d;4.e;
+dblbar
+
+score key=2&
+music
+
+1-2: ms;
+invisbar
+
+ifdef MIDI
+A
+endif

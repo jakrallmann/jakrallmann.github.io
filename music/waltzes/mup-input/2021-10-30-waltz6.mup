@@ -1,0 +1,257 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(October 30, 2021)"
+footer
+        title (12) "\(copyright) Copyright 2021 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scale=0.85
+	alignrests=y
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+	timeunit=2.
+
+music
+ 
+midi 1 1: 0 "onvelocity=88";
+midi all: 0 "tempo=160";
+
+1: 2.ee+;
+1 2: r;gc+;;
+2: c-;
+bar
+
+1: 2.gg+ tie;
+1 2: r;c+e+;;
+2: egc+;
+bar
+
+1: gg+;ac+a+;bd+b+;
+2: f-;
+bar
+
+1: c+e+c++;e+g+e++;d+f+d++;
+2: fad+;
+bar
+
+1: 2.c+c++;
+1 2: r;e+g+;;
+2: c-;
+bar
+
+1: 2.gg+~;
+1 2: r;c+e+;;
+2: egc+;
+bar
+
+1: 2.g+;
+1 2: r;ac+f+;;
+2: f-;
+bar
+
+1: f+;e+;d+;
+1 2: 2.a&;
+2: fa&d+;
+bar
+
+1: 2.ee+;
+1 2: r;gc+;;
+2: c-;
+bar
+
+1: 2.c+~;
+1 2: r;eg;;
+2: egc+;
+bar
+
+1: 2.c+;
+1 2: r;fa&;;
+2: f-;
+bar
+
+1: a&;g;f;
+2: fa&c+;
+bar
+
+1: 2.g;
+1 2: r;ce;;
+2: c-;
+bar
+
+1: 2.e+;
+1 2: r;eg;;
+2: egc+;
+bar
+
+1: 2.g+;
+1 2: r;gb;;
+2: e-;
+bar
+
+1: gg+;ff+;ee+;
+2: gbe+;
+bar
+
+1: 2.ff+ tie;
+1 2: r;ac+;;
+2: d-;
+bar
+
+1: 2.ff+;
+1 2: r;ad+;ac+;
+2: fad+;
+bar
+
+1: 2.ff+;
+1 2: r;bd+;;
+2: g-;
+bar
+
+1: faf+;ege+;dfd+;
+2: gb;
+bar
+
+1:2.ee+;
+1 2: r;gc+;;
+2: c-;
+bar
+
+1: 2.c+;
+1 2: r;eg;;
+2: egc+;
+bar
+
+1: 2.a tie;
+1 2: r;cf;;
+2: f-;
+bar
+
+1: 2.a;
+1 2: r;cf;;
+2: cfa;
+bar
+
+1: 2.g~;
+1 2: r;b-df;;
+2: g-;
+bar
+
+1: g;a-a;b-b;
+2: dfg;
+bar
+
+1: 2.cc+ tie;
+1 2: r;eg;;
+2: c-;
+bar
+
+1: 2.cc+;
+1 2: r;egb&;;
+2: egb&;
+bar
+
+1: 2.aa+;
+1 2: r;c+f+;;
+2: f--f-;
+bar
+
+1: aa+;gg+;ff+;
+2: fae&+;
+bar
+
+1: 2.c+c++;
+1 2: r;d+f+;;
+2: b&--b&-;
+bar
+
+1: 2b&b&+;4aa+;
+1 2: r;2d+f+;
+2: fb&d+;
+bar
+
+1: 2.a&a&+;
+1 2: r;d+f+;;
+2: g--g-;
+bar
+
+1: a&a&+;gg+;ff+;
+2: fbd+;
+bar
+
+1: 2.d+d++;
+1 2: r;e&+g+;;
+2: c-c;
+bar
+
+1: 2c+c++;4b&b&+;
+1 2: r;2e&+g+;
+2: e&gc+;
+bar
+
+1: 2.aa+;
+1 2: r;e+g+;;
+2: d&-d&;
+bar
+
+1: aa+;gg+;ff+;
+2: ead&+;
+bar
+
+1: 2.ee+;
+1 2: r;fa;;
+2: d-d;
+bar
+
+1: 2.dd+;
+1 2: r;fa;;
+2: cfa;
+bar
+
+1: 2.dd+;
+1 2: r;fb&;;
+2: b&--b&-;
+bar
+
+1: dd+;2cc+;
+1 2: 2s;4eg;
+2: c-c;
+bar
+
+1: 2.dd+ tie;
+1 2: r;fa;;
+2: 2.d-d tie;
+bar
+
+1: 2.dd+;
+1 2: 2.fa;
+2: 2.d-d;
+bar
+
+1: 2.ff+;
+1 2: r;b&d+;;
+2: b&--b&-;
+bar
+
+midi all: 0 "tempo=144";
+1: gg+;ff+;ege+;
+2: c-c;
+bar
+
+1: 2.dfad+ tie;
+2: 2.d-d tie;
+bar
+
+1: 2.dfad+;
+2: 2.d-d;
+endbar

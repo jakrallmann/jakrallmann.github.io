@@ -1,0 +1,637 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title " " "(January 30 - February 6, 2022)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=3#
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.9
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=104";
+midi 1 1: 0 "onvelocity=86,64";
+
+define BAR
+ifdef MIDI pedal below 1,2: 1; endif
+bar
+@
+define DBLBAR
+ifdef MIDI pedal below 1,2: 1; endif
+dblbar
+@
+
+1: r;8c+;b;4a;
+2: a-;eac+;;
+BAR
+
+1: r;8c+;b;4a;
+2: f-;ac+f+;;
+BAR
+
+1: r;8c+;b;4a;
+2: d-;ad+f+;;
+BAR
+
+1: 8b;c+;d+;e+;f+;g+;
+2: e-;gd+e+;;
+BAR
+
+1: 8e+;d+;2c+;
+2: a-;ac+e+;;
+BAR
+
+1: 8c+;b;2c+;
+2:f-;ac+f+;;
+BAR
+
+1: 8c+;b;2c+;
+2: d-;fad+;;
+BAR
+
+1: 8d+;c+;b;a;g;f;
+2: b--;afbd+;;
+BAR
+
+1: 8g;f;2g;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8a#;b;4.c+;8d+;
+2:f-; fbe+;ea#f+;
+BAR
+
+1: 8c+;b;2;
+2: b--;fbe+;fbd+;
+BAR
+
+1: 8g;;4.;8a;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8g;f;4.;8c++;
+2: f-;b-fg;cfa;
+BAR
+
+1: 2d++~;8;e++;
+2: b-;fc+d+;fbd+;
+BAR
+
+1: 8d++;c++;2;
+2: f;<<staff clef=treble>> cga;cfa;
+BAR
+
+1: 8b#+;;4.;8d++;
+2: g-;b#-fa;b-fg;
+BAR
+
+staff 2 clef=bass
+music
+
+1: 2c++;4b+;
+2: c;gc+fn+;;
+BAR
+
+1: 8a+;;4;f+;
+2: f;ac+f+;eac+;
+BAR
+
+1: 4.d+;8b;4g;
+2: b-;fbd+;;
+BAR
+
+1: 8a;;4.;8g;
+2: c;fbd+;fnbc+;
+BAR
+
+1: 2.f;
+2: f-;fac+;;
+BAR
+ 
+1: 2.g;
+2: e-;gd+e+;;
+BAR
+
+1: 8a;b;c+;d+;8.e+;16f+;
+2: a-;ac+e+;;
+BAR
+
+1: 2.e+;
+2: c;gc+f+;gc+e+;
+BAR
+
+1: 8f+;g+;a+;b+;c++;d++;
+2: d-;fbd+;ad+f+;
+BAR
+
+1: 2.b+;
+2: e-;gd+f+;gd+e+;
+BAR
+
+1: r;8c++;b+;4c++;
+2: a-;eab;eac+;
+BAR
+
+1: r;8c++;b+;4c++;
+2: f-;ac+e#+;ac+f+;
+BAR
+
+1: 8c++;b+;4a+;f+;
+2: d-;fbd+;ad+f+;
+BAR
+
+1: 2e+~;8;e&+;
+2: a-;eac+;;
+BAR
+
+1: 2.d+;
+2: b-;fc+d+;fbd+;
+BAR
+
+1: 8c+;b;4.a;8b;
+2: e-;fbd+;gbe+;
+BAR
+
+1: 2.a;
+2: a-;eac+;e-;
+BAR
+
+1: 2.c+a+;
+2: 2.a--;
+DBLBAR
+
+newscore
+
+1: r;8ac+;gb;4ea;
+2: a-;eac+;;
+BAR
+
+1: r;8ac+;gb;4fa;
+2: f-;ac+f+;ac+;
+BAR
+
+1: r;8ac+;gb;4fa;
+2: d-;ad+f+;ad+;
+BAR
+
+1: 8gb;ac+;bd+;c+e+;d+f+;e+g+;
+2: e-;gd+e+;;
+BAR
+
+1: 8c+e+;bd+;4.ac+;8;
+2: a-;ac+e+;;
+BAR
+
+1: 8ac+;gb;4.ac+;8;
+2: f-;ac+f+;;
+BAR
+
+1: 8ac+;gb;2ac+;
+2: d-;fad+;;
+BAR
+
+1: 8bd+;ac+;gb;fa;g;f;
+2: b--;fabd+;;
+BAR
+
+1: 8b-g;a-f;2g;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8fa#;gb;4.ac+;8ed+;
+2: f-;fbe+;ea#f+;
+BAR
+
+1: 8c+;b;2;
+1 2: d;e;f;
+2: b--;fb;fbd+;
+BAR
+
+1: 8g;;4.;8a;
+1 2: b-d;2s;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8g;f;4.;8a+c++;
+1 2: 2b-;4c;
+2: f-;b-fg;cfa;
+BAR
+
+1: 2d++~;8;g+e++;
+1 2: 8f+;g+;4.a+;8s;
+2: b-;fc+d+;fbd+;
+BAR
+
+staff 2 clef=treble
+music
+
+1: 8d++;c++;2;
+1 2: 4f+;2;
+2: f-ca;cga;cfa;
+BAR
+
+1: 8b#+;;4.;8g+;
+1 2: 8a+;g+;f+;e+;4d#+;
+2: g-;b#-fa;b-fg;
+BAR
+
+staff 2 clef=bass
+music
+
+1: 4.c++;8b+;a+;g+;
+1 2: 2fn+;4;
+2: c;gc+fn+;;
+BAR 
+
+1: 8a+;;;g+;f+;e+;
+1 2: 2c+;4a;
+2: f;ac+f+;eac+;
+BAR
+
+1: 4.bd+;8gb;4fg;
+2: b-;fbd+;;
+BAR
+
+1: 8a;;4.;8g;
+1 2: 2f;4fn;
+2: c;fbd+;fnbc+;
+BAR
+
+1: 2.f;
+2: f-;fac+;;
+BAR
+
+1: 4.g;8f;4e;
+2: e-;gd+e+;gd+;
+BAR
+
+1: 8a;b;ac+;bd+;8.c+e+;16af+;
+2: a-;ac+e+;;
+BAR
+
+1: e+;8c+;d+;4e+;
+1 2: 2g;4;
+2: c;gc+e+;;
+BAR
+
+1: 8d+f+;e+g+;f+a+;d+b+;e+c++;f+d++;
+2: d-;fbd+;ad+f+;
+BAR
+
+1: 2.d+b+;
+1 2: 8a+;g+;f+;e+;d+;b;
+2: e-;gd+f+;gd+e+;
+BAR
+
+1: r;8c++;b+;4c++;
+1 2: 2.c+;
+2: a-;eab;eac+;
+BAR
+
+1: r;8c++;b+;4c++;
+1 2: 2.c+;
+2: f-;ac+e#+;ac+f+;
+BAR
+
+1: 8a+c++;g+b+;f+a+;e+g+;4d+f+;
+2: d-;abd+;ad+f+;
+BAR
+
+1: 2e+~;8;e&+;
+1 2: 8c+;b;a;g;f;e#;
+2: a-;eac+;;
+BAR
+
+1: 2.d+;
+1 2: 8b;a;g;f;e;f;
+2: b-;fc+d+;fbd+;
+BAR
+
+1: 8ec+;db;4dfa;dgb;
+2: e-;eb;eg;
+BAR
+
+1: 2ca;8e+;;
+2: a-;eac+;e-;
+BAR
+
+1: 2.c+a+;
+2: 2.a--;
+DBLBAR
+
+newscore
+
+1: 8r;d+;c+;b;4a;
+2: a-;eac+;;
+bar
+
+1: 8r;d+;c+;b;4a;
+2: f-;ac+f+;;
+BAR
+
+1: 8r;e+;d+;c+;b;a;
+2: d-;ad+f+;;
+BAR
+
+1: 8b;c+;d+;e+;f+;g+;
+2: e-;gd+e+;;
+BAR
+
+1: {8f+;e+;d+;}3;4c+;;
+2: a-;ac+e+;;
+BAR
+
+1: {8c+;b;c+;}3;2c+;
+2: f-;ac+f+;;
+BAR
+
+1: {8c+;b;c+;}3;2c+;
+2: d-;fad+;;
+BAR
+
+1: 8d+;c+;b;a;g;f;
+2: b--;fabd+;;
+BAR
+
+1: 16g;a;g;f;4.g;8a;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8a#;b;4.c+;16e+;d+;
+2: f-;fbe+;fa#f+;
+BAR
+
+1: 16c+;d+;c+;b;4.;8a;
+2: b--;fbe+;fbd+;
+BAR
+
+1: {8g;;;}3;4.;16a;g;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 16g;a;g;f;4.;8c++;
+2: f-;b-fg;cfa;
+BAR
+
+1: 16d++;e++;d++;c++;4.d++;8e++;
+2: b-;fc+d+;fbd+;
+BAR
+
+1: 8d++;c++;8.;16b+;4c++;
+2: f;<<staff clef=treble>> cga;cfa;
+BAR
+
+1: {8b#+;;;}3;4;{8g+;a#+;b+;}3;
+2: g-;b#-fa;b-fg;
+BAR
+
+staff 2 clef=bass
+music
+
+1: 4.c++;8b+;4g+;
+2: c;gc+fn+;;
+BAR
+
+1: {8a+;;;}3;8.;16g+;8.f+;16e+;
+2: f;ac+f+;eac+;
+BAR
+
+1: 4.d+;8b;4g;
+2: b-;fbd+;;
+BAR
+
+1: {8a;;;}3;4;{8g;a;g;}3;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 2.f;
+2: f-;fac+;;
+BAR
+
+1: 4.g;8a;4b;
+2: e-;gd+e+;;
+BAR
+
+1: 8a;b;c+;d+;e+;f+;
+2: a-;ac+e+;;
+BAR
+
+mussym above 1: 1 "tr" til 3.3;
+ifdef MIDI
+ 1: {16e+;f+;e+;f+;e+;f+;}6,4;{e+;f+;e+;f+;e+;f+;}6,4;{e+;f+;e+;}3;16d+;e+;
+else 
+ 1: 2e+~;8;16d+;e+;
+endif
+2: c;gc+f+;gc+e+;
+BAR
+
+1: 8f+;g+;a+;b+;c++;d++;
+2: d-;fbd+;ad+f+;
+BAR
+
+mussym above 1: 1 "tr" til 3.3;
+ifdef MIDI
+ 1: {16b+;c++;b+;c++;b+;c++;}6,4;{b+;c++;b+;c++;b+;c++;}6,4;{b+;c++;b+;}3;16a+;b+;
+else
+ 1: 2b+~;8;16a+;b+;
+endif
+2: e-;gd+f+;gd+e+;
+BAR
+
+1: 8r;d++;c++;b+;4c++;
+2: a-;eab;eac+;
+BAR
+
+1: 8r;d++;c++;b+;4c++;
+2: f-;ac+e#+;ac+f+;
+BAR
+
+1: 8c++;b+;a+;g+;8.f+;16e+;
+2: d-;fbd+;ad+f+;
+BAR
+
+1: 4.e+;8e&+;d+;c+;
+2: a-;eac+;;
+BAR
+
+1: 4.d+;8c+;b;a;
+2: b-;fc+d+;fbd+;
+BAR
+
+1: 8c+;b;4.a;8g;
+2: e-;fbd+;gbe+;
+BAR
+
+1: 4.a;16b;c+;d+;e+;f+;g+;
+2: a-;eac+;e-;
+BAR
+
+1: 2.c+a+;
+2: 2.a--;
+DBLBAR
+
+newscore
+
+1: r;8c+e+c++;bd+b+;4ac+a+;
+2: a-;aec+;;
+BAR
+
+1: r;8c+a+c++;bg+b+;4ac+a+;
+2: f-;ac+f+;;
+BAR
+
+1: r;8c+e#+c++;bb+;4ad+a+;
+2: d-;ad+f+;;
+BAR
+
+1: 8bd+b+;c+e+c++;d+f+d++;e+c++e++;f+d++f++;g+e++g++;
+2: e-;gd+e+;;
+BAR
+
+1: 8e+c++e++;d+b+d++;2c+a+c++;
+2: a-;ac+e+;;
+BAR
+
+1: 8c+a+c++;bg+b+;2c+a+c++;
+2: f-;ac+f+;;
+BAR
+
+1: 8c+a+c++;bg+b+;2c+a+c++;
+2: d-;fad+;;
+BAR
+
+1: 8d+b+d++;c+a+c++;bd+b+;ac+a+;gbg+;faf+;
+2: b--;fabd+;;
+BAR
+
+1: 8gbd+g+;fbd+f+;2gbd+g+;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8a#c+a#+;bd+b+;4.c+e+c++;8d+gn+d++;
+2: f-;fbe+;ea#f+;
+BAR
+
+1: 8c+e+c++;bd+b+;2;
+2: b--;fbe+;fbd+;
+BAR
+
+1: 8gbg+;;4.;8ac+a+;
+2: c-;fbd+;fnbc+;
+BAR
+
+1: 8gbg+;faf+;4.;8c+a+c++;
+2: f-;b-fg;cfa;
+BAR
+
+1: 2d+b+d++ tie;8;e+c++e++;
+2: b-;fc+d+;fbd+;
+BAR
+
+1: 8d+b+d++;c+a+c++;2;
+2: f-;b-fg;cfa;
+BAR
+
+1: 8cn+a+cn++;c+g+c++;c+f+c++;c+e+c++;4c+d#+c++;
+2: g-;cnfa;cfg;
+BAR
+
+1: 2c+fn+g+c++;4bc+g+b+;
+2: c-;gc+fn+;;
+BAR
+
+1: 8ac+a+;;4ac+f+a+;faf+;
+2: f-;ac+f+;eac+;
+BAR
+
+1: 4.dbd+;8fgb;4g-fg;
+2: b-;fbd+;;
+BAR
+ 
+1: 8a-ca;;4.;8g-g;
+2: c-;g-cf;g-cfn;
+BAR
+
+1: 2.f-f;
+1 2: r;a-c;;
+2: f--;f-a-c;;
+BAR
+
+1: 2.g-g;
+1 2: r;b-e;;
+2: e-;g-de;;
+octave below 2: 1 "8va";
+BAR
+
+octave above 1: 1 "8va" til 3m+4;
+1: 8a-ca;b-b;cec+;dfd+;ee+;ff+;
+1 2: 2s;4a;
+2: a--;ac+e+;;
+BAR
+
+1: 2.ee+;
+1 2: g;f;e;
+2: c;gc+f+;gc+e+;
+BAR
+
+1: 8faf+;gg+;ac+a+;bb+;c+c++;d+d++;
+1 2: 2s;4a+; 
+2: d-;fbd+;ad+f+;
+BAR
+
+1: 2.bb+;
+1 2: 8f+;e+;d+;c+;b;e;
+2: e-;gd+f+;gd+e+;
+BAR
+
+1: r;8c+a+c++;bb+;4c+a+c++;
+2: a-;eab;eac+;
+BAR
+
+1: r;8c+a+c++;bb+;4c+a+c++;
+2: f-;ac+f+;;
+BAR
+
+1: 8c+f+a+c++;bb+;4ad+f+a+;fbd+f+;
+2: d-;fbd+;;
+BAR
+
+1: 2ee+;4gnc+;
+1 2: 8c+;b;4a;s;
+2: a--;eac+;;
+BAR
+
+1: 2.dd+;
+1 2: 8b;a;4g;f;
+2: b--;fc+d+;fbd+;
+BAR
+
+1: 8c+e+c++;bd+b+;4ac+a+;gbg+;
+2: e-;fbd+;gbe+;
+BAR
+
+octave above 1: 3 "8va" til 1m+3;
+1: 2ac+a+;4egd+;
+2: a--;eac+;e-e;
+BAR
+
+1: 2.ac+e+a+;
+2: 2.a--a-;
+ifdef MIDI pedal below 1,2: 3.9*; endif
+endbar

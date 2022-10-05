@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019, 2020 by John A. Krallmann
+ * Copyright (C) 2019, 2020, 2022 by John A. Krallmann
  *
  * Permission to use, copy, modify, and/or distribute this software
  * for any purpose with or without fee is hereby granted.
@@ -34,7 +34,7 @@
  * To be compatible with the cwm program,
  * it is recommended to use upper case letters, and dots for black squares.
  * There can optionally be a title line, starting with a tab.
- * If the title contains _xxx_ the xxx will be printed in iatlics.
+ * If the title contains _xxx_ the xxx will be printed in Italics.
  */
 
 #include <stdio.h>
@@ -46,7 +46,7 @@
 /* Use US paper size */
 #define PAPERHEIGHT 11.0
 #define PAPERWIDTH 8.5
-#define TOPMARGIN 1.5
+#define TOPMARGIN 1.0
 #define LEFTMARGIN 0.5
 #define PPI 72.0
 #define TITLESIZE 16
@@ -68,24 +68,24 @@ arr_index(int line, int col, int width)
 /* Output PostScript to print lines to make a crossword grid. */
 
 void
-print_grid(int width, int height, double cellsize)
+print_grid(int width, int height, double cellsize, double offset)
 {
 	int row, col;
 
 	/* Horizontal lines */
 	for (row = 0; row <= height; row++) {
 		printf("newpath %f %f moveto %f %f lineto stroke\n",
-				PPI * LEFTMARGIN,
+				PPI * (LEFTMARGIN + offset),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row),
-				PPI * (LEFTMARGIN + cellsize * width),
+				PPI * (LEFTMARGIN + offset + cellsize * width),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row));
 	}
 	/* Vertical lines */
 	for (col = 0; col <= width; col++) {
 		printf("newpath %f %f moveto %f %f lineto stroke\n",
-				PPI * (LEFTMARGIN + cellsize * col),
+				PPI * (LEFTMARGIN + offset + cellsize * col),
 				PPI * (PAPERHEIGHT - TOPMARGIN),
-				PPI * (LEFTMARGIN + cellsize * col),
+				PPI * (LEFTMARGIN + offset + cellsize * col),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * height));
 	}
 }
@@ -97,7 +97,8 @@ print_grid(int width, int height, double cellsize)
  */
 
 void
-print_data(int width, int height, double cellsize, char *letters, short *numbers, int answer, int nsize)
+print_data(int width, int height, double cellsize, char *letters,
+	short *numbers, int answer, int nsize, double offset)
 {
 	int row, col;
 	int letter_index;
@@ -118,13 +119,13 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
 			if (letters[letter_index] == '\0') {
 				/* Fill in black square */
 				printf("gsave 0.45 setgray newpath %f %f moveto %f %f lineto %f %f lineto %f %f lineto closepath fill stroke grestore\n",
-				PPI * (LEFTMARGIN + cellsize * col),
+				PPI * (LEFTMARGIN + offset + cellsize * col),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row),
-				PPI * (LEFTMARGIN + cellsize * (col+1)),
+				PPI * (LEFTMARGIN + offset + cellsize * (col+1)),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row),
-				PPI * (LEFTMARGIN + cellsize * (col+1)),
+				PPI * (LEFTMARGIN + offset + cellsize * (col+1)),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * (row+1)),
-				PPI * (LEFTMARGIN + cellsize * col),
+				PPI * (LEFTMARGIN + offset + cellsize * col),
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * (row+1)) );
 			}
 			else if (answer) {
@@ -139,7 +140,7 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
 					yoff = 22;
 				}
 				printf("%f %f moveto (%c) show\n",
-					PPI * (LEFTMARGIN + cellsize * col) + xoff,
+					PPI * (LEFTMARGIN + offset + cellsize * col) + xoff,
 					PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row) - yoff,
 					letters[letter_index]);
 			}
@@ -148,7 +149,7 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
 			if ( ! answer && numbers[number_index] != 0) {
 				/* Print number */
 				printf("%f %f moveto (%d) show\n",
-				PPI * (LEFTMARGIN + cellsize * col) + HPAD,
+				PPI * (LEFTMARGIN + offset + cellsize * col) + HPAD,
 				PPI * (PAPERHEIGHT - TOPMARGIN - cellsize * row) - vpad - nsize,
 				numbers[number_index]);
 			}
@@ -163,7 +164,8 @@ print_data(int width, int height, double cellsize, char *letters, short *numbers
  * The puzzle maker can then add the actual clues.
  * The preface uses the "memorandum macro" .S (for size) and .2C (for
  * two columns). The user can manually add blanks lines to make the break
- * between ACROSS and DOWN coincide with the column break if they want.
+ * between ACROSS and DOWN coincide with the column break,
+ * or .SK to force a page break, if they want.
  */
 
 void
@@ -334,6 +336,7 @@ main(int argc, char **argv)
 	short *numbers;
 	int num;
 	double cellsize;
+	double offset;
 	int nsize;
 	int answer = 0;
 	int blank = 0;
@@ -438,15 +441,15 @@ main(int argc, char **argv)
 	/* Start with max cell size of 1/2 inch. Then if that would make
 	 * the puzzle too big to fit on the page, shrink to be no more than
 	 * 7.5 inches wide (to leave 1/2 margins on the sides) and no more
-	 * than 9 inches high (to leave 1 inch margins on top and bottom)
-	 * assuming American 8.5x11 inch paper. */
+	 * than about 9 inches high (to leave about 1 inch margins
+	 * on top and bottom) assuming American 8.5x11 inch paper. */
 	cellsize = 0.5;
 	if (width > 15) {
 		cellsize = 7.5 / width;
 	}
 	if (height > 20) {
 		double tentative_cellsize;
-		tentative_cellsize = 9.0 / height;
+		tentative_cellsize = 9.25 / height;
 		if (tentative_cellsize < cellsize) {
 			cellsize = tentative_cellsize;
 		}
@@ -465,6 +468,7 @@ main(int argc, char **argv)
 	printf("1 setlinewidth\n");
 	printf("0.1 setgray\n");
 
+	offset = (PAPERWIDTH - (2.0 * LEFTMARGIN) - (width * cellsize)) / 2.0;
 	if (answer) {
 		int asize;
 
@@ -475,11 +479,12 @@ main(int argc, char **argv)
 			asize = 16;
 		}
 		printf("/CourierBold findfont %d scalefont setfont\n", asize);
-		print_grid(width, height, cellsize);
-		print_data(width, height, cellsize, letters, numbers, answer, SIZE);
+		print_grid(width, height, cellsize, offset);
+		print_data(width, height, cellsize, letters, numbers, answer,
+				SIZE, offset);
 	}
 	else if (blank) {
-		print_grid(width, height, cellsize);
+		print_grid(width, height, cellsize, offset);
 	}
 	else {
 		if (title != 0) {
@@ -492,9 +497,13 @@ main(int argc, char **argv)
 		if (cellsize < 0.375) {
 			nsize--;
 		}
+		if (cellsize < 0.3) {
+			nsize--;
+		}
 		printf("/TimesRoman findfont %d scalefont setfont\n", nsize);
-		print_grid(width, height, cellsize);
-		print_data(width, height, cellsize, letters, numbers, answer, nsize);
+		print_grid(width, height, cellsize, offset);
+		print_data(width, height, cellsize, letters, numbers, answer,
+					nsize, offset);
 	}
 
 	/* Finish up the PostScript. */

@@ -1,0 +1,211 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(January 9, 2022)"
+footer
+        title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=1&
+	time=2/4
+	beamstyle=4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=8,26
+	scale=0.95
+
+staff 2
+	clef=bass
+	vscheme=2f
+
+music
+ 
+midi 1 1: 0 "onvelocity=84";
+midi all: 0 "tempo=68";
+
+1: s;8e;f;
+2: s;r;
+bar
+
+1: 4.g;16a;bn;
+2: c-;egc+;
+bar
+
+1: 16d+;c+;bn;a;g;f;e;d;
+2: f-;cfa&d+;
+bar
+
+1: 4.f;8e;
+2: c-;egc+;
+bar
+
+1: 8d;c;bn-;c;
+2: a--;cea;
+bar
+
+1: 8d;e;d;e;
+2: d-;cfa;
+bar
+
+1: 8f;a;g;f;
+2: bn--;g-fa;
+bar
+
+1: 8f;4e;8d;
+2: c-;egc+;
+bar
+
+1: 2e;
+2: a--;eac+;
+bar
+
+1: 8e;4d;8c;
+2: b--;dfgb;
+bar
+
+1: 8d;e;f;g;
+2: g--;dfgbn;
+bar
+
+1: 8a;b;c+;d+;
+2: c-;gbc+e+;
+bar
+
+1: 8e+;4f+;8;
+2: d-;ad+f+;
+bar
+
+1: 8e+;4f+;8;
+2: b--;a&c+d+f+;
+bar
+
+1: 8g+;f+;e+;d+;
+2: a--;cfa;
+bar
+
+1: 8c+;b;f;g;
+2: g--;d&fgb;
+bar
+
+1: 8a;b;4c+;
+2: c-;ac+f+;
+bar
+
+1: 2d+;
+2: b--;fbd+;
+bar
+
+1: 8c+;d+;4e+;
+2: c-;gc+e+;
+bar
+
+1: 8g+;f+;e+;d+;
+2: d-;ad+f+;
+bar
+
+1: 8c+;b;f;g;
+2: g-;fbd&+;
+bar
+
+1: 2a;
+2: c-;ac+f+;
+bar
+
+1: 2a;
+2: c#-;ac#+f+;
+bar
+
+1: 2a;
+2: d-;ad+f+;
+bar
+
+1: 8f+;e+;4d+;
+2: b--;fgbd+;
+bar
+
+1: 8c+;;4~;
+2: c-;fbd+;
+bar
+
+1: c+;{8c;d;e;}3;
+2: ebc+;c-;
+bar
+
+1: 2f~;
+2: f-;cfa;
+bar
+
+1: 2f~;
+2: d&fa&;cfan tie;
+bar
+
+1: f;8;e&;
+2: 2cfa;
+dblbar
+
+score
+ key=2&
+ time=3/4
+ beamstyle=4,4,4
+music
+
+midi all: 0 "tempo=84";
+rom above 1: 1 "a little faster";
+1: 2.d;
+2: b--;dfa;dfb;
+bar
+
+1: 2.d;
+2: g--;dga;dgb;
+bar
+
+1: 8f;e;4d;e;
+2: c-;egb;egc+;
+bar
+
+1: 2d;4c;
+2: f-;bn-fa&;cefan;
+bar
+
+1: 2.f;
+2: d-;dfc+;dfb;
+bar
+
+1: 2.f#;
+2: d-;f#c+e+;fc+d+;
+bar
+
+1: 2a~;8;16c+;b;
+2: g-;dga;dgb;
+bar
+
+1: 2.g;
+2: e-;ega;egb;
+bar
+
+1: 2.g;
+2: f-;egc+;egb;
+bar
+
+mussym above all: 2 "ferm"; 3 "ferm";
+midi all: 2 "tempo=68";
+1: a;d+;c+;
+2: f-;g&+;f+;
+2 2: s;2ac+e+;
+bar
+
+1: 2.b;
+2: b--;fbd+;g&be+;
+ital between 1&2: 1 "rit.";
+bar
+
+1: 2.b+;
+2: 2.fbd+;
+endbar

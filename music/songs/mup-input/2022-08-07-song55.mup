@@ -1,0 +1,104 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(August 7, 2022)"
+footer
+        title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=10,28
+	packfact=2
+	defaultphraseside=above
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=98";
+midi 2 1: 0 "channel=12";
+midi all: 0 "tempo=110";
+
+
+1: 4.s;8e ph; c+;b;
+2: 4.s;r;
+bar
+
+1: 4.b;a;
+2: a-;e;c+;
+bar
+
+1: 4.g;f eph;
+2: d;a;c+;
+bar
+
+1: 4.f ph;8e;c+;b;
+2: e;b;d+;
+bar
+
+1: 4.b;16c+;b;4a eph;
+2: a-;e;c+;
+bar
+
+1: 4.g ph;8f;c;d;
+2: f-;c;a;
+bar
+
+1: 4.e;b- eph;
+2: e-;b-;g#;
+bar
+
+1: 4.b- ph;c;
+2: f-;c;a;
+bar
+
+1: 8a;4g;f;8d;
+2: g-;d;b;
+bar
+
+1: 4.e;c+ eph;
+2: a-;e;b;
+bar
+
+1: 8c+ ph;4b;a;8c+;
+2: f#-;d;c+;
+bar
+
+1: 4.b;g eph;
+2: g-;d;b;
+bar
+
+1: 8a ph;4g;f;8c;
+2: f-;c;a;
+bar
+
+1: 4.g;8e;4d;
+2: e-;b-;g#;
+bar
+
+1: 4.c;a- eph;
+2: a-;e;g-;
+bar
+
+1: 2.a- ph;
+2: f-;e;c;
+bar
+
+1: 8a-;2g-;16c;b-;
+2: e-;b-;d;
+bar
+
+1: 2.a-~;
+2: a--;e-;b-;
+bar
+
+1: 2.a- eph;
+2: 2.c;
+endbar

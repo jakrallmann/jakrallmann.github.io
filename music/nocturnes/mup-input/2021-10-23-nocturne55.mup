@@ -1,0 +1,257 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(October 23-29, 2021)"
+footer
+        title (12) "\(copyright) Copyright 2021 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=5&
+	time=2/4
+	beamstyle=4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "onvelocity=84,64";
+midi all: 0 "tempo=76";
+
+1: {16a bm;b;a;gn;a;d+;e+ ebm;}7,2;
+2: mr;
+bar
+
+1: 2af+ tie;
+2: d-;ad+f+;
+bar
+
+1: 8af+;g+;gn+;a+;
+2: f-;ad+f+;
+bar
+
+1: {8b+;c++;b+;}3;a+;g+;
+2: g-;bd+e+g+;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8dn+;2e+;8ben+;
+2: a-;e;g;
+bar
+
+score time=4/4 ;beamstyle=4,4,4,4  
+music
+
+1: 2f+~;8;e+;d+;c+;
+1 2: 2.a;4f;
+2: d-;a-;f;a;
+bar
+
+score time=3/4
+music
+
+1: 2a~;8;f;
+1 2: e;d;c;
+2: f-;c;a;
+bar
+
+1: {8b;c+;b;}3;;a;g;d;
+2: g-;d;b;
+bar
+
+1: 2e;4en~;
+1 2: d;c;b-;
+2: a-;e;gn;
+bar
+
+1: 8e;f;g;f;d;c&;
+1 2: 2.a-;
+2: d-;a-;f;
+bar
+
+1: 2b-;4b&&-; 
+1 2: 2a-;4s;
+2: g-;d;g;
+bar
+
+1: 4.a-;f;
+2: d-;a-;f;
+bar
+
+1: 8e;d;2g-b&&-;
+2: g-;d;e;
+bar
+
+1: 2.a-;
+2: d-;a-;f;
+bar
+
+staff 1 clef=bass
+music
+
+1: {8f;g;a;}3;{b;a;g;}3;4f;
+2: d-;a-;8d;c;
+bar
+
+1: 2f;4d+;
+2: b--;f-;d;
+bar
+
+staff 1 clef=treble
+music
+
+1: {8e;f;e;}3;d;b&&-;d;e;
+2: g-;d;e;
+bar
+
+1: 4.a-f;da;
+2: d-;a-;f;
+bar
+
+1: {8b;c+;b;}3;an;b;c+;d+;
+1 2: 2d;4e;
+2: g-;d;g;
+bar
+
+score time=4/4
+music
+
+1: 2gn~;8;4.a;
+2: d-;a-;f;a;
+bar
+
+score time=3/4
+music
+
+newscore
+
+1: 16g;a;b;c+;d+;e+;f+;g+;{8a+;b+;c++;}3;
+2: a-;e;c+;
+bar
+
+score time=4/4
+music
+
+1: 16b+ ph;c++;b+;a+;4f+ eph;16e+ ph;f+;e+;d+;4a eph;
+2: d-;a-;d;f;
+bar
+
+score time=3/4
+music
+
+1: 8an;b;c+;b;g;f;
+1 2: d;e;d;
+2: g-;d;b;
+bar
+
+1: 8e;f;4e;en;
+1 2: 2c;4b-;
+2: a-;e;gn;
+bar
+
+1: 8f;a;4d+;c+;
+1 2: a-;f;e;
+2: d-;a-;f;
+bar
+
+1: 8c&+;b;4.g;8e;
+1 2: 2d;4s;
+2: g-;d;g;
+bar
+
+1: 8c;d;4.e;8a-f;
+2: a-;g;c;
+bar
+
+1: 2.f-d;
+2: d-;a-;f;
+bar
+
+
+score time=6/8 ; beamstyle=4.,4.
+music
+
+midi all:0 "tempo=108";
+rom above all: 1 "( \(smup4n) = \(smup4n)\(smdot) )";
+1: 2.f;
+1 2: r;a-;b-;d;b-;a-;
+2: 4.d-;a-;
+bar
+
+1: 2.g;
+1 2: r;a-;b-;e;b-;g-;
+2: 4.e-;b-;
+bar
+
+1: 2.a;
+1 2: r;c;d;e;d;a-;
+2: 4.f-;d;
+bar
+
+1: 2.b;
+1 2: r;dn;e;f;e;b-;
+2: 4.g-;e;
+bar
+
+1: a;d+;c+;b;a;f;
+2: 4.f-;d;
+bar
+
+1: f;e;d;4.e;
+2: 4.g-;d;
+bar
+
+1: e;d;c;4.d;
+2:  4.f-;d;
+bar
+
+1: d;c;b-;4c;8b-;
+2: 4.en-;c;
+bar
+
+1: 4.an-;f;
+2: 4.f-;c;
+bar
+
+1: g;a;g;f;e;d;
+2: 4.e-;b-;
+bar
+
+1: 4.e;c;
+2: 4.a-;e;
+bar
+
+1: g;a;g;f;e;d;
+2: 4.e-;b-;
+bar
+
+1: 4.e;8a-;b-;c;
+2: 4.a-;e;
+bar
+
+1: 4.b-;b;
+2: 4.b-;f;
+bar
+
+1: 4.c+;8a;b;c+;
+1 2: 2.e;
+2: 4.a-;e;
+bar
+
+1: 2.db;
+2: 2.b-f;
+endbar
