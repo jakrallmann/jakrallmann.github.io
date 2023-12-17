@@ -1,0 +1,68 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(November 12, 2023)"
+footer
+        title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=12,28
+	packfact=1.5
+	defaultphraseside=above
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=120";
+midi 2 1: 0 "channel=12";
+midi all: 0 "tempo=76";
+
+1: 4r;8d ph;f;4e eph;
+2: b-;f;b;4g;8f-;
+bar
+
+1: 4r;8d ph;f;e eph;16b ph;a;
+2: b-;f;b;4g;8f-;
+bar
+
+1: 8.f;16d;8b-;8.c;16d;8e eph;
+2: b-;f;g;f-;c;a;
+bar
+
+1: 8.d ph;16f;8b;8.;16e;8d;
+2: b-;f;a&;e-;b-;g;
+bar
+
+1: 8.c;16e;d;c;8.b- eph;16c ph;d;e;
+2: f-;c;a;b-;f;b;
+bar
+
+1: 8.f;16a;8;;4g eph;
+2: d;a;d+;e;b;e+;
+bar
+
+1: 8.c ph;16e;d;c;8.d;16b-;8 eph;
+2: f-;e;a;b-;f;(b);
+bar
+
+1: 16b ph;a;8g;e;8.f;16d;8b- eph;
+2: e-;b-;g;b-;f;g;
+bar
+
+1: 16c ph;d;e;d;8c;4b- eph;16r;f;
+2: f-;c;a;b-;f;;
+bar
+
+1: 2.db;
+2: 2.b-b;
+endbar

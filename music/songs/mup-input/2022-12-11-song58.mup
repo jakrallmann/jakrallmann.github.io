@@ -1,0 +1,59 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(December 11, 2022)"
+footer
+        title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	beamstyle=4,4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=12,28
+	packfact=2
+	defaultphraseside=above
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=100";
+midi 2 1: 0 "channel=12";
+midi all: 0 "tempo=88";
+
+1: 8r;a ph;g;4a;b;8a;
+2: d;fa;g-;dgb;
+bar
+
+1: 8g;f;e;f;d;en;f#;a eph;
+2: e-;egb;d-;df#c+;
+bar
+
+1: 8g ph;a;b;d+;;e+;c+;g+;
+2: g-;dgb;c;gc+e+;
+bar
+
+1: 8f#+;c++;b+;a+;2b+ eph;
+2: d;f#c+d+;g-;dgb;
+bar
+
+1: 8e+ ph;;;;;d+;4;
+2: c;gc+e+;d;gbd+;
+bar
+
+1: 8c#+;a;bn;c+;4d+;cn+ eph;
+2: a-;enac#+;d-;df#cn+;
+bar
+
+1: 8b ph;;;d;f;e;c;e;
+2: g-;dgb;c-;egb;
+bar
+
+1: 8d;;4f#;2g eph;
+2: d-;df#c+;g-;dgb;
+endbar

@@ -1,0 +1,183 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(July 9, 2023)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=3&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.80
+	vscheme=2f
+	scoresep=10,24
+staff 2
+	clef=bass
+music
+
+define BAR 
+ifdef MIDI pedal below 1,2: 1; endif
+bar
+@
+define DBLBAR 
+ifdef MIDI pedal below 1,2: 1; endif
+dblbar
+@
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "onvelocity=86,76";
+
+1: 8r;b;g+;f+;8.e+;16d+;
+2: e-;gbe+;;
+BAR
+
+1: 4.d+;16e+;d+;8.c+;16g;
+2: a-;eac+;;
+BAR
+
+1: 8f;g;a;b;c+;d+;
+2: b--;fac+;8e+;d+;
+2 2: 2s;4fa;
+BAR
+
+1: 4.g+;16b+;a+;8.g+;16b;
+2: e-;gbe+;;
+BAR
+
+1: 4.c+;8d+;8.f+;16e+;
+2: a-;eac+;ac+f+;
+BAR
+
+1: 4.g;8b;c+;e+;
+2: e-;gbd+;gc+e+;
+BAR
+
+1: 4.g+;16a+;g+;8.c+;16e+;
+2: a-;eac+;;
+BAR
+
+1: 4.f+;16g+;f+;8b;b&&;
+2: e-;gbe+;be+g+;
+BAR
+
+1: 8a;c;4c&;fbd+;
+2: b--;dfa;b-a;
+BAR
+
+1: 2gbe+;8r;e+;
+2: e-;egd&+;;
+DBLBAR
+
+score key=4&
+music
+
+1: 4.e+;8;f+;;
+1 2: 8r;c+;4;c&+;
+2: a-;aec+;e&&ac&+;
+BAR
+
+1: 4.e+;8;c+;e+;
+1 2: 8r;g;f;e;f;e;
+2: a-;aec+;;
+BAR
+
+1: 4.f+;8;;;
+1 2: 8b;a;f;;g;a;
+2: d-;fbd+;;
+BAR
+
+1: 4.e+;8;;;
+1 2: 8a;g;f;e;f;g;
+2: e-;egd+;;
+BAR
+
+1: 4.c+;8;bn;c+;
+1 2: 8g;e;;;dn;e;
+2: a-;eac+;;
+BAR
+
+1: 8e+;d+;4.;8b;
+1 2: 8g&;f;4.f;8f&;
+2: d-;fad+;f&ad+;
+BAR
+
+1: 8d+;c+;4.;8a;
+1 2: 8f&;e;4;e&&;
+2: a--;eac+;;
+BAR
+
+1: 8c+;b;4.;8g;
+1 2: d;;;
+2: e-;egb;;
+BAR
+
+1: 2a;8f;g&;
+1 2: 8d;c;2c;
+2: a-;ea;;
+DBLBAR
+
+score key=5&
+music
+
+1: 8g;f;2;
+1 2: 8b-;a-;2;
+2: d-;b-;a-;
+BAR
+
+1: 8f;e;2;
+1 2: 8a-;g-;4f-;g-;
+2: e-;b-;d;
+BAR
+
+1: 8e;f;g;a;b;c+;
+1 2: 8g-;a-;b-;c;d;e;
+2: a-;e;a;
+BAR
+
+1: 4.e+;8d+;4;
+1 2: 4.g;8f;4;
+2: d;a;8b;a;
+DBLBAR
+
+score key=6&
+music
+
+1: 4.d+;8c+;4;
+1 2: 2e;4;
+2: c;g;8f;g;
+BAR
+
+1: 4.c+;8b;4;
+1 2: 2d;4;
+2: g-;d;8f;g;
+BAR
+
+1: 2e~;8;a;
+1 2: 2.a-c;
+2: a-;e;g;
+BAR
+
+1: 2a-cd;8cn;d;
+2: d-;a-;f;
+BAR
+
+1: 4.b-da;8b;d+;e+;
+2: g--;e;d;
+BAR
+
+1: 2.bd+g+;
+2: 2.g-g;
+ifdef MIDI pedal below 1-2: 1; 4*; endif
+endbar

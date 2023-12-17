@@ -1,0 +1,528 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(October 14-23, 2022)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=3&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.80
+	vscheme=2f
+	scoresep=10,24
+staff 2
+	clef=bass
+music
+
+define BAR 
+ifdef MIDI pedal below 1,2: 1; endif
+bar
+@
+define DBLBAR 
+ifdef MIDI pedal below 1,2: 1; endif
+dblbar
+@
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "onvelocity=86,76";
+midi 1 2: 0 "onvelocity=88";
+
+define TH
+1: 8r;4b;4e+;8f+~;
+1 2: 4r;g;a;
+2: e-;gbe+;;
+BAR
+
+1: 8f+;g+;a+;g+;f+;e+;
+1 2: b;8c+;b;a;g;
+2: e-;gbe+;;
+BAR
+
+1: c+;d+;8e+;f+;
+1 2: 8r;4a;8;g;f;
+2: a-;eac+;;
+BAR
+
+1: 2g+~;8;a+;
+1 2: 8r;b;e+;d+;c+;bn;
+2: e-;gbe+;be+g+;
+BAR
+
+1: g+;f+;e+;
+1 2: 8r;4c+;a;8g~;
+2: a-;eac+;;
+BAR
+
+1: e+;d+;8f+;f#+;
+1 2: 8g;4f;8g;a;an;
+2: b-;abd+;;
+BAR
+
+1: 8g+;a+;g+;f+;e+;d&+;
+1 2: 8b;c+;b;a;4g;
+2: e-;gbe+;;
+BAR
+
+1: 4.c+;8d+;e+;f+;
+1 2: 8b;a;g;f;4e;
+2: a-;eac+;;
+BAR
+
+1: 2b~;8;bn;
+1 2: 8f;g;f;e;4b-;
+2: e-;b-eg;;
+BAR
+
+1: 2c+;8g;a;
+1 2: 8g;a;g;f;4c;
+2: a-;eac+;efa;
+BAR
+
+1: 4.b;8;c+;d+;
+1 2: 8d;f;e;d;c;b;
+2: g-;gdb;;
+BAR
+
+1: 8e+;d+;4.c+;16b+;a+;
+1 2: 8c+;b;a;e;f;16g+;f+;
+2: a-;eac+;;
+BAR
+
+1: 2g+~;8;e+;
+1 2: 8e+;g;[grace]d+;c+;b;a;g;
+2: e-;gbe+;;
+BAR
+
+1: e+;4.f+;8e+;
+1 2: 8g;a;4;g;
+2: f-;fac+;eac+;
+BAR
+
+1: 8e+;d+;4.c+;8b;
+1 2: f;;f#;
+2: b-;fac+;fad+;
+BAR
+
+1: 8g+;f+;e+;c+;4d&+;
+1 2: 8b;a;g;a;f;g;
+2: e-;gbe+;;
+BAR
+
+1: 8d&+;c+;2;
+1 2: 8g;e;4.f;8e;
+2: a-;fac+;eac+;
+BAR
+
+1: 2c+~;8;d+;
+1 2: 8g;e;f;[with >]4an;8f;
+2: an-;efanc+;;
+BAR
+
+1: 2e+;4f+;
+1 2: 8g;e;4.b;8bn;
+2: b-;gbe+;;
+BAR
+
+1: 2e+g+ tie;8;b+;
+1 2: 8c+;g;c+;d+;e+;d+;
+2: c;gc+e+;b-;
+BAR
+
+1: 2a+c++ tie;8;a+;
+1 2: 2c+e+ tie;8;a;
+2: a-;eac+;g-;
+BAR
+
+1: 8c+;d+;4.e+;8d+;
+1 2: 4.fa;8g;4g&;
+2: f-;fac+;d-;
+BAR
+
+1: 4.g+;8an+;4bn+;
+1 2: gc+;anbn;b;
+2: g-;dgbn;8a+;g+;
+2 2: 2s;4gbd+;
+BAR
+
+1: 2e+g+e++ tie;8;d+f+d++;
+2: c;gd+e+;gc+e+;
+BAR
+
+1: 2e+g+e++ tie;8;d+f+d++;
+2: b-;gc+d+;gc+e+;
+BAR
+
+1: e+a+c++e++;4.d+a+d++;8c+a+c++;
+2: a-;eac+;fac+;
+BAR
+
+1: 2anf#+an+;4be+g+b+;
+2: e-;gbf+;gbe+;
+BAR
+
+1: 2aa+ tie;8;gg+;
+1 2: 4.s;[with>]4.e+;
+2: f-;fac+;eac+;
+BAR
+
+1: 2gg+ tie;8;ff+;
+1 2: 4.s;[with>]c+;
+2: b-;fac+;fabnd+;
+BAR
+
+1: 4.ee+;8ff+;gg+;aa+;
+2: e-;b-eg;c&ea;
+ifdef MIDI pedal below 1,2: 1;3*; endif
+bar
+@
+TH
+
+1: 2e+e++;8e+;d+;
+2: 2b-eg;4r;
+BAR
+
+1: 2c+;8d+;c+;
+1 2: r;8f;e;d;e;
+2: a-;eac+;;
+BAR
+
+1: 2b;8.d&+;16c+;
+1 2: f;8g;f;4en;
+2: g-;b-eg;cgb;
+BAR
+
+1: 2a;8.b;16c+;
+1 2: 8e;c;d;e;f;e;
+2: f-;cfa;;
+BAR
+
+1: 2d+;8e+;f+;
+1 2: 8f;g;b;a;g;a;
+2: b-;fae+;fad+;
+BAR
+
+1: 4.g+;8f#+;8.g+;16b+;
+1 2: 8b;c+;b;an;b;bn;
+2: e-;gbe+;;
+BAR
+
+1: 2a+~;8;g+;
+1 2: 8c+;d+;c+;4.a;
+2: a-;eac+;;
+BAR
+
+1: 2f+;8.e+;16f+;
+1 2: 8a;b;a;g;4f;
+2: b-;dab;;
+BAR
+
+1: 2g+~;8;d&+;
+1 2: 8b;c+;4.b;8g;
+2: e-;gbe+;;
+BAR
+
+1: 8d&+;c+;4.;8e+;
+1 2: 8g;a;4a;g;
+2: a-;eac+;ac+e+;
+BAR
+
+1: 8e+;d+;4.d+;8f+;
+1 2: f;g;a;
+2: b-;dab;fabd+;
+BAR
+
+1: 8f+;e+;4.e+;8b+;
+1 2: a;g;8d+;b;
+2: c;gc+e+;;
+BAR
+
+1: 2a+c++ tie;8;;
+1 2: 2c+e+;8d+;e+;
+2: a-;eab;eac+;
+BAR
+
+1: 8f+c++;b+;4.f+b+;8c++;
+1 2: 8e+;d+;b;c+;4d+;
+2: b-;dab;;
+BAR
+
+1: 8d++;c++;4;;
+1 2: d+f+;8c+e+;d+f+;4e+g+;
+2: c;gc+e+;;
+BAR
+
+1: 8c++;b+;4.a+;16e+;f+;
+1 2: c+e+;8;bd+;4ac+;
+2: a-;eac+;;
+BAR
+
+1: 2.g+;
+1 2: 4.b;8ac+;4bd&+;
+2: e-;gbe+;;
+DBLBAR
+
+score key=4&
+music
+
+1: 4.d+;8c+;4;
+1 2: 2fa;4ea;
+2: a-;eac+;;
+BAR
+
+1: 4.c+;8b;4fb;
+1 2: 2df;8d;c;
+2: b-;fa;;
+BAR
+
+1: 4.a;8g;4eg;
+1 2: 2b-e;8a-;b-;
+2: e-;b-eg;;
+BAR
+
+1: 4.g;8a;4fa;
+1 2: 2b-e;8c;e;
+2: f-;cfa;;
+BAR
+
+1: f+;4.e+;8d+;
+1 2: a;g;f;
+2: d-;fad+;;
+BAR
+
+1: 2.c+;
+1 2: e;4.a;8g;
+2: a--;eac+;;
+BAR
+
+staff 1 clef=bass
+music
+
+1: e+;4.d+;8a;
+1 2: g;2f;
+2: d-;a-;b-;
+BAR
+
+1: 2.c+;
+1 2: 2.e;
+2: a--;e-;;
+BAR
+
+staff 1 clef=treble
+music
+
+1: 4.r;8a;4b;
+2: a--;e-;;
+BAR
+
+1: 2.c+;
+1 2: 4.e;8f;4e;
+2: a-;e;;
+BAR
+
+1: 2c+~;8;;
+1 2: 4.g;8a;4f;
+2: f-;c;;
+BAR
+
+1: c+;4.b;8a;
+1 2: 2.f;
+2: d-;a-f;;
+BAR
+
+1: 2b~;8;c+;
+1 2: 8f;g;f;4.e;
+2: e-;b-eg;;
+BAR
+
+1: 2c+~;8;f+;
+1 2: 8g;a;g;4.f;
+2: f-;cfa;;
+BAR
+
+1: 8f+;e+;4d+;8a;b;
+1 2: a;4.f;8;
+2: d-;fad+;;
+BAR
+
+1: 2.c+;
+1 2: 4.e;8f;4e;
+2: a-;eac+;;
+BAR
+
+1: 2b~;8;16d+;c+;
+1 2: 8d;e;f;a;4f;
+2: b-;fabd+;;
+BAR
+
+1: 2b;4bn;
+1 2: 8d;e;f;g;f;e;
+2: e-;egb;;
+DBLBAR
+
+score key=5&
+music
+
+1: 8c+;e+;b+;a+;4g+;
+1 2: e;c+;8d+;e+;
+2: a-;eac+;;
+BAR
+
+1: 4.g+;8f+;4;
+1 2: b;b&&;a;
+2: d;fad+;;
+BAR
+
+1: 8f+;e+;4.f+;8gn+;
+1 2: gn;8d+;c+;4b;
+2: e;fad+;gnbe+;
+BAR
+
+1: 2a+;4g+;
+1 2: 4.c+;8a;b;c+;
+2: a-;eac+;;
+BAR
+
+1: 2.f+;
+1 2: 4.a;8d+;4a;
+2: d;fad+;;
+BAR
+
+1: 2.f+;
+1 2: 4.a;8e+;4a;
+2: c&;fad+;;
+BAR
+
+1: a+;4.g+;8f+;
+1 2: b;;;
+2: g-;dgb;egb;
+BAR
+
+1: 2.gand+e+g+;
+2: e-;2degane+;
+BAR
+
+1: 2.egb;
+2: a-;egb;dgb;
+BAR
+
+1: 2.egc+;
+2: a-;cgb;cga;
+BAR
+
+1: 2.fd+ tie;
+2: d-;a-df;dfa;
+BAR
+
+1: 4.fd+;8f+;g+;f+;
+2: 2.fad+;
+BAR
+
+1: [grace]8f+;[]g+;2f+;4e+;
+1 2: 2b;4;
+2: g-;gbe+;;
+BAR
+
+1: 4.e++;8d++;c++;b+;
+1 2: 2g+;4;
+2: a-;ac+g+;;
+BAR
+
+1: [grace]8gn+;[]a+;4.g+;8a+;4;
+1 2: en+;f+;a;
+2: d-;fad+;ad+f+;
+BAR
+
+1: a+;8;gn+;a+;an+;
+1 2: 8bn;d+;4e+;f+;
+2: f-;fad+;ad+f+;
+BAR
+
+1: c++;4.b+;8g+;
+1 2: 2e+;4b;
+2: g-;gbe+;;
+BAR
+
+1: e+;8;dn+;e+;en+;
+1 2: c+;8;bn;4c+;
+2: a-;ac+g+;;
+BAR
+
+1: 8f+;d+;4.a;8a&&;
+1 2: a;e;f;
+2: d-;fad+;;
+BAR
+
+1: 2g;8r;e++;
+1 2: 8b-;d;4.e;8g+;
+2: e-;gac+;ac+g+;
+BAR
+
+1: 8e++;d++;c++;b+;a+;g+;
+1 2: g+;e+;c+;
+2: a-;ac+g+;;
+BAR
+
+1: [grace]8f+;[]g+;4.f+;8d+;4a;
+1 2: a;g;8e;f;
+2: d-;fad+;;
+BAR
+
+1: 8an;;;;;g;
+1 2: g;f;e;
+2: g-;gb&&d+;;
+BAR
+
+1: 2d+~;8;a;
+1 2: 4.f;8e;4f;
+2: d-;fad+;;
+BAR
+
+1: 8an;;;bn;d+;e+;
+1 2:g;f;e;
+2: g-;gb&&d+;;
+BAR
+
+1: 2.f+;
+1 2: 2.a;
+2: d-;fad+;;
+BAR
+
+1: 8g+;a+;an+;bn+;d++;e++;
+1 2: an;d+;g+;
+2: g-;gb&&e+;;
+BAR
+
+1: 2.a+f++ tie;
+2: d-;2ad+f+;
+BAR
+
+1: 2.a+f++;
+2: d-;2ad+f+;
+BAR
+
+score key=3& ; transpose=down major 2
+music
+
+TH
+
+1: 2.e+e++ tie;
+2: 2.b-eg tie;
+BAR
+
+1: 2.e+e++;
+2: 2.b-eg;
+ifdef MIDI pedal below 1,2: 3.8*; endif
+endbar

@@ -1,0 +1,392 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(July 22, 23, 30, and August 6, 2023)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=3&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	scale=0.85
+	scoresep=10,28
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define PED
+ifdef MIDI pedal below 1,2: 1; endif
+@
+
+define BAR 
+PED
+bar
+@
+define DBLBAR 
+PED
+dblbar
+@
+
+define G [grace;slash1] @
+define ST [with.] @
+define OCT octave below 2: 1 "8va"; @
+
+midi all: 0 "tempo=102";
+midi 1 1: 0 "onvelocity=86,76";
+
+/// Got accidentally deleted...
+1: G 8g;ST 4e+;G 8e+;2g+;
+2: e-;gbe+;;
+BAR
+
+1: G 8g;ST 4e+;G 8e+;2g+;
+2: c-;gc+e+;;
+BAR
+
+1: G 8g;ST 4e+;G 8e+;4.g+;8a;
+2: a--;eac+;;
+BAR
+
+1: G 8f;8.d+;16;4.f+;8f#+;
+2: b--;eac+;dab;
+BAR
+
+1: G 8b;8.g+;16;G 8an+;4.b+;8c++;
+2: e-;gbe+;ad&+f+;
+BAR
+
+1: G 8 c++;8.b+;16a+;2c+;
+2: a-;eac+;;
+BAR
+
+1: G 8c++;8.b+;16a+;4.c+;8a;
+2: f-;ac+g+;ac+f+;
+BAR
+
+1: G 8a;2b;8r;a;
+2: b-;eac+;fbd+;
+BAR
+
+1: G 8a;2b;8r;a;
+2: b--;cfa;dfb;
+BAR
+
+1: 8g;e+;4;8r;g;
+2: c-;gd+f+;gc+e+;
+BAR
+
+1: 8g;e+;4;8r;g;
+2: b--;gd+f+;gc+e+;
+BAR
+
+1: 8g<>;e+;<>;d+;8.c+;16b;
+2: a--;eac+;ac+e+;
+BAR
+
+1: 4.b;8g;e;f;
+1 2:2s;4g-c;
+2: e-;gbe+;8c-;b--;
+BAR
+
+1: a-cg;4.g;8f;
+1 2: s;2b-d;
+2: a--;b--;;
+BAR
+
+1: b-eg;8ee+;ff+;gg+;bb+;
+2: e-e;d-d;c-c;
+BAR
+
+1: 2c+e+a+c++;8r;gg+;
+2: a--a-;eac+;;
+BAR
+
+1: 2ff+;8gg+;aa+;
+1 2: 8e+;4d+;8;4s;
+2: b--b-;fbc+;fbd+;
+BAR
+
+1: 2bb+;8g+;f+;
+1 2: 2s;4g;
+2: e-e;gbe+;ad&+f+;
+BAR
+
+1: 2.ee+;
+2: a--a-;eac+;;
+BAR
+
+1: 2.aa+;
+2: f-;faen+;faf+;
+BAR
+
+1: 2.gg+;
+2: a-;eabn;eac+;
+BAR
+
+1: 2ff+;8r;bb+;
+2: b--b-;fbe+;fbd+;
+BAR
+
+1: 2e+c++e++;8r;d+d++;
+2: c-c;gc+e+;;
+BAR
+
+1: 2e+c++e++;8r;d+d++;
+2: b--b-;gc+e+;;
+BAR
+
+1: 2e+c++e++;4c+c++;
+2: a--a-;eac+;;
+BAR
+
+1: 2.bb+;
+2: e-e;gbd+;gbe+;
+OCT
+BAR
+
+1: 2.aa+;
+2: f-f;gc+en+;ac+f+;
+OCT
+BAR
+
+1: 2.gg+;
+2: b--b-;dfan;dfb;
+BAR
+
+1: 2.ee+;
+2: e-e;eg&bn;;
+OCT
+BAR
+
+1: 4.e+e++;8g+;a+;an+;
+2: 4.egbe+;r;
+rom between 1&2: 1 "Fine";
+BAR
+
+1: 4.b+;8g+;f+;e+;
+2: e-e;gbe+;be+g+;
+BAR
+
+1: 4.c++;8g+;f+;e+;
+2: c-c;gc+e+;c+e+g+;
+BAR
+
+1: 4.c++;8g+;f+;e+;
+2: a--a-;eac+;ac+f+;
+BAR
+
+1: 4.d++;8c++;b+;a+;
+2: b--b-;fbd+;bd+a+;
+BAR
+
+1: 4.f#+;8g+;4;
+2: e-e;gbe+;be+g+;
+BAR
+
+1: 8g+;c+;4.;8f+;
+2: a--a-;eabn;eac+;
+BAR
+
+1: 8f+;b;4.;8d+;
+2: g--g-;fbe+;fbd+;
+BAR
+
+1: 2.c+;
+1 2: 8g;f;;4e;8;
+2: a--a-;eac+;;
+BAR
+
+1: 2b~;8;a;
+1 2: 8e;d;;c;4d;
+2: b--b-;dab;;
+BAR
+
+1: 2.g;
+1 2: 8d;e;;;4;
+2: c-c;egbn;egc+;
+BAR
+
+1: 2g~;8;c+;
+1 2: 8d;e;;;4;
+2: a--a-;eac+;;
+BAR
+
+1: 2d+~;8;;
+1 2: 8a;g;;f;g;a;
+2: b--b-;eac+;fbd+;
+BAR
+
+1: 2.e+;
+1 2: 8g;c+;;4;8;
+2: c-c;gc+e+;;
+BAR
+
+1: 2.e+;
+1 2: 8g;c+;;4;8;
+2: b--b-;gc+e+;;
+BAR
+
+1: 2.e+;
+1 2: 8g;c+;;4;8;
+2: a--a-;ead+;eac+;
+BAR
+
+1: 2.d+;
+1 2: 8an;b;;4;8;
+2: g--g-;fbc+;fbd+;
+BAR
+
+1: 2.c+;
+1 2: 8g;a;;4;8g;
+2: f-f;eac+;;
+OCT
+BAR
+
+1: 2.d+;
+1 2: 8f;g;a;b;c+;d+;
+2: b--b-;eac+;fbd+;
+BAR
+
+1: 8g;c+;f+;e+;d+;c+;
+2: c-c;gc+e+;c+e+g+;
+BAR
+
+1: 8f+;e+;d+;c+;b;a;
+2: a--a-;eac+;ac+e+f+;
+BAR
+
+1: 8f+;e+;d+;c+;b;a;
+2: f-f;fac+;ac+e+f+;
+OCT
+BAR
+
+1: 8g;f;4.g;8dbn;
+2: g-g;eac+;dgbn;
+OCT
+PED
+bar ending "1."
+
+1: 2.ec+;
+2: c-c;2egc+;
+PED
+repeatend ending "2."
+
+1: 4.ec+;8g;f;e;
+2: c-c;2egc+;
+PED
+bar endending
+
+1: 4.c+;16d+;c+;8.b;16a;
+2: a-;eac+;ac+f+;
+BAR
+
+1: 4.b;16c+;b;8.a;16g;
+2: g-;dgb;gbd+;
+BAR
+
+1: 4.a;16b;a;8.g;16e;
+2: f-;eac+;;
+BAR
+
+1: 4.f;8d;c;b-;
+2: b--;dab;da;
+BAR
+
+1: 4.g;8b;4;
+2: e-;gbf+;bd&+e+;
+BAR
+
+1: 4.b;8e;4;
+2: a--;eac+;eac&+;
+BAR
+
+1: 4.b-;8g;4;
+2: e-;b-eg;gd&+e+;
+BAR
+
+1: 4.g;8c;4c&;
+2: a--;eac+;8e;f;
+BAR
+
+1: b-;4.b;8;
+2: e-;gbe+;;
+BAR
+
+1: 8b;c;4.;8c&;
+2: a--;ea;;
+BAR
+
+1: b-;4.;8c;
+2: b--;efa;dfa;
+BAR
+
+1: 2e;8;d&;
+2: e-;2b-eg;
+BAR
+
+1: c;4.;8d&;
+2: a-;ea;;
+BAR
+
+1: 2e~;8;en;
+2: c-;ebc+;eac+;
+BAR
+
+1: f;4.;8g;
+2: d&-;fae+;fad&+;
+BAR
+
+1: 2a;4b;
+2: d-;dab;abf+;
+BAR
+
+1: 2.c+;
+2: e-;eac+;;
+BAR
+
+1: 2.c+;
+2: en-;enac+;;
+BAR
+
+1: 2c+;4a;
+2: f-;fac+;;
+BAR
+
+1: 2.f;
+2: d&-;fad&+;;
+BAR
+
+1: 2.f;
+2: e-;abd&+;;
+BAR
+
+1: 2e~;8;f;
+2: e-;gbd&+;;
+BAR
+
+1: 2a;4b;
+2: a--;eac+;enad&+;
+BAR
+
+1: 2.a+~;
+2: a-;2eac+ tie;
+BAR
+
+1: 2.a+;
+2: 2.eac+;
+rom between 1&2: 1 "D.C. al Fine";
+DBLBAR

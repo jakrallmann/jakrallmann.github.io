@@ -1,0 +1,151 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(September 10, 2023)"
+footer
+        title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	musicscale=0.92
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+ 
+midi all: 0 "tempo=60";
+midi 1: 0 "onvelocity=86";
+
+1: 4.s;8d+;16c+;d+;e+;d+;
+2: mr;
+bar
+
+1: 4.g;8d+;16c+;d+;e+;g;
+2: g-;2gbd+;
+bar
+
+1: 4.f#;8d;16en;f;g;an;
+2: an-;2f#c+d+;
+bar
+
+score
+	time=2/4
+	beamstyle=4,4
+music
+
+1: b~;16;c+;d+;b;
+2: g-;gbd+;
+bar
+
+1: 16e+;f+;8g+~;16;e+;d+;c+;
+2: c;gc+e+;
+bar
+
+1: 16f#+;g+;8an+~;16;e+;d+;c+;
+2: an-;f#c+d+;
+bar
+
+1: 16an+;b+;8g+~;16;d+;;;
+2: g-;gbd+;
+bar
+
+1: 16d+;c+;8c+~;16;;;;
+2: a-;eac+;
+bar
+
+1: 16an;b;8~;16;;;;
+2: g-;gbd+;
+bar
+
+1: 16b;a;;~;;g;;e;
+2: f-;fac+;
+bar
+
+1: 16f;g;a;b;c+;d+;e+;f+;
+2: b--;fbd+;
+bar
+
+1: 16a+;g+;;f+;4g+;
+2: e-;gbd+;
+bar
+
+1: 16g+;e+;;c+;4;
+2: a-;eac+;
+bar
+
+1: 16c+;b;;;;c+;8f+;
+2: b-;8c+;d+;
+2 2: s;ea;
+bar
+
+1:  16f+;e+;;;4;
+2: e-;gbd+;
+bar
+
+1: 16d+;c+;;;4;
+1 2: f;e;
+2: c-;egc+;
+bar
+
+1: 16b;a;;;4;
+1 2: e;d;
+2: a-;ea;
+bar
+
+1: 16g;f;;;4;
+1 2: a-;16f-;g-;8an-;
+2: f-;8an-;f-;
+bar
+
+1: 8b;c+;d+;f+;
+1 2: 2da;
+2: 8b-;a-;g-;b--;
+bar
+
+1: 16e+;c+;;;8;;
+1 2: g;8f;g;
+2: c-;egc+;
+bar
+
+1: 16e+;c+;;;8;;
+1 2: g;8f;g;
+2: b--;egc+;
+bar
+
+1: 16e+;c+;;;8;;
+1 2: g;8f;e;
+2: a--;eac+;
+bar
+
+1: 16an;b;;;8;;
+1 2: d;8c;d;
+2: g--;dgb;
+bar
+
+1: 16b;a;;;8;;
+1 2: d;c;
+2: a-;ea;
+bar
+
+1: 16a;g;;f;g;a;8d+;
+1 2: d;8;f;
+2: b--;dab;
+bar
+
+1: 16e+;f+;e+;f+;4e+;
+1 2: 16g;a;g;a;4g;
+2: e-;gbe+;
+endbar

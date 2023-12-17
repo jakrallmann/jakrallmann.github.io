@@ -1,0 +1,216 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(September 11, 2022)"
+footer
+        title (12) "\(copyright) Copyright 2022 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=1#
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=8,26
+	scale=0.8
+	vscheme=2f
+
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "onvelocity=90,48";
+midi 1 2: 0 "onvelocity=48";
+midi 2 1-2: 0 "onvelocity=48";
+midi all: 0 "tempo=58";
+
+define T1
+1: s;;{16b;c+;b;a#;b;}5;
+2: s;;r;
+bar
+
+1: 2g+;{16g+;a+;g+;f+;g+;}5;
+2: e-;gbe+;d;
+bar
+
+1: 2b+~;8;g+;
+2: c;gbe+;b-;
+bar
+
+1: 8c+;d+;4.e+;8c+;
+2: a-;gc+e+;g-;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: {16a;b;a;g#;a~;}5;8;4a#;8c+;b;fn;
+2: f-;d-;g-;dgb;
+bar
+
+score time=3/4
+music
+
+1: 8e;d+;4.c+;16e;e&;
+2: c-;egd+;egc+;
+bar
+
+1: 8d;c+;4.b;16d;d&;
+2: b--;dga;dgb;
+bar
+
+1: 8c;g#;4.a;8gn~;
+2: a--;egac+;e&gac+;
+bar
+
+score time=2/4 ; beamstyle=4,4
+music
+
+1: 8g;a;e&;d;
+2: d-;dfc+;
+bar
+
+score time=3/4
+music
+
+1: 8b;e&+;4.d+;8g;
+2: g-;gafn+;gbf+;
+bar
+
+1: 8fn+;e&+;4.c+;8g;
+2: c-;gc+d+;gc+e&+;
+bar
+
+1: 8f;e;f;g;g#;a~;
+2: d-;dfe&+;dfc+;
+bar
+
+1: 8a;a#;b;c+;c#+;d+;
+2: g-;dgb;gbfn+;
+bar
+
+1: 8e&+;4g;a;16b;c+;
+2: c-;gc+e&+;;
+bar
+
+1: 2.bd+;
+1 2: 4.a;4g;8d;
+2: g-;dgb;;
+bar
+
+1: 8c+e&+;d+f+;2e+g+;
+1 2: s;8d+;c+;4a;
+2: c-;gc+e&+;;
+bar
+
+1: r;2d+g+b+;
+2: g-;2bd+g+;
+rom between 1&2: 2 "Fine";
+mussym above all: 2 "ferm";
+dblbar
+@
+T1
+
+score time=2/4
+music
+
+1: 4.b;16c+;b;
+1 2: a;g;
+2: e-;egb;
+bar
+
+1: 4.b;16c+;b;
+1 2: e;e&;
+2: f-;fb;
+bar
+
+1: 2b;
+1 2: 8e;f;e;b-;
+2: g-;eg;
+bar
+
+1: 2c+;
+1 2: 8b;4a;8e;
+2: a-;eac+;
+bar
+
+1: 4.f;8e;
+1 2: 8c;b-;a-;g-;
+2: b--;ce;
+bar
+
+1: 8a;g;;f;
+1 2: 8c;b-;4a-;
+2: b--;b-e&;
+bar
+
+1: 4.g#;8b;
+1 2: 8d;c;4d;
+2: e-;eg#;
+bar
+
+1: 2c+;
+1 2: 8b;a;e;g;
+2: a-;eac+;
+bar
+
+1:4.d#+;8f+;
+1 2: 8f;g;a;f;
+2: b-;fab;
+bar
+
+1: 4.e+;8f+;
+1 2: 8g;f;e;d;
+2: e-;d-;
+bar
+
+1: 8gbc+e+g+;e;4a-;
+2: 2c-;
+bar
+
+1: 16r;a-;d;e;a;f;e;d;
+2: 2d-;
+bar
+
+score time=3/4
+music
+
+1: 16r;b-;e;f;2g;
+2: 2.e-;
+bar
+
+1: 16r;a-;d;e;2f;
+2: 2.d-;
+bar
+
+staff 1 clef=bass
+music
+
+rom above 1: 2 "D.C. al Fine";
+1: 16r;b-;a-;b-;2e~;
+2: 2.e-~;
+octave below 2: 1 "8va" til 1m+2;
+bar 
+
+1: 2e;4s;
+2: 2e-;4s;
+invisbar
+
+staff 1 clef=treble
+music
+
+1: ms;
+2: ms;
+dblbar
+
+ifdef MIDI
+T1
+endif

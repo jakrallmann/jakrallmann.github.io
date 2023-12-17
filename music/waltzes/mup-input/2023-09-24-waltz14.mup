@@ -1,0 +1,256 @@
+//!Mup-Arkkra
+
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(September 24 and October 1, 2023)"
+
+header2
+	title (12) "Waltz - page \%"
+footer
+	title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=4&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+//	scale=0.95
+	scoresep=10,28
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+music
+
+define PED
+ifdef MIDI pedal below 1,2: 1; endif
+@
+
+define BAR 
+PED
+bar
+@
+define DBLBAR 
+PED
+dblbar
+@
+
+midi all: 0 "tempo=96";
+midi 1 1: 0 "onvelocity=86,76";
+
+1: r;16r;g+;a+;b+;e++;dn++;c++;b+;
+2: e-;gbe+;be+g+;
+BAR
+
+1: 4.dn++;16e++;d++;dn+;en+;f+;a+;
+2: a-;eac+;8ac+en+;f+;
+BAR
+
+1: 4.c++;8b+;16dn+;e+;en+;f+;
+2: b-;abdn+;;
+BAR  
+
+1: 4.a+;8g+;dn+;e+;
+2: e-;gbe+;be+g+;
+BAR
+
+1: 4.g+;8f+;16c+;dn+;e+;f+;
+2: f-;eac+;ac+f+;
+BAR
+
+1: 4.e+;8dn+;c+;b;
+2: b-;abdn+;bd+g&+;
+BAR
+
+1: 16g+;a+;b+;c++;4b+;16d+;e+;f+;e+;
+2: e-;gbe+;be+g+;
+BAR
+
+1: 8d+;c+;4;8dn+;e+;
+2: a-;eac+;ac+e+;
+BAR
+
+1: 8e+;dn+;4;8c++;b+;
+2: b-;abdn+;abg&+;
+BAR
+
+1: 8g+;;4;8c+e+;gd+;
+2: e-;gbe+;be+g+;
+octave above 1: 1 "8va" til 4;
+BAR
+
+1: 8f+d++;e+c++;4;c+a+;
+2: a-;eac+;enac+;
+BAR
+
+1: 8e+c++;d+b+;4.;8c+a+;
+2: b-;fbe+;fbd+;
+BAR
+
+1: 8bd+a+;bd+g+;4;8c+a+;d+b+;
+2: e-;ad+f+;gd+e+;
+BAR
+
+1: 8f+d++;e+c++;4;8bng+;c+a+;
+2: a-;eac+;ac+e+;
+BAR
+
+1: 8e+c++;d+b+;2;
+2: b-;abd+f+;;
+BAR
+
+1: 8bg+;c+a+;d+b+;c+a+;4bg+;
+2: e-;gbe+;be+g+;
+BAR
+
+1: 2.c+a+;
+2: a-;eac+;;
+DBLBAR
+
+newscore 
+score key=5&
+music
+
+1: 8c+a+;;bgn+;;c+a+;;
+2: f-;fac+;ac+f+;
+BAR
+
+1: 8c+a+;bg+;2;
+2: g-;gbc+;gbd+;
+BAR
+
+1: 8c+e+;d+f+;c+g+;bf+;4c+e+;
+2: a-;eac+;ac+g+;
+BAR
+
+1: 2d+f+ tie;8;bne+;
+2: d-;fad+;;
+BAR
+
+1: 8bd+;;4and+;bd+;
+2: g-;gbd+;;
+BAR
+
+1: 2d+b+;4ane+;
+2:g-;gbd+;bd+e+;
+BAR
+
+1: 8ad+;;4gnd+;ad+;
+2: f-;fad+;;
+BAR
+
+1: 2.a+;
+1 2: 8e+;;4d+;bn;
+2: f-;fae+;fad+;
+BAR
+
+1: 8bd+;;4and+;ae+;
+2: g-;gf+;ge+;
+BAR
+
+1: 2.ff+;
+1 2: 8d+;;;c+;b;a;
+2: d-;fad+;;
+BAR
+
+1: 8a;b;c+;d+;e+;c+;
+1 2: 8g;;;;4;
+2: e-;eac+;;
+BAR
+
+1: 4.fd+;8ge+;4af+;
+2: d-;fad+;ad+f+;
+BAR
+
+1:8bg+;;;anf+;4bg+;
+2: g-;gbe+;gbd+;
+BAR
+
+1: 8af+;;;gnen+;4af+;
+2: d-;fad+;;
+BAR
+
+1: 8ge+;gd+;ge+;fd+;4ec+;
+2: a-;eac+;;
+BAR
+
+1: 4.fd+;8d+;;c&+;
+2: d-;2fad+;
+DBLBAR
+
+score key=6&
+music
+
+1: 8b;;;a;b;c+;
+2: g;dgb;;
+BAR
+
+1: 8d+;;;cn+;d+;f+;
+2: b-;fbg+;ad+f+;
+BAR
+
+1: 8e+;;;d+;e+;g+;
+2: c;gc+e+;;
+BAR
+
+1: 4.f+;8g+;4a+;
+2: d;ad+e+;ad+f+;
+BAR
+
+1: 8c++;b+;4.;8a+;
+2: g;<<staff clef=treble>> dga;dgb;
+BAR
+
+staff 2 clef=bass
+music
+
+1: 8c++;b+;4.b+;8g+;
+2: e;gbdn+f+;gbe+;
+BAR
+
+1: 8b+;a+;4.;8g+;
+2: c;gc+e+;;
+BAR
+
+1: 8a+;b+;a+;f+;e+;d+;
+2: d;ad+f+;c+f+a+;
+BAR
+
+1: 8b+;;;a+;4b+;
+2: g-;gbf+;gbe+;
+BAR
+
+1: 8a+;;;g+;a+;e+;
+2: c;gc+e+;;
+BAR
+
+1: 8f+;;;e+;d+;c+;
+2: d;ad+f+;;
+BAR
+
+1: 4.b;8g;f;e;
+2: e;gbe+;;
+BAR
+
+1: 8c;;2;
+2: a-;dea;dfa;
+BAR
+
+1: 8b-;;2;
+2: g-;da;gd;
+BAR
+
+1: 8a-;b-;c;d;e;f;
+2: d-;a-fd;;
+BAR
+
+1: 2.g;
+2: g-;2dgb;
+ifdef MIDI pedal below 1,2: 1;4*; endif
+endbar

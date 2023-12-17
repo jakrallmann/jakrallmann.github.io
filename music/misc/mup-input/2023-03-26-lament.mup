@@ -1,0 +1,145 @@
+header
+	title (18) "Native's Lament"
+	title "" "John A. Krallmann"
+	title " " "(March 26, 2023)"
+
+footer
+	title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	key=2&
+	beamstyle=4,4,4
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	release=0
+staff 2
+	clef=bass
+music
+
+midi all: 0 "tempo=72";
+midi 1: 0 "onvelocity=104"; 0 "channel=11"; 0 "program=75";
+midi 2: 0 "onvelocity=40"; 0 "channel=12"; 0 "program=71";
+
+1: 2s;16r;b;a;b;
+2: 2s;4r;
+bar
+
+1: 4.d;8e~;16;f;g;a;
+2: c;g;b;
+bar
+
+1: 2d~;8;b-;
+2: b-;f;a;
+bar
+
+1: 2e;16r;d+;c+;b;
+2: c;g;b;
+bar
+
+1: 8a;g;4.a;16c#;d;
+2: d;f#;c+;
+bar
+
+1: 8bn;a;4.b;16f+;e+;
+2: g-;d;bn;
+bar
+
+1: 8d+;c+;d+;4e+;8g;
+2: c;g;e+;
+bar
+
+1: 2a; 16c+;b;a;b;
+2: d;a;e+;
+bar
+
+1: 2.g;
+2: g-;d;b;
+bar
+
+1: r;;8c#+;d+;
+2: g;e+;d+;
+bar
+
+staff 2 clef=treble
+music
+
+1: 2b+~;8;d+;
+2: g-;d;b;
+bar
+
+1: 8a+;g+;a+;g+;8.f+;16e+;
+2: e;a;c;
+bar
+
+1: 2d+;8r;b;
+2: g-;d;b;
+bar
+
+staff 2 clef=bass
+music
+
+1: 2g+~;8;d+;
+2: e;b;c+;
+bar
+
+staff 2 clef=treble
+music
+
+1: 2.c+;
+2: f-;e;a;
+bar
+
+1: 2c+;8bn;c+;
+2: f#-;d;a;
+bar
+
+1: 2a+;8c#+;d+;
+2: f#-;d;a;
+bar
+
+1: 2.b+;
+2: g-;d;b;
+bar
+
+1: 2c++;8a+;g+;
+2: e-;b-;g;
+bar
+
+1: 2.f+;
+2: f-;c;g;
+bar
+
+1: [grace;slash1]8g+;2.f+;
+2: 2.a;
+bar
+
+1: [grace]8c+;[]d+;2.g+~;
+2: g-;d;a;
+bar
+
+1: 2.g+;
+2: 2.b;
+bar
+
+1: [grace]8c++;[]b+;2.g+;
+2: f-;c;g;
+boldital between 1&2: 1 "pp";
+bar
+
+1: 2.g+;
+2: 2.a;
+bar
+
+1: 2.g+~;
+2: g-~;g-~d~;g-~d~a;
+bar
+
+mussym above all: 1 "ferm";
+1: 2.g+;
+2: 2.g-da;
+endbar

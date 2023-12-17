@@ -1,0 +1,305 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(May 21 and July 2, 2023)"
+footer
+        title (12) "\(copyright) Copyright 2023 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	musicscale=0.92
+staff 1
+	vscheme=2f
+
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+ 
+midi all: 0 "tempo=112";
+midi 1: 0 "onvelocity=86";
+
+1: d;;;;e;d;
+2: g-;dgb;
+bar
+
+1: a;;;;b;a;
+2: f#-;df#ac+;
+bar
+
+1: e+;;;;f+;e+;
+2: c-;gbe+g+;
+bar
+
+1: f#+;d+;a;e;d;c;
+2: d-;df#a;
+bar
+
+1: b-;g;f#;4g;8a;
+2: g--;dgb;
+bar
+
+1: b;c+;;;d+;;
+2: e-;gbe+;
+bar
+
+1: d+;e+;;;f+;e+;
+2: c-;gc+e+;
+bar
+
+1: f#+;d+;f+;a+;f+;a+;
+2: d-;f#ac+e+;
+bar
+
+staff 2 clef=treble
+music
+
+1: e++;d++;c++;b+;a+;d+;
+2: cef#c+;<<staff clef=bass>>f#ac+e+;
+bar
+
+1: a+;b+;a+;4.g+;
+2: g--;dgb;
+bar
+
+1: a+;b+;a+;4.g+;
+2: e-;gbe+;
+bar
+
+1: a+;b+;a+;g+;f+;e+;
+2: c-;gbe+g+;
+bar
+
+1: 4.f#+~;8;c#+;d+;
+1 2: d+;c+;b;4.a;
+2: d-;df#ac+;
+bar
+
+1: 4.bn+~;8;f#+;g+;
+2: g--;dgbn;
+bar
+
+1: 4.bn+~;8;f#+;g+;
+2: f-;dgbn;
+bar
+
+1: 4.d++~;8;c++;bn+;
+2: en-;engc+;
+bar
+
+1: 4g+;a+;b+;
+2: e(&)-;egc+;
+bar
+
+1: 4bn+;g+;d+;
+2: g--;dgbn;
+bar
+
+1: 4f+;e+;d+;
+2: e-;gbe+;
+bar  
+
+1: 4.d+~;8;c+;b;
+2: d-;f#ac+d+;
+bar
+
+1: a;b;a;4.g;
+2: g--;dgb;
+bar
+
+1: d;c;b-;4a-;8b-;
+2: e-;b-eg;
+bar
+
+1: 2.g-;
+2: g--;<<staff clef=treble>>dgb;
+dblbar
+
+staff 2 clef=bass
+music
+
+1: d;f;b;d+;c+;b;
+2: b--;dfb;
+bar
+
+1: 4.a;d;
+2: d-;df#c+;
+bar
+
+1: g;f;g;f;e;f;
+2: e-;egb;
+bar
+
+1: 2.d;
+2: b--;dfb;
+bar
+
+1: c;d;e;;f;g;
+2: c-;egc+;
+bar
+
+1: 4.b;4a;8g;
+2: f-;fac+e+;
+bar
+
+1: f;;;4;8e;
+2: b-;dfb;
+bar
+
+1: {4d;d+;}2,4.;{e+;d+;}2,4.;
+2: g--;dfgbn;
+bar
+
+1: c+;;;{4;g;}2,4.;
+2: c-;gc+e+;
+bar
+
+1: a;;;{g;f;}2,4.;
+2: f-;fae+;
+bar
+
+1: 2.b~;
+2: b--;egc+;
+bar
+
+1: 2.b;
+2: 2.fbd+;
+dblbar
+
+score time=9/8 ; beamstyle=4.,4.,4.
+staff 2 timeunit=4.
+music
+
+1: 4.g~;8;a;b;d+;c+;b;
+2: e-;gbe+;;
+bar
+
+1: 4.f~;8;g;a;b;c+;b;
+2: d-;dfb;;
+bar
+
+1: 4.e~;8;c;d;e;f;g;
+2: c-;ceg;cegb;
+bar
+
+1: 4.b~;8;c+;b;{a;b;c+;d+;e+;}5,4.;
+2: f-;eac+;;
+dblbar
+
+score time=6/8
+music
+
+1: 4.f+~;8;g+;f+;
+2: b--;fad+;
+bar
+
+1: 4.f+~;8;g+;f+;
+2: a&--;a&c+e+f+;
+bar
+
+1: 4.f+~;8;e+;d+;
+2: g--;fa&c&+d+;
+bar
+
+1: 4g;a;b;
+2: e-;gbe+;
+bar
+
+1: 2.f;
+2: d-;dfb;
+bar
+
+1: 4f;e;d;
+2: c-;ceg;
+bar
+
+1: 2.e;
+2: f-;cfa;
+bar
+
+1: 4e;d;c;
+2: b--;dfb;
+bar
+
+1: 2.d;
+2: g--;dgb;
+bar
+
+1: 4d;c;b-;
+2: c-;ceg;
+bar
+
+1: 4c;b-;a-;
+2: f--;cef;
+bar
+
+1: 2.b-~;
+2: b--;g&-b-e;
+bar
+
+1: 2.b-;
+2: 2.f-b-d;
+dblbar
+
+midi all: 0 "tempo=102";
+1: d;f;b;{e+;d+;8c+;b;}4,4.;
+2: b--;dgb;
+ital between 1&2: 1 "rubato";
+bar
+
+1: a;b;a;d;e;d;
+2: d-;df#c+;
+bar
+
+1: g;a;g;f;e;f;
+2: e-;egb;
+bar
+
+1: d;c;b-;4.f-;
+2: b--;dgb;
+bar
+
+1: g-;a-;b-;e;f;g;
+2: c-;egc+;
+bar
+
+1: b;c+;b;a;g;a;
+2: f-;fac+e+;
+bar
+
+1: f;;;{4;e;}2,4.;
+2: b-;dfb;
+bar
+
+1: {4d;d+;}2,4.;{e+;d+;}2,4.;
+2: c&-;fa&c&+d+;
+bar
+
+1: c+;;;e+;d+;c+;
+2: c-;gc+e+;
+bar
+
+1: a;;;g;f;c+;
+2: f-;fac+e+;
+mussym above 1: 6 "ferm";
+bar 
+
+1: 2.b~;
+2: b--;g&bc+;
+bar
+
+1: 2.b;
+2: 2.fbd+;
+endbar

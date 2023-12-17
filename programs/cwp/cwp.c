@@ -46,11 +46,13 @@
 /* Use US paper size */
 #define PAPERHEIGHT 11.0
 #define PAPERWIDTH 8.5
-#define TOPMARGIN 1.0
+#define TOPMARGIN 1.2
 #define LEFTMARGIN 0.5
 #define PPI 72.0
 #define TITLESIZE 16
 #define TITLELOC 0.7
+#define SUBTITLESIZE 11
+#define SUBTITLELOC 0.9
 #define SIZE 11
 #define HPAD 2
 #define VPAD 1
@@ -132,8 +134,8 @@ print_data(int width, int height, double cellsize, char *letters,
 				/* Print letter in square */
 				int xoff, yoff;
 				if (cellsize < 0.45) {
-					xoff = 8;
-					yoff = 17;
+					xoff = 7;
+					yoff = 16;
 				}
 				else {
 					xoff = 12;
@@ -321,6 +323,15 @@ print_title(const char *title)
 }
 
 
+void
+print_subtitle(const char *subtitle)
+{
+	printf("%f 2.0 div %f mul %f %f mul moveto\n", PAPERWIDTH, PPI, PAPERHEIGHT - SUBTITLELOC, PPI);
+	printf("/TimesRoman findfont %d scalefont setfont\n", SUBTITLESIZE);
+	printf("(%s) dup stringwidth exch -2.0 div exch rmoveto show\n", subtitle);
+}
+
+
 int
 main(int argc, char **argv)
 {
@@ -332,6 +343,7 @@ main(int argc, char **argv)
 	int row;
 	int col;
 	char *title = 0;
+	char *subtitle = 0;
 	char *letters;
 	short *numbers;
 	int num;
@@ -370,8 +382,14 @@ main(int argc, char **argv)
 	 * how many rows and columns there are. */
 	while (fgets(buff, sizeof(buff), file)) {
 		if (buff[0] == '\t') {
-			buff[strlen(buff)-1] = '\0';
-			title = strdup(buff+1);
+			if (title == 0) {
+				buff[strlen(buff)-1] = '\0';
+				title = strdup(buff+1);
+			}
+			else {
+				buff[strlen(buff)-1] = '\0';
+				subtitle = strdup(buff+1);
+			}
 			continue;
 		}
 		lwidth = strlen(buff) - 1;
@@ -468,9 +486,17 @@ main(int argc, char **argv)
 	printf("1 setlinewidth\n");
 	printf("0.1 setgray\n");
 
+	if (title != 0) {
+		print_title(title);
+	}
+
 	offset = (PAPERWIDTH - (2.0 * LEFTMARGIN) - (width * cellsize)) / 2.0;
 	if (answer) {
 		int asize;
+
+		if (subtitle != 0) {
+			print_subtitle(subtitle);
+		}
 
 		if (cellsize < 0.45) {
 			asize = 14;
@@ -487,9 +513,6 @@ main(int argc, char **argv)
 		print_grid(width, height, cellsize, offset);
 	}
 	else {
-		if (title != 0) {
-			print_title(title);
-		}
 		nsize = SIZE;
 		if (cellsize < 0.425) {
 			nsize--;
