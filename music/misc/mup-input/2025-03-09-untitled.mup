@@ -1,0 +1,125 @@
+
+header
+	title "" "John A. Krallmann"
+	title "" "(March 9, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1-2: 0 "channel=11"; 0 "onvelocity=96,80";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=80";
+midi 2 1: 0 "channel=13"; 0 "onvelocity=70";
+midi all: 0 "tempo=112";
+
+1: 2s;8e+e++;d+d++;
+2: 2s;4r;
+bar
+
+1: 2.c++;
+1 2: c+;d+f+;e+g+;
+2: c-;gc+e+;;
+bar
+
+1: 2.c++;
+1 2: c+;8f+a+;e+g+;4d+f+;
+2: f-;ac+f+;c+f+a+;
+bar
+
+1: 2.bn+;
+1 2: 8bn;f+a+;e+g+;d+f+;c+e+;d+f+;
+2: g-;gd+f+;;
+bar
+
+1: 4.e+g+e++;8d+f+d++;4c+e+c++;
+2: c-;gc+e+;;
+bar
+
+1: 2.a+;
+1 2: 8ac+;bd+;c+e+;d+f+;e+g+;f+a+;
+2: f-;ac+f+;c+f+a+;
+bar
+
+1: gg+;8fd+;ge+;4af+;
+2: g--g-;gbnd+;;
+bar
+
+1: faf+;ege+;dfd+;
+2: g--g-;dfbn;dgb;
+bar
+
+1: 8ege+;dfd+;4.cec+;8dfbd+;
+2: c-c;8f-f;g-g;c-c;a--a-;
+octave below 2: 1 "8va" til 2.8;
+bar
+
+1: 2eac+e+;16ee+;ff+;8gg+;
+2: 8a--a-;e-e;cc+;b-b;a-a;g-g;
+dblbar
+
+score
+	time=4/4
+	beamstyle=4,4,4,4
+music
+
+1: 2ac+a+;;
+2: f-f;fac+;e-e;fac+;
+bar
+
+1: 4aba+;fab;8b;c+;d+;f+;
+1 2: 2s;fa;
+2: d-d;fad+;b--b-;fbd+;
+bar
+
+1: faf+;ege+;2ee+;
+2: e-e;egb;c-c;egc+;
+bar
+
+1: faf+;ee+;2eae+;
+2: a--a-;eab;eac+;g--g-;
+bar
+
+1: faf+;ege+;dand+;dac+;
+2: f-f;fac+;f#-f#;df#a;
+octave below 2: 1 "8va"; 3 "8va";
+bar
+
+1: 2gg+;4anan+;bnbn+;
+2: g-g;f-f;e-e;d-d;
+octave below 2: 1 "8va" til 1m+ 1.5;
+bar
+
+1: 2c+e+c++;ac+f+a+;
+2: c-c;egc+;f-f;ac+f+;
+octave below 2: 3 "8va";
+bar
+
+1: 8gg+;ff+;ee+;dd+;4ee+;cc+;
+2: g-g;dfgbn;c-c;8cf;g;
+octave below 2: 1 "8va"; 3 "8va";
+bar
+
+1: 2ceac+;4c+;b;
+1 2: 2s;df;
+2: 2a--a-;b--b-;
+bar
+
+1: 1cegc+;
+2: 1c-c;
+octave below 2: 1 "8va";
+endbar

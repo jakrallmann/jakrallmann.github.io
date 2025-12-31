@@ -1,0 +1,270 @@
+header
+	title (18) "Rock Rhythm Etude"
+	title "" "John A. Krallmann"
+	title "" "(April 14-28, 2024)"
+header2
+	title (12) "Rock Rhythm Etude - \%"
+
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=4/4
+	beamstyle=2,2
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	//scoresep=10,24
+	//packfact=1.15
+	musicscale=0.85
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "program=66"; 0 "onvelocity=100";
+midi 1 2: 0 "channel=12"; 0 "program=66"; 0 "onvelocity=100";
+midi 2 1: 0 "channel=13"; 0 "program=33"; 0 "onvelocity=110";
+midi all: 0 "tempo=116";
+
+1: 8r;4.eac+ tie;4;;
+2: 4.a-;8~;;e-;f#-;g#-;
+bar
+
+1: 8dgb;eac+;dgb;cea tie; 2;
+2: 4.a-;8~;;e-;f#-;g#-;
+bar
+
+1: 8ac+e+;bd+;ac+e+;fad+ tie;4;;
+2: a-;8c-;d-~;;e-;f-;a-;
+bar
+
+1: 8dgb;b-dg;;cea tie;4.;8e+;
+2: g-;8e-;a-~;;;c;e;
+bar
+
+1: 8e+;;c+;d+~;4;c+;
+1 2: 4.fa;8 tie;2;
+2: f-;8c;d~;;c;d;c;
+bar
+
+1: 8e;;d;e~;4;g;
+1 2: 1g-c;
+2: c-;8g-;a-~;;g-;e-;c-;
+bar
+
+1: 8cfa;;cfg;cfa tie;4;ac+f+;
+2: f-;8c;f~;;e;d;c;
+bar
+
+1: 8gbd+;;fac+;gbd+ tie;2;
+2: g-;8d;g~;;f-;e-;d-;
+bar
+
+1: 8gc+e+;;gbd+;gc+e+ tie;2;
+2: c-;8g-;c~;;c-;d-;e-;
+bar
+
+1: 8cfa;;cfg;cfa tie;4;8f+;e+;
+1 2: 2.s;4ac+;
+2: f-;8c-;f-~;;;4e-;
+bar
+
+1: 8gbd+;;fac+;gbd+ tie;2;
+2: g--;8d-;g-~;;;;g#-;
+bar
+
+1: 8eac+;;dgb;eac+ tie;2;
+2: a-;8e-;a-~;;;4;
+bar
+
+1: 8efa;;dfa;cfa tie;2;
+2: f-;8c;f~;;e-;d-;c-;
+bar
+
+1: 8dgb;;dga;dgb tie;2;
+2: g--;8d-;g-~;4;;
+bar
+
+1: 2cea;8r;e;a;b;
+2: 4.a-;8~;2;
+bar
+
+1: 4.eac+;8dgb tie;2;
+2: a-;8e-;a-~;;;4;
+bar
+
+1: cfa;8b;b-eg# tie;2;
+2: 8d-;4.;8e-;d-;c-;b--;
+bar
+
+1: 8a;b;c+;d+~;;;4;
+1 2: 4.ce;8fa tie;4;4;
+2: 2a--;4.d-;8c-;
+bar
+
+1:8dgb;b-dg;;cea tie;2;
+2: g--;8;a--~;;;4;
+bar
+
+1: 4.a-df;8e~;;d;4e;
+1 2: 4.s;8g#-b- tie;2;
+2: 8d-;a-;f;e-~;4;;
+bar
+
+staff 1 clef=bass
+music
+
+1: 8d+;c+;d+;b~;;a;4b;
+1 2: 4.fa;8dg tie;2;
+2: 2f-;4.g-;8g#-;
+bar
+
+1: 4.eac+;8tie;2;
+2: 8a-;;e-;a-~;;;4g-;
+bar
+
+1: 4.fac+;8fad+ tie;2;
+2: 8f-;;c-;f-~;;;4e-;
+bar
+
+1: 4.fad+;8fb&d+ tie;2;
+2: 8d-;;c-;b&--~;4;a--;
+bar
+
+1: 2ebe+;<<staff clef=treble>>8r;c+;4b;
+2: 8g#--;e-;c;b-~;4;e-;
+bar
+
+1: 2cea;8r;a;c+;e+;
+2: 8a-;;e-;a--~;4.;8;
+bar
+
+1: d+;8c+;d+~;4.;8e+;
+1 2: 1fa;
+2: 8d-;4.~;8;;4;
+bar
+
+1: a;8g;a~;2;
+1 2: 2.ce;4;
+2: 8a--;4.~;8;4;8c-;
+bar
+
+1: d+;8c+;d+~;2;
+1 2: 1fa;
+2: 8d-;4.~;8;;4;
+bar
+
+1: 8g#be+;;efbd+;gbe+ tie;2;
+2: e-;8b--;e-~;;d-;c-;b--;
+bar
+
+1: 8c+e+a+;;bd+g+;c+e+a+ tie;4.;8b+;
+2: a--;8e-;a-~;;;4g-;
+bar
+
+1: 2.c+f+a+c++;4;
+2: 8f-;;c-;f-~;;;4e-;
+bar
+
+1: 1d+f+a+d++;
+2: 8d-;;a-;d~;;;4c;
+bar
+
+1: 2.d+f+b&+d++;4d+f+a+c++;
+2: 8b&-;;f-;b-~;;;4a-;
+bar
+
+1: 1d+g+b+d++;
+2: g-;8d;g~;;;4f;
+bar
+
+1: 8e+a+c++;;e+a+b+;e+a+c++ tie;2;
+2: 2a-~;8;;4g-;
+bar
+
+1: 8c+f+a+;;c+f+g+;c+f+a+tie;2;
+2: 2f-~;8;;4e-;
+bar
+
+1: 8ac+f+;;ac+e+;ac+f+tie;2;
+2: d-;8;~;;e-;4f-;
+bar
+
+1:8gbd+;;fac+;gbd+tie;2;
+2: 2g-~;8;;;g#-;
+bar
+
+1: [with>]2eac+e+;8r;e;a;b;
+2: 8a-;;;;[with>]2a--;
+bar
+
+1: 4.eac+;8dgb tie;2;
+2: 8a-;;;e-~;;4;8;
+bar
+
+1: 4.cfa;8b-eg# tie;2;
+2: 8f-;;d-;e-~;;d-;c-;b--;
+bar
+
+1: 8a;b;c+;d+~;;;4;
+1 2: 4.ce;8fa tie;2;
+2: 2a--;4.d-;8f-;
+bar
+
+1: 8b;g;;a~;2;
+1 2: 4.dg;8ce tie;2;
+2: e-;8g-;a-~;;;;b-;
+bar
+
+1: 4.gc+e+;8gbd+ tie;2;
+2: 8c-;;e-;g-~;;4;8g#-;
+bar
+
+1: 4.eac+;8b~;;a;4b;
+1 2: 4.s;8eg tie;2;
+2: 8a-;;;e-~;4.;8;
+bar
+
+1: 8a;g;a;g~;;f;4e;
+1 2: 4.cf;8ce tie;2;
+2: 2f-;4.c-;8;
+bar
+
+1: 8d;;;f~;;;;g~;
+1 2: 4.f-a-;8a-d tie;4.;8b-d tie;
+2: 2d-;c-;
+bar
+
+1: 8g;;;f~;;;4;
+1 2: 4.b-d;8a-c tie;2;
+2: 2b--;a--;
+bar
+
+1: 1g-b-d;
+2: 8g--;d-;a-;g-~;;f-;e-;g--;
+bar
+
+1: 4.g-ce;8g-b-d tie;2;
+2: 8c-;;e-;g-~;;4;8g#-;
+bar
+
+1: 8a;;b;g~;;a;4b;
+1 2: 4.ce;8ce tie;2;
+2: 2a-;4.e-;8;
+bar
+
+1: 8a;g;a;g~;;f;4e;
+1 2: 4.cf;8ce tie;2;
+2: 2f-;4.c-;8;
+bar
+
+1: 8b;a;b;c+~;2;
+1 2: 4.dg;8eg tie;2;
+2: 2g-;c-;
+endbar

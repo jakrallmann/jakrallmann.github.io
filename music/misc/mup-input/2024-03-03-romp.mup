@@ -1,0 +1,176 @@
+header
+	title (18) "Romp"
+	title (12) "" "John A. Krallmann (March 3, 2024)"
+
+footer
+	title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+	title (4) " "
+	title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=2/2
+	beamstyle=2,2
+	brace=1-2
+	barstyle=1-2
+	measnum=y
+	musicscale=0.83
+	scoresep=10,22
+
+staff 1
+	vscheme=2f
+	timeunit=4
+staff 2
+	clef=bass
+	timeunit=2
+
+music
+
+midi all: 0 "tempo=132";
+
+1: r;8b;a;4b;g;
+2: g-~;g-d;
+bar
+
+1: r;8c+;b;2a;
+2: f#-~;f-d;
+bar
+
+1: r;8g;d;4.c;8b-;
+2: e-~;e-b-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.c+;8e+;[with.]d+;
+1 2: 8f#;en;2f;4s;
+2: d-~;d-a-;
+bar
+
+staff 1 clef=treble
+music
+
+1: r;8g;f;2g;
+1 2: 2s;4c;b-;
+2: g-~;g-d;
+bar
+
+1: r;2.g;
+1 2: s;8e;d;4e;c;
+2: c-~;c-g-;
+bar
+
+1: r;2.f#;
+1 2: s;8d;c;4d;a-;
+2: d-~;d-a-;
+bar
+
+1: r;8bd+;ac+;4bd+;gb;
+2: g-~;g-d;
+bar
+
+1: r;8c+e+;ac+;4f#a;ac+;
+2: f#-~;f-d;
+bar
+
+1: r;8gb;f#a;4gb;ac+;
+2: g-~;g-d;
+bar
+
+1: 1f#;
+1 2: 8a-;b-;4c;e;d;
+2: d-~;d-a-;
+bar
+
+1: 1bn;
+1 2: 8r;d;e;f;4a&;g;
+2: g-~;g-d;
+bar
+
+1: 2c+;4e+;c+;
+1 2: 8r;e;f;g;2s;
+2: c-~;c-g-;
+bar
+
+1: 2a;4cb;da;
+1 2: 8r;d;en;f#;2s;
+2: d-~;d-a-;
+bar
+
+1: 1g;
+1 2: 8r;b-;c;d;2g-;
+2: g-~;g-d;
+repeatboth
+
+1: <<staff clef=bass>>8r;b;c+;d+;2g;
+2: g-~;g-d;
+bar
+
+1: 8r;c+;d+;e+;2g;
+2: c-~;c-e;
+bar
+
+1: 8r;a;b;c+;f#;en;4f;
+2: d-~;d-a-;
+bar
+
+1: 8r;b;a;b;2g;
+2: g-~;g-d;
+bar
+
+1: 8r;e+;d+;e+;c+;b;4c+;
+2:c~;cg;
+bar
+
+1: 8r;d+;c+;b;a;b;4a;
+2: d~;df#;
+bar
+
+1: 8r;b;a;b;2g;
+2: g-~;g-d;
+bar
+
+1: 8r;b;a;b;2g;
+2: g-~;g-d;
+repeatboth
+
+score key=0&
+music
+
+1: <<staff clef=treble>> 8r;c;d;e;2;
+2: c-~;c-g-;
+bar
+
+1: 8r;f;g;a;2;
+2: f-~;f-c;
+bar
+
+1: 8r;g;f;d;2b-;
+2: g-~;g-d;
+bar
+
+1: 8r;c;d;e;2;
+2: c~;cg;
+bar
+
+1: 8r;c;d;e;4.c+;8b;
+2: c~;cg;
+bar
+
+1: 8b;a;;g;2a;
+2: f~;fc+;
+bar
+
+1: 8b;a;;g;a;b;c+;d+;
+2: g-~;4g-d;g-f;
+bar ending "1."
+
+1: 1ec+;
+2: 4c~;c~g;2cg;
+repeatend  ending "2."
+
+1: 1ec+;
+2: 4c;g-;2c-;
+endbar

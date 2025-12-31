@@ -1,0 +1,185 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(August 24, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title (12) "Waltz - \%"
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	packfact=1.1
+	scoresep=12,28
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1-2: 0 "channel=11"; 0 "onvelocity=110";
+midi 2 1-2: 0 "channel=12"; 0 "onvelocity=96";
+midi all: 0 "tempo=96";
+
+1: {8a;b;a;}3;g#;a;d+;e+;
+2: f#-;f#ad+;8f#+;g+;
+2 2: 2s;4ad+;
+bar
+
+1: 8bg+;af#+;4.ge+;8f#d+;
+2: e-;gbe+;gbd+;
+bar
+
+1: 8ge+;f#d+;4.ge+;8g#e#+;
+2: a--;egbd+;eac#+;
+bar
+
+1: 8f#+;b+;4c+a+;16d+;e+;f+;a+;
+1 2: 8a;16d+;d&+;4s;a;
+2: d-;8c+;d+;e+;c+;
+2 2: s;ega;f#a;
+bar
+
+1: 8c+a+;bg+;4.fd+;8f#d#+;
+2: g--;dfac+;gbd+f+;
+bar
+
+1: 8f#d#+;ge+;4e+;16;e#+;f+;g+;
+1 2: s;2g;
+2: c-;gc+e+;16e+;d+;c+;b&;
+2 2: 2s;4g;
+bar
+
+1: 8b&g+;af+;4.;16c#+;d+;
+2: f-;8e+;d+;c+;a;
+2 2: s;2fa;
+bar
+
+1: 8af+;ge+;4.;16b;c+;
+2: c-;ebd+;egac+;
+bar
+
+1: 8ge+;fd+;4.b-g;8ca;
+2: d-;df;d#f#;
+bar
+
+1: 2g;8f;g;
+1 2: 8d;c;d;e;4s;
+2: e-;eg;egb&;
+bar
+
+1: 4.a;8;eg#;fa;
+1 2: 8f;e;f;;4s;
+2: f-;fa;f-;
+bar
+
+1: 4.b;8;f#a#;gb;
+1 2: 8g;f#;g;;4s;
+2: g-;fgb;g-;
+bar
+
+1: 8ac+;g#b;ac+;f+a+d++;e+a+c++;bg+;
+2: a-;eac+;;
+bar
+
+1: 2.c+a+;
+2: f-;8e+;d+;c+;a;
+2 2: s;fa;f;
+bar
+
+1: 8c+a+;bg+;4.c+a+;8f+d++;
+2: g-;8a+;g+;f+;d+;
+2 2: s;2gb;
+bar
+
+1: 2e+c++;8r;16g+;f+;
+2:c-;egc+;;
+dblbar
+
+newscore
+
+score key=1&
+music
+
+1: 8e+;d+;4.e+;8;
+2: a-;eac+;;
+bar
+
+1: 8c+e+;bd+;2c+e+;
+2: b-;fbd+;;
+bar
+
+1: 8e+;c+;4.a;8ec+;
+2: a-;eac+;;
+bar
+
+1: 4.ec+;8fd+;db;ca;
+2: b-;dfb;dgb;
+bar
+
+1: 8b-g;a-f;4.b-g;8bn-g#;
+2: c-;eg;;
+bar
+
+1: 8bn-eg#;ca;4.cfa;8a;
+2: f-;cfa;;
+bar
+
+1: 8a;d;4.;8g;
+1 2:b-;2s;
+2: b-;dfa;dfg;
+bar
+
+1: 8g;c;2;
+1 2: a-;2s;
+2: f-;cfg;cfa;
+dblbar
+
+score key=2&
+music
+
+1: 8f;c;;d;e;d;
+2: e-;b-eg;a-eg;
+bar
+
+1: 8d;en;f#;a;e+;d+;
+2: d-;8e+;d+;c+;b;
+2 2: s;df#;cf;
+bar
+
+1: 8a+;g+;2g+;
+1 2: 8bd+;g;a;b;c+;d+;
+2: b--;dga;dgb;
+bar
+
+1: 8c+a+;bg+;af+;ge+;b;c+;
+1 2: 2s;4e;
+2: e-;b-ea;b-eg&;
+bar
+
+1: 8bd+;ac+;4.gb;8fa;
+2: g--;dga;dgb;
+bar
+
+1: 2eg;8r;gb;
+2: c-;egd+;egc+;
+bar
+
+1: 8f#d+;ec+;db;ca;b-g;a-f;
+2: d-d;d-en;d-f#;
+bar
+
+1: 2.b-g;
+2: 8g--;d-;a-;g-;e;d;
+bar
+
+1: 2.bg+;
+2: 2.g;
+endbar

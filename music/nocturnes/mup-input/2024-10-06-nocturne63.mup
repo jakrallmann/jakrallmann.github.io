@@ -1,0 +1,209 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(October 6, 2024)"
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=1&
+	time=2/4
+	beamstyle=4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	musicscale=0.8
+
+staff 2
+	clef=bass
+
+music
+ 
+midi all: 0 "tempo=64";
+midi 1: 0 "onvelocity=86";
+
+rom above 1: 1 "Rubato";
+1: 4s;8c;d;
+2: 8c;g;4s;
+ifdef MIDI pedal below 1-2: 1; endif
+bar
+
+1: 8e&;g;f;e;
+2: ms;
+bar
+
+1: 8e&+;d+;c+;b;
+2: 8a&-;e&;4c+;
+ifdef MIDI pedal below 1-2: 1; endif
+bar
+
+1: 8a&;g;f;e&;
+2: 8f-;c;4a&;
+ifdef MIDI pedal below 1-2: 1; endif
+bar
+
+1: 8d;c;4d;
+2: 8g-;d;bn;a;
+bar
+
+1: 8r;g-;c;d;
+2: bn;r;
+ifdef MIDI pedal below 1-2: 1*; endif
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 8f;e;4.c;8bn-;
+2: 8c-;g-;f;e;a-;g-;
+bar
+
+1: 2.a-;
+2: 8f-;c;g;f;c;e-;
+bar
+
+1: 8.a-;16d;4.f;8e;
+2: 8d-;a-;f;e;d;c;
+bar
+
+1: 2d~;8;c;
+2: 8bn-;f;bn;a;4a&;
+bar
+
+1: 4.bn-;8a-;4a&-;
+2: 8e-;bn-;4f;8e;d;
+bar
+
+1: 4.d&;8f;4e;
+2: 8a--;b;4a;8g;a--;
+bar
+
+score time=2/4
+music
+
+1: 8.e;32f;e;8.d;16a;
+2: 8d-;a-;f;d;
+bar
+
+score time=3/4
+music
+
+1: 2b~;8;a;
+2: 8g-;d;f+;d+;b;f;
+bar
+
+score time=2/4
+music
+
+1: 4.g;8c+;
+2: 8c;g;d+;e+;
+bar
+
+1: 8.a;32b;a;16g;c;d;e;
+2: 8f;c+;e;c+;
+bar
+
+1: 2f;
+2: 8d;a;d+;c+;
+bar
+
+1: 2g;
+2: 8b-;d;f#;g;
+ital between 1&2: 1 "cresc.";
+bar
+
+1: 2g;
+2: 8bn-;f;d+;g;
+bar
+
+1: 8.g;16a;b;c+;d+;e+;
+2: 8c;g;d+;e+;
+bar
+
+1: 8.g+;16f+;8e+;d+;
+2: 8d;a;d+;c;
+bar
+
+1: 8.g+;16f+;8e+;d+;
+2: 8b-;f;d+;a-;
+bar
+
+1: 8.g+;16f+;8e+;d+;
+2: 8g-;d;bn;f+;
+mussym above 1: 2.5 "ferm";
+ital between 1&2: 1 "rit. e dim.";
+midi all: 1 "tempo=55"; 2.5 "tempo=30";
+bar
+
+1: 8.d+;16c+;8b;g;
+2: 8c;g;d+;e+;
+ital between 1&2: 1 "a tempo";
+midi all: 1 "tempo=60";
+bar
+
+1: 8.g;16a;4f;
+2: 8f-;c;a;e-;
+bar
+
+1: 8.g;16a;4f;
+2: 8d-;a-;f;c-;
+bar
+
+1: 16g;a;g;f;4d;
+2: 8b--;f-;d;f;
+bar
+
+1: 8.d;16e~;8;16f;g;
+2: 8c-;g-;e;b;
+bar
+
+1: 16b;a;g;a~;4;
+2: 8f-;c;a;e-;
+ital between 1&2: 1 "cresc.";
+bar
+
+1: 16f+;e+;d+;a~;;b;8c+;
+2: 8d-;a-;e;c;
+bar
+
+1: 16d+;e+;f+;g+;b+;a+;g+;f+;
+2: 8b-;f;<<staff clef=treble>>d;b;
+bar
+
+staff 2 clef=bass
+music
+
+1: 16g+;f+;4g+;16a+;b+;
+2: 8c;g;d+;e+;
+bar
+
+1: 16a+;g+;4.a+;
+2: 8d;a;e+;f+;
+bar
+
+1: 16a+;g+;4a+~;16;g+;
+2: 8e&;b;g+;e&+;
+ital between 1&2: 1 "dim.";
+bar
+
+1: 16a+;g+;4a+~;16;d+;
+2: 8d;a;e+;f+;
+bar
+
+1: 16b;c+;4d+;16f+;g+;
+2: 8g;d+;<<staff clef=treble>>g;b;
+ital between 1&2: 1 "rit.";
+midi all: 0 "tempo=50";
+bar
+
+1: 2f+a+;
+2: 8d~;da tie;4dad+;
+midi all: 0 "tempo=36";
+boldital between 1&2: 1 "ppp";
+endbar

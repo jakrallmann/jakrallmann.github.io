@@ -1,0 +1,89 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(June 28-29, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=3&
+	time=4/4
+	beamstyle=4,4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	staffsep=16
+	scoresep=12,20
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1: 0 "channel=11"; 0 "onvelocity=96,72";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=72";
+midi 2: 0 "channel=13"; 0 "onvelocity=72";
+midi all: 0 "tempo=72";
+
+1: 2s;8e;g;f;e;
+2: 8c;g;c+;d+;2s;
+bar
+
+1: 8c+;b;a;b;4.c+;16d+;e+;
+2: 8f~;fa tie;fac+ tie;4.fac+f+;4e;
+bar
+
+1: 8f+;e+;d+;c+;4.bn;8c+;
+1 2: 2a;8r;d;g;e;
+2: 8d;a;f+;d+;4g;g-;
+bar
+
+1: 8d+;c+;b;a;2b-g;
+1 2: f;e;2s;
+2: 8a-;e;c+;c&+;e-;b-;f;g;
+bar
+
+1: b-c;a-c;2b-;
+1 2: 2s;4a-;g-;
+2: 8a-;e;f;e;e-;b-;e;b-;
+bar
+
+staff 1 clef=bass
+music
+
+1: ga;fa;4.g;<<staff clef=treble>>16f;g;
+1 2: 2s;4f;8en;s;
+2: 8d&-;a-;d&;a-;c-;g-;c;b-;
+bar
+
+1: bc+;ac+;b;;
+1 2: 2s;8g;;16;f;8e;
+2: 8f-;c;en;f;e-;b-;f;g;
+bar
+
+1: 8fa;;16;eg;8d&f;8.cen;16d;4c;
+2: 8d&-;a-;f;g;c-;g-;en;g-;
+dblbar
+
+score key=2&
+music
+
+1: 8an-;16;b-;c;f;b;a;g;f;e;d;4b-;
+2: 8f-;c;a;e;e-;b-;g;d;
+bar
+
+1: 16a-;c;f;a;8c+;c#+;[grace;slash1]8c+;8.d+;16g+;f+;e+;d+;cn+;
+2: 8f-;c;a;f;b--;f-;a&;d;
+bar
+
+1: 8.b;16d;4c;16a-;b-;c;f;a;d+;c+;32g;a;
+2: 8e-;b-;g;g&;f-;c;e;a;
+bar
+
+1: db;2.;
+2: 8b--;f-;2.b-;
+endbar

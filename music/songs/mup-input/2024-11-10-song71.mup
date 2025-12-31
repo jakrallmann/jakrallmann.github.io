@@ -1,0 +1,79 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(November 10, 2024)"
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=4/4
+	beamstyle=4,4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=9,24
+	packfact=1.8
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1-2: 0 "channel=11"; 0 "onvelocity=96";
+midi 2 1: 0 "channel=12"; 0 "onvelocity=72";
+midi all: 0 "tempo=92";
+
+1: 8c+a+;bng+;2c+a+;4d+bn+;
+2: a-;eac+;g-;eac+;
+bar
+
+1: 4.e+c++;8d+bn+;2c+a+;
+2: f-;ac+f+;d-;ad+f+;
+bar
+
+1: 2.bng#+;8c++;bn+;
+1 2: 2.s;4d+;
+2: e-;ac+f+;g#bne+;egd+;
+bar
+
+1: 2.c+a+;4ee+;
+2: a-;fad+;2eac+;
+bar
+
+1: 2aa+;8;bnbn+;c+c++;d+d++;
+2: a-;eac+;d;ad+f+;
+bar
+
+1: 2aa+;ee+;
+2: c#;ac#+e+g+;a-;eac+;
+octave above 1: 1 "8va" til 3m+4;
+bar
+
+1: 2ff+;8;ee+;4dd+;
+2: b-;fbd+;g-;gbnf+;
+bar
+
+1: 2.cc+;8dd+;ee+;
+2: c;egc+;b-;egc+;
+bar
+
+1: 2ff+;cc+;
+2: a-;ac+f+;f-;ac+e&+f+;
+bar
+
+1: d+d++;8c+c++;bb+;4aa+;ff+;
+2: b-;fbd+;f-;dgbn;
+bar
+
+1: 2dd+;;
+2: b-;dfb;g-;dgb;
+bar
+
+1: 1dd+;
+2: d-;g-ce;2a-df;
+endbar

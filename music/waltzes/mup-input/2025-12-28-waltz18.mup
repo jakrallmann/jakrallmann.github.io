@@ -1,0 +1,129 @@
+header
+	title (18) "Waltz"
+	title "" "John A. Krallmann"
+	title "" "(December 28, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	packfact=1.2
+	scoresep=12,28
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=110,82";
+midi 2 1-2: 0 "channel=12"; 0 "onvelocity=82";
+midi all: 0 "tempo=102";
+
+1: [grace]8e+;[]c+;4.g;8a;b;c+;
+2: c;gc+e+;;
+bar
+
+1: 8d+;4.e+;8b;c+;
+2: a-;eac+;;
+bar
+
+1: 4.d+;8e+;d+;c+;
+2: d-;dfa;cfa;
+bar
+
+1: 8a;4.b;8c+;d+;
+2: g-;dgb;fgb;
+bar
+
+1: 8d+;4.e+;8f+;f#+;
+2: c-;egc+;gc+e+;
+bar
+
+1: 8g+;4.a+;8e+;c+;
+2: f-;fae+;fad+;
+bar
+
+1: 8d+;4.e+;8a;g;
+2: g-;dgb;fgb;
+bar
+
+1: 8c+;b;4c+;e+;
+2: e-;egc+;gc+e+;
+bar
+
+1: 8e+;f+;4d+;c+;
+2: f-;fad+;ad+f+;
+bar
+
+1: 8b;c+;4d+;e+;
+2: g-;dgb;fgb;
+bar
+
+1: 2.c+~;
+2: c-;egc+;;
+bar
+
+1: 2c+;4b&;
+2: c-;egc+;;
+dblbar
+
+score key=1&
+music
+
+1: 8a;c+;4g+;f+;
+2: f-;ac+g+;ac+f+;
+bar
+
+1: f+;2b;
+2: g-;dfc+;dfb;
+bar
+
+1: 8e;g;4d+;c+;
+2: c-;egd+;egc+;
+bar
+
+1: 8b;a;2f;
+2: f-;cfg;cfa;
+bar
+
+1: 2.d;
+2: b-;dfa;dfb;
+bar
+
+1: [grace]8g;[]f;2.e;
+2: c;egd+;egc+;
+bar
+
+1: [grace]8a;[]g;f;e;4f;a;
+2: d;fad+;c;
+bar
+
+1: 2.d+;
+2: b-;fbc+;fbd+;
+bar
+
+1: 8e+;d+;4c+;g+;
+2: c;egc+;gc+e+;
+bar
+
+1: 4.g+;8a+;4f+;
+2: f-;cfa;ac+f+;
+bar
+
+1: 8e+;d+;4c+;g+;
+2: c;egc+;gc+e+;
+bar
+
+1: 2.f+;
+2: f-;cfa;dgb;
+bar
+
+1: 2.f++;
+2: 2.ac+f+;
+endbar

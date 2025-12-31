@@ -1,0 +1,121 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(March 30, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	musicscale=0.95
+	scoresep=12,24
+
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi all: 0 "tempo=54";
+midi 1: 0 "onvelocity=86";
+
+rom above all: 1 "(\(smup8n) = 108)";
+1: [with.]a;r;a;16;b;8c+;d+;
+2: a-;e;c+;f;d+;g-;
+bar
+
+1: 4.e+;;
+1 2: {4b;a;}2,4.;{b;a;}2,4.;
+2: a-;e;c+;f-;c;a;
+bar
+
+1: 4.f+;16bg+;af+;8.ge+;16fd+;
+1 2: {4b;a;}2,4.;4.s;
+2: d-;a-;f;g-;d;b;
+bar
+
+1: {4f#d#+;ge+;}2,4.;16af+;ge+;8.fndn+;16ca;
+2: c-;g-;e;f-;c;a;
+bar
+
+1: 4.db;{4cea;e+;}2,4.;
+1 2: {4a;g;}2,4.;4.s;
+2: g-;d;b;a-;e;c+;
+bar
+
+1: 16e+;8d+;8.c+;4d+;16c+;b;
+1 2: 4.fa;8;4gb;
+2: d;a;c+;g-;d;b;
+bar
+
+1: 4.e;;
+1 2: 8.c;16d;8c;8.b-;16c;8b-;
+2: a-;e;a;g-;e;g;
+bar
+
+staff 1 clef=bass
+music
+
+1: 4.ac+;fa;
+2: f-;c;f;d-;a-;c;
+bar
+
+1: 4.fa;8g#;8.c+;16b;
+2: e-;b-;d;4e;8e-;
+bar
+
+staff 1 clef=treble
+music
+
+1: a-;a;b;4.c+;
+1 2: 4.s;8f;8.a;16e;
+2: a--;e-;c;d-;a-;f;
+bar
+
+1: 4.g#b;8a;8.gn;16f;
+1 2: r;f;e;4.c;
+2: e-;b-;g#;f-;c;a;
+bar
+
+1: 16e;d;4c;8a-;8.b-;16c;
+1 2: 4.g-;f-;
+2: c-;g-;e;f-;c;a;
+bar
+
+1: 8g-b-;8.c;16d;4.ce;
+2: g-;d;b;a-;e;a;
+bar
+
+1: 4.ca;<<staff clef=bass>>8e+;d+;c+;
+1 2: 4.s;g;
+2: f-;c;a;g-;d;e;
+bar
+
+1: d+;c+;b;4.ac+;
+1 2: 4.f;s;
+2: g-;d;g;a-;e;g-;
+bar
+
+1: 4.ac+;fa;
+2: f-;c;e-;d-;a-;c;
+bar
+
+1: 4a;8;4b;8;
+1 2: 4.f;g#;
+2: e-;b-;d;e-;b-;e;
+bar
+
+1: 2.ac#+;
+2: a--;e-;b-;4.c#;
+endbar

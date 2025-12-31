@@ -1,0 +1,202 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(July 13-14, 2024)"
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=4&
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scale=0.95
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=100,80";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=80";
+midi 2 1: 0 "channel=13"; 0 "onvelocity=90";
+midi all: 0 "tempo=112";
+
+1: r;;ac+;
+2: a--;e;c+;
+bar
+
+1: ge+;4.fd+;8db;
+2: e-;f;g;
+bar
+
+1: 2fd+;8a;b;
+2: a-;f;d;
+bar
+
+1: 2ec+;4a;
+2: a--;e;c;
+bar
+
+1: 2.f;
+1 2: 4.c;8b-;4a-;
+2: d-;a-;f;
+bar
+
+1: 2e;4d;
+1 2: 8g-;a-;;g-;4g-;
+2: e-;b-;e-;
+octave below 2: 3 "8va";
+bar
+
+staff 1 clef=bass
+music
+
+1: 2ac+;4b;
+2: a--;e-;c;
+bar
+
+1: 2ga;4fa;
+2: f-;c;e-;
+bar
+
+1: 2fb;4fa;
+2: d-;a-;d;
+bar
+
+1: d+;c+;gb;
+1 2: 2f;4s;
+2: e-;b-;e;
+bar
+
+1: 2ca;4ec+;
+2: a--;e-;;
+bar
+
+1: 2db;4e+;
+2: e-;f-;g-;
+bar
+
+staff 1 clef=treble
+music
+
+1: 2ec+;4a;
+2: a-;e;c+;
+bar
+
+1 :2d+;4ac+;
+1 2: f;g;s;
+2: d;a;d+;
+bar
+
+1: 4.gb;8fa;4gb;
+2: e-;b-;g;
+bar
+
+1: 2.c+;
+1 2: g;a;e;
+2: a-;e;c+;
+bar
+
+1: 2.f;
+1 2: c;d;a-;
+2: d-;a-;f;
+bar
+
+1: 2e;4b-d;
+1 2: g-;a-;s;
+2: e-;b-;e;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.c+;
+1 2: 4.g;8a;4g;
+2: f-;c;e-;
+bar
+
+1: 2fa;4a;
+2: d-;a-;c;
+bar
+
+1: f;g;a;
+1 2: 2.d;
+2: b--;c-;d-;
+bar
+
+1: b;a;eg;
+1 2: 2d;4s;
+2: e-;f-;g-;
+bar
+
+1: 2.ca;
+2: a--;e-;;
+bar
+
+1: 2ca;<<staff clef=treble>> 8a;b;
+2: 2.a--;
+bar
+
+1: 4.ec+;8d+;4ae+;
+2: a-;e;c+;
+bar
+
+1: e+;d+;4fc+;
+1 2: 2g&;4s;
+2: d;a;d+;
+bar
+
+1: 4.gb;8a;4db;
+1 2: f;e;s;
+2: e-;b-;g;
+bar
+
+1: fd+;ec+;db;
+2: a-;e;g;
+bar
+
+1: 2ca;4cg;
+2: f-;c;e-;
+bar
+
+1: 2.a-f;
+2: d-;a-;f;
+bar
+
+1: e;2d;
+1 2: 2.g-;
+2: e-;b-;e;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2c+;4;
+1 2: b;a;g;
+2: f-;c;e-;
+bar
+
+1: 2.fa;
+2: d-;e;d;
+bar
+
+1: 2.g;
+1 2: f;e;d;
+2: e-;b-;e-;
+bar
+
+1: 2.f;
+2: 2.f-;
+bar
+
+1: 2.fan;
+2: 2.f-c;
+endbar
+

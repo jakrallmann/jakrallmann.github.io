@@ -1,0 +1,156 @@
+header
+	title "" "John A. Krallmann"
+	title "" "(December 14, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	musicscale=0.86
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=110,82";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=82";
+midi 2 1-2: 0 "channel=13"; 0 "onvelocity=82";
+midi all: 0 "tempo=96";
+
+1: 2s;8c+;d+;
+2: 2s;4r;
+bar
+
+1: 2gc+e+;8c+;d+;
+2: c;gc+e+;;
+bar
+
+1: 2c#+e+;4e+;
+1 2: 8a;b&;4a;g;
+2: c#;ac#+f+;ac+e+;
+bar
+
+1: e+;d+;c+;
+1 2: fa;2;
+2: d;ad+;;
+bar
+
+1: cfa;dgb;8ec+;fd+;
+2: g-;dgb;;
+bar
+
+1: 2gc+e+;4;
+2: c-;8d+;c+;b;c+;
+2 2: s;eg;;
+bar
+
+1: e+;d+;c+;
+1 2: 2fa;4;
+2: f-;fad+;;
+bar
+
+1: a-cf;b-dg;df;
+1 2: 2s;8a-;a&-;
+2: g-;dg;g--;
+bar
+
+1: 2g-ce;8f;g;
+2: c-;c&e;b&-e;
+bar
+
+1: 2.cfa;
+2: f-;dfa;cfa;
+bar
+
+1: 2.dgb;
+2: g-;dgc+;dgb;
+bar
+
+1: 8ec+;db;4ca;8d;e;
+1 2: 2s;4c;
+2: a--;ea;eb&;
+bar
+
+1: 2.a-cf;
+2: d-;a-dg;a-df;
+bar
+
+1: 8ee+;dd+;4cc+;b-b;
+2: e-e;f#-f#;g#-g#;
+octave below 2: 1 "8va" til 3.5;
+bar
+
+1: 16c+;b;a;g; c+;b;a;g; c+;b;a;g;
+2: a--a-;eac+;gbe+;
+bar
+
+1: 16c+;b;a;g; c+;b;a;g; c+;b;a;f;
+2: f--f-;fae+;fad+;
+bar
+
+1: 16c+;b;a;f; c+;b;a;f; c+;b;a;f;
+2: d-d;dfac+;;
+octave below 2: 1 "8va";
+bar
+
+1: 16g;f;d;b-; g;f;d;b-; g;f;d;b-;
+2: g--g-;a-df;b-dg;
+bar
+
+1: 16d;e;a;b; c+;b;c+;d+; e+;d+;c+;a;
+2: a--a-;g--g-;f#--f#- tie;
+bar
+
+score time=4/4 ; beamstyle=4,4,4,4
+music
+
+1: 16e;d;c;d;4.cd;8g-;c;d;
+1 2: 4s;16r;a&-;;;8g-b-;4.s;
+2: f--f-;4.g--g-;8r;4;
+mussym above all: 3 "ferm";
+ital between 1&2: 1 "rit.";
+rom above all: 3.5 "Slower";
+boldital between 1&2: 3.5 "p";
+midi all: 1 "tempo=78"; 2 "tempo=36"; 3 "tempo=24"; 3.5 "tempo=64";
+bar
+
+1: 8f;e;;d;4.e;8g;
+2: 8c-;g-;4e;8a-;e;b;c+;
+bar
+
+1: 8g;f;;e;2f;
+1 2: 2s;8d;c;b-;a-;
+2: 8f-;c;a;a&;d-;a-;d;c;
+bar
+
+1: 8g-;f;;;;;g;f;
+2: 8g--;d-;a-;b-;d;g;a;b;
+bar
+
+1: 8f;e;;d;2e;
+2: 8c-;g-;e;g;c-;g-;d;c;
+bar
+
+1: 8e;d;;;2;
+2: 8f-;c;a;d;2a&;
+bar
+
+1: 8d;c;;;2;
+2: 8c-;g-;d;;2e;
+bar
+
+1: 8a-;;;;2a&-;
+2: 8f-;c;e;c;2d;
+bar
+
+1: 8g-;a-;c;;2;
+2: 8c-;g-;d;;2e;
+endbar

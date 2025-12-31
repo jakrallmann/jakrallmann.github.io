@@ -1,0 +1,110 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(October 13, 2024)"
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	beamstyle=2,2
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=9,24
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=96";
+midi 2 1: 0 "channel=12"; 0 "onvelocity=72";
+midi all: 0 "tempo=112";
+
+define P
+ ifdef MIDI pedal 2: 1; endif
+@
+
+1: mr;
+2: 8d-;a-;e;a-;f;a-;e;a-;
+P
+bar
+
+1: 2r;8;a;d+;e+;
+2: 8d-;a-;e;a-;f;a-;e;a-;
+P
+bar
+
+1: 2f+~;4.;8e+;
+2: 8d-;a-;e;a-;f;a-;e;a-;
+P
+bar
+
+1: 2d+~;4.;8a;
+2: 8g-;d;a;d;c+;d;b;d;
+P
+bar
+
+1: 2g~;4.;8f;
+2: 8g-;d;a;d;c+;d;b;d;
+P
+bar
+
+1: 1e~;
+2: 8a-;e;b;e;a;e;g;e;
+P
+bar
+
+1: 2e~;4.;8c#;
+2: 8a-;e;b;e;a;e;g;e;
+bar
+
+1: 1d~;
+2: 8d-;a-;e;a-;f;a-;e;a-;
+P
+bar
+
+1: 1d;
+2: 8d-;a-;e;a-;f;a-;e;a-;
+bar
+
+1: 2d+~;4.;8e+;
+2: 8d-;a-;e;a-;f;a-;e;a-;
+P
+bar
+
+1: 2f+~;4.;8e+;
+2: 8b-;f;c+;f;d+;f;c+;a-;
+P
+dblbar
+
+score key=1#
+music
+
+1: 2d+~;4.;8c+;
+2: 8g-;d;a;d;b;d;a;fn-;
+P
+bar
+
+1: 1b;
+2: 8e-;b-;f;b-;g#;b-;e;d-;
+P
+bar
+
+1: 8b;a;2g;4e;
+2: 8c-;g-;e;g-;e;g-;e;g-;
+P
+bar
+
+1: 2e~;8;b;a;g;
+2: 8a-;e;b;c#+;2;
+P
+bar
+
+1: 1e;
+2: 8e-;b-;f;g;2e;
+ifdef MIDI pedal 1: 1;5*; endif
+endbar

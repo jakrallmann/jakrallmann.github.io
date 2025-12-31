@@ -1,0 +1,165 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(November 2-9, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	timeunit=8
+	beamstyle=2.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	musicscale=0.87
+staff 1
+	vscheme=2f
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1-2: 0 "channel=11"; 0 "onvelocity=96";
+midi 1 2: 0 "channel=12"; 0 "onvelocity=72";
+midi 2 1: 0 "channel=13"; 0 "onvelocity=52";
+midi all: 0 "tempo=88";
+
+rom above all: 1 "(\(smup4n) = 88) Rubato";
+1: 2.e+;
+2: g;c+;e+;c+;e+;c+;
+bar
+
+1: 2.e+;
+2: g#;c+;e+;c+;d+;c+;
+bar
+
+1: 4.e+;8d+;c+;b;
+2: a;c+;e+;c+;g;c+;
+bar
+
+1: 2.a;
+2: f;a;c+;d+;c+;a;
+bar
+
+1: 4.gb;8a;g;b;
+2: e;b;d+;b;d+;b;
+bar
+
+1: 2.fa;
+2: f;c+;e+;c+;d+;c+;
+bar
+
+1: 2.g;
+1 2: d;e;d;e;d;e;
+2: c;g;c+;g;c+;g;
+bar
+
+1: 2.f;
+1 2: c;d;c;d;c;d;
+2: d;a;g;a;f;a;
+bar
+
+1: 4.f~;4;8d;
+1 2: b-;c;d;c;b-;d;
+2: g-;d;a;d;g;d-;
+bar
+
+1: 2.ce;
+2: c-;g-;d;e;d;c;
+bar
+
+1: 2.a-e;
+2: f-;c;d;e;d;c;
+bar
+
+1: 4.d;8e;f;g;
+1 2: a-;b-;a-;4.s;
+2: g-;d;f;d;g;d;
+bar
+
+1: 4.g~;4;8g#;
+1 2: d;e;d;c;4g-;
+2: c-;g-;e;g-;d;g-;
+bar
+
+1: 2.a;
+1 2: d;e;d;c;a-;c;
+2: f-;c;a;c;f;c;
+bar
+
+1: 2.g;
+1 2: d;e;d;b-;g-;b-;
+2: e-;b-;g;b-;e;b-;
+bar
+
+1: 2.f;
+1 2: c;d;c;b-;a-;g-;
+2: d-;a-;f;d;c;b-;
+bar
+
+1: ce;f+;e+;d+;c+;b&;
+2: c-;g-;e;g;d+;e+;
+bar
+
+1: 2.a;
+1 2: g;f;e;c;;d;
+2: f-;c;a;a&;;f;
+bar
+
+1: 2.ce;
+2: c-;g-;e;d;c;d;
+bar
+
+1: 2.a-e;
+2: c#-;a-;f;e;d;e;
+bar
+
+1: g;f;e;c;;d;
+2: d-;a-;f;d;a&-;f;
+bar
+
+1: 2.ce;
+2: g-;e;b;a;g;e;
+bar
+
+1: 4.ec+;8d+;e+;g+;
+2: a-;e;c+;b;a;g;
+bar
+
+1: 4bg+;4.af+;8fd+;
+2: f-;c;a;g;f;c+;
+bar
+
+1: 4af+;4.ge+;16b;c+;
+1 2: 4s;4.;8de;
+2: c-;g-;e;d+;c+;g;
+bar
+
+1: 4ge+;4.fd+;8af+;
+2: f-;c;a;f;c+;d+;
+bar
+
+1: 2.g+;
+1 2: d+;e+;d+;c+;g;f;
+2: c-;g-;e;g;c+;g;
+bar
+
+1: 2.g;
+1 2: d;e;d;c;g-;f-;
+2: c-;g-;e;g-;d;g-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.dec+;
+2: c-;g-;a-;g-;e-;d-;
+bar
+
+1: 2.de;
+2: 2.c-g-;
+endbar

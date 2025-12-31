@@ -1,0 +1,304 @@
+header
+	title (18) "Nocturne"
+	title "" "John A. Krallmann"
+	title "" "(December 2024)"
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+header2
+	title "Nocturne - \%"
+
+score
+	staffs=2
+	key=3&
+	time=4/4
+	beamstyle=4,4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	vscheme=2f
+	musicscale=0.8
+	scoresep=12,24
+
+staff 2
+	clef=bass
+
+music
+ 
+midi all: 0 "tempo=60";
+midi 1: 0 "onvelocity=86";
+
+1: 2ee+ tie;8;e+;d+;c+;
+2: 8c;g;f;e;4.c+;8b;
+bar
+
+1: 8d+;c+;2a~;8;g;
+1 2: 4.c;8b-;a-;b-;c;a-~;
+2: 8a-;e;c+;g-;4f-;e-;
+bar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+1: 2f;4f#;
+1 2: 8a-;f-;b-;a-;an-;c;
+2: d-;b-;8d;c;
+bar
+
+score time=4/4
+music
+
+1: 2g;4.g-c;8c&;
+1 2: 8b-;c;e;d;2s;
+2: 8e-;b-;4g;8f;e;4;
+2 2: 2s;a-;
+bar
+
+staff 1 clef=bass
+music
+
+1: 2.b;<<staff clef=treble>>8r;a+;
+1 2: 8f;e;;f;4g;s;
+2: 8e-~;4e-b-;8b--;8e-~;e-~b-;4e-b-;
+bar
+
+1: [grace;slash 1]8a+;4.gg+;8d+;[grace;slash1];2c+;
+1 2: 2s;8b;a;g;16d;e;
+2: 8e-;d+;c+;g;a-;e;c+;g-;
+bar
+
+1: 4.a~;16;g;4.ef;8f#;
+1 2: 8g;f;e;c;a-;c&;4b-;
+2: 8f-;c;16a;g;f;e;4b-;d;
+bar
+
+1: 2g;4b-d;a-c;
+1 2: 8b-;f;e;d&;2s;
+2: 8e-;b-;g;ef;r;4f;8e;
+2 2: 2s;2a-;
+bar
+
+1: 8e;g;8.f;16e;4e;d;
+1 2: 2c;a-;
+2: 8f;c;d;e;4.b-f;8b--;
+2 2: 2an-;s;
+bar
+
+1: bn-d;8.a;16g;4df;[grace]16g;[]f;4ce;
+1 2: s;f;2s;
+2: 8g-;d;g;d;c;4g;8b-;
+bar
+
+1: 8c;e;8.g;16f;4cf;df#;
+2: 8a-;e;f;e;b-;f;4a;
+mussym above all: 4 "ferm";
+dblbar
+
+score key=5&
+music
+
+1: 8gn;e+;8.dn+;16c+;[grace;slash1]8c+;4b;a;
+2: 8e;b;e+;b;f;c+;f+;e;
+bar
+
+1: 8a;c++;b+;a+;4gn+;8d;b;
+1 2: 2s;8f+;e+;8s;16f;e;
+2: 8b-;f;c+;dn+;e-;b-;f;gn;
+bar
+
+1: a;8.an;16d+;4c+;b;
+1 2: 8gn;f;4e;16d;e;8f;16d;e;8f;
+2: 8f-;c;16f;e;d;c;8b-;f;a-;f;
+bar
+
+1: 2b;4a~;16;b;8c+;
+1 2: 16d;e;8f;16;e;d;b-;d;e;d;b-;4c;
+2: 8g-;d;a&&;e;a-;e;g&;a--;
+bar
+
+1: dfd+;;dgd+;a;
+1 2: 2.s;16c;e;d;a-;
+2: 8b--;b-;a--;b;16g--;b;a;g;4f-cf;
+bar
+
+1: 16g- abm;b-;d;b;e;d;8c;4d;8 eabm;a+;
+1 2: 4s;g-;8f-;g-;4f-;
+2: 8e-b- tie;e-b-e;4e;8a-;b-;4d-a-;
+2 2: 4s;8b&&-;a-;4d-;s;
+mussym above all: 4 "ferm";
+midi all: 4 "tempo=20"; 4.5 "tempo=60";
+dblbar
+
+score time=3/4 ; beamstyle=4,4,4
+music
+
+midi all: 1 "tempo=80";
+rom above all: 1 "piu mosso";
+1: [grace;slash 1]8a+;2f+~;8;;
+2: d-;c+;f;
+bar
+
+1: [grace]16f+;[]e+;2c+~;8;;
+2: f-;b;f;
+bar
+
+1: [grace;slash1]8c+;8b;a;4b;d+;
+1 2: 2s;4g;
+2: g-;8g;f;e;a--;
+bar
+
+1: [grace;slash1]8ed+;2fa tie;8;b;
+2: d-;e;fd+;
+bar
+
+1: 2.ac+;
+1 2: 8b-;c;f;e;d;c;
+2: f-;4.c;8;
+bar
+
+1: 2.gb;
+1 2: 8b-;c;e;d;c;a-;
+2: g-;d;;
+bar
+
+1: 2gnb tie;8;g;
+1 2: 8b-;c;e;d;c;b-;
+2: e-;b-;gn;
+bar
+
+1: 2.a-a;
+1 2: 8c;d;f;e;b-;c;
+2: a--;g;a-;
+bar
+
+1: 2df;16a;g;f;e;
+2: d-;ea;fa;
+bar
+
+1: 2f tie;8;d;
+1 2: 8c;4.d;4s;
+2: b--;cf;df;
+bar
+
+1: f;4.e;8d;
+1 2: 2.b-;
+2: g--;8b-;c;d;e;
+bar
+
+1: 2.e;
+1 2: 4.g-;8b-;a-;g-;
+2: a--;b-;c;
+bar
+
+1: 4.d;8e;4f;
+1 2: 2f-;8d;c;
+2: b--;8d;c;b-;a-;
+bar
+
+1: f;2e;
+1 2: 4.g-;8a-;b-;d;
+2: e-;8b-;f;e;b-;
+bar
+
+1: e;4.d;8c;
+1 2: 2.g-b&&-;
+2: a-;e;a--;
+bar
+
+1: 2f-d;8r;a;
+2: d-;b-;a-;
+bar
+
+1: 2b~;8;g;
+1 2: 8r;dn;e;en;f;g;
+2: g-;d;b;
+bar
+
+1: 2.a;
+1 2: 8r;c;d;f;e;d;
+2: f-;b-;f;
+bar
+
+1: 8a;g;a;g;a;g;
+1 2: b-;c;b-;
+2: e-;b-;g;
+bar
+
+1: f;4.e;8en;
+1 2: 2.g-;
+2: a-;d;c;
+bar
+
+1: 8f;16g;a;b;c+;d+;e+;8f+;g+;
+2: d-;f;d+;
+bar
+
+1: 2a+;4f+;
+1 2: 8c+;b;c+;a;gn;a;
+2: f-;ac+f+;;
+bar
+
+1: 4.g+;8;;;
+1 2: 8b;a;b;c+;d+;e+;
+2: g-;bd+g+;;
+bar
+
+1: 2f+;8c+;d+;
+1 2: 8a;g;4f;8e;f;
+2: d-;fad+;;
+bar
+
+1: 8ge+;fd+;ge+;fd+;4c+;
+1 2: 2s;16c;d;8e;
+2: e-;a-;a--;
+bar
+
+1: 2.fd+;
+2: d-;a-;8d;c;
+bar
+ 
+1: fd+;f+;8b+;c++;
+2: b-;f;8d+;c+;
+bar
+
+1: 8d++;c++;4b+;gbf+;
+1 2: 2g+;4s;
+2: e-;g;d+;
+bar
+
+1: 2e+;4en+;
+1 2: 8d;e;a;g;4gc+;
+2: a-;e;8c+;b;
+bar
+
+1: 2ff+;16f;g;8a;
+1 2: 8c+;d+;c+;a;4d;
+2: d;a;8bn;f;
+bar
+
+1: 8a;g;;f;g;16d;e;
+1 2: b-;2b&&-;
+2: g-;d;e;
+bar
+
+score time=4/4
+music
+
+rom above 1: 1 "rall.";
+midi all: 1 "tempo=72";
+1: 8g;f;;e;4f;8g;a;
+1 2: a-;an-;2a-dn;
+2: d-;c&;8b-;a-;g-;f-;
+bar
+
+midi all: 1 "tempo=64";
+1: 2dgb;4.ea;8e+;
+1 2: 2s;4d;c;
+2: 8e-;b-;f;g;a-;e;4ga;
+bar
+
+1: 1dfd+;
+2: 8d-;a-;d;e;2f;
+endbar

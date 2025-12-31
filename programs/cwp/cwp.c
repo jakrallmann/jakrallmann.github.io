@@ -304,7 +304,7 @@ print_title(const char *title)
 			printf(" stringwidth fullwidthy add /fullwidthy exch def fullwidthx add /fullwidthx exch def\n");
 		}
 		/* Go the right place to start printing. */
-		printf("fullwidthx -2.0 div fullwidthy rmoveto\n", title);
+		printf("fullwidthx -2.0 div fullwidthy rmoveto\n");
 		/* Print the segments */
 		for (i = 0; i < count; i++ ) {
 			if (list[i].start == 0) {

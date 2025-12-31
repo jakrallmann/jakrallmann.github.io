@@ -1,0 +1,100 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(May 25, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=2&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	packfact=1.1
+	scoresep=12,26
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+ 
+midi 1: 0 "channel=11"; 0 "onvelocity=96";
+midi 2: 0 "channel=12"; 0 "onvelocity=72";
+midi all: 0 "tempo=112";
+
+1: 4r;8b;;c+;d+;
+2: g-;dgb;
+bar
+
+1: d+;e+;d+;4.c+;
+2: a&-;ea&c+;
+bar
+
+1: a;b;a;4.d;
+2: g-;dgb;
+bar
+
+1: e;;;d+;c+;b;
+2: c;egc+;
+bar
+
+1: b;c+;b;4.d;
+2: d;gb;
+bar
+
+1: a;b;a;4.d;
+2: d;f#a;
+bar
+
+1: a;b;a;4.d;
+2: g-;dgb;
+bar
+
+1: g;a;g;c;e;c#;
+2: e-;egb;
+bar
+
+1: d;f#;a;e+;d+;c+;
+2: d-;f#ac+;
+bar
+
+1: a;b;a;4.g;
+2: g-;dgb;
+bar
+
+1: e;;;;b;a;
+2: c;egc+;
+bar
+
+1: f#;;;;c+;a;
+2: d;f#ad+;
+bar
+
+1: b;;;;c+;d+;
+2: g;bd+g+;
+bar
+
+1: f+;e+;d+;4c+;8b;
+2: c;gc+e+;
+bar
+
+1: a;;;4;16c;d;
+2: d;c+e+g+;
+bar
+
+1: a;;;4;16b;a;
+2: d;ad+f#+;
+bar
+
+1: 2.g~;
+2: g-;cfa;
+bar
+
+1: 2.g;
+2: 2.dgb;
+endbar

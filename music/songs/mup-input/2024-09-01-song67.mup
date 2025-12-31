@@ -1,0 +1,109 @@
+header
+	title (18) "Song"
+	title "" "John A. Krallmann"
+	title "" "(September 1, 2024)"
+footer
+        title (12) "\(copyright) Copyright 2024 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	key=1&
+	time=6/8
+	beamstyle=4.,4.
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=9,24
+staff 2
+	clef=bass
+	timeunit=4.
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=96";
+midi 2 1: 0 "channel=12"; 0 "onvelocity=72";
+midi all: 0 "tempo=108";
+
+1: a;b;a;4.d+;
+2: d-;dfa;
+bar
+
+1: d+;e&+;d+;4.g;
+2: g-;dgb;
+bar
+
+1: e;f;e;4.a;
+2: a-;c#ea;
+bar
+
+1: e;f;e;4.d;
+2: d-;dfa;
+bar
+
+1: b-;;;4.;
+2: g-;df;
+bar
+
+1: a-;;;4.;
+2: d-;df;
+bar
+
+1: g#-;;;4;16c;bn-;
+2: e-;bn-df;
+bar
+
+1: 4.a-;8r;g;a;
+2: a--;c#e;
+bar
+
+define T
+1: b;;;4d+;8b;
+2: g-;dgb;
+bar
+
+1: a;;;4d+;8a;
+2: f-;dfa;
+bar
+
+1: g;;;4f;8g;
+2: e-;dgb;
+bar
+
+1: 4.e;a-;
+2: a--;g-c#;
+bar
+
+1: d;;;4.;
+2: f-;a-df;
+bar
+
+1: e;;;4.;
+2: g-;dgb;
+bar
+
+1: f;;;;e;d;
+2: g#-;b-dfg#;
+bar
+@
+
+T
+
+1: 2.a;
+2: a--;a-eg;
+bar
+
+T
+
+1: 4.a~;8;bn;c#+;
+2: a--;a-eg;
+bar
+
+1: 2.d+~;
+2: d-;gbe+;
+bar
+
+1: 2.d+;
+2: 2.ad+f+;
+endbar

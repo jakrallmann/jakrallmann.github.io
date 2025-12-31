@@ -59,6 +59,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <string.h>
+#include <ctype.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/Xos.h>

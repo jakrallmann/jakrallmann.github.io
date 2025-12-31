@@ -1,0 +1,120 @@
+header
+	title (18) "Entracte"
+	title "" "John A. Krallmann"
+	title "" "(May 4, 2025)"
+footer
+        title (12) "\(copyright) Copyright 2025 John A. Krallmann"
+        title (4) " "
+        title (11) "Published using Mup software from Arkkra Enterprises (http://www.arkkra.com)"
+
+score
+	staffs=2
+	time=3/4
+	beamstyle=4,4,4
+	measnum=y
+	brace=1-2
+	barstyle=1-2
+	scoresep=12,24
+staff 2
+	clef=bass
+
+music
+ 
+midi 1 1: 0 "channel=11"; 0 "onvelocity=120,90";
+midi 2 1: 0 "channel=12"; 0 "onvelocity=96";
+midi all: 0 "tempo=96";
+
+1: 8r;g;a;b;e+;d+;
+2: g-;dgb;fgbd+;
+bar
+
+1: 8e+;d#+;e+;c+;4a;
+2: a-;eac+;;
+bar
+
+1: 8f+;e+;f+;d+;a;c+;
+2: d;ad+f+;;
+bar
+
+1: 8b;c+;e+;d+;c+;b;
+2: e-;eg#d+;gd+f+;
+bar
+
+1: 8c+;b;4.a;8e;
+2: a--;eac+;;
+bar
+
+1: 8a;b;c+;b+;a+;e+;
+2: a-;eac+;;
+bar
+
+1: 8g+;f+;2;
+2: d;ad+e+;ad+f+;
+bar
+
+1: 8f+;e+;;d+;;c+;
+2: e;g#d+g(n)+;gd+f+;
+bar
+
+1: 8b;a;2;
+2: a-;eab;eac+;
+bar
+
+1: 8g;f;2;
+2: f-;cfg;cfa;
+bar
+
+1: 8f;e;fd+;ec+;db;ec+;
+2: e-;eg#d+;dgb;
+bar
+
+1: 8db;ca;4.;8e;
+2: a--;8e-;g-;4a-;
+bar
+
+1: 8cc+;dd+;4.ee+;8;
+2: a-;eac+;;
+bar
+
+1: 8ee+;dd+;2;
+2: b&-;dfb&;;
+bar
+
+1: 8b-b;cc+;2;
+2: a-;eb;ea;
+bar
+
+1: 8dd+;ee+;2ff+;
+2: d-;a-db;a-df;
+bar
+
+1: 4.ee+;8f#f#+;g#g#+;bb+;
+2: e-;b-eg#;egd+;
+bar
+
+1: 8c+c++;bb+;2c+c++;
+2: a-;eac+;;
+ital between 1&2: 1 "cresc.";
+bar
+
+1: 8d+d++;c+c++;2d+d++;
+2: f-;fae+;fad+;
+bar
+
+1: 8ff+;ee+;2ee+;
+2: e-;b-ea;b-eg#;
+octave above 1: 1 "8va" til 3m+3;
+bar
+
+1: 2.ff+;
+2: d-;ad+g+;ad+f+;
+bar
+
+1: 2.ee+;
+2: 8e-;ff+;ee+;dd+;cc+;b-b;
+bar
+
+1: 2.ac+e+a+;
+2: 2.a--a-;
+boldital between 1&2: 1 "sfz";
+endbar
